@@ -1,0 +1,46 @@
+﻿#############
+# Shinto #
+#############
+
+# Shinto
+
+socotra = {
+	county = c_socotra
+
+	character_modifier = {
+		name = holy_site_suzhou_effect_name
+		diplomacy = 1
+		martial = 1
+	}
+}
+
+maldives = {
+	county = c_maldives
+
+	character_modifier = {
+		name = holy_site_suzhou_effect_name
+		diplomacy = 1
+		martial = 1
+	}
+}
+
+dakhina_desa = {
+	county = c_dakhina_desa
+
+	character_modifier = {
+		name = holy_site_suzhou_effect_name
+		diplomacy = 1
+		martial = 1
+	}
+}
+ras_hafun = {
+	county = c_ras_hafun
+
+	character_modifier = {
+		name = holy_site_suzhou_effect_name
+		diplomacy = 1
+		martial = 1
+	}
+}
+
+# c_ras_hafun
