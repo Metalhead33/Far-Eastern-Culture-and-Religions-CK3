@@ -9,7 +9,7 @@
 	#Main Group
 	doctrine = doctrine_no_head
 	doctrine = doctrine_gender_male_dominated
-	doctrine = doctrine_pluralism_righteous
+	doctrine = doctrine_pluralism_pluralistic
 	doctrine = doctrine_theocracy_temporal
 
 	#Marriage
@@ -22,19 +22,19 @@
 	doctrine = doctrine_homosexuality_accepted
 	doctrine = doctrine_adultery_men_shunned
 	doctrine = doctrine_adultery_women_shunned
-	doctrine = doctrine_kinslaying_any_dynasty_member_crime
+	doctrine = doctrine_kinslaying_shunned
 	doctrine = doctrine_deviancy_accepted
 	doctrine = doctrine_witchcraft_accepted
 
 	#Clerical Functions
 	doctrine = doctrine_clerical_function_alms_and_pacification
-	doctrine = doctrine_clerical_gender_either
+	doctrine = doctrine_clerical_gender_male_only
 	doctrine = doctrine_clerical_marriage_allowed
-	doctrine = doctrine_clerical_succession_spiritual_fixed_appointment
+	doctrine = doctrine_clerical_succession_temporal_fixed_appointment
 
 	traits = {
-		virtues = { stubborn brave just }
-		sins = { fickle craven arbitrary }
+		virtues = { generous calm content brave }
+		sins = { greedy craven }
 	}
 
 	custom_faith_icons = {
@@ -197,8 +197,8 @@
 			doctrine = unreformed_faith_doctrine
 
 			doctrine = tenet_eastern_syncretism
-			doctrine = tenet_monasticism
-			doctrine = tenet_adorcism
+			doctrine = tenet_sanctity_of_nature
+			doctrine = tenet_ritual_celebrations
 
 			icon = shinto
 			reformed_icon = shinto
