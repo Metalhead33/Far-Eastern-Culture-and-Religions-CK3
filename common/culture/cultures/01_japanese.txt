@@ -126,6 +126,7 @@ dynasty_names = {
 		}
 		dynasty_of_location_prefix = "dynnp_no"
 		dynasty_name_first = yes
+		dynasty_title_names = yes
 
 		ethnicities = {
 			10 = asian
