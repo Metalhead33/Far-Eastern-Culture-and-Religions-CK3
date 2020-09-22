@@ -1,0 +1,47 @@
+﻿#### Local Types ####
+@samurai = "gfx/interface/icons/culture_innovations/innovation_bushido.dds"
+@rattan = "gfx/interface/icons/culture_innovations/innovation_rattan.dds"
+@hwacha = "gfx/interface/icons/culture_innovations/innovation_hwacha.dds"
+
+
+innovation_bushido = {
+	group = culture_group_regional
+	culture_era = culture_era_high_medieval
+	icon = @samurai
+	
+	potential = {
+		this.culture_group = culture_group:japanese_group
+	}
+	
+	unlock_maa = samurai
+	
+	flag = global_maa
+}
+
+innovation_rattan_shields = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @rattan
+	
+	potential = {
+		this.culture_group = culture_group:baiyue_group
+	}
+	
+	unlock_maa = rattan_archer
+	
+	flag = global_maa
+}
+
+innovation_hwacha = {
+	group = culture_group_regional
+	culture_era = culture_era_late_medieval
+	icon = @hwacha
+	
+	potential = {
+		this.culture_group = culture_group:korean_group
+	}
+	
+	unlock_maa = hwacha
+	
+	flag = global_maa
+}

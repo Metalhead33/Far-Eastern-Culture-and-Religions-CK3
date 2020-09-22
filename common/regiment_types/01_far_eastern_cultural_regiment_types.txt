@@ -1,0 +1,87 @@
+﻿# standard costs
+@maa_buy_cost = 150
+@maa_low_maintenance_cost = 1.0
+@maa_high_maintenance_cost = 5.0
+@cultural_maa_extra_ai_score = 25 # Equivalent to having 2.5 extra regiments beyond what the code scoring would indicate (see NEGATIVE_SCORE_PER_EXISTING_REGIMENT)
+
+samurai = {
+	type = skirmishers
+	
+	damage = 100
+	toughness = 20
+	pursuit = 40
+	screen = 30
+	
+	terrain_bonus = {
+		steppe = { damage = 45 }
+		plains = { damage = 20 }
+		drylands = { damage = 20 }
+		jungle = { damage = -20 pursuit = -20 }
+		wetlands = { damage = -30 pursuit = -30 }
+		mountains = { damage = -30 pursuit = -30 }
+		desert_mountains = { damage = -30 pursuit = -30 }
+	}
+
+	counters = {
+		skirmishers = 1
+		heavy_infantry = 1
+		archers = 1
+	}
+
+	buy_cost = { gold = heavy_cavalry_recruitment_cost }
+	low_maintenance_cost = { gold = heavy_cavalry_low_maint_cost }
+	high_maintenance_cost = { gold = heavy_cavalry_high_maint_cost }
+	
+	stack = 50
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = horse_archers
+}
+
+rattan_archer  = {
+	type = archers
+	
+	damage = 35
+	toughness = 25
+	pursuit = 5
+	screen = 0
+	
+	terrain_bonus = {
+		jungle = { damage = 8 toughness = 4 }
+		forest = { damage = 8 toughness = 4 }
+		hills = { damage = 8 toughness = 4 }
+	}
+
+	counters = {
+		skirmishers = 1
+		pikemen = 1
+	}
+
+	buy_cost = { gold = heavy_infantry_recruitment_cost }
+	low_maintenance_cost = { gold = heavy_infantry_low_maint_cost }
+	high_maintenance_cost = { gold = heavy_infantry_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = bowmen
+}
+
+
+hwacha = {
+	type = siege_weapon
+	fights_in_main_phase = no
+	
+	damage = 100
+	toughness = 5
+	
+	siege_tier = 4
+	siege_value = 1.0
+	
+	buy_cost = { gold = bombard_recruitment_cost }
+	low_maintenance_cost = { gold = bombard_low_maint_cost }
+	high_maintenance_cost = { gold = bombard_high_maint_cost }
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	
+	stack = 10
+	allowed_in_hired_troops = no
+	
+}
