@@ -6,7 +6,7 @@
  councillor_court_chaplain_korean_religion_duchy_possessive:0 "Court Shaman's"
  councillor_court_chaplain_muism_duchy:0 "Court Shaman"
  councillor_court_chaplain_muism_duchy_possessive:0 "Court Shaman's"
- korean_religious_head_title:0 "Tennō"
+ korean_religious_head_title:0 "Cheonhwang"
  korean_religious_head_title_name:0 "Empire"
  korean_priest_male:0 "Baksu"
  korean_priest_male_plural:0 "Baksu"
@@ -49,6 +49,7 @@
  muism_devil_name_possessive:0 "Agma's"
  muism_death_deity_name:0 "Yeomna"
  muism_death_deity_name_possessive:0 "Yeomna's"
+ korean_religious_text:0 "Samguk Sagi"
  muism_religious_text:0 "Samguk Sagi"
  muism_afterlife:0 "Cheongug"
 

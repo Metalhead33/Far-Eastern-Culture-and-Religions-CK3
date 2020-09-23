@@ -49,6 +49,7 @@
  shinto_devil_name_possessive:0 "Akuma's"
  shinto_death_deity_name:0 "$shinto_creator_god_name$"
  shinto_death_deity_name_possessive:0 "$shinto_creator_god_name_possessive$"
+ japanese_religious_text:0 "the Kojiki"
  shinto_religious_text:0 "the Kojiki"
  shinto_afterlife:0 "Yomi"
 
