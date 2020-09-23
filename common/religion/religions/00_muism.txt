@@ -1,0 +1,209 @@
+﻿korean_religion = {
+	family = rf_pagan
+	graphical_faith = pagan_gfx
+
+	pagan_roots = yes
+
+	doctrine = pagan_hostility_doctrine
+
+	#Main Group
+	doctrine = doctrine_no_head
+	doctrine = doctrine_gender_male_dominated
+	doctrine = doctrine_pluralism_pluralistic
+	doctrine = doctrine_theocracy_temporal
+
+	#Marriage
+	doctrine = doctrine_concubines
+	doctrine = doctrine_divorce_allowed
+	doctrine = doctrine_bastardry_legitimization
+	doctrine = doctrine_consanguinity_cousins
+
+	#Crimes
+	doctrine = doctrine_homosexuality_accepted
+	doctrine = doctrine_adultery_men_shunned
+	doctrine = doctrine_adultery_women_shunned
+	doctrine = doctrine_kinslaying_shunned
+	doctrine = doctrine_deviancy_accepted
+	doctrine = doctrine_witchcraft_accepted
+
+	#Clerical Functions
+	doctrine = doctrine_clerical_function_alms_and_pacification
+	doctrine = doctrine_clerical_gender_either
+	doctrine = doctrine_clerical_marriage_allowed
+	doctrine = doctrine_clerical_succession_temporal_fixed_appointment
+
+	traits = {
+		virtues = { generous calm content brave }
+		sins = { greedy craven }
+	}
+
+	custom_faith_icons = {
+		custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5 custom_faith_6 custom_faith_7 custom_faith_8 custom_faith_9 custom_faith_10 dualism_custom_1 zoroastrian_custom_1 zoroastrian_custom_2 buddhism_custom_1 buddhism_custom_2 buddhism_custom_3 buddhism_custom_4 taoism_custom_1 yazidi_custom_1 sunni_custom_2 sunni_custom_3 sunni_custom_4 ibadi_custom muhakkima_1 muhakkima_2 muhakkima_4 muhakkima_5 muhakkima_6 judaism_custom_1
+	}
+
+	holy_order_names = {
+		{ name = "holy_order_guardians_of_divinerealm" }
+		{ name = "holy_order_warriors_of_sacred_lands" }
+	}
+
+	holy_order_maa = { rattan_archer }	
+
+	
+			localization = {
+			HighGodName = muism_high_god_name
+			HighGodNamePossessive = muism_high_god_name_possessive
+			HighGodNameSheHe = CHARACTER_SHEHE_HE
+			HighGodHerselfHimself = CHARACTER_HIMSELF
+			HighGodHerHis = CHARACTER_HERHIS_HIS
+			HighGodNameAlternate = muism_high_god_name_alternate
+			HighGodNameAlternatePossessive = muism_high_god_name_alternate_possessive
+
+			#Creator
+			CreatorName = muism_creator_god_name
+			CreatorNamePossessive = muism_creator_god_name_possessive
+			CreatorSheHe = CHARACTER_SHEHE_HE
+			CreatorHerHis = CHARACTER_HERHIS_HIS
+			CreatorHerHim = CHARACTER_HERHIM_HIM
+
+			#HealthGod
+			HealthGodName = muism_health_god_name
+			HealthGodNamePossessive = muism_health_god_name_possessive
+			HealthGodSheHe = CHARACTER_SHEHE_HE
+			HealthGodHerHis = CHARACTER_HERHIS_HIS
+			HealthGodHerHim = CHARACTER_HERHIM_HIM
+			
+			#FertilityGod
+			FertilityGodName = muism_fertility_god_name
+			FertilityGodNamePossessive = muism_fertility_god_name_possessive
+			FertilityGodSheHe = CHARACTER_SHEHE_SHE
+			FertilityGodHerHis = CHARACTER_HERHIS_HER
+			FertilityGodHerHim = CHARACTER_HERHIM_HER
+
+			#WealthGod
+			WealthGodName = muism_wealth_god_name
+			WealthGodNamePossessive = muism_wealth_god_name_possessive
+			WealthGodSheHe = CHARACTER_SHEHE_SHE
+			WealthGodHerHis = CHARACTER_HERHIS_HER
+			WealthGodHerHim = CHARACTER_HERHIM_HER
+
+			#HouseholdGod
+			HouseholdGodName = muism_household_god_name
+			HouseholdGodNamePossessive = muism_household_god_name_possessive
+			HealthGodSheHe = CHARACTER_SHEHE_SHE
+			HealthGodHerHis = CHARACTER_HERHIS_HER
+			HealthGodHerHim = CHARACTER_HERHIM_HER
+
+			#FateGod
+			FateGodName = muism_fate_god_name
+			FateGodNamePossessive = muism_fate_god_name_possessive
+			FateGodSheHe = CHARACTER_SHEHE_SHE
+			FateGodHerHis = CHARACTER_HERHIS_HER
+			FateGodHerHim = CHARACTER_HERHIM_HER
+
+			#KnowledgeGod
+			KnowledgeGodName = muism_knowledge_god_name
+			KnowledgeGodNamePossessive = muism_knowledge_god_name_possessive
+			KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+			KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+			KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
+
+			#WarGod
+			WarGodName = muism_war_god_name
+			WarGodNamePossessive = muism_war_god_name_possessive
+			WarGodSheHe = CHARACTER_SHEHE_HE
+			WarGodHerHis = CHARACTER_HERHIS_HIS
+			WarGodHerHim = CHARACTER_HERHIM_HIM
+
+			#TricksterGod
+			TricksterGodName = muism_trickster_god_name
+			TricksterGodNamePossessive = muism_trickster_god_name_possessive
+			TricksterGodSheHe = CHARACTER_SHEHE_HE
+			TricksterGodHerHis = CHARACTER_HERHIS_HIS
+			TricksterGodHerHim = CHARACTER_HERHIM_HIM
+
+			#NightGod
+			NightGodName = muism_night_god_name
+			NightGodNamePossessive = muism_night_god_name_possessive
+			NightGodSheHe = CHARACTER_SHEHE_HE
+			NightGodHerHis = CHARACTER_HERHIS_HIS
+			NightGodHerHim = CHARACTER_HERHIM_HIM
+
+			#WaterGod
+			WaterGodName = muism_water_god_name
+			WaterGodNamePossessive = muism_water_god_name_possessive
+			WaterGodSheHe = CHARACTER_SHEHE_HE
+			WaterGodHerHis = CHARACTER_HERHIS_HIS
+			WaterGodHerHim = CHARACTER_HERHIM_HIM
+
+
+		PantheonTerm = religion_the_gods
+		PantheonTermHasHave = pantheon_term_have
+		GoodGodNames = { muism_high_god_name muism_health_god_name muism_fertility_god_name muism_wealth_god_name muism_knowledge_god_name }
+		DevilName = korean_devil_name
+		DevilNamePossessive = korean_devil_name_possessive
+		DevilSheHe = CHARACTER_SHEHE_HE
+		DevilHerHis = CHARACTER_HERHIS_HIS
+		DevilHerselfHimself = CHARACTER_HIMSELF
+		EvilGodNames = { muism_devil_name }
+		HouseOfWorship = paganism_house_of_worship
+		HouseOfWorshipPlural = paganism_house_of_worship_plural
+		ReligiousSymbol = korean_religious_symbol
+		ReligiousText = korean_religious_text
+		ReligiousHeadName = korean_religious_head_title
+		ReligiousHeadTitleName = korean_religious_head_title_name
+		DevoteeMale = paganism_devotee
+		DevoteeMalePlural = paganism_devoteeplural
+		DevoteeFemale = paganism_devotee
+		DevoteeFemalePlural = paganism_devoteeplural
+		DevoteeNeuter = paganism_devotee
+		DevoteeNeuterPlural = paganism_devoteeplural
+		PriestMale = korean_priest_male
+		PriestMalePlural = korean_priest_male_plural
+		PriestFemale = korean_priest_female
+		PriestFemalePlural = korean_priest_female_plural
+		PriestNeuter = korean_priest_neuter
+		PriestNeuterPlural = korean_priest_neuter_plural
+		AltPriestTermPlural = paganism_priest_alternate_plural
+		BishopMale = korean_bishop_male
+		BishopMalePlural = korean_bishop_male_plural
+		BishopFemale = korean_bishop_female
+		BishopFemalePlural = korean_bishop_female_plural
+		BishopNeuter = korean_bishop_neuter
+		BishopNeuterPlural = korean_bishop_neuter_plural
+		DivineRealm = korean_divine_realm
+		PositiveAfterLife = korean_death_deity_name
+		NegativeAfterLife = korean_death_deity_name
+		WitchGodName = muism_creator_god_name
+		WitchGodHerHis = CHARACTER_HERHIS_HER
+		WitchGodSheHe = CHARACTER_SHEHE_HE
+		WitchGodHerHim = CHARACTER_HERHIM_HER
+		WitchGodMistressMaster = mistress
+		WitchGodMotherFather = mother
+			
+			GHWName = ghw_great_holy_war
+			GHWNamePlural = ghw_great_holy_wars
+			}
+	
+	faiths = {
+		muism = {
+			color = { 0.7 0.1 0.1 } # 204 0 0
+
+			holy_site = socotra
+			holy_site = maldives
+			holy_site = dakhina_desa
+			holy_site = ras_hafun
+			holy_site = suzhou
+
+			doctrine = unreformed_faith_doctrine
+
+			doctrine = tenet_eastern_syncretism
+			doctrine = tenet_ancestor_worship
+			doctrine = tenet_adorcism
+
+			icon = muism
+			reformed_icon = muism
+			
+
+		}
+	}
+}

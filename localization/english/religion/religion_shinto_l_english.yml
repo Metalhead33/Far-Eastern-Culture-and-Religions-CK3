@@ -1,9 +1,7 @@
 ﻿l_english:
- councillor_court_chaplain_shinto_duchy:0 "Tietäjä"
- councillor_court_chaplain_shinto_duchy_possessive:0 "Tietäjä's"
- 
- sami_religion:0 "Noaidevuohta"
- 
+ councillor_court_chaplain_shinto_duchy:0 "Court Shaman"
+ councillor_court_chaplain_shinto_duchy_possessive:0 "Court Shaman's"
+  
  councillor_court_chaplain_japanese_religion_duchy:0 "Court Shaman"
  councillor_court_chaplain_japanese_religion_duchy_possessive:0 "Court Shaman's"
  councillor_court_chaplain_shinto_duchy:0 "Court Shaman"
@@ -22,14 +20,7 @@
  japanese_bishop_female_plural:0 "Ō-Miko"
  japanese_bishop_neuter:0 "Ō-Kannushi"
  japanese_bishop_neuter_plural:0 "Ō-Kannushi"
- 
- holy_order_warriors_of_sacred_lands:0 "Warriors of the sacred lands"
- holy_order_followers_of_keremet:0 "Warriors of the Keremets"
- holy_order_warriors_of_tyus:0 "Warriors of Tyushtya"
- holy_order_warriors_of_the_swan:0 "Warriors of the swan"
- holy_order_faithful_of_torum:0 "Warriors of Num-Torum"
- holy_order_warriors_of_beaivvi:0 "Beaivvi bártnit"
- 
+  
  japanese_religious_symbol:0 "temple"
  shinto_religious_symbol:0 "temple"
  

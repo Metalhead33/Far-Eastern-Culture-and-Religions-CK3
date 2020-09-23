@@ -46,7 +46,7 @@
 		{ name = "holy_order_warriors_of_sacred_lands" }
 	}
 
-	holy_order_maa = { metsanvartija }	
+	holy_order_maa = { samurai }	
 
 	
 			localization = {
@@ -144,7 +144,7 @@
 		DevilSheHe = CHARACTER_SHEHE_HE
 		DevilHerHis = CHARACTER_HERHIS_HIS
 		DevilHerselfHimself = CHARACTER_HIMSELF
-		EvilGodNames = { jshinto_devil_name }
+		EvilGodNames = { shinto_devil_name }
 		HouseOfWorship = paganism_house_of_worship
 		HouseOfWorshipPlural = paganism_house_of_worship_plural
 		ReligiousSymbol = japanese_religious_symbol
