@@ -129,7 +129,7 @@ dynasty_names = {
 		dynasty_title_names = yes
 
 		ethnicities = {
-			10 = asian
+			10 = east_asian
 		}
 	}
 }
