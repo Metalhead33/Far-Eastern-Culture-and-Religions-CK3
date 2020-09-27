@@ -1,0 +1,400 @@
+namespace = jewish_courtier
+
+
+# Jewish courtier - Ashkenazi Intrigue
+jewish_courtier.0001 = {
+	type = character_event
+	title = jewish_courtier.intrigue.t
+	desc = jewish_courtier.intrigue.desc
+	theme = learning
+	left_portrait = {
+		character = scope:new_courtier
+		animation = personality_rational
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		create_character = {
+			employer = root
+			template = ashkenazi_intrigue_character
+			save_scope_as = new_courtier
+		}
+	}
+
+	option = { #Welcome!
+		name = jewish_courtier.accept
+		scope:new_courtier = {
+			add_opinion = {
+				target = root
+				modifier = friendliness_opinion
+				opinion = 15
+			}
+		}
+	}
+
+	option = { #Send away
+		name = jewish_courtier.banish
+		scope:new_courtier = {
+			move_to_pool = yes
+			add_opinion = {
+				target = root
+				modifier = disappointed_opinion
+				opinion = -10
+			}
+		}
+	}
+}
+
+# Jewish courtier - Ashkenazi Stewardship
+jewish_courtier.0002 = {
+	type = character_event
+	title = jewish_courtier.steward.t
+	desc = jewish_courtier.steward.desc
+	theme = learning
+	left_portrait = {
+		character = scope:new_courtier
+		animation = personality_rational
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		create_character = {
+			employer = root
+			template = ashkenazi_steward_character
+			save_scope_as = new_courtier
+		}
+	}
+
+	option = { #Welcome!
+		name = jewish_courtier.accept
+		scope:new_courtier = {
+			add_opinion = {
+				target = root
+				modifier = friendliness_opinion
+				opinion = 15
+			}
+		}
+	}
+
+	option = { #Send away
+		name = jewish_courtier.banish
+		scope:new_courtier = {
+			move_to_pool = yes
+			add_opinion = {
+				target = root
+				modifier = disappointed_opinion
+				opinion = -10
+			}
+		}
+	}
+}
+
+# Jewish courtier - Ashkenazi Diploamcy
+jewish_courtier.0003 = {
+	type = character_event
+	title = jewish_courtier.diplomat.t
+	desc = jewish_courtier.diplomat.desc
+	theme = learning
+	left_portrait = {
+		character = scope:new_courtier
+		animation = personality_rational
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		create_character = {
+			employer = root
+			template = ashkenazi_diplomat_character
+			save_scope_as = new_courtier
+		}
+	}
+
+	option = { #Welcome!
+		name = jewish_courtier.accept
+		scope:new_courtier = {
+			add_opinion = {
+				target = root
+				modifier = friendliness_opinion
+				opinion = 15
+			}
+		}
+	}
+
+	option = { #Send away
+		name = jewish_courtier.banish
+		scope:new_courtier = {
+			move_to_pool = yes
+			add_opinion = {
+				target = root
+				modifier = disappointed_opinion
+				opinion = -10
+			}
+		}
+	}
+}
+
+
+# Jewish courtier - Sephardic Intrigue
+jewish_courtier.0004 = {
+	type = character_event
+	title = jewish_courtier.intrigue.t
+	desc = jewish_courtier.intrigue.desc
+	theme = learning
+	left_portrait = {
+		character = scope:new_courtier
+		animation = personality_rational
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		create_character = {
+			employer = root
+			template = sephardi_intrigue_character
+			save_scope_as = new_courtier
+		}
+	}
+
+	option = { #Welcome!
+		name = jewish_courtier.accept
+		scope:new_courtier = {
+			add_opinion = {
+				target = root
+				modifier = friendliness_opinion
+				opinion = 15
+			}
+		}
+	}
+
+	option = { #Send away
+		name = jewish_courtier.banish
+		scope:new_courtier = {
+			move_to_pool = yes
+			add_opinion = {
+				target = root
+				modifier = disappointed_opinion
+				opinion = -10
+			}
+		}
+	}
+}
+
+# Jewish courtier - Sephardic Stewardship
+jewish_courtier.0005 = {
+	type = character_event
+	title = jewish_courtier.steward.t
+	desc = jewish_courtier.steward.desc
+	theme = learning
+	left_portrait = {
+		character = scope:new_courtier
+		animation = personality_rational
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		create_character = {
+			employer = root
+			template = sephardi_steward_character
+			save_scope_as = new_courtier
+		}
+	}
+
+	option = { #Welcome!
+		name = jewish_courtier.accept
+		scope:new_courtier = {
+			add_opinion = {
+				target = root
+				modifier = friendliness_opinion
+				opinion = 15
+			}
+		}
+	}
+
+	option = { #Send away
+		name = jewish_courtier.banish
+		scope:new_courtier = {
+			move_to_pool = yes
+			add_opinion = {
+				target = root
+				modifier = disappointed_opinion
+				opinion = -10
+			}
+		}
+	}
+}
+
+# Jewish courtier - Sephardic Diploamcy
+jewish_courtier.0006 = {
+	type = character_event
+	title = jewish_courtier.diplomat.t
+	desc = jewish_courtier.diplomat.desc
+	theme = learning
+	left_portrait = {
+		character = scope:new_courtier
+		animation = personality_rational
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		create_character = {
+			employer = root
+			template = sephardi_diplomat_character
+			save_scope_as = new_courtier
+		}
+	}
+
+	option = { #Welcome!
+		name = jewish_courtier.accept
+		scope:new_courtier = {
+			add_opinion = {
+				target = root
+				modifier = friendliness_opinion
+				opinion = 15
+			}
+		}
+	}
+
+	option = { #Send away
+		name = jewish_courtier.banish
+		scope:new_courtier = {
+			move_to_pool = yes
+			add_opinion = {
+				target = root
+				modifier = disappointed_opinion
+				opinion = -10
+			}
+		}
+	}
+}
+
+
+# Jewish courtier - Kaifeng Intrigue
+jewish_courtier.0007 = {
+	type = character_event
+	title = jewish_courtier.intrigue.t
+	desc = jewish_courtier.intrigue.desc
+	theme = learning
+	left_portrait = {
+		character = scope:new_courtier
+		animation = personality_rational
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		create_character = {
+			employer = root
+			template = kaifeng_intrigue_character
+			save_scope_as = new_courtier
+		}
+	}
+
+	option = { #Welcome!
+		name = jewish_courtier.accept
+		scope:new_courtier = {
+			add_opinion = {
+				target = root
+				modifier = friendliness_opinion
+				opinion = 15
+			}
+		}
+	}
+
+	option = { #Send away
+		name = jewish_courtier.banish
+		scope:new_courtier = {
+			move_to_pool = yes
+			add_opinion = {
+				target = root
+				modifier = disappointed_opinion
+				opinion = -10
+			}
+		}
+	}
+}
+
+# Jewish courtier - Kaifeng Stewardship
+jewish_courtier.0008 = {
+	type = character_event
+	title = jewish_courtier.steward.t
+	desc = jewish_courtier.steward.desc
+	theme = learning
+	left_portrait = {
+		character = scope:new_courtier
+		animation = personality_rational
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		create_character = {
+			employer = root
+			template = kaifeng_steward_character
+			save_scope_as = new_courtier
+		}
+	}
+
+	option = { #Welcome!
+		name = jewish_courtier.accept
+		scope:new_courtier = {
+			add_opinion = {
+				target = root
+				modifier = friendliness_opinion
+				opinion = 15
+			}
+		}
+	}
+
+	option = { #Send away
+		name = jewish_courtier.banish
+		scope:new_courtier = {
+			move_to_pool = yes
+			add_opinion = {
+				target = root
+				modifier = disappointed_opinion
+				opinion = -10
+			}
+		}
+	}
+}
+
+# Jewish courtier - Kaifeng Diploamcy
+jewish_courtier.0009 = {
+	type = character_event
+	title = jewish_courtier.diplomat.t
+	desc = jewish_courtier.diplomat.desc
+	theme = learning
+	left_portrait = {
+		character = scope:new_courtier
+		animation = personality_rational
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		create_character = {
+			employer = root
+			template = kaifeng_diplomat_character
+			save_scope_as = new_courtier
+		}
+	}
+
+	option = { #Welcome!
+		name = jewish_courtier.accept
+		scope:new_courtier = {
+			add_opinion = {
+				target = root
+				modifier = friendliness_opinion
+				opinion = 15
+			}
+		}
+	}
+
+	option = { #Send away
+		name = jewish_courtier.banish
+		scope:new_courtier = {
+			move_to_pool = yes
+			add_opinion = {
+				target = root
+				modifier = disappointed_opinion
+				opinion = -10
+			}
+		}
+	}
+}

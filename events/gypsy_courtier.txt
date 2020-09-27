@@ -1,0 +1,443 @@
+namespace = gypsy_courtier
+
+
+# Gypsy courtier - Indian
+gypsy_courtier.0001 = {
+	type = character_event
+	title = gypsy_courtier.intrigue.t
+	desc = gypsy_courtier.intrigue.desc
+	theme = learning
+	left_portrait = {
+		character = scope:new_courtier
+		animation = personality_rational
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		create_character = {
+			employer = root
+			template = gypsy_indian_intrigue_character
+			save_scope_as = new_courtier
+		}
+	}
+
+	option = { #Welcome!
+		name = gypsy_courtier.accept
+		scope:new_courtier = {
+			add_opinion = {
+				target = root
+				modifier = friendliness_opinion
+				opinion = 15
+			}
+		}
+	}
+
+	option = { #Send away
+		name = gypsy_courtier.banish
+		scope:new_courtier = {
+			move_to_pool = yes
+			add_opinion = {
+				target = root
+				modifier = disappointed_opinion
+				opinion = -10
+			}
+		}
+	}
+}
+
+# Gypsy courtier - Egyptian
+gypsy_courtier.0002 = {
+	type = character_event
+	title = gypsy_courtier.intrigue.t
+	desc = gypsy_courtier.intrigue.desc
+	theme = learning
+	left_portrait = {
+		character = scope:new_courtier
+		animation = personality_rational
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		create_character = {
+			employer = root
+			template = gypsy_egypt_intrigue_character
+			save_scope_as = new_courtier
+		}
+	}
+
+	option = { #Welcome!
+		name = gypsy_courtier.accept
+		scope:new_courtier = {
+			add_opinion = {
+				target = root
+				modifier = friendliness_opinion
+				opinion = 15
+			}
+		}
+	}
+
+	option = { #Send away
+		name = gypsy_courtier.banish
+		scope:new_courtier = {
+			move_to_pool = yes
+			add_opinion = {
+				target = root
+				modifier = disappointed_opinion
+				opinion = -10
+			}
+		}
+	}
+}
+
+# Gypsy courtier - Caucasus
+gypsy_courtier.0003 = {
+	type = character_event
+	title = gypsy_courtier.intrigue.t
+	desc = gypsy_courtier.intrigue.desc
+	theme = learning
+	left_portrait = {
+		character = scope:new_courtier
+		animation = personality_rational
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		create_character = {
+			employer = root
+			template = gypsy_caucasus_intrigue_character
+			save_scope_as = new_courtier
+		}
+	}
+
+	option = { #Welcome!
+		name = gypsy_courtier.accept
+		scope:new_courtier = {
+			add_opinion = {
+				target = root
+				modifier = friendliness_opinion
+				opinion = 15
+			}
+		}
+	}
+
+	option = { #Send away
+		name = gypsy_courtier.banish
+		scope:new_courtier = {
+			move_to_pool = yes
+			add_opinion = {
+				target = root
+				modifier = disappointed_opinion
+				opinion = -10
+			}
+		}
+	}
+}
+
+# Gypsy courtier - Hungary
+gypsy_courtier.0004 = {
+	type = character_event
+	title = gypsy_courtier.intrigue.t
+	desc = gypsy_courtier.intrigue.desc
+	theme = learning
+	left_portrait = {
+		character = scope:new_courtier
+		animation = personality_rational
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		create_character = {
+			employer = root
+			template = gypsy_hun_intrigue_character
+			save_scope_as = new_courtier
+		}
+	}
+
+	option = { #Welcome!
+		name = gypsy_courtier.accept
+		scope:new_courtier = {
+			add_opinion = {
+				target = root
+				modifier = friendliness_opinion
+				opinion = 15
+			}
+		}
+	}
+
+	option = { #Send away
+		name = gypsy_courtier.banish
+		scope:new_courtier = {
+			move_to_pool = yes
+			add_opinion = {
+				target = root
+				modifier = disappointed_opinion
+				opinion = -10
+			}
+		}
+	}
+}
+
+
+# Gypsy courtier - Romania
+gypsy_courtier.0005 = {
+	type = character_event
+	title = gypsy_courtier.intrigue.t
+	desc = gypsy_courtier.intrigue.desc
+	theme = learning
+	left_portrait = {
+		character = scope:new_courtier
+		animation = personality_rational
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		create_character = {
+			employer = root
+			template = gypsy_romanian_intrigue_character
+			save_scope_as = new_courtier
+		}
+	}
+
+	option = { #Welcome!
+		name = gypsy_courtier.accept
+		scope:new_courtier = {
+			add_opinion = {
+				target = root
+				modifier = friendliness_opinion
+				opinion = 15
+			}
+		}
+	}
+
+	option = { #Send away
+		name = gypsy_courtier.banish
+		scope:new_courtier = {
+			move_to_pool = yes
+			add_opinion = {
+				target = root
+				modifier = disappointed_opinion
+				opinion = -10
+			}
+		}
+	}
+}
+
+# Gypsy courtier - Yugoslavia
+gypsy_courtier.0006 = {
+	type = character_event
+	title = gypsy_courtier.intrigue.t
+	desc = gypsy_courtier.intrigue.desc
+	theme = learning
+	left_portrait = {
+		character = scope:new_courtier
+		animation = personality_rational
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		create_character = {
+			employer = root
+			template = gypsy_slav_intrigue_character
+			save_scope_as = new_courtier
+		}
+	}
+
+	option = { #Welcome!
+		name = gypsy_courtier.accept
+		scope:new_courtier = {
+			add_opinion = {
+				target = root
+				modifier = friendliness_opinion
+				opinion = 15
+			}
+		}
+	}
+
+	option = { #Send away
+		name = gypsy_courtier.banish
+		scope:new_courtier = {
+			move_to_pool = yes
+			add_opinion = {
+				target = root
+				modifier = disappointed_opinion
+				opinion = -10
+			}
+		}
+	}
+}
+
+# Gypsy courtier - Greece
+gypsy_courtier.0007 = {
+	type = character_event
+	title = gypsy_courtier.intrigue.t
+	desc = gypsy_courtier.intrigue.desc
+	theme = learning
+	left_portrait = {
+		character = scope:new_courtier
+		animation = personality_rational
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		create_character = {
+			employer = root
+			template = gypsy_greek_intrigue_character
+			save_scope_as = new_courtier
+		}
+	}
+
+	option = { #Welcome!
+		name = gypsy_courtier.accept
+		scope:new_courtier = {
+			add_opinion = {
+				target = root
+				modifier = friendliness_opinion
+				opinion = 15
+			}
+		}
+	}
+
+	option = { #Send away
+		name = gypsy_courtier.banish
+		scope:new_courtier = {
+			move_to_pool = yes
+			add_opinion = {
+				target = root
+				modifier = disappointed_opinion
+				opinion = -10
+			}
+		}
+	}
+}
+
+# Gypsy courtier - Iberia
+gypsy_courtier.0008 = {
+	type = character_event
+	title = gypsy_courtier.intrigue.t
+	desc = gypsy_courtier.intrigue.desc
+	theme = learning
+	left_portrait = {
+		character = scope:new_courtier
+		animation = personality_rational
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		create_character = {
+			employer = root
+			template = gypsy_iberian_intrigue_character
+			save_scope_as = new_courtier
+		}
+	}
+
+	option = { #Welcome!
+		name = gypsy_courtier.accept
+		scope:new_courtier = {
+			add_opinion = {
+				target = root
+				modifier = friendliness_opinion
+				opinion = 15
+			}
+		}
+	}
+
+	option = { #Send away
+		name = gypsy_courtier.banish
+		scope:new_courtier = {
+			move_to_pool = yes
+			add_opinion = {
+				target = root
+				modifier = disappointed_opinion
+				opinion = -10
+			}
+		}
+	}
+}
+
+# Gypsy courtier - France
+gypsy_courtier.0009 = {
+	type = character_event
+	title = gypsy_courtier.intrigue.t
+	desc = gypsy_courtier.intrigue.desc
+	theme = learning
+	left_portrait = {
+		character = scope:new_courtier
+		animation = personality_rational
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		create_character = {
+			employer = root
+			template = gypsy_french_intrigue_character
+			save_scope_as = new_courtier
+		}
+	}
+
+	option = { #Welcome!
+		name = gypsy_courtier.accept
+		scope:new_courtier = {
+			add_opinion = {
+				target = root
+				modifier = friendliness_opinion
+				opinion = 15
+			}
+		}
+	}
+
+	option = { #Send away
+		name = gypsy_courtier.banish
+		scope:new_courtier = {
+			move_to_pool = yes
+			add_opinion = {
+				target = root
+				modifier = disappointed_opinion
+				opinion = -10
+			}
+		}
+	}
+}
+
+# Gypsy courtier - Italy
+gypsy_courtier.0010 = {
+	type = character_event
+	title = gypsy_courtier.intrigue.t
+	desc = gypsy_courtier.intrigue.desc
+	theme = learning
+	left_portrait = {
+		character = scope:new_courtier
+		animation = personality_rational
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		create_character = {
+			employer = root
+			template = gypsy_italian_intrigue_character
+			save_scope_as = new_courtier
+		}
+	}
+
+	option = { #Welcome!
+		name = gypsy_courtier.accept
+		scope:new_courtier = {
+			add_opinion = {
+				target = root
+				modifier = friendliness_opinion
+				opinion = 15
+			}
+		}
+	}
+
+	option = { #Send away
+		name = gypsy_courtier.banish
+		scope:new_courtier = {
+			move_to_pool = yes
+			add_opinion = {
+				target = root
+				modifier = disappointed_opinion
+				opinion = -10
+			}
+		}
+	}
+}

@@ -1,0 +1,145 @@
+﻿
+ashkenazi_intrigue_character = {
+	age = { 30 50 }
+	gender_female_chance = root_faith_dominant_gender_female_chance
+	culture = culture:ashkenazi
+	faith = "rabbinism"
+	trait = education_intrigue_4
+	trait = shrewd
+	trait = schemer
+	random_traits = yes
+	intrigue = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	dynasty = none
+}
+
+ashkenazi_steward_character = {
+	age = { 30 50 }
+	gender_female_chance = root_faith_dominant_gender_female_chance
+	culture = culture:ashkenazi
+	faith = "rabbinism"
+	trait = education_stewardship_4
+	trait = shrewd
+	trait = administrator
+	random_traits = yes
+	stewardship = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	dynasty = none
+}
+
+ashkenazi_diplomat_character = {
+	age = { 30 50 }
+	gender_female_chance = root_faith_dominant_gender_female_chance
+	culture = culture:ashkenazi
+	faith = "rabbinism"
+	trait = education_diplomacy_4
+	trait = shrewd
+	trait = diplomat
+	random_traits = yes
+	diploamcy = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	dynasty = none
+}
+
+
+sephardi_intrigue_character = {
+	age = { 30 50 }
+	gender_female_chance = root_faith_dominant_gender_female_chance
+	culture = culture:sephardi
+	faith = "rabbinism"
+	trait = education_intrigue_4
+	trait = shrewd
+	trait = schemer
+	random_traits = yes
+	intrigue = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	dynasty = none
+}
+
+sephardi_steward_character = {
+	age = { 30 50 }
+	gender_female_chance = root_faith_dominant_gender_female_chance
+	culture = culture:sephardi
+	faith = "rabbinism"
+	trait = education_stewardship_4
+	trait = shrewd
+	trait = administrator
+	random_traits = yes
+	stewardship = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	dynasty = none
+}
+
+sephardi_diplomat_character = {
+	age = { 30 50 }
+	gender_female_chance = root_faith_dominant_gender_female_chance
+	culture = culture:sephardi
+	faith = "rabbinism"
+	trait = education_diplomacy_4
+	trait = shrewd
+	trait = diplomat
+	random_traits = yes
+	diploamcy = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	dynasty = none
+}
+
+kaifeng_intrigue_character = {
+	age = { 30 50 }
+	gender_female_chance = root_faith_dominant_gender_female_chance
+	culture = culture:kaifeng_jew
+	faith = "rabbinism"
+	trait = education_intrigue_4
+	trait = shrewd
+	trait = schemer
+	random_traits = yes
+	intrigue = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	dynasty = none
+}
+
+kaifeng_steward_character = {
+	age = { 30 50 }
+	gender_female_chance = root_faith_dominant_gender_female_chance
+	culture = culture:kaifeng_jew
+	faith = "rabbinism"
+	trait = education_stewardship_4
+	trait = shrewd
+	trait = administrator
+	random_traits = yes
+	stewardship = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	dynasty = none
+}
+
+kaifeng_diplomat_character = {
+	age = { 30 50 }
+	gender_female_chance = root_faith_dominant_gender_female_chance
+	culture = culture:kaifeng_jew
+	faith = "rabbinism"
+	trait = education_diplomacy_4
+	trait = shrewd
+	trait = diplomat
+	random_traits = yes
+	diploamcy = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	dynasty = none
+}
