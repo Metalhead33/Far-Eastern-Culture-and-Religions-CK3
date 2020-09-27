@@ -23,23 +23,18 @@ jewish_courtier.0001 = {
 
 	option = { #Welcome!
 		name = jewish_courtier.accept
-		scope:new_courtier = {
-			add_opinion = {
-				target = root
-				modifier = friendliness_opinion
-				opinion = 15
-			}
+		pay_short_term_gold = {
+			target = scope:new_courtier
+			gold = high_skill_court_physician_cost
 		}
+
 	}
 
 	option = { #Send away
 		name = jewish_courtier.banish
 		scope:new_courtier = {
-			move_to_pool = yes
-			add_opinion = {
-				target = root
-				modifier = disappointed_opinion
-				opinion = -10
+			death = {
+				death_reason = death_disappearance
 			}
 		}
 	}
@@ -67,23 +62,18 @@ jewish_courtier.0002 = {
 
 	option = { #Welcome!
 		name = jewish_courtier.accept
-		scope:new_courtier = {
-			add_opinion = {
-				target = root
-				modifier = friendliness_opinion
-				opinion = 15
-			}
+		pay_short_term_gold = {
+			target = scope:new_courtier
+			gold = high_skill_court_physician_cost
 		}
+
 	}
 
 	option = { #Send away
 		name = jewish_courtier.banish
 		scope:new_courtier = {
-			move_to_pool = yes
-			add_opinion = {
-				target = root
-				modifier = disappointed_opinion
-				opinion = -10
+			death = {
+				death_reason = death_disappearance
 			}
 		}
 	}
@@ -111,23 +101,18 @@ jewish_courtier.0003 = {
 
 	option = { #Welcome!
 		name = jewish_courtier.accept
-		scope:new_courtier = {
-			add_opinion = {
-				target = root
-				modifier = friendliness_opinion
-				opinion = 15
-			}
+		pay_short_term_gold = {
+			target = scope:new_courtier
+			gold = high_skill_court_physician_cost
 		}
+
 	}
 
 	option = { #Send away
 		name = jewish_courtier.banish
 		scope:new_courtier = {
-			move_to_pool = yes
-			add_opinion = {
-				target = root
-				modifier = disappointed_opinion
-				opinion = -10
+			death = {
+				death_reason = death_disappearance
 			}
 		}
 	}
@@ -156,23 +141,18 @@ jewish_courtier.0004 = {
 
 	option = { #Welcome!
 		name = jewish_courtier.accept
-		scope:new_courtier = {
-			add_opinion = {
-				target = root
-				modifier = friendliness_opinion
-				opinion = 15
-			}
+		pay_short_term_gold = {
+			target = scope:new_courtier
+			gold = high_skill_court_physician_cost
 		}
+
 	}
 
 	option = { #Send away
 		name = jewish_courtier.banish
 		scope:new_courtier = {
-			move_to_pool = yes
-			add_opinion = {
-				target = root
-				modifier = disappointed_opinion
-				opinion = -10
+			death = {
+				death_reason = death_disappearance
 			}
 		}
 	}
@@ -200,23 +180,18 @@ jewish_courtier.0005 = {
 
 	option = { #Welcome!
 		name = jewish_courtier.accept
-		scope:new_courtier = {
-			add_opinion = {
-				target = root
-				modifier = friendliness_opinion
-				opinion = 15
-			}
+		pay_short_term_gold = {
+			target = scope:new_courtier
+			gold = high_skill_court_physician_cost
 		}
+
 	}
 
 	option = { #Send away
 		name = jewish_courtier.banish
 		scope:new_courtier = {
-			move_to_pool = yes
-			add_opinion = {
-				target = root
-				modifier = disappointed_opinion
-				opinion = -10
+			death = {
+				death_reason = death_disappearance
 			}
 		}
 	}
@@ -244,23 +219,18 @@ jewish_courtier.0006 = {
 
 	option = { #Welcome!
 		name = jewish_courtier.accept
-		scope:new_courtier = {
-			add_opinion = {
-				target = root
-				modifier = friendliness_opinion
-				opinion = 15
-			}
+		pay_short_term_gold = {
+			target = scope:new_courtier
+			gold = high_skill_court_physician_cost
 		}
+
 	}
 
 	option = { #Send away
 		name = jewish_courtier.banish
 		scope:new_courtier = {
-			move_to_pool = yes
-			add_opinion = {
-				target = root
-				modifier = disappointed_opinion
-				opinion = -10
+			death = {
+				death_reason = death_disappearance
 			}
 		}
 	}
@@ -289,23 +259,18 @@ jewish_courtier.0007 = {
 
 	option = { #Welcome!
 		name = jewish_courtier.accept
-		scope:new_courtier = {
-			add_opinion = {
-				target = root
-				modifier = friendliness_opinion
-				opinion = 15
-			}
+		pay_short_term_gold = {
+			target = scope:new_courtier
+			gold = high_skill_court_physician_cost
 		}
+
 	}
 
 	option = { #Send away
 		name = jewish_courtier.banish
 		scope:new_courtier = {
-			move_to_pool = yes
-			add_opinion = {
-				target = root
-				modifier = disappointed_opinion
-				opinion = -10
+			death = {
+				death_reason = death_disappearance
 			}
 		}
 	}
@@ -333,23 +298,18 @@ jewish_courtier.0008 = {
 
 	option = { #Welcome!
 		name = jewish_courtier.accept
-		scope:new_courtier = {
-			add_opinion = {
-				target = root
-				modifier = friendliness_opinion
-				opinion = 15
-			}
+		pay_short_term_gold = {
+			target = scope:new_courtier
+			gold = high_skill_court_physician_cost
 		}
+
 	}
 
 	option = { #Send away
 		name = jewish_courtier.banish
 		scope:new_courtier = {
-			move_to_pool = yes
-			add_opinion = {
-				target = root
-				modifier = disappointed_opinion
-				opinion = -10
+			death = {
+				death_reason = death_disappearance
 			}
 		}
 	}
@@ -377,23 +337,18 @@ jewish_courtier.0009 = {
 
 	option = { #Welcome!
 		name = jewish_courtier.accept
-		scope:new_courtier = {
-			add_opinion = {
-				target = root
-				modifier = friendliness_opinion
-				opinion = 15
-			}
+		pay_short_term_gold = {
+			target = scope:new_courtier
+			gold = high_skill_court_physician_cost
 		}
+
 	}
 
 	option = { #Send away
 		name = jewish_courtier.banish
 		scope:new_courtier = {
-			move_to_pool = yes
-			add_opinion = {
-				target = root
-				modifier = disappointed_opinion
-				opinion = -10
+			death = {
+				death_reason = death_disappearance
 			}
 		}
 	}

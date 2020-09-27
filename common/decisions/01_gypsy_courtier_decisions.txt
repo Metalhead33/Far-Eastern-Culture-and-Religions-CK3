@@ -1,0 +1,459 @@
+﻿hire_gypsy_spymaster_india = {
+	picture = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
+
+	desc = hire_gypsy_spymaster_decision_desc
+	selection_tooltip = hire_gypsy_spymaster_tooltip
+
+	ai_check_interval = 0
+
+	is_shown = {
+		is_ruler = yes
+		OR = {
+		has_culture_group = culture_group:indo_aryan_group
+		has_culture_group = culture_group:dravidian_group
+		}
+	}
+	is_valid = {
+		is_ruler = yes
+		OR = {
+		has_culture_group = culture_group:indo_aryan_group
+		has_culture_group = culture_group:dravidian_group
+		}
+	}
+
+	cooldown = { days = 3650 }
+
+	is_valid_showing_failures_only = {
+		is_available = yes
+	}
+
+	effect = {
+
+		trigger_event = {
+			id = gypsy_courtier.0001
+			days = 10
+		}
+		custom_tooltip = hire_physician_decision_effect_tooltip
+
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+hire_gypsy_spymaster_egypt = {
+	picture = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
+
+	desc = hire_gypsy_spymaster_decision_desc
+	selection_tooltip = hire_gypsy_spymaster_tooltip
+
+	ai_check_interval = 0
+
+	is_shown = {
+		is_ruler = yes
+		OR = {
+		has_culture_group = culture_group:arabic_group
+		has_culture_group = culture_group:berber_group
+		has_culture_group = culture_group:iranian_group
+		has_culture = culture:turkish
+		has_culture = culture:assyrian
+		}
+	}
+	is_valid = {
+		is_ruler = yes
+		OR = {
+		has_culture_group = culture_group:arabic_group
+		has_culture_group = culture_group:berber_group
+		has_culture_group = culture_group:iranian_group
+		has_culture = culture:turkish
+		has_culture = culture:assyrian
+		}
+	}
+
+	cooldown = { days = 3650 }
+
+	is_valid_showing_failures_only = {
+		is_available = yes
+	}
+
+	effect = {
+
+		trigger_event = {
+			id = gypsy_courtier.0002
+			days = 10
+		}
+		custom_tooltip = hire_physician_decision_effect_tooltip
+
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+hire_gypsy_spymaster_caucasus = {
+	picture = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
+
+	desc = hire_gypsy_spymaster_decision_desc
+	selection_tooltip = hire_gypsy_spymaster_tooltip
+
+	ai_check_interval = 0
+
+	is_shown = {
+		is_ruler = yes
+		OR = {
+		has_culture = culture:armenian
+		has_culture = culture:georgian
+		has_culture = culture:alan
+		}
+	}
+	is_valid = {
+		is_ruler = yes
+		OR = {
+		has_culture = culture:armenian
+		has_culture = culture:georgian
+		has_culture = culture:alan
+		}
+	}
+
+	cooldown = { days = 3650 }
+
+	is_valid_showing_failures_only = {
+		is_available = yes
+	}
+
+	effect = {
+
+		trigger_event = {
+			id = gypsy_courtier.0003
+			days = 10
+		}
+		custom_tooltip = hire_physician_decision_effect_tooltip
+
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+hire_gypsy_spymaster_hun = {
+	picture = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
+
+	desc = hire_gypsy_spymaster_decision_desc
+	selection_tooltip = hire_gypsy_spymaster_tooltip
+
+	ai_check_interval = 0
+
+	is_shown = {
+		is_ruler = yes
+		has_culture_group = culture_group:magyar_group
+	}
+	is_valid = {
+		is_ruler = yes
+		has_culture_group = culture_group:magyar_group
+	}
+
+	cooldown = { days = 3650 }
+
+	is_valid_showing_failures_only = {
+		is_available = yes
+	}
+
+	effect = {
+
+		trigger_event = {
+			id = gypsy_courtier.0004
+			days = 10
+		}
+		custom_tooltip = hire_physician_decision_effect_tooltip
+
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+hire_gypsy_spymaster_romania = {
+	picture = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
+
+	desc = hire_gypsy_spymaster_decision_desc
+	selection_tooltip = hire_gypsy_spymaster_tooltip
+
+	ai_check_interval = 0
+
+	is_shown = {
+		is_ruler = yes
+		has_culture = culture:vlach
+	}
+	is_valid = {
+		is_ruler = yes
+		has_culture = culture:vlach
+	}
+
+	cooldown = { days = 3650 }
+
+	is_valid_showing_failures_only = {
+		is_available = yes
+	}
+
+	effect = {
+
+		trigger_event = {
+			id = gypsy_courtier.0005
+			days = 10
+		}
+		custom_tooltip = hire_physician_decision_effect_tooltip
+
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+hire_gypsy_spymaster_slav = {
+	picture = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
+
+	desc = hire_gypsy_spymaster_decision_desc
+	selection_tooltip = hire_gypsy_spymaster_tooltip
+
+	ai_check_interval = 0
+
+	is_shown = {
+		is_ruler = yes
+		OR = {
+		has_culture_group = culture_group:south_slavic_group
+		has_culture_group = culture_group:west_slavic_group
+		has_culture_group = culture_group:east_slavic_group
+		}
+	}
+	is_valid = {
+		is_ruler = yes
+		OR = {
+		has_culture_group = culture_group:south_slavic_group
+		has_culture_group = culture_group:west_slavic_group
+		has_culture_group = culture_group:east_slavic_group
+		}
+	}
+
+	cooldown = { days = 3650 }
+
+	is_valid_showing_failures_only = {
+		is_available = yes
+	}
+
+	effect = {
+
+		trigger_event = {
+			id = gypsy_courtier.0006
+			days = 10
+		}
+		custom_tooltip = hire_physician_decision_effect_tooltip
+
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+hire_gypsy_spymaster_greece = {
+	picture = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
+
+	desc = hire_gypsy_spymaster_decision_desc
+	selection_tooltip = hire_gypsy_spymaster_tooltip
+
+	ai_check_interval = 0
+
+	is_shown = {
+		is_ruler = yes
+		has_culture = culture:greek
+	}
+	is_valid = {
+		is_ruler = yes
+		has_culture = culture:greek
+	}
+
+	cooldown = { days = 3650 }
+
+	is_valid_showing_failures_only = {
+		is_available = yes
+	}
+
+	effect = {
+
+		trigger_event = {
+			id = gypsy_courtier.0007
+			days = 10
+		}
+		custom_tooltip = hire_physician_decision_effect_tooltip
+
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+hire_gypsy_spymaster_iberia = {
+	picture = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
+
+	desc = hire_gypsy_spymaster_decision_desc
+	selection_tooltip = hire_gypsy_spymaster_tooltip
+
+	ai_check_interval = 0
+
+	is_shown = {
+		is_ruler = yes
+		has_culture_group = culture_group:iberian_group
+	}
+	is_valid = {
+		is_ruler = yes
+		has_culture_group = culture_group:iberian_group
+	}
+
+	cooldown = { days = 3650 }
+
+	is_valid_showing_failures_only = {
+		is_available = yes
+	}
+
+	effect = {
+
+		trigger_event = {
+			id = gypsy_courtier.0008
+			days = 10
+		}
+		custom_tooltip = hire_physician_decision_effect_tooltip
+
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+hire_gypsy_spymaster_france = {
+	picture = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
+
+	desc = hire_gypsy_spymaster_decision_desc
+	selection_tooltip = hire_gypsy_spymaster_tooltip
+
+	ai_check_interval = 0
+
+	is_shown = {
+		is_ruler = yes
+		has_culture_group = culture_group:frankish_group
+	}
+	is_valid = {
+		is_ruler = yes
+		has_culture_group = culture_group:frankish_group
+	}
+
+	cooldown = { days = 3650 }
+
+	is_valid_showing_failures_only = {
+		is_available = yes
+	}
+
+	effect = {
+
+		trigger_event = {
+			id = gypsy_courtier.0009
+			days = 10
+		}
+		custom_tooltip = hire_physician_decision_effect_tooltip
+
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+
+hire_gypsy_spymaster_italy = {
+	picture = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
+
+	desc = hire_gypsy_spymaster_decision_desc
+	selection_tooltip = hire_gypsy_spymaster_tooltip
+
+	ai_check_interval = 0
+
+	is_shown = {
+		is_ruler = yes
+		AND = {
+		has_culture_group = culture_group:latin_group
+		NOT = { has_culture = culture:vlach }
+		}
+	}
+	is_valid = {
+		is_ruler = yes
+		AND = {
+		has_culture_group = culture_group:latin_group
+		NOT = { has_culture = culture:vlach }
+		}
+	}
+
+	cooldown = { days = 3650 }
+
+	is_valid_showing_failures_only = {
+		is_available = yes
+	}
+
+	effect = {
+
+		trigger_event = {
+			id = gypsy_courtier.0010
+			days = 10
+		}
+		custom_tooltip = hire_physician_decision_effect_tooltip
+
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
