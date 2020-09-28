@@ -43,7 +43,7 @@
 			id = jewish_courtier.0001
 			days = 10
 		}
-		custom_tooltip = hire_physician_decision_effect_tooltip
+		custom_tooltip = hire_jew_decision_effect_tooltip
 
 	}
 	
@@ -100,7 +100,7 @@ hire_jewish_steward_ashkenazi = {
 			id = jewish_courtier.0002
 			days = 10
 		}
-		custom_tooltip = hire_physician_decision_effect_tooltip
+		custom_tooltip = hire_jew_decision_effect_tooltip
 
 	}
 	
@@ -158,7 +158,7 @@ hire_jewish_diplomat_ashkenazi = {
 			id = jewish_courtier.0003
 			days = 10
 		}
-		custom_tooltip = hire_physician_decision_effect_tooltip
+		custom_tooltip = hire_jew_decision_effect_tooltip
 
 	}
 	
@@ -218,7 +218,7 @@ hire_jewish_spymaster_sephardi = {
 			id = jewish_courtier.0004
 			days = 10
 		}
-		custom_tooltip = hire_physician_decision_effect_tooltip
+		custom_tooltip = hire_jew_decision_effect_tooltip
 
 	}
 	
@@ -277,7 +277,7 @@ hire_jewish_steward_sephardi = {
 			id = jewish_courtier.0005
 			days = 10
 		}
-		custom_tooltip = hire_physician_decision_effect_tooltip
+		custom_tooltip = hire_jew_decision_effect_tooltip
 
 	}
 	
@@ -337,7 +337,7 @@ hire_jewish_diplomat_sephardi = {
 			id = jewish_courtier.0006
 			days = 10
 		}
-		custom_tooltip = hire_physician_decision_effect_tooltip
+		custom_tooltip = hire_jew_decision_effect_tooltip
 
 	}
 	
@@ -386,7 +386,7 @@ hire_jewish_spymaster_kaifeng = {
 			id = jewish_courtier.0007
 			days = 10
 		}
-		custom_tooltip = hire_physician_decision_effect_tooltip
+		custom_tooltip = hire_jew_decision_effect_tooltip
 
 	}
 	
@@ -435,7 +435,7 @@ hire_jewish_steward_kaifeng = {
 			id = jewish_courtier.0008
 			days = 10
 		}
-		custom_tooltip = hire_physician_decision_effect_tooltip
+		custom_tooltip = hire_jew_decision_effect_tooltip
 
 	}
 	
@@ -485,7 +485,7 @@ hire_jewish_diplomat_kaifeng = {
 			id = jewish_courtier.0009
 			days = 10
 		}
-		custom_tooltip = hire_physician_decision_effect_tooltip
+		custom_tooltip = hire_jew_decision_effect_tooltip
 
 	}
 	

@@ -33,7 +33,7 @@
 			id = gypsy_courtier.0001
 			days = 10
 		}
-		custom_tooltip = hire_physician_decision_effect_tooltip
+		custom_tooltip = hire_gypsy_decision_effect_tooltip
 
 	}
 	
@@ -86,7 +86,7 @@ hire_gypsy_spymaster_egypt = {
 			id = gypsy_courtier.0002
 			days = 10
 		}
-		custom_tooltip = hire_physician_decision_effect_tooltip
+		custom_tooltip = hire_gypsy_decision_effect_tooltip
 
 	}
 	
@@ -136,7 +136,7 @@ hire_gypsy_spymaster_caucasus = {
 			id = gypsy_courtier.0003
 			days = 10
 		}
-		custom_tooltip = hire_physician_decision_effect_tooltip
+		custom_tooltip = hire_gypsy_decision_effect_tooltip
 
 	}
 	
@@ -178,7 +178,7 @@ hire_gypsy_spymaster_hun = {
 			id = gypsy_courtier.0004
 			days = 10
 		}
-		custom_tooltip = hire_physician_decision_effect_tooltip
+		custom_tooltip = hire_gypsy_decision_effect_tooltip
 
 	}
 	
@@ -220,7 +220,7 @@ hire_gypsy_spymaster_romania = {
 			id = gypsy_courtier.0005
 			days = 10
 		}
-		custom_tooltip = hire_physician_decision_effect_tooltip
+		custom_tooltip = hire_gypsy_decision_effect_tooltip
 
 	}
 	
@@ -270,7 +270,7 @@ hire_gypsy_spymaster_slav = {
 			id = gypsy_courtier.0006
 			days = 10
 		}
-		custom_tooltip = hire_physician_decision_effect_tooltip
+		custom_tooltip = hire_gypsy_decision_effect_tooltip
 
 	}
 	
@@ -312,7 +312,7 @@ hire_gypsy_spymaster_greece = {
 			id = gypsy_courtier.0007
 			days = 10
 		}
-		custom_tooltip = hire_physician_decision_effect_tooltip
+		custom_tooltip = hire_gypsy_decision_effect_tooltip
 
 	}
 	
@@ -354,7 +354,7 @@ hire_gypsy_spymaster_iberia = {
 			id = gypsy_courtier.0008
 			days = 10
 		}
-		custom_tooltip = hire_physician_decision_effect_tooltip
+		custom_tooltip = hire_gypsy_decision_effect_tooltip
 
 	}
 	
@@ -396,7 +396,7 @@ hire_gypsy_spymaster_france = {
 			id = gypsy_courtier.0009
 			days = 10
 		}
-		custom_tooltip = hire_physician_decision_effect_tooltip
+		custom_tooltip = hire_gypsy_decision_effect_tooltip
 
 	}
 	
@@ -445,7 +445,7 @@ hire_gypsy_spymaster_italy = {
 			id = gypsy_courtier.0010
 			days = 10
 		}
-		custom_tooltip = hire_physician_decision_effect_tooltip
+		custom_tooltip = hire_gypsy_decision_effect_tooltip
 
 	}
 	
