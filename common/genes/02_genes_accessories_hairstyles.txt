@@ -110,6 +110,8 @@ accessory_genes = {
 				# 2 = male_hair_western_10 # Tonsure 
 				2 = male_hair_mena_01
 				2 = male_hair_mena_02
+				2 = male_hair_indian_01
+				2 = male_hair_indian_02
 			}
 			
 			female = {
