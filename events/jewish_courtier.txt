@@ -19,6 +19,9 @@ jewish_courtier.0001 = {
 			template = ashkenazi_intrigue_character
 			save_scope_as = new_courtier
 		}
+		scope:new_courtier = {
+			set_to_lowborn = yes
+		}
 	}
 
 	option = { #Welcome!
@@ -58,6 +61,9 @@ jewish_courtier.0002 = {
 			template = ashkenazi_steward_character
 			save_scope_as = new_courtier
 		}
+		scope:new_courtier = {
+			set_to_lowborn = yes
+		}
 	}
 
 	option = { #Welcome!
@@ -96,6 +102,9 @@ jewish_courtier.0003 = {
 			employer = root
 			template = ashkenazi_diplomat_character
 			save_scope_as = new_courtier
+		}
+		scope:new_courtier = {
+			set_to_lowborn = yes
 		}
 	}
 
@@ -137,6 +146,9 @@ jewish_courtier.0004 = {
 			template = sephardi_intrigue_character
 			save_scope_as = new_courtier
 		}
+		scope:new_courtier = {
+			set_to_lowborn = yes
+		}
 	}
 
 	option = { #Welcome!
@@ -176,6 +188,9 @@ jewish_courtier.0005 = {
 			template = sephardi_steward_character
 			save_scope_as = new_courtier
 		}
+		scope:new_courtier = {
+			set_to_lowborn = yes
+		}
 	}
 
 	option = { #Welcome!
@@ -214,6 +229,9 @@ jewish_courtier.0006 = {
 			employer = root
 			template = sephardi_diplomat_character
 			save_scope_as = new_courtier
+		}
+		scope:new_courtier = {
+			set_to_lowborn = yes
 		}
 	}
 
@@ -255,6 +273,9 @@ jewish_courtier.0007 = {
 			template = kaifeng_intrigue_character
 			save_scope_as = new_courtier
 		}
+		scope:new_courtier = {
+			set_to_lowborn = yes
+		}
 	}
 
 	option = { #Welcome!
@@ -294,6 +315,9 @@ jewish_courtier.0008 = {
 			template = kaifeng_steward_character
 			save_scope_as = new_courtier
 		}
+		scope:new_courtier = {
+			set_to_lowborn = yes
+		}
 	}
 
 	option = { #Welcome!
@@ -332,6 +356,9 @@ jewish_courtier.0009 = {
 			employer = root
 			template = kaifeng_diplomat_character
 			save_scope_as = new_courtier
+		}
+		scope:new_courtier = {
+			set_to_lowborn = yes
 		}
 	}
 

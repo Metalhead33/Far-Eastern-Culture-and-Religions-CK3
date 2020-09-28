@@ -19,6 +19,9 @@ gypsy_courtier.0001 = {
 			template = gypsy_indian_intrigue_character
 			save_scope_as = new_courtier
 		}
+		scope:new_courtier = {
+			set_to_lowborn = yes
+		}
 	}
 
 	option = { #Welcome!
@@ -57,6 +60,9 @@ gypsy_courtier.0002 = {
 			employer = root
 			template = gypsy_egypt_intrigue_character
 			save_scope_as = new_courtier
+		}
+		scope:new_courtier = {
+			set_to_lowborn = yes
 		}
 	}
 
@@ -97,6 +103,9 @@ gypsy_courtier.0003 = {
 			template = gypsy_caucasus_intrigue_character
 			save_scope_as = new_courtier
 		}
+		scope:new_courtier = {
+			set_to_lowborn = yes
+		}
 	}
 
 	option = { #Welcome!
@@ -135,6 +144,9 @@ gypsy_courtier.0004 = {
 			employer = root
 			template = gypsy_hun_intrigue_character
 			save_scope_as = new_courtier
+		}
+		scope:new_courtier = {
+			set_to_lowborn = yes
 		}
 	}
 
@@ -176,6 +188,9 @@ gypsy_courtier.0005 = {
 			template = gypsy_romanian_intrigue_character
 			save_scope_as = new_courtier
 		}
+		scope:new_courtier = {
+			set_to_lowborn = yes
+		}
 	}
 
 	option = { #Welcome!
@@ -214,6 +229,9 @@ gypsy_courtier.0006 = {
 			employer = root
 			template = gypsy_slav_intrigue_character
 			save_scope_as = new_courtier
+		}
+		scope:new_courtier = {
+			set_to_lowborn = yes
 		}
 	}
 
@@ -254,6 +272,9 @@ gypsy_courtier.0007 = {
 			template = gypsy_greek_intrigue_character
 			save_scope_as = new_courtier
 		}
+		scope:new_courtier = {
+			set_to_lowborn = yes
+		}
 	}
 
 	option = { #Welcome!
@@ -292,6 +313,9 @@ gypsy_courtier.0008 = {
 			employer = root
 			template = gypsy_iberian_intrigue_character
 			save_scope_as = new_courtier
+		}
+		scope:new_courtier = {
+			set_to_lowborn = yes
 		}
 	}
 
@@ -332,6 +356,9 @@ gypsy_courtier.0009 = {
 			template = gypsy_french_intrigue_character
 			save_scope_as = new_courtier
 		}
+		scope:new_courtier = {
+			set_to_lowborn = yes
+		}
 	}
 
 	option = { #Welcome!
@@ -370,6 +397,9 @@ gypsy_courtier.0010 = {
 			employer = root
 			template = gypsy_italian_intrigue_character
 			save_scope_as = new_courtier
+		}
+		scope:new_courtier = {
+			set_to_lowborn = yes
 		}
 	}
 
