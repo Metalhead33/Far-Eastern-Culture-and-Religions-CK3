@@ -1,5 +1,6 @@
 ﻿l_english: 
- turan_tolerance_name: "Turanian Brotherhood"
- turan_tolerance_desc: "Turanian peoples stick together!"
- special_doctrine_turan_name: "Turanian Brotherhood"
- special_doctrine_turan_desc: "Turanian peoples stick together!"
+ turan_tolerance_name:0 "Turanian Brotherhood"
+ turan_tolerance_desc:0 "Turanian peoples stick together!"
+ special_doctrine_turan_name:0 "Turanian Brotherhood"
+ special_doctrine_turan_desc:0 "Turanian peoples stick together!"
+ doctrine_parameter_hostility_override_special_doctrine_turan:0 "Other Turanian [faiths|E] with the $special_doctrine_turan_name$ doctrine are considered [GetHostilityLevelName( FAITH_DOCTRINE_PARAMETER.GetIntValue )|V] instead of [GetHostilityLevelName( '(int32)3' )|V]"

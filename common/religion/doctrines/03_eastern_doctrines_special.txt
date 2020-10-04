@@ -7,7 +7,7 @@
 	
 	special_doctrine_turan = {
 		parameters = {
-			hostility_override_special_doctrine_turann = 0
+			hostility_override_special_doctrine_turan = 0
 		}
 	}
 }

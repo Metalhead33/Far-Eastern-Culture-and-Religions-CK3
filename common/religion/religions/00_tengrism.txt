@@ -207,7 +207,7 @@
 
 			doctrine = unreformed_faith_doctrine
 
-			doctrine = tenet_esotericism
+			doctrine = tenet_eastern_syncretism
 			doctrine = tenet_sky_burials
 			doctrine = tenet_ancestor_worship
 		}
