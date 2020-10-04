@@ -1,0 +1,14 @@
+﻿turan_tolerance = {
+	group = "special"
+	
+	is_available_on_create = {
+		always = no # Goes away when creating a new Faith
+	}
+	
+	special_doctrine_turan = {
+		parameters = {
+			hostility_override_special_doctrine_turann = 0
+		}
+	}
+}
+
