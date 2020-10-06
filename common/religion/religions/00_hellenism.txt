@@ -315,8 +315,6 @@
 				WaterGodHerHis = CHARACTER_HERHIS_HER
 				WaterGodHerHim = CHARACTER_HERHIM_HER
 
-
-
 				PantheonTerm = religion_the_gods
 				PantheonTermHasHave = pantheon_term_have
 				GoodGodNames = { mithraism_high_god_name mithraism_health_god_name mithraism_fertility_god_name mithraism_wealth_god_name mithraism_trickster_god_name mithraism_water_god_name }
