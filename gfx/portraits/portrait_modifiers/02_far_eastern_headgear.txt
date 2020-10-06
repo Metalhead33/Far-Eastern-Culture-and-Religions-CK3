@@ -55,5 +55,112 @@ far_eastern_headgear = {
 			}
 	    }
 	}
+	## Egyptian ##
+	
+	religious_egyptian_high_headgear = {
+	    dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = headgear
+	            template = religious_african_high
+	            range = { 0 1 }
+	        }
+	    }
+	    weight = {
+	        base = 0
+	        modifier = {
+				add = 110
+				OR = {
+					is_theocratic_lessee = yes
+					AND = { is_ruler = yes has_government = theocracy_government }
+					has_council_position = councillor_court_chaplain
+				}
+				religion = religion:egyptian_religion
+			}
+	    }
+	}
+	
+	## Semitic ##
+	religious_semitic_high_headgear = {
+	    dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = headgear
+	            template = religious_jewish_high
+	            range = { 0 1 }
+	        }
+	    }
+	    weight = {
+	        base = 0
+	        modifier = {
+				add = 100
+				OR = {
+					is_theocratic_lessee = yes
+					AND = { is_ruler = yes has_government = theocracy_government }
+					has_council_position = councillor_court_chaplain
+				}
+				religion = religion:semitic_religion
+			}
+	    }
+	}
+	religious_semitic_head = {
+		outfit_tags = { rank_headgear }
+		usage = game
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				
+				gene = headgear
+				template = religious_jewish_head
+				range = { 0 1 }
+			}
+
+			#accessory = {
+			#	mode = add
+			#	
+			#	gene = hairstyles
+			#	template = no_hairstyles
+			#	range = { 0 1 }
+			#}
+		}	
+		weight = {
+	        base = 0
+	        modifier = {
+	            add = 140
+				is_ruler = yes
+				faith.religion = religion:semitic_religion
+				primary_title = {
+					exists = controlled_faith
+				}
+	        }
+	    }
+	}
+	## Basque and Celtic ##
+	religious_celtic_high_headgear = {
+	    dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = headgear
+	            template = religious_northern_high
+	            range = { 0 1 }
+	        }
+	    }
+	    weight = {
+	        base = 0
+	        modifier = {
+				add = 100
+				OR = {
+					is_theocratic_lessee = yes
+					AND = { is_ruler = yes has_government = theocracy_government }
+					has_council_position = councillor_court_chaplain
+				}
+				OR = {
+					religion = religion:basque_religion
+					religion = religion:celtic_religion
+				}
+				
+			}
+	    }
+	}
 
 }

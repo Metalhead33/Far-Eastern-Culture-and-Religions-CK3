@@ -8,9 +8,8 @@ socotra = {
 	county = c_socotra
 
 	character_modifier = {
-		name = holy_site_suzhou_effect_name
-		diplomacy = 1
-		martial = 1
+		embarkation_cost_mult = -0.25
+		retreat_losses = -0.1
 	}
 }
 
@@ -18,9 +17,8 @@ maldives = {
 	county = c_maldives
 
 	character_modifier = {
-		name = holy_site_suzhou_effect_name
-		diplomacy = 1
-		martial = 1
+		embarkation_cost_mult = -0.25
+		retreat_losses = -0.1
 	}
 }
 
@@ -28,18 +26,16 @@ dakhina_desa = {
 	county = c_dakhina_desa
 
 	character_modifier = {
-		name = holy_site_suzhou_effect_name
-		diplomacy = 1
 		martial = 1
+		prowess_per_prestige_level = 1
 	}
 }
 ras_hafun = {
 	county = c_ras_hafun
 
 	character_modifier = {
-		name = holy_site_suzhou_effect_name
-		diplomacy = 1
-		martial = 1
+		skirmishers_damage_mult = 0.1
+		light_cavalry_damage_mult = 0.1
 	}
 }
 

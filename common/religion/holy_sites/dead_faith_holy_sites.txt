@@ -1,0 +1,213 @@
+﻿#############
+# Dead Religions #
+#############
+
+knossos = {
+	county = c_chandax
+
+	character_modifier = {
+		embarkation_cost_mult = -0.25
+		retreat_losses = -0.1
+	}
+}
+
+ravenna = {
+	county = c_ravenna
+
+	character_modifier = {
+		stewardship = 1
+		stewardship_per_piety_level = 1
+	}
+}
+nemausus = {
+	county = c_montpellier
+
+	character_modifier = {
+		diplomacy = 1
+		diplomacy_per_piety_level = 1
+	}
+}
+viesul = {
+	county = c_firenze
+
+	character_modifier = {
+		development_growth_factor = 0.1
+		stewardship = 1
+	}
+}
+
+raetia = {
+	county = c_augsburg
+
+	character_modifier = {
+		defender_advantage = 5
+		martial = 1
+	}
+}
+
+curia_raetorum = {
+	county = c_grisons
+
+	character_modifier = {
+		monthly_piety_gain_per_knight_add = 0.1
+		skirmishers_toughness_mult = 0.1
+	}
+}
+
+lemnos = {
+	county = c_lesbos
+
+	character_modifier = {
+		stress_loss_mult = 0.2
+	}
+}
+
+tyre = {
+	county = c_acre
+
+	character_modifier = {
+		embarkation_cost_mult = -0.25
+		retreat_losses = -0.1
+	}
+}
+
+aden = {
+	county = c_mandab
+
+	character_modifier = {
+		fertility = 0.10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+}
+
+nafarroa = {
+	county = c_navarra
+
+	character_modifier = {
+		monthly_piety_gain_per_knight_mult = 0.02
+		heavy_infantry_damage_mult = 0.05
+	}
+}
+
+bizkaia = {
+	county = c_viscaya
+
+	character_modifier = {
+		knight_effectiveness_mult = 0.2
+		prowess_per_piety_level = 1
+	}
+}
+
+baiona = {
+	county = c_labourd
+
+	character_modifier = {
+		prowess_per_piety_level = 1
+		supply_duration = 0.2
+	}
+}
+
+bordele = {
+	county = c_bordeaux
+
+	character_modifier = {
+		stewardship = 1
+		close_relative_opinion = 5
+	}
+}
+
+andorra = {
+	county = c_urgell
+
+	character_modifier = {
+		monthly_piety_gain_mult = 0.1
+		knight_effectiveness_mult = 0.2
+	}
+}
+
+thebes = {
+	county = c_qus
+	barony = b_armant
+
+	character_modifier = {
+		monthly_piety_gain_mult = 0.1
+		direct_vassal_opinion = 5
+		tyranny_gain_mult = -0.2
+	}
+}
+
+akhetaten = {
+	county = c_asyut
+	barony = b_bawit
+
+	character_modifier = {
+		clergy_opinion = 10
+		monthly_piety_gain_mult = 0.1
+	}
+}
+
+giza = {
+	county = c_giza
+
+	character_modifier = {
+		development_growth_factor = 0.1
+		close_relative_opinion = 5
+		tyranny_gain_mult = -0.2
+	}
+}
+
+carnutes = {
+	county = c_orleans
+
+	character_modifier = {
+		monthly_piety_gain_per_knight_add = 0.1
+		skirmishers_toughness_mult = 0.1
+	}
+}
+
+ynis_mon = {
+	county = c_anglesey
+
+	character_modifier = {
+		embarkation_cost_mult = -0.25
+		retreat_losses = -0.1
+	}
+}
+
+stonehenge = {
+	county = c_wiltshire
+
+	character_modifier = {
+		development_growth_factor = 0.1
+		church_holding_build_gold_cost = -0.2
+		build_prestige_cost = -0.2
+	}
+}
+
+lugo = {
+	county = c_astorga
+	barony = b_lugo
+
+	character_modifier = {
+		defender_advantage = 5
+		martial = 1
+	}
+}
+
+lia_fail = {
+	county = c_breifne
+	barony = b_cavan
+
+	character_modifier = {
+		direct_vassal_opinion = 10
+		tyranny_gain_mult = -0.2
+	}
+}
+
+vannes = {
+	county = c_vannes
+
+	character_modifier = {
+		diplomacy_per_prestige_level = 1
+	}
+}
