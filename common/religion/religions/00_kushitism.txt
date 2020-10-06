@@ -104,6 +104,8 @@ egyptian_religion = {
 		doctrine = doctrine_polygamy
 		doctrine = doctrine_bastardry_legitimization
 		
+		#Special Tolerance
+		doctrine = special_doctrine_hellenic
 		doctrine = tenet_divine_marriage
 		doctrine = tenet_ancestor_worship
 		doctrine = tenet_pentarchy

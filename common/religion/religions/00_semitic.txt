@@ -94,6 +94,8 @@
 			holy_site = antioch
 			holy_site = colonea
 
+			#Special Tolerance
+			doctrine = special_doctrine_hellenic
 			doctrine = unreformed_faith_doctrine
 
 			doctrine = tenet_astrology
