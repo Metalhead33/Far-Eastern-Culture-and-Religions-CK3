@@ -8,26 +8,24 @@
 
 	is_shown = {
 		is_ruler = yes
-		OR = {
-		has_culture_group = culture_group:west_slavic_group
-		has_culture_group = culture_group:east_slavic_group
-		has_culture_group = culture_group:magyar_group
-		has_culture_group = culture_group:west_germanic_group
-		has_culture_group = culture_group:central_germanic_group
-		has_culture_group = culture_group:baltic_group
-		has_culture_group = culture_group:frankish_group
+		capital_province = {
+			OR = {
+				AND = {	geographical_region = world_europe_west
+						NOT = { geographical_region = world_europe_west_iberia } }
+				geographical_region = world_europe_north
+				geographical_region = world_europe_east
+			}
 		}
 	}
 	is_valid = {
 		is_ruler = yes
-		OR = {
-		has_culture_group = culture_group:west_slavic_group
-		has_culture_group = culture_group:east_slavic_group
-		has_culture_group = culture_group:magyar_group
-		has_culture_group = culture_group:west_germanic_group
-		has_culture_group = culture_group:central_germanic_group
-		has_culture_group = culture_group:baltic_group
-		has_culture_group = culture_group:frankish_group
+		capital_province = {
+			OR = {
+				AND = {	geographical_region = world_europe_west
+						NOT = { geographical_region = world_europe_west_iberia } }
+				geographical_region = world_europe_north
+				geographical_region = world_europe_east
+			}
 		}
 	}
 
@@ -65,26 +63,24 @@ hire_jewish_steward_ashkenazi = {
 
 	is_shown = {
 		is_ruler = yes
-		OR = {
-		has_culture_group = culture_group:west_slavic_group
-		has_culture_group = culture_group:east_slavic_group
-		has_culture_group = culture_group:magyar_group
-		has_culture_group = culture_group:west_germanic_group
-		has_culture_group = culture_group:central_germanic_group
-		has_culture_group = culture_group:baltic_group
-		has_culture_group = culture_group:frankish_group
+		capital_province = {
+			OR = {
+				AND = {	geographical_region = world_europe_west
+						NOT = { geographical_region = world_europe_west_iberia } }
+				geographical_region = world_europe_north
+				geographical_region = world_europe_east
+			}
 		}
 	}
 	is_valid = {
 		is_ruler = yes
-		OR = {
-		has_culture_group = culture_group:west_slavic_group
-		has_culture_group = culture_group:east_slavic_group
-		has_culture_group = culture_group:magyar_group
-		has_culture_group = culture_group:west_germanic_group
-		has_culture_group = culture_group:central_germanic_group
-		has_culture_group = culture_group:baltic_group
-		has_culture_group = culture_group:frankish_group
+		capital_province = {
+			OR = {
+				AND = {	geographical_region = world_europe_west
+						NOT = { geographical_region = world_europe_west_iberia } }
+				geographical_region = world_europe_north
+				geographical_region = world_europe_east
+			}
 		}
 	}
 
@@ -123,26 +119,24 @@ hire_jewish_diplomat_ashkenazi = {
 
 	is_shown = {
 		is_ruler = yes
-		OR = {
-		has_culture_group = culture_group:west_slavic_group
-		has_culture_group = culture_group:east_slavic_group
-		has_culture_group = culture_group:magyar_group
-		has_culture_group = culture_group:west_germanic_group
-		has_culture_group = culture_group:central_germanic_group
-		has_culture_group = culture_group:baltic_group
-		has_culture_group = culture_group:frankish_group
+		capital_province = {
+			OR = {
+				AND = {	geographical_region = world_europe_west
+						NOT = { geographical_region = world_europe_west_iberia } }
+				geographical_region = world_europe_north
+				geographical_region = world_europe_east
+			}
 		}
 	}
 	is_valid = {
 		is_ruler = yes
-		OR = {
-		has_culture_group = culture_group:west_slavic_group
-		has_culture_group = culture_group:east_slavic_group
-		has_culture_group = culture_group:magyar_group
-		has_culture_group = culture_group:west_germanic_group
-		has_culture_group = culture_group:central_germanic_group
-		has_culture_group = culture_group:baltic_group
-		has_culture_group = culture_group:frankish_group
+		capital_province = {
+			OR = {
+				AND = {	geographical_region = world_europe_west
+						NOT = { geographical_region = world_europe_west_iberia } }
+				geographical_region = world_europe_north
+				geographical_region = world_europe_east
+			}
 		}
 	}
 
@@ -181,28 +175,28 @@ hire_jewish_spymaster_sephardi = {
 
 	is_shown = {
 		is_ruler = yes
-		OR = {
-		has_culture_group = culture_group:south_slavic_group
-		has_culture_group = culture_group:arabic_group
-		has_culture_group = culture_group:berber_group
-		has_culture_group = culture_group:iranian_group
-		has_culture_group = culture_group:iberian_group
-		has_culture = culture:turkish
-		has_culture_group = culture_group:byzantine_group
-		has_culture_group = culture_group:latin_group
+		capital_province = {
+			OR = {
+				geographical_region = world_europe_west_iberia
+				geographical_region = world_europe_south
+				geographical_region = world_asia_minor
+				geographical_region = world_middle_east_persia
+				geographical_region = world_middle_east
+				geographical_region = world_africa_north
+			}
 		}
 	}
 	is_valid = {
 		is_ruler = yes
-		OR = {
-		has_culture_group = culture_group:south_slavic_group
-		has_culture_group = culture_group:arabic_group
-		has_culture_group = culture_group:berber_group
-		has_culture_group = culture_group:iranian_group
-		has_culture_group = culture_group:iberian_group
-		has_culture = culture:turkish
-		has_culture_group = culture_group:byzantine_group
-		has_culture_group = culture_group:latin_group
+		capital_province = {
+			OR = {
+				geographical_region = world_europe_west_iberia
+				geographical_region = world_europe_south
+				geographical_region = world_asia_minor
+				geographical_region = world_middle_east_persia
+				geographical_region = world_middle_east
+				geographical_region = world_africa_north
+			}
 		}
 	}
 
@@ -240,28 +234,28 @@ hire_jewish_steward_sephardi = {
 
 	is_shown = {
 		is_ruler = yes
-		OR = {
-		has_culture_group = culture_group:south_slavic_group
-		has_culture_group = culture_group:arabic_group
-		has_culture_group = culture_group:berber_group
-		has_culture_group = culture_group:iranian_group
-		has_culture_group = culture_group:iberian_group
-		has_culture = culture:turkish
-		has_culture_group = culture_group:byzantine_group
-		has_culture_group = culture_group:latin_group
+		capital_province = {
+			OR = {
+				geographical_region = world_europe_west_iberia
+				geographical_region = world_europe_south
+				geographical_region = world_asia_minor
+				geographical_region = world_middle_east_persia
+				geographical_region = world_middle_east
+				geographical_region = world_africa_north
+			}
 		}
 	}
 	is_valid = {
 		is_ruler = yes
-		OR = {
-		has_culture_group = culture_group:south_slavic_group
-		has_culture_group = culture_group:arabic_group
-		has_culture_group = culture_group:berber_group
-		has_culture_group = culture_group:iranian_group
-		has_culture_group = culture_group:iberian_group
-		has_culture_group = culture:turkish
-		has_culture_group = culture_group:byzantine_group
-		has_culture_group = culture_group:latin_group
+		capital_province = {
+			OR = {
+				geographical_region = world_europe_west_iberia
+				geographical_region = world_europe_south
+				geographical_region = world_asia_minor
+				geographical_region = world_middle_east_persia
+				geographical_region = world_middle_east
+				geographical_region = world_africa_north
+			}
 		}
 	}
 
@@ -300,28 +294,28 @@ hire_jewish_diplomat_sephardi = {
 
 	is_shown = {
 		is_ruler = yes
-		OR = {
-		has_culture_group = culture_group:south_slavic_group
-		has_culture_group = culture_group:arabic_group
-		has_culture_group = culture_group:berber_group
-		has_culture_group = culture_group:iranian_group
-		has_culture_group = culture_group:iberian_group
-		has_culture = culture:turkish
-		has_culture_group = culture_group:byzantine_group
-		has_culture_group = culture_group:latin_group
+		capital_province = {
+			OR = {
+				geographical_region = world_europe_west_iberia
+				geographical_region = world_europe_south
+				geographical_region = world_asia_minor
+				geographical_region = world_middle_east_persia
+				geographical_region = world_middle_east
+				geographical_region = world_africa_north
+			}
 		}
 	}
 	is_valid = {
 		is_ruler = yes
-		OR = {
-		has_culture_group = culture_group:south_slavic_group
-		has_culture_group = culture_group:arabic_group
-		has_culture_group = culture_group:berber_group
-		has_culture_group = culture_group:iranian_group
-		has_culture_group = culture_group:iberian_group
-		has_culture = culture:turkish
-		has_culture_group = culture_group:byzantine_group
-		has_culture_group = culture_group:latin_group
+		capital_province = {
+			OR = {
+				geographical_region = world_europe_west_iberia
+				geographical_region = world_europe_south
+				geographical_region = world_asia_minor
+				geographical_region = world_middle_east_persia
+				geographical_region = world_middle_east
+				geographical_region = world_africa_north
+			}
 		}
 	}
 
@@ -359,18 +353,14 @@ hire_jewish_spymaster_kaifeng = {
 
 	is_shown = {
 		is_ruler = yes
-		OR = {
-		has_culture_group = culture_group:chinese_group
-		has_culture_group = culture_group:qiangic_group
-		has_culture_group = culture_group:tibetan_group
+		capital_province = {
+			geographical_region = ghw_region_khotan
 		}
 	}
 	is_valid = {
 		is_ruler = yes
-		OR = {
-		has_culture_group = culture_group:chinese_group
-		has_culture_group = culture_group:qiangic_group
-		has_culture_group = culture_group:tibetan_group
+		capital_province = {
+			geographical_region = ghw_region_khotan
 		}
 	}
 
@@ -408,18 +398,14 @@ hire_jewish_steward_kaifeng = {
 
 	is_shown = {
 		is_ruler = yes
-		OR = {
-		has_culture_group = culture_group:chinese_group
-		has_culture_group = culture_group:qiangic_group
-		has_culture_group = culture_group:tibetan_group
+		capital_province = {
+			geographical_region = ghw_region_khotan
 		}
 	}
 	is_valid = {
 		is_ruler = yes
-		OR = {
-		has_culture_group = culture_group:chinese_group
-		has_culture_group = culture_group:qiangic_group
-		has_culture_group = culture_group:tibetan_group
+		capital_province = {
+			geographical_region = ghw_region_khotan
 		}
 	}
 
@@ -458,18 +444,14 @@ hire_jewish_diplomat_kaifeng = {
 
 	is_shown = {
 		is_ruler = yes
-		OR = {
-		has_culture_group = culture_group:chinese_group
-		has_culture_group = culture_group:qiangic_group
-		has_culture_group = culture_group:tibetan_group
+		capital_province = {
+			geographical_region = ghw_region_khotan
 		}
 	}
 	is_valid = {
 		is_ruler = yes
-		OR = {
-		has_culture_group = culture_group:chinese_group
-		has_culture_group = culture_group:qiangic_group
-		has_culture_group = culture_group:tibetan_group
+		capital_province = {
+			geographical_region = ghw_region_khotan
 		}
 	}
 
