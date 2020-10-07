@@ -1,5 +1,106 @@
 namespace = jewish_courtier
 
+scripted_trigger jewish_courtier_basic_requirements_trigger = {
+	is_adult = yes
+	is_imprisoned = no
+	is_alive = yes # Because apparently there can be dead characters in the pool (remove when fixed)
+	OR = {
+	has_religion = religion:judaism_religion
+	has_culture_group = culture_group:israelite_group
+	}
+}
+
+scripted_trigger jewish_courtier_excellent_skill_intrigue_trigger = {
+	jewish_courtier_basic_requirements_trigger = yes
+	intrigue >= high_skill_rating
+}
+
+scripted_trigger jewish_courtier_high_skill_intrigue_trigger = {
+	jewish_courtier_basic_requirements_trigger = yes	
+	OR = {
+		#Empire/kingdom
+		AND = {
+			root = { highest_held_title_tier >= tier_kingdom }
+			intrigue >= decent_skill_rating #Will be pushed up to high by adding schemer/reveler traits
+			NAND = {
+				has_trait = schemer
+				NOT = { has_trait = lifestyle_reveler }
+			}
+		}
+		#Duchy/county
+		AND = {
+			root = { highest_held_title_tier <= tier_duchy }
+			NOR = {
+				intrigue > high_skill_rating
+				has_trait = reveler_3
+				has_trait = schemer
+			}
+			intrigue >= mediocre_skill_rating #Will be pushed up to medium by adding schemer/reveler traits
+		}
+	}
+}
+
+scripted_trigger jewish_courtier_excellent_skill_diplomacy_trigger = {
+	jewish_courtier_basic_requirements_trigger = yes
+	diploamcy >= high_skill_rating
+}
+
+scripted_trigger jewish_courtier_high_skill_diplomacy_trigger = {
+	jewish_courtier_basic_requirements_trigger = yes	
+	OR = {
+		#Empire/kingdom
+		AND = {
+			root = { highest_held_title_tier >= tier_kingdom }
+			diplomacy >= decent_skill_rating #Will be pushed up to high by adding diplomat/reveler traits
+			NAND = {
+				has_trait = diplomat
+				NOT = { has_trait = lifestyle_reveler }
+			}
+		}
+		#Duchy/county
+		AND = {
+			root = { highest_held_title_tier <= tier_duchy }
+			NOR = {
+				diplomacy > high_skill_rating
+				has_trait = reveler_3
+				has_trait = diplomat
+			}
+			diplomacy >= mediocre_skill_rating #Will be pushed up to medium by adding diplomat/reveler traits
+		}
+	}
+}
+
+scripted_trigger jewish_courtier_excellent_skill_stewardship_trigger = {
+	jewish_courtier_basic_requirements_trigger = yes
+	stewardship >= high_skill_rating
+}
+
+scripted_trigger jewish_courtier_high_skill_stewardship_trigger = {
+	jewish_courtier_basic_requirements_trigger = yes	
+	OR = {
+		#Empire/kingdom
+		AND = {
+			root = { highest_held_title_tier >= tier_kingdom }
+			stewardship >= decent_skill_rating #Will be pushed up to high by adding administrator/avaricious/architect traits
+			NAND = {
+				has_trait = administrator
+				has_trait = avaricious
+				has_trait = architect
+			}
+		}
+		#Duchy/county
+		AND = {
+			root = { highest_held_title_tier <= tier_duchy }
+			NOR = {
+				stewardship > high_skill_rating
+				has_trait = avaricious
+				has_trait = administrator
+				has_trait = architect
+			}
+			stewardship >= mediocre_skill_rating #Will be pushed up to medium by adding administrator/avaricious/architect  traits
+		}
+	}
+}
 
 # Jewish courtier - Ashkenazi Intrigue
 jewish_courtier.0001 = {
@@ -9,18 +110,29 @@ jewish_courtier.0001 = {
 	theme = learning
 	left_portrait = {
 		character = scope:new_courtier
-		animation = personality_rational
+		animation = personality_greedy
 	}
 	override_background = { event_background = throne_room }
+	trigger = { exists = capital_province } #If I lost it before I got this event, I shouldn't get a Court Jew
 
 	immediate = {
-		create_character = {
-			employer = root
-			template = ashkenazi_intrigue_character
+		hidden_effect = {
+		random_pool_character = {
+			province = root.capital_province
+			limit = { jewish_courtier_excellent_skill_intrigue_trigger = yes }
 			save_scope_as = new_courtier
 		}
-		scope:new_courtier = {
-			set_to_lowborn = yes
+		if = {
+			limit = { NOT = { exists = scope:new_courtier } }
+			create_character = {
+				employer = root
+				template = ashkenazi_intrigue_character
+				save_scope_as = new_courtier
+			}
+			scope:new_courtier = {
+				set_to_lowborn = yes
+			}
+		}
 		}
 	}
 
@@ -30,14 +142,27 @@ jewish_courtier.0001 = {
 			target = scope:new_courtier
 			gold = high_skill_court_physician_cost
 		}
-
+		add_courtier = scope:new_courtier
+		set_spymaster_effect = {
+			EMPLOYER = root
+			EMPLOYEE = scope:new_courtier
+		}
+		reverse_add_opinion = {
+			target = scope:new_courtier
+			modifier = hired_me_opinion
+		}
+		stress_impact = {
+			zealous = minor_stress_impact_gain
+		}
 	}
 
 	option = { #Send away
 		name = jewish_courtier.banish
 		scope:new_courtier = {
-			death = {
-				death_reason = death_disappearance
+			banish = yes
+			add_opinion = {
+				modifier = banished_me
+				target = root
 			}
 		}
 	}
@@ -51,18 +176,29 @@ jewish_courtier.0002 = {
 	theme = learning
 	left_portrait = {
 		character = scope:new_courtier
-		animation = personality_rational
+		animation = personality_greedy
 	}
 	override_background = { event_background = throne_room }
+	trigger = { exists = capital_province } #If I lost it before I got this event, I shouldn't get a Court Jew
 
 	immediate = {
-		create_character = {
-			employer = root
-			template = ashkenazi_steward_character
+		hidden_effect = {
+		random_pool_character = {
+			province = root.capital_province
+			limit = { jewish_courtier_excellent_skill_stewardship_trigger = yes }
 			save_scope_as = new_courtier
 		}
-		scope:new_courtier = {
-			set_to_lowborn = yes
+		if = {
+			limit = { NOT = { exists = scope:new_courtier } }
+			create_character = {
+				employer = root
+				template = ashkenazi_steward_character
+				save_scope_as = new_courtier
+			}
+			scope:new_courtier = {
+				set_to_lowborn = yes
+			}
+		}
 		}
 	}
 
@@ -72,14 +208,27 @@ jewish_courtier.0002 = {
 			target = scope:new_courtier
 			gold = high_skill_court_physician_cost
 		}
-
+		add_courtier = scope:new_courtier
+		set_steward_effect = {
+			EMPLOYER = root
+			EMPLOYEE = scope:new_courtier
+		}
+		reverse_add_opinion = {
+			target = scope:new_courtier
+			modifier = hired_me_opinion
+		}
+		stress_impact = {
+			zealous = minor_stress_impact_gain
+		}
 	}
 
 	option = { #Send away
 		name = jewish_courtier.banish
 		scope:new_courtier = {
-			death = {
-				death_reason = death_disappearance
+			banish = yes
+			add_opinion = {
+				modifier = banished_me
+				target = root
 			}
 		}
 	}
@@ -93,18 +242,29 @@ jewish_courtier.0003 = {
 	theme = learning
 	left_portrait = {
 		character = scope:new_courtier
-		animation = personality_rational
+		animation = personality_greedy
 	}
 	override_background = { event_background = throne_room }
+	trigger = { exists = capital_province } #If I lost it before I got this event, I shouldn't get a Court Jew
 
 	immediate = {
-		create_character = {
-			employer = root
-			template = ashkenazi_diplomat_character
+		hidden_effect = {
+		random_pool_character = {
+			province = root.capital_province
+			limit = { jewish_courtier_excellent_skill_diplomacy_trigger = yes }
 			save_scope_as = new_courtier
 		}
-		scope:new_courtier = {
-			set_to_lowborn = yes
+		if = {
+			limit = { NOT = { exists = scope:new_courtier } }
+			create_character = {
+				employer = root
+				template = ashkenazi_diplomat_character
+				save_scope_as = new_courtier
+			}
+			scope:new_courtier = {
+				set_to_lowborn = yes
+			}
+		}
 		}
 	}
 
@@ -114,14 +274,27 @@ jewish_courtier.0003 = {
 			target = scope:new_courtier
 			gold = high_skill_court_physician_cost
 		}
-
+		add_courtier = scope:new_courtier
+		set_chancellor_effect = {
+			EMPLOYER = root
+			EMPLOYEE = scope:new_courtier
+		}
+		reverse_add_opinion = {
+			target = scope:new_courtier
+			modifier = hired_me_opinion
+		}
+		stress_impact = {
+			zealous = minor_stress_impact_gain
+		}
 	}
 
 	option = { #Send away
 		name = jewish_courtier.banish
 		scope:new_courtier = {
-			death = {
-				death_reason = death_disappearance
+			banish = yes
+			add_opinion = {
+				modifier = banished_me
+				target = root
 			}
 		}
 	}
@@ -136,18 +309,29 @@ jewish_courtier.0004 = {
 	theme = learning
 	left_portrait = {
 		character = scope:new_courtier
-		animation = personality_rational
+		animation = personality_greedy
 	}
 	override_background = { event_background = throne_room }
+	trigger = { exists = capital_province } #If I lost it before I got this event, I shouldn't get a Court Jew
 
 	immediate = {
-		create_character = {
-			employer = root
-			template = sephardi_intrigue_character
+		hidden_effect = {
+		random_pool_character = {
+			province = root.capital_province
+			limit = { jewish_courtier_excellent_skill_intrigue_trigger = yes }
 			save_scope_as = new_courtier
 		}
-		scope:new_courtier = {
-			set_to_lowborn = yes
+		if = {
+			limit = { NOT = { exists = scope:new_courtier } }
+			create_character = {
+				employer = root
+				template = sephardi_intrigue_character
+				save_scope_as = new_courtier
+			}
+			scope:new_courtier = {
+				set_to_lowborn = yes
+			}
+		}
 		}
 	}
 
@@ -157,14 +341,27 @@ jewish_courtier.0004 = {
 			target = scope:new_courtier
 			gold = high_skill_court_physician_cost
 		}
-
+		add_courtier = scope:new_courtier
+		set_spymaster_effect = {
+			EMPLOYER = root
+			EMPLOYEE = scope:new_courtier
+		}
+		reverse_add_opinion = {
+			target = scope:new_courtier
+			modifier = hired_me_opinion
+		}
+		stress_impact = {
+			zealous = minor_stress_impact_gain
+		}
 	}
 
 	option = { #Send away
 		name = jewish_courtier.banish
 		scope:new_courtier = {
-			death = {
-				death_reason = death_disappearance
+			banish = yes
+			add_opinion = {
+				modifier = banished_me
+				target = root
 			}
 		}
 	}
@@ -178,18 +375,29 @@ jewish_courtier.0005 = {
 	theme = learning
 	left_portrait = {
 		character = scope:new_courtier
-		animation = personality_rational
+		animation = personality_greedy
 	}
 	override_background = { event_background = throne_room }
+	trigger = { exists = capital_province } #If I lost it before I got this event, I shouldn't get a Court Jew
 
 	immediate = {
-		create_character = {
-			employer = root
-			template = sephardi_steward_character
+		hidden_effect = {
+		random_pool_character = {
+			province = root.capital_province
+			limit = { jewish_courtier_excellent_skill_stewardship_trigger = yes }
 			save_scope_as = new_courtier
 		}
-		scope:new_courtier = {
-			set_to_lowborn = yes
+		if = {
+			limit = { NOT = { exists = scope:new_courtier } }
+			create_character = {
+				employer = root
+				template = sephardi_steward_character
+				save_scope_as = new_courtier
+			}
+			scope:new_courtier = {
+				set_to_lowborn = yes
+			}
+		}
 		}
 	}
 
@@ -199,14 +407,27 @@ jewish_courtier.0005 = {
 			target = scope:new_courtier
 			gold = high_skill_court_physician_cost
 		}
-
+		add_courtier = scope:new_courtier
+		set_steward_effect = {
+			EMPLOYER = root
+			EMPLOYEE = scope:new_courtier
+		}
+		reverse_add_opinion = {
+			target = scope:new_courtier
+			modifier = hired_me_opinion
+		}
+		stress_impact = {
+			zealous = minor_stress_impact_gain
+		}
 	}
 
 	option = { #Send away
 		name = jewish_courtier.banish
 		scope:new_courtier = {
-			death = {
-				death_reason = death_disappearance
+			banish = yes
+			add_opinion = {
+				modifier = banished_me
+				target = root
 			}
 		}
 	}
@@ -220,18 +441,29 @@ jewish_courtier.0006 = {
 	theme = learning
 	left_portrait = {
 		character = scope:new_courtier
-		animation = personality_rational
+		animation = personality_greedy
 	}
 	override_background = { event_background = throne_room }
+	trigger = { exists = capital_province } #If I lost it before I got this event, I shouldn't get a Court Jew
 
 	immediate = {
-		create_character = {
-			employer = root
-			template = sephardi_diplomat_character
+		hidden_effect = {
+		random_pool_character = {
+			province = root.capital_province
+			limit = { jewish_courtier_excellent_skill_diplomacy_trigger = yes }
 			save_scope_as = new_courtier
 		}
-		scope:new_courtier = {
-			set_to_lowborn = yes
+		if = {
+			limit = { NOT = { exists = scope:new_courtier } }
+			create_character = {
+				employer = root
+				template = sephardi_diplomat_character
+				save_scope_as = new_courtier
+			}
+			scope:new_courtier = {
+				set_to_lowborn = yes
+			}
+		}
 		}
 	}
 
@@ -241,14 +473,27 @@ jewish_courtier.0006 = {
 			target = scope:new_courtier
 			gold = high_skill_court_physician_cost
 		}
-
+		add_courtier = scope:new_courtier
+		set_chancellor_effect = {
+			EMPLOYER = root
+			EMPLOYEE = scope:new_courtier
+		}
+		reverse_add_opinion = {
+			target = scope:new_courtier
+			modifier = hired_me_opinion
+		}
+		stress_impact = {
+			zealous = minor_stress_impact_gain
+		}
 	}
 
 	option = { #Send away
 		name = jewish_courtier.banish
 		scope:new_courtier = {
-			death = {
-				death_reason = death_disappearance
+			banish = yes
+			add_opinion = {
+				modifier = banished_me
+				target = root
 			}
 		}
 	}
@@ -263,18 +508,29 @@ jewish_courtier.0007 = {
 	theme = learning
 	left_portrait = {
 		character = scope:new_courtier
-		animation = personality_rational
+		animation = personality_greedy
 	}
 	override_background = { event_background = throne_room }
+	trigger = { exists = capital_province } #If I lost it before I got this event, I shouldn't get a Court Jew
 
 	immediate = {
-		create_character = {
-			employer = root
-			template = kaifeng_intrigue_character
+		hidden_effect = {
+		random_pool_character = {
+			province = root.capital_province
+			limit = { jewish_courtier_excellent_skill_intrigue_trigger = yes }
 			save_scope_as = new_courtier
 		}
-		scope:new_courtier = {
-			set_to_lowborn = yes
+		if = {
+			limit = { NOT = { exists = scope:new_courtier } }
+			create_character = {
+				employer = root
+				template = kaifeng_intrigue_character
+				save_scope_as = new_courtier
+			}
+			scope:new_courtier = {
+				set_to_lowborn = yes
+			}
+		}
 		}
 	}
 
@@ -284,14 +540,27 @@ jewish_courtier.0007 = {
 			target = scope:new_courtier
 			gold = high_skill_court_physician_cost
 		}
-
+		add_courtier = scope:new_courtier
+		set_spymaster_effect = {
+			EMPLOYER = root
+			EMPLOYEE = scope:new_courtier
+		}
+		reverse_add_opinion = {
+			target = scope:new_courtier
+			modifier = hired_me_opinion
+		}
+		stress_impact = {
+			zealous = minor_stress_impact_gain
+		}
 	}
 
 	option = { #Send away
 		name = jewish_courtier.banish
 		scope:new_courtier = {
-			death = {
-				death_reason = death_disappearance
+			banish = yes
+			add_opinion = {
+				modifier = banished_me
+				target = root
 			}
 		}
 	}
@@ -305,18 +574,29 @@ jewish_courtier.0008 = {
 	theme = learning
 	left_portrait = {
 		character = scope:new_courtier
-		animation = personality_rational
+		animation = personality_greedy
 	}
 	override_background = { event_background = throne_room }
+	trigger = { exists = capital_province } #If I lost it before I got this event, I shouldn't get a Court Jew
 
 	immediate = {
-		create_character = {
-			employer = root
-			template = kaifeng_steward_character
+		hidden_effect = {
+		random_pool_character = {
+			province = root.capital_province
+			limit = { jewish_courtier_excellent_skill_stewardship_trigger = yes }
 			save_scope_as = new_courtier
 		}
-		scope:new_courtier = {
-			set_to_lowborn = yes
+		if = {
+			limit = { NOT = { exists = scope:new_courtier } }
+			create_character = {
+				employer = root
+				template = kaifeng_steward_character
+				save_scope_as = new_courtier
+			}
+			scope:new_courtier = {
+				set_to_lowborn = yes
+			}
+		}
 		}
 	}
 
@@ -326,14 +606,27 @@ jewish_courtier.0008 = {
 			target = scope:new_courtier
 			gold = high_skill_court_physician_cost
 		}
-
+		add_courtier = scope:new_courtier
+		set_steward_effect = {
+			EMPLOYER = root
+			EMPLOYEE = scope:new_courtier
+		}
+		reverse_add_opinion = {
+			target = scope:new_courtier
+			modifier = hired_me_opinion
+		}
+		stress_impact = {
+			zealous = minor_stress_impact_gain
+		}
 	}
 
 	option = { #Send away
 		name = jewish_courtier.banish
 		scope:new_courtier = {
-			death = {
-				death_reason = death_disappearance
+			banish = yes
+			add_opinion = {
+				modifier = banished_me
+				target = root
 			}
 		}
 	}
@@ -347,35 +640,67 @@ jewish_courtier.0009 = {
 	theme = learning
 	left_portrait = {
 		character = scope:new_courtier
-		animation = personality_rational
+		animation = personality_greedy
 	}
 	override_background = { event_background = throne_room }
+	trigger = { exists = capital_province } #If I lost it before I got this event, I shouldn't get a Court Jew
 
 	immediate = {
-		create_character = {
-			employer = root
-			template = kaifeng_diplomat_character
+		hidden_effect = {
+		random_pool_character = {
+			province = root.capital_province
+			limit = { jewish_courtier_excellent_skill_diplomacy_trigger = yes }
 			save_scope_as = new_courtier
 		}
-		scope:new_courtier = {
-			set_to_lowborn = yes
+		if = {
+			limit = { NOT = { exists = scope:new_courtier } }
+			create_character = {
+				employer = root
+				template = kaifeng_diplomat_character
+				save_scope_as = new_courtier
+			}
+			scope:new_courtier = {
+				set_to_lowborn = yes
+			}
+		}
 		}
 	}
 
 	option = { #Welcome!
 		name = jewish_courtier.accept
-		pay_short_term_gold = {
-			target = scope:new_courtier
-			gold = high_skill_court_physician_cost
+		if = {
+			limit = {
+				OR = {
+					is_ai = no
+					short_term_gold >= high_skill_court_physician_cost #Because AI would never have enough money and everyone would die
+				}
+			}
+			pay_short_term_gold = {
+				target = scope:new_courtier
+				gold = high_skill_court_physician_cost
+			}
 		}
-
+		add_courtier = scope:new_courtier
+		set_chancellor_effect = {
+			EMPLOYER = root
+			EMPLOYEE = scope:new_courtier
+		}
+		reverse_add_opinion = {
+			target = scope:new_courtier
+			modifier = hired_me_opinion
+		}
+		stress_impact = {
+			zealous = minor_stress_impact_gain
+		}
 	}
 
 	option = { #Send away
 		name = jewish_courtier.banish
 		scope:new_courtier = {
-			death = {
-				death_reason = death_disappearance
+			banish = yes
+			add_opinion = {
+				modifier = banished_me
+				target = root
 			}
 		}
 	}

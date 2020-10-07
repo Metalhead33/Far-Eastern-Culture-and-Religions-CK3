@@ -1,0 +1,96 @@
+﻿#########################################
+# EFFECTS FOR COUNCILLOR HIRING #
+#########################################
+
+### COUNCILLOR MANAGEMENT ###
+
+set_chancellor_effect = {
+	$EMPLOYER$ = {
+		if = {
+			limit = {
+				exists = cp:councillor_chancellor
+			}
+			fire_councillor = cp:councillor_chancellor
+		}
+	}
+	$EMPLOYEE$ = { 
+		assign_councillor_type = {
+			type = councillor_chancellor
+			target = $EMPLOYER$
+		}
+	}
+}
+set_steward_effect = {
+	$EMPLOYER$ = {
+		if = {
+			limit = {
+				exists = cp:councillor_steward
+			}
+			fire_councillor = cp:councillor_steward
+		}
+	}
+	$EMPLOYEE$ = { 
+		assign_councillor_type = {
+			type = councillor_steward
+			target = $EMPLOYER$
+		}
+	}
+}
+set_spymaster_effect = {
+	$EMPLOYER$ = {
+		if = {
+			limit = {
+				exists = cp:councillor_spymaster
+			}
+			fire_councillor = cp:councillor_spymaster
+		}
+	}
+	$EMPLOYEE$ = { 
+		assign_councillor_type = {
+			type = councillor_spymaster
+			target = $EMPLOYER$
+		}
+	}
+}
+set_marshal_effect = {
+	$EMPLOYER$ = {
+		if = {
+			limit = {
+				exists = cp:councillor_marshal
+			}
+			fire_councillor = cp:councillor_marshal
+		}
+	}
+	$EMPLOYEE$ = { 
+		assign_councillor_type = {
+			type = councillor_marshal
+			target = $EMPLOYER$
+		}
+	}
+}
+set_court_chaplain_effect = {
+	$EMPLOYER$ = {
+		if = {
+			limit = {
+				exists = cp:councillor_court_chaplain
+			}
+			fire_councillor = cp:councillor_court_chaplain
+		}
+	}
+	$EMPLOYEE$ = { 
+		assign_councillor_type = {
+			type = councillor_court_chaplain
+			target = $EMPLOYER$
+		}
+	}
+}
+
+fire_councillor_effect = {
+	$EMPLOYER$ = { fire_councillor = $EMPLOYEE$ }
+	$EMPLOYER$ = {
+			reverse_add_opinion = {
+				target = $EMPLOYEE$
+				modifier = fired_from_council_opinion
+		}
+	}
+}
