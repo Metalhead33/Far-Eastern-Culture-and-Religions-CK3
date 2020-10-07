@@ -25,3 +25,86 @@ gypsy_free_realm = {
         top_liege = { has_character_modifier = expelled_the_gypsies }
     }
 }
+has_ashkenazim = {
+	capital_province = {
+		OR = {
+		AND = {	geographical_region = world_europe_west
+		NOT = { geographical_region = world_europe_west_iberia } }
+		geographical_region = world_europe_north
+		geographical_region = world_europe_east
+		}
+	}
+}
+has_sephardim = {
+	capital_province = {
+		OR = {
+			geographical_region = world_europe_west_iberia
+			geographical_region = world_europe_south
+			geographical_region = world_asia_minor
+			geographical_region = world_middle_east_persia
+			geographical_region = world_middle_east
+			geographical_region = world_africa_north
+		}
+	}
+}
+has_kaifeng = {
+	capital_province = {
+		geographical_region = ghw_region_khotan
+	}
+}
+has_jews = {
+	OR = {
+	has_ashkenazim = yes
+	has_sephardim = yes
+	has_kaifeng = yes
+	}
+}
+has_gypsies = {
+	OR = {
+		capital_province = { geographical_region = world_india }
+		AND = {
+			current_date >= 900.1.1
+			capital_province = { geographical_region = world_middle_east_persia }
+		}
+		AND = {
+			current_date >= 1200.1.1
+			capital_province = { geographical_region = world_middle_east }
+		}
+		AND = {
+			current_date >= 1250.1.1
+			capital_province = { geographical_region = world_asia_minor }
+		}
+		AND = {
+			current_date >= 1322.1.1
+			capital_province = { geographical_region = ghw_region_greece }
+		}
+		AND = {
+			current_date >= 1370.1.1
+			capital_province = { geographical_region = world_europe_south_east }
+		}
+		AND = {
+			current_date >= 1370.1.1
+			capital_province = { geographical_region = world_europe_south_east }
+		}
+		AND = {
+			current_date >= 1411.1.1
+			capital_province = { geographical_region = custom_carpathia }
+		}
+		AND = {
+			current_date >= 1427.1.1
+			capital_province = { geographical_region = world_europe_west_francia }
+		}
+		AND = {
+			current_date >= 1427.1.1
+			capital_province = { geographical_region = world_europe_west_francia }
+		}
+		AND = {
+			current_date >= 1430.1.1
+			capital_province = { geographical_region = world_europe_west_britannia }
+		}
+		AND = {
+			current_date >= 1447.1.1
+			capital_province = { geographical_region = world_europe_west_iberia }
+		}
+	}
+}

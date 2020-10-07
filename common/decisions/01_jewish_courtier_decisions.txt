@@ -9,12 +9,14 @@
 		is_independent_ruler = yes
 		NOT = { has_character_modifier = expelled_the_jews }
 		NOT = { has_character_flag = expelled_the_jews_timer }
+		has_jews = yes
 	}
 
 	is_valid = {
 		is_independent_ruler = yes
 		NOT = { has_character_modifier = expelled_the_jews }
 		NOT = { has_character_flag = expelled_the_jews_timer }
+		has_jews = yes
 	}
 
 	effect = {
@@ -90,10 +92,12 @@ hire_jewish_spymaster_ashkenazi = {
 	is_shown = {
 		is_ruler = yes
 		jew_free_realm = no
+		has_jews = yes
 	}
 	is_valid = {
 		is_ruler = yes
 		jew_free_realm = no
+		has_jews = yes
 	}
 
 	cooldown = { days = 3650 }
@@ -131,10 +135,12 @@ hire_jewish_steward_ashkenazi = {
 	is_shown = {
 		is_ruler = yes
 		jew_free_realm = no
+		has_jews = yes
 	}
 	is_valid = {
 		is_ruler = yes
 		jew_free_realm = no
+		has_jews = yes
 	}
 
 	cooldown = { days = 3650 }
@@ -173,10 +179,12 @@ hire_jewish_diplomat_ashkenazi = {
 	is_shown = {
 		is_ruler = yes
 		jew_free_realm = no
+		has_jews = yes
 	}
 	is_valid = {
 		is_ruler = yes
 		jew_free_realm = no
+		has_jews = yes
 	}
 
 	cooldown = { days = 3650 }
@@ -193,6 +201,85 @@ hire_jewish_diplomat_ashkenazi = {
 		}
 		custom_tooltip = hire_jew_decision_effect_tooltip
 
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+borrow_jewish_money = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+
+	desc = borrow_jewish_money_desc
+	selection_tooltip = borrow_jewish_money_tooltip
+
+	ai_check_interval = 0
+
+	is_shown = {
+		is_ruler = yes
+		jew_free_realm = no
+		has_jews = yes
+		NOT = { has_character_modifier = borrowed_from_jews }
+	}
+	is_valid = {
+		is_ruler = yes
+		jew_free_realm = no
+		has_jews = yes
+		NOT = { has_character_modifier = borrowed_from_jews }
+	}
+
+	is_valid_showing_failures_only = {
+		is_available = yes
+	}
+
+	effect = {
+		add_gold = 2000
+		add_character_modifier = borrowed_from_jews
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+give_back_jewish_money = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+
+	desc = give_back_jewish_money_desc
+	selection_tooltip = give_back_jewish_money_tooltip
+
+	ai_check_interval = 0
+
+	is_shown = {
+		is_ruler = yes
+		jew_free_realm = no
+		has_jews = yes
+		has_character_modifier = borrowed_from_jews
+	}
+	is_valid = {
+		is_ruler = yes
+		jew_free_realm = no
+		has_jews = yes
+		has_character_modifier = borrowed_from_jews
+		long_term_gold >= 2000
+	}
+
+	is_valid_showing_failures_only = {
+		is_available = yes
+	}
+
+	effect = {
+		remove_long_term_gold = 2000
+		remove_character_modifier = borrowed_from_jews
 	}
 	
 	ai_potential = {

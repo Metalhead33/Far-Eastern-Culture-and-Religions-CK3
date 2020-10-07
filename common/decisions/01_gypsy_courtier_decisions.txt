@@ -9,12 +9,14 @@
 		is_independent_ruler = yes
 		NOT = { has_character_modifier = expelled_the_gypsies }
 		NOT = { has_character_flag = expelled_the_gypsies_timer }
+		has_gypsies = yes
 	}
 
 	is_valid = {
 		is_independent_ruler = yes
 		NOT = { has_character_modifier = expelled_the_gypsies }
 		NOT = { has_character_flag = expelled_the_gypsies_timer }
+		has_gypsies = yes
 	}
 
 	effect = {
@@ -90,10 +92,12 @@ hire_gypsy_spymaster_india = {
 	is_shown = {
 		is_ruler = yes
 		gypsy_free_realm = no
+		has_gypsies = yes
 	}
 	is_valid = {
 		is_ruler = yes
 		gypsy_free_realm = no
+		has_gypsies = yes
 	}
 
 	cooldown = { days = 3650 }
