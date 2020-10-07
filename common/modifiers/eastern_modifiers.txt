@@ -1,0 +1,16 @@
+﻿expelled_the_jews = {
+	icon = jewish_negative
+	diplomacy = -2
+	domain_tax_mult = -0.1
+	clergy_opinion = 10
+}
+borrowed_from_jews = {
+	icon = jewish_negative
+	clergy_opinion = -5
+	domain_tax_mult = -0.05
+}
+expelled_the_gypsies = {
+	icon = gypsy_negative
+	monthly_county_control_change_factor = 0.5
+	domain_tax_mult = 0.1
+}

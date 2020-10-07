@@ -473,3 +473,149 @@ jewish_courtier.0003 = {
 		}
 	}
 }
+
+# on_new_holder: New ruler gets Expelled Jews modifier.
+jewish_courtier.0004 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		is_ruler = yes
+		is_independent_ruler = yes
+		NOT = { has_character_modifier = expelled_the_jews }
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				scope:previous_holder = {
+					has_character_modifier = expelled_the_jews
+				}
+			}
+		add_character_modifier = expelled_the_jews
+		}
+	}
+}
+
+# Jews are expelled!
+jewish_courtier.0005 = {
+	type = character_event
+	title = jewish_courtier.0005.t
+	desc = jewish_courtier.0005.desc
+	theme = learning
+	left_portrait = {
+		character = root
+		animation = personality_greedy
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		play_music_cue = "mx_cue_stress"
+	}
+	option = { #Send them away
+		name = jewish_courtier.0005.a
+		if = {
+			limit = {
+				has_character_modifier = borrowed_from_jews
+			}
+		remove_character_modifier = borrowed_from_jews
+		}
+		add_gold = 2000
+		add_character_modifier = expelled_the_jews
+		add_character_flag = expelled_the_jews_timer
+		
+		hidden_effect = {
+		every_courtier_or_guest  = {
+		limit = { has_religion = religion:judaism_religion }
+			banish = yes
+			add_opinion = {
+				modifier = banished_me
+				target = root
+			}
+		}
+		}
+		custom_tooltip = jews_are_expelled
+	}
+
+}
+# Jews are expelled - inform vassals
+jewish_courtier.0006 = {
+	type = character_event
+	theme = learning
+	left_portrait = {
+		character = top_liege
+		animation = personality_greedy
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		play_music_cue = "mx_cue_stress"
+	}
+	option = {
+		name = jewish_courtier.0006.a
+		if = {
+			limit = {
+				has_character_modifier = borrowed_from_jews
+			}
+		remove_character_modifier = borrowed_from_jews
+		}
+		add_gold = 100
+		hidden_effect = {
+		every_courtier_or_guest  = {
+		limit = { has_religion = religion:judaism_religion }
+			banish = yes
+			add_opinion = {
+				modifier = banished_me
+				target = top_liege
+			}
+		}
+		}
+		custom_tooltip = jews_are_expelled
+	}
+}
+
+# Jews are welcomed back
+jewish_courtier.0007 = {
+	type = character_event
+	title = jewish_courtier.0007.t
+	desc = jewish_courtier.0007.desc
+	theme = learning
+	left_portrait = {
+		character = root
+		animation = personality_greedy
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		play_music_cue = "mx_cue_peace_ensues"
+		}
+	option = { # Welcome them back
+		name = jewish_courtier.0007.a
+		if = {
+			limit = {
+				remove_character_modifier = expelled_the_jews
+			}
+		remove_character_modifier = expelled_the_jews
+	}
+	}
+
+}
+
+# Jews are welcomed back
+jewish_courtier.0008 = {
+	type = character_event
+	title = jewish_courtier.0007.t
+	desc = jewish_courtier.0007.desc
+	theme = learning
+	left_portrait = {
+		character = top_liege
+		animation = personality_greedy
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		play_music_cue = "mx_cue_peace_ensues"
+	}
+	option = { # Welcome them back
+		name = jewish_courtier.0008.a
+	}
+}

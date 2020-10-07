@@ -1,0 +1,27 @@
+﻿#jew_free_realm = {
+#	OR = {
+#	AND = {
+#	is_independent_ruler = yes
+#	has_character_modifier = expelled_the_jews
+#	}
+#	top_liege = { has_character_modifier = expelled_the_jews }
+#	}
+#}
+jew_free_realm = {
+    trigger_if = {
+        limit = { is_independent_ruler = yes }
+        has_character_modifier = expelled_the_jews
+    }
+    trigger_else = {
+        top_liege = { has_character_modifier = expelled_the_jews }
+    }
+}
+gypsy_free_realm = {
+    trigger_if = {
+        limit = { is_independent_ruler = yes }
+        has_character_modifier = expelled_the_gypsies
+    }
+    trigger_else = {
+        top_liege = { has_character_modifier = expelled_the_gypsies }
+    }
+}

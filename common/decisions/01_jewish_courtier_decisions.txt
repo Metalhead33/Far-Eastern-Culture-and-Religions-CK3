@@ -1,4 +1,85 @@
-﻿hire_jewish_spymaster_ashkenazi = {
+﻿expel_the_jews = {
+	picture = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	major = yes
+	desc = expel_the_jews_decision_desc
+
+	ai_check_interval = 0
+
+	is_shown = {
+		is_independent_ruler = yes
+		NOT = { has_character_modifier = expelled_the_jews }
+		NOT = { has_character_flag = expelled_the_jews_timer }
+	}
+
+	is_valid = {
+		is_independent_ruler = yes
+		NOT = { has_character_modifier = expelled_the_jews }
+		NOT = { has_character_flag = expelled_the_jews_timer }
+	}
+
+	effect = {
+		trigger_event = jewish_courtier.0005
+		hidden_effect = {
+			every_vassal_or_below = {
+				limit = { NOT = { has_religion = religion:judaism_religion } }
+				trigger_event = jewish_courtier.0006
+			}
+		}
+	}
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+welcome_the_jews = {
+	picture = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	major = yes
+	desc = welcome_the_jews_decision_desc
+
+	ai_check_interval = 0
+
+	is_shown = {
+		is_independent_ruler = yes
+		has_character_modifier = expelled_the_jews
+		NOT = { has_character_flag = expelled_the_jews_timer }
+	}
+
+	is_valid = {
+		is_independent_ruler = yes
+		has_character_modifier = expelled_the_jews
+		NOT = { has_character_flag = expelled_the_jews_timer }
+	}
+
+	cost = {
+		prestige = 150
+	}
+
+	effect = {
+		trigger_event = jewish_courtier.0007
+		save_scope_as = actor
+		convert_whole_realm_to_feudalism_effect = yes
+		hidden_effect = {
+			every_vassal_or_below = {
+				trigger_event = jewish_courtier.0008
+			}
+		}
+	}
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+hire_jewish_spymaster_ashkenazi = {
 	picture = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
 
 	desc = hire_jewish_spymaster_decision_desc
@@ -8,9 +89,11 @@
 
 	is_shown = {
 		is_ruler = yes
+		jew_free_realm = no
 	}
 	is_valid = {
 		is_ruler = yes
+		jew_free_realm = no
 	}
 
 	cooldown = { days = 3650 }
@@ -47,9 +130,11 @@ hire_jewish_steward_ashkenazi = {
 
 	is_shown = {
 		is_ruler = yes
+		jew_free_realm = no
 	}
 	is_valid = {
 		is_ruler = yes
+		jew_free_realm = no
 	}
 
 	cooldown = { days = 3650 }
@@ -87,9 +172,11 @@ hire_jewish_diplomat_ashkenazi = {
 
 	is_shown = {
 		is_ruler = yes
+		jew_free_realm = no
 	}
 	is_valid = {
 		is_ruler = yes
+		jew_free_realm = no
 	}
 
 	cooldown = { days = 3650 }

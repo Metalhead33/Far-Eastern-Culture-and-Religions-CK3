@@ -229,3 +229,138 @@ gypsy_courtier.0001 = {
 		}
 	}
 }
+
+
+# on_new_holder: New ruler gets Expelled Gypsies modifier.
+gypsy_courtier.0004 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		is_ruler = yes
+		is_independent_ruler = yes
+		NOT = { has_character_modifier = expelled_the_gypsies }
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				scope:previous_holder = {
+					has_character_modifier = expelled_the_gypsies
+				}
+			}
+		add_character_modifier = expelled_the_gypsies
+		}
+	}
+}
+
+# Gypsies are expelled!
+gypsy_courtier.0005 = {
+	type = character_event
+	title = gypsy_courtier.0005.t
+	desc = gypsy_courtier.0005.desc
+	theme = learning
+	left_portrait = {
+		character = root
+		animation = personality_greedy
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		play_music_cue = "mx_cue_stress"
+	}
+	option = { #Send them away
+		name = gypsy_courtier.0005.a
+		add_character_modifier = expelled_the_gypsies
+		add_character_flag = expelled_the_gypsies_timer
+		
+		hidden_effect = {
+		every_courtier_or_guest  = {
+		limit = { has_culture_group = culture_group:gypsy_group }
+			banish = yes
+			add_opinion = {
+				modifier = banished_me
+				target = root
+			}
+		}
+		}
+		custom_tooltip = gypsies_are_expelled
+	}
+
+}
+# Gypsies are expelled - inform vassals
+gypsy_courtier.0006 = {
+	type = character_event
+	theme = learning
+	left_portrait = {
+		character = top_liege
+		animation = personality_greedy
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		play_music_cue = "mx_cue_stress"
+	}
+	option = {
+		name = gypsy_courtier.0006.a
+		add_gold = 100
+		hidden_effect = {
+		every_courtier_or_guest  = {
+		limit = { has_culture_group = culture_group:gypsy_group }
+			banish = yes
+			add_opinion = {
+				modifier = banished_me
+				target = top_liege
+			}
+		}
+		}
+		custom_tooltip = gypsies_are_expelled
+	}
+}
+
+# Gypsies are welcomed back
+gypsy_courtier.0007 = {
+	type = character_event
+	title = gypsy_courtier.0007.t
+	desc = gypsy_courtier.0007.desc
+	theme = learning
+	left_portrait = {
+		character = root
+		animation = personality_greedy
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		play_music_cue = "mx_cue_peace_ensues"
+	}
+	option = { # Welcome them back
+		name = gypsy_courtier.0007.a
+		if = {
+			limit = {
+				remove_character_modifier = expelled_the_gypsies
+			}
+		remove_character_modifier = expelled_the_gypsies
+	}
+	}
+
+}
+
+# Gypsies are welcomed back
+gypsy_courtier.0008 = {
+	type = character_event
+	title = gypsy_courtier.0007.t
+	desc = gypsy_courtier.0007.desc
+	theme = learning
+	left_portrait = {
+		character = top_liege
+		animation = personality_greedy
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		play_music_cue = "mx_cue_peace_ensues"
+	}
+	option = { # Welcome them back
+		name = gypsy_courtier.0008.a
+	}
+
+}
