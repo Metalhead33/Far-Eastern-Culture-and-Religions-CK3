@@ -15,11 +15,9 @@ set_chancellor_effect = {
 				EMPLOYEE = cp:councillor_chancellor
 			}
 		}
-	}
-	$EMPLOYEE$ = { 
 		assign_councillor_type = {
 			type = councillor_chancellor
-			target = $EMPLOYER$
+			target = $EMPLOYEE$
 		}
 	}
 }
@@ -34,11 +32,9 @@ set_steward_effect = {
 				EMPLOYEE = cp:councillor_steward
 			}
 		}
-	}
-	$EMPLOYEE$ = { 
 		assign_councillor_type = {
 			type = councillor_steward
-			target = $EMPLOYER$
+			target = $EMPLOYEE$
 		}
 	}
 }
@@ -53,11 +49,9 @@ set_spymaster_effect = {
 				EMPLOYEE = cp:councillor_spymaster
 			}
 		}
-	}
-	$EMPLOYEE$ = { 
 		assign_councillor_type = {
 			type = councillor_spymaster
-			target = $EMPLOYER$
+			target = $EMPLOYEE$
 		}
 	}
 }
@@ -72,11 +66,9 @@ set_marshal_effect = {
 				EMPLOYEE = cp:councillor_marshal
 			}
 		}
-	}
-	$EMPLOYEE$ = { 
 		assign_councillor_type = {
 			type = councillor_marshal
-			target = $EMPLOYER$
+			target = $EMPLOYEE$
 		}
 	}
 }
@@ -91,11 +83,9 @@ set_court_chaplain_effect = {
 				EMPLOYEE = cp:councillor_court_chaplain
 			}
 		}
-	}
-	$EMPLOYEE$ = { 
 		assign_councillor_type = {
 			type = councillor_court_chaplain
-			target = $EMPLOYER$
+			target = $EMPLOYEE$
 		}
 	}
 }
