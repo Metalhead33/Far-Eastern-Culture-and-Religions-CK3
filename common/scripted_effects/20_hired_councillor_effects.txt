@@ -10,7 +10,10 @@ set_chancellor_effect = {
 			limit = {
 				exists = cp:councillor_chancellor
 			}
-			fire_councillor = cp:councillor_chancellor
+			fire_councillor_effect = {
+				EMPLOYER = $EMPLOYER$
+				EMPLOYEE = cp:councillor_chancellor
+			}
 		}
 	}
 	$EMPLOYEE$ = { 
@@ -26,7 +29,10 @@ set_steward_effect = {
 			limit = {
 				exists = cp:councillor_steward
 			}
-			fire_councillor = cp:councillor_steward
+			fire_councillor_effect = {
+				EMPLOYER = $EMPLOYER$
+				EMPLOYEE = cp:councillor_steward
+			}
 		}
 	}
 	$EMPLOYEE$ = { 
@@ -42,7 +48,10 @@ set_spymaster_effect = {
 			limit = {
 				exists = cp:councillor_spymaster
 			}
-			fire_councillor = cp:councillor_spymaster
+			fire_councillor_effect = {
+				EMPLOYER = $EMPLOYER$
+				EMPLOYEE = cp:councillor_spymaster
+			}
 		}
 	}
 	$EMPLOYEE$ = { 
@@ -58,7 +67,10 @@ set_marshal_effect = {
 			limit = {
 				exists = cp:councillor_marshal
 			}
-			fire_councillor = cp:councillor_marshal
+			fire_councillor_effect = {
+				EMPLOYER = $EMPLOYER$
+				EMPLOYEE = cp:councillor_marshal
+			}
 		}
 	}
 	$EMPLOYEE$ = { 
@@ -74,7 +86,10 @@ set_court_chaplain_effect = {
 			limit = {
 				exists = cp:councillor_court_chaplain
 			}
-			fire_councillor = cp:councillor_court_chaplain
+			fire_councillor_effect = {
+				EMPLOYER = $EMPLOYER$
+				EMPLOYEE = cp:councillor_court_chaplain
+			}
 		}
 	}
 	$EMPLOYEE$ = { 
