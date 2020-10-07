@@ -87,7 +87,7 @@
 	faiths = {
 	
 	egyptian_pagan = {
-		color = hsv { 255 255 153 }
+		color = { 255 255 153 }
 		icon = egyptian
 		reformed_icon = egyptian
 
@@ -219,7 +219,7 @@
 		
 		
 	atenism = {
-		color = hsv { 255 255 0 }
+		color = { 255 255 0 }
 		icon = atenism
 		reformed_icon = atenism
 
