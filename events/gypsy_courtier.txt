@@ -381,3 +381,5 @@ gypsy_courtier.0010 = {
 			}
 		remove_character_modifier = expelled_the_gypsies
 }
+}
+}

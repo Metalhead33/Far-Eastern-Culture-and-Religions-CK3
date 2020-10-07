@@ -664,3 +664,5 @@ jewish_courtier.0010 = {
 		remove_character_modifier = borrowed_from_jews
 	}
 }
+}
+}
