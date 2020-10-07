@@ -84,7 +84,7 @@
 
 	faiths = {
 		ashurism = {
-			color = { 0.6 0.1 0.1 }
+			color = { 255 204 0 }
 			icon = ashurism
 			reformed_icon = ashurism
 
@@ -214,7 +214,7 @@
 			}
 		}
 		canaanism = {
-			color = { 0.6 0.1 0.1 }
+			color = { 153 51 0 }
 			icon = canaanism
 			reformed_icon = canaanism
 
@@ -341,7 +341,7 @@
 			}
 		}
 		south_arabian = {
-			color = { 0.6 0.1 0.1 }
+			color = { 204 204 0 }
 			icon = south_arabian
 			reformed_icon = south_arabian
 

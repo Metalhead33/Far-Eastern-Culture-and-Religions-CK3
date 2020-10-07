@@ -211,7 +211,7 @@
 			}
 		}
 		mithraism = {
-			color = { 0.6 0.1 0.1 }
+			color = { 102 0 102 }
 			icon = mithraism
 			reformed_icon = mithraism
 
@@ -369,7 +369,7 @@
 			}
 		}
 		romancult = {
-			color = { 0.6 0.1 0.1 }
+			color = { 255 80 80 }
 			icon = romancult
 			reformed_icon = romancult
 
@@ -528,7 +528,7 @@
 			}
 		}
 		numenism = {
-			color = { 0.6 0.1 0.1 }
+			color = { 102 255 204 }
 			icon = numenism
 			reformed_icon = numenism
 

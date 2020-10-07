@@ -189,7 +189,7 @@
 
 	faiths = {
 		jainko = {
-			color = { 0.6 0.0 3.0 }
+			color = { 255 204 204 }
 			icon = jainko
 			reformed_icon = jainko
 

@@ -188,7 +188,7 @@
 
 	faiths = {
 		celtic_faith = {
-			color = { 0.0 0.7 0.2 }
+			color = { 0 153 0 }
 			icon = celtic
 			reformed_icon = celtic
 
