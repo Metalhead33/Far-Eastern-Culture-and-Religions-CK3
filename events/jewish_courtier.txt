@@ -619,3 +619,25 @@ jewish_courtier.0008 = {
 		name = jewish_courtier.0008.a
 	}
 }
+
+# on_new_holder: Jewish loans get inherited! Huzzah!
+jewish_courtier.0009 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		is_ruler = yes
+		is_independent_ruler = yes
+		NOT = { has_character_modifier = borrowed_from_jews }
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				scope:previous_holder = {
+					has_character_modifier = borrowed_from_jews
+				}
+			}
+		add_character_modifier = borrowed_from_jews
+		}
+	}
+}

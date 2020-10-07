@@ -80,6 +80,7 @@ on_title_gain_inheritance = {
 	events = {
 	jewish_courtier.0004
 	gypsy_courtier.0004
+	jewish_courtier.0009
 	}
 	effect = {
 		if = {

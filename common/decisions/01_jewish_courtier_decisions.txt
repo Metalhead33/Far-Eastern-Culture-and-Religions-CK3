@@ -260,15 +260,9 @@ give_back_jewish_money = {
 	ai_check_interval = 0
 
 	is_shown = {
-		is_ruler = yes
-		jew_free_realm = no
-		has_jews = yes
 		has_character_modifier = borrowed_from_jews
 	}
 	is_valid = {
-		is_ruler = yes
-		jew_free_realm = no
-		has_jews = yes
 		has_character_modifier = borrowed_from_jews
 		long_term_gold >= 2000
 	}
