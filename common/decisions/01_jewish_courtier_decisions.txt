@@ -7,6 +7,7 @@
 
 	is_shown = {
 		is_independent_ruler = yes
+		NOT = { has_religion = religion:judaism_religion }
 		NOT = { has_character_modifier = expelled_the_jews }
 		NOT = { has_character_flag = expelled_the_jews_timer }
 		has_jews = yes
@@ -14,6 +15,7 @@
 
 	is_valid = {
 		is_independent_ruler = yes
+		NOT = { has_religion = religion:judaism_religion }
 		NOT = { has_character_modifier = expelled_the_jews }
 		NOT = { has_character_flag = expelled_the_jews_timer }
 		has_jews = yes
@@ -93,11 +95,13 @@ hire_jewish_spymaster_ashkenazi = {
 		is_ruler = yes
 		jew_free_realm = no
 		has_jews = yes
+		NOT = { has_religion = religion:judaism_religion }
 	}
 	is_valid = {
 		is_ruler = yes
 		jew_free_realm = no
 		has_jews = yes
+		NOT = { has_religion = religion:judaism_religion }
 	}
 
 	cooldown = { days = 3650 }
@@ -136,11 +140,13 @@ hire_jewish_steward_ashkenazi = {
 		is_ruler = yes
 		jew_free_realm = no
 		has_jews = yes
+		NOT = { has_religion = religion:judaism_religion }
 	}
 	is_valid = {
 		is_ruler = yes
 		jew_free_realm = no
 		has_jews = yes
+		NOT = { has_religion = religion:judaism_religion }
 	}
 
 	cooldown = { days = 3650 }
@@ -180,11 +186,13 @@ hire_jewish_diplomat_ashkenazi = {
 		is_ruler = yes
 		jew_free_realm = no
 		has_jews = yes
+		NOT = { has_religion = religion:judaism_religion }
 	}
 	is_valid = {
 		is_ruler = yes
 		jew_free_realm = no
 		has_jews = yes
+		NOT = { has_religion = religion:judaism_religion }
 	}
 
 	cooldown = { days = 3650 }
@@ -225,12 +233,14 @@ borrow_jewish_money = {
 		jew_free_realm = no
 		has_jews = yes
 		NOT = { has_character_modifier = borrowed_from_jews }
+		NOT = { has_religion = religion:judaism_religion }
 	}
 	is_valid = {
 		is_ruler = yes
 		jew_free_realm = no
 		has_jews = yes
 		NOT = { has_character_modifier = borrowed_from_jews }
+		NOT = { has_religion = religion:judaism_religion }
 	}
 
 	is_valid_showing_failures_only = {

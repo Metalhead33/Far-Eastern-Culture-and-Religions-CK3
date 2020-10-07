@@ -641,3 +641,26 @@ jewish_courtier.0009 = {
 		}
 	}
 }
+
+# Jews get un-expelled when you are Jewish
+jewish_courtier.0010 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		has_religion = religion:judaism_religion
+		has_character_modifier = expelled_the_jews
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				remove_character_modifier = expelled_the_jews
+			}
+		remove_character_modifier = expelled_the_jews
+		if = {
+			limit = {
+				remove_character_modifier = borrowed_from_jews
+			}
+		remove_character_modifier = borrowed_from_jews
+	}
+}

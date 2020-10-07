@@ -364,3 +364,20 @@ gypsy_courtier.0008 = {
 	}
 
 }
+
+# Gypsies get un-expelled when you are Gypsy
+gypsy_courtier.0010 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+	has_culture_group = culture_group:gypsy_group
+	has_character_modifier = expelled_the_gypsies
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				remove_character_modifier = expelled_the_gypsies
+			}
+		remove_character_modifier = expelled_the_gypsies
+}
