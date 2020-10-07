@@ -60,578 +60,139 @@ gypsy_courtier.0001 = {
 		#Backup generation
 		if = {
 			limit = { NOT = { exists = scope:new_courtier } }
-			create_character = {
-				employer = root
-				template = gypsy_indian_intrigue_character
-				save_scope_as = new_courtier
+			if = {
+				limit = { 
+					root = {
+						OR = {
+						has_culture_group = culture_group:indo_aryan_group
+						has_culture_group = culture_group:dravidian_group
+						}
+					}
+				}
+				create_character = {
+					employer = root
+					template = gypsy_indian_intrigue_character
+					save_scope_as = new_courtier
+				}
 			}
-			scope:new_courtier = {
-				set_to_lowborn = yes
+			if = {
+				limit = { 
+					root = {
+						OR = {
+						has_culture_group = culture_group:arabic_group
+						has_culture_group = culture_group:berber_group
+						has_culture_group = culture_group:iranian_group
+						has_culture = culture:turkish
+						has_culture = culture:assyrian
+						}
+					}
+				}
+				create_character = {
+					employer = root
+					template = gypsy_egypt_intrigue_character
+					save_scope_as = new_courtier
+				}
 			}
-		}
-		}
-	}
-
-	option = { #Welcome!
-		name = gypsy_courtier.accept
-		pay_short_term_gold = {
-			target = scope:new_courtier
-			gold = high_skill_court_physician_cost
-		}
-		add_courtier = scope:new_courtier
-		set_spymaster_effect = {
-			EMPLOYER = root
-			EMPLOYEE = scope:new_courtier
-		}
-		reverse_add_opinion = {
-			target = scope:new_courtier
-			modifier = hired_me_opinion
-		}
-	}
-
-	option = { #Send away
-		name = gypsy_courtier.banish
-		scope:new_courtier = {
-			banish = yes
-			add_opinion = {
-				modifier = banished_me
-				target = root
+			if = {
+				limit = { 
+					root = {
+						OR = {
+						has_culture = culture:armenian
+						has_culture = culture:georgian
+						has_culture = culture:alan
+						}
+					}
+				}
+				create_character = {
+					employer = root
+					template = gypsy_caucasus_intrigue_character
+					save_scope_as = new_courtier
+				}
 			}
-		}
-	}
-}
-
-# Gypsy courtier - Egyptian
-gypsy_courtier.0002 = {
-	type = character_event
-	title = gypsy_courtier.intrigue.t
-	desc = gypsy_courtier.intrigue.desc
-	theme = learning
-	left_portrait = {
-		character = scope:new_courtier
-		animation = scheme
-	}
-	override_background = { event_background = throne_room }
-	trigger = { exists = capital_province } #If I lost it before I got this event, I shouldn't get a Court Gypsy
-
-	immediate = {
-		hidden_effect = {
-		random_pool_character = {
-			province = root.capital_province
-			limit = { gypsy_courtier_excellent_skill_intrigue_trigger = yes }
-			save_scope_as = new_courtier
-		}
-		if = {
-			limit = { NOT = { exists = scope:new_courtier } }
-			create_character = {
-				employer = root
-				template = gypsy_egypt_intrigue_character
-				save_scope_as = new_courtier
+			if = {
+				limit = { 
+					root = {
+						has_culture_group = culture_group:magyar_group
+					}
+				}
+				create_character = {
+					employer = root
+					template = gypsy_hun_intrigue_character
+					save_scope_as = new_courtier
+				}
 			}
-			scope:new_courtier = {
-				set_to_lowborn = yes
+			if = {
+				limit = { 
+					root = {
+						has_culture = culture:vlach
+					}
+				}
+				create_character = {
+					employer = root
+					template = gypsy_romanian_intrigue_character
+					save_scope_as = new_courtier
+				}
 			}
-		}
-		}
-	}
-
-	option = { #Welcome!
-		name = gypsy_courtier.accept
-		pay_short_term_gold = {
-			target = scope:new_courtier
-			gold = high_skill_court_physician_cost
-		}
-		add_courtier = scope:new_courtier
-		set_spymaster_effect = {
-			EMPLOYER = root
-			EMPLOYEE = scope:new_courtier
-		}
-		reverse_add_opinion = {
-			target = scope:new_courtier
-			modifier = hired_me_opinion
-		}
-	}
-
-	option = { #Send away
-		name = gypsy_courtier.banish
-		scope:new_courtier = {
-			banish = yes
-			add_opinion = {
-				modifier = banished_me
-				target = root
+			if = {
+				limit = { 
+					root = {
+						OR = {
+						has_culture_group = culture_group:south_slavic_group
+						has_culture_group = culture_group:west_slavic_group
+						has_culture_group = culture_group:east_slavic_group
+						}
+					}
+				}
+				create_character = {
+					employer = root
+					template = gypsy_slav_intrigue_character
+					save_scope_as = new_courtier
+				}
 			}
-		}
-	}
-}
-
-# Gypsy courtier - Caucasus
-gypsy_courtier.0003 = {
-	type = character_event
-	title = gypsy_courtier.intrigue.t
-	desc = gypsy_courtier.intrigue.desc
-	theme = learning
-	left_portrait = {
-		character = scope:new_courtier
-		animation = scheme
-	}
-	override_background = { event_background = throne_room }
-	trigger = { exists = capital_province } #If I lost it before I got this event, I shouldn't get a Court Gypsy
-
-	immediate = {
-		hidden_effect = {
-		random_pool_character = {
-			province = root.capital_province
-			limit = { gypsy_courtier_excellent_skill_intrigue_trigger = yes }
-			save_scope_as = new_courtier
-		}
-		if = {
-			limit = { NOT = { exists = scope:new_courtier } }
-			create_character = {
-				employer = root
-				template = gypsy_caucasus_intrigue_character
-				save_scope_as = new_courtier
+			if = {
+				limit = { 
+					root = {
+						has_culture = culture:greek
+					}
+				}
+				create_character = {
+					employer = root
+					template = gypsy_greek_intrigue_character
+					save_scope_as = new_courtier
+				}
 			}
-			scope:new_courtier = {
-				set_to_lowborn = yes
+			if = {
+				limit = { 
+					root = {
+						has_culture_group = culture_group:iberian_group
+					}
+				}
+				create_character = {
+					employer = root
+					template = gypsy_iberian_intrigue_character
+					save_scope_as = new_courtier
+				}
 			}
-		}
-		}
-	}
-
-	option = { #Welcome!
-		name = gypsy_courtier.accept
-		pay_short_term_gold = {
-			target = scope:new_courtier
-			gold = high_skill_court_physician_cost
-		}
-		add_courtier = scope:new_courtier
-		set_spymaster_effect = {
-			EMPLOYER = root
-			EMPLOYEE = scope:new_courtier
-		}
-		reverse_add_opinion = {
-			target = scope:new_courtier
-			modifier = hired_me_opinion
-		}
-	}
-
-	option = { #Send away
-		name = gypsy_courtier.banish
-		scope:new_courtier = {
-			banish = yes
-			add_opinion = {
-				modifier = banished_me
-				target = root
+			if = {
+				limit = { 
+					root = {
+						has_culture_group = culture_group:frankish_group
+					}
+				}
+				create_character = {
+					employer = root
+					template = gypsy_french_intrigue_character
+					save_scope_as = new_courtier
+				}
 			}
-		}
-	}
-}
-
-# Gypsy courtier - Hungary
-gypsy_courtier.0004 = {
-	type = character_event
-	title = gypsy_courtier.intrigue.t
-	desc = gypsy_courtier.intrigue.desc
-	theme = learning
-	left_portrait = {
-		character = scope:new_courtier
-		animation = scheme
-	}
-	override_background = { event_background = throne_room }
-	trigger = { exists = capital_province } #If I lost it before I got this event, I shouldn't get a Court Gypsy
-
-	immediate = {
-		hidden_effect = {
-		random_pool_character = {
-			province = root.capital_province
-			limit = { gypsy_courtier_excellent_skill_intrigue_trigger = yes }
-			save_scope_as = new_courtier
-		}
-		if = {
-			limit = { NOT = { exists = scope:new_courtier } }
-			create_character = {
-				employer = root
-				template = gypsy_hun_intrigue_character
-				save_scope_as = new_courtier
-			}
-			scope:new_courtier = {
-				set_to_lowborn = yes
-			}
-		}
-		}
-	}
-
-	option = { #Welcome!
-		name = gypsy_courtier.accept
-		pay_short_term_gold = {
-			target = scope:new_courtier
-			gold = high_skill_court_physician_cost
-		}
-		add_courtier = scope:new_courtier
-		set_spymaster_effect = {
-			EMPLOYER = root
-			EMPLOYEE = scope:new_courtier
-		}
-		reverse_add_opinion = {
-			target = scope:new_courtier
-			modifier = hired_me_opinion
-		}
-	}
-
-	option = { #Send away
-		name = gypsy_courtier.banish
-		scope:new_courtier = {
-			banish = yes
-			add_opinion = {
-				modifier = banished_me
-				target = root
-			}
-		}
-	}
-}
-
-
-# Gypsy courtier - Romania
-gypsy_courtier.0005 = {
-	type = character_event
-	title = gypsy_courtier.intrigue.t
-	desc = gypsy_courtier.intrigue.desc
-	theme = learning
-	left_portrait = {
-		character = scope:new_courtier
-		animation = scheme
-	}
-	override_background = { event_background = throne_room }
-	trigger = { exists = capital_province } #If I lost it before I got this event, I shouldn't get a Court Gypsy
-
-	immediate = {
-		hidden_effect = {
-		random_pool_character = {
-			province = root.capital_province
-			limit = { gypsy_courtier_excellent_skill_intrigue_trigger = yes }
-			save_scope_as = new_courtier
-		}
-		if = {
-			limit = { NOT = { exists = scope:new_courtier } }
-			create_character = {
-				employer = root
-				template = gypsy_romanian_intrigue_character
-				save_scope_as = new_courtier
-			}
-			scope:new_courtier = {
-				set_to_lowborn = yes
-			}
-		}
-		}
-	}
-
-	option = { #Welcome!
-		name = gypsy_courtier.accept
-		pay_short_term_gold = {
-			target = scope:new_courtier
-			gold = high_skill_court_physician_cost
-		}
-		add_courtier = scope:new_courtier
-		set_spymaster_effect = {
-			EMPLOYER = root
-			EMPLOYEE = scope:new_courtier
-		}
-		reverse_add_opinion = {
-			target = scope:new_courtier
-			modifier = hired_me_opinion
-		}
-	}
-
-	option = { #Send away
-		name = gypsy_courtier.banish
-		scope:new_courtier = {
-			banish = yes
-			add_opinion = {
-				modifier = banished_me
-				target = root
-			}
-		}
-	}
-}
-
-# Gypsy courtier - Yugoslavia
-gypsy_courtier.0006 = {
-	type = character_event
-	title = gypsy_courtier.intrigue.t
-	desc = gypsy_courtier.intrigue.desc
-	theme = learning
-	left_portrait = {
-		character = scope:new_courtier
-		animation = scheme
-	}
-	override_background = { event_background = throne_room }
-	trigger = { exists = capital_province } #If I lost it before I got this event, I shouldn't get a Court Gypsy
-
-	immediate = {
-		hidden_effect = {
-		random_pool_character = {
-			province = root.capital_province
-			limit = { gypsy_courtier_excellent_skill_intrigue_trigger = yes }
-			save_scope_as = new_courtier
-		}
-		if = {
-			limit = { NOT = { exists = scope:new_courtier } }
-			create_character = {
-				employer = root
-				template = gypsy_slav_intrigue_character
-				save_scope_as = new_courtier
-			}
-			scope:new_courtier = {
-				set_to_lowborn = yes
-			}
-		}
-		}
-	}
-
-	option = { #Welcome!
-		name = gypsy_courtier.accept
-		pay_short_term_gold = {
-			target = scope:new_courtier
-			gold = high_skill_court_physician_cost
-		}
-		add_courtier = scope:new_courtier
-		set_spymaster_effect = {
-			EMPLOYER = root
-			EMPLOYEE = scope:new_courtier
-		}
-		reverse_add_opinion = {
-			target = scope:new_courtier
-			modifier = hired_me_opinion
-		}
-	}
-
-	option = { #Send away
-		name = gypsy_courtier.banish
-		scope:new_courtier = {
-			banish = yes
-			add_opinion = {
-				modifier = banished_me
-				target = root
-			}
-		}
-	}
-}
-
-# Gypsy courtier - Greece
-gypsy_courtier.0007 = {
-	type = character_event
-	title = gypsy_courtier.intrigue.t
-	desc = gypsy_courtier.intrigue.desc
-	theme = learning
-	left_portrait = {
-		character = scope:new_courtier
-		animation = scheme
-	}
-	override_background = { event_background = throne_room }
-	trigger = { exists = capital_province } #If I lost it before I got this event, I shouldn't get a Court Gypsy
-
-	immediate = {
-		hidden_effect = {
-		random_pool_character = {
-			province = root.capital_province
-			limit = { gypsy_courtier_excellent_skill_intrigue_trigger = yes }
-			save_scope_as = new_courtier
-		}
-		if = {
-			limit = { NOT = { exists = scope:new_courtier } }
-			create_character = {
-				employer = root
-				template = gypsy_greek_intrigue_character
-				save_scope_as = new_courtier
-			}
-			scope:new_courtier = {
-				set_to_lowborn = yes
-			}
-		}
-		}
-	}
-
-	option = { #Welcome!
-		name = gypsy_courtier.accept
-		pay_short_term_gold = {
-			target = scope:new_courtier
-			gold = high_skill_court_physician_cost
-		}
-		add_courtier = scope:new_courtier
-		set_spymaster_effect = {
-			EMPLOYER = root
-			EMPLOYEE = scope:new_courtier
-		}
-		reverse_add_opinion = {
-			target = scope:new_courtier
-			modifier = hired_me_opinion
-		}
-	}
-
-	option = { #Send away
-		name = gypsy_courtier.banish
-		scope:new_courtier = {
-			banish = yes
-			add_opinion = {
-				modifier = banished_me
-				target = root
-			}
-		}
-	}
-}
-
-# Gypsy courtier - Iberia
-gypsy_courtier.0008 = {
-	type = character_event
-	title = gypsy_courtier.intrigue.t
-	desc = gypsy_courtier.intrigue.desc
-	theme = learning
-	left_portrait = {
-		character = scope:new_courtier
-		animation = scheme
-	}
-	override_background = { event_background = throne_room }
-	trigger = { exists = capital_province } #If I lost it before I got this event, I shouldn't get a Court Gypsy
-
-	immediate = {
-		hidden_effect = {
-		random_pool_character = {
-			province = root.capital_province
-			limit = { gypsy_courtier_excellent_skill_intrigue_trigger = yes }
-			save_scope_as = new_courtier
-		}
-		if = {
-			limit = { NOT = { exists = scope:new_courtier } }
-			create_character = {
-				employer = root
-				template = gypsy_iberian_intrigue_character
-				save_scope_as = new_courtier
-			}
-			scope:new_courtier = {
-				set_to_lowborn = yes
-			}
-		}
-		}
-	}
-
-	option = { #Welcome!
-		name = gypsy_courtier.accept
-		pay_short_term_gold = {
-			target = scope:new_courtier
-			gold = high_skill_court_physician_cost
-		}
-		add_courtier = scope:new_courtier
-		set_spymaster_effect = {
-			EMPLOYER = root
-			EMPLOYEE = scope:new_courtier
-		}
-		reverse_add_opinion = {
-			target = scope:new_courtier
-			modifier = hired_me_opinion
-		}
-	}
-
-	option = { #Send away
-		name = gypsy_courtier.banish
-		scope:new_courtier = {
-			banish = yes
-			add_opinion = {
-				modifier = banished_me
-				target = root
-			}
-		}
-	}
-}
-
-# Gypsy courtier - France
-gypsy_courtier.0009 = {
-	type = character_event
-	title = gypsy_courtier.intrigue.t
-	desc = gypsy_courtier.intrigue.desc
-	theme = learning
-	left_portrait = {
-		character = scope:new_courtier
-		animation = scheme
-	}
-	override_background = { event_background = throne_room }
-	trigger = { exists = capital_province } #If I lost it before I got this event, I shouldn't get a Court Gypsy
-
-	immediate = {
-		hidden_effect = {
-		random_pool_character = {
-			province = root.capital_province
-			limit = { gypsy_courtier_excellent_skill_intrigue_trigger = yes }
-			save_scope_as = new_courtier
-		}
-		if = {
+			# Ultimate fallback
+			if = {
 			limit = { NOT = { exists = scope:new_courtier } }
 			create_character = {
 				employer = root
 				template = gypsy_french_intrigue_character
 				save_scope_as = new_courtier
 			}
-			scope:new_courtier = {
-				set_to_lowborn = yes
-			}
-		}
-		}
-	}
-
-	option = { #Welcome!
-		name = gypsy_courtier.accept
-		pay_short_term_gold = {
-			target = scope:new_courtier
-			gold = high_skill_court_physician_cost
-		}
-		add_courtier = scope:new_courtier
-		set_spymaster_effect = {
-			EMPLOYER = root
-			EMPLOYEE = scope:new_courtier
-		}
-		reverse_add_opinion = {
-			target = scope:new_courtier
-			modifier = hired_me_opinion
-		}
-	}
-
-	option = { #Send away
-		name = gypsy_courtier.banish
-		scope:new_courtier = {
-			banish = yes
-			add_opinion = {
-				modifier = banished_me
-				target = root
-			}
-		}
-	}
-}
-
-# Gypsy courtier - Italy
-gypsy_courtier.0010 = {
-	type = character_event
-	title = gypsy_courtier.intrigue.t
-	desc = gypsy_courtier.intrigue.desc
-	theme = learning
-	left_portrait = {
-		character = scope:new_courtier
-		animation = scheme
-	}
-	override_background = { event_background = throne_room }
-	trigger = { exists = capital_province } #If I lost it before I got this event, I shouldn't get a Court Gypsy
-
-	immediate = {
-		hidden_effect = {
-		random_pool_character = {
-			province = root.capital_province
-			limit = { gypsy_courtier_excellent_skill_intrigue_trigger = yes }
-			save_scope_as = new_courtier
-		}
-		if = {
-			limit = { NOT = { exists = scope:new_courtier } }
-			create_character = {
-				employer = root
-				template = gypsy_italian_intrigue_character
-				save_scope_as = new_courtier
 			}
 			scope:new_courtier = {
 				set_to_lowborn = yes
