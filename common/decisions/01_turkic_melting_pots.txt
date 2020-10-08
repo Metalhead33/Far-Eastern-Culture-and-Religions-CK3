@@ -214,10 +214,26 @@ establish_azeri_turkish_culture_decision = {
 	effect = {
 		hidden_effect = {
 			# Generate a list of counties we want to flip to the new culture.
-			title:d_bucellaria = {
-				every_in_de_jure_hierarchy = {
-					limit = { tier = tier_county}
-					add_to_list = azeri_turkish_counties
+			if = {
+				limit = {
+				completely_controls = title:d_shirvan
+				}
+				title:d_shirvan = {
+					every_in_de_jure_hierarchy = {
+						limit = { tier = tier_county}
+						add_to_list = azeri_turkish_counties
+					}
+				}
+			}
+			if = {
+				limit = {
+				completely_controls = title:d_azerbaijan
+				}
+				title:d_azerbaijan = {
+					every_in_de_jure_hierarchy = {
+						limit = { tier = tier_county}
+						add_to_list = azeri_turkish_counties
+					}
 				}
 			}
 			every_sub_realm_title = {
@@ -244,6 +260,18 @@ establish_azeri_turkish_culture_decision = {
 					OLD_CULTURE_2 = culture:persian
 					NEW_CULTURE = culture:azeri_turkish
 					REGION = special_azeri_culture_region
+				}
+			}
+			every_in_list = {
+				list = azeri_turkish_counties
+				if = {
+				limit = {
+					culture_group = culture_group:iranian_group
+				}
+				hidden_effect = {
+				set_county_culture = culture:azeri_turkish
+				holder = { set_culture = culture:azeri_turkish }
+				}
 				}
 			}
 
