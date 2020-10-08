@@ -196,6 +196,9 @@ jewish_courtier.0001 = {
 
 	option = { #Welcome!
 		name = jewish_courtier.accept
+		ai_chance = {
+			factor = 100
+		}
 		pay_short_term_gold = {
 			target = scope:new_courtier
 			gold = high_skill_court_physician_cost
@@ -216,6 +219,9 @@ jewish_courtier.0001 = {
 
 	option = { #Send away
 		name = jewish_courtier.banish
+		ai_chance = {
+			factor = 0
+		}
 		scope:new_courtier = {
 			banish = yes
 			add_opinion = {
@@ -320,6 +326,9 @@ jewish_courtier.0002 = {
 
 	option = { #Welcome!
 		name = jewish_courtier.accept
+		ai_chance = {
+			factor = 100
+		}
 		pay_short_term_gold = {
 			target = scope:new_courtier
 			gold = high_skill_court_physician_cost
@@ -340,6 +349,9 @@ jewish_courtier.0002 = {
 
 	option = { #Send away
 		name = jewish_courtier.banish
+		ai_chance = {
+			factor = 0
+		}
 		scope:new_courtier = {
 			banish = yes
 			add_opinion = {
@@ -444,6 +456,9 @@ jewish_courtier.0003 = {
 
 	option = { #Welcome!
 		name = jewish_courtier.accept
+		ai_chance = {
+			factor = 100
+		}
 		pay_short_term_gold = {
 			target = scope:new_courtier
 			gold = high_skill_court_physician_cost
@@ -464,6 +479,9 @@ jewish_courtier.0003 = {
 
 	option = { #Send away
 		name = jewish_courtier.banish
+		ai_chance = {
+			factor = 0
+		}
 		scope:new_courtier = {
 			banish = yes
 			add_opinion = {

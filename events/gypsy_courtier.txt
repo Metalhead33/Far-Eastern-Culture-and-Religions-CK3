@@ -203,6 +203,9 @@ gypsy_courtier.0001 = {
 
 	option = { #Welcome!
 		name = gypsy_courtier.accept
+		ai_chance = {
+			factor = 100
+		}
 		pay_short_term_gold = {
 			target = scope:new_courtier
 			gold = high_skill_court_physician_cost
@@ -220,6 +223,9 @@ gypsy_courtier.0001 = {
 
 	option = { #Send away
 		name = gypsy_courtier.banish
+		ai_chance = {
+			factor = 0
+		}
 		scope:new_courtier = {
 			banish = yes
 			add_opinion = {

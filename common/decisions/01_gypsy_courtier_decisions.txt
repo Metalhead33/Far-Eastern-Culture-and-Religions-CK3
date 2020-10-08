@@ -3,7 +3,7 @@
 	major = yes
 	desc = expel_the_gypsies_decision_desc
 
-	ai_check_interval = 0
+	ai_check_interval = 12
 
 	is_shown = {
 		is_independent_ruler = yes
@@ -32,11 +32,26 @@
 	}
 
 	ai_potential = {
-		always = no
+		always = yes
 	}
 
 	ai_will_do = {
 		base = 0
+		#Weight up for zealous characters.
+		modifier = {
+			add = 50
+			has_trait = zealous
+		}
+		#Weight up for greedy characters.
+		modifier = {
+			add = 25
+			has_trait = vengeful
+		}
+		#Weight up for greedy characters.
+		modifier = {
+			add = 25
+			has_trait = wrathful
+		}
 	}
 }
 
@@ -75,11 +90,46 @@ welcome_the_gypsies = {
 	}
 
 	ai_potential = {
-		always = no
+		always = yes
 	}
 
 	ai_will_do = {
-		base = 0
+		base = 15
+		#Weight up for zealous characters.
+		modifier = {
+			factor = 0
+			has_trait = zealous
+		}
+		#Weight down for vengeful characters.
+		modifier = {
+			factor = 0
+			has_trait = vengeful
+		}
+		#Weight down for wrathful characters.
+		modifier = {
+			factor = 0
+			has_trait = wrathful
+		}
+		#Weight up for forgiving characters.
+		modifier = {
+			add = 35
+			has_trait = forgiving
+		}
+		#Weight up for compassionate characters.
+		modifier = {
+			add = 35
+			has_trait = compassionate
+		}
+		#Weight up for cynical characters.
+		modifier = {
+			add = 35
+			has_trait = cynical
+		}
+		#Weight up for just characters.
+		modifier = {
+			add = 35
+			has_trait = just
+		}
 	}
 }
 
@@ -89,7 +139,7 @@ hire_gypsy_spymaster_india = {
 	desc = hire_gypsy_spymaster_decision_desc
 	selection_tooltip = hire_gypsy_spymaster_tooltip
 
-	ai_check_interval = 0
+	ai_check_interval = 3
 
 	is_shown = {
 		is_ruler = yes
@@ -121,10 +171,30 @@ hire_gypsy_spymaster_india = {
 	}
 	
 	ai_potential = {
-		always = no
+		always = yes
 	}
 
 	ai_will_do = {
 		base = 0
+		#Weight up for zealous characters.
+		modifier = {
+			factor = 0
+			has_trait = zealous
+		}
+		#Weight up if the AI has no spymaster.
+		modifier = {
+			add = 100
+			NOT = { exists = cp:councillor_spymaster }
+		}
+		#Weight up if the AI has a bad spymaster.
+		modifier = {
+			add = 100
+			AND = {
+			exists = cp:councillor_spymaster
+			cp:councillor_spymaster = {
+				intrigue < high_skill_rating
+				}
+			}
+		}
 	}
 }

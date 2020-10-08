@@ -3,7 +3,7 @@
 	major = yes
 	desc = expel_the_jews_decision_desc
 
-	ai_check_interval = 0
+	ai_check_interval = 12
 
 	is_shown = {
 		is_independent_ruler = yes
@@ -32,11 +32,31 @@
 	}
 
 	ai_potential = {
-		always = no
+		always = yes
 	}
 
 	ai_will_do = {
 		base = 0
+		#Weight up for zealous characters.
+		modifier = {
+			add = 50
+			has_trait = zealous
+		}
+		#Weight up for characters who have borrowed from the jews.
+		modifier = {
+			add = 50
+			has_character_modifier = borrowed_from_jews
+		}
+		#Weight up for greedy characters.
+		modifier = {
+			add = 25
+			has_trait = greedy
+		}
+		#Weight up for greedy characters.
+		modifier = {
+			add = 25
+			has_trait = wrathful
+		}
 	}
 }
 
@@ -75,11 +95,46 @@ welcome_the_jews = {
 	}
 
 	ai_potential = {
-		always = no
+		always = yes
 	}
 
 	ai_will_do = {
-		base = 0
+		base = 15
+		#Weight down for zealous characters.
+		modifier = {
+			factor = 0
+			has_trait = zealous
+		}
+		#Weight down for vengeful characters.
+		modifier = {
+			factor = 0
+			has_trait = vengeful
+		}
+		#Weight down for wrathful characters.
+		modifier = {
+			factor = 0
+			has_trait = wrathful
+		}
+		#Weight up for forgiving characters.
+		modifier = {
+			add = 35
+			has_trait = forgiving
+		}
+		#Weight up for compassionate characters.
+		modifier = {
+			add = 35
+			has_trait = compassionate
+		}
+		#Weight up for cynical characters.
+		modifier = {
+			add = 35
+			has_trait = cynical
+		}
+		#Weight up for just characters.
+		modifier = {
+			add = 35
+			has_trait = just
+		}
 	}
 }
 
@@ -121,11 +176,31 @@ hire_jewish_spymaster_ashkenazi = {
 	}
 	
 	ai_potential = {
-		always = no
+		always = yes
 	}
 
 	ai_will_do = {
 		base = 0
+		#Weight up for zealous characters.
+		modifier = {
+			factor = 0
+			has_trait = zealous
+		}
+		#Weight up if the AI has no spymaster.
+		modifier = {
+			add = 100
+			NOT = { exists = cp:councillor_spymaster }
+		}
+		#Weight up if the AI has a bad spymaster.
+		modifier = {
+			add = 100
+			AND = {
+			exists = cp:councillor_spymaster
+			cp:councillor_spymaster = {
+				intrigue < high_skill_rating
+				}
+			}
+		}
 	}
 }
 hire_jewish_steward_ashkenazi = {
@@ -171,6 +246,26 @@ hire_jewish_steward_ashkenazi = {
 
 	ai_will_do = {
 		base = 0
+		#Weight up for zealous characters.
+		modifier = {
+			factor = 0
+			has_trait = zealous
+		}
+		#Weight up if the AI has no steward.
+		modifier = {
+			add = 100
+			NOT = { exists = cp:councillor_steward }
+		}
+		#Weight up if the AI has a bad steward.
+		modifier = {
+			add = 100
+			AND = {
+			exists = cp:councillor_steward
+			cp:councillor_steward = {
+				stewardship < high_skill_rating
+				}
+			}
+		}
 	}
 }
 
@@ -212,11 +307,31 @@ hire_jewish_diplomat_ashkenazi = {
 	}
 	
 	ai_potential = {
-		always = no
+		always = yes
 	}
 
 	ai_will_do = {
 		base = 0
+		#Weight up for zealous characters.
+		modifier = {
+			factor = 0
+			has_trait = zealous
+		}
+		#Weight up if the AI has no chancellor.
+		modifier = {
+			add = 100
+			NOT = { exists = cp:councillor_chancellor }
+		}
+		#Weight up if the AI has a bad chancellor.
+		modifier = {
+			add = 100
+			AND = {
+			exists = cp:councillor_chancellor
+			cp:councillor_chancellor = {
+				diplomacy < high_skill_rating
+				}
+			}
+		}
 	}
 }
 
@@ -226,7 +341,7 @@ borrow_jewish_money = {
 	desc = borrow_jewish_money_desc
 	selection_tooltip = borrow_jewish_money_tooltip
 
-	ai_check_interval = 0
+	ai_check_interval = 3
 
 	is_shown = {
 		is_ruler = yes
@@ -253,11 +368,21 @@ borrow_jewish_money = {
 	}
 	
 	ai_potential = {
-		always = no
+		always = yes
 	}
 
 	ai_will_do = {
 		base = 0
+		# Weight down for zealous characters.
+		modifier = {
+			factor = 0
+			has_trait = zealous
+		}
+		# Only needed if the character doesn't have enough gold.
+		modifier = {
+			long_term_gold < 2000
+			add = 35
+		}
 	}
 }
 
@@ -287,10 +412,10 @@ give_back_jewish_money = {
 	}
 	
 	ai_potential = {
-		always = no
+		always = yes
 	}
 
 	ai_will_do = {
-		base = 0
+		base = 25
 	}
 }
