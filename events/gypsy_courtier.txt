@@ -342,7 +342,7 @@ gypsy_courtier.0007 = {
 		name = gypsy_courtier.0007.a
 		if = {
 			limit = {
-				remove_character_modifier = expelled_the_gypsies
+				has_character_modifier = expelled_the_gypsies
 			}
 		remove_character_modifier = expelled_the_gypsies
 	}
@@ -383,7 +383,7 @@ gypsy_courtier.0010 = {
 	immediate = {
 		if = {
 			limit = {
-				remove_character_modifier = expelled_the_gypsies
+				has_character_modifier = expelled_the_gypsies
 			}
 		remove_character_modifier = expelled_the_gypsies
 }

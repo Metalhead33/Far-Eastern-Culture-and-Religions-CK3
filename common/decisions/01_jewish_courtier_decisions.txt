@@ -164,12 +164,14 @@ hire_jewish_spymaster_ashkenazi = {
 		jew_free_realm = no
 		has_jews = yes
 		NOT = { has_religion = religion:judaism_religion }
+		highest_held_title_tier >= tier_county
 	}
 	is_valid = {
 		is_ruler = yes
 		jew_free_realm = no
 		has_jews = yes
 		NOT = { has_religion = religion:judaism_religion }
+		highest_held_title_tier >= tier_county
 	}
 
 	cooldown = { days = 3650 }
@@ -229,12 +231,14 @@ hire_jewish_steward_ashkenazi = {
 		jew_free_realm = no
 		has_jews = yes
 		NOT = { has_religion = religion:judaism_religion }
+		highest_held_title_tier >= tier_county
 	}
 	is_valid = {
 		is_ruler = yes
 		jew_free_realm = no
 		has_jews = yes
 		NOT = { has_religion = religion:judaism_religion }
+		highest_held_title_tier >= tier_county
 	}
 
 	cooldown = { days = 3650 }
@@ -295,12 +299,14 @@ hire_jewish_diplomat_ashkenazi = {
 		jew_free_realm = no
 		has_jews = yes
 		NOT = { has_religion = religion:judaism_religion }
+		highest_held_title_tier >= tier_county
 	}
 	is_valid = {
 		is_ruler = yes
 		jew_free_realm = no
 		has_jews = yes
 		NOT = { has_religion = religion:judaism_religion }
+		highest_held_title_tier >= tier_county
 	}
 
 	cooldown = { days = 3650 }

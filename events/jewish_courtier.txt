@@ -42,7 +42,7 @@ scripted_trigger jewish_courtier_high_skill_intrigue_trigger = {
 
 scripted_trigger jewish_courtier_excellent_skill_diplomacy_trigger = {
 	jewish_courtier_basic_requirements_trigger = yes
-	diploamcy >= high_skill_rating
+	diplomacy >= high_skill_rating
 }
 
 scripted_trigger jewish_courtier_high_skill_diplomacy_trigger = {
@@ -610,7 +610,7 @@ jewish_courtier.0007 = {
 		name = jewish_courtier.0007.a
 		if = {
 			limit = {
-				remove_character_modifier = expelled_the_jews
+				has_character_modifier = expelled_the_jews
 			}
 		remove_character_modifier = expelled_the_jews
 	}
@@ -672,12 +672,12 @@ jewish_courtier.0010 = {
 	immediate = {
 		if = {
 			limit = {
-				remove_character_modifier = expelled_the_jews
+				has_character_modifier = expelled_the_jews
 			}
 		remove_character_modifier = expelled_the_jews
 		if = {
 			limit = {
-				remove_character_modifier = borrowed_from_jews
+				has_character_modifier = borrowed_from_jews
 			}
 		remove_character_modifier = borrowed_from_jews
 	}
