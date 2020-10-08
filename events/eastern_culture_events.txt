@@ -1,5 +1,7 @@
 ﻿namespace = eastern_culture
 
+# TURKEY
+
 eastern_culture.0001 = {
 	type = character_event
 	title = eastern_culture.0001.t
@@ -204,6 +206,216 @@ eastern_culture.0005 = {
 		name = eastern_culture.0005.a
 		scope:county_to_change = {
 			set_county_culture = culture:anatolian_turkish
+		}
+	}
+}
+
+# AZERBAIJAN
+
+eastern_culture.0006 = {
+	type = character_event
+	title = eastern_culture.0006.t
+	desc = eastern_culture.0006.desc
+	theme = culture_change
+	left_portrait = scope:azeri_turkish_founder
+
+	immediate = {
+		show_as_tooltip = {
+			custom_tooltip = global_culture.custom.merge_culture
+			culture:azeri_turkish = {
+				get_all_innovations_from = culture:persian
+			}
+		}
+	}
+
+	option = {
+		name = eastern_culture.0006.a
+	}
+}
+
+eastern_culture.0007 = {
+	type = character_event
+	title = eastern_culture.0007.t
+	desc = eastern_culture.0007.desc
+	theme = culture_change
+	left_portrait = scope:azeri_turkish_founder
+
+	immediate = {
+		show_as_tooltip = {
+			custom_tooltip = global_culture.custom.merge_culture
+			culture:azeri_turkish = {
+				get_all_innovations_from = culture:persian
+			}
+		}
+	}
+
+	option = {
+		name = eastern_culture.0007.a
+	}
+}
+
+eastern_culture.0008 = {
+	type = character_event
+	title = eastern_culture.0008.t
+	desc = eastern_culture.0008.desc
+	theme = culture_change
+	left_portrait = scope:azeri_turkish_founder
+
+	immediate = {
+		show_as_tooltip = {
+			culture:azeri_turkish = {
+				get_all_innovations_from = culture:persian
+			}
+		}
+	}
+
+	option = {
+		name = eastern_culture.0008.a
+	}
+}
+
+scripted_trigger valid_for_azeri_turkish_ruler_culture_trigger = {
+	tier = tier_county
+	exists = holder
+	is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_formed_azeri_turkish_decision
+	}
+	NOT = { exists = var:had_azeri_turkish_county_conversion }
+	title_province = {
+		geographical_region = special_azeri_culture_region # d_shirvan d_azerbaijan
+	}
+	OR = {
+		AND = {
+			holder.culture = culture:turkish
+			culture = culture:persian
+		}
+		AND = {
+			holder.culture = culture:persian
+			culture = culture:turkish
+		}
+	}
+}
+scripted_trigger valid_for_azeri_turkish_organic_culture_trigger = {
+	tier = tier_county
+	exists = holder
+	title_province = {
+		geographical_region = special_azeri_culture_region
+	}
+	NOT = { exists = var:had_azeri_turkish_county_conversion }
+	NOT = { culture = holder.culture } # No conversion for counties who match their holder's culture
+	OR = {
+		culture = culture:persian
+		culture = culture:turkish
+	}
+	any_neighboring_county = {
+		culture = culture:azeri_turkish
+	}
+}
+
+# Create Anatolian Turkish culture
+
+eastern_culture.0009 = {
+	type = character_event
+	title = eastern_culture.0009.t
+	desc = eastern_culture.0009.desc
+	theme = culture_change
+	left_portrait = root
+	
+	trigger = {
+		OR = {
+			culture = culture:turkish
+			culture = culture:persian
+		}
+		any_held_title = {
+			valid_for_azeri_turkish_ruler_culture_trigger = yes
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			add = 2
+			culture = culture:turkish
+		}
+	}
+
+	immediate = {
+		random_held_title = {
+			limit = {
+				valid_for_azeri_turkish_ruler_culture_trigger = yes
+			}
+			weight = { # Try to approximate organic spread
+				base = 1
+				modifier = {
+					add = 4
+					any_neighboring_county = {
+						culture = culture:azeri_turkish
+					}
+				}
+			}
+			save_scope_as = county_to_change
+			culture = {
+				save_scope_as = old_culture
+			}
+			set_variable = {
+				name = had_azeri_turkish_county_conversion
+				value = yes
+			}
+		}
+		culture:azeri_turkish = {
+			save_scope_as = azeri_turkish # For loc
+		}
+		debug_log = "Converted a province to Anatolian Turkish from eastern_culture.0009"
+	}
+
+	option = {
+		name = eastern_culture.0009.a
+		scope:county_to_change = {
+			set_county_culture = culture:azeri_turkish
+		}
+	}
+}
+
+# Organically spread Anatolian Turkish culture
+
+
+eastern_culture.0010 = {
+	type = character_event
+	title = eastern_culture.0009.t
+	desc = eastern_culture.0009.desc
+	theme = culture_change
+	left_portrait = root
+	
+	trigger = {
+		culture = culture:azeri_turkish
+		any_held_title = {
+			valid_for_azeri_turkish_organic_culture_trigger = yes
+		}
+	}
+
+	immediate = {
+		random_held_title = {
+			limit = { valid_for_azeri_turkish_organic_culture_trigger = yes }
+			save_scope_as = county_to_change
+			culture = {
+				save_scope_as = old_culture
+			}
+			set_variable = {
+				name = had_azeri_turkish_county_conversion
+				value = yes
+			}
+		}
+		culture:azeri_turkish = {
+			save_scope_as = azeri_turkish # For loc
+		}
+		debug_log = "Converted a province to Anatolian Turkish from eastern_culture.0010"
+	}
+
+	option = {
+		name = eastern_culture.0010.a
+		scope:county_to_change = {
+			set_county_culture = culture:azeri_turkish
 		}
 	}
 }

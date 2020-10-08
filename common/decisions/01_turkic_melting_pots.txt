@@ -10,7 +10,7 @@
 	is_shown = {
 		culture = culture:turkish
 		any_sub_realm_county = {
-			target_is_de_jure_liege_or_above = title:d_bucellaria
+			target_is_de_jure_liege_or_above = title:d_charsianon
 			culture = culture:greek
 		}
 		NOT = {	
@@ -23,7 +23,7 @@
 
 	is_valid = {
 		culture = culture:turkish
-		completely_controls = title:d_bucellaria
+		completely_controls = title:d_charsianon
 	}
 
 	is_valid_showing_failures_only = {
@@ -34,7 +34,7 @@
 	effect = {
 		hidden_effect = {
 			# Generate a list of counties we want to flip to the new culture.
-			title:d_bucellaria = {
+			title:d_charsianon = {
 				every_in_de_jure_hierarchy = {
 					limit = { tier = tier_county}
 					add_to_list = anatolian_turkish_counties
@@ -228,7 +228,7 @@ establish_azeri_turkish_culture_decision = {
 					limit = {
 						title_province = { geographical_region = special_azeri_culture_region }
 						OR = {
-							culture = culture:persian
+							culture_group = culture_group:iranian_group
 							culture = culture:turkish
 						}
 					}
@@ -261,7 +261,7 @@ establish_azeri_turkish_culture_decision = {
 					limit = {
 						NOT = { this = root }
 						OR = {
-							culture = culture:persian
+							culture_group = culture_group:iranian_group
 							culture = culture:turkish
 						}
 						exists = capital_province
@@ -306,7 +306,7 @@ establish_azeri_turkish_culture_decision = {
 					list = mass_melting_pot_list
 					limit = {
 						OR = {
-							culture = culture:persian
+							culture_group = culture_group:iranian_group
 							culture = culture:turkish
 						}
 					}
