@@ -1,0 +1,349 @@
+﻿establish_anatolian_turkish_culture_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+
+	ai_check_interval = 120
+
+	desc = establish_anatolian_turkish_culture_decision_desc
+	selection_tooltip = establish_anatolian_turkish_culture_decision_tooltip
+
+	is_shown = {
+		culture = culture:turkish
+		any_sub_realm_county = {
+			target_is_de_jure_liege_or_above = title:d_bucellaria
+			culture = culture:greek
+		}
+		NOT = {	
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_formed_anatolian_turkish_decision
+			}
+		}
+	}
+
+	is_valid = {
+		culture = culture:turkish
+		completely_controls = title:d_bucellaria
+	}
+
+	is_valid_showing_failures_only = {
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	effect = {
+		hidden_effect = {
+			# Generate a list of counties we want to flip to the new culture.
+			title:d_bucellaria = {
+				every_in_de_jure_hierarchy = {
+					limit = { tier = tier_county}
+					add_to_list = anatolian_turkish_counties
+				}
+			}
+			every_sub_realm_title = {
+				limit = {
+					tier = tier_county
+				}
+				if = {
+					limit = {
+						title_province = { geographical_region = ghw_region_anatolia }
+						OR = {
+							culture = culture:greek
+							culture = culture:turkish
+						}
+					}
+					add_to_list = anatolian_turkish_counties
+				}
+			}
+
+			# Perform the culture flip.
+			every_in_list = {
+				list = anatolian_turkish_counties
+				merge_cultures_in_region_effect = {
+					OLD_CULTURE_1 = culture:turkish
+					OLD_CULTURE_2 = culture:greek
+					NEW_CULTURE = culture:anatolian_turkish
+					REGION = ghw_region_anatolia
+				}
+			}
+
+			# Send all players in the game a notification event about the flip.
+			save_scope_as = anatolian_turkish_founder
+			culture:turkish = {save_scope_as = old_culture_1}
+			culture:greek = {save_scope_as = old_culture_2}
+			culture:anatolian_turkish = {
+				get_all_innovations_from = scope:old_culture_1
+				get_all_innovations_from = scope:old_culture_2
+				save_scope_as = new_culture
+			}
+			every_player = {
+				if = {
+					limit = {
+						NOT = { this = root }
+						OR = {
+							culture = culture:greek
+							culture = culture:turkish
+						}
+						exists = capital_province
+						capital_province = { geographical_region = ghw_region_anatolia }
+					}
+					trigger_event = eastern_culture.0001
+				}
+				else_if = {
+					limit = { this = root }
+					trigger_event = eastern_culture.0002
+				}
+				else_if = {
+					limit = {
+						exists = capital_province
+						OR = {
+						capital_province = { geographical_region = world_europe }
+						capital_province = { geographical_region = world_middle_east }
+						capital_province = { geographical_region = world_middle_east_persia }
+						capital_province = { geographical_region = world_africa_north }
+						{
+					}
+					trigger_event = eastern_culture.0003
+				}
+			}
+		}
+
+		# Player changes culture
+		set_culture = culture:anatolian_turkish
+		add_character_flag = converted_culture_this_lifetime
+		hidden_effect = {
+			every_in_list = {
+				list = anatolian_turkish_counties
+				limit = {
+					holder.capital_county = { is_in_list = anatolian_turkish_counties }
+				}
+				holder = {
+					add_to_list = mass_melting_pot_list
+					every_courtier = { add_to_list = mass_melting_pot_list }
+					every_courtier_away = { add_to_list = mass_melting_pot_list }
+				}
+				every_in_list = {
+					list = mass_melting_pot_list
+					limit = {
+						OR = {
+							culture = culture:greek
+							culture = culture:turkish
+						}
+					}
+					set_culture = culture:anatolian_turkish
+				}
+			}
+		}
+
+		# Summary of above hidden effects to inform players of the decision's impact.
+		show_as_tooltip = {
+			custom_tooltip = establish_anatolian_turkish_culture_decision_effect.tt
+			culture:anatolian_turkish = {
+				get_all_innovations_from = scope:old_culture_1
+				get_all_innovations_from = scope:old_culture_2
+			}
+		}
+		
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:flag_formed_anatolian_turkish_decision
+		}
+	}
+
+	cost = {
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 0
+
+		modifier = {
+			add = 100
+			any_sub_realm_county = {
+				percent >= 0.5
+				culture = culture:greek
+			}
+		}
+	}
+}
+
+establish_azeri_turkish_culture_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+
+	ai_check_interval = 120
+
+	desc = establish_azeri_turkish_culture_decision_desc
+	selection_tooltip = establish_azeri_turkish_culture_decision_tooltip
+
+	is_shown = {
+		culture = culture:turkish
+		any_sub_realm_county = {
+			OR = {
+			target_is_de_jure_liege_or_above = title:d_shirvan
+			target_is_de_jure_liege_or_above = title:d_azerbaijan
+			}
+			culture = culture:persian
+		}
+		NOT = {	
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_formed_azeri_turkish_decision
+			}
+		}
+	}
+
+	is_valid = {
+		culture = culture:turkish
+		OR = {
+		completely_controls = title:d_shirvan
+		completely_controls = title:d_azerbaijan
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	effect = {
+		hidden_effect = {
+			# Generate a list of counties we want to flip to the new culture.
+			title:d_bucellaria = {
+				every_in_de_jure_hierarchy = {
+					limit = { tier = tier_county}
+					add_to_list = azeri_turkish_counties
+				}
+			}
+			every_sub_realm_title = {
+				limit = {
+					tier = tier_county
+				}
+				if = {
+					limit = {
+						title_province = { geographical_region = special_azeri_culture_region }
+						OR = {
+							culture = culture:persian
+							culture = culture:turkish
+						}
+					}
+					add_to_list = azeri_turkish_counties
+				}
+			}
+
+			# Perform the culture flip.
+			every_in_list = {
+				list = azeri_turkish_counties
+				merge_cultures_in_region_effect = {
+					OLD_CULTURE_1 = culture:turkish
+					OLD_CULTURE_2 = culture:persian
+					NEW_CULTURE = culture:azeri_turkish
+					REGION = special_azeri_culture_region
+				}
+			}
+
+			# Send all players in the game a notification event about the flip.
+			save_scope_as = azeri_turkish_founder
+			culture:turkish = {save_scope_as = old_culture_1}
+			culture:persian = {save_scope_as = old_culture_2}
+			culture:azeri_turkish = {
+				get_all_innovations_from = scope:old_culture_1
+				get_all_innovations_from = scope:old_culture_2
+				save_scope_as = new_culture
+			}
+			every_player = {
+				if = {
+					limit = {
+						NOT = { this = root }
+						OR = {
+							culture = culture:persian
+							culture = culture:turkish
+						}
+						exists = capital_province
+						capital_province = { geographical_region = special_azeri_culture_region }
+					}
+					trigger_event = eastern_culture.0006
+				}
+				else_if = {
+					limit = { this = root }
+					trigger_event = eastern_culture.0007
+				}
+				else_if = {
+					limit = {
+						exists = capital_province
+						OR = {
+						capital_province = { geographical_region = world_europe }
+						capital_province = { geographical_region = world_middle_east }
+						capital_province = { geographical_region = world_middle_east_persia }
+						capital_province = { geographical_region = world_africa_north }
+						{
+					}
+					trigger_event = eastern_culture.0008
+				}
+			}
+		}
+
+		# Player changes culture
+		set_culture = culture:azeri_turkish
+		add_character_flag = converted_culture_this_lifetime
+		hidden_effect = {
+			every_in_list = {
+				list = azeri_turkish_counties
+				limit = {
+					holder.capital_county = { is_in_list = azeri_turkish_counties }
+				}
+				holder = {
+					add_to_list = mass_melting_pot_list
+					every_courtier = { add_to_list = mass_melting_pot_list }
+					every_courtier_away = { add_to_list = mass_melting_pot_list }
+				}
+				every_in_list = {
+					list = mass_melting_pot_list
+					limit = {
+						OR = {
+							culture = culture:persian
+							culture = culture:turkish
+						}
+					}
+					set_culture = culture:azeri_turkish
+				}
+			}
+		}
+
+		# Summary of above hidden effects to inform players of the decision's impact.
+		show_as_tooltip = {
+			custom_tooltip = establish_azeri_turkish_culture_decision_effect.tt
+			culture:azeri_turkish = {
+				get_all_innovations_from = scope:old_culture_1
+				get_all_innovations_from = scope:old_culture_2
+			}
+		}
+		
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:flag_formed_azeri_turkish_decision
+		}
+	}
+
+	cost = {
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 0
+
+		modifier = {
+			add = 100
+			any_sub_realm_county = {
+				percent >= 0.5
+				culture = culture:persian
+			}
+		}
+	}
+}

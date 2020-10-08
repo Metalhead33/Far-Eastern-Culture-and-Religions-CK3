@@ -1,0 +1,15 @@
+﻿l_english:
+ # Establish Anatolian Turkish Culture
+ establish_anatolian_turkish_culture_decision:0 "Establish Anatolian Turkish Culture"
+ establish_anatolian_turkish_culture_decision_desc:0 "Our old traditions do not serve us well in our new home. We should look to the locals and see what we can learn from them."
+ establish_anatolian_turkish_culture_decision_confirm:0 "Turkey Rises!"
+ establish_anatolian_turkish_culture_decision_tooltip:0 "Merge our Turkic and the local Greek cultures together"
+ establish_anatolian_turkish_culture_decision_effect.tt:0 "All [old_culture_1.GetName] and [old_culture_2.GetName] counties and characters in Anatolia become [new_culture.GetName]"
+ establish_anatolian_turkish_culture_decision_effect.tt.2:0 "The new culture gets innovations from both parent cultures."
+ # Establish Azeri Turkish Culture
+ establish_azeri_turkish_culture_decision:0 "Establish Azeri Turkish Culture"
+ establish_azeri_turkish_culture_decision_desc:0 "Our old traditions do not serve us well in our new home. We should look to the locals and see what we can learn from them."
+ establish_azeri_turkish_culture_decision_confirm:0 "Azerbaijan Rises!"
+ establish_azeri_turkish_culture_decision_tooltip:0 "Merge our Turkic and the local Iranian cultures together"
+ establish_azeri_turkish_culture_decision_effect.tt:0 "All [old_culture_1.GetName] and [old_culture_2.GetName] counties and characters in Azerbaijan become [new_culture.GetName]"
+ establish_azeri_turkish_culture_decision_effect.tt.2:0 "The new culture gets innovations from both parent cultures."

@@ -1,0 +1,209 @@
+﻿namespace = eastern_culture
+
+eastern_culture.0001 = {
+	type = character_event
+	title = eastern_culture.0001.t
+	desc = eastern_culture.0001.desc
+	theme = culture_change
+	left_portrait = scope:anatolian_turkish_founder
+
+	immediate = {
+		show_as_tooltip = {
+			custom_tooltip = global_culture.custom.merge_culture
+			culture:anatolian_turkish = {
+				get_all_innovations_from = culture:greek
+			}
+		}
+	}
+
+	option = {
+		name = eastern_culture.0001.a
+	}
+}
+
+eastern_culture.0002 = {
+	type = character_event
+	title = eastern_culture.0002.t
+	desc = eastern_culture.0002.desc
+	theme = culture_change
+	left_portrait = scope:anatolian_turkish_founder
+
+	immediate = {
+		show_as_tooltip = {
+			custom_tooltip = global_culture.custom.merge_culture
+			culture:anatolian_turkish = {
+				get_all_innovations_from = culture:greek
+			}
+		}
+	}
+
+	option = {
+		name = eastern_culture.0002.a
+	}
+}
+
+eastern_culture.0003 = {
+	type = character_event
+	title = eastern_culture.0003.t
+	desc = eastern_culture.0003.desc
+	theme = culture_change
+	left_portrait = scope:anatolian_turkish_founder
+
+	immediate = {
+		show_as_tooltip = {
+			culture:anatolian_turkish = {
+				get_all_innovations_from = culture:greek
+			}
+		}
+	}
+
+	option = {
+		name = eastern_culture.0003.a
+	}
+}
+
+scripted_trigger valid_for_anatolian_turkish_ruler_culture_trigger = {
+	tier = tier_county
+	exists = holder
+	is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_formed_anatolian_turkish_decision
+	}
+	NOT = { exists = var:had_anatolian_turkish_county_conversion }
+	title_province = {
+		geographical_region = ghw_region_anatolia
+	}
+	OR = {
+		AND = {
+			holder.culture = culture:turkish
+			culture = culture:greek
+		}
+		AND = {
+			holder.culture = culture:greek
+			culture = culture:turkish
+		}
+	}
+}
+scripted_trigger valid_for_anatolian_turkish_organic_culture_trigger = {
+	tier = tier_county
+	exists = holder
+	title_province = {
+		geographical_region = ghw_region_anatolia
+	}
+	NOT = { exists = var:had_anatolian_turkish_county_conversion }
+	NOT = { culture = holder.culture } # No conversion for counties who match their holder's culture
+	OR = {
+		culture = culture:greek
+		culture = culture:turkish
+	}
+	any_neighboring_county = {
+		culture = culture:anatolian_turkish
+	}
+}
+
+# Create Anatolian Turkish culture
+
+eastern_culture.0004 = {
+	type = character_event
+	title = eastern_culture.0004.t
+	desc = eastern_culture.0004.desc
+	theme = culture_change
+	left_portrait = root
+	
+	trigger = {
+		OR = {
+			culture = culture:turkish
+			culture = culture:greek
+		}
+		any_held_title = {
+			valid_for_anatolian_turkish_ruler_culture_trigger = yes
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			add = 2
+			culture = culture:turkish
+		}
+	}
+
+	immediate = {
+		random_held_title = {
+			limit = {
+				valid_for_anatolian_turkish_ruler_culture_trigger = yes
+			}
+			weight = { # Try to approximate organic spread
+				base = 1
+				modifier = {
+					add = 4
+					any_neighboring_county = {
+						culture = culture:anatolian_turkish
+					}
+				}
+			}
+			save_scope_as = county_to_change
+			culture = {
+				save_scope_as = old_culture
+			}
+			set_variable = {
+				name = had_anatolian_turkish_county_conversion
+				value = yes
+			}
+		}
+		culture:anatolian_turkish = {
+			save_scope_as = anatolian_turkish # For loc
+		}
+		debug_log = "Converted a province to Anatolian Turkish from eastern_culture.0004"
+	}
+
+	option = {
+		name = eastern_culture.0004.a
+		scope:county_to_change = {
+			set_county_culture = culture:anatolian_turkish
+		}
+	}
+}
+
+# Organically spread Anatolian Turkish culture
+
+
+eastern_culture.0005 = {
+	type = character_event
+	title = eastern_culture.0004.t
+	desc = eastern_culture.0004.desc
+	theme = culture_change
+	left_portrait = root
+	
+	trigger = {
+		culture = culture:anatolian_turkish
+		any_held_title = {
+			valid_for_anatolian_turkish_organic_culture_trigger = yes
+		}
+	}
+
+	immediate = {
+		random_held_title = {
+			limit = { valid_for_anatolian_turkish_organic_culture_trigger = yes }
+			save_scope_as = county_to_change
+			culture = {
+				save_scope_as = old_culture
+			}
+			set_variable = {
+				name = had_anatolian_turkish_county_conversion
+				value = yes
+			}
+		}
+		culture:anatolian_turkish = {
+			save_scope_as = anatolian_turkish # For loc
+		}
+		debug_log = "Converted a province to Anatolian Turkish from eastern_culture.0005"
+	}
+
+	option = {
+		name = eastern_culture.0005.a
+		scope:county_to_change = {
+			set_county_culture = culture:anatolian_turkish
+		}
+	}
+}
