@@ -3,7 +3,7 @@
 	major = yes
 	desc = expel_the_jews_decision_desc
 
-	ai_check_interval = 12
+	ai_check_interval = 24
 
 	is_shown = {
 		is_independent_ruler = yes
@@ -37,6 +37,16 @@
 
 	ai_will_do = {
 		base = 0
+		#Weight down for forgiving characters.
+		modifier = {
+			factor = 0
+			has_trait = forgiving
+		}
+		#Weight down for compassionate characters.
+		modifier = {
+			factor = 0
+			has_trait = compassionate
+		}
 		#Weight up for zealous characters.
 		modifier = {
 			add = 50
@@ -44,7 +54,7 @@
 		}
 		#Weight up for characters who have borrowed from the jews.
 		modifier = {
-			add = 50
+			add = 15
 			has_character_modifier = borrowed_from_jews
 		}
 		#Weight up for greedy characters.
@@ -341,7 +351,7 @@ borrow_jewish_money = {
 	desc = borrow_jewish_money_desc
 	selection_tooltip = borrow_jewish_money_tooltip
 
-	ai_check_interval = 3
+	ai_check_interval = 12
 
 	is_shown = {
 		is_ruler = yes
@@ -372,7 +382,7 @@ borrow_jewish_money = {
 	}
 
 	ai_will_do = {
-		base = 0
+		base = 50
 		# Weight down for zealous characters.
 		modifier = {
 			factor = 0
@@ -380,8 +390,8 @@ borrow_jewish_money = {
 		}
 		# Only needed if the character doesn't have enough gold.
 		modifier = {
-			long_term_gold < 2000
-			add = 35
+			factor = 0
+			long_term_gold >= 2000
 		}
 	}
 }

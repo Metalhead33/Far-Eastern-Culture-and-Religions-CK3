@@ -37,17 +37,27 @@
 
 	ai_will_do = {
 		base = 0
+		#Weight down for forgiving characters.
+		modifier = {
+			factor = 0
+			has_trait = forgiving
+		}
+		#Weight down for compassionate characters.
+		modifier = {
+			factor = 0
+			has_trait = compassionate
+		}
 		#Weight up for zealous characters.
 		modifier = {
 			add = 50
 			has_trait = zealous
 		}
-		#Weight up for greedy characters.
+		#Weight up for vengeful characters.
 		modifier = {
 			add = 25
 			has_trait = vengeful
 		}
-		#Weight up for greedy characters.
+		#Weight up for wrathful characters.
 		modifier = {
 			add = 25
 			has_trait = wrathful
