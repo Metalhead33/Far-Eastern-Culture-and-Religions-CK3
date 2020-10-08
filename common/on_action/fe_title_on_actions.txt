@@ -1,0 +1,11 @@
+﻿# A title is inherited by a character
+# root = the new holder
+# scope:title = the title that changes hands
+# scope:previous_holder = previous holder. Should be dead
+on_title_gain_inheritance = {
+	events = {
+	jewish_courtier.0004
+	gypsy_courtier.0004
+	jewish_courtier.0009
+	}
+}

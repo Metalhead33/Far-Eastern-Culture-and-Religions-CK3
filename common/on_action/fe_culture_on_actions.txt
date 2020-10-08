@@ -1,0 +1,6 @@
+﻿# Root = character
+on_character_culture_change = {
+	events = {
+		gypsy_courtier.0010
+	}
+}
