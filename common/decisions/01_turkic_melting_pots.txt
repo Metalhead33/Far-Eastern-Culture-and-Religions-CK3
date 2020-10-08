@@ -169,6 +169,8 @@
 		}
 	}
 }
+}
+}
 
 establish_azeri_turkish_culture_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
@@ -346,4 +348,6 @@ establish_azeri_turkish_culture_decision = {
 			}
 		}
 	}
+}
+}
 }
