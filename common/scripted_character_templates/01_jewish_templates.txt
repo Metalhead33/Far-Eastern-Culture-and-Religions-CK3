@@ -40,7 +40,7 @@ ashkenazi_diplomat_character = {
 	trait = shrewd
 	trait = diplomat
 	random_traits = yes
-	diploamcy = {
+	diplomacy = {
 		min_template_decent_skill
 		max_template_decent_skill
 	}
@@ -89,7 +89,7 @@ sephardi_diplomat_character = {
 	trait = shrewd
 	trait = diplomat
 	random_traits = yes
-	diploamcy = {
+	diplomacy = {
 		min_template_decent_skill
 		max_template_decent_skill
 	}
@@ -137,7 +137,7 @@ kaifeng_diplomat_character = {
 	trait = shrewd
 	trait = diplomat
 	random_traits = yes
-	diploamcy = {
+	diplomacy = {
 		min_template_decent_skill
 		max_template_decent_skill
 	}

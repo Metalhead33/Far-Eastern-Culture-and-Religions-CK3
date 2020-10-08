@@ -37,16 +37,6 @@
 
 	ai_will_do = {
 		base = 0
-		#Weight down for forgiving characters.
-		modifier = {
-			factor = 0
-			has_trait = forgiving
-		}
-		#Weight down for compassionate characters.
-		modifier = {
-			factor = 0
-			has_trait = compassionate
-		}
 		#Weight up for zealous characters.
 		modifier = {
 			add = 50
@@ -62,6 +52,16 @@
 			add = 25
 			has_trait = wrathful
 		}
+		#Weight down for forgiving characters.
+		modifier = {
+			factor = 0
+			has_trait = forgiving
+		}
+		#Weight down for compassionate characters.
+		modifier = {
+			factor = 0
+			has_trait = compassionate
+		}
 	}
 }
 
@@ -70,7 +70,7 @@ welcome_the_gypsies = {
 	major = yes
 	desc = welcome_the_gypsies_decision_desc
 
-	ai_check_interval = 0
+	ai_check_interval = 12
 
 	is_shown = {
 		is_independent_ruler = yes
@@ -105,21 +105,6 @@ welcome_the_gypsies = {
 
 	ai_will_do = {
 		base = 15
-		#Weight up for zealous characters.
-		modifier = {
-			factor = 0
-			has_trait = zealous
-		}
-		#Weight down for vengeful characters.
-		modifier = {
-			factor = 0
-			has_trait = vengeful
-		}
-		#Weight down for wrathful characters.
-		modifier = {
-			factor = 0
-			has_trait = wrathful
-		}
 		#Weight up for forgiving characters.
 		modifier = {
 			add = 35
@@ -140,6 +125,21 @@ welcome_the_gypsies = {
 			add = 35
 			has_trait = just
 		}
+		#Weight up for zealous characters.
+		modifier = {
+			factor = 0
+			has_trait = zealous
+		}
+		#Weight down for vengeful characters.
+		modifier = {
+			factor = 0
+			has_trait = vengeful
+		}
+		#Weight down for wrathful characters.
+		modifier = {
+			factor = 0
+			has_trait = wrathful
+		}
 	}
 }
 
@@ -149,7 +149,7 @@ hire_gypsy_spymaster_india = {
 	desc = hire_gypsy_spymaster_decision_desc
 	selection_tooltip = hire_gypsy_spymaster_tooltip
 
-	ai_check_interval = 3
+	ai_check_interval = 4
 
 	is_shown = {
 		is_ruler = yes
@@ -186,11 +186,6 @@ hire_gypsy_spymaster_india = {
 
 	ai_will_do = {
 		base = 0
-		#Weight up for zealous characters.
-		modifier = {
-			factor = 0
-			has_trait = zealous
-		}
 		#Weight up if the AI has no spymaster.
 		modifier = {
 			add = 100
@@ -205,6 +200,11 @@ hire_gypsy_spymaster_india = {
 				intrigue < high_skill_rating
 				}
 			}
+		}
+		#Weight up for zealous characters.
+		modifier = {
+			factor = 0
+			has_trait = zealous
 		}
 	}
 }

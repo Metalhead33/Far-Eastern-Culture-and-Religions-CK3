@@ -37,6 +37,29 @@
 
 	ai_will_do = {
 		base = 0
+		#Weight up for zealous characters.
+		modifier = {
+			add = 10
+			has_trait = zealous
+		}
+		#Weight up for characters who have borrowed from the jews.
+		modifier = {
+			add = 20
+			AND = {
+			has_character_modifier = borrowed_from_jews
+			long_term_gold < 2000
+			}
+		}
+		#Weight up for greedy characters.
+		modifier = {
+			add = 10
+			has_trait = greedy
+		}
+		#Weight up for greedy characters.
+		modifier = {
+			add = 10
+			has_trait = wrathful
+		}
 		#Weight down for forgiving characters.
 		modifier = {
 			factor = 0
@@ -47,26 +70,6 @@
 			factor = 0
 			has_trait = compassionate
 		}
-		#Weight up for zealous characters.
-		modifier = {
-			add = 50
-			has_trait = zealous
-		}
-		#Weight up for characters who have borrowed from the jews.
-		modifier = {
-			add = 15
-			has_character_modifier = borrowed_from_jews
-		}
-		#Weight up for greedy characters.
-		modifier = {
-			add = 25
-			has_trait = greedy
-		}
-		#Weight up for greedy characters.
-		modifier = {
-			add = 25
-			has_trait = wrathful
-		}
 	}
 }
 
@@ -75,7 +78,7 @@ welcome_the_jews = {
 	major = yes
 	desc = welcome_the_jews_decision_desc
 
-	ai_check_interval = 0
+	ai_check_interval = 24
 
 	is_shown = {
 		is_independent_ruler = yes
@@ -110,21 +113,6 @@ welcome_the_jews = {
 
 	ai_will_do = {
 		base = 15
-		#Weight down for zealous characters.
-		modifier = {
-			factor = 0
-			has_trait = zealous
-		}
-		#Weight down for vengeful characters.
-		modifier = {
-			factor = 0
-			has_trait = vengeful
-		}
-		#Weight down for wrathful characters.
-		modifier = {
-			factor = 0
-			has_trait = wrathful
-		}
 		#Weight up for forgiving characters.
 		modifier = {
 			add = 35
@@ -145,6 +133,21 @@ welcome_the_jews = {
 			add = 35
 			has_trait = just
 		}
+		#Weight down for zealous characters.
+		modifier = {
+			factor = 0
+			has_trait = zealous
+		}
+		#Weight down for vengeful characters.
+		modifier = {
+			factor = 0
+			has_trait = vengeful
+		}
+		#Weight down for wrathful characters.
+		modifier = {
+			factor = 0
+			has_trait = wrathful
+		}
 	}
 }
 
@@ -154,7 +157,7 @@ hire_jewish_spymaster_ashkenazi = {
 	desc = hire_jewish_spymaster_decision_desc
 	selection_tooltip = hire_jewish_spymaster_tooltip
 
-	ai_check_interval = 0
+	ai_check_interval = 4
 
 	is_shown = {
 		is_ruler = yes
@@ -191,11 +194,6 @@ hire_jewish_spymaster_ashkenazi = {
 
 	ai_will_do = {
 		base = 0
-		#Weight up for zealous characters.
-		modifier = {
-			factor = 0
-			has_trait = zealous
-		}
 		#Weight up if the AI has no spymaster.
 		modifier = {
 			add = 100
@@ -211,6 +209,11 @@ hire_jewish_spymaster_ashkenazi = {
 				}
 			}
 		}
+		#Weight up for zealous characters.
+		modifier = {
+			factor = 0
+			has_trait = zealous
+		}
 	}
 }
 hire_jewish_steward_ashkenazi = {
@@ -219,7 +222,7 @@ hire_jewish_steward_ashkenazi = {
 	desc = hire_jewish_steward_decision_desc
 	selection_tooltip = hire_jewish_steward_tooltip
 
-	ai_check_interval = 0
+	ai_check_interval = 4
 
 	is_shown = {
 		is_ruler = yes
@@ -256,11 +259,6 @@ hire_jewish_steward_ashkenazi = {
 
 	ai_will_do = {
 		base = 0
-		#Weight up for zealous characters.
-		modifier = {
-			factor = 0
-			has_trait = zealous
-		}
 		#Weight up if the AI has no steward.
 		modifier = {
 			add = 100
@@ -276,6 +274,11 @@ hire_jewish_steward_ashkenazi = {
 				}
 			}
 		}
+		#Weight up for zealous characters.
+		modifier = {
+			factor = 0
+			has_trait = zealous
+		}
 	}
 }
 
@@ -285,7 +288,7 @@ hire_jewish_diplomat_ashkenazi = {
 	desc = hire_jewish_diplomat_decision_desc
 	selection_tooltip = hire_jewish_diplomat_tooltip
 
-	ai_check_interval = 0
+	ai_check_interval = 4
 
 	is_shown = {
 		is_ruler = yes
@@ -322,11 +325,6 @@ hire_jewish_diplomat_ashkenazi = {
 
 	ai_will_do = {
 		base = 0
-		#Weight up for zealous characters.
-		modifier = {
-			factor = 0
-			has_trait = zealous
-		}
 		#Weight up if the AI has no chancellor.
 		modifier = {
 			add = 100
@@ -341,6 +339,11 @@ hire_jewish_diplomat_ashkenazi = {
 				diplomacy < high_skill_rating
 				}
 			}
+		}
+		#Weight up for zealous characters.
+		modifier = {
+			factor = 0
+			has_trait = zealous
 		}
 	}
 }
@@ -382,7 +385,7 @@ borrow_jewish_money = {
 	}
 
 	ai_will_do = {
-		base = 50
+		base = 25
 		# Weight down for zealous characters.
 		modifier = {
 			factor = 0
@@ -402,7 +405,7 @@ give_back_jewish_money = {
 	desc = give_back_jewish_money_desc
 	selection_tooltip = give_back_jewish_money_tooltip
 
-	ai_check_interval = 0
+	ai_check_interval = 12
 
 	is_shown = {
 		has_character_modifier = borrowed_from_jews
