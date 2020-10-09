@@ -674,7 +674,10 @@ jewish_courtier.0010 = {
 	type = character_event
 	hidden = yes
 	trigger = {
-		has_religion = religion:judaism_religion
+		OR = {
+			has_religion = religion:judaism_religion
+			faith = { as_doctrine = tenet_jewish_syncretism }
+		}
 		has_character_modifier = expelled_the_jews
 	}
 
