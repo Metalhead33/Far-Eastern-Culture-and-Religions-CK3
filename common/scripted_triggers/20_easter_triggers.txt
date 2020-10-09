@@ -108,3 +108,83 @@ has_gypsies = {
 		}
 	}
 }
+has_jewish_enemies = {
+	any_relation = {
+		type = rival
+		count = all
+		trigger_if = {
+			limit = {
+				has_religion = religion:judaism_religion
+			}
+		}
+	}
+	any_relation = { # Same with nemeses
+		type = nemesis
+		count = all
+		trigger_if = {
+			limit = {
+				has_religion = religion:judaism_religion
+			}
+		}
+	}
+}
+has_jewish_friends = {
+	any_relation = {
+		type = friend
+		count = all
+		trigger_if = {
+			limit = {
+				has_religion = religion:judaism_religion
+			}
+		}
+	}
+	any_relation = {
+		type = lover
+		count = all
+		trigger_if = {
+			limit = {
+				has_religion = religion:judaism_religion
+			}
+		}
+	}
+}
+has_gypsy_enemies = {
+	any_relation = {
+		type = rival
+		count = all
+		trigger_if = {
+			limit = {
+				has_culture_group = culture_group:gypsy_group
+			}
+		}
+	}
+	any_relation = { # Same with nemeses
+		type = nemesis
+		count = all
+		trigger_if = {
+			limit = {
+				has_culture_group = culture_group:gypsy_group
+			}
+		}
+	}
+}
+has_gypsy_friends = {
+	any_relation = {
+		type = friend
+		count = all
+		trigger_if = {
+			limit = {
+				has_culture_group = culture_group:gypsy_group
+			}
+		}
+	}
+	any_relation = {
+		type = lover
+		count = all
+		trigger_if = {
+			limit = {
+				has_culture_group = culture_group:gypsy_group
+			}
+		}
+	}
+}

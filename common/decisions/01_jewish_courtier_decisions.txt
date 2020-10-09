@@ -41,6 +41,11 @@
 
 	ai_will_do = {
 		base = 0
+		# Has Jewish enemies
+		modifier = {
+			add = 10
+			has_jewish_enemies = yes
+		}
 		#Weight up for zealous characters.
 		modifier = {
 			add = 10
@@ -73,6 +78,19 @@
 		modifier = {
 			factor = 0
 			has_trait = compassionate
+		}
+		# AI won't expel Jews if they just hired a super-awesome Jewish courtier
+		modifier = {
+			factor = 0
+			AND = {
+			has_character_flag = hired_jewish_courtier
+			NOT = { has_trait = sadistic }
+			}
+		}
+		# Has Jewish friends
+		modifier = {
+			factor = 0
+			has_jewish_friends = yes
 		}
 	}
 }
@@ -117,6 +135,11 @@ welcome_the_jews = {
 
 	ai_will_do = {
 		base = 15
+		# Has Jewish friends
+		modifier = {
+			add = 100
+			has_jewish_friends = yes
+		}
 		#Weight up for forgiving characters.
 		modifier = {
 			add = 35

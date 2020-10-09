@@ -41,6 +41,11 @@
 
 	ai_will_do = {
 		base = 0
+		# Has Gypsy enemies
+		modifier = {
+			add = 10
+			has_gypsy_enemies = yes
+		}
 		#Weight up for zealous characters.
 		modifier = {
 			add = 50
@@ -65,6 +70,19 @@
 		modifier = {
 			factor = 0
 			has_trait = compassionate
+		}
+		# AI won't expel Jews if they just hired a super-awesome Jewish courtier
+		modifier = {
+			factor = 0
+			AND = {
+			has_character_flag = hired_gypsy_courtier
+			NOT = { has_trait = sadistic }
+			}
+		}
+		# Has Gypsy friends
+		modifier = {
+			factor = 0
+			has_gypsy_friends = yes
 		}
 	}
 }
@@ -109,6 +127,11 @@ welcome_the_gypsies = {
 
 	ai_will_do = {
 		base = 15
+		# Has Gypsy friends
+		modifier = {
+			add = 100
+			has_gypsy_friends = yes
+		}
 		#Weight up for forgiving characters.
 		modifier = {
 			add = 35

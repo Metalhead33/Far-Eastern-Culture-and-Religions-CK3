@@ -215,6 +215,9 @@ jewish_courtier.0001 = {
 		stress_impact = {
 			zealous = minor_stress_impact_gain
 		}
+		hidden_effect = {
+		add_character_flag = { flag = hired_jewish_courtier years = 10 }
+		}
 	}
 
 	option = { #Send away
@@ -345,6 +348,9 @@ jewish_courtier.0002 = {
 		stress_impact = {
 			zealous = minor_stress_impact_gain
 		}
+		hidden_effect = {
+		add_character_flag = { flag = hired_jewish_courtier years = 10 }
+		}
 	}
 
 	option = { #Send away
@@ -474,6 +480,9 @@ jewish_courtier.0003 = {
 		}
 		stress_impact = {
 			zealous = minor_stress_impact_gain
+		}
+		hidden_effect = {
+		add_character_flag = { flag = hired_jewish_courtier years = 10 }
 		}
 	}
 

@@ -219,6 +219,9 @@ gypsy_courtier.0001 = {
 			target = scope:new_courtier
 			modifier = hired_me_opinion
 		}
+		hidden_effect = {
+		add_character_flag = { flag = hired_gypsy_courtier years = 10 }
+		}
 	}
 
 	option = { #Send away
