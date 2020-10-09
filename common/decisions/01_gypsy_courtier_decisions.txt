@@ -19,6 +19,10 @@
 		NOT = { has_character_flag = expelled_the_gypsies_timer }
 		NOT = { has_culture_group = culture_group:gypsy_group }
 		has_gypsies = yes
+		# Can't expel the gypsies if your spouse is one
+		any_spouse = {
+		NOT = { has_culture_group = culture_group:gypsy_group }
+		}
 	}
 
 	effect = {
