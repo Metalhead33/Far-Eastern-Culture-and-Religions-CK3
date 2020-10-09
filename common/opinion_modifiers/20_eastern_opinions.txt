@@ -1,0 +1,12 @@
+﻿expelled_the_jews_crime = {
+	opinion = -100
+	imprisonment_reason = yes
+	revoke_title_reason = yes
+	banish_reason = yes
+}
+expelled_the_gypsies_crime = {
+	opinion = -100
+	imprisonment_reason = yes
+	revoke_title_reason = yes
+	banish_reason = yes
+}

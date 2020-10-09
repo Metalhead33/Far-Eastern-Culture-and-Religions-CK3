@@ -10,6 +10,9 @@
 		NOT = { has_religion = religion:judaism_religion }
 		NOT = { has_character_modifier = expelled_the_jews }
 		NOT = { has_character_flag = expelled_the_jews_timer }
+		faith = {
+			NOT = {	has_doctrine = tenet_jewish_syncretism }
+		}
 		has_jews = yes
 	}
 
@@ -18,11 +21,14 @@
 		NOT = { has_religion = religion:judaism_religion }
 		NOT = { has_character_modifier = expelled_the_jews }
 		NOT = { has_character_flag = expelled_the_jews_timer }
-		has_jews = yes
+		faith = {
+			NOT = {	has_doctrine = tenet_jewish_syncretism }
+		}
 		# Can't expel the jews if your spouse is one
 		any_spouse = {
 		NOT = { has_religion = religion:judaism_religion }
 		}
+		has_jews = yes
 	}
 
 	effect = {

@@ -3,6 +3,10 @@
 	diplomacy = -2
 	domain_tax_mult = -0.1
 	clergy_opinion = 10
+	triggered_opinion = {
+		has_religion = religion:judaism_religion
+		opinion_modifier = expelled_the_jews_crime
+	}
 }
 borrowed_from_jews = {
 	icon = jewish_negative
@@ -13,4 +17,8 @@ expelled_the_gypsies = {
 	icon = gypsy_negative
 	monthly_county_control_change_factor = 0.5
 	domain_tax_mult = 0.1
+	triggered_opinion = {
+		has_culture_group = culture_group:gypsy_group
+		opinion_modifier = expelled_the_gypsies_crime
+	}
 }
