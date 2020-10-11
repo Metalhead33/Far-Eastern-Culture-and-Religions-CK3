@@ -2,12 +2,16 @@
 	icon = jewish_negative
 	diplomacy = -2
 	domain_tax_mult = -0.1
-	clergy_opinion = 10
+	clergy_opinion = 15
+	republic_government_vassal_opinion = -15
+	republic_government_tax_contribution_mult = -0.5
 }
 borrowed_from_jews = {
 	icon = jewish_negative
-	clergy_opinion = -5
+	clergy_opinion = -10
 	domain_tax_mult = -0.05
+	monthly_piety_gain_mult = -0.1
+	monthly_prestige_gain_mult = -0.1
 }
 expelled_the_gypsies = {
 	icon = gypsy_negative

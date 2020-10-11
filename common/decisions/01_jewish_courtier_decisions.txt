@@ -1,4 +1,7 @@
-﻿expel_the_jews = {
+﻿@jewish_loan = 1000
+@jewish_loan_w_interest = 1100
+
+expel_the_jews = {
 	picture = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
 	major = yes
 	desc = expel_the_jews_decision_desc
@@ -62,7 +65,7 @@
 			add = 20
 			AND = {
 			has_character_modifier = borrowed_from_jews
-			long_term_gold < 2000
+			long_term_gold < @jewish_loan_w_interest
 			}
 		}
 		#Weight up for greedy characters.
@@ -415,7 +418,7 @@ borrow_jewish_money = {
 	}
 
 	effect = {
-		add_gold = 2000
+		add_gold = @jewish_loan
 		add_character_modifier = borrowed_from_jews
 	}
 	
@@ -433,7 +436,7 @@ borrow_jewish_money = {
 		# Only needed if the character doesn't have enough gold.
 		modifier = {
 			factor = 0
-			long_term_gold >= 2000
+			long_term_gold >= @jewish_loan
 		}
 	}
 }
@@ -451,7 +454,7 @@ give_back_jewish_money = {
 	}
 	is_valid = {
 		has_character_modifier = borrowed_from_jews
-		long_term_gold >= 2000
+		long_term_gold >= @jewish_loan_w_interest
 	}
 
 	is_valid_showing_failures_only = {
@@ -459,7 +462,7 @@ give_back_jewish_money = {
 	}
 
 	effect = {
-		remove_long_term_gold = 2000
+		remove_long_term_gold = @jewish_loan_w_interest
 		remove_character_modifier = borrowed_from_jews
 	}
 	

@@ -1,5 +1,7 @@
 namespace = jewish_courtier
 
+@jewish_expulsion_gold = 100
+
 scripted_trigger jewish_courtier_basic_requirements_trigger = {
 	is_adult = yes
 	is_imprisoned = no
@@ -546,7 +548,7 @@ jewish_courtier.0005 = {
 			}
 		remove_character_modifier = borrowed_from_jews
 		}
-		add_gold = 2000
+		add_gold = @jewish_expulsion_gold
 		add_character_modifier = expelled_the_jews
 		add_character_flag = expelled_the_jews_timer
 		
@@ -585,7 +587,7 @@ jewish_courtier.0006 = {
 			}
 		remove_character_modifier = borrowed_from_jews
 		}
-		add_gold = 100
+		add_gold = @jewish_expulsion_gold
 		hidden_effect = {
 		every_courtier_or_guest  = {
 		limit = { has_religion = religion:judaism_religion }
