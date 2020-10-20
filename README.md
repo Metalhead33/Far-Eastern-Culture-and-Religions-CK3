@@ -6,3 +6,4 @@ Currently, it adds Japanese, Korean, Vietnamese and Cantonese cultures and the S
 
 - [Far Eastern Cultures CK3 on LoversLab](https://www.loverslab.com/topic/153333-mod-far-eastern-cultures-and-religions/)
 - [Compatibility Patch for Carnalitas Mundi](https://git.touhou.fm/metalhead/paradox-mods/far-eastern-cultures-ck3-carnalitas-mundi-compatibility-patch/)
+- [Compatibility Patch for the Human Phenotype Project](https://git.touhou.fm/metalhead/paradox-mods/ck3-human-phenotype-project-compatibility-patches)
