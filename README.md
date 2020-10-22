@@ -7,17 +7,24 @@ Currently, it adds Japanese, Korean, Vietnamese and Cantonese cultures and the S
 
 ## **FAQ:**
 
-**Is this mod save-game compatible?**
+### **Is this mod save-game compatible?**
 
 Eh, so-so. Afaik, mods that add new stuff without replacing vanilla stuff **are** vanilla-compatible... But this mod also edits some ethnicities, and that effect might not be applied on an already running game.
 
 
-**Will you put this mod to Steam Workshop? Why not?**
+### **Will you put this mod to Steam Workshop? Why not?**
 
 For legal reasons, I cannot do that. What legal reasons? Well, it's against the rules to disclose that, but here's a hint: I cannot upload any mods to the Steam Workshop at all. The less we talk about it, the better.
 
+Nevertheless, if you wish to upload this mod to the Steam Workshop in my name, you have my full blessings to do so. No, really, you'd be doing me a big favor.
 
-***Any future plans for the mod?***
+
+### **Can I use your mod as part of my mod? Or recycle any other parts of your mod for mine?**
+
+**Yes.** You don't even need to ask. Just do it. Sure, crediting would be nice, but otherwise, feel free to.
+
+
+### ***Any future plans for the mod?***
 
 I am planning to add a Hunchback of Notre Dame event chain. I also have the radical idea of having province modifiers called *"Thriving/Modest/Small Jewish/Gypsy Settlement"*, which would have various effects on the province - possible spawning rebels when you decide to expel the Jews or Gypsies. These province modifiers would spread around organically and dynamically, rather than the current way of doing things, which is to simply tie the presence of Jews and Gypsies in a province to the province's geographic area + the current date. However, that idea of mine would be probably hard, if not impossible to implement, so I'd need a more experienced modder's help for that.
 
