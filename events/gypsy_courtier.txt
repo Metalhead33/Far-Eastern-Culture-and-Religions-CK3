@@ -83,6 +83,8 @@ gypsy_courtier.0001 = {
 						has_culture_group = culture_group:berber_group
 						has_culture_group = culture_group:iranian_group
 						has_culture = culture:turkish
+						has_culture = culture:anatolian_turkish
+						has_culture = culture:azeri_turkish
 						has_culture = culture:assyrian
 						}
 					}
