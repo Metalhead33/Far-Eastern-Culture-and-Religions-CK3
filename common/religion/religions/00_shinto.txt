@@ -31,6 +31,9 @@
 	doctrine = doctrine_clerical_gender_male_only
 	doctrine = doctrine_clerical_marriage_allowed
 	doctrine = doctrine_clerical_succession_temporal_fixed_appointment
+	
+	#Special Tolerance
+	doctrine = special_doctrine_turan
 
 	traits = {
 		virtues = { generous calm content brave }
@@ -180,9 +183,9 @@
 		WitchGodMistressMaster = mistress
 		WitchGodMotherFather = mother
 			
-			GHWName = ghw_great_holy_war
-			GHWNamePlural = ghw_great_holy_wars
-			}
+		GHWName = ghw_great_holy_war
+		GHWNamePlural = ghw_great_holy_wars
+		}
 	
 	faiths = {
 		shinto = {
@@ -204,6 +207,159 @@
 			reformed_icon = shinto
 			
 
+		}
+	
+	ainuism = {
+		color = { 0.7 0.1 0.1 }
+
+		holy_site = kara_khorum
+		holy_site = qayaliq
+		holy_site = tavan_bogd
+		holy_site = balkh
+		holy_site = suzhou
+
+		doctrine = unreformed_faith_doctrine
+
+		doctrine = tenet_adorcism
+		doctrine = tenet_sanctity_of_nature
+		doctrine = tenet_ancestor_worship
+
+		icon = ainu
+		reformed_icon = ainu
+			
+		localization = {
+			HighGodName = ainu_high_god_name
+			HighGodNamePossessive = ainu_high_god_name_possessive
+			HighGodNameSheHe = CHARACTER_SHEHE_HE
+			HighGodHerselfHimself = CHARACTER_HIMSELF
+			HighGodHerHis = CHARACTER_HERHIS_HIS
+			HighGodNameAlternate = ainu_high_god_name_alternate
+			HighGodNameAlternatePossessive = ainu_high_god_name_alternate_possessive
+
+			#Creator
+			CreatorName = ainu_creator_god_name
+			CreatorNamePossessive = ainu_creator_god_name_possessive
+			CreatorSheHe = CHARACTER_SHEHE_HE
+			CreatorHerHis = CHARACTER_HERHIS_HIS
+			CreatorHerHim = CHARACTER_HERHIM_HIM
+
+			#HealthGod
+			HealthGodName = ainu_health_god_name
+			HealthGodNamePossessive = ainu_health_god_name_possessive
+			HealthGodSheHe = CHARACTER_SHEHE_SHE
+			HealthGodHerHis = CHARACTER_HERHIS_HER
+			HealthGodHerHim = CHARACTER_HERHIM_HER
+				
+			#FertilityGod
+			FertilityGodName = ainu_fertility_god_name
+			FertilityGodNamePossessive = ainu_fertility_god_name_possessive
+			FertilityGodSheHe = CHARACTER_SHEHE_HE
+			FertilityGodHerHis = CHARACTER_HERHIS_HIS
+			FertilityGodHerHim = CHARACTER_HERHIM_HIM
+
+			#WealthGod
+			WealthGodName = ainu_wealth_god_name
+			WealthGodNamePossessive = ainu_wealth_god_name_possessive
+			WealthGodSheHe = CHARACTER_SHEHE_HE
+			WealthGodHerHis = CHARACTER_HERHIS_HIS
+			WealthGodHerHim = CHARACTER_HERHIM_HIM
+
+			#HouseholdGod
+			HouseholdGodName = ainu_household_god_name
+			HouseholdGodNamePossessive = ainu_household_god_name_possessive
+			HealthGodSheHe = CHARACTER_SHEHE_SHE
+			HealthGodHerHis = CHARACTER_HERHIS_HER
+			HealthGodHerHim = CHARACTER_HERHIM_HER
+
+			#FateGod
+			FateGodName = ainu_fate_god_name
+			FateGodNamePossessive = ainu_fate_god_name_possessive
+			FateGodSheHe = CHARACTER_SHEHE_SHE
+			FateGodHerHis = CHARACTER_HERHIS_HER
+			FateGodHerHim = CHARACTER_HERHIM_HER
+
+			#KnowledgeGod
+			KnowledgeGodName = ainu_knowledge_god_name
+			KnowledgeGodNamePossessive = ainu_knowledge_god_name_possessive
+			KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+			KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+			KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
+
+			#WarGod
+			WarGodName = ainu_war_god_name
+			WarGodNamePossessive = ainu_war_god_name_possessive
+			WarGodSheHe = CHARACTER_SHEHE_SHE
+			WarGodHerHis = CHARACTER_HERHIS_HER
+			WarGodHerHim = CHARACTER_HERHIM_HER
+
+			#TricksterGod
+			TricksterGodName = ainu_trickster_god_name
+			TricksterGodNamePossessive = ainu_trickster_god_name_possessive
+			TricksterGodSheHe = CHARACTER_SHEHE_SHE
+			TricksterGodHerHis = CHARACTER_HERHIS_HER
+			TricksterGodHerHim = CHARACTER_HERHIM_HER
+
+			#NightGod
+			NightGodName = ainu_night_god_name
+			NightGodNamePossessive = ainu_night_god_name_possessive
+			NightGodSheHe = CHARACTER_SHEHE_HE
+			NightGodHerHis = CHARACTER_HERHIS_HIS
+			NightGodHerHim = CHARACTER_HERHIM_HIM
+
+			#WaterGod
+			WaterGodName = ainu_water_god_name
+			WaterGodNamePossessive = ainu_water_god_name_possessive
+			WaterGodSheHe = CHARACTER_SHEHE_SHE
+			WaterGodHerHis = CHARACTER_HERHIS_HER
+			WaterGodHerHim = CHARACTER_HERHIM_HER
+
+			PantheonTerm = religion_the_gods
+			PantheonTermHasHave = pantheon_term_have
+			GoodGodNames = { ainu_high_god_name ainu_health_god_name ainu_fertility_god_name ainu_wealth_god_name ainu_knowledge_god_name }
+			DevilName = ainu_devil_name
+			DevilNamePossessive = ainu_devil_name_possessive
+			DevilSheHe = CHARACTER_SHEHE_HE
+			DevilHerHis = CHARACTER_HERHIS_HIS
+			DevilHerselfHimself = CHARACTER_HIMSELF
+			EvilGodNames = { ainu_devil_name }
+			HouseOfWorship = paganism_house_of_worship
+			HouseOfWorshipPlural = paganism_house_of_worship_plural
+			ReligiousSymbol = ainu_religious_symbol
+			ReligiousText = ainu_religious_text
+			ReligiousHeadName = ainu_religious_head_title
+			ReligiousHeadTitleName = ainu_religious_head_title_name
+			DevoteeMale = paganism_devotee
+			DevoteeMalePlural = paganism_devoteeplural
+			DevoteeFemale = paganism_devotee
+			DevoteeFemalePlural = paganism_devoteeplural
+			DevoteeNeuter = paganism_devotee
+			DevoteeNeuterPlural = paganism_devoteeplural
+			PriestMale = ainu_priest_male
+			PriestMalePlural = ainu_priest_male_plural
+			PriestFemale = ainu_priest_female
+			PriestFemalePlural = ainu_priest_female_plural
+			PriestNeuter = ainu_priest_neuter
+			PriestNeuterPlural = ainu_priest_neuter_plural
+			AltPriestTermPlural = paganism_priest_alternate_plural
+			BishopMale = ainu_bishop_male
+			BishopMalePlural = ainu_bishop_male_plural
+			BishopFemale = ainu_bishop_female
+			BishopFemalePlural = ainu_bishop_female_plural
+			BishopNeuter = ainu_bishop_neuter
+			BishopNeuterPlural = ainu_bishop_neuter_plural
+			DivineRealm = ainu_divine_realm
+			PositiveAfterLife = ainu_death_deity_name
+			NegativeAfterLife = ainu_death_deity_name
+			WitchGodName = ainu_creator_god_name
+			WitchGodHerHis = CHARACTER_HERHIS_HER
+			WitchGodSheHe = CHARACTER_SHEHE_HE
+			WitchGodHerHim = CHARACTER_HERHIM_HER
+			WitchGodMistressMaster = mistress
+			WitchGodMotherFather = mother
+					
+			GHWName = ghw_great_holy_war
+			GHWNamePlural = ghw_great_holy_wars
+			}
 		}
 	}
 }

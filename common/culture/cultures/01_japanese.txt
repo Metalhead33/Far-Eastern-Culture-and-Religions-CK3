@@ -132,4 +132,119 @@ dynasty_names = {
 			10 = east_asian
 		}
 	}
+
+	ainu = {
+		
+		color = { 0.2 0.5 0.5 }
+		cadet_dynasty_names = {
+		"Shibushari"
+		"Hae"
+		"Betsu"
+		"Shiraoi"
+		"Kurasi"
+		"Kakizaki"
+		"Ponyanpe"
+		"Shirokani"
+		"Otona"
+		"Ekashi"
+		"Saru"
+		"Usu"
+		}
+
+		dynasty_names = {
+		"Shibushari"
+		"Hae"
+		"Betsu"
+		"Shiraoi"
+		"Kurasi"
+		"Kakizaki"
+		"Ponyanpe"
+		"Shirokani"
+		"Otona"
+		"Ekashi"
+		"Saru"
+		"Usu"
+		}
+
+		male_names = {
+		"Akihi"
+"Aterui"
+"Atuy"
+"Auta"
+"Benkei"
+"Bikki"
+"Chikap"
+"Ekashiba"
+"Hakumakle"
+"Harukor"
+"Hennauke"
+"Isonash"
+"Itakshir"
+"Kamokutain"
+"Kamuima"
+"Kinalabukk"
+"Koshamain"
+"Koshamain"
+"Kuuchinklo"
+"Kuuklekle"
+"Mennaukei"
+"Oki"
+"Onibishi"
+"Pasekur"
+"Penri"
+"Pettennouk"
+"Piripos"
+"Poiyaunpe"
+"Ponni"
+"Resak"
+"Sahpo"
+"Sannyoaino"
+"Shakushain"
+"Shinda"
+"Sisiratoka"
+"Tahkonanna"
+"Takatsuki"
+"Tanashagashi"
+"Tarikonna"
+"Toacano"
+"Turushino"
+"Turushno"
+"Yayomanekuh"
+		}
+		female_names = {
+		"Abenanka"
+"Asir_Rera"
+"Ayai"
+"Beramonkoro"
+"Chinita"
+"Esohrankemah"
+"Esohranma"
+"Etunrachich"
+"Fusa"
+"Hakumakle"
+"Horpecha"
+"Hotene"
+"Huisak"
+"Husko"
+"Imekanu"
+"Kakula"
+"Kinalabukk"
+"Monashir"
+"Muisashimats"
+"Niutanimats"
+"Opere"
+"Pukusa"
+"Resunotek"
+"Tanelankemats"
+"Tekakunkemah"
+"Toitoi"
+		}
+		dynasty_of_location_prefix = "dynnp_no"
+		dynasty_name_first = yes
+		dynasty_title_names = yes
+
+		ethnicities = {
+			10 = east_asian
+		}
+	}
 }
