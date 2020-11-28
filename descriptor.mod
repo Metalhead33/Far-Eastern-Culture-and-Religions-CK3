@@ -1,4 +1,4 @@
-version="1.0.6"
+version="1.0.7"
 tags={
 	"Religion"
 	"Culture"
@@ -6,5 +6,5 @@ tags={
 	"Gameplay"
 }
 name="Far Eastern Cultures for CK3"
-supported_version="1.1.*"
+supported_version="1.2.*"
 path = "mod/far-eastern-cultures-ck3"
