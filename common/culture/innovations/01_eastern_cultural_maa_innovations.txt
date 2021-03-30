@@ -24,7 +24,10 @@ innovation_rattan_shields = {
 	icon = @rattan
 	
 	potential = {
-		this.culture_group = culture_group:baiyue_group
+		OR = {
+			this.culture_group = culture_group:baiyue_group
+			this.culture_group = culture_group:austronesian_group
+		}
 	}
 	
 	unlock_maa = rattan_archer

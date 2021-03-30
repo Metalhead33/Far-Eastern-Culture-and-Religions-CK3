@@ -220,7 +220,7 @@ hire_jewish_spymaster_ashkenazi = {
 
 		trigger_event = {
 			id = jewish_courtier.0001
-			days = 10
+			days = 2
 		}
 		custom_tooltip = hire_jew_decision_effect_tooltip
 
@@ -287,7 +287,7 @@ hire_jewish_steward_ashkenazi = {
 
 		trigger_event = {
 			id = jewish_courtier.0002
-			days = 10
+			days = 2
 		}
 		custom_tooltip = hire_jew_decision_effect_tooltip
 
@@ -355,7 +355,7 @@ hire_jewish_diplomat_ashkenazi = {
 
 		trigger_event = {
 			id = jewish_courtier.0003
-			days = 10
+			days = 2
 		}
 		custom_tooltip = hire_jew_decision_effect_tooltip
 

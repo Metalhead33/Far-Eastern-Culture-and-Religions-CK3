@@ -1,0 +1,98 @@
+﻿austronesian_group = {
+	graphical_cultures = {
+		chinese_group_coa_gfx
+		indian_building_gfx
+		indian_clothing_gfx
+		indian_unit_gfx
+	}
+
+	malay = {
+		
+		color = { 0.796 0.627 0.635 }
+		cadet_dynasty_names = {
+			Melaka Johor Perak Kedah Pattani Pahang Kelantan Selangor Terengganu
+			Siak Aceh Pasai Pagarruyung Palembang Jambi
+		}
+
+		dynasty_names = {
+			Melaka Johor Perak Kedah Pattani Pahang Kelantan Selangor Terengganu
+			Siak Aceh Pasai Pagarruyung Palembang Jambi
+		}
+
+		male_names = {
+		Atan Bachok Benderang Bintang Danang Demak Embong Golok Garuda Jusoh Jebat
+		Jantan Jalak Kamat Lanang Luncai Lekir Lekiu Nerang Rai Sagari Selamat Seman
+		Teh Tempawi Teruna Kasturi Ujang Uda Bujang Dumadi Hitam Demang Gombak Agus
+		Bagus Malim Baba Tarung Adi Kesuma Jumaat Hamengku Raja Bambang Tuah Awang
+		Andika Isnin Senin Che Mulia Perwira Budiarto Putera Putra Jati Sabtu Kechik
+		Ahad Agung Khamis Kamis Labuh Basuki Selasa Taufan Desa Perang Rabu Bayu Johan
+		Bestari Budi Muda Jejaka Jebat Tanggang Adi_Putra Megat Bijaya Wira Deraman Dollah Anuar
+		Yeop Danial Daniel Daud Daut Kepli Kipli Zulkifli Zulkipli Zulkarnain Gana Haron Deris Indera
+		Ishak Mail Lokman Lukman Mat Mamat Noh Jiwa Sangkara Shuib Sugriwa Leman Omar Osman
+		Yahaya Usop Zakaria Kulup Merdeka Chik
+		}
+		female_names = {
+			Adi_Puteri Adi_Putri Adiputeri Adiputri Aishah Aisyah Amritpal Ayu Azura Bulan Bunga 
+			Chahaya Chempaka Chinta Cik Cinta Dara Dayang Delima Dewi Dian Embun Esah Hapsah Harum
+			Haryati Hayati Heryati Indah Intan Izzati Jenab Juwita Kartika Kartini Kaseh Katijah
+			Kembang Kemboja Kemuning Khatijah Kuntum Latipah Linda Mahsuri Mahura Manjalara Mariah
+			Mariam Mas Mas_Ayu Masayu Mastini Mawar Maya Mayang Mayang_Sari Melati Melur Merah Merenui
+			Meriam Metetini Minah Miri Moea Moeata Moerani Mohea Munah Murni Nanihi Nawar Nilam Nirmala
+			Orama Pear Pertiwi Poe Poehina Poenui Poerava Puaiti Puatea Puaura Puspa Puspasari Puspawangi
+			Puspawati Puteri Putri Ranitea Rarahu Raunui Raurii Sari Sayang Sepiah Seri Siti Sri Suriani
+			Suriawati Surintan Tahiata Taiana Taina Tania Taurua Tautiare Tehani Tehea Tempawan Teora Tera
+			Teratai Tevai Tijah Tipah Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata
+			Vaihere Vaimiti Vairea Vaite Vaitiare Wangi Warna Wati Yati Zamrud
+		}
+		dynasty_of_location_prefix = "dynnp_no"
+		dynasty_name_first = yes
+		dynasty_title_names = yes
+
+		ethnicities = {
+			10 = asian
+		}
+	}
+	javanese = {
+		
+		color = { 0.718 0.698 0.690 }
+		cadet_dynasty_names = {
+			Banten Demak Surabaya Cirebon Samprangan Sosrodihardjo
+			Zulkipli Arbi Baderan Djoyosuroto Guret Kiaidemak Modjo Ngurawan Pulukadang Suratinoyo Wonopati
+		}
+
+		dynasty_names = {
+			Banten Demak Surabaya Cirebon Samprangan Kusnoz Sosrodihardjo
+			Zulkipli Arbi Baderan Djoyosuroto Guret Kiaidemak Modjo Ngurawan Pulukadang Suratinoyo Wonopati
+		}
+
+		male_names = {
+		Girindrawardhana Girishawardhana Kertabumi Kertawijaya Rajasawardhana Suraprabhawa Wikramawardhana Hayam_Wuruk Kalagamet Raden_Wijaya Kertawardhana Raden_Sotor Raden_Sumirat Singhawardhana Kusno
+		Sukarno Suharto Boediono
+		Adityo Airlangga Andi Anggara Ardi Arga Argo Ari Aryo Asmoro Atmojo Baskoro Basuki
+		Batman Bimo Budianto Budiarto Budiharto Budiono Buwono Cahyono Condro Danang Darmo
+		Didik Djoko Dumadi Edhi Edhie Erlangga Galih Hamengkubuwono Harjo Harto Hartono Haryo
+		Haryono Hendro Jaka Joko Kirono Kresno Krisno Krisnobroto Kristiono Kuat Kusumo Laksono
+		Lesmana Mego Muji Mujiono Mulyono Nanang Ngabdurohman Nirwanto Nugroho Pamungkas Prabowo
+		Prasetyo Prayitno Prijono Priono Priyanto Priyo Priyono Purnomo Putro Respati Riyanto Santoso
+		Satrio Soeharto Soekarno Subekti Subroto Sudarman Sudarmo Sudarto Sugeng Sukanto Sumitro
+		Supardi Suparman Supriadi Supriyadi Supriyanto Supriyono Suratno Suryo Suryono Sutrisno
+		Suwarno Suwondo Suyatno Suyitno Teguh Trisno Utomo Wibisono Widianto Widiyanto Widodo
+		Winoto Wiranto Wiro Wisnubroto Yatno Yudho Yudhoyono Yudo Yuwono 
+		}
+		female_names = {
+			Suhita Sri_Gitarja Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi Nuutea Orama
+			Poe Pear Poehina Poenui Poerava Puaiti Puatea Puaura Raihau Raimere Rainui Ranitea Rarahu
+			Raunui Raurii Tahiata Taiana Taina Tania Taurua Tautiare Tehani Tehea Teora Tera Tevai
+			Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata Vaihere Vaimiti Vairea Vaite Vaitiare
+			Andini Anggraini Astuti Ayu Endah Endang Galuh Handayani Hastuti Hayu Larasati Lintang Mursiyem
+			Ningsih Prinia Rahayu Sulastri Sunarti Susilowati Suwarni Widyastuti Wiji Wulandari
+		}
+		dynasty_of_location_prefix = "dynnp_no"
+		dynasty_name_first = yes
+		dynasty_title_names = yes
+
+		ethnicities = {
+			10 = asian
+		}
+	}
+}
