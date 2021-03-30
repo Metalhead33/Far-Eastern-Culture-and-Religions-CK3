@@ -270,9 +270,7 @@
 		founder_named_dynasties = yes
 
 		ethnicities = {
-			8 = north_indian
 			5 = mediterranean
-			2 = indo_nordic
 		}
 	}
 

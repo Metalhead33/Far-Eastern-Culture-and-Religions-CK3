@@ -208,7 +208,7 @@ female_names = {
 		dynasty_title_names = yes
 
 		ethnicities = {
-			10 = east_asian
+			10 = asian
 		}
 	}
 }

@@ -366,7 +366,7 @@
 		dynasty_title_names = yes
 		founder_named_dynasties = yes
 		ethnicities = {
-			10 = gypsy_mena
+			10 = south_indian
 		}
 	}
 	gypsy_caucasus = {
@@ -676,7 +676,7 @@
 		dynasty_name_first = yes
 
 		ethnicities = {
-			10 = gypsy_euro
+			10 = south_indian
 		}
 	}
 	gypsy_romanian = {
@@ -823,7 +823,7 @@
 		mother_name_chance = 5
 
 		ethnicities = {
-			10 = gypsy_euro
+			10 = south_indian
 		}
 	}
 	gypsy_slav = {
@@ -920,7 +920,7 @@
 		always_use_patronym = yes
 
 		ethnicities = {
-			10 = gypsy_euro
+			10 = south_indian
 		}
 	}
 	gypsy_greek = {
@@ -2039,7 +2039,7 @@
 		mother_name_chance = 0
 
 		ethnicities = {
-			10 = gypsy_euro
+			10 = south_indian
 		}
 	}
 	gypsy_iberian = {
@@ -2445,7 +2445,7 @@
 		mother_name_chance = 40
 
 		ethnicities = {
-			10 = gypsy_euro
+			10 = south_indian
 		}
 	}
 	gypsy_french = {
@@ -3177,7 +3177,7 @@
 		mother_name_chance = 10
 
 		ethnicities = {
-			10 = gypsy_euro
+			10 = south_indian
 		}
 	}
 	gypsy_italian = {
@@ -3371,7 +3371,7 @@
 		mother_name_chance = 5
 
 		ethnicities = {
-			10 = gypsy_euro
+			10 = south_indian
 		}
 	}
 }

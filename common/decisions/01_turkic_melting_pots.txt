@@ -101,7 +101,7 @@
 						capital_province = { geographical_region = world_middle_east }
 						capital_province = { geographical_region = world_middle_east_persia }
 						capital_province = { geographical_region = world_africa_north }
-						{
+						}
 					}
 					trigger_event = eastern_culture.0003
 				}
@@ -160,8 +160,6 @@
 	ai_will_do = {
 		base = 100
 	}
-}
-}
 }
 
 establish_azeri_turkish_culture_decision = {
@@ -301,12 +299,11 @@ establish_azeri_turkish_culture_decision = {
 						capital_province = { geographical_region = world_middle_east }
 						capital_province = { geographical_region = world_middle_east_persia }
 						capital_province = { geographical_region = world_africa_north }
-						{
+						}
 					}
 					trigger_event = eastern_culture.0008
 				}
 			}
-		}
 
 		# Player changes culture
 		set_culture = culture:azeri_turkish
@@ -349,6 +346,7 @@ establish_azeri_turkish_culture_decision = {
 			target = flag:flag_formed_azeri_turkish_decision
 		}
 	}
+	}
 
 	cost = {
 	}
@@ -360,6 +358,4 @@ establish_azeri_turkish_culture_decision = {
 	ai_will_do = {
 		base = 100
 	}
-}
-}
 }

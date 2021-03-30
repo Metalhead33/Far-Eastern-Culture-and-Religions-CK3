@@ -9,6 +9,7 @@ d_pontifex_maximus = {
 	landless = yes
 	color = { 158 0 0 }
 	color2 = { 231 206 103 }
+	capital = c_roma
 	landless = yes
 	definite_form = yes
 	ruler_uses_title_name = no

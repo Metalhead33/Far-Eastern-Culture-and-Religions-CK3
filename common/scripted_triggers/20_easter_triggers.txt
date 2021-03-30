@@ -148,6 +148,109 @@ has_jewish_friends = {
 		}
 	}
 }
+
+jewish_courtier_basic_requirements_trigger = {
+	is_adult = yes
+	is_imprisoned = no
+	is_alive = yes # Because apparently there can be dead characters in the pool (remove when fixed)
+	OR = {
+	has_religion = religion:judaism_religion
+	has_culture_group = culture_group:israelite_group
+	}
+}
+
+jewish_courtier_excellent_skill_intrigue_trigger = {
+	jewish_courtier_basic_requirements_trigger = yes
+	intrigue >= high_skill_rating
+}
+
+jewish_courtier_high_skill_intrigue_trigger = {
+	jewish_courtier_basic_requirements_trigger = yes	
+	OR = {
+		#Empire/kingdom
+		AND = {
+			root = { highest_held_title_tier >= tier_kingdom }
+			intrigue >= decent_skill_rating #Will be pushed up to high by adding schemer/reveler traits
+			NAND = {
+				has_trait = schemer
+				NOT = { has_trait = lifestyle_reveler }
+			}
+		}
+		#Duchy/county
+		AND = {
+			root = { highest_held_title_tier <= tier_duchy }
+			NOR = {
+				intrigue > high_skill_rating
+				has_trait = reveler_3
+				has_trait = schemer
+			}
+			intrigue >= mediocre_skill_rating #Will be pushed up to medium by adding schemer/reveler traits
+		}
+	}
+}
+
+jewish_courtier_excellent_skill_diplomacy_trigger = {
+	jewish_courtier_basic_requirements_trigger = yes
+	diplomacy >= high_skill_rating
+}
+
+jewish_courtier_high_skill_diplomacy_trigger = {
+	jewish_courtier_basic_requirements_trigger = yes	
+	OR = {
+		#Empire/kingdom
+		AND = {
+			root = { highest_held_title_tier >= tier_kingdom }
+			diplomacy >= decent_skill_rating #Will be pushed up to high by adding diplomat/reveler traits
+			NAND = {
+				has_trait = diplomat
+				NOT = { has_trait = lifestyle_reveler }
+			}
+		}
+		#Duchy/county
+		AND = {
+			root = { highest_held_title_tier <= tier_duchy }
+			NOR = {
+				diplomacy > high_skill_rating
+				has_trait = reveler_3
+				has_trait = diplomat
+			}
+			diplomacy >= mediocre_skill_rating #Will be pushed up to medium by adding diplomat/reveler traits
+		}
+	}
+}
+
+jewish_courtier_excellent_skill_stewardship_trigger = {
+	jewish_courtier_basic_requirements_trigger = yes
+	stewardship >= high_skill_rating
+}
+
+jewish_courtier_high_skill_stewardship_trigger = {
+	jewish_courtier_basic_requirements_trigger = yes	
+	OR = {
+		#Empire/kingdom
+		AND = {
+			root = { highest_held_title_tier >= tier_kingdom }
+			stewardship >= decent_skill_rating #Will be pushed up to high by adding administrator/avaricious/architect traits
+			NAND = {
+				has_trait = administrator
+				has_trait = avaricious
+				has_trait = architect
+			}
+		}
+		#Duchy/county
+		AND = {
+			root = { highest_held_title_tier <= tier_duchy }
+			NOR = {
+				stewardship > high_skill_rating
+				has_trait = avaricious
+				has_trait = administrator
+				has_trait = architect
+			}
+			stewardship >= mediocre_skill_rating #Will be pushed up to medium by adding administrator/avaricious/architect  traits
+		}
+	}
+}
+
 has_gypsy_enemies = {
 	any_relation = {
 		type = rival
@@ -185,6 +288,43 @@ has_gypsy_friends = {
 			limit = {
 				has_culture_group = culture_group:gypsy_group
 			}
+		}
+	}
+}
+
+gypsy_courtier_basic_requirements_trigger = {
+	is_adult = yes
+	is_imprisoned = no
+	is_alive = yes # Because apparently there can be dead characters in the pool (remove when fixed)
+	has_culture_group = culture_group:gypsy_group
+}
+
+gypsy_courtier_excellent_skill_intrigue_trigger = {
+	gypsy_courtier_basic_requirements_trigger = yes
+	intrigue >= high_skill_rating
+}
+
+gypsy_courtier_high_skill_intrigue_trigger = {
+	gypsy_courtier_basic_requirements_trigger = yes	
+	OR = {
+		#Empire/kingdom
+		AND = {
+			root = { highest_held_title_tier >= tier_kingdom }
+			intrigue >= decent_skill_rating #Will be pushed up to high by adding schemer/reveler traits
+			NAND = {
+				has_trait = schemer
+				NOT = { has_trait = lifestyle_reveler }
+			}
+		}
+		#Duchy/county
+		AND = {
+			root = { highest_held_title_tier <= tier_duchy }
+			NOR = {
+				intrigue > high_skill_rating
+				has_trait = reveler_3
+				has_trait = schemer
+			}
+			intrigue >= mediocre_skill_rating #Will be pushed up to medium by adding schemer/reveler traits
 		}
 	}
 }
