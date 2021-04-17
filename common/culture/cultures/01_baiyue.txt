@@ -109,4 +109,108 @@ female_names = {
 			10 = asian
 		}
 	}
+	thai = {
+		
+		color = { 0.5 0.45 0.45 }
+		cadet_dynasty_names = {
+		Adulyadej Amarin Ambhom Ananada Anchali Anong Anuman Anurak Aromdee Arthit Awut Ayutthaya Bae Bannarasee
+		Bhirombhakdi Boonjumnong Boonyasak Bui Bunnag Chadaporn Chakrii Charoensuk Chearavanont Chen Chet_Ton Chiang_Mai
+		Chidchob Chirathivat Chitragani Choonhavan Dangda Du Jitkhunthod Jutanugarn Kaikaew Kanjanapas Karbdecho Kasem
+		Krairiksh Kumkhum Lampang Lamphun Lamsam Lavapura Makok Malee Maleenont Na_Chiangmai Nakhon_Pathom Nakhon_Sawan
+		Ngam Niran Noi Paśú Phetchaburi Phimai Phitsanulok Phra_Bang Pravat Ratanapol Ratanaporn Ratanarak Ratanarat Ratchaburi
+		Rattanakosin Ritthirong Rochana Rueng Saelau Saengkaew Sakdan Sanouk Sawangsri Shinawatra Siriporn Sirivadhanabhakdi
+		Soikham Somsri Sri_Thep Sukhothai Suwan Suwannarat Tancharoen Tham_Boon Thonburi Thongchai Thong_Di Trubbaya U_Thong Vejjajiva
+		Vongvanij Wattanasin Wong Yoovidhya
+		}
+		dynasty_names = {
+		Adulyadej Amarin Ambhom Ananada Anchali Anong Anuman Anurak Aromdee Arthit Awut Ayutthaya Bae Bannarasee
+		Bhirombhakdi Boonjumnong Boonyasak Bui Bunnag Chadaporn Chakrii Charoensuk Chearavanont Chen Chet_Ton Chiang_Mai
+		Chidchob Chirathivat Chitragani Choonhavan Dangda Du Jitkhunthod Jutanugarn Kaikaew Kanjanapas Karbdecho Kasem
+		Krairiksh Kumkhum Lampang Lamphun Lamsam Lavapura Makok Malee Maleenont Na_Chiangmai Nakhon_Pathom Nakhon_Sawan
+		Ngam Niran Noi Paśú Phetchaburi Phimai Phitsanulok Phra_Bang Pravat Ratanapol Ratanaporn Ratanarak Ratanarat Ratchaburi
+		Rattanakosin Ritthirong Rochana Rueng Saelau Saengkaew Sakdan Sanouk Sawangsri Shinawatra Siriporn Sirivadhanabhakdi
+		Soikham Somsri Sri_Thep Sukhothai Suwan Suwannarat Tancharoen Tham_Boon Thonburi Thongchai Thong_Di Trubbaya U_Thong Vejjajiva
+		Vongvanij Wattanasin Wong Yoovidhya
+		}
+
+		male_names = {
+		Anurutha Athittayawong A_Wut Boromakot Borommaracha Bun_Si Chairacha Chakkraphat Channarong Cheputarai
+		Chettha Dusit Ekathotsarot Ingsemang Intha_Racha Jatuphon Jirayu Kaeo Kawila Ket Keu_Na Khai_Bua_Ban Kham_Tam_Sa
+		Khamteam Khamtum Khemkhaeng Khihut Khong_Kham Kiet Kin_Kitsarat Klahan Konekham Kongkeo Laasaenthai Lan_Kham_Deng
+		Leu_Xay Luangthipphanet Lue_Sai Mahin Mangraenara Ma_Noi Manthaturat Mekuti Meunsai Mongkut Mon_Keo Nakhon_Noi Nan_Rat
+		Nan_Tharat Narai Naresuen Nawrahta_Minsaw Niran No_Muong Nophakum Pethom Phanumas Phassakorn Phetracha Phommathat
+		Photisarat Phra_Chaiyathip Phra_Choi Phrae Phra_Saenmueang Phraya_Chaban Piyabutr Po_Aphaikhamini Po_Mayunguan Prasat_Thong
+		Prawati Puenthai Rajabud_Yo Rama Ramaracha Ramathibodi Ratsada Saenmuenagma Saensurin Sai Saikham Sai_Tia_Kaphut Samsenethai
+		Saya_Kumane Setthathirat Sisongmueang Si_Suthammaracha Somchair Songtham Sunan Taksin Thai_Sa Thammalangka Thammaracha
+		Thammikarat Thawoon Theng_Kham Thinnakorn Thuanthong Tian_Thala Tilokaracha Tone_Kham Trailokanat Upanyuvarat Uthumphon
+		Vichai Virote Visunarat Xiang_Keo Yotchiangrai Yu_Khong
+		}
+		female_names = {
+		Achara Amporn Anong Aom Aranya Arisara Arpa Beam Busaba Busarakham Chaem_Choi Chailai Chalermwan Chalita
+		Chanarong Chantana Chariya Chiraprapha Dara Duangkamol Gamon Hansa Hathai Hom Ireshi Jatuphon Jintana Junta Kaeo
+		Kalyani Kamlai Kanda Karnchana Khanani Kharee Komen Komol Kulphantha Lamai Lawana Lookgade Maeri Mya Nan Nari Panjapapee
+		Pathama Phaibun Phawta Piti Pornthip Preeda Samorn Sarai Sri_Suriyothai Sukhorn Sumitra Thanomwang Thong Ubon Waan Wisutthithewi Ya_Chai Yasuntarathewi Ying
+		}
+		dynasty_name_first = yes
+		dynasty_title_names = yes
+
+		ethnicities = {
+			10 = asian
+		}
+	}
+	khmer = {
+		
+		color = { 0.3 0.65 0.45 }
+		cadet_dynasty_names = {
+		Aang Aek Ang Angkor Aok Battambang Ben Bun Chan Chap Chea Cheam Chen Cheng Chey Chhan Chhem Chhet
+		Chhim Chhit Chhorn Chim Chin Choem Din Dith Dul Duong Dy Eam Eav Eaw Ek Hak Ho Hong Hu Hun Iam Iem Im
+		Iv Jan Jay Jen Jey Jin Kaing Kem Keo Kep Khat Khay Kheang Khiev Khim Khin Khlot Kim Kouch Kratie Kuy Lay
+		Lim Liv Long Ly Ma Mao Mean Meas Meng Mul Muoy Muy Nhek Ny Ok Om Ong Ouch Oudong Pang Pech Pen Phan Phnom_Penh
+		Phy Pich Pok Prak Ros Rous Rouy Sam San Sang Sao Sar Sat Say Seang Sen Seng Seoung Siem_Reap Sieng Sin So Sok Som Son
+		Song Sor Soun Stung_Treng Su Suy Taing Tang Tat Teav Tep Than Thy Toch Tok Touch Try Tum Ty Uch Um Uy Vang
+		Vong Yim Yos Yous Yu Yun
+		}
+
+		dynasty_names = {
+		Aang Aek Ang Angkor Aok Battambang Ben Bun Chan Chap Chea Cheam Chen Cheng Chey Chhan Chhem Chhet
+		Chhim Chhit Chhorn Chim Chin Choem Din Dith Dul Duong Dy Eam Eav Eaw Ek Hak Ho Hong Hu Hun Iam Iem Im
+		Iv Jan Jay Jen Jey Jin Kaing Kem Keo Kep Khat Khay Kheang Khiev Khim Khin Khlot Kim Kouch Kratie Kuy Lay
+		Lim Liv Long Ly Ma Mao Mean Meas Meng Mul Muoy Muy Nhek Ny Ok Om Ong Ouch Oudong Pang Pech Pen Phan Phnom_Penh
+		Phy Pich Pok Prak Ros Rous Rouy Sam San Sang Sao Sar Sat Say Seang Sen Seng Seoung Siem_Reap Sieng Sin So Sok Som Son
+		Song Sor Soun Stung_Treng Su Suy Taing Tang Tat Teav Tep Than Thy Toch Tok Touch Try Tum Ty Uch Um Uy Vang
+		Vong Yim Yos Yous Yu Yun
+		}
+
+		male_names = {
+		Anchaly Ang_Chan Ang_Chea Ang_Duong Ang_Em Ang_Eng Ang_Nan Ang_Non Ang_Sngoun Ang_Sor Ang_Sur Ang_Tham Ang_Ton
+		Ang_Tong Ang_Yong Atith Barom_Reachea Boran Borey Bourey Bunroeun Chamroeun Chan Chankrisna Chanthou Chanvatey
+		Charya Chea Chey_Chettha Chhay Damkhat_Sukonthor Dara Darany Davuth Dharmaraja Dharmarajadhiraja Kakada Keo_Ban_On
+		Keo_Hua Khean Khemera Kiry Kong_Kea Kosal Kravann Leap Meaker Mittapheap Montha Munny Narayanaraja Narith Nemo
+		Ney_Khan Nhean Nimith Nimo Nimol Nisay Noreaksey Noreay_Ramathipatei Oudom Outey_Reachea Padumaraja Phala
+		Pheakdei Phirum Phirun Pich Piseth Pisey Poeu Ponhea_An Ponhea_Chan Ponhea_Nhom Ponhea_To Ponhea_Yat Ponhea_Yor
+		Ponleak Ponleu Ponlok Prak Preah_Ram Pros Puthyrith Rainsey Rajadhiraja Raksmei Ramathipadi Rangsey Rathana Rathanak
+		Reachea_Ramathipatei Reamea_Chungprey Ream_Reachea Reasmey Rith Rithipol Rithisak Rithy Rothanak Sakngea Saloth Samang
+		Sambath Samlain Samnang Samphy Sangha Sann Satha Sathea Sokha Sokhem Sokhom Sokun Somnang Sonith Sopath Sophaep Sopheak
+		Sopheaktra Sopheap Sopheara Soriyotei Sorya Sothea Sothy Sourkeat Sov Sovann Sovannar Sovannarith Sovay Srei_Soriyopear
+		Srey_Sukonthor Sri_Raja Sros Thommo_Reachea Udayaraja Vanna Vannak Veasna Veha Vibol Vichear Vireak Vireakboth Visal
+		Viseth Visna Visoth Visothirith Vithara Vithu
+		}
+		female_names = {
+		Achariya Akara Anak Anchali Ang_Mey Arunny Ary Bopha Botum Boupha Champei Champey Chamroeun Chan Chang Chankrisna
+		Chanlina Chanmony Channary Chanthavy Chanthou Chantou Chantrea Chanvatey Charaya Chariya Chavy Chaya Chea Chenda
+		Chhaiya Chhean Chhorvin Chhorvon Chivy Choum Chouma Da Daevy Dara Darareaksmey Davi Jorani Kalianne Kaliyanei Kalliyan
+		Kanleakhana Kannareth Kannitha Kanya Kesor Kolab Kolthida Kongkea Krachap Kravann Kun Kunthea Leakena Leakhena Leap Mach
+		Makara Malis Maly Mau Mealea Mean Mliss Moneang Mony Nakry Nary Neang Nearidei Neary Nuon Panha Peou Phally Phary Pheakdei
+		Pheakkley Phhoung Pich Pisey Ponlok Ponnleu Pou Punthea Putrea Rachana Rachany Rangsei Reach Reaksmey Reasmey Rom Rotha
+		Roumduol Roumjong Sakngea Saley Samnang Samphy Savady Sawatdee Seda Sela Seyha Shannary Sikha Sinuon Sita Soboen Socheat
+		Socheata Sok Sokha Sokhanya Sokhom Sombo Sonisay Sonith Sophea Sopheap Sopheary Sovann Sovannah Sreyleak Tevy Thea Theavy
+		Thom Thyda Tina Toch Tola Vanna Veasna Veata Vimean
+		}
+		dynasty_name_first = yes
+		dynasty_title_names = yes
+
+		ethnicities = {
+			10 = asian
+		}
+	}
 }

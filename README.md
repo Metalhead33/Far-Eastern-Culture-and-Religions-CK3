@@ -2,7 +2,7 @@
 
 A mod that adds far-eastern cultures and religions to CK3, as well as adding some dead religions.
 
-Currently, it adds Japanese, Korean, Vietnamese and Cantonese cultures and the Shinto and Muist religions. It also adds Celtic Paganism, Basque Paganism, Egyptian Paganism, Atenism, Canaanite Pagnaism, Mesopotamian Paganism, Arabian Paganism, Roman Paganism *(separate from Hellenism)*, Mithraism and Etruscan Paganism. It also adds new Gypsy cultures, and an opportunity to hire Gypsy and Jewish courtiers - currently as a decision, with plans to reintroduce the old CK2 events later.
+Currently, it adds Japanese, Korean, Vietnamese, Cantonese, Malay, Javanese, Batak, Achanese, Cham, Thai and Khmer cultures and the Shinto and Muist religions. It also adds Celtic Paganism, Basque Paganism, Egyptian Paganism, Atenism, Canaanite Pagnaism, Mesopotamian Paganism, Arabian Paganism, Roman Paganism *(separate from Hellenism)*, Mithraism and Etruscan Paganism. It also adds new Gypsy cultures, and an opportunity to hire Gypsy and Jewish courtiers - currently as a decision, with plans to reintroduce the old CK2 events later.
 
 
 ## **FAQ:**
