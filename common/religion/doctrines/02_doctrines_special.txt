@@ -1,0 +1,525 @@
+﻿is_christian_faith = {
+	group = "special"
+	
+	is_available_on_create = {
+		has_doctrine = special_doctrine_is_christian_faith
+	}
+
+	special_doctrine_is_christian_faith = {
+		parameters = {
+			# Since doctrines cannot modify other faith's views of us, only our view of others, all Christian faiths are given this special doctrine which makes them friendlier to Faiths with the Christian Syncretism tenet.
+			hostility_override_tenet_christian_syncretism = 2
+			christian_syncretic_recipient_opinion_active = yes
+			opinion_of_christian_syncretic_actor_opinion_active = 30
+		}
+	}
+}
+
+is_islamic_faith = {
+	group = "special"
+	
+	is_available_on_create = {
+		has_doctrine = special_doctrine_is_islamic_faith
+	}
+
+	special_doctrine_is_islamic_faith = {
+		parameters = {
+			# Since doctrines cannot modify other faith's views of us, only our view of others, all Islamic faiths are given this special doctrine which makes them friendlier to Faiths with the Christian Syncretism tenet.
+			hostility_override_tenet_islamic_syncretism = 2
+			islamic_syncretic_recipient_opinion_active = yes
+			opinion_of_islamic_syncretic_actor_opinion_active = 30
+		}
+	}
+}
+
+is_jewish_faith = {
+	group = "special"
+	
+	is_available_on_create = {
+		has_doctrine = special_doctrine_is_jewish_faith
+	}
+
+	special_doctrine_is_jewish_faith = {
+		parameters = {
+			# Since doctrines cannot modify other faith's views of us, only our view of others, all Jewish faiths are given this special doctrine which makes them friendlier to Faiths with the Christian Syncretism tenet.
+			hostility_override_tenet_jewish_syncretism = 2
+			jewish_syncretic_recipient_opinion_active = yes
+			opinion_of_jewish_syncretic_actor_opinion_active = 30
+		}
+	}
+}
+
+doctrine_christian_orientation = {
+	group = "main_group"
+	
+	is_available_on_create = {
+		religion_tag = christianity_religion
+	}
+	
+	christian_roman_doctrine = {
+		piety_cost = {
+			value = faith_doctrine_cost_low
+			if = {
+				limit = { has_doctrine = christian_roman_doctrine }
+				multiply = 0
+			}
+		}
+		is_shown = {
+			religion_tag = christianity_religion
+		}
+		can_pick = {
+				AND = {
+					custom_description = {
+						text = christian_roman_doctrine_trigger
+						OR = {
+							flag:doctrine_no_head = { is_in_list = selected_doctrines }
+							THIS = faith:catholic
+						}
+					}
+					OR = {
+						custom_description = {
+							text = must_have_tenet_communion
+							flag:tenet_communion = { is_in_list = selected_doctrines }
+						}
+						custom_description = {
+							text = must_have_tenet_pastoral_isolation
+							flag:tenet_pastoral_isolation = { is_in_list = selected_doctrines }
+						}
+					}
+					custom_description = {
+						text = incompatible_with_doctrine_homosexuality_accepted
+						NOT = { flag:doctrine_homosexuality_accepted = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_doctrine_deviancy_accepted
+						NOT = { flag:doctrine_deviancy_accepted = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_doctrine_adultery_men_accepted
+						NOT = { flag:doctrine_adultery_men_accepted = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_doctrine_adultery_women_accepted
+						NOT = { flag:doctrine_adultery_women_accepted = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_doctrine_witchcraft_accepted
+						NOT = { flag:doctrine_witchcraft_accepted = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_doctrine_gender_female_dominated
+						NOT = { flag:doctrine_gender_female_dominated = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_doctrine_consanguinity_unrestricted
+						NOT = { flag:doctrine_consanguinity_unrestricted = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_doctrine_theocracy_lay_clergy
+						NOT = { flag:doctrine_theocracy_lay_clergy = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_hedonistic
+						NOT = { flag:tenet_hedonistic = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_aniconism
+						NOT = { flag:tenet_aniconism = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_carnal_exaltation
+						NOT = { flag:tenet_carnal_exaltation = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_consolamentum
+						NOT = { flag:tenet_consolamentum = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_divine_marriage
+						NOT = { flag:tenet_divine_marriage = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_gnosticism
+						NOT = { flag:tenet_gnosticism = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_esotericism
+						NOT = { flag:tenet_esotericism = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_literalism
+						NOT = { flag:tenet_literalism = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_astrology
+						NOT = { flag:tenet_astrology = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_hedonistic
+						NOT = { flag:tenet_hedonistic = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_sanctity_of_nature
+						NOT = { flag:tenet_sanctity_of_nature = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_natural_primitivism
+						NOT = { flag:tenet_natural_primitivism = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_ritual_cannibalism
+						NOT = { flag:tenet_ritual_cannibalism = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_sacred_shadows
+						NOT = { flag:tenet_sacred_shadows = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_polyamory
+						NOT = { flag:tenet_polyamory = { is_in_list = selected_doctrines } }
+					}
+				}
+		}
+		parameters = {
+			hostility_override_christian_roman_doctrine = 1
+			hostility_override_christian_orthodox_doctrine = 1
+		}
+	}
+	christian_orthodox_doctrine = {
+		piety_cost = {
+			value = faith_doctrine_cost_low
+			if = {
+				limit = { has_doctrine = christian_orthodox_doctrine }
+				multiply = 0
+			}
+		}
+		is_shown = {
+			religion_tag = christianity_religion
+		}
+		can_pick = {
+				AND = {
+					OR = {
+						custom_description = {
+							text = must_have_tenet_communion
+							flag:tenet_communion = { is_in_list = selected_doctrines }
+						}
+						custom_description = {
+							text = must_have_tenet_pentarchy
+							flag:tenet_pentarchy = { is_in_list = selected_doctrines }
+						}
+						custom_description = {
+							text = must_have_tenet_alexandrian_catechism
+							flag:tenet_alexandrian_catechism = { is_in_list = selected_doctrines }
+						}
+						flag:tenet_alexandrian_catechism = { is_in_list = selected_doctrines }					}
+					custom_description = {
+						text = incompatible_with_doctrine_homosexuality_accepted
+						NOT = { flag:doctrine_homosexuality_accepted = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_doctrine_deviancy_accepted
+						NOT = { flag:doctrine_deviancy_accepted = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_doctrine_adultery_men_accepted
+						NOT = { flag:doctrine_adultery_men_accepted = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_doctrine_adultery_women_accepted
+						NOT = { flag:doctrine_adultery_women_accepted = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_doctrine_witchcraft_accepted
+						NOT = { flag:doctrine_witchcraft_accepted = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_doctrine_gender_female_dominated
+						NOT = { flag:doctrine_gender_female_dominated = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_doctrine_consanguinity_unrestricted
+						NOT = { flag:doctrine_consanguinity_unrestricted = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_doctrine_theocracy_lay_clergy
+						NOT = { flag:doctrine_theocracy_lay_clergy = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_hedonistic
+						NOT = { flag:tenet_hedonistic = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_carnal_exaltation
+						NOT = { flag:tenet_carnal_exaltation = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_consolamentum
+						NOT = { flag:tenet_consolamentum = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_divine_marriage
+						NOT = { flag:tenet_divine_marriage = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_gnosticism
+						NOT = { flag:tenet_gnosticism = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_esotericism
+						NOT = { flag:tenet_esotericism = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_literalism
+						NOT = { flag:tenet_literalism = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_astrology
+						NOT = { flag:tenet_astrology = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_hedonistic
+						NOT = { flag:tenet_hedonistic = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_sanctity_of_nature
+						NOT = { flag:tenet_sanctity_of_nature = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_natural_primitivism
+						NOT = { flag:tenet_natural_primitivism = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_ritual_cannibalism
+						NOT = { flag:tenet_ritual_cannibalism = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_sacred_shadows
+						NOT = { flag:tenet_sacred_shadows = { is_in_list = selected_doctrines } }
+					}
+					custom_description = {
+						text = incompatible_with_tenet_polyamory
+						NOT = { flag:tenet_polyamory = { is_in_list = selected_doctrines } }
+					}
+				}
+		}
+		parameters = {
+			hostility_override_christian_orthodox_doctrine = 1
+			hostility_override_christian_roman_doctrine = 1
+			hostility_override_christian_protestant_doctrine = 1
+		}
+	}
+	christian_protestant_doctrine = {
+		piety_cost = {
+			value = faith_doctrine_cost_low
+			if = {
+				limit = { has_doctrine = christian_protestant_doctrine }
+				multiply = 0
+			}
+		}
+		is_shown = {
+			religion_tag = christianity_religion
+		}
+		can_pick = {
+			AND = {
+				custom_description = {
+					text = incompatible_with_doctrine_homosexuality_accepted
+					NOT = { flag:doctrine_homosexuality_accepted = { is_in_list = selected_doctrines } }
+				}
+				custom_description = {
+					text = incompatible_with_doctrine_deviancy_accepted
+					NOT = { flag:doctrine_deviancy_accepted = { is_in_list = selected_doctrines } }
+				}
+				custom_description = {
+					text = incompatible_with_doctrine_adultery_men_accepted
+					NOT = { flag:doctrine_adultery_men_accepted = { is_in_list = selected_doctrines } }
+				}
+				custom_description = {
+					text = incompatible_with_doctrine_adultery_women_accepted
+					NOT = { flag:doctrine_adultery_women_accepted = { is_in_list = selected_doctrines } }
+				}
+				custom_description = {
+					text = incompatible_with_doctrine_witchcraft_accepted
+					NOT = { flag:doctrine_witchcraft_accepted = { is_in_list = selected_doctrines } }
+				}
+				custom_description = {
+					text = incompatible_with_doctrine_gender_female_dominated
+					NOT = { flag:doctrine_gender_female_dominated = { is_in_list = selected_doctrines } }
+				}
+				custom_description = {
+					text = incompatible_with_doctrine_consanguinity_unrestricted
+					NOT = { flag:doctrine_consanguinity_unrestricted = { is_in_list = selected_doctrines } }
+				}
+				custom_description = {
+					text = incompatible_with_tenet_hedonistic
+					NOT = { flag:tenet_hedonistic = { is_in_list = selected_doctrines } }
+				}
+				custom_description = {
+					text = incompatible_with_tenet_monasticism
+					NOT = { flag:tenet_monasticism = { is_in_list = selected_doctrines } }
+				}
+				custom_description = {
+					text = incompatible_with_tenet_carnal_exaltation
+					NOT = { flag:tenet_carnal_exaltation = { is_in_list = selected_doctrines } }
+				}
+				custom_description = {
+					text = incompatible_with_tenet_consolamentum
+					NOT = { flag:tenet_consolamentum = { is_in_list = selected_doctrines } }
+				}
+				custom_description = {
+					text = incompatible_with_tenet_divine_marriage
+					NOT = { flag:tenet_divine_marriage = { is_in_list = selected_doctrines } }
+				}
+				custom_description = {
+					text = incompatible_with_tenet_gnosticism
+					NOT = { flag:tenet_gnosticism = { is_in_list = selected_doctrines } }
+				}
+				custom_description = {
+					text = incompatible_with_tenet_esotericism
+					NOT = { flag:tenet_esotericism = { is_in_list = selected_doctrines } }
+				}
+				custom_description = {
+					text = incompatible_with_tenet_communion
+					NOT = { flag:tenet_communion = { is_in_list = selected_doctrines } }
+				}
+				custom_description = {
+					text = incompatible_with_tenet_ritual_celebrations
+					NOT = { flag:tenet_ritual_celebrations = { is_in_list = selected_doctrines } }
+				}
+				custom_description = {
+					text = incompatible_with_tenet_astrology
+					NOT = { flag:tenet_astrology = { is_in_list = selected_doctrines } }
+				}
+				custom_description = {
+					text = incompatible_with_tenet_hedonistic
+					NOT = { flag:tenet_hedonistic = { is_in_list = selected_doctrines } }
+				}
+				custom_description = {
+					text = incompatible_with_tenet_sanctity_of_nature
+					NOT = { flag:tenet_sanctity_of_nature = { is_in_list = selected_doctrines } }
+				}
+				custom_description = {
+					text = incompatible_with_tenet_natural_primitivism
+					NOT = { flag:tenet_natural_primitivism = { is_in_list = selected_doctrines } }
+				}
+				custom_description = {
+					text = incompatible_with_tenet_ritual_cannibalism
+					NOT = { flag:tenet_ritual_cannibalism = { is_in_list = selected_doctrines } }
+				}
+				custom_description = {
+					text = incompatible_with_tenet_sacred_shadows
+					NOT = { flag:tenet_sacred_shadows = { is_in_list = selected_doctrines } }
+				}
+				custom_description = {
+					text = incompatible_with_tenet_polyamory
+					NOT = { flag:tenet_polyamory = { is_in_list = selected_doctrines } }
+				}
+			}
+		}
+		parameters = {
+			hostility_override_christian_protestant_doctrine = 1
+			hostility_override_christian_orthodox_doctrine = 1
+		}
+	}
+	christian_wacky_doctrine = {
+		piety_cost = {
+			value = faith_doctrine_cost_low
+			if = {
+				limit = { has_doctrine = christian_wacky_doctrine }
+				multiply = 0
+			}
+		}
+		is_shown = {
+			religion_tag = christianity_religion
+		}
+		can_pick = {
+			always = yes
+		}
+		traits = {
+			virtues = {
+				lifestyle_mystic
+				theologian
+			}
+		}
+	}
+}
+
+heresy_hostility = {
+	group = "not_creatable"
+	is_available_on_create = {
+		has_doctrine = heresy_hostility_doctrine
+	}
+	heresy_hostility_doctrine = {
+		parameters = {
+			hostility_same_religion = 2
+		}
+	}
+}
+
+nudity_doctrine = {
+	group = "special"
+	is_available_on_create = {
+		has_doctrine = special_doctrine_naked_priests
+	}
+
+	special_doctrine_naked_priests = {
+		parameters = {
+			naked_priests_active = yes
+		}
+	}
+}
+
+unreformed_faith = {
+	group = "not_creatable"
+	is_available_on_create = {
+		always = no # Goes away on reformation
+	}
+	unreformed_faith_doctrine = {
+		visible = no
+		parameters = {
+			# unreformed = yes also serves as the basis for the unreformed_syncretic tenet.
+			unreformed = yes
+			hostility_override_tenet_unreformed_syncretism = 2
+			unreformed_syncretic_recipient_opinion_active = yes
+			opinion_of_unreformed_syncretic_actor_opinion_active = 30
+			conquest_cb_enabled = yes
+		}
+
+		character_modifier = {
+			monthly_prestige_gain_mult = 0.2
+			clan_government_vassal_opinion = -20
+			feudal_government_vassal_opinion = -20
+			republic_government_vassal_opinion = -20
+		}
+	}
+}
+
+divine_destiny = {
+	group = "special"
+	is_available_on_create = {
+		has_doctrine = divine_destiny_doctrine
+	}
+	divine_destiny_doctrine = {
+		piety_cost = {
+			value = faith_doctrine_cost_low
+		}
+		parameters = {
+			divine_destiny_holy_war_cost_reduction = yes
+		}
+	}
+}
+
+
+#Game rule only
+full_tolerance = {
+	group = "special"
+	is_available_on_create = {
+		has_doctrine = special_doctrine_full_tolerance
+	}
+	
+	special_doctrine_full_tolerance = {
+		parameters = {
+			hostility_override_special_doctrine_full_tolerance = 0
+		}
+	}
+}
+

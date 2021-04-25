@@ -1,0 +1,125 @@
+﻿
+######################
+# Incompatible Rites #
+######################
+
+christian_roman_doctrine_trigger = {
+	first_not = ROMAN_COMMUNION_NEEDS_TRIGGER
+	third_not = ROMAN_COMMUNION_NEEDS_TRIGGER
+}
+incompatible_with_doctrine_adultery_men_accepted = {
+	first_not = INCOMPATIBLE_WITH_DOCTRINE_ADULTERY_MEN_ACCEPTED
+	third_not = INCOMPATIBLE_WITH_DOCTRINE_ADULTERY_MEN_ACCEPTED
+}
+incompatible_with_doctrine_adultery_women_accepted = {
+	first_not = INCOMPATIBLE_WITH_DOCTRINE_ADULTERY_WOMEN_ACCEPTED
+	third_not = INCOMPATIBLE_WITH_DOCTRINE_ADULTERY_WOMEN_ACCEPTED
+}
+incompatible_with_doctrine_consanguinity_unrestricted = {
+	first_not = INCOMPATIBLE_WITH_DOCTRINE_CONSANGUINITY_UNRESTRICTED
+	third_not = INCOMPATIBLE_WITH_DOCTRINE_CONSANGUINITY_UNRESTRICTED
+}
+incompatible_with_doctrine_deviancy_accepted = {
+	first_not = INCOMPATIBLE_WITH_DOCTRINE_DEVIANCY_ACCEPTED
+	third_not = INCOMPATIBLE_WITH_DOCTRINE_DEVIANCY_ACCEPTED
+}
+incompatible_with_doctrine_gender_female_dominated = {
+	first_not = INCOMPATIBLE_WITH_DOCTRINE_GENDER_FEMALE_DOMINATED
+	third_not = INCOMPATIBLE_WITH_DOCTRINE_GENDER_FEMALE_DOMINATED
+}
+incompatible_with_doctrine_homosexuality_accepted = {
+	first_not = INCOMPATIBLE_WITH_DOCTRINE_HOMOSEXUALITY_ACCEPTED
+	third_not = INCOMPATIBLE_WITH_DOCTRINE_HOMOSEXUALITY_ACCEPTED
+}
+incompatible_with_doctrine_theocracy_lay_clergy = {
+	first_not = INCOMPATIBLE_WITH_DOCTRINE_THEOCRACY_LAY_CLERGY
+	third_not = INCOMPATIBLE_WITH_DOCTRINE_THEOCRACY_LAY_CLERGY
+}
+incompatible_with_doctrine_witchcraft_accepted = {
+	first_not = INCOMPATIBLE_WITH_DOCTRINE_WITCHCRAFT_ACCEPTED
+	third_not = INCOMPATIBLE_WITH_DOCTRINE_WITCHCRAFT_ACCEPTED
+}
+incompatible_with_tenet_aniconism = {
+	first_not = INCOMPATIBLE_WITH_TENET_ANICONISM
+	third_not = INCOMPATIBLE_WITH_TENET_ANICONISM
+}
+incompatible_with_tenet_astrology = {
+	first_not = INCOMPATIBLE_WITH_TENET_ASTROLOGY
+	third_not = INCOMPATIBLE_WITH_TENET_ASTROLOGY
+}
+incompatible_with_tenet_carnal_exaltation = {
+	first_not = INCOMPATIBLE_WITH_TENET_CARNAL_EXALTATION
+	third_not = INCOMPATIBLE_WITH_TENET_CARNAL_EXALTATION
+}
+incompatible_with_tenet_communion = {
+	first_not = INCOMPATIBLE_WITH_TENET_COMMUNION
+	third_not = INCOMPATIBLE_WITH_TENET_COMMUNION
+}
+incompatible_with_tenet_consolamentum = {
+	first_not = INCOMPATIBLE_WITH_TENET_CONSOLAMENTUM
+	third_not = INCOMPATIBLE_WITH_TENET_CONSOLAMENTUM
+}
+incompatible_with_tenet_divine_marriage = {
+	first_not = INCOMPATIBLE_WITH_TENET_DIVINE_MARRIAGE
+	third_not = INCOMPATIBLE_WITH_TENET_DIVINE_MARRIAGE
+}
+incompatible_with_tenet_esotericism = {
+	first_not = INCOMPATIBLE_WITH_TENET_ESOTERICISM
+	third_not = INCOMPATIBLE_WITH_TENET_ESOTERICISM
+}
+incompatible_with_tenet_gnosticism = {
+	first_not = INCOMPATIBLE_WITH_TENET_GNOSTICISM
+	third_not = INCOMPATIBLE_WITH_TENET_GNOSTICISM
+}
+incompatible_with_tenet_hedonistic = {
+	first_not = INCOMPATIBLE_WITH_TENET_HEDONISTIC
+	third_not = INCOMPATIBLE_WITH_TENET_HEDONISTIC
+}
+incompatible_with_tenet_literalism = {
+	first_not = INCOMPATIBLE_WITH_TENET_LITERALISM
+	third_not = INCOMPATIBLE_WITH_TENET_LITERALISM
+}
+incompatible_with_tenet_monasticism = {
+	first_not = INCOMPATIBLE_WITH_TENET_MONASTICISM
+	third_not = INCOMPATIBLE_WITH_TENET_MONASTICISM
+}
+incompatible_with_tenet_natural_primitivism = {
+	first_not = INCOMPATIBLE_WITH_TENET_NATURAL_PRIMITIVISM
+	third_not = INCOMPATIBLE_WITH_TENET_NATURAL_PRIMITIVISM
+}
+incompatible_with_tenet_polyamory = {
+	first_not = INCOMPATIBLE_WITH_TENET_POLYAMORY
+	third_not = INCOMPATIBLE_WITH_TENET_POLYAMORY
+}
+incompatible_with_tenet_ritual_cannibalism = {
+	first_not = INCOMPATIBLE_WITH_TENET_RITUAL_CANNIBALISM
+	third_not = INCOMPATIBLE_WITH_TENET_RITUAL_CANNIBALISM
+}
+incompatible_with_tenet_ritual_celebrations = {
+	first_not = INCOMPATIBLE_WITH_TENET_RITUAL_CELEBRATIONS
+	third_not = INCOMPATIBLE_WITH_TENET_RITUAL_CELEBRATIONS
+}
+incompatible_with_tenet_sacred_shadows = {
+	first_not = INCOMPATIBLE_WITH_TENET_SACRED_SHADOWS
+	third_not = INCOMPATIBLE_WITH_TENET_SACRED_SHADOWS
+}
+incompatible_with_tenet_sanctity_of_nature = {
+	first_not = INCOMPATIBLE_WITH_TENET_SANCTITY_OF_NATURE
+	third_not = INCOMPATIBLE_WITH_TENET_SANCTITY_OF_NATURE
+}
+must_have_tenet_alexandrian_catechism = {
+	first = MUST_HAVE_TENET_ALEXANDRIAN_CATECHISM
+	third_not = MUST_HAVE_TENET_ALEXANDRIAN_CATECHISM
+}
+must_have_tenet_communion = {
+	first = MUST_HAVE_TENET_COMMUNION
+	third_not = MUST_HAVE_TENET_COMMUNION
+}
+must_have_tenet_pastoral_isolation = {
+	first = MUST_HAVE_TENET_PASTORAL_ISOLATION
+	third_not = MUST_HAVE_TENET_PASTORAL_ISOLATION
+}
+must_have_tenet_pentarchy = {
+	first = MUST_HAVE_TENET_PENTARCHY
+	third_not = MUST_HAVE_TENET_PENTARCHY
+}

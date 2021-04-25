@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="117.78992mm"
+   height="116.08261mm"
+   viewBox="0 0 117.78992 116.08261"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="arianism.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.71817058"
+     inkscape:cx="247.11237"
+     inkscape:cy="300.72687"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1014"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-40.451518,-56.391218)">
+    <path
+       id="path865"
+       style="fill:#ffffff;fill-opacity:0.598443;stroke:#000000;stroke-width:0.922123;stroke-opacity:1;paint-order:fill markers stroke;stop-color:#000000"
+       d="m 99.14933,56.852362 a 58.43393,57.580376 0 0 0 -58.23675,57.579948 58.43393,57.580376 0 0 0 58.43416,57.58046 58.43393,57.580376 0 0 0 58.43364,-57.58046 58.43393,57.580376 0 0 0 -58.43364,-57.579948 58.43393,57.580376 0 0 0 -0.19741,0 z m 8.04396,17.020667 c 6.80167,0.535993 11.81894,2.97468 16.29978,6.46059 l -16.1432,17.07286 z m -15.21354,0.364837 0.0522,23.220803 -16.45585,-16.71629 c 5.14997,-3.47047 9.88686,-6.048461 16.40366,-6.504513 z m -27.14512,16.655833 16.51631,16.672361 -23.54172,0.10439 c 0.29461,-5.7046 2.26141,-11.298021 7.02541,-16.776751 z m 69.71203,0.46922 c 4.11115,4.54767 5.91681,9.902621 6.97321,15.838831 l -23.69778,0.26044 z m 7.65896,30.843591 c -5.925,18.22089 -16.02251,31.23783 -34.28266,34.07441 l -0.78187,-33.91783 z m -50.33026,0.46923 0.15658,33.70956 C 72.89446,153.61015 63.43163,140.13096 57.28005,122.98838 Z" />
+  </g>
+</svg>
