@@ -30,6 +30,13 @@
 	doctrine = doctrine_clerical_gender_either
 	doctrine = doctrine_clerical_marriage_allowed
 	doctrine = doctrine_clerical_succession_temporal_appointment
+	doctrine = carnd_doctrine_lust_accepted
+	doctrine = communal_identity_doctrine
+	doctrine = no_syncretism_doctrine
+	
+	doctrine = embalming_doctrine
+	doctrine = moderation_doctrine
+	doctrine = judgement_doctrine
 
 	traits = {
 		virtues = { content patient diligent }
@@ -98,14 +105,14 @@
 		holy_site = alexandria
 
 		doctrine = unreformed_faith_doctrine
-		doctrine = doctrine_consanguinity_unrestricted
 		doctrine = doctrine_adultery_men_accepted
 		doctrine = doctrine_polygamy
 		doctrine = doctrine_bastardry_legitimization
 		
 		#Special Tolerance
-		doctrine = special_doctrine_hellenic
-		doctrine = tenet_divine_marriage
+		doctrine = hellenic_syncretism_doctrine
+		doctrine = divine_marriage_doctrine
+		doctrine = tenet_astrology
 		doctrine = tenet_ancestor_worship
 		doctrine = tenet_pentarchy
 			
@@ -236,7 +243,8 @@
 		doctrine = doctrine_bastardry_legitimization
 		doctrine = doctrine_witchcraft_crime
 		
-		doctrine = tenet_divine_marriage
+		doctrine = divine_marriage_doctrine
+		doctrine = tenet_monasticism
 		doctrine = tenet_sun_worship
 		doctrine = tenet_pentarchy
 			

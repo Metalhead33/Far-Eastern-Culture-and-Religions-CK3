@@ -18,7 +18,7 @@
 	doctrine = doctrine_consanguinity_cousins
 
 	#Crimes
-	doctrine = doctrine_homosexuality_shunned
+	doctrine = doctrine_homosexuality_crime
 	doctrine = doctrine_adultery_men_crime
 	doctrine = doctrine_adultery_women_crime
 	doctrine = doctrine_kinslaying_close_kin_crime
@@ -30,6 +30,13 @@
 	doctrine = doctrine_clerical_gender_either
 	doctrine = doctrine_clerical_marriage_allowed
 	doctrine = doctrine_clerical_succession_temporal_appointment
+	doctrine = carnd_doctrine_lust_accepted
+	doctrine = communal_identity_doctrine
+	doctrine = no_syncretism_doctrine
+	
+	doctrine = burial_doctrine
+	doctrine = moderation_doctrine
+	doctrine = reincarnation_doctrine
 
 	traits = {
 		virtues = { brave just honest }
@@ -201,8 +208,8 @@
 			holy_site = lia_fail
 			holy_site = vannes
 
-			doctrine = tenet_esotericism
-			doctrine = tenet_warmonger
+			doctrine = tenet_sanctity_of_nature
+			doctrine = tenet_astrology
 			doctrine = tenet_human_sacrifice
 		}
 	}

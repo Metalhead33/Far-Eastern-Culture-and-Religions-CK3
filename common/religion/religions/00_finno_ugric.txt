@@ -31,9 +31,15 @@
 	doctrine = doctrine_clerical_gender_either
 	doctrine = doctrine_clerical_marriage_allowed
 	doctrine = doctrine_clerical_succession_temporal_appointment
+	doctrine = carnd_doctrine_lust_accepted
+	doctrine = communal_identity_doctrine
+	
+	doctrine = sky_burial_doctrine
+	doctrine = moderation_doctrine
+	doctrine = spirit_remainder_doctrine
 	
 	#Special Tolerance
-	doctrine = special_doctrine_turan
+	doctrine = turanic_syncretism_doctrine
 
 	traits = {
 		virtues = { stubborn brave just }
@@ -208,7 +214,7 @@
 
 			doctrine = tenet_sanctity_of_nature
 			doctrine = tenet_ancestor_worship
-			doctrine = tenet_communal_identity
+			doctrine = tenet_sacred_childbirth
 
 			icon = finno_ugric
 			reformed_icon = finno_ugric_reformed

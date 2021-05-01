@@ -17,12 +17,12 @@
 	doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece
 
 	#Crimes
-	doctrine = doctrine_homosexuality_shunned
+	doctrine = doctrine_homosexuality_crime
 	doctrine = doctrine_adultery_men_shunned
-	doctrine = doctrine_adultery_women_crime
+	doctrine = doctrine_adultery_women_shunned
 	doctrine = doctrine_kinslaying_close_kin_crime
 	doctrine = doctrine_deviancy_crime
-	doctrine = doctrine_witchcraft_crime
+	doctrine = doctrine_witchcraft_shunned
 
 	#Clerical Functions
 	doctrine = doctrine_clerical_function_taxation
@@ -32,6 +32,13 @@
 
 	#Special Doctrine for Christian Syncretism
 	doctrine = special_doctrine_is_christian_faith
+	doctrine = no_syncretism_doctrine
+	doctrine = burial_doctrine
+	doctrine = mercy_of_gods_doctrine
+	doctrine = cosmopolitan_doctrine
+	doctrine = carnd_doctrine_lust_shunned
+	
+	doctrine = moderation_doctrine
 
 	traits = {
 		virtues = { forgiving compassionate chaste }
@@ -238,6 +245,7 @@
 			doctrine = tenet_communion
 			doctrine = tenet_armed_pilgrimages
 			doctrine = tenet_monasticism
+			doctrine = judgement_doctrine
 
 			holy_order_names = {
 				{ name = "holy_order_knights_templar" coat_of_arms = "ho_knights_templar" }
@@ -310,6 +318,7 @@
 			doctrine = tenet_communion
 			doctrine = tenet_pentarchy
 			doctrine = tenet_monasticism
+			doctrine = judgement_doctrine
 
 			holy_order_names = {
 				{ name = "holy_order_brotherhood_of_the_holy_sepulchre" }
@@ -384,7 +393,9 @@
 			#Tenets
 			doctrine = tenet_monasticism
 			doctrine = tenet_alexandrian_catechism
-			doctrine = tenet_communal_identity
+			doctrine = communal_identity_doctrine
+			doctrine = judgement_doctrine
+			doctrine = tenet_pentarchy
 
 			holy_order_names = {
 				{ name = "holy_order_order_of_saint_anthony" }
@@ -459,7 +470,9 @@
 			#Tenets
 			doctrine = tenet_communion
 			doctrine = tenet_aniconism
-			doctrine = tenet_communal_identity
+			doctrine = tenet_monasticism
+			doctrine = judgement_doctrine
+			doctrine = communal_identity_doctrine
 
 			localization = { # Utilizes the 'East Christian' Saints, shared by Coptics and Armenians
 				#HealthGod
@@ -522,8 +535,10 @@
 
 			# Tenets
 			doctrine = tenet_communion
-			doctrine = tenet_communal_identity
-			doctrine = tenet_jewish_syncretism
+			doctrine = tenet_monasticism
+			doctrine = tenet_secret_jew
+			doctrine = communal_identity_doctrine
+			doctrine = jewish_syncretism_doctrine
 
 			# Main Group
 			doctrine = doctrine_pluralism_pluralistic
@@ -569,7 +584,9 @@
 			#Tenets
 			doctrine = tenet_consolamentum
 			doctrine = tenet_pacifism
-			doctrine = tenet_gnosticism
+			doctrine = tenet_aniconism
+			doctrine = gnosticism_doctrine
+			doctrine = leaving_the_cycle_doctrine
 			
 			doctrine = christian_wacky_doctrine
 
@@ -683,7 +700,9 @@
 			doctrine = christian_wacky_doctrine
 
 			#Tenets
-			doctrine = tenet_gnosticism
+			doctrine = gnosticism_doctrine
+			doctrine = leaving_the_cycle_doctrine
+			doctrine = tenet_aniconism
 			doctrine = tenet_pacifism
 			doctrine = tenet_mendicant_preachers
 
@@ -721,7 +740,10 @@
 			doctrine = christian_wacky_doctrine
 
 			#Tenets
-			doctrine = tenet_gnosticism
+			doctrine = gnosticism_doctrine
+			doctrine = leaving_the_cycle_doctrine
+			doctrine = asceticism_doctrine
+			doctrine = tenet_vows_of_poverty
 			doctrine = tenet_aniconism
 			doctrine = tenet_unrelenting_faith
 
@@ -749,7 +771,8 @@
 			doctrine = christian_wacky_doctrine
 
 			#Tenets
-			doctrine = tenet_eastern_syncretism
+			doctrine = eastern_syncretism_doctrine
+			doctrine = tenet_adaptive
 			doctrine = tenet_monasticism
 			doctrine = tenet_mendicant_preachers
 
@@ -780,7 +803,6 @@
 			doctrine = doctrine_theocracy_lay_clergy
 
 			#Marriage
-			doctrine = doctrine_consanguinity_unrestricted
 			doctrine = christian_wacky_doctrine
 
 			#Crimes
@@ -795,8 +817,9 @@
 			doctrine = doctrine_clerical_marriage_allowed
 
 			#Tenets
-			doctrine = tenet_divine_marriage
-			doctrine = tenet_carnal_exaltation
+			doctrine = divine_marriage_doctrine
+			doctrine = tenet_ritual_cannibalism
+			doctrine = tenet_ritual_celebrations # was carnal exaltation
 			doctrine = tenet_esotericism
 
 			#Unique Localization
@@ -851,7 +874,8 @@
 			#Tenets
 			doctrine = tenet_natural_primitivism
 			doctrine = tenet_sanctity_of_nature
-			doctrine = tenet_communal_identity
+			doctrine = tenet_polyamory
+			doctrine = communal_identity_doctrine
 		}
 
 		insular_celtic = {
@@ -888,6 +912,8 @@
 			doctrine = tenet_vows_of_poverty
 			doctrine = tenet_pastoral_isolation
 			doctrine = tenet_monasticism
+			doctrine = judgement_doctrine
+			doctrine = communal_identity_doctrine
 
 
 			holy_order_names = {
@@ -1007,6 +1033,7 @@
 			doctrine = tenet_mendicant_preachers
 			doctrine = tenet_pastoral_isolation
 			doctrine = tenet_monasticism
+			doctrine = strong_communal_identity_doctrine
 
 			localization = {
 				#Represents the peculiar Bosnian ecclesiastic setup as best as possible.
@@ -1034,6 +1061,101 @@
 				BishopNeuter = bosnian_bishop_neuter
 				BishopNeuterPlural = bosnian_bishop_neuterplural
 			}
+		}
+		carnd_madeleinist = {
+			color = { 245 111 73 }
+			icon = carnd_madeleinist_1
+
+			holy_site = jerusalem
+			holy_site = magdala
+			holy_site = marseille
+			holy_site = vezelay
+			holy_site = ephesos
+			
+			doctrine = doctrine_no_head
+			doctrine = doctrine_gender_equal
+			doctrine = doctrine_bastardry_none
+			doctrine = doctrine_homosexuality_accepted
+			doctrine = doctrine_adultery_women_accepted
+			doctrine = doctrine_deviancy_accepted
+			doctrine = doctrine_clerical_function_alms_and_pacification
+			doctrine = doctrine_clerical_gender_female_only
+			doctrine = doctrine_clerical_marriage_allowed
+			doctrine = christian_wacky_doctrine
+
+			doctrine = carn_doctrine_prostitution_accepted
+			doctrine = carnd_doctrine_lust_exalted
+
+			#Tenets
+			doctrine = carnd_tenet_tantric_sex
+			doctrine = carnd_tenet_sacred_prostitution
+			doctrine = tenet_esotericism
+			doctrine = gnosticism_doctrine
+			doctrine = leaving_the_cycle_doctrine
+
+			holy_order_names = {
+				{ name = "carnd_holy_order_order_of_preachers" }
+			}
+
+			localization = {
+				FertilityGodName = carnd_mary_magdalene
+				FertilityGodNamePossessive = carnd_mary_magdalene_possessive
+				FertilityGodSheHe = CHARACTER_SHEHE_SHE
+				FertilityGodHerHis = CHARACTER_HERHIS_HER
+				FertilityGodHerHim = CHARACTER_HERHIM_HER
+
+				#WealthGod
+				WealthGodName = west_christian_wealth_god_name
+				WealthGodNamePossessive = west_christian_wealth_god_name_possessive
+				WealthGodSheHe = CHARACTER_SHEHE_HE
+				WealthGodHerHis = CHARACTER_HERHIS_HIS
+				WealthGodHerHim = CHARACTER_HERHIM_HIM
+
+				#HouseholdGod
+				HouseholdGodName = west_christian_household_god_name
+				HouseholdGodNamePossessive = west_christian_household_god_name_possessive
+				HouseholdGodSheHe = CHARACTER_SHEHE_HE
+				HouseholdGodHerHis = CHARACTER_HERHIS_HIS
+				HouseholdGodHerHim = CHARACTER_HERHIM_HIM
+
+				#KnowledgeGod
+				KnowledgeGodName = carnd_mary_magdalene
+				KnowledgeGodNamePossessive = carnd_mary_magdalene_possessive
+				KnowledgeGodSheHe = CHARACTER_SHEHE_SHE
+				KnowledgeGodHerHis = CHARACTER_HERHIS_HER
+				KnowledgeGodHerHim = CHARACTER_HERHIM_HER
+
+				#WarGod
+				WarGodName = west_christian_war_god_name
+				WarGodNamePossessive = west_christian_war_god_name_possessive
+				WarGodSheHe = CHARACTER_SHEHE_HE
+				WarGodHerHis = CHARACTER_HERHIS_HIS
+				WarGodHerHim = CHARACTER_HERHIM_HIM
+
+				#WaterGod
+				WaterGodName = west_christian_water_god_name
+				WaterGodNamePossessive = west_christian_water_god_name_possessive
+				WaterGodSheHe = CHARACTER_SHEHE_HE
+				WaterGodHerHis = CHARACTER_HERHIS_HIS
+				WaterGodHerHim = CHARACTER_HERHIM_HIM
+
+				GoodGodNames = {
+					christianity_high_god_name
+					christianity_high_god_name_alternate
+					chistianity_good_god_jesus
+					chistianity_good_god_christ
+					carnd_mary_magdalene
+				}
+
+				EvilGodNames = {
+					christianity_devil_name
+					carnd_ialdabaoth
+					carnd_authades
+					carnd_sabaoth_the_adamas
+				}
+
+				WitchGodName = carnd_ialdabaoth
+			}	
 		}
 	}
 }

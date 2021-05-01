@@ -31,9 +31,13 @@
 	doctrine = doctrine_clerical_gender_either
 	doctrine = doctrine_clerical_marriage_allowed
 	doctrine = doctrine_clerical_succession_temporal_fixed_appointment
+	doctrine = carnd_doctrine_lust_accepted
+	doctrine = communal_identity_doctrine
+	doctrine = no_syncretism_doctrine
 	
-	#Special Tolerance
-	doctrine = special_doctrine_turan
+	doctrine = cremation_doctrine
+	doctrine = moderation_doctrine
+	doctrine = spirit_remainder_doctrine
 
 	traits = {
 		virtues = { generous calm content brave }
@@ -199,7 +203,8 @@
 
 			doctrine = unreformed_faith_doctrine
 
-			doctrine = tenet_eastern_syncretism
+			doctrine = eastern_syncretism_doctrine
+			doctrine = tenet_sanctity_of_nature
 			doctrine = tenet_ancestor_worship
 			doctrine = tenet_adorcism
 

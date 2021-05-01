@@ -8,3 +8,6 @@ tags={
 name="Far Eastern Cultures for CK3"
 supported_version="1.3.*"
 path = "mod/far-eastern-cultures-ck3"
+dependencies={
+	"Cheri - Carnalitas Dei"
+}

@@ -1,0 +1,265 @@
+﻿carnd_lilith_religion = {
+	family = rf_abrahamic
+	doctrine = abrahamic_hostility_doctrine
+
+	#Main Group
+	doctrine = doctrine_spiritual_head
+	doctrine = doctrine_gender_female_dominated
+	doctrine = doctrine_pluralism_righteous
+	doctrine = doctrine_theocracy_temporal
+
+	#Marriage
+	doctrine = doctrine_concubines
+	doctrine = doctrine_divorce_allowed
+	doctrine = doctrine_bastardry_none
+	doctrine = doctrine_consanguinity_unrestricted
+
+	#Crimes
+	doctrine = doctrine_homosexuality_accepted
+	doctrine = doctrine_adultery_men_accepted
+	doctrine = doctrine_adultery_women_accepted
+	doctrine = doctrine_kinslaying_close_kin_crime
+	doctrine = doctrine_deviancy_accepted
+	doctrine = doctrine_witchcraft_accepted
+
+	#Clerical Functions
+	doctrine = doctrine_clerical_function_taxation
+	doctrine = doctrine_clerical_gender_female_only
+	doctrine = doctrine_clerical_marriage_allowed
+	doctrine = doctrine_clerical_succession_temporal_appointment
+
+	#Carnalitas
+	doctrine = carn_doctrine_same_slavery_accepted
+	doctrine = carn_doctrine_other_slavery_accepted
+	doctrine = carn_doctrine_prostitution_accepted
+
+	#Carnalitas Mundi
+	doctrine = carnd_doctrine_lust_exalted
+	doctrine = no_syncretism_doctrine
+	
+	doctrine = cremation_doctrine
+	doctrine = moderation_doctrine
+	doctrine = spirit_remainder_doctrine
+
+	traits = {
+		virtues = { brave cynical }
+		sins = { craven zealous }
+	}
+
+	custom_faith_icons = {
+		carnd_lilith_3 carnd_lilith_4 custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5 custom_faith_6 custom_faith_7 custom_faith_8 custom_faith_9 custom_faith_10 dualism_custom_1 zoroastrian_custom_1 zoroastrian_custom_2 buddhism_custom_1 buddhism_custom_2 buddhism_custom_3 buddhism_custom_4 taoism_custom_1 yazidi_custom_1 sunni_custom_2 sunni_custom_3 sunni_custom_4 ibadi_custom muhakkima_1 muhakkima_2 muhakkima_4 muhakkima_5 muhakkima_6 judaism_custom_1
+	}
+
+	holy_order_names = {
+		{ name = "carnd_holy_order_order_of_lilith" }
+		{ name = "carnd_holy_order_order_of_samael" }
+		{ name = "carnd_holy_order_knights_of_our_fallen_lady" }
+	}
+
+	holy_order_maa = { teutonic_knights }
+
+	localization = {
+		#HighGod
+		HighGodName = carnd_lilith_religion_high_god_name
+		HighGodNamePossessive = carnd_lilith_religion_high_god_name_possessive
+		HighGodNameSheHe = CHARACTER_SHEHE_SHE
+		HighGodHerselfHimself = CHARACTER_HERSELF
+		HighGodHerHis = CHARACTER_HERHIS_HER
+		HighGodNameAlternate = carnd_lilith_religion_high_god_name_alternate
+		HighGodNameAlternatePossessive = carnd_lilith_religion_high_god_name_alternate_possessive
+
+		#Creator
+		CreatorName = dualism_devil_name
+		CreatorNamePossessive = dualism_devil_name_possessive
+		CreatorSheHe = CHARACTER_SHEHE_IT
+		CreatorHerHis = CHARACTER_HERHIS_ITS
+		CreatorHerHim = CHARACTER_HERHIM_IT
+
+		#HealthGod
+		HealthGodName = carnd_lilith_religion_high_god_name
+		HealthGodNamePossessive = carnd_lilith_religion_high_god_name_possessive
+		HealthGodSheHe = CHARACTER_SHEHE_SHE
+		HealthGodHerHis = CHARACTER_HERHIS_HER
+		HealthGodHerHim = CHARACTER_HERHIM_HER
+		
+		#FertilityGod
+		FertilityGodName = carnd_lilith_religion_high_god_name
+		FertilityGodNamePossessive = carnd_lilith_religion_high_god_name_possessive
+		FertilityGodSheHe = CHARACTER_SHEHE_SHE
+		FertilityGodHerHis = CHARACTER_HERHIS_HER
+		FertilityGodHerHim = CHARACTER_HERHIM_HER
+
+		#WealthGod
+		WealthGodName = carnd_lilith_religion_wealth_god_name
+		WealthGodNamePossessive = carnd_lilith_religion_wealth_god_name_possessive
+		WealthGodSheHe = CHARACTER_SHEHE_HE
+		WealthGodHerHis = CHARACTER_HERHIS_HIS
+		WealthGodHerHim = CHARACTER_HERHIM_HIM
+
+		#HouseholdGod
+		HouseholdGodName = carnd_lilith_religion_high_god_name
+		HouseholdGodNamePossessive = carnd_lilith_religion_high_god_name_possessive
+		HouseholdGodSheHe = CHARACTER_SHEHE_SHE
+		HouseholdGodHerHis = CHARACTER_HERHIS_HER
+		HouseholdGodHerHim = CHARACTER_HERHIM_HER
+
+		#FateGod
+		FateGodName = dualism_fate_god_name
+		FateGodNamePossessive = dualism_fate_god_name_possessive
+		FateGodSheHe = CHARACTER_SHEHE_IT
+		FateGodHerHis = CHARACTER_HERHIS_ITS
+		FateGodHerHim = CHARACTER_HERHIM_IT
+
+		#KnowledgeGod
+		KnowledgeGodName = carnd_lilith_religion_knowledge_god_name
+		KnowledgeGodNamePossessive = carnd_lilith_religion_knowledge_god_name_possessive
+		KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+		KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+		KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
+
+		#WarGod
+		WarGodName = carnd_lilith_religion_war_god_name
+		WarGodNamePossessive = carnd_lilith_religion_war_god_name_possessive
+		WarGodSheHe = CHARACTER_SHEHE_HE
+		WarGodHerHis = CHARACTER_HERHIS_HIS
+		WarGodHerHim = CHARACTER_HERHIM_HIM
+
+		#TricksterGod
+		TricksterGodName = carnd_lilith_religion_high_god_name
+		TricksterGodNamePossessive = carnd_lilith_religion_high_god_name_possessive
+		TricksterGodSheHe = CHARACTER_SHEHE_SHE
+		TricksterGodHerHis = CHARACTER_HERHIS_HER
+		TricksterGodHerHim = CHARACTER_HERHIM_HER
+
+		#NightGod
+		NightGodName = carnd_lilith_religion_high_god_name
+		NightGodNamePossessive = carnd_lilith_religion_high_god_name_possessive
+		NightGodSheHe = CHARACTER_SHEHE_SHE
+		NightGodHerHis = CHARACTER_HERHIS_HER
+		NightGodHerHim = CHARACTER_HERHIM_HER
+
+		#WaterGod
+		WaterGodName = carnd_lilith_religion_high_god_name
+		WaterGodNamePossessive = carnd_lilith_religion_high_god_name_possessive
+		WaterGodSheHe = CHARACTER_SHEHE_SHE
+		WaterGodHerHis = CHARACTER_HERHIS_HER
+		WaterGodHerHim = CHARACTER_HERHIM_HER
+
+		PantheonTerm = carnd_lilith_religion_high_god_name
+		PantheonTermHasHave = pantheon_term_has
+		GoodGodNames = {
+			carnd_lilith_religion_high_god_name
+			carnd_lilith_religion_high_god_name_alternate
+			carnd_lilith_religion_knowledge_god_name
+			carnd_lilith_religion_war_god_name
+		}
+		DevilName = dualism_devil_name
+		DevilNamePossessive = dualism_devil_name_possessive
+		DevilSheHe = CHARACTER_SHEHE_IT
+		DevilHerHis = CHARACTER_HERHIS_ITS
+		DevilHerselfHimself = CHARACTER_ITSELF
+		EvilGodNames = {
+			dualism_devil_name
+			dualism_evil_god_ignorance
+		}
+		HouseOfWorship = christianity_house_of_worship
+		HouseOfWorshipPlural = christianity_house_of_worship_plural
+		ReligiousSymbol = carnd_lilith_religion_religious_symbol
+		ReligiousText = christianity_religious_text
+		ReligiousHeadName = carnd_lilith_religion_religious_head_title
+		ReligiousHeadTitleName = carnd_lilith_religion_religious_head_title_name
+		DevoteeMale = christianity_devotee_male
+		DevoteeMalePlural = christianity_devotee_male_plural
+		DevoteeFemale = christianity_devotee_female
+		DevoteeFemalePlural = christianity_devotee_female_plural
+		DevoteeNeuter = christianity_devotee_neuter
+		DevoteeNeuterPlural = christianity_devotee_neuter_plural
+		PriestMale = christianity_priest_male
+		PriestMalePlural = christianity_priest_male_plural
+		PriestFemale = carnd_lilith_religion_priest_female
+		PriestFemalePlural = carnd_lilith_religion_priest_female_plural
+		PriestNeuter = christianity_priest_male
+		PriestNeuterPlural = christianity_priest_male_plural
+		AltPriestTermPlural = christianity_priest_alternate_plural
+		BishopMale = christianity_bishop
+		BishopMalePlural = christianity_bishop_plural
+		BishopFemale = christianity_bishop
+		BishopFemalePlural = christianity_bishop_plural
+		BishopNeuter = christianity_bishop
+		BishopNeuterPlural = christianity_bishop_plural
+		DivineRealm = carnd_lilith_religion_positive_afterlife
+		PositiveAfterLife = carnd_lilith_religion_positive_afterlife
+		NegativeAfterLife = carnd_lilith_religion_negative_afterlife
+		DeathDeityName = dualism_death_deity_name
+		DeathDeityNamePossessive = dualist_death_deity_name_possessive
+		DeathDeitySheHe = CHARACTER_SHEHE_SHE
+		DeathDeityHerHis = CHARACTER_HERHIS_HER
+		WitchGodName = dualism_devil_name
+		WitchGodHerHis = CHARACTER_HERHIS_ITS
+		WitchGodSheHe = CHARACTER_SHEHE_IT
+		WitchGodHerHim = CHARACTER_HERHIM_IT
+		WitchGodMistressMaster = witch_spirit
+		WitchGodMotherFather = witch_source
+
+		GHWName = carnd_black_crusade
+		GHWNamePlural = carnd_black_crusades
+
+	}
+
+	faiths = {
+		carnd_lilith_redrose = {
+			color = { 153 25 25 }
+			icon = carnd_lilith_1
+			religious_head = d_carnd_lilith_redrose
+			
+			holy_site = gomorrah
+			holy_site = ugarit
+			holy_site = babylon
+			holy_site = lesbos
+			holy_site = paris
+
+			holy_order_names = {
+				{ name = "carnd_holy_order_order_of_desire" }
+			}
+
+			doctrine = divine_marriage_doctrine
+			doctrine = hedonism_doctrine
+			doctrine = tenet_tantric_sex
+			doctrine = tenet_sacred_prostitution
+			doctrine = tenet_pursuit_of_power
+
+			localization = {
+				ReligiousHeadName = carnd_lilith_redrose_religious_head_title
+			}
+		}
+	}
+
+	faiths = {
+		carnd_lilith_ebonrose = {
+			color = { 54 5 25 }
+			icon = carnd_lilith_2
+			religious_head = d_carnd_lilith_ebonrose
+			
+			holy_site = gomorrah
+			holy_site = babylon
+			holy_site = ugarit
+			holy_site = lesbos
+			holy_site = paris
+
+			holy_order_names = {
+				{ name = "carnd_holy_order_liliths_chosen" }
+			}
+
+			doctrine = divine_marriage_doctrine
+			doctrine = tenet_tantric_sex
+			doctrine = tenet_pursuit_of_power
+			doctrine = tenet_sacred_shadows
+
+			doctrine = doctrine_kinslaying_accepted
+
+			localization = {
+				ReligiousHeadName = carnd_lilith_ebonrose_religious_head_title
+			}
+		}
+	}
+}

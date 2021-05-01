@@ -30,6 +30,13 @@
 	doctrine = doctrine_clerical_gender_either
 	doctrine = doctrine_clerical_marriage_disallowed
 	doctrine = doctrine_clerical_succession_temporal_appointment
+	doctrine = carnd_doctrine_lust_accepted
+	doctrine = communal_identity_doctrine
+	doctrine = no_syncretism_doctrine
+	
+	doctrine = embalming_doctrine
+	doctrine = moderation_doctrine
+	doctrine = spirit_remainder_doctrine
 
 	traits = {
 		virtues = { brave wrathful vengeful }
@@ -95,7 +102,7 @@
 			holy_site = colonea
 
 			#Special Tolerance
-			doctrine = special_doctrine_hellenic
+			doctrine = hellenic_syncretism_doctrine
 			doctrine = unreformed_faith_doctrine
 
 			doctrine = tenet_astrology

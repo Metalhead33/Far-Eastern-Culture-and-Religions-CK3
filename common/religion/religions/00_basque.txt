@@ -30,6 +30,13 @@
 	doctrine = doctrine_clerical_gender_either
 	doctrine = doctrine_clerical_marriage_allowed
 	doctrine = doctrine_clerical_succession_temporal_appointment
+	doctrine = carnd_doctrine_lust_accepted
+	doctrine = strong_communal_identity_doctrine
+	doctrine = no_syncretism_doctrine
+	
+	doctrine = cremation_doctrine
+	doctrine = moderation_doctrine
+	doctrine = spirit_remainder_doctrine
 
 	traits = {
 		virtues = { brave just honest }
@@ -202,7 +209,7 @@
 			holy_site = andorra
 
 			#Generic pagan tenets
-			doctrine = tenet_communal_identity
+			doctrine = tenet_adorcism
 			doctrine = tenet_inner_journey
 			doctrine = tenet_sanctity_of_nature
 		}
