@@ -33,7 +33,7 @@
 	doctrine = doctrine_clerical_succession_temporal_fixed_appointment
 	doctrine = carnd_doctrine_lust_accepted
 	doctrine = communal_identity_doctrine
-	doctrine = no_syncretism_doctrine
+	doctrine = eastern_syncretism_doctrine
 	
 	doctrine = cremation_doctrine
 	doctrine = moderation_doctrine

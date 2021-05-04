@@ -22,6 +22,7 @@
 	doctrine = doctrine_kinslaying_any_dynasty_member_crime
 	doctrine = doctrine_deviancy_shunned
 	doctrine = doctrine_witchcraft_shunned
+	doctrine = special_doctrine_is_dharmic_faith
 
 	#Clerical Functions
 	doctrine = doctrine_clerical_function_alms_and_pacification
@@ -31,7 +32,7 @@
 	doctrine = carnd_doctrine_lust_shunned
 	doctrine = cosmopolitan_doctrine
 	doctrine = pagan_syncretism_doctrine
-	doctrine = reincarnation_doctrine
+	doctrine = leaving_the_cycle_doctrine
 	doctrine = asceticism_doctrine
 	doctrine = cremation_doctrine
 	
@@ -224,6 +225,7 @@
 			holy_site = atamasthana
 			holy_site = dagon
 
+			doctrine = reincarnation_doctrine
 			doctrine = tenet_dharmic_pacifism
 			doctrine = tenet_monasticism
 			doctrine = tenet_literalism
@@ -240,6 +242,7 @@
 			holy_site = sanchi
 			holy_site = amaravati
 
+			doctrine = reincarnation_doctrine
 			doctrine = tenet_dharmic_pacifism
 			doctrine = tenet_mendicant_preachers
 			doctrine = tenet_inner_journey	
@@ -345,6 +348,7 @@
 			holy_site = pagan
 			holy_site = dagon
 			
+			doctrine = reincarnation_doctrine
 			doctrine = doctrine_polygamy
 			doctrine = doctrine_kinslaying_accepted
 			doctrine = doctrine_adultery_men_accepted
@@ -376,6 +380,7 @@
 			#holy_site = purang
 			#holy_site = lumbini
 			
+			doctrine = communal_identity_doctrine
 			doctrine = doctrine_gender_equal
 			doctrine = doctrine_concubines
 			doctrine = doctrine_adultery_men_accepted

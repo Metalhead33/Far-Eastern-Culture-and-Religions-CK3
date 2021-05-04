@@ -32,6 +32,40 @@ is_islamic_faith = {
 	}
 }
 
+is_dharmic_faith = {
+	group = "special"
+	
+	is_available_on_create = {
+		has_doctrine = special_doctrine_is_mazdaic_faith
+	}
+
+	special_doctrine_is_dharmic_faith = {
+		parameters = {
+			# Since doctrines cannot modify other faith's views of us, only our view of others, all Islamic faiths are given this special doctrine which makes them friendlier to Faiths with the Christian Syncretism tenet.
+			hostility_override_eastern_syncretism_doctrine = 1
+			eastern_syncretic_recipient_opinion_active = yes
+			opinion_of_eastern_syncretic_actor_opinion_active = 30
+		}
+	}
+}
+
+is_mazdaic_faith = {
+	group = "special"
+	
+	is_available_on_create = {
+		has_doctrine = special_doctrine_is_mazdaic_faith
+	}
+
+	special_doctrine_is_mazdaic_faith = {
+		parameters = {
+			# Since doctrines cannot modify other faith's views of us, only our view of others, all Islamic faiths are given this special doctrine which makes them friendlier to Faiths with the Christian Syncretism tenet.
+			hostility_override_mazdaic_syncretism_doctrine = 2
+			mazdaic_syncretic_recipient_opinion_active = yes
+			opinion_of_mazdaic_syncretic_actor_opinion_active = 30
+		}
+	}
+}
+
 is_jewish_faith = {
 	group = "special"
 	

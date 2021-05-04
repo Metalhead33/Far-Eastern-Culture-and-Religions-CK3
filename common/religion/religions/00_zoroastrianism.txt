@@ -1,5 +1,5 @@
 ﻿zoroastrianism_religion = {
-	family = rf_eastern
+	family = rf_mazdan
 
 	doctrine = doctrine_monogamy
 	#Abrahamic hostiliy group
@@ -28,6 +28,7 @@
 	doctrine = sky_burial_doctrine
 	doctrine = reincarnation_doctrine
 	doctrine = moderation_doctrine
+	doctrine = special_doctrine_is_mazdaic_faith
 	
 	traits = {
 		virtues = { honest just diligent }

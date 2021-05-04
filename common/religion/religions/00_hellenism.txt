@@ -231,6 +231,7 @@
 			doctrine = doctrine_clerical_gender_male_only
 
 			doctrine = eastern_syncretism_doctrine
+			doctrine = tenet_warmonger
 			doctrine = tenet_pursuit_of_power
 			doctrine = tenet_esotericism
 						

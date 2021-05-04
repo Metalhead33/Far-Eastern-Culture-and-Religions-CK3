@@ -1,11 +1,31 @@
 ﻿doctrine_core_tenets = {
 	group = "core_tenets"
 	number_of_picks = 3
-
-	tenet_secret_jew = {
-		
-	}
 	
+	tenet_prosperity_gospel = {
+		icon = core_tenet_prosperity
+		piety_cost = {
+			else = {
+				value = faith_tenet_cost_mid
+			}
+
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = tenet_prosperity_gospel }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+
+		character_modifier = {
+			stewardship_per_stress_level = 1
+			stewardship_per_piety_level = 1
+			stress_gain_mult = 0.1
+		}
+		traits = {
+			virtues = { diligent }
+			sins = { lazy }
+		}
+	}
 	############################
 	# Carnalitas Mundi Tenets	#
 	############################

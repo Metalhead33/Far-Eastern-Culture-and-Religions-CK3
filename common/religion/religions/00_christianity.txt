@@ -523,36 +523,6 @@
 			}
 		}
 
-		conversos = {
-			color = { 0.4 0.5 0.8 }
-			icon = conversos
-			
-			holy_site = rome
-			holy_site = cordoba
-			holy_site = jerusalem
-			holy_site = alexandria
-			holy_site = sinai
-
-			# Tenets
-			doctrine = tenet_communion
-			doctrine = tenet_monasticism
-			doctrine = tenet_secret_jew
-			doctrine = communal_identity_doctrine
-			doctrine = jewish_syncretism_doctrine
-
-			# Main Group
-			doctrine = doctrine_pluralism_pluralistic
-			doctrine = doctrine_no_head
-
-			#Crimes
-			doctrine = doctrine_adultery_men_crime
-			doctrine = doctrine_adultery_women_crime
-			doctrine = doctrine_kinslaying_extended_family_crime
-
-			#Special Tolerance
-			doctrine = christian_roman_doctrine	
-		}
-
 		cathar = {
 			color = { 0.5 0.5 0.9 }
 			icon = christianity_cathar
