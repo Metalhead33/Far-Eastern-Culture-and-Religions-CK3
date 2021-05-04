@@ -427,7 +427,7 @@
 			holy_site = ujjayini
 			holy_site = dwarka
 
-			doctrine = tenet_ritual_celebrations
+			doctrine = tenet_adorcism
 			doctrine = tenet_ritual_hospitality
 			doctrine = tenet_esotericism
 
@@ -517,9 +517,9 @@
 			holy_site = ujjayini
 			holy_site = dwarka
 
-			doctrine = christian_syncretism_doctrine
+			doctrine = doctrine_pluralism_righteous
+			doctrine = tenet_pentarchy
 			doctrine = tenet_inner_journey
-			doctrine = tenet_esotericism
 			doctrine = tenet_monasticism
 
 			localization = {

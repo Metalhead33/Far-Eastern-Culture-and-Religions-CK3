@@ -344,8 +344,8 @@
 			holy_site = semien
 
 			#tenets
-			doctrine = gnosticism_doctrine
-			doctrine = leaving_the_cycle_doctrine
+			# doctrine = gnosticism_doctrine
+			# doctrine = leaving_the_cycle_doctrine
 			doctrine = tenet_religious_legal_pronouncements
 			doctrine = tenet_legalism
 			doctrine = tenet_esotericism

@@ -235,7 +235,7 @@
 			doctrine = no_syncretism_doctrine
 			doctrine = tenet_human_sacrifice
 			doctrine = tenet_esotericism
-			doctrine = core_tenet_adorcism
+			doctrine = tenet_adorcism
 			doctrine = spirit_remainder_doctrine
 			doctrine = unreformed_faith_doctrine
 		}

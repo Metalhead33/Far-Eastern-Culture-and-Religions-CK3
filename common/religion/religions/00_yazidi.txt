@@ -35,7 +35,7 @@
 	doctrine = doctrine_clerical_marriage_allowed
 	doctrine = carnd_doctrine_lust_accepted
 	doctrine = strong_communal_identity_doctrine
-	doctrine = muslim_syncretism_doctrine
+	doctrine = no_syncretism_doctrine
 	doctrine = reincarnation_doctrine
 	
 	doctrine = cremation_doctrine

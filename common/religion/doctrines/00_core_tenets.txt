@@ -1445,7 +1445,10 @@
 		}
 
 		is_shown = {
+			OR = {
 			has_doctrine = pagan_hostility_doctrine
+			religion_tag = hinduism_religion
+			}
 		}
 
 		parameters = {

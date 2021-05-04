@@ -448,7 +448,6 @@ doctrine_syncretism = {
 		is_shown = {
 			OR = {
 				religion_tag = finno_ugric_religion
-				religion_tag = siberian_religion
 				religion_tag = tengrism_religion
 				religion_tag = magyar_religion
 			}

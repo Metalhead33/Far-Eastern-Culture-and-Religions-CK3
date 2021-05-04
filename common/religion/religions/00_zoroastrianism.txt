@@ -23,7 +23,7 @@
 	doctrine = doctrine_clerical_marriage_allowed
 	doctrine = doctrine_clerical_succession_temporal_fixed_appointment
 	doctrine = carnd_doctrine_lust_accepted
-	doctrine = strong_communal_identity_doctrine
+	doctrine = communal_identity_doctrine
 	doctrine = no_syncretism_doctrine
 	doctrine = sky_burial_doctrine
 	doctrine = reincarnation_doctrine
@@ -217,7 +217,7 @@
 			holy_site = yazd
 
 			doctrine = divine_marriage_doctrine
-			doctrine = tenet_legalism
+			doctrine = tenet_religious_legal_pronouncements
 			doctrine = tenet_pentarchy
 			doctrine = tenet_ritual_celebrations
 
@@ -236,12 +236,13 @@
 			holy_site = yazd
 
 			doctrine = divine_marriage_doctrine
-			doctrine = tenet_legalism
+			doctrine = tenet_religious_legal_pronouncements
 			doctrine = tenet_pentarchy
 			doctrine = tenet_sanctity_of_nature
 
 			doctrine = doctrine_spiritual_head
 			doctrine = doctrine_pluralism_fundamentalist
+			doctrine = cosmopolitan_doctrine
 
 			localization = {
 				HighGodName = zurvanism_high_god_name
@@ -289,6 +290,7 @@
 
 			doctrine = doctrine_witchcraft_shunned
 			doctrine = doctrine_spiritual_head
+			doctrine = cosmopolitan_doctrine
 		}
 
 		khurmazta = {
@@ -302,12 +304,13 @@
 			holy_site = takht-e_soleyman
 			holy_site = yazd
 
-			doctrine = tenet_legalism
+			doctrine = tenet_religious_legal_pronouncements
 			doctrine = tenet_esotericism
 			doctrine = tenet_adaptive
 
 			doctrine = doctrine_spiritual_head
 			doctrine = doctrine_pluralism_pluralistic
+			doctrine = cosmopolitan_doctrine
 
 			localization = {
 
@@ -333,7 +336,7 @@
 			holy_site = takht-e_soleyman
 			holy_site = yazd
 
-			doctrine = tenet_legalism
+			doctrine = tenet_religious_legal_pronouncements
 			doctrine = tenet_esotericism
 			doctrine = tenet_vows_of_poverty
 
@@ -342,6 +345,7 @@
 			doctrine = doctrine_gender_equal
 			doctrine = doctrine_pluralism_pluralistic
 			doctrine = doctrine_spiritual_head
+			doctrine = cosmopolitan_doctrine
 		}
 
 		khurramism = {
@@ -356,7 +360,7 @@
 			holy_site = yazd
 
 			doctrine = tenet_adaptive
-			doctrine = tenet_legalism
+			doctrine = tenet_religious_legal_pronouncements
 			doctrine = tenet_pacifism
 
 			doctrine = doctrine_monogamy
