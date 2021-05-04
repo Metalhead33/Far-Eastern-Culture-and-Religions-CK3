@@ -34,7 +34,7 @@
 	
 	doctrine = sky_burial_doctrine
 	doctrine = moderation_doctrine
-	doctrine = spirit_remainder_doctrine
+	doctrine = underworld_doctrine
 
 	traits = {
 		virtues = { brave temperate generous hunter_1 hunter_2 hunter_3 }

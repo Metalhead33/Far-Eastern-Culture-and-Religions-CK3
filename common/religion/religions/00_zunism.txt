@@ -36,7 +36,7 @@
 	
 	doctrine = cremation_doctrine
 	doctrine = moderation_doctrine
-	doctrine = spirit_remainder_doctrine
+	doctrine = judgement_doctrine
 
 	traits = {
 		virtues = { just honest brave }

@@ -1,6 +1,6 @@
 ﻿
 doctrine_ascetism_hedonism = {
-	group = "clergy"
+	group = "main_group"
 	asceticism_doctrine = {
 		piety_cost = {
 			if = {
@@ -120,7 +120,7 @@ doctrine_ascetism_hedonism = {
 	}
 }
 doctrine_cultural_identity = {
-	group = "clergy"
+	group = "main_group"
 	cosmopolitan_doctrine = {
 		piety_cost = {
 			value = faith_tenet_cost_low
@@ -207,7 +207,7 @@ doctrine_cultural_identity = {
 	}
 }
 doctrine_final_disposition = {
-	group = "clergy"
+	group = "main_group"
 	burial_doctrine = {
 		piety_cost = {
 			value = faith_tenet_cost_mid
@@ -217,6 +217,10 @@ doctrine_final_disposition = {
 				limit = { has_doctrine = burial_doctrine }
 				multiply = faith_unchanged_doctrine_cost_mult
 			}
+		}
+		character_modifier = {
+			prestige_level_impact_mult = 0.25
+			close_relative_opinion = 5
 		}
 	}
 	sky_burial_doctrine = {
@@ -229,31 +233,27 @@ doctrine_final_disposition = {
 				multiply = faith_unchanged_doctrine_cost_mult
 			}
 		}
-
 		can_pick = {
 			OR = {
 				has_doctrine = pagan_hostility_doctrine
 				has_doctrine = eastern_hostility_doctrine
 			}
 		}
-
 		parameters = {
 			sky_burials_active = yes
-		}
-
-		character_modifier = {
-			negate_health_penalty_add = 0.25
 		}
 	}
 	cremation_doctrine = {
 		piety_cost = {
 			value = faith_tenet_cost_mid
-
 			# Multiplier for keeping same tenet
 			if = {
 				limit = { has_doctrine = cremation_doctrine }
 				multiply = faith_unchanged_doctrine_cost_mult
 			}
+		}
+		character_modifier = {
+			negate_health_penalty_add = 0.25
 		}
 	}
 	embalming_doctrine = {
@@ -266,10 +266,13 @@ doctrine_final_disposition = {
 				multiply = faith_unchanged_doctrine_cost_mult
 			}
 		}
+		parameters = {
+			mummification_active = yes
+		}
 	}
 }
 doctrine_afterlife = {
-	group = "clergy"
+	group = "main_group"
 	reincarnation_doctrine = {
 		piety_cost = {
 			value = faith_tenet_cost_mid
@@ -279,6 +282,10 @@ doctrine_afterlife = {
 				limit = { has_doctrine = reincarnation_doctrine }
 				multiply = faith_unchanged_doctrine_cost_mult
 			}
+		}
+		parameters = {
+			reincarnation_resistance_to_conversion = yes
+			reincarnation_events_active = yes
 		}
 	}
 	leaving_the_cycle_doctrine = {
@@ -291,6 +298,10 @@ doctrine_afterlife = {
 				multiply = faith_unchanged_doctrine_cost_mult
 			}
 		}
+		character_modifier = {
+			learning = 1
+			learning_per_piety_level = 1
+		}
 	}
 	judgement_doctrine = {
 		piety_cost = {
@@ -301,6 +312,15 @@ doctrine_afterlife = {
 				limit = { has_doctrine = judgement_doctrine }
 				multiply = faith_unchanged_doctrine_cost_mult
 			}
+		}
+		character_modifier = {
+			stress_gain_mult = 0.2
+			faith_conversion_piety_cost_mult = 0.2
+			ai_zeal = 15
+		}
+		parameters = {
+			minimum_fervor = 15
+			judgement_doctrine_conversion_resistance = yes
 		}
 	}
 	mercy_of_gods_doctrine = {
@@ -313,8 +333,17 @@ doctrine_afterlife = {
 				multiply = faith_unchanged_doctrine_cost_mult
 			}
 		}
+		character_modifier = {
+			stress_gain_mult = 0.35
+			faith_conversion_piety_cost_add = 0.35
+			monthly_county_control_change_add = 0.1
+			ai_zeal = 30
+		}
+		parameters = {
+			minimum_fervor = 25
+		}
 	}
-	eternal_feast_doctrine = {
+	underworld_doctrine = {
 		piety_cost = {
 			value = faith_tenet_cost_mid
 
@@ -323,6 +352,10 @@ doctrine_afterlife = {
 				limit = { has_doctrine = eternal_feast_doctrine }
 				multiply = faith_unchanged_doctrine_cost_mult
 			}
+		}
+		character_modifier = {
+			stress_loss_mult = 0.2
+			stress_gain_mult = -0.2
 		}
 	}
 	final_death_doctrine = {
@@ -335,6 +368,13 @@ doctrine_afterlife = {
 				multiply = faith_unchanged_doctrine_cost_mult
 			}
 		}
+		character_modifier = {
+			tyranny_gain_mult = -0.2
+			ai_boldness = 50
+			ai_greed = 50
+			ai_rationality = -50
+			ai_honor = -50
+		}
 	}
 	spirit_realms_doctrine = {
 		piety_cost = {
@@ -346,6 +386,18 @@ doctrine_afterlife = {
 				multiply = faith_unchanged_doctrine_cost_mult
 			}
 		}
+		character_modifier = {
+			prowess = 1
+			prowess_per_piety_level = 1
+			prowess_per_stress_level = 1
+			monthly_piety_gain_per_dread_add = 0.03
+			warmonger = yes
+			ai_boldness = 50
+			ai_rationality = -50
+		}
+	}
+	is_shown = {
+		religion_tag = germanic_religion
 	}
 	spirit_remainder_doctrine = {
 		piety_cost = {
@@ -357,10 +409,15 @@ doctrine_afterlife = {
 				multiply = faith_unchanged_doctrine_cost_mult
 			}
 		}
+		character_modifier = {
+			county_opinion_add_even_if_baron = 10
+			ai_honor = 20
+			ai_vengefulness = 100
+		}
 	}
 }
 doctrine_syncretism = {
-	group = "clergy"
+	group = "main_group"
 	
 	no_syncretism_doctrine = {
 		piety_cost = {
@@ -369,6 +426,9 @@ doctrine_syncretism = {
 				limit = { has_doctrine = no_syncretism_doctrine }
 				multiply = faith_unchanged_doctrine_cost_mult
 			}
+		}
+		character_modifier = {
+			same_faith_opinion = 5
 		}
 	}
 	
@@ -579,7 +639,6 @@ doctrine_syncretism = {
 	}
 
 	jewish_syncretism_doctrine = {
-		icon = core_tenet_followers
 
 		piety_cost = {
 			if = {

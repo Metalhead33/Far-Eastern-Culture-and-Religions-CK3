@@ -35,10 +35,8 @@ west_african_roog_religion = {
 	doctrine = communal_identity_doctrine
 	doctrine = no_syncretism_doctrine
 	doctrine = reincarnation_doctrine
-	
-	doctrine = burial_doctrine
+	doctrine = embalming_doctrine
 	doctrine = moderation_doctrine
-	doctrine = spirit_remainder_doctrine
 
 	traits = {
 		virtues = { brave just forgiving }

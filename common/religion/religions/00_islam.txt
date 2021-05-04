@@ -48,7 +48,7 @@
 	doctrine = special_doctrine_is_islamic_faith
 	doctrine = no_syncretism_doctrine
 	doctrine = burial_doctrine
-	doctrine = judgement_doctrine
+	doctrine = mercy_of_gods_doctrine
 	doctrine = cosmopolitan_doctrine
 	doctrine = carnd_doctrine_lust_shunned
 	
@@ -326,7 +326,6 @@
 			doctrine = muhammad_succession_sunni_doctrine
 			#Pluralistic
 			doctrine = doctrine_pluralism_fundamentalist
-			doctrine = eternal_feast_doctrine
 
 			localization = {			
 				ReligiousHeadName = masmudi_religious_head_title
@@ -388,7 +387,6 @@
 			doctrine = doctrine_adultery_women_crime
 			doctrine = doctrine_deviancy_crime
 			doctrine = doctrine_pluralism_fundamentalist
-			doctrine = eternal_feast_doctrine
 		}
 
 		ismaili = { #Seveners (default Shia)
@@ -450,7 +448,6 @@
 			doctrine = muhammad_succession_zandaqa_doctrine	#Technically Shia
 			doctrine = doctrine_no_head # Believes in the Imams, but disagree with mainline Shias as to who they are. Does not believe the true Imam has been reincarnated yet.
 			doctrine = doctrine_pluralism_fundamentalist
-			doctrine = eternal_feast_doctrine
 			doctrine = doctrine_homosexuality_accepted
 			doctrine = doctrine_witchcraft_shunned
 
@@ -797,7 +794,6 @@
 			doctrine = doctrine_adultery_women_crime
 			doctrine = doctrine_gender_equal
 			doctrine = doctrine_pluralism_fundamentalist
-			doctrine = eternal_feast_doctrine
 
 			localization = {		
 				PriestMale = islam_shia_priest
