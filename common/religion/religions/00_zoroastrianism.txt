@@ -359,9 +359,11 @@
 			holy_site = takht-e_soleyman
 			holy_site = yazd
 
-			doctrine = tenet_adaptive
 			doctrine = tenet_religious_legal_pronouncements
 			doctrine = tenet_pacifism
+			doctrine = tenet_polyamory
+			doctrine = muslim_syncretism_doctrine
+			doctrine = reincarnation_doctrine
 
 			doctrine = doctrine_monogamy
 			doctrine = doctrine_adultery_men_accepted

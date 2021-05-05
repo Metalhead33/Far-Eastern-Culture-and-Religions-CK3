@@ -266,7 +266,7 @@
 			doctrine = doctrine_witchcraft_accepted
 
 			doctrine = tenet_dharmic_pacifism
-			doctrine = tenet_esotericism
+			doctrine = carnd_tenet_tantric_sex
 			doctrine = tenet_ritual_hospitality
 
 			localization = {

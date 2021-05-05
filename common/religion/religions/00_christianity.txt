@@ -620,6 +620,196 @@
 			doctrine = tenet_literalism
 
 		}
+		
+		lutheran = {
+			color = { 0.0 0.0 0.7 }
+			icon = lutheran
+			graphical_faith = "catholic_gfx"
+
+			#Shared with Catholics
+			holy_site = jerusalem
+			holy_site = rome
+			holy_site = wittenberg
+			holy_site = cologne
+			holy_site = kent
+
+			#Main Group
+			doctrine = doctrine_no_head
+			doctrine = doctrine_pluralism_righteous
+			doctrine = doctrine_theocracy_temporal
+			doctrine = christian_protestant_doctrine
+
+			#Tenets
+			doctrine = tenet_literalism
+			doctrine = tenet_legalism
+			doctrine = tenet_unrelenting_faith
+
+		}
+		
+		calvinist = {
+			color = { 0.3 0.3 0.9 }
+			icon = calvinist
+			graphical_faith = "catholic_gfx"
+
+			holy_site = jerusalem
+			holy_site = rome
+			holy_site = geneva
+			holy_site = cologne
+			holy_site = paris
+
+			#Main Group
+			doctrine = doctrine_no_head
+			doctrine = doctrine_pluralism_righteous
+			doctrine = doctrine_theocracy_temporal
+			doctrine = christian_protestant_doctrine
+
+			#Tenets
+			doctrine = tenet_literalism
+			doctrine = tenet_aniconism
+			doctrine = tenet_prosperity_gospel
+		}
+		
+		hussite = {
+			color = { 0.95 0.21 0.03 }
+			icon = christianity_waldensian
+			graphical_faith = "catholic_gfx"
+
+			holy_site = jerusalem
+			holy_site = rome
+			holy_site = olomouc
+			holy_site = prague
+			holy_site = poszony
+
+			#Main Group
+			doctrine = doctrine_no_head
+			doctrine = doctrine_pluralism_righteous
+			doctrine = doctrine_theocracy_temporal
+			doctrine = christian_protestant_doctrine
+
+			#Tenets
+			doctrine = tenet_literalism
+			doctrine = tenet_religious_legal_pronouncements
+			doctrine = tenet_unrelenting_faith
+		}
+		
+		quaker = {
+			color = { 0.506 0.365 0.365 }
+			icon = quaker
+			graphical_faith = "catholic_gfx"
+
+			holy_site = jerusalem
+			holy_site = rome
+			holy_site = fenny_drayton
+			holy_site = kent
+			holy_site = paris
+
+			#Main Group
+			doctrine = doctrine_no_head
+			doctrine = doctrine_pluralism_pluralistic
+			doctrine = doctrine_theocracy_lay_clergy
+			doctrine = christian_protestant_doctrine
+			doctrine = doctrine_homosexuality_shunned
+			doctrine = doctrine_deviancy_shunned
+
+			#Tenets
+			doctrine = tenet_literalism
+			doctrine = tenet_adaptive
+			doctrine = tenet_esotericism
+		}
+
+		arian = {
+			color = { 0.4 0.4 0.0 }
+			icon = arian
+			religious_head = d_arianism
+
+			#Shared with Orthodox
+			holy_site = jerusalem
+			holy_site = rome
+			holy_site = alexandria
+			holy_site = carthage
+			holy_site = kerch
+			
+			doctrine = christian_wacky_doctrine
+
+			#Tenets
+			doctrine = tenet_pursuit_of_power
+			doctrine = tenet_legalism
+			doctrine = tenet_aniconism
+
+			localization = {
+				# Patriarchs instead of Popes
+				ReligiousHeadName = orthodox_religious_head_title
+				ReligiousHeadTitleName = orthodox_religious_head_title_name		
+			}
+
+		}
+		
+		pelagian = {
+			color = { 0.486 0.427 0.376 }
+			icon = pelagian
+
+			#Shared with Orthodox
+			holy_site = jerusalem
+			holy_site = rome
+			holy_site = alexandria
+			holy_site = kent
+			holy_site = cologne
+			
+			doctrine = christian_wacky_doctrine
+			doctrine = doctrine_no_head
+
+			#Tenets
+			doctrine = tenet_religious_legal_pronouncements
+			doctrine = tenet_legalism
+			doctrine = tenet_mendicant_preachers
+
+		}
+		
+		donatism = {
+			color = { 0.627 0.376 0.376 }
+			icon = donatism
+
+			#Shared with Orthodox
+			holy_site = jerusalem
+			holy_site = rome
+			holy_site = alexandria
+			holy_site = carthage
+			holy_site = cologne
+			
+			doctrine = christian_wacky_doctrine
+			doctrine = doctrine_no_head
+
+			#Tenets
+			doctrine = tenet_literalism
+			doctrine = tenet_legalism
+			doctrine = tenet_monasticism
+			doctrine = asceticism_doctrine
+			doctrine = gnosticism_doctrine
+
+		}
+		
+		ebionite = {
+			color = { 0.667 0.549 0.137 }
+			icon = ebionite
+
+			#Shared with Judaism
+			holy_site = jerusalem
+			holy_site = sufed
+			holy_site = sinai
+			holy_site = alexandria
+			holy_site = semien
+			
+			doctrine = christian_wacky_doctrine
+			doctrine = doctrine_no_head
+
+			#Tenets
+			doctrine = tenet_pacifism
+			doctrine = tenet_vows_of_poverty
+			doctrine = tenet_mendicant_preachers
+			doctrine = asceticism_doctrine
+			doctrine = jewish_syncretism_doctrine
+
+		}
 
 		iconoclast = {
 			color = { 0.5 0.2 0.4 }

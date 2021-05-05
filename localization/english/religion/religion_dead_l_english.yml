@@ -11,6 +11,8 @@
  semitic_religion_desc:1 "Semitic religion encompasses the polytheistic religions of the Semitic peoples from the ancient Near East and Northeast Africa. Semitic traditions and their pantheons fall into regional categories - Canaanite religions of the Levant, the Sumerian tradition–inspired Assyro-Babylonian religion of Mesopotamia, the ancient Hebrew religion of the Israelites, and Arabian polytheism."
  d_pontifex_maximus:0 "Roman Pontificate"
  d_pontifex_maximus_adj:0 "Roman"
+ d_arianism:0 "The Arian Patriarchate"
+ d_arianism_adj:0 "Arian"
  natib_quadish:0 "Natib Qadish"
  natib_quadish_desc:0 "Natib Qadish is a modern polytheistic religion that venerates the ancient deities of Canaan and strives to understand the ancient cultural context and religious practices in which these deities were honored. Within Natib Qadish, there are various views, beliefs, approaches, and practices because much of the research is incomplete and scholarly theories differ widely."
  mithraism:0 "Mysterium Mithrae"

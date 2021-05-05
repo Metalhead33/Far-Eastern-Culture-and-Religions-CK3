@@ -2,6 +2,60 @@
 # Dead Religions #
 #############
 
+olomouc = {
+	county = c_olomouc
+	character_modifier = {
+		religious_vassal_opinion = 5
+		sway_scheme_power_mult = 0.1
+	}
+}
+
+prague = {
+	county = c_praha
+	character_modifier = {
+		religious_vassal_opinion = 5
+		monthly_piety_gain_per_knight_mult = 0.01
+		heavy_infantry_damage_mult = 0.05
+	}
+}
+
+fenny_drayton = {
+	county = c_leicestershire
+
+	character_modifier = {
+		religious_vassal_opinion = 5
+		sway_scheme_power_mult = 0.1
+	}
+}
+
+geneva = {
+	county = c_geneva
+
+	character_modifier = {
+		religious_vassal_opinion = 5
+		sway_scheme_power_mult = 0.1
+	}
+}
+
+wittenberg = {
+	county = c_wittenberg
+
+	character_modifier = {
+		religious_vassal_opinion = 5
+		monthly_piety_gain_per_knight_mult = 0.01
+		heavy_infantry_damage_mult = 0.05
+	}
+}
+
+stockholm = {
+	county = c_sodermannaland
+
+	character_modifier = {
+		knight_effectiveness_mult = 0.2
+		prowess_per_piety_level = 1
+	}
+}
+
 knossos = {
 	county = c_chandax
 
