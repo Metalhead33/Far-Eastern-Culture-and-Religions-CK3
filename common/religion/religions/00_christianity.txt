@@ -762,6 +762,7 @@
 			doctrine = tenet_religious_legal_pronouncements
 			doctrine = tenet_legalism
 			doctrine = tenet_mendicant_preachers
+			doctrine = asceticism_doctrine
 
 		}
 		
