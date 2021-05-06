@@ -1,4 +1,4 @@
-﻿christianity_religion = {
+christianity_religion = {
 	family = rf_abrahamic
 
 	doctrine_background_icon = core_tenet_banner_christian.dds
@@ -41,8 +41,8 @@
 	doctrine = moderation_doctrine
 
 	traits = {
-		virtues = { forgiving compassionate chaste }
-		sins = { vengeful sadistic lustful }
+		virtues = { forgiving compassionate generous }
+		sins = { vengeful sadistic lustful greedy }
 	}
 
 	reserved_male_names = {
@@ -671,7 +671,7 @@
 		
 		hussite = {
 			color = { 0.95 0.21 0.03 }
-			icon = christianity_waldensian
+			icon = hussite
 			graphical_faith = "catholic_gfx"
 
 			holy_site = jerusalem
@@ -710,6 +710,7 @@
 			doctrine = christian_protestant_doctrine
 			doctrine = doctrine_homosexuality_shunned
 			doctrine = doctrine_deviancy_shunned
+			doctrine = carnd_doctrine_lust_accepted
 
 			#Tenets
 			doctrine = tenet_literalism
@@ -757,6 +758,7 @@
 			
 			doctrine = christian_wacky_doctrine
 			doctrine = doctrine_no_head
+			doctrine = judgement_doctrine
 
 			#Tenets
 			doctrine = tenet_religious_legal_pronouncements
@@ -779,6 +781,7 @@
 			
 			doctrine = christian_wacky_doctrine
 			doctrine = doctrine_no_head
+			doctrine = judgement_doctrine
 
 			#Tenets
 			doctrine = tenet_literalism
@@ -802,6 +805,7 @@
 			
 			doctrine = christian_wacky_doctrine
 			doctrine = doctrine_no_head
+			doctrine = judgement_doctrine
 
 			#Tenets
 			doctrine = tenet_pacifism
