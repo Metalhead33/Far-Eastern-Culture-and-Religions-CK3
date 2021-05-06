@@ -162,6 +162,10 @@
  COURT_CHAPLAIN_CONVERSION_JUDGEMENT_MODIFIER:0 "[county.GetProvince.GetCounty.GetFaith.GetName] — [GetFaithDoctrine('judgement_doctrine').GetBaseName]"
  tenet_prosperity_gospel_name:0 "Gospel of Prosperity"
  tenet_prosperity_gospel_desc:0 "Why wait for afterlife, when through hard work, we can build heaven on this very Earth too? Through hard work, we gain prosperity, through prosperity, we build a closer relationship with the divine."
+ tenet_sacred_magic_name:0 "Sacred Magic"
+ tenet_sacred_magic_desc:0 "???"
+ tenet_sacred_hunt_name:0 "Sacred Hunt"
+ tenet_sacred_hunt_desc:0 "???"
  
  special_doctrine_is_mazdaic_faith_name:0 "Teachings of Zoroaster"
  is_mazdaic_faith_name:0 "$special_doctrine_is_mazdaic_faith_name$"
