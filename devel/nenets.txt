@@ -1,0 +1,6 @@
+surnames
+Ladukej, Wara, Tajbari, Neņaŋ, Lid̦aŋ, Ļoder, Ajwasedo, Lamdo, Nerkagi, Ņaruj, Hudi,  Tusida, Tibici, Japtik, Jar, Jadne, P̦ak, Segoj, Ņac, Ader, Wanujto
+male:
+Wawļa, Wad̦o, Jerwko, Jonko, Jiko, Ilko, M̦usena, Nojko,  Ņakoc̦a, Natena, Paņiko, Papako, Satako, Sәvako, Sәrako, Hadko, Hasawato, Jabko, Jejko, Ņadma, Șarati, Sәwţa, Sawaņa, Jasawәj, Șunz, Jabco, Noļako, Sata, Pәdawa, P̦anә, Sәwsi, Hasi, Açu, Wьlka, Samo 
+female:
+Watane, Jewane, Jedәjne, Jeļa, Majane, Nedko, Neko, Papakone, Pujne, Sawane, Satane, Sьwne, Sәrakone, Hadne, Hojne, Jabtane, Jaļane, Jaruneb
