@@ -5,7 +5,7 @@
 @cultural_maa_extra_ai_score = 25 # Equivalent to having 2.5 extra regiments beyond what the code scoring would indicate (see NEGATIVE_SCORE_PER_EXISTING_REGIMENT)
 
 samurai = {
-	type = skirmishers
+	type = archer_cavalry
 	
 	damage = 100
 	toughness = 20
@@ -20,6 +20,9 @@ samurai = {
 		wetlands = { damage = -30 pursuit = -30 }
 		mountains = { damage = -30 pursuit = -30 }
 		desert_mountains = { damage = -30 pursuit = -30 }
+	}
+	can_recruit = {
+		culture = { has_cultural_parameter = unlock_maa_samurai }
 	}
 
 	counters = {

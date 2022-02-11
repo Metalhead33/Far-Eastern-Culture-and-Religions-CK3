@@ -1,0 +1,79 @@
+﻿################################
+# EASTERN CULTURAL TRADITIONS #
+################################
+
+tradition_bushido = {
+	category = societal
+
+	layers = {
+		0 = martial
+		1 = mena
+		4 = samurai.dds
+	}
+	
+	is_shown = {
+		has_cultural_pillar = heritage_japanese
+	}
+	
+	parameters = {
+		unlock_maa_samurai = yes
+		can_use_sparring_duel = yes
+		just_trait_more_common = yes
+		just_trait_gives_bonuses = yes
+		vassals_more_likely_accept_punishments = yes
+	}
+	
+	character_modifier = {
+		heavy_cavalry_damage_mult = 0.1
+		heavy_cavalry_toughness_mult = 0.1
+		ai_honor = high_positive_ai_value
+		dread_per_tyranny_add = 0.3
+		dread_decay_mult = -0.3
+		revolting_siege_morale_loss_mult = 0.25
+	}
+	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_bellicose }
+						any_in_list = { list = traits this = flag:ethos_egalitarian }
+						any_in_list = { list = traits this = flag:ethos_courtly }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bellicose_egalitarian_or_courtly_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						scope:character = {
+							any_knight = {
+								count >= 6
+								prowess >= 12
+							}
+						}
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = knights_with_prowess_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 100
+	}
+}

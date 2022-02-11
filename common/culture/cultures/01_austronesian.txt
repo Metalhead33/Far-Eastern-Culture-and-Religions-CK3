@@ -1,234 +1,120 @@
-﻿austronesian_group = {
-	graphical_cultures = {
-		chinese_group_coa_gfx
-		indian_building_gfx
-		indian_clothing_gfx
-		indian_unit_gfx
+﻿malay = {
+	
+	color = malay
+	ethos = ethos_courtly
+	heritage = heritage_malay
+	language = language_malay
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_seafaring
+		tradition_religion_blending
+		tradition_jungle_warriors
 	}
-
-	malay = {
-		
-		color = { 0.796 0.627 0.635 }
-		cadet_dynasty_names = {
-			Melaka Johor Perak Kedah Pattani Pahang Kelantan Selangor Terengganu Hatorusan Sisingamangaraja
-			Siak Aceh Pasai Pagarruyung Palembang Jambi Jambu Legeh Inderapura Besut Bestari Sahl Bestari 
-			Embong Luncai Benderang Adi Hitam Tanah_Jawa Kota_Baru Temasek Paksi
-		}
-
-		dynasty_names = {
-			Melaka Johor Perak Kedah Pattani Pahang Kelantan Selangor Terengganu Hatorusan Sisingamangaraja
-			Siak Aceh Pasai Pagarruyung Palembang Jambi Jambu Legeh Inderapura Besut Bestari Sahl Bestari 
-			Embong Luncai Benderang Adi Hitam Tanah_Jawa Kota_Baru Temasek Paksi
-		}
-
-		male_names = {
-		Atan Bachok Benderang Bintang Danang Demak Embong Golok Garuda Jusoh Jebat
-		Jantan Jalak Kamat Lanang Luncai Lekir Lekiu Nerang Rai Sagari Selamat Seman
-		Teh Tempawi Teruna Kasturi Ujang Uda Bujang Dumadi Hitam Demang Gombak Agus
-		Bagus Malim Baba Tarung Adi Kesuma Jumaat Hamengku Raja Bambang Tuah Awang
-		Andika Isnin Senin Che Mulia Perwira Budiarto Putera Putra Jati Sabtu Kechik
-		Ahad Agung Khamis Kamis Labuh Basuki Selasa Taufan Desa Perang Rabu Bayu Johan
-		Bestari Budi Muda Jejaka Jebat Tanggang Adi_Putra Megat Bijaya Wira Deraman
-		Yeop Danial Daniel Gana Haron Deris Indera Raja_Alang Sulung Merong Badang Noh 
-		Jiwa Sangkara Sugriwa Kulup Merdeka Chik Nila Panji Armada Pekan Sulong Long Setiawan
-		Kacak Adiwarna
-		}
-		female_names = {
-			Adi_Puteri Adi_Putri Adiputeri Adiputri Aishah Aisyah Amritpal Ayu Azura Bulan Bunga 
-			Chahaya Chempaka Chinta Cik Cinta Dara Dayang Delima Dewi Dian Embun Esah Hapsah Harum
-			Haryati Hayati Heryati Indah Intan Izzati Jenab Juwita Kartika Kartini Kaseh Katijah
-			Kembang Kemboja Kemuning Khatijah Kuntum Latipah Linda Mahsuri Mahura Manjalara Mariah
-			Mariam Mas Mas_Ayu Masayu Mastini Mawar Maya Mayang Mayang_Sari Melati Melur Merah Merenui
-			Meriam Metetini Minah Miri Moea Moeata Moerani Mohea Munah Murni Nanihi Nawar Nilam Nirmala
-			Orama Pear Pertiwi Poe Poehina Poenui Poerava Puaiti Puatea Puaura Puspa Puspasari Puspawangi
-			Puspawati Puteri Putri Ranitea Rarahu Raunui Raurii Sari Sayang Sepiah Seri Siti Sri Suriani
-			Suriawati Surintan Tahiata Taiana Taina Tania Taurua Tautiare Tehani Tehea Tempawan Teora Tera
-			Teratai Tevai Tijah Tipah Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata
-			Vaihere Vaimiti Vairea Vaite Vaitiare Wangi Warna Wati Yati Zamrud Srikandi Jelita Asmara Cendana
-			Kantan Halia Manggis Kesum Akasia Cengkih Anggerik Kenanga Cempaka Suria Cantik Chantiq Anggun Chenta
-			Kirana Lestari Citra
-		}
-		dynasty_of_location_prefix = "dynnp_no"
-		dynasty_name_first = yes
-		dynasty_title_names = yes
-
-		ethnicities = {
-			10 = asian
-		}
+	
+	name_list = name_list_malay
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { indian_clothing_gfx }
+	unit_gfx = { indian_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
 	}
-	javanese = {
+}
+javanese = {
 		
-		color = { 0.718 0.698 0.690 }
-		cadet_dynasty_names = {
-			Banten Demak Surabaya Cirebon Samprangan Sosrodihardjo
-			Zulkipli Arbi Baderan Djoyosuroto Guret Kiaidemak Modjo Ngurawan Pulukadang Suratinoyo Wonopati
-		}
-
-		dynasty_names = {
-			Banten Demak Surabaya Cirebon Samprangan Kusnoz Sosrodihardjo
-			Zulkipli Arbi Baderan Djoyosuroto Guret Kiaidemak Modjo Ngurawan Pulukadang Suratinoyo Wonopati
-		}
-
-		male_names = {
-		Girindrawardhana Girishawardhana Kertabumi Kertawijaya Rajasawardhana Suraprabhawa Wikramawardhana Hayam_Wuruk Kalagamet Raden_Wijaya Kertawardhana Raden_Sotor Raden_Sumirat Singhawardhana Kusno
-		Sukarno Suharto Boediono
-		Adityo Airlangga Andi Anggara Ardi Arga Argo Ari Aryo Asmoro Atmojo Baskoro Basuki
-		Batman Bimo Budianto Budiarto Budiharto Budiono Buwono Cahyono Condro Danang Darmo
-		Didik Djoko Dumadi Edhi Edhie Erlangga Galih Hamengkubuwono Harjo Harto Hartono Haryo
-		Haryono Hendro Jaka Joko Kirono Kresno Krisno Krisnobroto Kristiono Kuat Kusumo Laksono
-		Lesmana Mego Muji Mujiono Mulyono Nanang Ngabdurohman Nirwanto Nugroho Pamungkas Prabowo
-		Prasetyo Prayitno Prijono Priono Priyanto Priyo Priyono Purnomo Putro Respati Riyanto Santoso
-		Satrio Soeharto Soekarno Subekti Subroto Sudarman Sudarmo Sudarto Sugeng Sukanto Sumitro
-		Supardi Suparman Supriadi Supriyadi Supriyanto Supriyono Suratno Suryo Suryono Sutrisno
-		Suwarno Suwondo Suyatno Suyitno Teguh Trisno Utomo Wibisono Widianto Widiyanto Widodo
-		Winoto Wiranto Wiro Wisnubroto Yatno Yudho Yudhoyono Yudo Yuwono 
-		}
-		female_names = {
-			Suhita Sri_Gitarja Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi Nuutea Orama
-			Poe Pear Poehina Poenui Poerava Puaiti Puatea Puaura Raihau Raimere Rainui Ranitea Rarahu
-			Raunui Raurii Tahiata Taiana Taina Tania Taurua Tautiare Tehani Tehea Teora Tera Tevai
-			Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata Vaihere Vaimiti Vairea Vaite Vaitiare
-			Andini Anggraini Astuti Ayu Endah Endang Galuh Handayani Hastuti Hayu Larasati Lintang Mursiyem
-			Ningsih Prinia Rahayu Sulastri Sunarti Susilowati Suwarni Widyastuti Wiji Wulandari
-		}
-		dynasty_of_location_prefix = "dynnp_no"
-		dynasty_name_first = yes
-		dynasty_title_names = yes
-
-		ethnicities = {
-			10 = asian
-		}
+	color = javanese
+	ethos = ethos_courtly
+	heritage = heritage_malay
+	language = language_javanese
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_seafaring
+		tradition_religion_blending
+		tradition_jungle_warriors
 	}
-	batak = {
-		
-		color = { 0.596 0.627 0.635 }
-		cadet_dynasty_names = {
-			Melaka Johor Perak Kedah Pattani Pahang Kelantan Selangor Terengganu Hatorusan Sisingamangaraja
-			Siak Aceh Pasai Pagarruyung Palembang Jambi Jambu Legeh Inderapura Besut Bestari Sahl Bestari 
-			Embong Luncai Benderang Adi Hitam Tanah_Jawa Kota_Baru Temasek Paksi
-		}
-		dynasty_names = {
-			Melaka Johor Perak Kedah Pattani Pahang Kelantan Selangor Terengganu Hatorusan Sisingamangaraja
-			Siak Aceh Pasai Pagarruyung Palembang Jambi Jambu Legeh Inderapura Besut Bestari Sahl Bestari 
-			Embong Luncai Benderang Adi Hitam Tanah_Jawa Kota_Baru Temasek Paksi
-		}
-		male_names = {
-		Atan Bachok Benderang Bintang Danang Demak Embong Golok Garuda Jusoh Jebat
-		Jantan Jalak Kamat Lanang Luncai Lekir Lekiu Nerang Rai Sagari Selamat Seman
-		Teh Tempawi Teruna Kasturi Ujang Uda Bujang Dumadi Hitam Demang Gombak Agus
-		Bagus Malim Baba Tarung Adi Kesuma Jumaat Hamengku Raja Bambang Tuah Awang
-		Andika Isnin Senin Che Mulia Perwira Budiarto Putera Putra Jati Sabtu Kechik
-		Ahad Agung Khamis Kamis Labuh Basuki Selasa Taufan Desa Perang Rabu Bayu Johan
-		Bestari Budi Muda Jejaka Jebat Tanggang Adi_Putra Megat Bijaya Wira Deraman
-		Yeop Danial Daniel Gana Haron Deris Indera Raja_Alang Sulung Merong Badang Noh 
-		Jiwa Sangkara Sugriwa Kulup Merdeka Chik Nila Panji Armada Pekan Sulong Long Setiawan
-		Kacak Adiwarna
-		}
-		female_names = {
-			Adi_Puteri Adi_Putri Adiputeri Adiputri Aishah Aisyah Amritpal Ayu Azura Bulan Bunga 
-			Chahaya Chempaka Chinta Cik Cinta Dara Dayang Delima Dewi Dian Embun Esah Hapsah Harum
-			Haryati Hayati Heryati Indah Intan Izzati Jenab Juwita Kartika Kartini Kaseh Katijah
-			Kembang Kemboja Kemuning Khatijah Kuntum Latipah Linda Mahsuri Mahura Manjalara Mariah
-			Mariam Mas Mas_Ayu Masayu Mastini Mawar Maya Mayang Mayang_Sari Melati Melur Merah Merenui
-			Meriam Metetini Minah Miri Moea Moeata Moerani Mohea Munah Murni Nanihi Nawar Nilam Nirmala
-			Orama Pear Pertiwi Poe Poehina Poenui Poerava Puaiti Puatea Puaura Puspa Puspasari Puspawangi
-			Puspawati Puteri Putri Ranitea Rarahu Raunui Raurii Sari Sayang Sepiah Seri Siti Sri Suriani
-			Suriawati Surintan Tahiata Taiana Taina Tania Taurua Tautiare Tehani Tehea Tempawan Teora Tera
-			Teratai Tevai Tijah Tipah Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata
-			Vaihere Vaimiti Vairea Vaite Vaitiare Wangi Warna Wati Yati Zamrud Srikandi Jelita Asmara Cendana
-			Kantan Halia Manggis Kesum Akasia Cengkih Anggerik Kenanga Cempaka Suria Cantik Chantiq Anggun Chenta
-			Kirana Lestari Citra
-		}
-		dynasty_of_location_prefix = "dynnp_no"
-		dynasty_name_first = yes
-		dynasty_title_names = yes
-
-		ethnicities = {
-			10 = asian
-		}
+	
+	name_list = name_list_javanese
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { indian_clothing_gfx }
+	unit_gfx = { indian_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
 	}
-	cham = {
+}
+batak = {
 		
-		color = { 0.796 0.773 0.535 }
-		cadet_dynasty_names = {
-		Siak Aceh Pasai Pagarruyung Palembang Jambi Vijaya Kauthara Panduranga Indrapura
-		}
-		dynasty_names = {
-		Siak Aceh Pasai Pagarruyung Palembang Jambi Vijaya Kauthara Panduranga Indrapura
-		}
-		male_names = {
-		Achyut Adhrit Advait Adyant Amath Arit Aryan Asav Ashvath Atulya Avyay Ayushman Bhadravarman Bhadresvaravarman Bharat
-		Bhasadharmavarman Bhavavarman Bhavesh Bhavin Bhuvanesh Cei_Anâk Cei_Brei Chaitanya Che_Anan Che_Bong_Nga Chei_Krei_Brei
-		Chetas Chitraksh Chittin Dakshesh Darsh Devavarman Dhanush Divit Dushyant Eashan Ekaksh Ekaveer Gagan Gangarajavarman
-		Gaurish Girivar Gyanav Hardik Harit Harivarman Harshit Hridyanshu Indranuj Indravarman Ipsit Ishan Itish Jagrav Jaitra
-		Jaivant Jamlen Jatasya Jaya_Ananda Jaya_Indravarman Jaya_Paramesvaravarman Jaya_Sinhavarman Jayavarman Kairav
-		Kandarpadharmavarman Kanishk Karunesh Kaushtubh Ko_Cheng Kosem Kush Lakshay Lakshit Lalit Lekhit Maha_Kali Maha_Kaya
-		Maha_Kui_Yu Maha_Phanloyue Maha_Sajai Maha_Sajan
-		Maha_Sarak Maha_Sawa Maha_Saya Maha_Vijaya Maija_Vijaya Manan Manav Manorathavarman Moho_Kouei_Lai Mokshit Mridul Mukund
-		Naman Nandish Nilay Nirav Nirbhay Ojas Ojayit Oman Oorjit Paramesvaravarman Parth Po_Aih_Khang Po_At Po_Bait_Lan Po_Binasuor
-		Po_Binnasuar Po_Binnasur Po_Chong_Chan Po_Chongchan Po_Dharma Po_Dobatasuar Po_Ganuhpatih Po_Ganvuh Po_Jai_Paran Po_Jatamah
-		Po_Kabih Po_Kabrah Po_Karutdrak Po_Kasit Po_Klan_Thu Po_Klong_Garai Po_Klong_Halau Po_Klong_M_hnai Po_Kunarai Po_Ladhuanpaghuh
-		Po_Lathun Po_Nagar Po_Nit Po_Nraop Po_Parican Po_Patarsuar Po_Phaok_The Po_Putik Po_Rattirai Po_Rattiraydaputao Po_Rome Po_Saktirai
-		Po_Saktiraydapaghoh Po_Saktiraydapatih Po_Saot Po_Sulika Po_Tathun Po_Thuntiraidaputih Po_Thuttirai Po_Tisundimahrai
-		Po_Tisuntiraydapaghoh Po_Tisuntiraydapuran Po_Tithun Po_Tithuntirai Po_Uwaluah Po_War_Palei Pradyut Pragyan Pratham Prayag
-		Prithindravarman Rachit Rakshit Ranajay Rathin Rudravarman Saatvik Saket Samarth Sambhav Sambhuvarman Sarthak Sashwat Satyavarman
-		Savar Shivansh Sri_Agarang Sri_Mara Sri_Vijayavarman Suryavarman Tanmay Tarush Tavasya Trinabh Uddhav Udit Udyat Utkarsh Vedant
-		Vibhuti Vibodh Vidyanandana Vidyot Vijayavarman Vikrantavarman Viraj Vrishank Yash Yug Yuvan
-		}
-		female_names = {
-		Amritpal Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi Nuutea Orama Pear Poe Poehina Poenui Poerava
-		Puaiti Puatea Puaura Raihau Raimere Rainui Ranitea Rarahu Raunui Raurii Tahiata Taiana Taina Tania Taurua
-		Tautiare Tehani Tehea Teora Tera Tevai Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata Vaihere
-		Vaimiti Vairea Vaite Vaitiare
-		}
-		dynasty_of_location_prefix = "dynnp_no"
-		dynasty_name_first = yes
-		dynasty_title_names = yes
-
-		ethnicities = {
-			10 = asian
-		}
+	color = batak
+	ethos = ethos_bellicose
+	heritage = heritage_malay
+	language = language_malay
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_warrior_culture
+		tradition_religion_blending
+		tradition_jungle_warriors
 	}
-	achenese = {
+	
+	name_list = name_list_malay
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { indian_clothing_gfx }
+	unit_gfx = { indian_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+cham = {
 		
-		color = { 0.796 0.227 0.535 }
-		cadet_dynasty_names = {
-		Siak Aceh Pasai Pagarruyung Palembang Jambi Vijaya Kauthara Panduranga Indrapura
-		}
-		dynasty_names = {
-		Siak Aceh Pasai Pagarruyung Palembang Jambi Vijaya Kauthara Panduranga Indrapura
-		}
-		male_names = {
-		Achyut Adhrit Advait Adyant Amath Arit Aryan Asav Ashvath Atulya Avyay Ayushman Bhadravarman Bhadresvaravarman Bharat
-		Bhasadharmavarman Bhavavarman Bhavesh Bhavin Bhuvanesh Cei_Anâk Cei_Brei Chaitanya Che_Anan Che_Bong_Nga Chei_Krei_Brei
-		Chetas Chitraksh Chittin Dakshesh Darsh Devavarman Dhanush Divit Dushyant Eashan Ekaksh Ekaveer Gagan Gangarajavarman
-		Gaurish Girivar Gyanav Hardik Harit Harivarman Harshit Hridyanshu Indranuj Indravarman Ipsit Ishan Itish Jagrav Jaitra
-		Jaivant Jamlen Jatasya Jaya_Ananda Jaya_Indravarman Jaya_Paramesvaravarman Jaya_Sinhavarman Jayavarman Kairav
-		Kandarpadharmavarman Kanishk Karunesh Kaushtubh Ko_Cheng Kosem Kush Lakshay Lakshit Lalit Lekhit Maha_Kali Maha_Kaya
-		Maha_Kui_Yu Maha_Phanloyue Maha_Sajai Maha_Sajan
-		Maha_Sarak Maha_Sawa Maha_Saya Maha_Vijaya Maija_Vijaya Manan Manav Manorathavarman Moho_Kouei_Lai Mokshit Mridul Mukund
-		Naman Nandish Nilay Nirav Nirbhay Ojas Ojayit Oman Oorjit Paramesvaravarman Parth Po_Aih_Khang Po_At Po_Bait_Lan Po_Binasuor
-		Po_Binnasuar Po_Binnasur Po_Chong_Chan Po_Chongchan Po_Dharma Po_Dobatasuar Po_Ganuhpatih Po_Ganvuh Po_Jai_Paran Po_Jatamah
-		Po_Kabih Po_Kabrah Po_Karutdrak Po_Kasit Po_Klan_Thu Po_Klong_Garai Po_Klong_Halau Po_Klong_M_hnai Po_Kunarai Po_Ladhuanpaghuh
-		Po_Lathun Po_Nagar Po_Nit Po_Nraop Po_Parican Po_Patarsuar Po_Phaok_The Po_Putik Po_Rattirai Po_Rattiraydaputao Po_Rome Po_Saktirai
-		Po_Saktiraydapaghoh Po_Saktiraydapatih Po_Saot Po_Sulika Po_Tathun Po_Thuntiraidaputih Po_Thuttirai Po_Tisundimahrai
-		Po_Tisuntiraydapaghoh Po_Tisuntiraydapuran Po_Tithun Po_Tithuntirai Po_Uwaluah Po_War_Palei Pradyut Pragyan Pratham Prayag
-		Prithindravarman Rachit Rakshit Ranajay Rathin Rudravarman Saatvik Saket Samarth Sambhav Sambhuvarman Sarthak Sashwat Satyavarman
-		Savar Shivansh Sri_Agarang Sri_Mara Sri_Vijayavarman Suryavarman Tanmay Tarush Tavasya Trinabh Uddhav Udit Udyat Utkarsh Vedant
-		Vibhuti Vibodh Vidyanandana Vidyot Vijayavarman Vikrantavarman Viraj Vrishank Yash Yug Yuvan
-		}
-		female_names = {
-		Amritpal Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi Nuutea Orama Pear Poe Poehina Poenui Poerava
-		Puaiti Puatea Puaura Raihau Raimere Rainui Ranitea Rarahu Raunui Raurii Tahiata Taiana Taina Tania Taurua
-		Tautiare Tehani Tehea Teora Tera Tevai Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata Vaihere
-		Vaimiti Vairea Vaite Vaitiare
-		}
-		dynasty_of_location_prefix = "dynnp_no"
-		dynasty_name_first = yes
-		dynasty_title_names = yes
-
-		ethnicities = {
-			10 = asian
-		}
+	color = cham
+	ethos = ethos_spiritual
+	heritage = heritage_malay
+	language = language_cham
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_legalistic
+		tradition_religious_patronage
+		tradition_jungle_warriors
+	}
+	
+	name_list = name_list_cham
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { indian_clothing_gfx }
+	unit_gfx = { indian_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}
+achenese = {
+		
+	color = { 0.796 0.227 0.535 }
+	ethos = ethos_spiritual
+	heritage = heritage_malay
+	language = language_achenese
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_zealous_people
+		tradition_religious_patronage
+		tradition_jungle_warriors
+	}
+	
+	name_list = name_list_achenese
+	
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { indian_clothing_gfx }
+	unit_gfx = { indian_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
 	}
 }

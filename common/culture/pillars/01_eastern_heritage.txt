@@ -1,0 +1,31 @@
+﻿heritage_japanese = {
+	type = heritage
+}
+
+heritage_ainu = {
+	type = heritage
+}
+
+heritage_vietnamese = {
+	type = heritage
+}
+
+heritage_tai = {
+	type = heritage
+}
+
+heritage_mon = {
+	type = heritage
+}
+
+heritage_khmer = {
+	type = heritage
+}
+
+heritage_korean = {
+	type = heritage
+}
+
+heritage_malay = {
+	type = heritage
+}

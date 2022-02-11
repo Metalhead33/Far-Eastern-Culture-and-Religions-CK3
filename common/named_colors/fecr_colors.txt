@@ -1,0 +1,28 @@
+colors = {
+	# used by cultures and languages
+	cantonese = { 0.78 0.22 0.22 }
+	vietnamese = { 0.3 0.45 0.45 }
+	thai = { 0.5 0.45 0.45 }
+	khmer = { 0.3 0.65 0.45 }
+	malay = { 0.796 0.627 0.635 }
+	javanese = { 0.718 0.698 0.690 }
+	batak = { 0.596 0.627 0.635 }
+	cham = { 0.796 0.773 0.535 }
+	achenese = { 0.796 0.227 0.535 }
+	japanese = { 0.1 0.6 0.6 }
+	ainu = { 0.2 0.5 0.5 }
+	korean = { 0.2 0.55 0.55 }
+	kaifeng_jew = { 0.78 0.26 0.26 }
+	anatolian_turkish = { 1.00 0.41 0.29 }
+	azeri_turkish = { 1.00 0.33 0.37 }
+	gypsy_india = { 0.40 0.45 0.67 }
+	gypsy_egypt =  { 0.36 0.47 0.69 }
+	gypsy_caucasus = { 0.40 0.45 0.67 }
+	gypsy_hun = { 0.44 0.41 0.64 }
+	gypsy_romanian = { 0.32 0.49 0.71 }
+	gypsy_slav = { 0.36 0.53 0.64 }
+	gypsy_greek = { 0.36 0.41 0.75 }
+	gypsy_iberian = { 0.36 0.41 0.60 }
+	gypsy_french = { 0.47 0.45 0.60 }
+	gypsy_italian = { 0.47 0.37 0.67 }
+}

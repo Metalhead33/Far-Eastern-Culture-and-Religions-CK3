@@ -1,0 +1,81 @@
+﻿GetRegionalCavalryMAA = {
+	type = character
+	random_valid = yes
+	
+	text = {
+		trigger = { culture = { has_cultural_parameter = unlock_maa_samurai } }
+		localization_key = samurai
+	}
+	text = {
+		trigger = { culture = { has_cultural_parameter = unlock_maa_mulaththamun } }
+		localization_key = mulaththamun
+	}
+	text = {
+		trigger = { culture = { has_cultural_parameter = unlock_maa_hussar } } #Konni
+		localization_key = hussar
+	}
+	text = {
+		trigger = { culture = { has_innovation = innovation_desert_tactics } } #Chasseur
+		localization_key = chasseur
+	}
+	text = {
+		trigger = { culture = { has_innovation = innovation_caballeros } } #Caballero
+		localization_key = caballero
+	}
+	text = {
+		trigger = { culture = { has_innovation = innovation_hobbies } } #Hobelar
+		localization_key = hobelar
+	}
+	text = {
+		trigger = { culture = { has_innovation = innovation_sahel_horsemen } } #Sahel Horsemen
+		localization_key = sahel_horsemen
+	}
+	text = {
+		trigger = { culture = { has_cultural_parameter = unlock_maa_cataphract } }
+		localization_key = cataphract
+	}
+	text = {
+		trigger = { culture = { has_cultural_parameter = unlock_maa_monaspa } }
+		localization_key = monaspa
+	}
+	text = {
+		trigger = { culture = { has_innovation = innovation_valets } } #Gendarme - Later Era MAA
+		localization_key = gendarme
+	}
+	text = {
+		trigger = { always = no }
+		fallback = yes
+		localization_key = cavalry
+	}
+}
+
+GetRegionalSkirmisherMAA = {
+	type = character
+	random_valid = yes
+	
+	text = {
+		trigger = { culture = { has_cultural_parameter = unlock_maa_horn_warrior } }
+		localization_key = horn_warrior
+	}
+	text = {
+		trigger = { culture = { has_cultural_parameter = unlock_maa_shomer } }
+		localization_key = shomer
+	}
+	text = {
+		trigger = { culture = { has_cultural_parameter = unlock_maa_abudrar } }
+		localization_key = abudrar
+	}
+	text = {
+		trigger = { culture = { has_cultural_parameter = unlock_maa_guinea_warrior } }
+		localization_key = guinea_warrior
+	}
+	text = {
+		trigger = { culture = { has_innovation = innovation_adaptive_militia } } #Goedendag - Later Era MAA
+		localization_key = goedendag
+	}
+	text = {
+		trigger = { always = no }
+		fallback = yes
+		localization_key = light_footmen
+	}
+}
