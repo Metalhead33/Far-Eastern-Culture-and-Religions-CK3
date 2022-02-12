@@ -158,7 +158,7 @@ jewish_courtier_basic_requirements_trigger = {
 	is_alive = yes # Because apparently there can be dead characters in the pool (remove when fixed)
 	OR = {
 	has_religion = religion:judaism_religion
-	has_culture_group = culture_group:israelite_group
+	culture = { has_cultural_pillar = heritage_israelite }
 	}
 }
 
@@ -260,7 +260,7 @@ has_gypsy_enemies = {
 		count = all
 		trigger_if = {
 			limit = {
-				has_culture_group = culture_group:gypsy_group
+				culture = { has_cultural_pillar = heritage_gypsy }
 			}
 		}
 	}
@@ -269,7 +269,7 @@ has_gypsy_enemies = {
 		count = all
 		trigger_if = {
 			limit = {
-				has_culture_group = culture_group:gypsy_group
+				culture = { has_cultural_pillar = heritage_gypsy }
 			}
 		}
 	}
@@ -280,7 +280,7 @@ has_gypsy_friends = {
 		count = all
 		trigger_if = {
 			limit = {
-				has_culture_group = culture_group:gypsy_group
+				culture = { has_cultural_pillar = heritage_gypsy }
 			}
 		}
 	}
@@ -289,7 +289,7 @@ has_gypsy_friends = {
 		count = all
 		trigger_if = {
 			limit = {
-				has_culture_group = culture_group:gypsy_group
+				culture = { has_cultural_pillar = heritage_gypsy }
 			}
 		}
 	}
@@ -299,7 +299,7 @@ gypsy_courtier_basic_requirements_trigger = {
 	is_adult = yes
 	is_imprisoned = no
 	is_alive = yes # Because apparently there can be dead characters in the pool (remove when fixed)
-	has_culture_group = culture_group:gypsy_group
+	culture = { has_cultural_pillar = heritage_gypsy }
 }
 
 gypsy_courtier_excellent_skill_intrigue_trigger = {

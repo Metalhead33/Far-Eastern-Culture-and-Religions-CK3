@@ -2,7 +2,7 @@
 	color = gypsy_india
 	
 	ethos = ethos_communal
-	heritage = heritage_indo_aryan
+	heritage = heritage_gypsy
 	language = language_sauraseni
 	martial_custom = martial_custom_male_only
 	
@@ -30,7 +30,7 @@ gypsy_egypt = { # Arabic names
 	created = 700.1.1
 	
 	ethos = ethos_communal
-	heritage = heritage_indo_aryan
+	heritage = heritage_gypsy
 	language = language_arabic
 	martial_custom = martial_custom_male_only
 	
@@ -59,7 +59,7 @@ gypsy_caucasus = { # Armenian names
 	created = 900.1.1
 	
 	ethos = ethos_communal
-	heritage = heritage_indo_aryan
+	heritage = heritage_gypsy
 	language = language_armenian
 	martial_custom = martial_custom_male_only
 	
@@ -88,7 +88,7 @@ gypsy_hun = { # Hungarian names
 	created = 1400.1.1
 	
 	ethos = ethos_communal
-	heritage = heritage_indo_aryan
+	heritage = heritage_gypsy
 	language = language_magyar
 	martial_custom = martial_custom_male_only
 	
@@ -116,7 +116,7 @@ gypsy_romanian = {
 	created = 1300.1.1
 	
 	ethos = ethos_communal
-	heritage = heritage_indo_aryan
+	heritage = heritage_gypsy
 	language = language_wallachian
 	martial_custom = martial_custom_male_only
 	
@@ -145,7 +145,7 @@ gypsy_slav = { # Serbian names
 	created = 1300.1.1
 	
 	ethos = ethos_communal
-	heritage = heritage_indo_aryan
+	heritage = heritage_gypsy
 	language = language_south_slavic
 	martial_custom = martial_custom_male_only
 	
@@ -173,7 +173,7 @@ gypsy_greek = { # Greek names
 	created = 1100.1.1
 	
 	ethos = ethos_communal
-	heritage = heritage_indo_aryan
+	heritage = heritage_gypsy
 	language = language_greek
 	martial_custom = martial_custom_male_only
 	
@@ -201,7 +201,7 @@ gypsy_iberian = { # Thpanish names
 	created = 1300.1.1
 	
 	ethos = ethos_communal
-	heritage = heritage_indo_aryan
+	heritage = heritage_gypsy
 	language = language_iberian
 	martial_custom = martial_custom_male_only
 	
@@ -229,7 +229,7 @@ gypsy_french = {
 	created = 1400.1.1
 	
 	ethos = ethos_communal
-	heritage = heritage_indo_aryan
+	heritage = heritage_gypsy
 	language = language_french
 	martial_custom = martial_custom_male_only
 	
@@ -257,7 +257,7 @@ gypsy_italian = {
 	created = 1400.1.1
 	
 	ethos = ethos_communal
-	heritage = heritage_indo_aryan
+	heritage = heritage_gypsy
 	language = language_italian
 	martial_custom = martial_custom_male_only
 	

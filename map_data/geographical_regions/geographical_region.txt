@@ -1881,7 +1881,12 @@ special_sicilian_culture_region = {
 		d_benevento d_capua d_apulia d_salerno d_calabria d_sicily
 	}
 }
-
+special_azeri_culture_region = {
+	duchies = {
+		# Azerbaijan
+		d_shirvan d_azerbaijan
+	}
+}
 
 ### Special Cagot region
 special_cagot_region = {

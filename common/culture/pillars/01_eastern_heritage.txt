@@ -1,4 +1,8 @@
-﻿heritage_japanese = {
+﻿heritage_gypsy = {
+	type = heritage
+}
+
+heritage_japanese = {
 	type = heritage
 }
 

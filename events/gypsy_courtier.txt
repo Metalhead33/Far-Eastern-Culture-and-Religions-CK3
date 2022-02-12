@@ -27,8 +27,8 @@ gypsy_courtier.0001 = {
 				limit = { 
 					root = {
 						OR = {
-						has_culture_group = culture_group:indo_aryan_group
-						has_culture_group = culture_group:dravidian_group
+						culture = { has_cultural_pillar = heritage_indo_aryan }
+						culture = { has_cultural_pillar = heritage_dravidian }
 						}
 					}
 				}
@@ -42,9 +42,9 @@ gypsy_courtier.0001 = {
 				limit = { 
 					root = {
 						OR = {
-						has_culture_group = culture_group:arabic_group
-						has_culture_group = culture_group:berber_group
-						has_culture_group = culture_group:iranian_group
+						culture = { has_cultural_pillar = heritage_arabic }
+						culture = { has_cultural_pillar = heritage_berber }
+						culture = { has_cultural_pillar = heritage_iranian }
 						has_culture = culture:turkish
 						has_culture = culture:anatolian_turkish
 						has_culture = culture:azeri_turkish
@@ -77,7 +77,7 @@ gypsy_courtier.0001 = {
 			if = {
 				limit = { 
 					root = {
-						has_culture_group = culture_group:magyar_group
+						culture = { has_cultural_pillar = heritage_magyar }
 					}
 				}
 				create_character = {
@@ -102,9 +102,9 @@ gypsy_courtier.0001 = {
 				limit = { 
 					root = {
 						OR = {
-						has_culture_group = culture_group:south_slavic_group
-						has_culture_group = culture_group:west_slavic_group
-						has_culture_group = culture_group:east_slavic_group
+						culture = { has_cultural_pillar = heritage_south_slavic }
+						culture = { has_cultural_pillar = heritage_west_slavic }
+						culture = { has_cultural_pillar = heritage_east_slavic }
 						}
 					}
 				}
@@ -129,7 +129,7 @@ gypsy_courtier.0001 = {
 			if = {
 				limit = { 
 					root = {
-						has_culture_group = culture_group:iberian_group
+						culture = { has_cultural_pillar = heritage_iberian }
 					}
 				}
 				create_character = {
@@ -141,7 +141,7 @@ gypsy_courtier.0001 = {
 			if = {
 				limit = { 
 					root = {
-						has_culture_group = culture_group:frankish_group
+						culture = { has_cultural_pillar = heritage_frankish }
 					}
 				}
 				create_character = {
@@ -249,7 +249,7 @@ gypsy_courtier.0005 = {
 		
 		hidden_effect = {
 		every_courtier_or_guest  = {
-		limit = { has_culture_group = culture_group:gypsy_group }
+		limit = { culture = { has_cultural_pillar = heritage_gypsy } }
 			banish = yes
 			add_opinion = {
 				modifier = banished_me
@@ -281,7 +281,7 @@ gypsy_courtier.0006 = {
 		add_gold = 100
 		hidden_effect = {
 		every_courtier_or_guest  = {
-		limit = { has_culture_group = culture_group:gypsy_group }
+		limit = { culture = { has_cultural_pillar = heritage_gypsy } }
 			banish = yes
 			add_opinion = {
 				modifier = banished_me
@@ -346,7 +346,7 @@ gypsy_courtier.0010 = {
 	type = character_event
 	hidden = yes
 	trigger = {
-	has_culture_group = culture_group:gypsy_group
+	culture = { has_cultural_pillar = heritage_gypsy }
 	has_character_modifier = expelled_the_gypsies
 	}
 
