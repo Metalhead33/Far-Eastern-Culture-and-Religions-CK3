@@ -211,8 +211,8 @@ waaqism_religion = {
 			doctrine = unreformed_faith_doctrine
 
 			doctrine = tenet_legalism
-			doctrine = tenet_sacred_childbirth
-			doctrine = tenet_sanctity_of_nature
+			doctrine = tenet_mendicant_preachers
+			doctrine = tenet_pentarchy
 		}
 		#waaqism_reformed = {
 		#	color = { 1.0 0.45 0.0 }

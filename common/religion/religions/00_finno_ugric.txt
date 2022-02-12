@@ -39,8 +39,7 @@
 	doctrine = underworld_doctrine
 	
 	#Special Tolerance
-	# doctrine = turanic_syncretism_doctrine
-	doctrine = no_syncretism_doctrine
+	doctrine = turanic_syncretism_doctrine
 
 	traits = {
 		virtues = { stubborn brave just }
@@ -215,7 +214,7 @@
 
 			doctrine = tenet_sanctity_of_nature
 			doctrine = tenet_ancestor_worship
-			doctrine = tenet_sacred_childbirth
+			doctrine = tenet_ritual_celebrations
 			doctrine = burial_doctrine
 
 			icon = finno_ugric

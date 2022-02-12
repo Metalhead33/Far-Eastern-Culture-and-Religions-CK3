@@ -222,6 +222,16 @@ doctrine_final_disposition = {
 			monthly_prestige_gain_mult = 0.2
 			close_relative_opinion = 5
 		}
+		county_modifier = {
+			mountains_development_growth_factor = -0.15
+			desert_mountains_development_growth_factor = -0.15
+		}
+		province_modifier = {
+			mountains_construction_gold_cost = 0.05
+			desert_mountains_construction_gold_cost = 0.05
+			mountains_holding_construction_gold_cost = 0.05
+			desert_mountains_holding_construction_gold_cost = 0.05
+		}
 	}
 	sky_burial_doctrine = {
 		piety_cost = {
@@ -268,6 +278,8 @@ doctrine_final_disposition = {
 		}
 		parameters = {
 			mummification_active = yes
+			monthly_prestige_gain_mult = 0.25
+			close_relative_opinion = 10
 		}
 	}
 }
@@ -391,6 +403,9 @@ doctrine_afterlife = {
 				multiply = faith_unchanged_doctrine_cost_mult
 			}
 		}
+		is_shown = {
+			religion_tag = germanic_religion
+		}
 		character_modifier = {
 			prowess = 1
 			prowess_per_piety_level = 1
@@ -400,9 +415,6 @@ doctrine_afterlife = {
 			ai_boldness = 50
 			ai_rationality = -50
 		}
-	}
-	is_shown = {
-		religion_tag = germanic_religion
 	}
 	spirit_remainder_doctrine = {
 		piety_cost = {
@@ -453,7 +465,7 @@ doctrine_syncretism = {
 			}
 		}
 		parameters = {
-			hostility_override_turanic_syncretism_doctrine = 0
+			hostility_override_turanic_syncretism_doctrine = 1
 		}
 	}
 	hellenic_syncretism_doctrine = {
@@ -474,7 +486,7 @@ doctrine_syncretism = {
 			}
 		}
 		parameters = {
-			hostility_override_hellenic_syncretism_doctrine = 0
+			hostility_override_hellenic_syncretism_doctrine = 1
 		}
 	}
 	

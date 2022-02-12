@@ -211,7 +211,7 @@
 
 			doctrine = unreformed_faith_doctrine
 
-			doctrine = tenet_sacred_childbirth
+			doctrine = tenet_adaptive
 			doctrine = tenet_ancestor_worship
 			doctrine = tenet_sanctity_of_nature		
 		}

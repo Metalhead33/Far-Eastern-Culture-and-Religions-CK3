@@ -1652,49 +1652,6 @@
 		}
 	}
 
-	tenet_sacred_childbirth = {
-		icon = core_tenet_meditation
-		name = {
-			first_valid = {
-				triggered_desc = {
-					trigger = {
-						religion_tag = baltic_religion
-					}
-					desc = tenet_sacred_childbirth_alternate_name
-				}
-				desc = tenet_sacred_childbirth_name
-			}
-		}
-
-		piety_cost = {
-			value = faith_tenet_cost_low
-
-			# Multiplier for keeping same tenet
-			if = {
-				limit = { has_doctrine = tenet_sacred_childbirth }
-				multiply = faith_unchanged_doctrine_cost_mult
-			}
-		}
-
-		is_shown = {
-			OR = {
-				religion_tag = baltic_religion
-				religion_tag = waaqism_religion
-				religion_Tag = finno_ugric_religion
-				religion_Tag = slavic_religion
-			}
-		}
-
-		parameters = {
-			safer_childbirths_active = yes
-			healthier_children_active = yes
-		}
-
-		character_modifier = {
-			fertility = 0.1
-		}
-	}
-
 	tenet_sanctity_of_nature = {
 		icon = core_tenet_holytree
 
