@@ -14,9 +14,9 @@ function string:split(delimiter)
 end
 
 languages = arg[1]:split(",")
-finalstring = "speaks_sacred_language_trigger = {\n\tOR = {\n\t\tscope:faith = { has_doctrine = sacred_lang_none }"
+finalstring = "speaks_sacred_language_trigger = {\n\tOR = {\n\t\tfaith = { has_doctrine = sacred_lang_none }"
 for k,lang in pairs(languages) do
-	finalstring = finalstring .. "\n\t\tAND = {\n\t\t\tscope:faith = { has_doctrine = sacred_lang_" .. lang .. " }\n\t\t\tknows_language = language_" .. lang .. "\n\t\t}"
+	finalstring = finalstring .. "\n\t\tAND = {\n\t\t\tfaith = { has_doctrine = sacred_lang_" .. lang .. " }\n\t\t\tknows_language = language_" .. lang .. "\n\t\t}"
 end
 finalstring = finalstring .. "\n\t}\n}"
 print(finalstring)
