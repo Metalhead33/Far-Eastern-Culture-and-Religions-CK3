@@ -286,7 +286,7 @@ clothes = {
 				gene = gene_bs_bust
 				value = 1.0
 				template = bust_clothes						template = bust_clothes
-			}					}
+			}
 			morph = {
 				mode = modify_multiply
 				gene = gene_bs_body_shape

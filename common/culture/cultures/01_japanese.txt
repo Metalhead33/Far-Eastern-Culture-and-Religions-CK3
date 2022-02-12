@@ -8,8 +8,9 @@
 	martial_custom = martial_custom_male_only
 	traditions = {
 		tradition_bushido
-		tradition_mystical_ancestors
 		tradition_isolationist
+		tradition_ruling_caste
+		tradition_hereditary_hierarchy
 		tradition_poetry
 	}
 	

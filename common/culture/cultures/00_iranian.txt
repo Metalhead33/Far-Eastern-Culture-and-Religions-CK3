@@ -5,7 +5,7 @@ persian = {
 	
 	ethos = ethos_courtly
 	heritage = heritage_iranian
-	language = language_west_iranian
+	language = language_central_iranian
 	martial_custom = martial_custom_male_only
 	traditions = {
 		tradition_poetry
@@ -113,7 +113,7 @@ tajik = {
 	
 	ethos = ethos_spiritual
 	heritage = heritage_iranian
-	language = language_west_iranian
+	language = language_central_iranian
 	martial_custom = martial_custom_male_only
 	traditions = {
 		tradition_caravaneers
@@ -196,7 +196,7 @@ sogdian = {
 	
 	ethos = ethos_egalitarian
 	heritage = heritage_iranian
-	language = language_east_iranian
+	language = language_north_iranian
 	martial_custom = martial_custom_male_only
 	traditions = {
 		tradition_caravaneers
@@ -223,7 +223,7 @@ khwarezmian = {
 	
 	ethos = ethos_stoic
 	heritage = heritage_iranian
-	language = language_east_iranian
+	language = language_north_iranian
 	martial_custom = martial_custom_male_only
 	traditions = {
 		tradition_futuwaa

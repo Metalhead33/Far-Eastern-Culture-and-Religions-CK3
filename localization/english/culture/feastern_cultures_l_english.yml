@@ -1,4 +1,5 @@
 ﻿l_english:
+ culture_parameter_unlock_maa_samurai:0 "Can recruit [GetMaA('samurai').GetName] as [men_at_arms|E]"
  chinese_clothing_gfx:0 "Chinese"
  name_list_korean:0 "Korean"
  name_list_japanese:0 "Japanese"

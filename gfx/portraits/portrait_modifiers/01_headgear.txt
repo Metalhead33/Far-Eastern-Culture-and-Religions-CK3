@@ -4385,6 +4385,7 @@ headgear = {
 			}
 			modifier = {
 				add = 20
+				exists = this
 				highest_held_title_tier < tier_county
 				NOR = {
 					AND = {
@@ -4616,9 +4617,9 @@ headgear = {
 		}	
 		weight = {
 			base = 0
-			exists = this
 			modifier = {
 				add = 50
+				exists = this
 				highest_held_title_tier = tier_empire
 				NAND = {
 					has_trait = peasant_leader
