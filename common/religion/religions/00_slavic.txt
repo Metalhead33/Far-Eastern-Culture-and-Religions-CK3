@@ -38,6 +38,7 @@
 	doctrine = burial_doctrine
 	doctrine = moderation_doctrine
 	doctrine = spirit_remainder_doctrine
+	doctrine = sacred_lang_none
 
 	traits = {
 		virtues = { just gregarious honest }

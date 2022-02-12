@@ -51,7 +51,7 @@
 	doctrine = mercy_of_gods_doctrine
 	doctrine = cosmopolitan_doctrine
 	doctrine = carnd_doctrine_lust_shunned
-	
+	doctrine = sacred_lang_arabic
 	doctrine = moderation_doctrine
 
 	traits = {

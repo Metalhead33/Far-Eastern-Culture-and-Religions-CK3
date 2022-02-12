@@ -304,3 +304,73 @@ language_achenese = {
 	
 	color = achenese
 }
+language_avestan = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_avestan
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_avestan }
+			multiply = 10
+		}
+	}
+	
+	color = achenese
+}
+
+language_hebrew = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_hebrew
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_hebrew }
+			multiply = 10
+		}
+	}
+	
+	color = achenese
+}
+
+language_sanskrit = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_sanskrit
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_sanskrit }
+			multiply = 10
+		}
+	}
+	
+	color = achenese
+}
+language_coptic = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_coptic
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_coptic }
+			multiply = 10
+		}
+	}
+	
+	color = achenese
+}

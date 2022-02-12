@@ -39,6 +39,7 @@ christianity_religion = {
 	doctrine = carnd_doctrine_lust_shunned
 	
 	doctrine = moderation_doctrine
+	doctrine = sacred_lang_none
 
 	traits = {
 		virtues = { forgiving compassionate generous }
@@ -246,6 +247,7 @@ christianity_religion = {
 			doctrine = tenet_armed_pilgrimages
 			doctrine = tenet_monasticism
 			doctrine = judgement_doctrine
+			doctrine = sacred_lang_latin
 
 			holy_order_names = {
 				{ name = "holy_order_knights_templar" coat_of_arms = "ho_knights_templar" }
@@ -813,6 +815,7 @@ christianity_religion = {
 			doctrine = tenet_mendicant_preachers
 			doctrine = asceticism_doctrine
 			doctrine = jewish_syncretism_doctrine
+			doctrine = sacred_lang_aramaic
 
 		}
 
@@ -940,6 +943,7 @@ christianity_religion = {
 			doctrine = tenet_adaptive
 			doctrine = tenet_monasticism
 			doctrine = tenet_mendicant_preachers
+			doctrine = sacred_lang_aramaic
 
 			holy_order_names = {
 				{ name = "holy_order_order_of_saint_addai" }
@@ -986,6 +990,7 @@ christianity_religion = {
 			doctrine = tenet_ritual_cannibalism
 			doctrine = tenet_ritual_celebrations # was carnal exaltation
 			doctrine = tenet_esotericism
+			doctrine = sacred_lang_aramaic
 
 			#Unique Localization
 			localization = {
@@ -1079,6 +1084,7 @@ christianity_religion = {
 			doctrine = tenet_monasticism
 			doctrine = judgement_doctrine
 			doctrine = communal_identity_doctrine
+			doctrine = sacred_lang_latin
 
 
 			holy_order_names = {
@@ -1199,6 +1205,7 @@ christianity_religion = {
 			doctrine = tenet_pastoral_isolation
 			doctrine = tenet_monasticism
 			doctrine = strong_communal_identity_doctrine
+			doctrine = sacred_lang_slavonic
 
 			localization = {
 				#Represents the peculiar Bosnian ecclesiastic setup as best as possible.

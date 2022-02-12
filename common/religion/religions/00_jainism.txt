@@ -34,6 +34,7 @@
 	doctrine = reincarnation_doctrine
 	doctrine = asceticism_doctrine
 	doctrine = cremation_doctrine
+	doctrine = sacred_lang_sanskrit
 
 	traits = {
 		virtues = { calm compassionate honest }

@@ -37,6 +37,7 @@
 	doctrine = sky_burial_doctrine
 	doctrine = moderation_doctrine
 	doctrine = underworld_doctrine
+	doctrine = sacred_lang_none
 	
 	#Special Tolerance
 	doctrine = turanic_syncretism_doctrine

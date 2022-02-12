@@ -1,5 +1,4 @@
-﻿
-west_african_roog_religion = {
+﻿west_african_roog_religion = {
 	family = rf_pagan
 
 	doctrine = pagan_hostility_doctrine
@@ -37,6 +36,7 @@ west_african_roog_religion = {
 	doctrine = reincarnation_doctrine
 	doctrine = embalming_doctrine
 	doctrine = moderation_doctrine
+	doctrine = sacred_lang_none
 
 	traits = {
 		virtues = { brave just forgiving }

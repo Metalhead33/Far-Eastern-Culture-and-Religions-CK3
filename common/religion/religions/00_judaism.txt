@@ -31,6 +31,7 @@
 	doctrine = strong_communal_identity
 	doctrine = carnd_doctrine_lust_shunned
 	doctrine = moderation_doctrine
+	doctrine = sacred_lang_hebrew
 	
 	traits = {
 		virtues = { patient compassionate just }

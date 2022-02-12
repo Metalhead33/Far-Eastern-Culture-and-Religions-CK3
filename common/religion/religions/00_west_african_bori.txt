@@ -38,6 +38,7 @@ west_african_bori_religion = {
 	doctrine = burial_doctrine
 	doctrine = moderation_doctrine
 	doctrine = spirit_remainder_doctrine
+	doctrine = sacred_lang_none
 
 	traits = {
 		virtues = { humble brave honest }

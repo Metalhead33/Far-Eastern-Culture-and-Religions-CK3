@@ -36,6 +36,7 @@
 	doctrine = reincarnation_doctrine
 	doctrine = sky_burial_doctrine
 	doctrine = moderation_doctrine
+	doctrine = sacred_lang_tibetan
 	
 	traits = {
 		virtues = {

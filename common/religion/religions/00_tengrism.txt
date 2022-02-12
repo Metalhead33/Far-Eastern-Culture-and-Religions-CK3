@@ -37,6 +37,7 @@
 	
 	doctrine = moderation_doctrine
 	doctrine = judgement_doctrine
+	doctrine = sacred_lang_none
 
 	traits = {
 		virtues = { brave just honest }

@@ -29,6 +29,7 @@
 	doctrine = reincarnation_doctrine
 	doctrine = moderation_doctrine
 	doctrine = special_doctrine_is_mazdaic_faith
+	doctrine = sacred_lang_avestan
 	
 	traits = {
 		virtues = { honest just diligent }

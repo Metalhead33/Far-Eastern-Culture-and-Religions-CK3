@@ -38,6 +38,7 @@ waaqism_religion = {
 	doctrine = cremation_doctrine
 	doctrine = moderation_doctrine
 	doctrine = spirit_remainder_doctrine
+	doctrine = sacred_lang_none
 
 	traits = {
 		virtues = { brave just compassionate }

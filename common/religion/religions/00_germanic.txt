@@ -38,6 +38,7 @@
 	doctrine = cremation_doctrine
 	doctrine = moderation_doctrine
 	doctrine = spirit_realms_doctrine
+	doctrine = sacred_lang_none
 
 	traits = {
 		virtues = { brave wrathful vengeful poet one_eyed }

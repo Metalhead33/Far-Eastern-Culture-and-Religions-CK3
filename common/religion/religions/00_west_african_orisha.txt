@@ -37,6 +37,7 @@
 	
 	doctrine = embalming_doctrine
 	doctrine = moderation_doctrine
+	doctrine = sacred_lang_none
 
 	traits = {
 		virtues = { patient just brave }

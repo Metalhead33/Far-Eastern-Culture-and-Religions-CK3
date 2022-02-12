@@ -34,6 +34,7 @@
 	doctrine = pagan_syncretism_doctrine
 	doctrine = reincarnation_doctrine
 	doctrine = moderation_doctrine
+	doctrine = sacred_lang_sanskrit
 	
 	traits = {
 		virtues = {

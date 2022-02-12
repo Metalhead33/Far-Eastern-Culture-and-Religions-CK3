@@ -1,0 +1,62 @@
+learn_sacred_language_effect = {
+	if = {
+		limit = {
+			faith = { has_doctrine = sacred_lang_latin }
+		}
+		learn_language = language_latin
+	}
+	else_if = {
+		limit = {
+			faith = { has_doctrine = sacred_lang_greek }
+		}
+		learn_language = language_greek
+	}
+	else_if = {
+		limit = {
+			faith = { has_doctrine = sacred_lang_sanskrit }
+		}
+		learn_language = language_sanskrit
+	}
+	else_if = {
+		limit = {
+			faith = { has_doctrine = sacred_lang_hebrew }
+		}
+		learn_language = language_hebrew
+	}
+	else_if = {
+		limit = {
+			faith = { has_doctrine = sacred_lang_arabic }
+		}
+		learn_language = language_arabic
+	}
+	else_if = {
+		limit = {
+			faith = { has_doctrine = sacred_lang_avestan }
+		}
+		learn_language = language_avestan
+	}
+	else_if = {
+		limit = {
+			faith = { has_doctrine = sacred_lang_aramaic }
+		}
+		learn_language = language_aramaic
+	}
+	else_if = {
+		limit = {
+			faith = { has_doctrine = sacred_lang_coptic }
+		}
+		learn_language = language_coptic
+	}
+	else_if = {
+		limit = {
+			faith = { has_doctrine = sacred_lang_tibetan }
+		}
+		learn_language = language_tibetan
+	}
+	else_if = {
+		limit = {
+			faith = { has_doctrine = sacred_lang_slavonic }
+		}
+		learn_language = language_slavonic
+	}
+}

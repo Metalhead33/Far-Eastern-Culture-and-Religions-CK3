@@ -36,6 +36,7 @@
 	doctrine = cremation_doctrine
 	doctrine = moderation_doctrine
 	doctrine = judgement_doctrine
+	doctrine = sacred_lang_none
 	
 	#Special Tolerance
 	doctrine = hellenic_syncretism_doctrine

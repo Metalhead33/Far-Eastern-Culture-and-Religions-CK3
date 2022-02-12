@@ -1,0 +1,45 @@
+speaks_sacred_language_trigger = {
+	OR = {
+		faith = { has_doctrine = sacred_lang_none }
+		AND = {
+			faith = { has_doctrine = sacred_lang_latin }
+			knows_language = language_latin
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_greek }
+			knows_language = language_greek
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_sanskrit }
+			knows_language = language_sanskrit
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_hebrew }
+			knows_language = language_hebrew
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_arabic }
+			knows_language = language_arabic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_avestan }
+			knows_language = language_avestan
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_aramaic }
+			knows_language = language_aramaic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_coptic }
+			knows_language = language_coptic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_tibetan }
+			knows_language = language_tibetan
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_slavonic }
+			knows_language = language_slavonic
+		}
+	}
+}

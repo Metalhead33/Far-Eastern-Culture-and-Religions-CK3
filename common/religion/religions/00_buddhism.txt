@@ -35,6 +35,7 @@
 	doctrine = leaving_the_cycle_doctrine
 	doctrine = asceticism_doctrine
 	doctrine = cremation_doctrine
+	doctrine = sacred_lang_sanskrit
 	
 	traits = {
 		virtues = {
@@ -395,6 +396,7 @@
 			doctrine = tenet_dharmic_pacifism
 			doctrine = tenet_monasticism
 			doctrine = tenet_esotericism
+			doctrine = sacred_lang_tibetan
 
 			localization = {
 				ReligiousText = lamaism_religious_text
