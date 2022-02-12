@@ -1,0 +1,1002 @@
+﻿### Austronesian ###
+# Feudal
+baron_feudal_male_austronesian_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	heritages = { heritage_malay }
+}
+baron_feudal_female_austronesian_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	heritages = { heritage_malay }
+}
+barony_feudal_austronesian_group = {
+	type = title
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	heritages = { heritage_malay }
+}
+count_feudal_male_austronesian_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	heritages = { heritage_malay }
+}
+count_feudal_female_austronesian_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	heritages = { heritage_malay }
+}
+county_feudal_austronesian_group = {
+	type = title
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	heritages = { heritage_malay }
+}
+duke_feudal_male_austronesian_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	heritages = { heritage_malay }
+}
+duke_feudal_female_austronesian_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	heritages = { heritage_malay }
+}
+duchy_feudal_austronesian_group = {
+	type = title
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	heritages = { heritage_malay }
+}
+king_feudal_male_austronesian_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	heritages = { heritage_malay }
+}
+king_feudal_female_austronesian_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	heritages = { heritage_malay }
+}
+emperor_feudal_male_austronesian_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
+	heritages = { heritage_malay }
+}
+emperor_feudal_female_austronesian_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
+	heritages = { heritage_malay }
+}
+### Japanese ###
+# Feudal
+baron_feudal_male_japanese_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	name_lists = { name_list_japanese }
+}
+baron_feudal_female_japanese_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	name_lists = { name_list_japanese }
+}
+barony_feudal_japanese_group = {
+	type = title
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	name_lists = { name_list_japanese }
+}
+count_feudal_male_japanese_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	name_lists = { name_list_japanese }
+}
+count_feudal_female_japanese_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	name_lists = { name_list_japanese }
+}
+county_feudal_japanese_group = {
+	type = title
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	name_lists = { name_list_japanese }
+}
+duke_feudal_male_japanese_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	name_lists = { name_list_japanese }
+}
+duke_feudal_female_japanese_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	name_lists = { name_list_japanese }
+}
+duchy_feudal_japanese_group = {
+	type = title
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	name_lists = { name_list_japanese }
+}
+king_feudal_male_japanese_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	name_lists = { name_list_japanese }
+}
+king_feudal_female_japanese_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	name_lists = { name_list_japanese }
+}
+kingdom_feudal_japanese_group = {
+	type = title
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	name_lists = { name_list_japanese }
+}
+emperor_feudal_male_japanese_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
+	name_lists = { name_list_japanese }
+}
+emperor_feudal_female_japanese_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
+	name_lists = { name_list_japanese }
+}
+empire_feudal_japanese_group = {
+	type = title
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
+	name_lists = { name_list_japanese }
+}
+### Chinese ###
+# Feudal
+baron_feudal_male_han = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	name_lists = { name_list_han }
+}
+baron_feudal_female_han = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	name_lists = { name_list_han }
+}
+barony_feudal_han = {
+	type = title
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	name_lists = { name_list_han }
+}
+count_feudal_male_han = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	name_lists = { name_list_han }
+}
+count_feudal_female_han = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	name_lists = { name_list_han }
+}
+county_feudal_han = {
+	type = title
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	name_lists = { name_list_han }
+}
+duke_feudal_male_han = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	name_lists = { name_list_han }
+}
+duke_feudal_female_han = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	name_lists = { name_list_han }
+}
+duchy_feudal_han = {
+	type = title
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	name_lists = { name_list_han }
+}
+king_feudal_male_han = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	name_lists = { name_list_han }
+}
+king_feudal_female_han = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	name_lists = { name_list_han }
+}
+kingdom_feudal_han = {
+	type = title
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	name_lists = { name_list_han }
+}
+emperor_feudal_male_han = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
+	name_lists = { name_list_han }
+}
+emperor_feudal_female_han = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
+	name_lists = { name_list_han }
+}
+empire_feudal_han = {
+	type = title
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
+	name_lists = { name_list_han }
+}
+### Cantonese ###
+# Feudal
+baron_feudal_male_cantonese = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	name_lists = { name_list_cantonese }
+}
+baron_feudal_female_cantonese = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	name_lists = { name_list_cantonese }
+}
+barony_feudal_cantonese = {
+	type = title
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	name_lists = { name_list_cantonese }
+}
+count_feudal_male_cantonese = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	name_lists = { name_list_cantonese }
+}
+count_feudal_female_cantonese = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	name_lists = { name_list_cantonese }
+}
+county_feudal_cantonese = {
+	type = title
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	name_lists = { name_list_cantonese }
+}
+duke_feudal_male_cantonese = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	name_lists = { name_list_cantonese }
+}
+duke_feudal_female_cantonese = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	name_lists = { name_list_cantonese }
+}
+duchy_feudal_cantonese = {
+	type = title
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	name_lists = { name_list_cantonese }
+}
+king_feudal_male_cantonese = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	name_lists = { name_list_cantonese }
+}
+king_feudal_female_cantonese = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	name_lists = { name_list_cantonese }
+}
+kingdom_feudal_cantonese = {
+	type = title
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	name_lists = { name_list_cantonese }
+}
+emperor_feudal_male_cantonese = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
+	name_lists = { name_list_cantonese }
+}
+emperor_feudal_female_cantonese = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
+	name_lists = { name_list_cantonese }
+}
+empire_feudal_cantonese = {
+	type = title
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
+	name_lists = { name_list_cantonese }
+}
+### Vietnamese ###
+# Feudal
+baron_feudal_male_vietnamese = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	name_lists = { name_list_vietnamese }
+}
+baron_feudal_female_vietnamese = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	name_lists = { name_list_vietnamese }
+}
+barony_feudal_vietnamese = {
+	type = title
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	name_lists = { name_list_vietnamese }
+}
+count_feudal_male_vietnamese = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	name_lists = { name_list_vietnamese }
+}
+count_feudal_female_vietnamese = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	name_lists = { name_list_vietnamese }
+}
+county_feudal_vietnamese = {
+	type = title
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	name_lists = { name_list_vietnamese }
+}
+duke_feudal_male_vietnamese = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	name_lists = { name_list_vietnamese }
+}
+duke_feudal_female_vietnamese = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	name_lists = { name_list_vietnamese }
+}
+duchy_feudal_vietnamese = {
+	type = title
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	name_lists = { name_list_vietnamese }
+}
+king_feudal_male_vietnamese = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	name_lists = { name_list_vietnamese }
+}
+king_feudal_female_vietnamese = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	name_lists = { name_list_vietnamese }
+}
+kingdom_feudal_vietnamese = {
+	type = title
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	name_lists = { name_list_vietnamese }
+}
+emperor_feudal_male_vietnamese = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
+	name_lists = { name_list_vietnamese }
+}
+emperor_feudal_female_vietnamese = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
+	name_lists = { name_list_vietnamese }
+}
+empire_feudal_vietnamese = {
+	type = title
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
+	name_lists = { name_list_vietnamese }
+}
+### Korean ###
+# Feudal
+baron_feudal_male_korean_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	name_lists = { name_list_korean }
+}
+baron_feudal_female_korean_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	name_lists = { name_list_korean }
+}
+barony_feudal_korean_group = {
+	type = title
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	name_lists = { name_list_korean }
+}
+count_feudal_male_korean_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	name_lists = { name_list_korean }
+}
+count_feudal_female_korean_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	name_lists = { name_list_korean }
+}
+county_feudal_korean_group = {
+	type = title
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	name_lists = { name_list_korean }
+}
+duke_feudal_male_korean_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	name_lists = { name_list_korean }
+}
+duke_feudal_female_korean_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	name_lists = { name_list_korean }
+}
+duchy_feudal_korean_group = {
+	type = title
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	name_lists = { name_list_korean }
+}
+king_feudal_male_korean_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	name_lists = { name_list_korean }
+}
+king_feudal_female_korean_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	name_lists = { name_list_korean }
+}
+kingdom_feudal_korean_group = {
+	type = title
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	name_lists = { name_list_korean }
+}
+emperor_feudal_male_korean_group = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
+	name_lists = { name_list_korean }
+}
+emperor_feudal_female_korean_group = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
+	name_lists = { name_list_korean }
+}
+empire_feudal_korean_group = {
+	type = title
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
+	name_lists = { name_list_korean }
+}
+### Vietnamese ###
+# Feudal
+baron_feudal_male_khmer = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	name_lists = { name_list_khmer }
+}
+baron_feudal_female_khmer = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	name_lists = { name_list_khmer }
+}
+barony_feudal_khmer = {
+	type = title
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	name_lists = { name_list_khmer }
+}
+count_feudal_male_khmer = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	name_lists = { name_list_khmer }
+}
+count_feudal_female_khmer = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	name_lists = { name_list_khmer }
+}
+county_feudal_khmer = {
+	type = title
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	name_lists = { name_list_khmer }
+}
+duke_feudal_male_khmer = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	name_lists = { name_list_khmer }
+}
+duke_feudal_female_khmer = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	name_lists = { name_list_khmer }
+}
+duchy_feudal_khmer = {
+	type = title
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	name_lists = { name_list_khmer }
+}
+king_feudal_male_khmer = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	name_lists = { name_list_khmer }
+}
+king_feudal_female_khmer = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	name_lists = { name_list_khmer }
+}
+kingdom_feudal_khmer = {
+	type = title
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	name_lists = { name_list_khmer }
+}
+emperor_feudal_male_khmer = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
+	name_lists = { name_list_khmer }
+}
+emperor_feudal_female_khmer = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
+	name_lists = { name_list_khmer }
+}
+empire_feudal_khmer = {
+	type = title
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
+	name_lists = { name_list_khmer }
+}
+### Vietnamese ###
+# Feudal
+baron_feudal_male_thai = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	name_lists = { name_list_thai }
+}
+baron_feudal_female_thai = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	name_lists = { name_list_thai }
+}
+barony_feudal_thai = {
+	type = title
+	tier = barony
+	priority = 7
+	governments = { feudal_government }
+	name_lists = { name_list_thai }
+}
+count_feudal_male_thai = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	name_lists = { name_list_thai }
+}
+count_feudal_female_thai = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	name_lists = { name_list_thai }
+}
+county_feudal_thai = {
+	type = title
+	tier = county
+	priority = 18
+	governments = { feudal_government }
+	name_lists = { name_list_thai }
+}
+duke_feudal_male_thai = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	name_lists = { name_list_thai }
+}
+duke_feudal_female_thai = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	name_lists = { name_list_thai }
+}
+duchy_feudal_thai = {
+	type = title
+	tier = duchy
+	priority = 27
+	governments = { feudal_government }
+	name_lists = { name_list_thai }
+}
+king_feudal_male_thai = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	name_lists = { name_list_thai }
+}
+king_feudal_female_thai = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	name_lists = { name_list_thai }
+}
+kingdom_feudal_thai = {
+	type = title
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government }
+	name_lists = { name_list_thai }
+}
+emperor_feudal_male_thai = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
+	name_lists = { name_list_thai }
+}
+emperor_feudal_female_thai = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
+	name_lists = { name_list_thai }
+}
+empire_feudal_thai = {
+	type = title
+	tier = empire
+	priority = 102
+	governments = { feudal_government }
+	name_lists = { name_list_thai }
+}
