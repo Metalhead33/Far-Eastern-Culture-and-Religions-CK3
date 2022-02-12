@@ -7,6 +7,9 @@
 #	top_liege = { has_character_modifier = expelled_the_jews }
 #	}
 #}
+portrait_chinese_clothing_trigger = {
+    scope:culture = { has_graphical_culture = chinese_clothing_gfx }
+}
 jew_free_realm = {
     trigger_if = {
         limit = { is_independent_ruler = yes }
