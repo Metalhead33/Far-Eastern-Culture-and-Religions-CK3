@@ -13,10 +13,32 @@ function string:split(delimiter)
   return result
 end
 
-languages = arg[1]:split(",")
-finalstring = "speaks_sacred_language_trigger = {\n\tOR = {\n\t\tfaith = { has_doctrine = sacred_lang_none }"
-for k,lang in pairs(languages) do
-	finalstring = finalstring .. "\n\t\tAND = {\n\t\t\tfaith = { has_doctrine = sacred_lang_" .. lang .. " }\n\t\t\tknows_language = language_" .. lang .. "\n\t\t}"
+function triggers(languages)
+	local finalstring = "speaks_sacred_language_trigger = {\n\tOR = {\n\t\tfaith = { has_doctrine = sacred_lang_none }"
+	for k,lang in pairs(languages) do
+		finalstring = finalstring .. "\n\t\tAND = {\n\t\t\tfaith = { has_doctrine = sacred_lang_" .. lang .. " }\n\t\t\tknows_language = language_" .. lang .. "\n\t\t}"
+	end
+	finalstring = finalstring .. "\n\t}\n}"
+	return finalstring
 end
-finalstring = finalstring .. "\n\t}\n}"
-print(finalstring)
+
+function effects(languages)
+	local finalstring = "learn_sacred_language_effect = {"
+	for k,lang in pairs(languages) do
+		if k == 1 then
+		finalstring = finalstring .. "\n\tif = {\n\t\tlimit = {\n\t\t\tfaith = { has_doctrine = sacred_lang_" .. lang .. " }\n\t\t}\n\t\tlearn_language = language_" .. lang .. "\n\t}"
+		else
+		finalstring = finalstring .. "\n\telse_if = {\n\t\tlimit = {\n\t\t\tfaith = { has_doctrine = sacred_lang_" .. lang .. " }\n\t\t}\n\t\tlearn_language = language_" .. lang .. "\n\t}"
+		end
+	end
+	finalstring = finalstring .. "\n}"
+	return finalstring
+end
+
+langargs = arg[2]:split(",")
+
+if arg[1] == "triggers" then
+	print(triggers(langargs))
+elseif arg[1] == "effects" then
+	print(effects(langargs))
+end
