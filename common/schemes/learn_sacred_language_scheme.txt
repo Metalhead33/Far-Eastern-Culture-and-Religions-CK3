@@ -220,5 +220,5 @@
 			trigger_event = { on_action = learn_language_ongoing }
 		}
 	}
-	success_desc = "LEARN_LANGUAGE_SUCCESS_DESC"
+	success_desc = "LEARN_SACRED_LANGUAGE_SUCCESS_DESC"
 }
