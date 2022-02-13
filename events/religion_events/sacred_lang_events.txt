@@ -1,0 +1,61 @@
+﻿namespace = sacred_language
+
+# Give every priest their sacred language
+sacred_language.0001 = {
+    type = character_event
+	hidden = yes
+	
+	trigger = {
+		NOT = {
+			has_character_flag = fecr_sacrlang_seeded
+		}
+		is_alive = yes
+	}
+	
+	immediate = {
+		if = {
+			limit = { age >= 8 }
+			if = {
+				limit = {
+					OR = {
+						has_council_position = councillor_court_chaplain
+						has_trait = devoted
+						has_trait = theologian
+						has_trait = scholar
+						has_trait = mystic_1
+						has_trait = mystic_2
+						has_trait = mystic_3
+						is_theocratic_lessee = yes
+						AND = { is_ruler = yes has_government = theocracy_government }
+					}
+				}
+				learn_sacred_language_effect = ROOT
+			}
+			else_if = {
+				limit = {
+					AND = {
+						OR = {
+							has_trait = education_learning_1
+							has_trait = education_learning_2
+							has_trait = education_learning_3
+							has_trait = education_learning_4
+							has_trait = education_diplomacy_3
+							has_trait = education_diplomacy_4
+							has_trait = education_stewardship_4
+							is_ruler = yes
+						}
+						OR = {
+							has_trait = zealous
+							learning >= 10
+						}
+					}
+				}
+				random = {
+					chance = 50
+					learn_sacred_language_effect = ROOT
+				}
+			}
+		}
+		add_character_flag = fecr_sacrlang_seeded
+	}
+}

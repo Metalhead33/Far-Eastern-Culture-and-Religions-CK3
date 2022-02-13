@@ -1,0 +1,11 @@
+﻿learn_sacred_language_success = {
+	random_events = {
+		100 = sacred_learn_language_outcome.1
+	}
+}
+
+learn_sacred_language_failure = {
+	random_events = {
+		100 = sacred_learn_language_outcome.2
+	}
+}

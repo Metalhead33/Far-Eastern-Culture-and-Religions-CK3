@@ -38,7 +38,7 @@ function doctrlocs(langauges)
 	local finalstring = "l_english:"
 	for k,lang in pairs(langauges) do
 		finalstring = finalstring .. "\n sacred_lang_" .. lang .. "_name:0 \"$language_" .. lang .. "_name$\""
-		finalstring = finalstring .. "\n sacred_lang_" .. lang .. "_desc:0 \"Our faith's sacred language is [GetLanguage(\'language_".. lang .. "\').GetName] - it is the tongue in which all that is holy is to be written down and preached to the masses.\""
+		finalstring = finalstring .. "\n sacred_lang_" .. lang .. "_desc:0 \"Our faith's sacred [language|e] is $language_".. lang .. "_name$ - it is the tongue in which all that is holy is to be written down and preached to the masses.\""
 	end
 	return finalstring
 end

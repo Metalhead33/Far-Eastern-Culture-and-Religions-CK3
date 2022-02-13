@@ -1,0 +1,96 @@
+﻿namespace = sacred_learn_language_outcome
+
+######################
+# Positive Outcomes
+# 1000-1999
+######################
+
+# Success!
+sacred_learn_language_outcome.1 = {
+	type = character_event
+	title = learn_sacred_language_outcome.1.t
+	desc = learn_sacred_language_outcome.1.desc
+	theme = education
+	left_portrait = {
+		character = root
+		animation = happiness
+	}
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	option = {
+		name = learn_language_outcome.1000.a
+		learn_sacred_language_effect = ROOT	
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	
+	after = {
+		if = {
+			limit = {
+				culture = {
+					has_cultural_parameter = piety_from_language_schemes
+				}
+			}
+			add_piety = massive_piety_gain
+		}
+	}
+}
+
+# Failure
+sacred_learn_language_outcome.2 = {
+	type = character_event
+	title = learn_language_outcome.2000.t
+	desc = learn_language_outcome.2000.desc
+	theme = education
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	immediate = {
+		scope:target = {
+			save_scope_as = target
+		}
+		scope:owner = {
+			save_scope_as = owner
+		}
+		every_parent = {
+			limit = {
+				is_ai = no
+			}
+			send_interface_toast = {
+				title = child_learned_language_title
+				left_icon = scope:owner
+				right_icon = scope:target
+				custom_tooltip = child_learned_language_desc
+			}
+		}
+	}
+
+	option = {
+		name = learn_language_outcome.2000.a
+		scope:scheme = {
+			end_scheme = yes
+		}
+	}
+
+	option = {
+		name = learn_language_outcome.2000.b
+		add_stress = massive_stress_gain
+		custom_tooltip = scheme_loses_half_progress
+		hidden_effect = {
+			scope:scheme = {
+				add_scheme_progress = -5
+			}
+		}
+	}
+}

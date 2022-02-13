@@ -9,6 +9,9 @@
 		# In minimum good standing with faith
 		NOT = { has_trait = excommunicated }
 
+		# Speaks the sacred langauge
+		speaks_sacred_language_trigger = yes
+		
 		# Correct gender
 		scope:base.faith = { has_allowed_gender_for_clergy = root }
 		
@@ -78,6 +81,7 @@ pool_theocratic_succession = {
 		is_married = no
 		is_betrothed = no
 		NOT = { has_trait = excommunicated }
+		speaks_sacred_language_trigger = yes
 	}
 	
 	character_score = {

@@ -1,0 +1,86 @@
+﻿learn_sacred_language_interaction = {
+	icon = icon_culture
+	category = interaction_category_friendly
+	common_interaction = yes
+
+	send_name = START_SCHEME
+
+	interface_priority = 48
+	scheme = learn_sacred_language
+	ignores_pending_interaction_block = yes
+
+	ai_targets = {
+		ai_recipients = self
+	}
+	ai_frequency = 60
+
+	is_shown = {
+		NOT = { scope:actor = { speaks_sacred_language_trigger = yes } }
+		scope:recipient = scope:actor
+	}
+
+	is_valid_showing_failures_only = {
+		NOT = { scope:actor = { speaks_sacred_language_trigger = yes } }
+		scope:recipient = scope:actor
+	}
+
+	desc = scheme_interaction_tt_learn_sacred_language_approved
+
+	on_accept = {
+		hidden_effect = {
+			scope:actor = {
+				send_interface_toast = {
+					title = learn_sacred_language_interaction_notification
+
+					left_icon = scope:actor					
+					right_icon = scope:recipient
+
+					start_scheme = {
+						type = learn_sacred_language
+						target = scope:recipient
+					}
+				}
+			}
+		}
+	}
+	
+	ai_potential = {
+		primary_title.tier >= tier_county
+		NOR = {
+			has_trait = lazy
+			has_trait = paranoid
+			any_scheme = {
+				OR = {
+					scheme_type = befriend
+					scheme_type = sway
+					scheme_type = seduce
+					scheme_type = courting
+					scheme_type = elope
+					scheme_type = learn_language
+				}
+			}
+			primary_title = {
+				is_mercenary_company = yes
+			}
+		}
+	}
+	
+	auto_accept = yes
+	
+	ai_will_do = {
+		base = 0
+		
+		modifier = { # Focus on befriending if that's the path you've chosen
+			add = 50
+			scope:actor = {
+				has_trait = zealous
+			}
+		}
+		
+		modifier = {
+			factor = 0
+			
+			scope:actor.num_of_known_languages >= language_soft_cap
+		}
+	}
+}
