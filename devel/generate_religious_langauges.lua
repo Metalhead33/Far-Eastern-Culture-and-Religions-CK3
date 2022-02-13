@@ -34,6 +34,15 @@ function effects(languages)
 	finalstring = finalstring .. "\n}"
 	return finalstring
 end
+function doctrlocs(langauges)
+	local finalstring = "l_english:"
+	for k,lang in pairs(langauges) do
+		finalstring = finalstring .. "\n sacred_lang_" .. lang .. "_name:0 \"$language_" .. lang .. "_name$\""
+		finalstring = finalstring .. "\n sacred_lang_" .. lang .. "_desc:0 \"Our faith's sacred language is [GetLanguage(\'language_".. lang .. "\').GetName] - it is the tongue in which all that is holy is to be written down and preached to the masses.\""
+	end
+	return finalstring
+end
+
 
 langargs = arg[2]:split(",")
 
@@ -41,4 +50,6 @@ if arg[1] == "triggers" then
 	print(triggers(langargs))
 elseif arg[1] == "effects" then
 	print(effects(langargs))
+elseif arg[1] == "doctrlocs" then
+	print(doctrlocs(langargs))
 end

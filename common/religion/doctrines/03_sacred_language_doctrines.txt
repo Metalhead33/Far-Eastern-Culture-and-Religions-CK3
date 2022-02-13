@@ -91,6 +91,17 @@ doctrine_sacred_language = {
 			}
 		}
 	}
+	sacred_lang_slavonic = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+		}
+		is_shown = {
+			OR = {
+				religion_tag = christianity_religion
+				religion_tag = slavic_religion
+			}
+		}
+	}
 	sacred_lang_tibetan = {
 		piety_cost = {
 			value = faith_tenet_cost_low

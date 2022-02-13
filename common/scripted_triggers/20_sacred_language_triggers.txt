@@ -1,4 +1,4 @@
-speaks_sacred_language_trigger = {
+﻿speaks_sacred_language_trigger = {
 	OR = {
 		faith = { has_doctrine = sacred_lang_none }
 		AND = {

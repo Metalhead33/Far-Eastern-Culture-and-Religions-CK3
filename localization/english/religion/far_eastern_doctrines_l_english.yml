@@ -71,6 +71,11 @@
  MUST_HAVE_TENET_PASTORAL_ISOLATION:0 "Requires the [core_tenet|E] [GetFaithDoctrine('tenet_pastoral_isolation').GetName( GetPlayer.GetFaith )]"
  MUST_HAVE_TENET_PENTARCHY:0 "Requires the [core_tenet|E] [GetFaithDoctrine('tenet_pentarchy').GetName( GetPlayer.GetFaith )]"
  
+ # Language
+ doctrine_sacred_language_name:0 "Sacred Language"
+ doctrine_sacred_language_desc:0 "In what tongue, are our holy scriptures written? In what tongue, do we spread the word to the masses?"
+ sacred_lang_none_name:0 "Vernacular"
+ sacred_lang_none_desc:0 "We refuse to keep the true word away from the masses - we preach in our vernacular, and we either transmit the faith through oral tradition, or if we have a written holy scripture, we make it our priority to translate it to the language of the masses."
  # Syncretism doctrines
  doctrine_syncretism_name:0 "Syncretism & Orthodoxy"
  doctrine_syncretism_desc:0 "Do we keep to ourselves, or do we open ourselves up for dialogue with the heathens?"

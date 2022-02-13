@@ -1,4 +1,4 @@
-learn_sacred_language_effect = {
+﻿learn_sacred_language_effect = {
 	if = {
 		limit = {
 			faith = { has_doctrine = sacred_lang_latin }
