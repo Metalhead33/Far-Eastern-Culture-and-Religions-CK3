@@ -148,7 +148,7 @@
 ##d_gondar ###################################
 ###c_dembiya
 8312 = {	#GONDAR
-	culture = ethiopian
+	culture = beta_israeli
 	religion = haymanot
 	holding = castle_holding
 }
@@ -216,7 +216,7 @@
 
 ###c_gafat
 8366 = {	#GAFAT
-	culture = ethiopian
+	culture = beta_israeli
 	religion = haymanot
 	holding = tribal_holding
 	1066.1.1 = {
@@ -229,7 +229,7 @@
 
 ###c_agaw_meder
 8371 = {	#AGAW_MEDER
-	culture = ethiopian
+	culture = beta_israeli
 	religion = haymanot
 	holding = tribal_holding
 	1066.1.1 = {
