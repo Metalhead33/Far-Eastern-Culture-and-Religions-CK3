@@ -26,16 +26,7 @@ jewish_courtier.0001 = {
 			limit = { NOT = { exists = scope:new_courtier } }
 			if = {
 				limit = { 
-					root = {
-						capital_province = {
-							OR = {
-								AND = {	geographical_region = world_europe_west
-										NOT = { geographical_region = world_europe_west_iberia } }
-								geographical_region = world_europe_north
-								geographical_region = world_europe_east
-							}
-						}
-					}
+					root = { has_ashkenazim = yes }
 				}
 				create_character = {
 					employer = root
@@ -43,20 +34,9 @@ jewish_courtier.0001 = {
 					save_scope_as = new_courtier
 				}
 			}
-			if = {
+			else_if = {
 				limit = { 
-					root = {
-						capital_province = {
-							OR = {
-							geographical_region = world_europe_west_iberia
-							geographical_region = world_europe_south
-							geographical_region = world_asia_minor
-							geographical_region = world_middle_east_persia
-							geographical_region = world_middle_east
-							geographical_region = world_africa_north
-							}
-						}
-					}
+					root = { has_sephardim = yes }
 				}
 				create_character = {
 					employer = root
@@ -64,17 +44,43 @@ jewish_courtier.0001 = {
 					save_scope_as = new_courtier
 				}
 			}
-			if = {
+			else_if = {
 				limit = { 
-					root = {
-						capital_province = {
-							geographical_region = ghw_region_khotan
-						}
-					}
+					root = { has_kaifeng = yes }
 				}
 				create_character = {
 					employer = root
 					template = kaifeng_intrigue_character
+					save_scope_as = new_courtier
+				}
+			}
+			else_if = {
+				limit = { 
+					root = { has_mizrahim = yes }
+				}
+				create_character = {
+					employer = root
+					template = mizrahi_intrigue_character
+					save_scope_as = new_courtier
+				}
+			}
+			else_if = {
+				limit = { 
+					root = { has_radhanites = yes }
+				}
+				create_character = {
+					employer = root
+					template = radhanite_intrigue_character
+					save_scope_as = new_courtier
+				}
+			}
+			else_if = {
+				limit = { 
+					root = { has_kochinim = yes }
+				}
+				create_character = {
+					employer = root
+					template = kochinim_intrigue_character
 					save_scope_as = new_courtier
 				}
 			}
@@ -83,7 +89,7 @@ jewish_courtier.0001 = {
 			limit = { NOT = { exists = scope:new_courtier } }
 			create_character = {
 				employer = root
-				template = sephardi_intrigue_character
+				template = radhanite_intrigue_character
 				save_scope_as = new_courtier
 			}
 			}
@@ -160,16 +166,7 @@ jewish_courtier.0002 = {
 			limit = { NOT = { exists = scope:new_courtier } }
 			if = {
 				limit = { 
-					root = {
-						capital_province = {
-							OR = {
-								AND = {	geographical_region = world_europe_west
-										NOT = { geographical_region = world_europe_west_iberia } }
-								geographical_region = world_europe_north
-								geographical_region = world_europe_east
-							}
-						}
-					}
+					root = { has_ashkenazim = yes }
 				}
 				create_character = {
 					employer = root
@@ -177,20 +174,9 @@ jewish_courtier.0002 = {
 					save_scope_as = new_courtier
 				}
 			}
-			if = {
+			else_if = {
 				limit = { 
-					root = {
-						capital_province = {
-							OR = {
-							geographical_region = world_europe_west_iberia
-							geographical_region = world_europe_south
-							geographical_region = world_asia_minor
-							geographical_region = world_middle_east_persia
-							geographical_region = world_middle_east
-							geographical_region = world_africa_north
-							}
-						}
-					}
+					root = { has_sephardim = yes }
 				}
 				create_character = {
 					employer = root
@@ -198,17 +184,43 @@ jewish_courtier.0002 = {
 					save_scope_as = new_courtier
 				}
 			}
-			if = {
+			else_if = {
 				limit = { 
-					root = {
-						capital_province = {
-							geographical_region = ghw_region_khotan
-						}
-					}
+					root = { has_kaifeng = yes }
 				}
 				create_character = {
 					employer = root
 					template = kaifeng_steward_character
+					save_scope_as = new_courtier
+				}
+			}
+			else_if = {
+				limit = { 
+					root = { has_mizrahim = yes }
+				}
+				create_character = {
+					employer = root
+					template = mizrahi_steward_character
+					save_scope_as = new_courtier
+				}
+			}
+			else_if = {
+				limit = { 
+					root = { has_radhanites = yes }
+				}
+				create_character = {
+					employer = root
+					template = radhanite_steward_character
+					save_scope_as = new_courtier
+				}
+			}
+			else_if = {
+				limit = { 
+					root = { has_kochinim = yes }
+				}
+				create_character = {
+					employer = root
+					template = kochinim_steward_character
 					save_scope_as = new_courtier
 				}
 			}
@@ -217,7 +229,7 @@ jewish_courtier.0002 = {
 			limit = { NOT = { exists = scope:new_courtier } }
 			create_character = {
 				employer = root
-				template = sephardi_steward_character
+				template = radhanite_steward_character
 				save_scope_as = new_courtier
 			}
 			}
@@ -294,16 +306,7 @@ jewish_courtier.0003 = {
 			limit = { NOT = { exists = scope:new_courtier } }
 			if = {
 				limit = { 
-					root = {
-						capital_province = {
-							OR = {
-								AND = {	geographical_region = world_europe_west
-										NOT = { geographical_region = world_europe_west_iberia } }
-								geographical_region = world_europe_north
-								geographical_region = world_europe_east
-							}
-						}
-					}
+					root = { has_ashkenazim = yes }
 				}
 				create_character = {
 					employer = root
@@ -311,20 +314,9 @@ jewish_courtier.0003 = {
 					save_scope_as = new_courtier
 				}
 			}
-			if = {
+			else_if = {
 				limit = { 
-					root = {
-						capital_province = {
-							OR = {
-							geographical_region = world_europe_west_iberia
-							geographical_region = world_europe_south
-							geographical_region = world_asia_minor
-							geographical_region = world_middle_east_persia
-							geographical_region = world_middle_east
-							geographical_region = world_africa_north
-							}
-						}
-					}
+						root = { has_sephardim = yes }
 				}
 				create_character = {
 					employer = root
@@ -332,17 +324,43 @@ jewish_courtier.0003 = {
 					save_scope_as = new_courtier
 				}
 			}
-			if = {
+			else_if = {
 				limit = { 
-					root = {
-						capital_province = {
-							geographical_region = ghw_region_khotan
-						}
-					}
+					root = { has_kaifeng = yes }
 				}
 				create_character = {
 					employer = root
 					template = kaifeng_diplomat_character
+					save_scope_as = new_courtier
+				}
+			}
+			else_if = {
+				limit = { 
+					root = { has_mizrahim = yes }
+				}
+				create_character = {
+					employer = root
+					template = mizrahi_diplomat_character
+					save_scope_as = new_courtier
+				}
+			}
+			else_if = {
+				limit = { 
+					root = { has_radhanites = yes }
+				}
+				create_character = {
+					employer = root
+					template = radhanite_diplomat_character
+					save_scope_as = new_courtier
+				}
+			}
+			else_if = {
+				limit = { 
+					root = { has_kochinim = yes }
+				}
+				create_character = {
+					employer = root
+					template = kochinim_diplomat_character
 					save_scope_as = new_courtier
 				}
 			}
@@ -351,7 +369,7 @@ jewish_courtier.0003 = {
 			limit = { NOT = { exists = scope:new_courtier } }
 			create_character = {
 				employer = root
-				template = sephardi_diplomat_character
+				template = radhanite_diplomat_character
 				save_scope_as = new_courtier
 			}
 			}

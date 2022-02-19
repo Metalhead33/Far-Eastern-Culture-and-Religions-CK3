@@ -1,4 +1,62 @@
-﻿ashkenazi = {
+﻿mizrahi = {
+
+	ethos = ethos_communal
+	heritage = heritage_israelite
+	language = language_aramaic
+	martial_custom = martial_custom_male_only	
+	traditions = {
+		tradition_diasporic
+		tradition_philosopher_culture
+		tradition_maritime_mercantilism
+		tradition_xenophilic
+		tradition_mobile_guards
+	}
+	
+	color = { 0.6 0.2 0.7 }
+
+	name_list = name_list_radhanite
+
+	coa_gfx = { israelite_group_coa_gfx } 
+	building_gfx = { mena_building_gfx } 
+	clothing_gfx = { mena_clothing_gfx }
+	unit_gfx = { mena_unit_gfx } 	
+
+	ethnicities = {
+		10 = arab
+	}
+}
+
+sephardi = {
+	color = { 0.7 0.2 0.7 }
+	
+	created = 135.1.1
+	parents = { mizrahi }
+	
+	ethos = ethos_communal
+	heritage = heritage_israelite
+	language = language_iberian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_diasporic
+		tradition_caravaneers
+		tradition_philosopher_culture
+		tradition_maritime_mercantilism
+		tradition_mobile_guards
+	}
+	
+	name_list = name_list_sephardi
+	
+	coa_gfx = { israelite_group_coa_gfx }
+	building_gfx = { mena_building_gfx }
+	clothing_gfx = { byzantine_clothing_gfx }
+	unit_gfx = { mena_unit_gfx }
+	
+	ethnicities = {
+		10 = arab
+	}
+}
+
+ashkenazi = {
 	color = ashkenazi
 	
 	created = 700.1.1
@@ -28,41 +86,13 @@
 	}
 }
 
-sephardi = {
-	color = { 0.7 0.2 0.7 }
-	
-	created = 135.1.1
-	parents = { radhanite }
-	
-	ethos = ethos_communal
-	heritage = heritage_israelite
-	language = language_iberian
-	martial_custom = martial_custom_male_only
-	traditions = {
-		tradition_diasporic
-		tradition_caravaneers
-		tradition_philosopher_culture
-		tradition_maritime_mercantilism
-		tradition_mobile_guards
-	}
-	
-	name_list = name_list_sephardi
-	
-	coa_gfx = { israelite_group_coa_gfx }
-	building_gfx = { mena_building_gfx }
-	clothing_gfx = { byzantine_clothing_gfx }
-	unit_gfx = { mena_unit_gfx }
-	
-	ethnicities = {
-		10 = arab
-	}
-}
-
 radhanite = {
 
+	created = 476.1.1
+	parents = { mizrahi }
 	ethos = ethos_egalitarian
 	heritage = heritage_israelite
-	language = language_aramaic
+	language = language_arabic
 	martial_custom = martial_custom_male_only	
 	traditions = {
 		tradition_diasporic
@@ -87,7 +117,7 @@ radhanite = {
 }
 kochinim = {
 
-	parents = { radhanite tamil }
+	parents = { mizrahi tamil }
 	created = 52.1.1
 
 	ethos = ethos_communal
@@ -114,6 +144,36 @@ kochinim = {
 		10 = south_indian
 	}
 }
+beta_israeli = {
+
+	parents = { mizrahi ethiopian }
+	created = 52.1.1
+
+	ethos = ethos_spiritual
+	heritage = heritage_israelite
+	language = language_ethiopic
+	martial_custom = martial_custom_male_only	
+	traditions = {
+		tradition_fervent_temple_builders
+		tradition_zealous_people
+		tradition_isolationist
+		tradition_horn_mountain_skirmishing
+	}
+	
+	color = { 0.5 0.2 0.4 }
+
+	name_list = name_list_radhanite
+
+	coa_gfx = { israelite_group_coa_gfx } 
+	building_gfx = { african_building_gfx mena_building_gfx }
+	clothing_gfx = { mena_clothing_gfx }
+	unit_gfx = { mena_unit_gfx }
+
+	ethnicities = {
+		10 = east_african
+	}
+}
+
 kaifeng_jew = {
 
 	parents = { radhanite han }
@@ -126,8 +186,7 @@ kaifeng_jew = {
 		tradition_diasporic
 		tradition_philosopher_culture
 		tradition_faith_bound
-		tradition_forbearing
-		tradition_mobile_guards
+		tradition_court_eunuchs
 	}
 	
 	color = kaifeng_jew

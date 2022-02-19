@@ -40,7 +40,7 @@
 	doctrine = cremation_doctrine
 	doctrine = moderation_doctrine
 	doctrine = spirit_remainder_doctrine
-	doctrine = sacred_lang_none
+	doctrine = sacred_lang_hebrew
 
 	traits = {
 		virtues = { brave cynical }
