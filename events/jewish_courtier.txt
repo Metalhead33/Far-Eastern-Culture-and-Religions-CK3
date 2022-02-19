@@ -89,6 +89,7 @@ jewish_courtier.0001 = {
 			}
 			scope:new_courtier = {
 				set_to_lowborn = yes
+				learn_language_of_culture = ROOT.culture
 			}
 		}
 		}
@@ -222,6 +223,7 @@ jewish_courtier.0002 = {
 			}
 			scope:new_courtier = {
 				set_to_lowborn = yes
+				learn_language_of_culture = ROOT.culture
 			}
 		}
 		}
@@ -355,6 +357,7 @@ jewish_courtier.0003 = {
 			}
 			scope:new_courtier = {
 				set_to_lowborn = yes
+				learn_language_of_culture = ROOT.culture
 			}
 		}
 		}
