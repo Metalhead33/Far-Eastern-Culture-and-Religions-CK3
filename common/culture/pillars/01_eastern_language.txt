@@ -1,4 +1,21 @@
-﻿language_west_iranian = {
+﻿language_ugric = {
+	type = language
+	is_shown = {
+		language_is_shown_trigger = {
+			LANGUAGE = language_ugric
+		}
+	}
+	ai_will_do = {
+		value = 10
+		if = {
+			limit = { has_cultural_pillar = language_ugric }
+			multiply = 10
+		}
+	}
+	
+	color = hungarian
+}
+language_west_iranian = {
 	type = language
 	is_shown = {
 		language_is_shown_trigger = {

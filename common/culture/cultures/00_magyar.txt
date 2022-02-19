@@ -3,7 +3,7 @@
 
 	ethos = ethos_bellicose
 	heritage = heritage_magyar
-	language = language_magyar
+	language = language_ugric
 	martial_custom = martial_custom_male_only
 	traditions = {
 		tradition_tribe_unity
@@ -33,7 +33,7 @@ hungarian = {
 	
 	ethos = ethos_egalitarian
 	heritage = heritage_magyar
-	language = language_magyar
+	language = language_ugric
 	martial_custom = martial_custom_male_only
 	traditions = {
 		tradition_xenophilic
