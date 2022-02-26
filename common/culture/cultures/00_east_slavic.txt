@@ -8,7 +8,7 @@
 	traditions = {
 		tradition_druzhina
 		tradition_mendicant_mystics
-		tradition_sauna
+		tradition_stand_and_fight
 		tradition_sacred_groves
 	}
 	
@@ -35,7 +35,7 @@ ilmenian = {
 	martial_custom = martial_custom_male_only
 	traditions = {
 		tradition_hit_and_run
-		tradition_sauna
+		tradition_stand_and_fight
 		tradition_forest_folk
 		tradition_druzhina
 	}
@@ -65,7 +65,7 @@ severian = {
 		tradition_forest_folk
 		tradition_druzhina
 		tradition_sacred_groves
-		tradition_sauna
+		tradition_stand_and_fight
 	}
 	
 	name_list = name_list_severian
