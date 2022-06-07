@@ -524,6 +524,33 @@ christianity_religion = {
 				ReligiousHeadTitleName = apostolic_religious_head_title_name
 			}
 		}
+		
+		conversos = {
+			color = { 0.4 0.5 0.8 }	
+			icon = conversos	
+			religious_head = k_papal_state	
+				
+			holy_site = rome	
+			holy_site = cordoba	
+			holy_site = jerusalem	
+			holy_site = alexandria	
+			holy_site = sinai	
+			# Tenets	
+			doctrine = tenet_communion	
+			doctrine = tenet_rite
+			doctrine = tenet_monasticism
+			doctrine = jewish_syncretism_doctrine
+			doctrine = communal_identity_doctrine
+			# Main Group	
+			doctrine = doctrine_pluralism_pluralistic
+			#Crimes	
+			doctrine = doctrine_adultery_men_crime	
+			doctrine = doctrine_adultery_women_crime	
+			doctrine = doctrine_kinslaying_extended_family_crime
+			doctrine = judgement_doctrine
+			#Special Tolerance
+			doctrine = christian_roman_doctrine
+		}
 
 		cathar = {
 			color = { 0.5 0.5 0.9 }
@@ -1079,8 +1106,9 @@ christianity_religion = {
 			doctrine = doctrine_clerical_marriage_allowed
 
 			#Tenets
+			religious_head = k_papal_state
 			doctrine = tenet_vows_of_poverty
-			doctrine = tenet_pastoral_isolation
+			doctrine = tenet_rite
 			doctrine = tenet_monasticism
 			doctrine = judgement_doctrine
 			doctrine = communal_identity_doctrine
@@ -1206,6 +1234,7 @@ christianity_religion = {
 			doctrine = tenet_monasticism
 			doctrine = strong_communal_identity_doctrine
 			doctrine = sacred_lang_slavonic
+			doctrine = christian_wacky_doctrine
 
 			localization = {
 				#Represents the peculiar Bosnian ecclesiastic setup as best as possible.
@@ -1234,6 +1263,60 @@ christianity_religion = {
 				BishopNeuterPlural = bosnian_bishop_neuterplural
 			}
 		}
+		
+		mozarabic_church = {	
+			color = { 124 255 142 }	
+			icon = fp2_mozarabic	
+			graphical_faith = "catholic_gfx"	
+			religious_head = k_papal_state	
+				
+			holy_site = jerusalem	
+			holy_site = rome	
+			holy_site = santiago	
+			holy_site = toledo_mozarabic	
+			holy_site = cordoba	
+			#Special Tolerance	
+			doctrine = special_doctrine_ecumenical_christian	
+			#Main Group	
+			doctrine = doctrine_pluralism_pluralistic	
+			#Crimes	
+			# More used to Andalusian-Muwalladi norms than some Catholic ones.	
+			doctrine = doctrine_homosexuality_shunned	
+			doctrine = doctrine_deviancy_shunned
+			#Clerical Functions	
+			doctrine = doctrine_clerical_function_alms_and_pacification	
+				
+			#Tenets	
+			doctrine = christian_roman_doctrine
+			doctrine = tenet_adaptive	
+			doctrine = tenet_communion	
+			doctrine = tenet_rite	
+		}	
+		adoptionist = {	
+			color = { 255 51 51 }	
+			icon = fp2_adoptionist	
+			graphical_faith = "catholic_gfx"	
+				
+			holy_site = lyon	
+			holy_site = rome	
+			holy_site = santiago	
+			holy_site = toledo_mozarabic	
+			holy_site = carthage_adoptionist
+			#Main Group	
+			doctrine = christian_wacky_doctrine
+			doctrine = doctrine_pluralism_fundamentalist	
+				
+			#Tenets	
+			doctrine = tenet_religious_legal_pronouncements	
+			doctrine = tenet_communion	
+			doctrine = tenet_literalism	
+			localization = {	
+				# Since the Elipandic school wouldn't want their own papacy, we restrict Adoptionists to an arch-bishop.	
+				ReligiousHeadName = adoptionist_religious_head_title	
+				ReligiousHeadTitleName = adoptionist_religious_head_title_name	
+			}
+		}
+		
 		carnd_madeleinist = {
 			color = { 245 111 73 }
 			icon = carnd_madeleinist_1

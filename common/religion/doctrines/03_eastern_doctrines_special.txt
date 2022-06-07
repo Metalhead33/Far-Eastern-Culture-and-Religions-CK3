@@ -605,6 +605,7 @@ doctrine_syncretism = {
 			#For loc:
 			is_christian_faith_bilateral_loc_override = 2
 			christian_syncretic_actor_opinion_active = yes
+			can_use_christian_artefacts = yes
 			opinion_of_christian_syncretic_recipient_opinion_active = 30 #Sync this to syncretic_mutual_opinion_bonus_value
 		}
 
@@ -688,6 +689,7 @@ doctrine_syncretism = {
 			hostility_override_special_doctrine_is_islamic_faith = 2
 			islamic_syncretic_actor_opinion_active = yes
 			opinion_of_islamic_syncretic_recipient_opinion_active = 30 #Sync this to syncretic_mutual_opinion_bonus_value
+			can_use_islamic_artefacts = yes
 		}
 
 		traits = {
@@ -727,6 +729,7 @@ doctrine_syncretism = {
 		parameters = {
 			hostility_override_special_doctrine_is_jewish_faith = 2
 			jewish_syncretic_actor_opinion_active = yes
+			can_use_jewish_artefacts = yes
 			opinion_of_jewish_syncretic_recipient_opinion_active = 30 #Sync this to syncretic_mutual_opinion_bonus_value
 		}
 
