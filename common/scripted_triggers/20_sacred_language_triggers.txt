@@ -2,44 +2,332 @@
 	OR = {
 		faith = { has_doctrine = sacred_lang_none }
 		AND = {
-			faith = { has_doctrine = sacred_lang_latin }
-			knows_language = language_latin
+			faith = { has_doctrine = sacred_lang_achenese }
+			knows_language = language_achenese
 		}
 		AND = {
-			faith = { has_doctrine = sacred_lang_greek }
-			knows_language = language_greek
+			faith = { has_doctrine = sacred_lang_ainu }
+			knows_language = language_ainu
 		}
 		AND = {
-			faith = { has_doctrine = sacred_lang_sanskrit }
-			knows_language = language_sanskrit
-		}
-		AND = {
-			faith = { has_doctrine = sacred_lang_hebrew }
-			knows_language = language_hebrew
+			faith = { has_doctrine = sacred_lang_anglic }
+			knows_language = language_anglic
 		}
 		AND = {
 			faith = { has_doctrine = sacred_lang_arabic }
 			knows_language = language_arabic
 		}
 		AND = {
+			faith = { has_doctrine = sacred_lang_aramaic }
+			knows_language = language_aramaic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_armenian }
+			knows_language = language_armenian
+		}
+		AND = {
 			faith = { has_doctrine = sacred_lang_avestan }
 			knows_language = language_avestan
 		}
 		AND = {
-			faith = { has_doctrine = sacred_lang_aramaic }
-			knows_language = language_aramaic
+			faith = { has_doctrine = sacred_lang_ayneha }
+			knows_language = language_ayneha
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_baltic }
+			knows_language = language_baltic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_basque }
+			knows_language = language_basque
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_berber }
+			knows_language = language_berber
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_brythonic }
+			knows_language = language_brythonic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_burmese }
+			knows_language = language_burmese
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_central_germanic }
+			knows_language = language_central_germanic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_central_iranian }
+			knows_language = language_central_iranian
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_chadic }
+			knows_language = language_chadic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_cham }
+			knows_language = language_cham
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_chinese }
+			knows_language = language_chinese
 		}
 		AND = {
 			faith = { has_doctrine = sacred_lang_coptic }
 			knows_language = language_coptic
 		}
 		AND = {
-			faith = { has_doctrine = sacred_lang_tibetan }
-			knows_language = language_tibetan
+			faith = { has_doctrine = sacred_lang_cushitic }
+			knows_language = language_cushitic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_czech_slovak }
+			knows_language = language_czech_slovak
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_dutch }
+			knows_language = language_dutch
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_east_iranian }
+			knows_language = language_east_iranian
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_east_slavic }
+			knows_language = language_east_slavic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_ethiopic }
+			knows_language = language_ethiopic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_finnic }
+			knows_language = language_finnic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_frankish }
+			knows_language = language_frankish
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_french }
+			knows_language = language_french
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_georgian }
+			knows_language = language_georgian
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_goidelic }
+			knows_language = language_goidelic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_greek }
+			knows_language = language_greek
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_gur }
+			knows_language = language_gur
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_hebrew }
+			knows_language = language_hebrew
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_high_german }
+			knows_language = language_high_german
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_iberian }
+			knows_language = language_iberian
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_iranian }
+			knows_language = language_iranian
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_is_shown_trigger }
+			knows_language = language_is_shown_trigger
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_israelite }
+			knows_language = language_israelite
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_italian }
+			knows_language = language_italian
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_japanese }
+			knows_language = language_japanese
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_javanese }
+			knows_language = language_javanese
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_khmer }
+			knows_language = language_khmer
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_korean }
+			knows_language = language_korean
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_kru }
+			knows_language = language_kru
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_kwa }
+			knows_language = language_kwa
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_latin }
+			knows_language = language_latin
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_lechitic }
+			knows_language = language_lechitic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_magyar }
+			knows_language = language_magyar
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_malay }
+			knows_language = language_malay
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_manding }
+			knows_language = language_manding
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_mon }
+			knows_language = language_mon
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_mongolic }
+			knows_language = language_mongolic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_norse }
+			knows_language = language_norse
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_north_iranian }
+			knows_language = language_north_iranian
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_occitano_romance }
+			knows_language = language_occitano_romance
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_oghur }
+			knows_language = language_oghur
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_omotic }
+			knows_language = language_omotic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_qiangic }
+			knows_language = language_qiangic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_sami }
+			knows_language = language_sami
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_sanskrit }
+			knows_language = language_sanskrit
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_sardinian }
+			knows_language = language_sardinian
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_saxon }
+			knows_language = language_saxon
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_scythian }
+			knows_language = language_scythian
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_senegambian }
+			knows_language = language_senegambian
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_sinhalese }
+			knows_language = language_sinhalese
 		}
 		AND = {
 			faith = { has_doctrine = sacred_lang_slavonic }
 			knows_language = language_slavonic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_soninke }
+			knows_language = language_soninke
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_south_slavic }
+			knows_language = language_south_slavic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_sudanic }
+			knows_language = language_sudanic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_tai }
+			knows_language = language_tai
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_tibetan }
+			knows_language = language_tibetan
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_tocharian }
+			knows_language = language_tocharian
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_tubu }
+			knows_language = language_tubu
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_tungusic }
+			knows_language = language_tungusic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_turkic }
+			knows_language = language_turkic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_ugric }
+			knows_language = language_ugric
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_ugro_permian }
+			knows_language = language_ugro_permian
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_vietnamese }
+			knows_language = language_vietnamese
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_volga_finnic }
+			knows_language = language_volga_finnic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_wallachian }
+			knows_language = language_wallachian
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_west_iranian }
+			knows_language = language_west_iranian
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_yoruba }
+			knows_language = language_yoruba
 		}
 	}
 }

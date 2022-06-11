@@ -6,123 +6,1667 @@ doctrine_sacred_language = {
 			value = faith_tenet_cost_low
 		}
 		is_shown = {
-			always = yes
+			NOT = { religion_tag = islam_religion }
+			NOT = { religion_tag = judaism_religion }
 		}
 	}
-	sacred_lang_latin = {
+	sacred_lang_achenese = {
 		piety_cost = {
 			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_achenese }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
 		}
 		is_shown = {
-			OR = {
-				religion_tag = christianity_religion
-				religion_tag = dualism_religion
-				religion_tag = hellenism_religion
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_achenese
+					any_player = { knows_language = language_achenese }
+				}
 			}
 		}
 	}
-	sacred_lang_greek = {
+	sacred_lang_ainu = {
 		piety_cost = {
 			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_ainu }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
 		}
 		is_shown = {
-			OR = {
-				religion_tag = christianity_religion
-				religion_tag = dualism_religion
-				religion_tag = hellenism_religion
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_ainu
+					any_player = { knows_language = language_ainu }
+				}
+			}
+		}
+	}
+	sacred_lang_anglic = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_anglic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_anglic
+					any_player = { knows_language = language_anglic }
+				}
 			}
 		}
 	}
 	sacred_lang_arabic = {
 		piety_cost = {
 			value = faith_tenet_cost_low
-		}
-		is_shown = {
-			OR = {
-				religion_tag = christianity_religion
-				religion_tag = islam_religion
-				religion_tag = dualism_religion
-				religion_tag = semitic_religion
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_arabic }
+				multiply = faith_unchanged_doctrine_cost_mult
 			}
 		}
-	}
-	sacred_lang_hebrew = {
-		piety_cost = {
-			value = faith_tenet_cost_low
-		}
 		is_shown = {
-			OR = {
-				religion_tag = christianity_religion
-				religion_tag = judaism_religion
-				religion_tag = dualism_religion
-				religion_tag = semitic_religion
-			}
-		}
-	}
-	sacred_lang_avestan = {
-		piety_cost = {
-			value = faith_tenet_cost_low
-		}
-		is_shown = {
-			religion_tag = zoroastrianism_religion
-		}
-	}
-	sacred_lang_sanskrit = {
-		piety_cost = {
-			value = faith_tenet_cost_low
-		}
-		is_shown = {
-			OR = {
-				religion_tag = buddhism_religion
-				religion_tag = hinduism_religion
-				religion_tag = jainism_religion
-				religion_tag = mundhum_religion
+			AND = {
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_arabic
+					any_player = { knows_language = language_arabic }
+					religion_tag = islam_religion
+				}
 			}
 		}
 	}
 	sacred_lang_aramaic = {
 		piety_cost = {
 			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_aramaic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
 		}
 		is_shown = {
-			OR = {
-				religion_tag = christianity_religion
-				religion_tag = dualism_religion
-				religion_tag = semitic_religion
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_aramaic
+					any_player = { knows_language = language_aramaic }
+					religion_tag = christianity_religion
+					religion_tag = dualism_religion
+				}
+			}
+		}
+	}
+	sacred_lang_armenian = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_armenian }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_armenian
+					any_player = { knows_language = language_armenian }
+				}
+			}
+		}
+	}
+	sacred_lang_avestan = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_avestan }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_avestan
+					any_player = { knows_language = language_avestan }
+					religion_tag = zoroastrianism_religion
+				}
+			}
+		}
+	}
+	sacred_lang_ayneha = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_ayneha }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_ayneha
+					any_player = { knows_language = language_ayneha }
+				}
+			}
+		}
+	}
+	sacred_lang_baltic = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_baltic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_baltic
+					any_player = { knows_language = language_baltic }
+				}
+			}
+		}
+	}
+	sacred_lang_basque = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_basque }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_basque
+					any_player = { knows_language = language_basque }
+				}
+			}
+		}
+	}
+	sacred_lang_berber = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_berber }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_berber
+					any_player = { knows_language = language_berber }
+				}
+			}
+		}
+	}
+	sacred_lang_brythonic = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_brythonic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_brythonic
+					any_player = { knows_language = language_brythonic }
+				}
+			}
+		}
+	}
+	sacred_lang_burmese = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_burmese }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_burmese
+					any_player = { knows_language = language_burmese }
+				}
+			}
+		}
+	}
+	sacred_lang_central_germanic = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_central_germanic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_central_germanic
+					any_player = { knows_language = language_central_germanic }
+				}
+			}
+		}
+	}
+	sacred_lang_central_iranian = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_central_iranian }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_central_iranian
+					any_player = { knows_language = language_central_iranian }
+				}
+			}
+		}
+	}
+	sacred_lang_chadic = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_chadic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_chadic
+					any_player = { knows_language = language_chadic }
+				}
+			}
+		}
+	}
+	sacred_lang_cham = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_cham }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_cham
+					any_player = { knows_language = language_cham }
+				}
+			}
+		}
+	}
+	sacred_lang_chinese = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_chinese }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_chinese
+					any_player = { knows_language = language_chinese }
+				}
 			}
 		}
 	}
 	sacred_lang_coptic = {
 		piety_cost = {
 			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_coptic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
 		}
 		is_shown = {
-			OR = {
-				religion_tag = christianity_religion
-				religion_tag = egyptian_religion
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_coptic
+					any_player = { knows_language = language_coptic }
+				}
+			}
+		}
+	}
+	sacred_lang_cushitic = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_cushitic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_cushitic
+					any_player = { knows_language = language_cushitic }
+				}
+			}
+		}
+	}
+	sacred_lang_czech_slovak = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_czech_slovak }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_czech_slovak
+					any_player = { knows_language = language_czech_slovak }
+				}
+			}
+		}
+	}
+	sacred_lang_dutch = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_dutch }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_dutch
+					any_player = { knows_language = language_dutch }
+				}
+			}
+		}
+	}
+	sacred_lang_east_iranian = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_east_iranian }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_east_iranian
+					any_player = { knows_language = language_east_iranian }
+				}
+			}
+		}
+	}
+	sacred_lang_east_slavic = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_east_slavic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_east_slavic
+					any_player = { knows_language = language_east_slavic }
+				}
+			}
+		}
+	}
+	sacred_lang_ethiopic = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_ethiopic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_ethiopic
+					any_player = { knows_language = language_ethiopic }
+				}
+			}
+		}
+	}
+	sacred_lang_finnic = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_finnic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_finnic
+					any_player = { knows_language = language_finnic }
+				}
+			}
+		}
+	}
+	sacred_lang_frankish = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_frankish }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_frankish
+					any_player = { knows_language = language_frankish }
+				}
+			}
+		}
+	}
+	sacred_lang_french = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_french }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_french
+					any_player = { knows_language = language_french }
+				}
+			}
+		}
+	}
+	sacred_lang_georgian = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_georgian }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_georgian
+					any_player = { knows_language = language_georgian }
+				}
+			}
+		}
+	}
+	sacred_lang_goidelic = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_goidelic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_goidelic
+					any_player = { knows_language = language_goidelic }
+				}
+			}
+		}
+	}
+	sacred_lang_greek = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_greek }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_greek
+					any_player = { knows_language = language_greek }
+					religion_tag = hellenism_religion
+					religion_tag = christianity_religion
+					religion_tag = dualism_religion
+				}
+			}
+		}
+	}
+	sacred_lang_gur = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_gur }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_gur
+					any_player = { knows_language = language_gur }
+				}
+			}
+		}
+	}
+	sacred_lang_hebrew = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_hebrew }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				OR = {
+					has_doctrine = sacred_lang_hebrew
+					any_player = { knows_language = language_hebrew }
+					religion_tag = judaism_religion
+				}
+			}
+		}
+	}
+	sacred_lang_high_german = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_high_german }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_high_german
+					any_player = { knows_language = language_high_german }
+				}
+			}
+		}
+	}
+	sacred_lang_iberian = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_iberian }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_iberian
+					any_player = { knows_language = language_iberian }
+				}
+			}
+		}
+	}
+	sacred_lang_iranian = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_iranian }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_iranian
+					any_player = { knows_language = language_iranian }
+				}
+			}
+		}
+	}
+	sacred_lang_is_shown_trigger = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_is_shown_trigger }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_is_shown_trigger
+					any_player = { knows_language = language_is_shown_trigger }
+				}
+			}
+		}
+	}
+	sacred_lang_israelite = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_israelite }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_israelite
+					any_player = { knows_language = language_israelite }
+				}
+			}
+		}
+	}
+	sacred_lang_italian = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_italian }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_italian
+					any_player = { knows_language = language_italian }
+				}
+			}
+		}
+	}
+	sacred_lang_japanese = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_japanese }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_japanese
+					any_player = { knows_language = language_japanese }
+				}
+			}
+		}
+	}
+	sacred_lang_javanese = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_javanese }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_javanese
+					any_player = { knows_language = language_javanese }
+				}
+			}
+		}
+	}
+	sacred_lang_khmer = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_khmer }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_khmer
+					any_player = { knows_language = language_khmer }
+				}
+			}
+		}
+	}
+	sacred_lang_korean = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_korean }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_korean
+					any_player = { knows_language = language_korean }
+				}
+			}
+		}
+	}
+	sacred_lang_kru = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_kru }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_kru
+					any_player = { knows_language = language_kru }
+				}
+			}
+		}
+	}
+	sacred_lang_kwa = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_kwa }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_kwa
+					any_player = { knows_language = language_kwa }
+				}
+			}
+		}
+	}
+	sacred_lang_latin = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_latin }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_latin
+					any_player = { knows_language = language_latin }
+					religion_tag = hellenism_religion
+					religion_tag = christianity_religion
+					religion_tag = dualism_religion
+				}
+			}
+		}
+	}
+	sacred_lang_lechitic = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_lechitic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_lechitic
+					any_player = { knows_language = language_lechitic }
+				}
+			}
+		}
+	}
+	sacred_lang_magyar = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_magyar }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_magyar
+					any_player = { knows_language = language_magyar }
+				}
+			}
+		}
+	}
+	sacred_lang_malay = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_malay }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_malay
+					any_player = { knows_language = language_malay }
+				}
+			}
+		}
+	}
+	sacred_lang_manding = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_manding }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_manding
+					any_player = { knows_language = language_manding }
+				}
+			}
+		}
+	}
+	sacred_lang_mon = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_mon }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_mon
+					any_player = { knows_language = language_mon }
+				}
+			}
+		}
+	}
+	sacred_lang_mongolic = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_mongolic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_mongolic
+					any_player = { knows_language = language_mongolic }
+				}
+			}
+		}
+	}
+	sacred_lang_norse = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_norse }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_norse
+					any_player = { knows_language = language_norse }
+				}
+			}
+		}
+	}
+	sacred_lang_north_iranian = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_north_iranian }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_north_iranian
+					any_player = { knows_language = language_north_iranian }
+				}
+			}
+		}
+	}
+	sacred_lang_occitano_romance = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_occitano_romance }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_occitano_romance
+					any_player = { knows_language = language_occitano_romance }
+				}
+			}
+		}
+	}
+	sacred_lang_oghur = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_oghur }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_oghur
+					any_player = { knows_language = language_oghur }
+				}
+			}
+		}
+	}
+	sacred_lang_omotic = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_omotic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_omotic
+					any_player = { knows_language = language_omotic }
+				}
+			}
+		}
+	}
+	sacred_lang_qiangic = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_qiangic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_qiangic
+					any_player = { knows_language = language_qiangic }
+				}
+			}
+		}
+	}
+	sacred_lang_sami = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_sami }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_sami
+					any_player = { knows_language = language_sami }
+				}
+			}
+		}
+	}
+	sacred_lang_sanskrit = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_sanskrit }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_sanskrit
+					any_player = { knows_language = language_sanskrit }
+					OR = {
+						religion_tag = buddhism_religion
+						religion_tag = hinduism_religion
+						religion_tag = jainism_religion
+						religion_tag = mundhum_religion
+					}
+				}
+			}
+		}
+	}
+	sacred_lang_sardinian = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_sardinian }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_sardinian
+					any_player = { knows_language = language_sardinian }
+				}
+			}
+		}
+	}
+	sacred_lang_saxon = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_saxon }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_saxon
+					any_player = { knows_language = language_saxon }
+				}
+			}
+		}
+	}
+	sacred_lang_scythian = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_scythian }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_scythian
+					any_player = { knows_language = language_scythian }
+				}
+			}
+		}
+	}
+	sacred_lang_senegambian = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_senegambian }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_senegambian
+					any_player = { knows_language = language_senegambian }
+				}
+			}
+		}
+	}
+	sacred_lang_sinhalese = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_sinhalese }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_sinhalese
+					any_player = { knows_language = language_sinhalese }
+				}
 			}
 		}
 	}
 	sacred_lang_slavonic = {
 		piety_cost = {
 			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_slavonic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
 		}
 		is_shown = {
-			OR = {
-				religion_tag = christianity_religion
-				religion_tag = slavic_religion
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_slavonic
+					any_player = { knows_language = language_slavonic }
+				}
+			}
+		}
+	}
+	sacred_lang_soninke = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_soninke }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_soninke
+					any_player = { knows_language = language_soninke }
+				}
+			}
+		}
+	}
+	sacred_lang_south_slavic = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_south_slavic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_south_slavic
+					any_player = { knows_language = language_south_slavic }
+				}
+			}
+		}
+	}
+	sacred_lang_sudanic = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_sudanic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_sudanic
+					any_player = { knows_language = language_sudanic }
+				}
+			}
+		}
+	}
+	sacred_lang_tai = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_tai }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_tai
+					any_player = { knows_language = language_tai }
+				}
 			}
 		}
 	}
 	sacred_lang_tibetan = {
 		piety_cost = {
 			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_tibetan }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
 		}
 		is_shown = {
-			OR = {
-				religion_tag = buddhism_religion
-				religion_tag = bon_religion
-				religion_tag = mundhum_religion
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_tibetan
+					any_player = { knows_language = language_tibetan }
+					OR = {
+						religion_tag = buddhism_religion
+						religion_tag = bon_religion
+						religion_tag = mundhum_religion
+					}
+				}
+			}
+		}
+	}
+	sacred_lang_tocharian = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_tocharian }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_tocharian
+					any_player = { knows_language = language_tocharian }
+				}
+			}
+		}
+	}
+	sacred_lang_tubu = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_tubu }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_tubu
+					any_player = { knows_language = language_tubu }
+				}
+			}
+		}
+	}
+	sacred_lang_tungusic = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_tungusic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_tungusic
+					any_player = { knows_language = language_tungusic }
+				}
+			}
+		}
+	}
+	sacred_lang_turkic = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_turkic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_turkic
+					any_player = { knows_language = language_turkic }
+				}
+			}
+		}
+	}
+	sacred_lang_ugric = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_ugric }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_ugric
+					any_player = { knows_language = language_ugric }
+				}
+			}
+		}
+	}
+	sacred_lang_ugro_permian = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_ugro_permian }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_ugro_permian
+					any_player = { knows_language = language_ugro_permian }
+				}
+			}
+		}
+	}
+	sacred_lang_vietnamese = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_vietnamese }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_vietnamese
+					any_player = { knows_language = language_vietnamese }
+				}
+			}
+		}
+	}
+	sacred_lang_volga_finnic = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_volga_finnic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_volga_finnic
+					any_player = { knows_language = language_volga_finnic }
+				}
+			}
+		}
+	}
+	sacred_lang_wallachian = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_wallachian }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_wallachian
+					any_player = { knows_language = language_wallachian }
+				}
+			}
+		}
+	}
+	sacred_lang_west_iranian = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_west_iranian }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_west_iranian
+					any_player = { knows_language = language_west_iranian }
+				}
+			}
+		}
+	}
+	sacred_lang_yoruba = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_yoruba }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_yoruba
+					any_player = { knows_language = language_yoruba }
+				}
 			}
 		}
 	}
