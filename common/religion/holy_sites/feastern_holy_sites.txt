@@ -4,6 +4,14 @@
 
 # Shinto
 
+tarnovo = {
+	county = c_turnovo
+
+	character_modifier = {
+		monthly_piety_gain_mult = 0.2
+	}
+}
+
 socotra = {
 	county = c_socotra
 

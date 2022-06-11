@@ -218,7 +218,7 @@ doctrine_christian_orientation = {
 				}
 		}
 		parameters = {
-			hostility_override_christian_roman_doctrine = 1
+			hostility_override_christian_roman_doctrine = 0
 			hostility_override_christian_orthodox_doctrine = 1
 		}
 	}
@@ -340,7 +340,7 @@ doctrine_christian_orientation = {
 				}
 		}
 		parameters = {
-			hostility_override_christian_orthodox_doctrine = 1
+			hostility_override_christian_orthodox_doctrine = 0
 			hostility_override_christian_roman_doctrine = 1
 			hostility_override_christian_protestant_doctrine = 1
 		}

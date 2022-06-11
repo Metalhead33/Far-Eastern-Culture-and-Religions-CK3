@@ -1,4 +1,9 @@
 ﻿l_english:
+ slavic_christian:0 "Pravoslavije"
+ slavic_christian_adj:0 "Pravoslaven"
+ slavic_christian_adherent:0 "Pravoslav"
+ slavic_christian_adherent_plural:0 "Pravoslaveni"
+ slavic_christian_desc:0 "The word 'pravoslavije' means 'true faith' in the Slavic languages, analogous to the Greek 'orthódoxos' - which is exactly what the Slavic Orthodox Church is: a localized offshoot of the Greek Orthodox Church with more Slavic characteristic, including more syncretism towards Slavic folk traditions."
  lutheran:0 "Evangelical"
  lutheran_adj:0 "Evangelical"
  lutheran_adherent:0 "Evangelical"

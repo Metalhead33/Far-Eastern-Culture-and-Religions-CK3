@@ -111,20 +111,41 @@ is_weak_claimant_due_to_gender_trigger = {
 	}
 }
 
-can_be_combatant_based_on_gender_trigger = {
-	custom_description = {
-		text = "can_be_combatant_based_on_gender"
-		object = this
-		subject = $ARMY_OWNER$
-		OR = {
-			$ARMY_OWNER$ = { culture = { has_cultural_parameter = martial_custom_equal_combatant } }
-			AND = {
-				$ARMY_OWNER$ = { culture = { has_cultural_parameter = martial_custom_male_only_combatant } }
-				is_male = yes
-			}
-			AND = {
-				$ARMY_OWNER$ = { culture = { has_cultural_parameter = martial_custom_female_only_combatant } }
-				is_female = yes
+can_be_combatant_based_on_gender_trigger = {	
+	custom_description = {	
+		text = "can_be_combatant_based_on_gender"	
+		object = this	
+		subject = $ARMY_OWNER$	
+		OR = {	
+			trigger_if = { # Has the Royal Court and thus can modify pillars	
+				limit = {	
+					has_dlc_feature = diverge_culture # Can modify pillars	
+				}	
+				OR = {	
+					$ARMY_OWNER$ = { culture = { has_cultural_parameter = martial_custom_equal_combatant } }	
+					AND = {	
+						$ARMY_OWNER$ = { culture = { has_cultural_parameter = martial_custom_male_only_combatant } }	
+						is_male = yes	
+					}	
+					AND = {	
+						$ARMY_OWNER$ = { culture = { has_cultural_parameter = martial_custom_female_only_combatant } }	
+						is_female = yes	
+					}	
+				}	
+					
+			}	
+			trigger_else = { # Does not have the Royal Court and thus combatant is governed by faith	
+				OR = {	
+					$ARMY_OWNER$ = { faith = { has_doctrine_parameter = combatant_can_be_either_gender_if_no_roco } }	
+					AND = {	
+						$ARMY_OWNER$ = { faith = { has_doctrine_parameter = combatant_must_be_male_if_no_roco } }	
+						is_male = yes	
+					}	
+					AND = {	
+						$ARMY_OWNER$ = { faith = { has_doctrine_parameter = combatant_must_be_female_if_no_roco } }	
+						is_female = yes	
+					}	
+				}	
 			}
 			AND = {
 				$ARMY_OWNER$ = {
@@ -655,14 +676,20 @@ is_valid_heresy = {
 			religion_tag = christianity_religion
 			NAND = {
 				$ORIGIN_FAITH$ = {
-					has_doctrine = special_doctrine_ecumenical_christian
+					OR = {
+						has_doctrine = christian_roman_doctrine
+						has_doctrine = christian_orthodox_doctrine
+					}
 					OR = {
 						this = faith:insular_celtic
 						this = faith:bosnian_church
 					}
 				}
 				$HERETICAL_FAITH$ = {
-					has_doctrine = special_doctrine_ecumenical_christian
+					OR = {
+						has_doctrine = christian_roman_doctrine
+						has_doctrine = christian_orthodox_doctrine
+					}
 					OR = {
 						this = faith:insular_celtic
 						this = faith:bosnian_church
@@ -703,6 +730,7 @@ faiths_are_in_western_christianity_group = {
 		$FAITH_1$ = faith:arian
 		$FAITH_1$ = faith:pelagian
 		$FAITH_1$ = faith:donatism
+		$FAITH_1$ = faith:mozarabic
 	}
 	OR = {
 		$FAITH_2$ = faith:catholic
@@ -718,6 +746,7 @@ faiths_are_in_western_christianity_group = {
 		$FAITH_2$ = faith:arian
 		$FAITH_2$ = faith:pelagian
 		$FAITH_2$ = faith:donatism
+		$FAITH_2$ = faith:mozarabic
 	}
 }
 
@@ -728,6 +757,7 @@ faiths_are_in_orthodox_christianity_group = {
 		$FAITH_1$ = faith:bogomilist
 		$FAITH_1$ = faith:paulician
 		$FAITH_1$ = faith:bosnian_church
+		$FAITH_1$ = faith:slavic_christian
 	}
 	OR = {
 		$FAITH_2$ = faith:orthodox
@@ -736,6 +766,7 @@ faiths_are_in_orthodox_christianity_group = {
 		$FAITH_2$ = faith:paulician
 		$FAITH_2$ = faith:bosnian_church
 		$FAITH_2$ = faith:cainitism
+		$FAITH_2$ = faith:slavic_christian
 	}
 }
 
@@ -1294,4 +1325,88 @@ has_tolerant_faith_or_culture_trigger = {
 		faith = { has_doctrine = doctrine_pluralism_pluralistic }
 		culture = { has_cultural_parameter = less_likely_to_force_conversion }
 	}
+}
+
+
+		
+### SYNCRETIC TRIGGERS ###	
+islam_or_syncretic_with_islam_trigger = {	
+	$CHARACTER$ = {	
+		faith = {	
+			OR = {	
+				religion = religion:islam_religion	
+				has_doctrine = tenet_islamic_syncretism	
+			}	
+		}	
+	}	
+}	
+judaism_or_syncretic_with_judaism_trigger = {	
+	$CHARACTER$ = {	
+		faith = {	
+			OR = {	
+				religion = religion:judaism_religion	
+				has_doctrine = tenet_jewish_syncretism	
+			}	
+		}	
+	}	
+}	
+christianity_or_syncretic_with_christianity_trigger = {	
+	$CHARACTER$ = {	
+		faith = {	
+			OR = {	
+				religion = religion:christianity_religion	
+				has_doctrine = tenet_christian_syncretism	
+			}	
+		}	
+	}	
+}	
+unreformed_or_syncretic_with_unreformed_trigger = {	
+	$CHARACTER$ = {	
+		faith = {	
+			OR = {	
+				religion = religion:unreformed_religion	
+				has_doctrine = tenet_unreformed_syncretism	
+			}	
+		}	
+	}	
+}
+
+	is_valid_heresiarch = {	
+	faith = root	
+	OR = {	
+		highest_held_title_tier = tier_duchy	
+		highest_held_title_tier = tier_county	
+	}	
+	is_imprisoned = no	
+	is_capable_adult_ai = yes	
+	is_landed = yes	
+	exists = capital_county	
+	NOT = { has_trait = heresiarch }	
+	no_heretical_hof_faith_trigger = yes	
+	recently_converted_faith_trigger = no # As amusing as it may be, rulers shouldn't 'flip-flop' between Faiths, so we need to enforce a cooldown on heresy conversions.	
+}	
+no_heretical_hof_faith_trigger = { #Head of Faith shouldn't convert.	
+	OR = {	
+		NOT = {	
+			exists = root.religious_head	
+		}	
+		AND = {	
+			exists = root.religious_head	
+			NOT = { this = root.religious_head }	
+		}	
+	}	
+}	
+
+	
+is_wrong_gender_in_faith_trigger = {	
+	OR = {	
+		AND = {	
+			is_female = yes	
+			$FAITH$ = { has_doctrine_parameter = male_dominated_law }	
+		}	
+		AND = {	
+			is_male = yes	
+			$FAITH$ = { has_doctrine_parameter = female_dominated_law }	
+		}	
+	}	
 }
