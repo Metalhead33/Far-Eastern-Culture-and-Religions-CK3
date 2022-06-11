@@ -201,7 +201,7 @@
 
 	faiths = {
 		slavic_pagan = {
-			color = { 0.7 0.6 0.3 }
+			color = { 0.7 0.3 0.4 }
 			icon = slavic
 			reformed_icon = slavic_reformed
 
