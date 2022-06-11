@@ -15,13 +15,62 @@ carn_character_initialization_pulse = {
 on_game_start = {
 	on_actions = {
 		change_orthodox_to_pravoslav
+		change_egyptian_to_coptic
+		change_coptic_to_tewahedo
 	}
 }
 
+change_egyptian_to_coptic = {
+	effect = {
+		every_living_character = {
+			limit = {
+				faith = faith:coptic
+				culture = culture:egyptian
+			}
+			set_culture = culture:egyptian_copt
+			every_ancestor = {
+				limit = {
+					faith = faith:coptic
+					culture = culture:egyptian
+				}
+				set_culture = culture:egyptian_copt
+			}
+		}
+		every_county = {
+			limit = {
+				faith = faith:coptic
+				culture = culture:egyptian
+			}
+			set_county_culture = culture:egyptian_copt
+		}
+	}
+}
+change_coptic_to_tewahedo = {
+	effect = {
+		every_living_character = {
+			limit = {
+				faith = faith:coptic
+				culture = { has_cultural_pillar = language_ethiopic }
+			}
+			set_character_faith = faith:tewahedo
+			every_ancestor = {
+				limit = {
+					faith = faith:coptic
+					culture = { has_cultural_pillar = language_ethiopic }
+				}
+				set_character_faith = faith:tewahedo
+			}
+		}
+		every_county = {
+			limit = {
+				faith = faith:coptic
+				culture = { has_cultural_pillar = language_ethiopic }
+			}
+			set_county_faith = faith:tewahedo
+		}
+	}
+}
 change_orthodox_to_pravoslav = {
-	#events = {
-	#	pravoslav.0001
-	#}
 	effect = {
 		every_living_character = {
 			limit = {

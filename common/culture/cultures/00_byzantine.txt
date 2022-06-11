@@ -108,7 +108,7 @@ assyrian = {
 	color = assyrian
 	
 	ethos = ethos_communal
-	heritage = heritage_byzantine
+	heritage = heritage_arabic
 	language = language_aramaic
 	martial_custom = martial_custom_male_only
 	traditions = {
@@ -131,21 +131,21 @@ assyrian = {
 	}
 }
 
-coptic = {
-	color = { 255 255 153 }
+egyptian_copt = {
+	color = { 0.95 0.8 0.5 }
 	
 	ethos = ethos_communal
-	heritage = heritage_byzantine
+	heritage = heritage_east_african
 	language = language_coptic
 	martial_custom = martial_custom_male_only
 	traditions = {
 		tradition_zealous_people
-		tradition_loyal_soldiers
+		tradition_agrarian
 		tradition_philosopher_culture
 		tradition_caravaneers
 	}
 	
-	name_list = name_list_assyrian
+	name_list = name_list_coptic
 
 	coa_gfx = { byzantine_group_coa_gfx western_coa_gfx } 
 	building_gfx = { mena_building_gfx } 

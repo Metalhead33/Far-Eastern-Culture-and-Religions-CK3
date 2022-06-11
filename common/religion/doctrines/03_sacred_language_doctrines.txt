@@ -1190,7 +1190,10 @@ doctrine_sacred_language = {
 		}
 		is_shown = {
 			AND = {
-				NOT = { religion_tag = islam_religion }
+				OR = {
+					NOT = { religion_tag = islam_religion }
+					flag:muhammad_succession_muhakkima_doctrine = { is_in_list = selected_doctrines } 
+				}
 				NOT = { religion_tag = judaism_religion }
 				OR = {
 					has_doctrine = sacred_lang_sami
