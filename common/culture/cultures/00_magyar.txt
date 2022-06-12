@@ -27,9 +27,9 @@
 }
 
 hungarian = {
-	color = hungarian
+	color = { 0.3 0.5 0.3 }
 	created = 1000.1.1
-	parents = { mogyer }
+	parents = { mogyer slovien }
 	
 	ethos = ethos_egalitarian
 	heritage = heritage_magyar
@@ -55,5 +55,34 @@ hungarian = {
 		# 5 = caucasian_ginger
 		65 = caucasian_brown_hair
 		25 = caucasian_dark_hair
+	}
+}
+
+szekely = {
+	color = { 0.5 0.55 0.2 }
+	created = 1000.1.1
+	parents = { mogyer avar }
+	
+	ethos = ethos_communal
+	heritage = heritage_magyar
+	language = language_ugric
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_esteemed_hospitality
+		tradition_isolationist
+		tradition_hussar
+		tradition_storytellers
+	}
+	
+	name_list = name_list_hungarian
+
+	coa_gfx = { magyar_group_coa_gfx ugro_permian_group_coa_gfx steppe_coa_gfx } 
+	coa_gfx = { western_coa_gfx } 
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { western_clothing_gfx } 
+	unit_gfx = { mongol_unit_gfx } 	
+
+	ethnicities = {
+		10 = mediterranean_byzantine
 	}
 }

@@ -752,7 +752,7 @@
 		#Date used to switch ti feudal_government in title history
 	}
 	950.1.1 = {
-		culture = hungarian
+		culture = szekely
 	}
 }
 3929 = {	#Marosvasarhely aka Târgu Mures
@@ -786,7 +786,7 @@
 		#Date used to switch ti feudal_government in title history
 	}
 	950.1.1 = {
-		culture = hungarian
+		culture = szekely
 	}
 }
 3943 = {	#Balvanyos
@@ -820,7 +820,7 @@
 		#Date used to switch ti feudal_government in title history
 	}
 	950.1.1 = {
-		culture = hungarian
+		culture = szekely
 	}
 }
 3941 = {	#Torcsvar AKA Bran Castle
@@ -842,7 +842,7 @@
 		#Date used to switch ti feudal_government in title history
 	}
 	950.1.1 = {
-		culture = hungarian
+		culture = szekely
 	}
 }
 3925 = {	#Banffyhunyad AKA Huedin
@@ -910,19 +910,13 @@
 
 ###c_hunyad
 3931 = {	#Vajdahunyad
-	culture = avar
-	religion = tengri_pagan
+	culture = vlach
+	religion = orthodox
 	holding = tribal_holding
 	
-	890.1.1 = {
-		religion = catholic
-	}
 	935.1.1 = {
 		holding = castle_holding
 		#Date used to switch ti feudal_government in title history
-	}
-	950.1.1 = {
-		culture = hungarian
 	}
 }
 3932 = {	#Harszoc
@@ -1177,13 +1171,13 @@
 	religion = tengri_pagan
 	holding = tribal_holding
 	
-	890.1.1 = {
-		religion = magyar_pagan
-		culture = mogyer
-	}
 	935.1.1 = {
 		holding = castle_holding
 		#Date used to switch ti feudal_government in title history
+	}
+	1090.1.1 = {
+		religion = hungarian
+		culture = catholic
 	}
 }
 3883 = {	#Ersomlyo
@@ -1200,13 +1194,13 @@
 	religion = tengri_pagan
 	holding = tribal_holding
 	
-	890.1.1 = {
-		religion = magyar_pagan
-		culture = mogyer
-	}
 	935.1.1 = {
 		holding = castle_holding
 		#Date used to switch ti feudal_government in title history
+	}
+	1090.1.1 = {
+		religion = hungarian
+		culture = catholic
 	}
 }
 3878 = {	#Pancsova	AKA Pancevo
