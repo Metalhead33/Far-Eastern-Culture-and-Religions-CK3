@@ -119,6 +119,34 @@ polabian = {
 	}	
 }
 
+moravian = {
+	color = { 0.25 0.7 0.5 }
+	
+	ethos = ethos_courtly
+	heritage = heritage_west_slavic
+	language = language_slavonic
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_mountaineer_ruralism
+		tradition_hard_working
+		tradition_castle_keepers
+	}
+	
+	name_list = name_list_czech
+	
+	coa_gfx = { west_slavic_group_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+
+	ethnicities = {
+		45 = slavic_blond
+		5 = slavic_ginger
+		35 = slavic_brown_hair
+		15 = slavic_dark_hair
+	}
+}
+
 slovien = {
 	color = { 0.3 0.6 0.5 }
 	
@@ -129,6 +157,7 @@ slovien = {
 	traditions = {
 		tradition_mountaineer_ruralism
 		tradition_equitable
+		tradition_loyal_soldiers
 	}
 	
 	name_list = name_list_slovien
