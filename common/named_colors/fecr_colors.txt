@@ -25,4 +25,9 @@ colors = {
 	gypsy_iberian = { 0.36 0.41 0.60 }
 	gypsy_french = { 0.47 0.45 0.60 }
 	gypsy_italian = { 0.47 0.37 0.67 }
+	coptic = { 0.823 0.921 0.341 }
+	albanian = { 0.5 0.0 0.0 }
+	gothic = { 0.164 0.082 0.215 }
+	sanskrit = { 0.5 0.2 0.0 }
+	avestan = { 0.5 0.3 0.6 }
 }

@@ -14,13 +14,6 @@ The mod depends on [Carnalitas Dei](https://gitgud.io/cherisong/carnalitas-dei).
 Eh, so-so. Afaik, mods that add new stuff without replacing vanilla stuff **are** vanilla-compatible... But this mod also edits some ethnicities, and that effect might not be applied on an already running game.
 
 
-### **Will you put this mod to Steam Workshop? Why not?**
-
-For legal reasons, I cannot do that. What legal reasons? Well, it's against the rules to disclose that, but here's a hint: I cannot upload any mods to the Steam Workshop at all. The less we talk about it, the better.
-
-Nevertheless, if you wish to upload this mod to the Steam Workshop in my name, you have my full blessings to do so. No, really, you'd be doing me a big favor.
-
-
 ### **Can I use your mod as part of my mod? Or recycle any other parts of your mod for mine?**
 
 **Yes.** You don't even need to ask. Just do it. Sure, crediting would be nice, but otherwise, feel free to.
@@ -36,3 +29,8 @@ As stated above, there are also plans to reintroduce old CK2 events.
 
 - [Far Eastern Cultures CK3 on LoversLab](https://www.loverslab.com/topic/153333-mod-far-eastern-cultures-and-religions/)
 - [Compatibility Patch for the Human Phenotype Project](https://git.touhou.fm/metalhead/paradox-mods/ck3-human-phenotype-project-compatibility-patches)
+
+## Credits
+
+- Cheri Song for [Carnalitas Dei](https://gitgud.io/cherisong/carnalitas-dei), a mod that this mod depends on
+- The creator of the [Historical Immersion Project for CK2](https://forum.paradoxplaza.com/forum/threads/historical-immersion-project-download-faq.748775/), from which I shamelessly snatched some localization strings, as well as various ideas

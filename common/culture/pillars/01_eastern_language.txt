@@ -336,7 +336,7 @@ language_avestan = {
 		}
 	}
 	
-	color = achenese
+	color = avestan
 }
 
 language_hebrew = {
@@ -354,7 +354,7 @@ language_hebrew = {
 		}
 	}
 	
-	color = achenese
+	color = ashkenazi
 }
 
 language_sanskrit = {
@@ -372,7 +372,7 @@ language_sanskrit = {
 		}
 	}
 	
-	color = achenese
+	color = sanskrit
 }
 language_coptic = {
 	type = language
@@ -389,7 +389,7 @@ language_coptic = {
 		}
 	}
 	
-	color = achenese
+	color = coptic
 }
 
 language_albanian = {
@@ -407,7 +407,7 @@ language_albanian = {
 		}
 	}
 	
-	color = achenese
+	color = albanian
 }
 
 language_gothic = {
@@ -425,5 +425,5 @@ language_gothic = {
 		}
 	}
 	
-	color = achenese
+	color = gothic
 }
