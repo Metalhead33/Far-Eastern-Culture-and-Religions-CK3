@@ -157,3 +157,58 @@ egyptian_copt = {
 		10 = arab
 	}
 }
+
+albanian = {
+	color = { 0.5 0.0 0.0 }
+	
+	ethos = ethos_communal
+	heritage = heritage_byzantine
+	language = language_albanian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_hill_dwellers
+		tradition_highland_warriors
+		tradition_strong_kinship
+		tradition_isolationist
+	}
+	
+	name_list = name_list_albanian
+	
+	coa_gfx = { byzantine_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { byzantine_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+	
+	ethnicities = {
+		10 = mediterranean_byzantine
+	}
+}
+
+gothic = {
+	color = { 0.164 0.082 0.215 }
+	
+	ethos = ethos_stoic
+	heritage = heritage_byzantine
+	language = language_gothic
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_castle_keepers
+		tradition_byzantine_succession
+		tradition_stalwart_defenders
+		tradition_xenophilic
+	}
+	
+	name_list = name_list_gothic
+	
+	coa_gfx = { byzantine_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { byzantine_clothing_gfx }
+	unit_gfx = { eastern_unit_gfx }
+	
+	ethnicities = {
+		70 = caucasian_northern_blond
+		15 = caucasian_northern_ginger
+		10 = caucasian_northern_brown_hair
+		5 = caucasian_northern_dark_hair
+	}
+}
