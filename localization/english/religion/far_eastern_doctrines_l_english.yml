@@ -31,6 +31,9 @@
  special_doctrine_hellenic_desc:0 "Syncretism was common during the Hellenistic period, with rulers regularly identifying local deities in various parts of their domains with the relevant god or goddess of the Greek Pantheon as a means of increasing the cohesion of their kingdom."
  doctrine_parameter_hostility_override_special_doctrine_hellenic:0 "Other Hellenistic [faiths|E] with the $special_doctrine_hellenic_name$ doctrine are considered [GetHostilityLevelName( FAITH_DOCTRINE_PARAMETER.GetIntValue )|V] instead of [GetHostilityLevelName( '(int32)3' )|V]"
  judgement_doctrine_conversion_resistance:0 "County Conversion Resistance: #P +30%#!"
+ COURT_CHAPLAIN_CONVERSION_JUDGEMENT_MODIFIER:0 "[county.GetFaith.GetName] — [GetFaithDoctrine('judgement_doctrine').GetBaseName]"
+ COURT_CHAPLAIN_CONVERSION_VERNACULAR_LANGUAGE_BONUS_MODIFIER:0 "[councillor.GetFaith.GetName] — Vernacular language"
+ COURT_CHAPLAIN_CONVERSION_LITURGICAL_LANGUAGE_BONUS_MODIFIER:0 "[councillor.GetFaith.GetName] — Same language as province culture"
  
  doctrine_christian_orientation_name:0 "Orientation"
  doctrine_christian_orientation_desc:0 "The question of who is the spiritual leader of the Christian community is an essential one."
@@ -58,6 +61,7 @@
  christian_wacky_doctrine_desc:0 "Our doctrines set us far apart from mainstream Christian beliefs. We see the truth they blind themselves to!"
  doctrine_parameter_hostility_override_christian_wacky_doctrine_1:0 "Considers other Heterodox Christian [faiths|E] to be [GetHostilityLevelName( FAITH_DOCTRINE_PARAMETER.GetIntValue )|V] instead of [GetHostilityLevelName( '(int32)2' )|V]"
  doctrine_parameter_hostility_override_christian_wacky_doctrine:0 "Considers Heterodox Christian [faiths|E] to be [GetHostilityLevelName( FAITH_DOCTRINE_PARAMETER.GetIntValue )|V] instead of [GetHostilityLevelName( '(int32)2' )|V]"
+ doctrine_parameter_vernacular_conversion_bonus:0 "Minor conversion bonus"
  
  ROMAN_COMMUNION_NEEDS_TRIGGER:0 "Must not have a Head of Faith, unless is Catholicism."
  INCOMPATIBLE_WITH_DOCTRINE_ADULTERY_MEN_ACCEPTED:0 "Incompatible with the [doctrine|E] [GetFaithDoctrine('doctrine_adultery_men_accepted').GetName( GetPlayer.GetFaith )]"
@@ -184,7 +188,7 @@
  moderation_doctrine_desc:0 "The divine wishes not for us to needlessly suffer, but neither should we go to the other extreme in the blind pursuit of hedonism. It is the divine will that we seek the golden middle-ground."
  hedonism_doctrine_name:0 "Hedonism"
  hedonism_doctrine_desc:0 "The divine filled this world with a bounty of pleasures for us to indulge in and enjoy — to not partake of such things is to snub the very work of creation itself."
- COURT_CHAPLAIN_CONVERSION_JUDGEMENT_MODIFIER:0 "[county.GetProvince.GetCounty.GetFaith.GetName] — [GetFaithDoctrine('judgement_doctrine').GetBaseName]"
+ COURT_CHAPLAIN_CONVERSION_JUDGEMENT_MODIFIER:0 "[county.GetFaith.GetName] — [GetFaithDoctrine('judgement_doctrine').GetBaseName]"
  tenet_prosperity_gospel_name:0 "Gospel of Prosperity"
  tenet_prosperity_gospel_desc:0 "Why wait for afterlife, when through hard work, we can build heaven on this very Earth too? Through hard work, we gain prosperity, through prosperity, we build a closer relationship with the divine."
  tenet_sacred_magic_name:0 "Sacred Magic"

@@ -1,5 +1,4 @@
-﻿
-doctrine_sacred_language = {
+﻿doctrine_sacred_language = {
 	group = "clergy"
 	sacred_lang_none = {
 		piety_cost = {
@@ -8,6 +7,9 @@ doctrine_sacred_language = {
 		is_shown = {
 			NOT = { religion_tag = islam_religion }
 			NOT = { religion_tag = judaism_religion }
+		}
+		parameters = {
+			vernacular_conversion_bonus = yes
 		}
 	}
 	sacred_lang_achenese = {
@@ -46,6 +48,26 @@ doctrine_sacred_language = {
 				OR = {
 					has_doctrine = sacred_lang_ainu
 					any_player = { knows_language = language_ainu }
+				}
+			}
+		}
+	}
+	sacred_lang_albanian = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_albanian }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_albanian
+					any_player = { knows_language = language_albanian }
 				}
 			}
 		}
@@ -609,6 +631,26 @@ doctrine_sacred_language = {
 				OR = {
 					has_doctrine = sacred_lang_goidelic
 					any_player = { knows_language = language_goidelic }
+				}
+			}
+		}
+	}
+	sacred_lang_gothic = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_gothic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_gothic
+					any_player = { knows_language = language_gothic }
 				}
 			}
 		}
@@ -1190,10 +1232,7 @@ doctrine_sacred_language = {
 		}
 		is_shown = {
 			AND = {
-				OR = {
-					NOT = { religion_tag = islam_religion }
-					flag:muhammad_succession_muhakkima_doctrine = { is_in_list = selected_doctrines } 
-				}
+				NOT = { religion_tag = islam_religion }
 				NOT = { religion_tag = judaism_religion }
 				OR = {
 					has_doctrine = sacred_lang_sami

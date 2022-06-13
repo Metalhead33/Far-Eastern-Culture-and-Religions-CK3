@@ -247,6 +247,15 @@ doctrine_final_disposition = {
 			OR = {
 				has_doctrine = pagan_hostility_doctrine
 				has_doctrine = eastern_hostility_doctrine
+				flag:pagan_syncretism_doctrine = { is_in_list = selected_doctrines }
+				flag:eastern_syncretism_doctrine = { is_in_list = selected_doctrines }
+				flag:mazdaic_syncretism_doctrine = { is_in_list = selected_doctrines }
+			}
+			NOT = { religion_tag = islam_religion }
+			NOT = { religion_tag = judaism_religion }
+			OR = {
+				NOT = { religion_tag = christianity_religion }
+				flag:christian_wacky_doctrine = { is_in_list = selected_doctrines }
 			}
 		}
 		parameters = {

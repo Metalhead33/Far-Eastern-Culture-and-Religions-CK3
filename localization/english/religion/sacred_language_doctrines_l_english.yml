@@ -3,6 +3,8 @@
  sacred_lang_achenese_desc:0 "Our faith's sacred [language|e] is $language_achenese_name$ - it is the tongue in which all that is holy is to be written down and preached to the masses."
  sacred_lang_ainu_name:0 "$language_ainu_name$"
  sacred_lang_ainu_desc:0 "Our faith's sacred [language|e] is $language_ainu_name$ - it is the tongue in which all that is holy is to be written down and preached to the masses."
+ sacred_lang_albanian_name:0 "$language_albanian_name$"
+ sacred_lang_albanian_desc:0 "Our faith's sacred [language|e] is $language_albanian_name$ - it is the tongue in which all that is holy is to be written down and preached to the masses."
  sacred_lang_anglic_name:0 "$language_anglic_name$"
  sacred_lang_anglic_desc:0 "Our faith's sacred [language|e] is $language_anglic_name$ - it is the tongue in which all that is holy is to be written down and preached to the masses."
  sacred_lang_arabic_name:0 "$language_arabic_name$"
@@ -59,6 +61,8 @@
  sacred_lang_georgian_desc:0 "Our faith's sacred [language|e] is $language_georgian_name$ - it is the tongue in which all that is holy is to be written down and preached to the masses."
  sacred_lang_goidelic_name:0 "$language_goidelic_name$"
  sacred_lang_goidelic_desc:0 "Our faith's sacred [language|e] is $language_goidelic_name$ - it is the tongue in which all that is holy is to be written down and preached to the masses."
+ sacred_lang_gothic_name:0 "$language_gothic_name$"
+ sacred_lang_gothic_desc:0 "Our faith's sacred [language|e] is $language_gothic_name$ - it is the tongue in which all that is holy is to be written down and preached to the masses."
  sacred_lang_greek_name:0 "$language_greek_name$"
  sacred_lang_greek_desc:0 "Our faith's sacred [language|e] is $language_greek_name$ - it is the tongue in which all that is holy is to be written down and preached to the masses."
  sacred_lang_gur_name:0 "$language_gur_name$"
@@ -163,4 +167,5 @@
  sacred_lang_west_iranian_desc:0 "Our faith's sacred [language|e] is $language_west_iranian_name$ - it is the tongue in which all that is holy is to be written down and preached to the masses."
  sacred_lang_yoruba_name:0 "$language_yoruba_name$"
  sacred_lang_yoruba_desc:0 "Our faith's sacred [language|e] is $language_yoruba_name$ - it is the tongue in which all that is holy is to be written down and preached to the masses."
+ 
  

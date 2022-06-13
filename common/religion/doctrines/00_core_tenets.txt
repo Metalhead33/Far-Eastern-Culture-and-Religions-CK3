@@ -5,14 +5,14 @@
 	tenet_prosperity_gospel = {
 		icon = core_tenet_prosperity
 		piety_cost = {
-			else = {
-				value = faith_tenet_cost_mid
-			}
 
 			# Multiplier for keeping same tenet
 			if = {
 				limit = { has_doctrine = tenet_prosperity_gospel }
 				multiply = faith_unchanged_doctrine_cost_mult
+			}
+			else = {
+				value = faith_tenet_cost_mid
 			}
 		}
 
@@ -111,7 +111,6 @@
 			carnd_futa_succession_enabled = yes
 		}
 	}
-
 	carnd_tenet_sacred_prostitution = {
 		icon = core_tenet_handcoin
 

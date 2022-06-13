@@ -1,4 +1,7 @@
 ﻿l_english:
+ COURT_CHAPLAIN_CONVERSION_COMMUNAL_IDENTITY_BONUS_MODIFIER:3 "[councillor.GetFaith.GetName] — [GetFaithDoctrine('communal_identity_doctrine').GetBaseName]"
+ COURT_CHAPLAIN_CONVERSION_COMMUNAL_IDENTITY_PENALTY_MODIFIER:3 "[councillor.GetFaith.GetName] — [GetFaithDoctrine('communal_identity_doctrine').GetBaseName]"
+ COURT_CHAPLAIN_CONVERSION_REINCARNATION_MODIFIER:2 "[county.GetProvince.GetCounty.GetFaith.GetName] — [GetFaithDoctrine('reincarnation_doctrine').GetBaseName]"
  turkish:0 "Oǧuz"
  turkish_prefix:0 "Oghuz"
  turkish_noun:0 "Oǧuz"

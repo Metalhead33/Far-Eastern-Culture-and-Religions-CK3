@@ -13,6 +13,12 @@
 	}
 	else_if = {
 		limit = {
+			faith = { has_doctrine = sacred_lang_albanian }
+		}
+		learn_language = language_albanian
+	}
+	else_if = {
+		limit = {
 			faith = { has_doctrine = sacred_lang_anglic }
 		}
 		learn_language = language_anglic
@@ -178,6 +184,12 @@
 			faith = { has_doctrine = sacred_lang_goidelic }
 		}
 		learn_language = language_goidelic
+	}
+	else_if = {
+		limit = {
+			faith = { has_doctrine = sacred_lang_gothic }
+		}
+		learn_language = language_gothic
 	}
 	else_if = {
 		limit = {
