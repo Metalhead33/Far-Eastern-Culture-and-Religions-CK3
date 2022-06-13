@@ -34,7 +34,7 @@
 	doctrine = special_doctrine_is_christian_faith
 	doctrine = no_syncretism_doctrine
 	doctrine = burial_doctrine
-	doctrine = mercy_of_gods_doctrine
+	doctrine = judgement_doctrine
 	doctrine = cosmopolitan_doctrine
 	doctrine = carnd_doctrine_lust_shunned
 	
@@ -770,6 +770,7 @@
 			doctrine = doctrine_pluralism_pluralistic
 			doctrine = doctrine_theocracy_lay_clergy
 			doctrine = christian_protestant_doctrine
+			doctrine = mercy_of_gods_doctrine
 
 			#Tenets
 			doctrine = tenet_vows_of_poverty
@@ -793,6 +794,7 @@
 			#Main Gorup
 			doctrine = doctrine_theocracy_lay_clergy
 			doctrine = christian_protestant_doctrine
+			doctrine = mercy_of_gods_doctrine
 
 			#Clerical Functions
 			doctrine = doctrine_clerical_marriage_allowed
@@ -821,6 +823,7 @@
 			doctrine = doctrine_pluralism_righteous
 			doctrine = doctrine_theocracy_temporal
 			doctrine = christian_protestant_doctrine
+			doctrine = mercy_of_gods_doctrine
 
 			#Tenets
 			doctrine = tenet_literalism
@@ -845,6 +848,7 @@
 			doctrine = doctrine_pluralism_righteous
 			doctrine = doctrine_theocracy_temporal
 			doctrine = christian_protestant_doctrine
+			doctrine = mercy_of_gods_doctrine
 
 			#Tenets
 			doctrine = tenet_literalism
@@ -868,6 +872,7 @@
 			doctrine = doctrine_pluralism_righteous
 			doctrine = doctrine_theocracy_temporal
 			doctrine = christian_protestant_doctrine
+			doctrine = mercy_of_gods_doctrine
 
 			#Tenets
 			doctrine = tenet_literalism
@@ -891,6 +896,7 @@
 			doctrine = doctrine_pluralism_pluralistic
 			doctrine = doctrine_theocracy_lay_clergy
 			doctrine = christian_protestant_doctrine
+			doctrine = mercy_of_gods_doctrine
 			doctrine = doctrine_homosexuality_shunned
 			doctrine = doctrine_deviancy_shunned
 			doctrine = carnd_doctrine_lust_accepted
@@ -1047,6 +1053,7 @@
 			doctrine = doctrine_clerical_function_alms_and_pacification
 			doctrine = doctrine_clerical_gender_either
 			doctrine = christian_wacky_doctrine
+			doctrine = mercy_of_gods_doctrine
 
 			#Tenets
 			doctrine = gnosticism_doctrine
@@ -1171,6 +1178,7 @@
 			doctrine = tenet_ritual_cannibalism
 			doctrine = tenet_ritual_celebrations # was carnal exaltation
 			doctrine = tenet_esotericism
+			doctrine = mercy_of_gods_doctrine
 			doctrine = sacred_lang_aramaic
 
 			#Unique Localization
@@ -1501,6 +1509,7 @@
 			doctrine = tenet_esotericism
 			doctrine = gnosticism_doctrine
 			doctrine = leaving_the_cycle_doctrine
+			doctrine = mercy_of_gods_doctrine
 
 			holy_order_names = {
 				{ name = "carnd_holy_order_order_of_preachers" }

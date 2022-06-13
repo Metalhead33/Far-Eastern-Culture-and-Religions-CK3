@@ -166,10 +166,10 @@ albanian = {
 	language = language_albanian
 	martial_custom = martial_custom_male_only
 	traditions = {
-		tradition_hill_dwellers
-		tradition_highland_warriors
+		tradition_mountaineers
 		tradition_strong_kinship
 		tradition_isolationist
+		tradition_swords_for_hire
 	}
 	
 	name_list = name_list_albanian
