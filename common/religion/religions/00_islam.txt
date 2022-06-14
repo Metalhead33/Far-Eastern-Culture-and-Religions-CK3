@@ -51,6 +51,9 @@
 	doctrine = mercy_of_gods_doctrine
 	doctrine = cosmopolitan_doctrine
 	doctrine = carnd_doctrine_lust_shunned
+	doctrine = carn_doctrine_same_slavery_shunned
+	doctrine = carn_doctrine_other_slavery_accepted
+	doctrine = carn_doctrine_prostitution_crime
 	doctrine = sacred_lang_arabic
 	doctrine = moderation_doctrine
 

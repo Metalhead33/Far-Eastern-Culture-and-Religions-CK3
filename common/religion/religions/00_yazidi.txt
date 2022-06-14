@@ -34,6 +34,9 @@
 	doctrine = doctrine_clerical_gender_male_only
 	doctrine = doctrine_clerical_marriage_allowed
 	doctrine = carnd_doctrine_lust_accepted
+	doctrine = carn_doctrine_same_slavery_crime
+	doctrine = carn_doctrine_other_slavery_accepted
+	doctrine = carn_doctrine_prostitution_shunned
 	doctrine = strong_communal_identity_doctrine
 	doctrine = no_syncretism_doctrine
 	doctrine = reincarnation_doctrine

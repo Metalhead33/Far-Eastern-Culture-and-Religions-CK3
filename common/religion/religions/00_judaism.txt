@@ -30,6 +30,9 @@
 	doctrine = judgement_doctrine
 	doctrine = strong_communal_identity
 	doctrine = carnd_doctrine_lust_shunned
+	doctrine = carn_doctrine_same_slavery_crime
+	doctrine = carn_doctrine_other_slavery_accepted
+	doctrine = carn_doctrine_prostitution_shunned
 	doctrine = moderation_doctrine
 	doctrine = sacred_lang_hebrew
 	

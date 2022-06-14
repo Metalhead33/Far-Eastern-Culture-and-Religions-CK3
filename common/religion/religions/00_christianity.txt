@@ -37,6 +37,9 @@
 	doctrine = judgement_doctrine
 	doctrine = cosmopolitan_doctrine
 	doctrine = carnd_doctrine_lust_shunned
+	doctrine = carn_doctrine_same_slavery_crime
+	doctrine = carn_doctrine_other_slavery_shunned
+	doctrine = carn_doctrine_prostitution_shunned
 	
 	doctrine = moderation_doctrine
 	doctrine = sacred_lang_none
@@ -322,6 +325,7 @@
 			doctrine = tenet_monasticism
 			doctrine = judgement_doctrine
 			doctrine = sacred_lang_greek
+			doctrine = carn_doctrine_other_slavery_accepted
 
 			holy_order_names = {
 				{ name = "holy_order_brotherhood_of_the_holy_sepulchre" }
@@ -398,6 +402,10 @@
 			doctrine = sacred_lang_slavonic
 			doctrine = communal_identity_doctrine
 			doctrine = pagan_syncretism_doctrine
+			doctrine = carn_doctrine_same_slavery_shunned
+			doctrine = carn_doctrine_other_slavery_accepted
+			doctrine = carn_doctrine_prostitution_shunned
+			doctrine = doctrine_witchcraft_shunned
 
 			holy_order_names = {
 				{ name = "holy_order_brotherhood_of_the_holy_sepulchre" }
@@ -476,6 +484,8 @@
 			doctrine = judgement_doctrine
 			doctrine = tenet_pentarchy
 			doctrine = sacred_lang_coptic
+			doctrine = carn_doctrine_other_slavery_accepted
+			doctrine = carn_doctrine_same_slavery_shunned
 
 			holy_order_names = {
 				{ name = "holy_order_order_of_saint_anthony" }
@@ -552,6 +562,8 @@
 			doctrine = judgement_doctrine
 			doctrine = tenet_rite
 			doctrine = sacred_lang_ethiopic
+			doctrine = carn_doctrine_other_slavery_accepted
+			doctrine = carn_doctrine_same_slavery_shunned
 
 			holy_order_names = {
 				{ name = "holy_order_order_of_saint_anthony" }
@@ -629,6 +641,7 @@
 			doctrine = tenet_monasticism
 			doctrine = judgement_doctrine
 			doctrine = communal_identity_doctrine
+			doctrine = carn_doctrine_other_slavery_accepted
 
 			localization = { # Utilizes the 'East Christian' Saints, shared by Coptics and Armenians
 				#HealthGod
@@ -849,6 +862,7 @@
 			doctrine = doctrine_theocracy_temporal
 			doctrine = christian_protestant_doctrine
 			doctrine = mercy_of_gods_doctrine
+			doctrine = carn_doctrine_prostitution_crime
 
 			#Tenets
 			doctrine = tenet_literalism
@@ -900,6 +914,7 @@
 			doctrine = doctrine_homosexuality_shunned
 			doctrine = doctrine_deviancy_shunned
 			doctrine = carnd_doctrine_lust_accepted
+			doctrine = carn_doctrine_prostitution_accepted
 
 			#Tenets
 			doctrine = tenet_literalism
@@ -918,6 +933,7 @@
 			holy_site = alexandria
 			holy_site = carthage
 			holy_site = kerch
+			doctrine = carn_doctrine_other_slavery_accepted
 			
 			doctrine = christian_wacky_doctrine
 
@@ -1168,6 +1184,8 @@
 			doctrine = doctrine_adultery_women_accepted
 			doctrine = doctrine_deviancy_accepted
 			doctrine = doctrine_witchcraft_accepted
+			doctrine = carnd_doctrine_lust_accepted
+			doctrine = carn_doctrine_prostitution_accepted
 
 			#Clerical Functions
 			doctrine = doctrine_clerical_gender_either
@@ -1266,6 +1284,7 @@
 			doctrine = doctrine_clerical_function_alms_and_pacification
 			doctrine = doctrine_clerical_succession_spiritual_fixed_appointment
 			doctrine = doctrine_clerical_marriage_allowed
+			doctrine = carn_doctrine_other_slavery_accepted
 
 			#Tenets
 			religious_head = k_papal_state
@@ -1446,7 +1465,9 @@
 			doctrine = doctrine_homosexuality_shunned	
 			doctrine = doctrine_deviancy_shunned
 			#Clerical Functions	
-			doctrine = doctrine_clerical_function_alms_and_pacification	
+			doctrine = doctrine_clerical_function_alms_and_pacification
+			doctrine = carn_doctrine_other_slavery_accepted
+			doctrine = carn_doctrine_same_slavery_shunned
 				
 			#Tenets	
 			doctrine = christian_roman_doctrine

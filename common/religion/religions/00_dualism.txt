@@ -22,6 +22,9 @@
 	doctrine = doctrine_clerical_marriage_allowed
 	doctrine = doctrine_clerical_succession_spiritual_appointment
 	doctrine = carnd_doctrine_lust_shunned
+	doctrine = carn_doctrine_same_slavery_shunned
+	doctrine = carn_doctrine_other_slavery_accepted
+	doctrine = carn_doctrine_prostitution_crime
 	doctrine = cosmopolitan_doctrine
 	doctrine = gnosticism_doctrine	
 	
