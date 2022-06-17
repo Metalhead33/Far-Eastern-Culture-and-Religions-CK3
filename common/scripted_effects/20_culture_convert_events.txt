@@ -1,0 +1,46 @@
+﻿change_culture_if_religion = {
+	every_living_character = {
+		limit = {
+			faith = $FAITH$
+			culture = $OLD_CULTURE$
+		}
+		set_culture = $NEW_CULTURE$
+		every_ancestor = {
+			limit = {
+				faith = $FAITH$
+				culture = $OLD_CULTURE$
+			}
+			set_culture = $NEW_CULTURE$
+		}
+	}
+	every_county = {
+		limit = {
+			faith = $FAITH$
+			culture = $OLD_CULTURE$
+		}
+		set_county_culture = $NEW_CULTURE$
+	}
+}
+change_faith_if_pillar = {
+	every_living_character = {
+		limit = {
+			faith = $OLD_FAITH$
+			culture = { has_cultural_pillar = $PILLAR$ }
+		}
+		set_character_faith = $NEW_FAITH$
+		every_ancestor = {
+			limit = {
+				faith = $OLD_FAITH$
+				culture = { has_cultural_pillar = $PILLAR$ }
+			}
+			set_character_faith = $NEW_FAITH$
+		}
+	}
+	every_county = {
+		limit = {
+			faith = $OLD_FAITH$
+			culture = { has_cultural_pillar = $PILLAR$ }
+		}
+		set_county_faith = $NEW_FAITH$
+	}
+}

@@ -17,90 +17,44 @@ on_game_start = {
 		change_orthodox_to_pravoslav
 		change_egyptian_to_coptic
 		change_coptic_to_tewahedo
+		split_up_italians
+	}
+}
+
+split_up_italians = {
+	effect = {
 	}
 }
 
 change_egyptian_to_coptic = {
 	effect = {
-		every_living_character = {
-			limit = {
-				faith = faith:coptic
-				culture = culture:egyptian
-			}
-			set_culture = culture:egyptian_copt
-			every_ancestor = {
-				limit = {
-					faith = faith:coptic
-					culture = culture:egyptian
-				}
-				set_culture = culture:egyptian_copt
-			}
-		}
-		every_county = {
-			limit = {
-				faith = faith:coptic
-				culture = culture:egyptian
-			}
-			set_county_culture = culture:egyptian_copt
+		change_culture_if_religion = {
+			FAITH = faith:coptic
+			OLD_CULTURE = culture:egyptian
+			NEW_CULTURE = culture:egyptian_copt
 		}
 	}
 }
 change_coptic_to_tewahedo = {
 	effect = {
-		every_living_character = {
-			limit = {
-				faith = faith:coptic
-				culture = { has_cultural_pillar = language_ethiopic }
-			}
-			set_character_faith = faith:tewahedo
-			every_ancestor = {
-				limit = {
-					faith = faith:coptic
-					culture = { has_cultural_pillar = language_ethiopic }
-				}
-				set_character_faith = faith:tewahedo
-			}
-		}
-		every_county = {
-			limit = {
-				faith = faith:coptic
-				culture = { has_cultural_pillar = language_ethiopic }
-			}
-			set_county_faith = faith:tewahedo
+		change_faith_if_pillar = {
+			OLD_FAITH = faith:coptic
+			NEW_FAITH = faith:tewahedo
+			PILLAR = language_ethiopic
 		}
 	}
 }
 change_orthodox_to_pravoslav = {
 	effect = {
-		every_living_character = {
-			limit = {
-				faith = faith:orthodox
-				OR = {
-					culture = { has_cultural_pillar = language_slavonic }
-					culture = { has_cultural_pillar = language_wallachian }
-				}
-			}
-			set_character_faith = faith:slavic_christian
-			every_ancestor = {
-				limit = {
-					faith = faith:orthodox
-					OR = {
-						culture = { has_cultural_pillar = language_slavonic }
-						culture = { has_cultural_pillar = language_wallachian }
-					}
-				}
-				set_character_faith = faith:slavic_christian
-			}
+		change_faith_if_pillar = {
+			OLD_FAITH = faith:orthodox
+			NEW_FAITH = faith:slavic_christian
+			PILLAR = language_slavonic
 		}
-		every_county = {
-			limit = {
-				faith = faith:orthodox
-				OR = {
-					culture = { has_cultural_pillar = language_slavonic }
-					culture = { has_cultural_pillar = language_wallachian }
-				}
-			}
-			set_county_faith = faith:slavic_christian
+		change_faith_if_pillar = {
+			OLD_FAITH = faith:orthodox
+			NEW_FAITH = faith:slavic_christian
+			PILLAR = language_wallachian
 		}
 	}
 }
