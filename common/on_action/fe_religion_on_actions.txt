@@ -18,11 +18,75 @@ on_game_start = {
 		change_egyptian_to_coptic
 		change_coptic_to_tewahedo
 		split_up_italians
+		spawn_arpitan
+		spawn_frisian
+	}
+}
+
+spawn_frisian = {
+	effect = {
+		change_culture_if_region_pillar = {
+			REGION = special_frisian_culture_region
+			PILLAR = language_dutch
+			NEW_CULTURE = culture:frisian
+		}
+	}
+}
+
+spawn_arpitan = {
+	effect = {
+		change_culture_if_region = {
+			REGION = special_arpitan_culture_region
+			NEW_CULTURE = culture:arpitan
+		}
+		change_culture_if_region_noholder = {
+			REGION = special_arpitan_culture_region_noruler
+			NEW_CULTURE = culture:arpitan
+		}
 	}
 }
 
 split_up_italians = {
 	effect = {
+		change_culture_if_region_pillar = {
+			PILLAR = language_italian
+			REGION = special_umbrian_culture_region
+			NEW_CULTURE = culture:umbrian
+		}
+		change_culture_if_region_pillar = {
+			PILLAR = language_italian
+			REGION = special_laziale_culture_region
+			NEW_CULTURE = culture:laziale
+		}
+		change_culture_if_region_pillar = {
+			PILLAR = language_italian
+			REGION = special_neapolitan_culture_region
+			NEW_CULTURE = culture:neapolitan
+		}
+		change_culture_if_region_pillar = {
+			PILLAR = language_italian
+			REGION = special_tuscan_culture_region
+			NEW_CULTURE = culture:tuscan
+		}
+		change_culture_if_region_pillar = {
+			PILLAR = language_italian
+			REGION = special_ligurian_culture_region
+			NEW_CULTURE = culture:ligurian
+		}
+		change_culture_if_region_pillar = {
+			PILLAR = language_italian
+			REGION = special_venetian_culture_region
+			NEW_CULTURE = culture:venetian
+		}
+		change_culture_if_region_pillar = {
+			PILLAR = language_italian
+			REGION = special_dalmatian_culture_region
+			NEW_CULTURE = culture:dalmatian
+		}
+		change_culture_if_region_noholder = {
+			REGION = special_dalmatian_culture_region
+			NEW_CULTURE = culture:dalmatian
+		}
 	}
 }
 

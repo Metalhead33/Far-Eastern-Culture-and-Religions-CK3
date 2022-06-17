@@ -44,3 +44,96 @@ change_faith_if_pillar = {
 		set_county_faith = $NEW_FAITH$
 	}
 }
+
+
+change_culture_if_region = {
+	every_county = {
+		limit = {
+			title_province = {
+				geographical_region = $REGION$
+			}
+		}
+		set_county_culture = $NEW_CULTURE$
+		holder = {
+			if = {
+				limit = {
+					capital_province = {
+						geographical_region = $REGION$
+					}
+				}
+				set_culture = $NEW_CULTURE$
+				every_ancestor = {
+					set_culture = $NEW_CULTURE$
+				}
+			}
+		}
+	}
+}
+
+change_culture_if_region_pillar = {
+	every_county = {
+		limit = {
+			culture = { has_cultural_pillar = $PILLAR$ }
+			title_province = {
+				geographical_region = $REGION$
+			}
+		}
+		set_county_culture = $NEW_CULTURE$
+		holder = {
+			if = {
+				limit = {
+					culture = { has_cultural_pillar = $PILLAR$ }
+					capital_province = {
+						geographical_region = $REGION$
+					}
+				}
+				set_culture = $NEW_CULTURE$
+				every_ancestor = {
+					limit = {
+						culture = { has_cultural_pillar = $PILLAR$ }
+					}
+					set_culture = $NEW_CULTURE$
+				}
+			}
+		}
+	}
+}
+change_culture_if_region_noholder = {
+	every_county = {
+		limit = {
+			title_province = {
+				geographical_region = $REGION$
+			}
+		}
+		set_county_culture = $NEW_CULTURE$
+	}
+}
+
+change_culture_if_region_culture = {
+	every_county = {
+		limit = {
+			culture = $OLD_CULTURE$
+			title_province = {
+				geographical_region = $REGION$
+			}
+		}
+		set_county_culture = $NEW_CULTURE$
+		holder = {
+			if = {
+				limit = {
+					culture = $OLD_CULTURE$
+					capital_province = {
+						geographical_region = $REGION$
+					}
+				}
+				set_culture = $NEW_CULTURE$
+				every_ancestor = {
+					limit = {
+						culture = $OLD_CULTURE$
+					}
+					set_culture = $NEW_CULTURE$
+				}
+			}
+		}
+	}
+}

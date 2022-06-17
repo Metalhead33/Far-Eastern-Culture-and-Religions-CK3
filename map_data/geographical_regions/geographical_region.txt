@@ -1902,6 +1902,63 @@ special_azeri_culture_region = {
 		d_shirvan d_azerbaijan
 	}
 }
+special_umbrian_culture_region = {
+	duchies = {
+		d_spoleto d_ancona
+	}
+}
+
+special_laziale_culture_region = {
+	duchies = {
+		d_latium
+	}
+}
+
+special_neapolitan_culture_region = {
+	duchies = {
+		d_capua d_benevento d_apulia d_salerno
+	}
+}
+
+special_tuscan_culture_region = {
+	duchies = {
+		d_toscana d_pisa d_emilia
+	}
+}
+special_ligurian_culture_region = {
+	duchies = {
+		d_genoa
+	}
+}
+special_venetian_culture_region = {
+	duchies = {
+		d_friuli d_venice
+	}
+}
+special_dalmatian_culture_region = {
+	duchies = {
+		d_dalmatia d_ragusa
+	}
+}
+
+special_arpitan_culture_region = {
+	duchies = {
+		d_savoie d_dauphine d_upper_burgundy d_transjurania d_burgundy
+	}
+}
+special_arpitan_culture_region_noruler = {
+	counties = {
+		c_sundgau
+	}
+}
+special_frisian_culture_region = {
+	duchies = {
+		d_frisia
+	}
+	counties = {
+		c_westfriesland
+	}
+}
 
 ### Special Cagot region
 special_cagot_region = {
