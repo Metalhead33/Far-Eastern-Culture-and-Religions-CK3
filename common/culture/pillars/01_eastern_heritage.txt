@@ -33,3 +33,7 @@ heritage_korean = {
 heritage_malay = {
 	type = heritage
 }
+
+heritage_kavkaz = {
+	type = heritage
+}

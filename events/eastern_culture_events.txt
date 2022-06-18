@@ -379,7 +379,6 @@ eastern_culture.0009 = {
 
 # Organically spread Anatolian Turkish culture
 
-
 eastern_culture.0010 = {
 	type = character_event
 	title = eastern_culture.0009.t
@@ -418,4 +417,46 @@ eastern_culture.0010 = {
 			set_county_culture = culture:azeri_turkish
 		}
 	}
+}
+eastern_culture.0011 = {
+    type = character_event
+	hidden = yes
+    title = eastern_culture.11
+    desc = eastern_culture.11.desc
+	theme = pregnancy
+	trigger = {
+		NOT = { has_character_flag = circassian_seeded }
+		NOT = { has_trait = beauty_good_3 }
+		culture = {
+			has_cultural_parameter = tradition_circassian_beauty
+		}
+		is_alive = yes
+	}
+    immediate = {
+		random = {
+			chance = 10
+			if = {
+				limit = { has_trait = beauty_good_2 }
+				add_trait = beauty_good_3
+			}
+			else_if = {
+				limit = { has_trait = beauty_good_1 }
+				add_trait = beauty_good_2
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_trait = beauty_bad_1
+						has_trait = beauty_bad_2
+						has_trait = beauty_bad_3
+					}
+				}
+				add_trait = beauty_good_1
+			}
+			else = {
+				add_trait = beauty_good_1
+			}
+		}
+		add_character_flag = circassian_seeded
+    }
 }

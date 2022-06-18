@@ -2,7 +2,7 @@
 	color = armenian
 	
 	ethos = ethos_stoic
-	heritage = heritage_byzantine
+	heritage = heritage_kavkaz
 	language = language_armenian
 	martial_custom = martial_custom_male_only
 	traditions = {
@@ -55,7 +55,7 @@ alan = {
 	color = { 0.7 0.5 0.7 }
 	
 	ethos = ethos_communal
-	heritage = heritage_byzantine
+	heritage = heritage_kavkaz
 	language = language_north_iranian
 	martial_custom = martial_custom_male_only
 	traditions = {
@@ -81,7 +81,7 @@ georgian = {
 	color = georgian
 	
 	ethos = ethos_communal
-	heritage = heritage_byzantine
+	heritage = heritage_kavkaz
 	language = language_georgian
 	martial_custom = martial_custom_male_only
 	traditions = {

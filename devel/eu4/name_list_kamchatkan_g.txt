@@ -1,0 +1,150 @@
+name_list_ainu = {
+	cadet_dynasty_names = {
+		"Shibushari"
+		"Hae"
+		"Betsu"
+		"Shiraoi"
+		"Kurasi"
+		"Kakizaki"
+		"Ponyanpe"
+		"Shirokani"
+		"Otona"
+		"Ekashi"
+		"Saru"
+		"Usu"
+
+	}
+
+	dynasty_names = {
+				"Shibushari"
+		"Hae"
+		"Betsu"
+		"Shiraoi"
+		"Kurasi"
+		"Kakizaki"
+		"Ponyanpe"
+		"Shirokani"
+		"Otona"
+		"Ekashi"
+		"Saru"
+		"Usu"
+
+	}
+
+	male_names = {
+				"Koshamain"
+		"Shakushain"
+		"Kamokutain"
+		"Onibishi"
+		"Penri"
+		"Piripos"
+		"Takatsuki"
+
+	}
+	
+	female_names = {
+				"Monashir"
+		"Etunrachich"
+		"Toitoi"
+
+	}
+	
+}name_list_kamchatkan = {
+	cadet_dynasty_names = {
+		"Garpancha"
+		"Songolik"
+		"Tymancha"
+		"Tykulcha"
+		"Gudeikon"
+		"Adiul"
+		"Khadiul"
+		"Dyaluncha"
+		"Aksik"
+		"Kepele"
+		"Gugdaul"
+		"Burgumi"
+		"Vavlya"
+		"Vadyo"
+		"Vankho"
+		"Eldan"
+		"Kacheda"
+		"Kilim"
+		"Agna"
+		"Sebeda"
+		"Saltyk"
+		"Alvali"
+		"Akhtamak"
+
+	}
+
+	dynasty_names = {
+				"Garpancha"
+		"Songolik"
+		"Tymancha"
+		"Tykulcha"
+		"Gudeikon"
+		"Adiul"
+		"Khadiul"
+		"Dyaluncha"
+		"Aksik"
+		"Kepele"
+		"Gugdaul"
+		"Burgumi"
+		"Vavlya"
+		"Vadyo"
+		"Vankho"
+		"Eldan"
+		"Kacheda"
+		"Kilim"
+		"Agna"
+		"Sebeda"
+		"Saltyk"
+		"Alvali"
+		"Akhtamak"
+
+	}
+
+	male_names = {
+				"Aiaan"
+		"Atchytagyn"
+		"Givynkeev"
+		"Nutenli"
+		"Gyrgolgyrgyn"
+		"Tanat"
+		"Darkhan"
+		"Dokhsun"
+		"Duolan"
+		"Dygyn"
+		"Dulustaan"
+		"Kyytymei"
+		"Kencheeri"
+		"Keskil"
+		"Manchaary"
+		"Michil"
+		"Modun"
+		"Nurgun"
+		"Nuolan"
+		"Sulustaan"
+		"Tolluman"
+		"Timir"
+		"Tygyn"
+		"Tuskul"
+		"Uolan"
+		"Ergis"
+		"Erchim"
+		"Erkin"
+		"Yrgel"
+		"Kharyskhan"
+
+	}
+	
+	female_names = {
+				"Naryiaana"
+		"Aiyyna"
+		"Kydaana"
+		"Tuskulaana"
+		"Khaarchaana"
+
+	}
+	
+}

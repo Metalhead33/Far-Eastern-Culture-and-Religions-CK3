@@ -1,0 +1,176 @@
+name_list_aleutian = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+				"Aariak"
+		"Aassanaaq"
+		"Aippaq"
+		"Aklaq"
+		"Amaqjuaq"
+		"Ammagaruqnik"
+		"Anik"
+		"Apaata"
+		"Aput"
+		"Aputi"
+		"Aqakuktuq"
+		"Aqillutaq"
+		"Aqpalibaaqtuq"
+		"Aquyittuq"
+		"Arnauyq"
+		"Asuilaak"
+		"Atanarjuat"
+		"Atiqtalaaq"
+		"Atuqtuaq"
+		"Aujaq"
+		"Aviqming"
+		"Ila"
+		"Ilannaq"
+		"Innugati"
+		"INNuksuk"
+		"Irniq"
+		"Itigaituk"
+		"Kanguq"
+		"Kataktuaq"
+		""
+		"Keedtapeck"
+		"Kissarviarsuk"
+		"Kumaglak"
+		"Kunik"
+		"Kunikpaa"
+		"Malik"
+		"Nanouk"
+		"Nasak"
+		"Natsiq"
+
+	}
+	
+	female_names = {
+				"Kanguyak"
+		"Kanosak"
+		"Kakortok"
+		"Krernertok"
+		"Kunwaktok"
+		"Kuvageegai"
+		"Makoktok"
+		"Miki"
+		"Nagojut"
+		"Nukka"
+		"Palartok"
+		"Panik"
+		"Pukiq"
+		"Qannik"
+		"Quvianuq"
+		"Sakari"
+		"Sesi"
+		"Shila"
+		"Siku"
+		"Tatkret"
+		"Tiguaq"
+		"Ublureak"
+		"Uiritsaktak"
+		"Umiaktorvik"
+		"Yuralria"
+
+	}
+	
+}name_list_inuit = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+				"Nauja"
+		"Nirliq"
+		"Nuniq"
+		"Nuvuk"
+		"Oki"
+		"Pamiuq"
+		"Patuktuq"
+		"Pauloosie"
+		"Petuwaq"
+		"Pimniq"
+		"Piqqaluyungmik"
+		"Pittiulak"
+		"Pukajaak"
+		"Qajak"
+		"Qammutiq"
+		"Qamut"
+		"Qannik"
+		"Qaumaniq"
+		"Qausiqtuk"
+		"Qimmiabruk"
+		"Qimmiq"
+		"Qulitalik"
+		"Sauri"
+		"Sighna"
+		""
+		"Siluk"
+		"Sivoy"
+		"Sivuugun"
+		"Taktuq"
+		"Taliriktug"
+		"Tikaani"
+		"Tiqriganiannig"
+		"Tukkuyummavungga"
+		"Tulimak"
+		"Tulimaq"
+		"Tulugaq"
+		"Tungajuaq"
+		"Tupiq"
+		"Tuuq"
+		"Ugalik"
+		"Ujurak"
+		"Ukiuk"
+		"Unnuk"
+		"Usuiituk"
+
+	}
+	
+	female_names = {
+				"Ahnah"
+		"Akna"
+		"Chena"
+		"Corazon"
+		"Desna"
+		"Kaskae"
+		"Kaya"
+		"Kirima"
+		"Koko"
+		"Malina"
+		"Adlartok"
+		"Ahnah"
+		"Akiak"
+		"Anana"
+		"Anernerk"
+		"Annakpok"
+		"Aput"
+		"Ataciare"
+		"Atka"
+		"Aukaneck"
+		"Biisaiyowaq"
+		"Buniq"
+		"Chulyin"
+		"Cikup"
+		"Corazon"
+		"Cupun"
+		"Hey"
+		"Iluak"
+		"Iluq"
+		"Imnek"
+		"Ipiktok"
+		"Iqniq"
+		"Kakrayok"
+
+	}
+	
+}

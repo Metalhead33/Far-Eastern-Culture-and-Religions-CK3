@@ -1,0 +1,253 @@
+name_list_het = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+				"Ancamilla"
+		"Nampai"
+		"CoNNoepAAn"
+		"Nahueltripai"
+		"Millarapue"
+		"Millalelmo"
+		"Lautaro"
+		"Paillamachu"
+		"Huenecura"
+		"Aillavilu"
+		"Catrileo"
+		"NNanco"
+		"MelIIn"
+		"CaupolicAAn"
+		"IllanguliEEn"
+		"Pinolevi"
+		"PurrAAn"
+		"MaNNil"
+		"QuilapAAn"
+		"Pelantaro"
+
+	}
+	
+	female_names = {
+				"Suyai"
+		"Yaima"
+		"Collipal"
+		"Curipan"
+		"Cuyen"
+		"Calfuray"
+		"Cayfutray"
+		"Ilchahueque"
+		"Ipi"
+		"Kuyen"
+		"Lefitray"
+		"Leflay"
+		"Llanquipan"
+		"Llanquiray"
+		"Manque"
+		"Millaray"
+		"Peyeche"
+		"Piro"
+		"Pitrel"
+		"Quetroman"
+		"Quimey"
+		"Quintruy"
+		"Quintuqueo"
+		"Rayen"
+		"Saqui"
+		"Somoche"
+
+	}
+	
+}name_list_huarpe = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+				"Ancamilla"
+		"Nampai"
+		"CoNNoepAAn"
+		"Nahueltripai"
+		"Millarapue"
+		"Millalelmo"
+		"Lautaro"
+		"Paillamachu"
+		"Huenecura"
+		"Aillavilu"
+		"Catrileo"
+		"NNanco"
+		"MelIIn"
+		"CaupolicAAn"
+		"IllanguliEEn"
+		"Pinolevi"
+		"PurrAAn"
+		"MaNNil"
+		"QuilapAAn"
+		"Pelantaro"
+
+	}
+	
+	female_names = {
+				"Suyai"
+		"Yaima"
+		"Collipal"
+		"Curipan"
+		"Cuyen"
+		"Calfuray"
+		"Cayfutray"
+		"Ilchahueque"
+		"Ipi"
+		"Kuyen"
+		"Lefitray"
+		"Leflay"
+		"Llanquipan"
+		"Llanquiray"
+		"Manque"
+		"Millaray"
+		"Peyeche"
+		"Piro"
+		"Pitrel"
+		"Quetroman"
+		"Quimey"
+		"Quintruy"
+		"Quintuqueo"
+		"Rayen"
+		"Saqui"
+		"Somoche"
+
+	}
+	
+}name_list_mapuche = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+				"Ancamilla"
+		"Nampai"
+		"CoNNoepAAn"
+		"Nahueltripai"
+		"Millarapue"
+		"Millalelmo"
+		"Lautaro"
+		"Paillamachu"
+		"Huenecura"
+		"Aillavilu"
+		"Catrileo"
+		"NNanco"
+		"MelIIn"
+		"CaupolicAAn"
+		"IllanguliEEn"
+		"Pinolevi"
+		"PurrAAn"
+		"MaNNil"
+		"QuilapAAn"
+		"Pelantaro"
+
+	}
+	
+	female_names = {
+				"Suyai"
+		"Yaima"
+		"Collipal"
+		"Curipan"
+		"Cuyen"
+		"Calfuray"
+		"Cayfutray"
+		"Ilchahueque"
+		"Ipi"
+		"Kuyen"
+		"Lefitray"
+		"Leflay"
+		"Llanquipan"
+		"Llanquiray"
+		"Manque"
+		"Millaray"
+		"Peyeche"
+		"Piro"
+		"Pitrel"
+		"Quetroman"
+		"Quimey"
+		"Quintruy"
+		"Quintuqueo"
+		"Rayen"
+		"Saqui"
+		"Somoche"
+
+	}
+	
+}name_list_patagonian = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+				"Ancamilla"
+		"Nampai"
+		"CoNNoepAAn"
+		"Nahueltripai"
+		"Millarapue"
+		"Millalelmo"
+		"Lautaro"
+		"Paillamachu"
+		"Huenecura"
+		"Aillavilu"
+		"Catrileo"
+		"NNanco"
+		"MelIIn"
+		"CaupolicAAn"
+		"IllanguliEEn"
+		"Pinolevi"
+		"PurrAAn"
+		"MaNNil"
+		"QuilapAAn"
+		"Pelantaro"
+
+	}
+	
+	female_names = {
+				"Suyai"
+		"Yaima"
+		"Collipal"
+		"Curipan"
+		"Cuyen"
+		"Calfuray"
+		"Cayfutray"
+		"Ilchahueque"
+		"Ipi"
+		"Kuyen"
+		"Lefitray"
+		"Leflay"
+		"Llanquipan"
+		"Llanquiray"
+		"Manque"
+		"Millaray"
+		"Peyeche"
+		"Piro"
+		"Pitrel"
+		"Quetroman"
+		"Quimey"
+		"Quintruy"
+		"Quintuqueo"
+		"Rayen"
+		"Saqui"
+		"Somoche"
+
+	}
+	
+}

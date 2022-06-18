@@ -1,0 +1,348 @@
+name_list_kiowa = {
+	cadet_dynasty_names = {
+		"Clatsop"
+		"Cathlamet"
+		"Skilloot"
+		"Cathlapotle"
+		"Multnomah"
+		"Watlala"
+		"Clowwewalla"
+		"Clackamas"
+		"Chiluckittequaw"
+		"Wishram"
+		"Wasco"
+		"Atfalati"
+		"Yamel"
+		"Lakmiut"
+		"Chepenafa"
+		"Santiam"
+		"Chelamela"
+		"Calapooya"
+		"Yoncalla"
+
+	}
+
+	dynasty_names = {
+				"Clatsop"
+		"Cathlamet"
+		"Skilloot"
+		"Cathlapotle"
+		"Multnomah"
+		"Watlala"
+		"Clowwewalla"
+		"Clackamas"
+		"Chiluckittequaw"
+		"Wishram"
+		"Wasco"
+		"Atfalati"
+		"Yamel"
+		"Lakmiut"
+		"Chepenafa"
+		"Santiam"
+		"Chelamela"
+		"Calapooya"
+		"Yoncalla"
+
+	}
+
+	male_names = {
+				"Comcomly"
+		"Tumulth"
+		"Napesa"
+		"Injice"
+		"Tasyah"
+		"Nessick"
+		"Etnama"
+		"Cheenlenten"
+		"Nasyah"
+		"Absaquil"
+		"Quintioosan"
+		"Talsapeer"
+		"Myneletta"
+		"Quiaquatty"
+		"Yalkus"
+		"Kawkama"
+		"Kiles"
+		"Kowahtough"
+		"Anta"
+		"Quilala"
+		"Mequah"
+		"Yackatee"
+		"Tophor"
+		"Hallale"
+		"Pulktah"
+		"Tumwalth"
+		"Obanahah"
+		"Watchano"
+		"Teapinick"
+		"Wallahpicate"
+		"Lalbick"
+		"Cuckamanna"
+		"Towyecolla"
+		"Laham"
+		"Senegertta"
+		"Pulican"
+		"Tena"
+		"Pulkuptima"
+		"Sallaf"
+		"Hoipkenek"
+		"Yeptah"
+		"Satinvose"
+
+	}
+	
+	female_names = {
+				"Elvamox"
+		"Ethete"
+		"Natane"
+		"Bly"
+		"Dae"
+		"Cocheta"
+		"Ekta"
+		"Ela"
+		"Elina"
+		"Ila"
+		"Imala"
+		"Inayat"
+		"Kushala"
+		"Kusuma"
+		"Liluye"
+		"Lipika"
+		"Lolaksi"
+		"Lolotea"
+		"Nascha"
+		"Nashota"
+		"Natane"
+		"Nita"
+		"Nitara"
+		"Niti"
+		"Nitika"
+		"Nittawosew"
+		"Onawa"
+		"Onawah"
+		"Preyasi"
+		"Prita"
+		"PreetiHalf"
+		"Smita"
+		"Smriti"
+		"Surabhi"
+		"Tapi"
+		"Tara"
+
+	}
+	
+}name_list_piman = {
+	cadet_dynasty_names = {
+		"Akimel"
+		"Tohono"
+		"Hia"
+		"Ced"
+		"Sobaipuri"
+		"Otama"
+		"Kina"
+		"Equituni"
+		"Uturituc"
+		"Sacaton"
+		"Onk"
+		"Akimal"
+		"Yoreme"
+		"Hiakim"
+		"Potam"
+		"Vicam"
+		"Torim"
+		"Bacum"
+		"Cocorit"
+		"Huirivis"
+		"Benem"
+		"Rahum"
+
+	}
+
+	dynasty_names = {
+				"Akimel"
+		"Tohono"
+		"Hia"
+		"Ced"
+		"Sobaipuri"
+		"Otama"
+		"Kina"
+		"Equituni"
+		"Uturituc"
+		"Sacaton"
+		"Onk"
+		"Akimal"
+		"Yoreme"
+		"Hiakim"
+		"Potam"
+		"Vicam"
+		"Torim"
+		"Bacum"
+		"Cocorit"
+		"Huirivis"
+		"Benem"
+		"Rahum"
+
+	}
+
+	male_names = {
+				"Oacpicagiguya"
+		"Kaviu"
+		"Papago"
+		"Panhop"
+		"CajemEE"
+
+	}
+	
+	female_names = {
+				"Kahavasooah"
+		"Ootcakao"
+		"Sacagawea"
+		"Chipeta"
+		"Tocmetone"
+
+	}
+	
+}name_list_pueblo = {
+	cadet_dynasty_names = {
+		"Acoma"
+		"Cochiti"
+		"Isleta"
+		"Jemez"
+		"Laguna"
+		"Nambe"
+		"Ohkay"
+		"Owingeh"
+		"Picuris"
+		"Pojoaque"
+		"Sandia"
+		"Taos"
+		"Tesuque"
+		"Zia"
+		"Zuni"
+		"Hopi"
+		"Piru"
+
+	}
+
+	dynasty_names = {
+				"Acoma"
+		"Cochiti"
+		"Isleta"
+		"Jemez"
+		"Laguna"
+		"Nambe"
+		"Ohkay"
+		"Owingeh"
+		"Picuris"
+		"Pojoaque"
+		"Sandia"
+		"Taos"
+		"Tesuque"
+		"Zia"
+		"Zuni"
+		"Hopi"
+		"Piru"
+
+	}
+
+	male_names = {
+				"PopEE"
+		"Kuhtihth"
+		"Galisteo"
+		"Xenome"
+		"Ollito"
+		"Tagu"
+		"Bolsas"
+		"Naranjo"
+		"Catiti"
+
+	}
+	
+	female_names = {
+				"Ootcakao"
+		"Kahavasooah"
+		"Ootcakao"
+		"Sacagawea"
+		"Chipeta"
+		"Tocmetone"
+
+	}
+	
+}name_list_shoshone = {
+	cadet_dynasty_names = {
+		"Akimel"
+		"Tohono"
+		"Hia"
+		"Ced"
+		"Sobaipuri"
+		"Otama"
+		"Kina"
+		"Equituni"
+		"Uturituc"
+		"Sacaton"
+		"Onk"
+		"Akimal"
+		"Yoreme"
+		"Hiakim"
+		"Potam"
+		"Vicam"
+		"Torim"
+		"Bacum"
+		"Cocorit"
+		"Huirivis"
+		"Benem"
+		"Rahum"
+
+	}
+
+	dynasty_names = {
+				"Akimel"
+		"Tohono"
+		"Hia"
+		"Ced"
+		"Sobaipuri"
+		"Otama"
+		"Kina"
+		"Equituni"
+		"Uturituc"
+		"Sacaton"
+		"Onk"
+		"Akimal"
+		"Yoreme"
+		"Hiakim"
+		"Potam"
+		"Vicam"
+		"Torim"
+		"Bacum"
+		"Cocorit"
+		"Huirivis"
+		"Benem"
+		"Rahum"
+
+	}
+
+	male_names = {
+				"Sequoyah"
+		"Attakullaculla"
+		"Johan"
+		"Ross"
+		"Moytoy"
+		"Yonaguska"
+		"Dragging"
+		"Canoe"
+		"Agi"
+		"It"
+		"Boudinot"
+
+	}
+	
+	female_names = {
+				"Kahavasooah"
+		"Ootcakao"
+		"Sacagawea"
+		"Chipeta"
+		"Tocmetone"
+
+	}
+	
+}

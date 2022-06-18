@@ -135,7 +135,7 @@
 
 ###c_avlonas
 3711 = {	#Avlonas
-	culture = greek
+	culture = albanian
 	religion = orthodox
 	holding = castle_holding
 }

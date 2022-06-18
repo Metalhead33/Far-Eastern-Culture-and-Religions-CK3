@@ -1,0 +1,171 @@
+name_list_chokwe = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}name_list_jukun = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}name_list_kongolese = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}name_list_kuba = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}name_list_luba = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}name_list_lunda = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}name_list_mbangala = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}name_list_mbundu = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}name_list_sawabantu = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}name_list_yaka = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}

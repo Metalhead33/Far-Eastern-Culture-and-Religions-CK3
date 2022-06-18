@@ -9,6 +9,7 @@ on_character_faith_change = {
 carn_character_initialization_pulse = {
 	events = {
 	sacred_language.0001
+	eastern_culture.0011
 	}
 }
 
@@ -20,6 +21,7 @@ on_game_start = {
 		split_up_italians
 		spawn_arpitan
 		spawn_frisian
+		spawn_neo_caucasian
 	}
 }
 
@@ -29,6 +31,32 @@ spawn_frisian = {
 			REGION = special_frisian_culture_region
 			PILLAR = language_dutch
 			NEW_CULTURE = culture:frisian
+		}
+	}
+}
+
+spawn_neo_caucasian = {
+	effect = {
+		change_culture_if_region_noholder = {
+			REGION = special_udi_culture_region
+			NEW_CULTURE = culture:udi
+		}
+		change_culture_faith_if_region = {
+			REGION = special_caucasian_avar_culture_region
+			NEW_CULTURE = culture:caucasian_avar
+			NEW_FAITH = faith:orthodox
+		}
+		change_culture_if_region = {
+			REGION = special_circassian_culture_region
+			NEW_CULTURE = culture:circassian
+		}
+		change_culture_if_region_noholder = {
+			REGION = special_circassian_culture_region_noruler
+			NEW_CULTURE = culture:circassian
+		}
+		change_culture_if_region = {
+			REGION = special_adhari_culture_region
+			NEW_CULTURE = culture:adhari
 		}
 	}
 }
@@ -48,6 +76,11 @@ spawn_arpitan = {
 
 split_up_italians = {
 	effect = {
+		change_culture_if_region_pillar = {
+			PILLAR = language_italian
+			REGION = special_romagnol_culture_region
+			NEW_CULTURE = culture:romagnol
+		}
 		change_culture_if_region_pillar = {
 			PILLAR = language_italian
 			REGION = special_umbrian_culture_region
@@ -79,6 +112,11 @@ split_up_italians = {
 			NEW_CULTURE = culture:venetian
 		}
 		change_culture_if_region_pillar = {
+			PILLAR = language_slavonic
+			REGION = special_venetian_culture_region
+			NEW_CULTURE = culture:venetian
+		}
+		change_culture_if_region_pillar = {
 			PILLAR = language_italian
 			REGION = special_dalmatian_culture_region
 			NEW_CULTURE = culture:dalmatian
@@ -86,6 +124,12 @@ split_up_italians = {
 		change_culture_if_region_noholder = {
 			REGION = special_dalmatian_culture_region
 			NEW_CULTURE = culture:dalmatian
+		}
+		every_living_character = {
+			limit = {
+				culture = culture:italian
+			}
+			set_culture = culture:romagnol
 		}
 	}
 }

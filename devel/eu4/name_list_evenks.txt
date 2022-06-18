@@ -1,0 +1,495 @@
+name_list_buryat = {
+	cadet_dynasty_names = {
+		"Badarhan"
+		"Chagatay"
+		"EdigUUid"
+		"Giray"
+		"Borjigin"
+		"Shaybanid"
+		"Janid"
+		"Mangit"
+
+	}
+
+	dynasty_names = {
+				"Badarhan"
+		"Chagatay"
+		"EdigUUid"
+		"Giray"
+		"Borjigin"
+		"Shaybanid"
+		"Janid"
+		"Mangit"
+
+	}
+
+	male_names = {
+				"Agbarjin"
+		"Adai"
+		"Altan"
+		"Arigaba"
+		"Arugtai"
+		"Ayurparibhadra"
+		"Bodi"
+		"Bek"
+		"Bahamu"
+		"Bars"
+		"Buyan"
+		"BiligtUU"
+		"Dayan"
+		"Darayisung"
+		"Delbeg"
+		"Ejei"
+		"Elbeg"
+		"Engke"
+		"GUUyUUk"
+		"GUUn"
+		"Gulichi"
+		"Irinchibal"
+		"Jorightu"
+		"Kublai"
+		"KOOke"
+		"Ligdan"
+		"MarkOOrgis"
+		"MOOngke"
+		"Mulan"
+		"Manduulun"
+		"ONljei"
+		"ONrUUg"
+		"Oyiradai"
+		"ONgOOdei"
+		"Qayshan"
+		"Qoshila"
+		"Sayn"
+		"Suddhipala"
+		"Tayisung"
+		"Temujin"
+		"TemUUr"
+		"Toghun"
+		"TUUmen"
+		"Tolui"
+		"Toq"
+		"Uskhal"
+		"YesUUn"
+		"Ariq"
+		"Batu"
+		"Eljigidei"
+		"Joichi"
+
+	}
+	
+	female_names = {
+				"TemUUlen"
+		"BOOrte"
+		"Mandukhai"
+		"Samar"
+		"Zaufishan"
+
+	}
+	
+}name_list_evenk = {
+	cadet_dynasty_names = {
+		"Badarhan"
+		"Tabangut"
+
+	}
+
+	dynasty_names = {
+				"Badarhan"
+		"Tabangut"
+
+	}
+
+	male_names = {
+				"Aiaan"
+		"Atchytagyn"
+		"Givynkeev"
+		"Nutenli"
+		"Gyrgolgyrgyn"
+		"Tanat"
+		"Darkhan"
+		"Dokhsun"
+		"Duolan"
+		"Dygyn"
+		"Dulustaan"
+		"Kyytymei"
+		"Kencheeri"
+		"Keskil"
+		"Manchaary"
+		"Michil"
+		"Modun"
+		"Nurgun"
+		"Nuolan"
+		"Sulustaan"
+		"Tolluman"
+		"Timir"
+		"Tygyn"
+		"Tuskul"
+		"Uolan"
+		"Ergis"
+		"Erchim"
+		"Erkin"
+		"Yrgel"
+		"Kharyskhan"
+
+	}
+	
+	female_names = {
+				"Naryiaana"
+		"Aiyyna"
+		"Kydaana"
+		"Tuskulaana"
+		"Khaarchaana"
+		"TemUUlen"
+		"BOOrte"
+		"Mandukhai"
+		"Samar"
+		"Zaufishan"
+
+	}
+	
+}name_list_manchu = {
+	cadet_dynasty_names = {
+		"Aisin"
+		"Gioro"
+		"Wanyan"
+		"Yehe"
+		"Nara"
+		"Ula"
+		"Nara"
+		"Magiya"
+		"Hala"
+		"Niohuru"
+		"Heseri"
+		"Guwalgiya"
+		"Tunggiya"
+		"Hata"
+		"Hoifa"
+		"Yeren"
+		"Udige"
+
+	}
+
+	dynasty_names = {
+				"Aisin"
+		"Gioro"
+		"Wanyan"
+		"Yehe"
+		"Nara"
+		"Ula"
+		"Nara"
+		"Magiya"
+		"Hala"
+		"Niohuru"
+		"Heseri"
+		"Guwalgiya"
+		"Tunggiya"
+		"Hata"
+		"Hoifa"
+		"Yeren"
+		"Udige"
+
+	}
+
+	male_names = {
+				"Bukuri"
+		"Yongson"
+		"Sibeoci"
+		"Fiyanggu"
+		"Dudu"
+		"Mengtemu"
+		"Huang"
+		"Taiji"
+		"Hiowan"
+		"Yei"
+		"In"
+		"Jen"
+		"Hung"
+		"Li"
+		"Yong"
+		"Yan"
+		"Min"
+		"Ning"
+		"Cungsan"
+		"Tolo"
+		"Fuman"
+		"Giocangga"
+		"Taksi"
+		"Nurhachi"
+		"Dorgon"
+		"Hooge"
+		"Fulin"
+		"Fanca"
+		"Hoogle"
+		"Yinzhi"
+		"Yinreng"
+		"Yinti"
+		"Daisan"
+		"Abatai"
+		"Ajige"
+		"Dodo"
+		"Yinxiang"
+		"Yinsi"
+		"Yintang"
+		"Hongshi"
+		"Hongzhou"
+		"Yongqi"
+		"Akjan"
+		"Ayan"
+		"Baohu"
+		"Chengjun"
+		"Dorgide"
+		"Eje"
+		"Encehen"
+		"Fisin"
+		"Fulu"
+		"Ganyong"
+		"Ganzhan"
+		"Hurong"
+		"Jabsan"
+		"Jakdan"
+		"Leli"
+		"Liyi"
+		"Lung"
+		"Mergen"
+		"Muduri"
+		"Mujin"
+		"Oori"
+		"Radi"
+		"Talman"
+		"Wehe"
+		"Yelu"
+		"Yongyi"
+		"Zhanhung"
+		"Zhenghu"
+		"Zhengrong"
+		"Zhongcheng"
+		"Zhongchun"
+		"Zhongho"
+		"Zhonghu"
+		"Zhonghung"
+		"Zongqian"
+		"Zhongxian"
+		"Zhongyong"
+		"Zhongyu"
+
+	}
+	
+	female_names = {
+				"Fen"
+		"Jian"
+		"Wen"
+		"Hejing"
+		"Hejia"
+		"Hexiao"
+		"Zhuangjing"
+
+	}
+	
+}name_list_tungus = {
+	cadet_dynasty_names = {
+		"Bulagat"
+		"Ekhirit"
+		"Khongodor"
+
+	}
+
+	dynasty_names = {
+				"Bulagat"
+		"Ekhirit"
+		"Khongodor"
+
+	}
+
+	male_names = {
+				"Agbarjin"
+		"Adai"
+		"Altan"
+		"Arigaba"
+		"Arugtai"
+		"Ayurparibhadra"
+		"Bodi"
+		"Bek"
+		"Bahamu"
+		"Bars"
+		"Buyan"
+		"BiligtUU"
+		"Dayan"
+		"Darayisung"
+		"Delbeg"
+		"Ejei"
+		"Elbeg"
+		"Engke"
+		"GUUyUUk"
+		"GUUn"
+		"Gulichi"
+		"Irinchibal"
+		"Jorightu"
+		"Kublai"
+		"KOOke"
+		"Ligdan"
+		"MarkOOrgis"
+		"MOOngke"
+		"Mulan"
+		"Manduulun"
+		"ONljei"
+		"ONrUUg"
+		"Oyiradai"
+		"ONgOOdei"
+		"Qayshan"
+		"Qoshila"
+		"Sayn"
+		"Suddhipala"
+		"Tayisung"
+		"Temujin"
+		"TemUUr"
+		"Toghun"
+		"TUUmen"
+		"Tolui"
+		"Toq"
+		"Uskhal"
+		"YesUUn"
+		"Ariq"
+		"Batu"
+		"Eljigidei"
+		"Joichi"
+
+	}
+	
+	female_names = {
+				"Naryiaana"
+		"Aiyyna"
+		"Kydaana"
+		"Tuskulaana"
+		"Khaarchaana"
+		"TemUUlen"
+		"BOOrte"
+		"Mandukhai"
+		"Samar"
+		"Zaufishan"
+
+	}
+	
+}name_list_yakut = {
+	cadet_dynasty_names = {
+		"Badarhan"
+		"Tabangut"
+
+	}
+
+	dynasty_names = {
+				"Badarhan"
+		"Tabangut"
+
+	}
+
+	male_names = {
+				"Aiaan"
+		"Atchytagyn"
+		"Givynkeev"
+		"Nutenli"
+		"Gyrgolgyrgyn"
+		"Tanat"
+		"Darkhan"
+		"Dokhsun"
+		"Duolan"
+		"Dygyn"
+		"Dulustaan"
+		"Kyytymei"
+		"Kencheeri"
+		"Keskil"
+		"Manchaary"
+		"Michil"
+		"Modun"
+		"Nurgun"
+		"Nuolan"
+		"Sulustaan"
+		"Tolluman"
+		"Timir"
+		"Tygyn"
+		"Tuskul"
+		"Uolan"
+		"Ergis"
+		"Erchim"
+		"Erkin"
+		"Yrgel"
+		"Kharyskhan"
+
+	}
+	
+	female_names = {
+				"Naryiaana"
+		"Aiyyna"
+		"Kydaana"
+		"Tuskulaana"
+		"Khaarchaana"
+		"TemUUlen"
+		"BOOrte"
+		"Mandukhai"
+		"Samar"
+		"Zaufishan"
+
+	}
+	
+}name_list_yukagyr = {
+	cadet_dynasty_names = {
+		"Uygulaan"
+		"Khorints"
+
+	}
+
+	dynasty_names = {
+				"Uygulaan"
+		"Khorints"
+
+	}
+
+	male_names = {
+				"Aiaan"
+		"Atchytagyn"
+		"Givynkeev"
+		"Nutenli"
+		"Gyrgolgyrgyn"
+		"Tanat"
+		"Darkhan"
+		"Dokhsun"
+		"Duolan"
+		"Dygyn"
+		"Dulustaan"
+		"Kyytymei"
+		"Kencheeri"
+		"Keskil"
+		"Manchaary"
+		"Michil"
+		"Modun"
+		"Nurgun"
+		"Nuolan"
+		"Sulustaan"
+		"Tolluman"
+		"Timir"
+		"Tygyn"
+		"Tuskul"
+		"Uolan"
+		"Ergis"
+		"Erchim"
+		"Erkin"
+		"Yrgel"
+		"Kharyskhan"
+
+	}
+	
+	female_names = {
+				"Naryiaana"
+		"Aiyyna"
+		"Kydaana"
+		"Tuskulaana"
+		"Khaarchaana"
+		"TemUUlen"
+		"BOOrte"
+		"Mandukhai"
+		"Samar"
+		"Zaufishan"
+
+	}
+	
+}

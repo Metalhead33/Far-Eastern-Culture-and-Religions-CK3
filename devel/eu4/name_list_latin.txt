@@ -1,0 +1,571 @@
+name_list_dalmatian = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+				"Pongo"
+		"Alban"
+		"Arber"
+		"Ardian"
+		"Aplis"
+		"Apludus"
+		"Aplus"
+		"Aplius"
+		"Aelius"
+		"Andabio"
+		"Armatus"
+		"Apurus"
+		"Baezo"
+		"Bardylis"
+		"Baro"
+		"Bepo"
+		"Beusas"
+		"Beuzas"
+		"Batona"
+		"Bassegli"
+		"Bobali"
+		"Camdus"
+		"Caboga"
+		"Curbania"
+		"Cursulavia"
+		"Daor"
+		"Daes"
+		"Dez"
+		"Dalmat"
+		"Dardan"
+		"Delminium"
+		"Histro"
+		"Heracles"
+		"Epulo"
+		"Ghetaldi"
+		"Giorgi"
+		"Gondola"
+		"Gozze"
+		"Gradi"
+		"Iato"
+		"Ivka"
+		"Ibrica"
+		"Ignacio"
+		"Lavincia"
+		"Ledrus"
+		"Liber"
+		"Messor"
+		"Madecus"
+		"Naren"
+		"Paiio"
+		"Panes"
+		"Panias"
+		"Panius"
+		"Panentius"
+		"Panthia"
+		"Panes"
+		"Panto"
+		"Pinsus"
+		"Pladomenus"
+		"Platino"
+		"Samuntio"
+		"Seiio"
+		"Silvanus"
+		"Statanius"
+		"Staticus"
+		"Stato"
+		"Status"
+		"Sestus"
+		"Sextus"
+		"Sexto"
+		"Taulant"
+		""
+		"Teuta"
+		"Tito"
+		"Thana"
+		"Tizius"
+		"Tritus"
+		"Titus"
+		"Varro"
+		"Vidasus"
+		"Vidaza"
+		"Andre"
+		"Andreas"
+		"Bisti"
+		"Blaxius"
+		"Calenda"
+		"Clime"
+		"Comes"
+		"Domagna"
+		"Gaucoli"
+		"Gauzoli"
+		"Gervasius"
+		"Giuco"
+		"Give"
+		"Jugno"
+		"Juliano"
+		"Junius"
+		"Laurenzo"
+		"Leonardus"
+		"Loncho"
+		"Lucarus"
+		"Mares"
+		"Marco"
+		"Maroe"
+		"Marinus"
+		"Matheus"
+		"Michael"
+		"Nale"
+		"Nichiforus"
+		"Nicola"
+		"Pascalis"
+		"Pasqualis"
+		"Petragna"
+		"Petrus"
+		"Piero"
+		"Perue"
+		"Rassinus"
+		"Rusco"
+		"Stane"
+		"Thoma"
+		"Tuone"
+		"Vallius"
+		"Vita"
+		"Adam"
+		"Aguastin"
+		"Alecuandur"
+		"Aliau"
+		"Aliard"
+		"Andre"
+		"Antune"
+		"Antuone"
+		"Blasi"
+		"Buartol"
+		"Bunedec"
+		"Bunin"
+		"Caunstantin"
+		"Caurnel"
+		"Clemiant"
+		"Crastin"
+		"Cuarl"
+		"Dimitre"
+		"Domienc"
+		"Domienja"
+		"Fabri"
+		"Faguor"
+		"Fiaurens"
+		"Filip"
+		"Frane"
+		"Giorgi"
+		"Guaspar"
+		"Jacop"
+		"Jiolian"
+		"Joan"
+		"Jualb"
+		"Liaun"
+		"Marc"
+		"Marjan"
+		"Matei"
+		"Mihial"
+		"Mouro"
+		"Muerten"
+		"Nadual"
+		"Nicaul"
+		"Paladen"
+		"Piar"
+		"Ponsio"
+		"Puol"
+		"Puoskal"
+		"Raimaun"
+		"Savjan"
+		"Simaun"
+		"Sismaun"
+		"Stanislau"
+		"Sthepan"
+		"Taumas"
+		"Taumasin"
+		"Teodor"
+		"Timotei"
+		"Vait"
+		"Valdemaur"
+		"Vidual"
+		"Vittaur"
+
+	}
+	
+	female_names = {
+				"Perdita"
+		"Ane"
+		"Aneta"
+		"Ante"
+		"Anka"
+		"Albina"
+		"Augustina"
+		"Amaica"
+		"Amaura"
+		"Alecuandra"
+		"Amilja"
+		"Andreja"
+		"Bepina"
+		"Blanca"
+		"Bruva"
+		"Buni"
+		"Catriana"
+		"Cauleta"
+		"Caunstantina"
+		"Cvita"
+		"Ibrica"
+		"Ivka"
+		"Joana"
+		"Lucia"
+		"Krysto"
+		"Matija"
+		"Manda"
+		"Nicauleta"
+		"Pernica"
+		"Piara"
+		"Puola"
+		"Antolina"
+		"Antonia"
+		"Anussa"
+		"Babalio"
+		"Bodacia"
+		"Catarena"
+		"Caterina"
+		"Clara"
+		"Clara"
+		"Drase"
+		"Dea"
+		"Descia"
+		"Deia"
+		"Deussa"
+		"Elena"
+		"Eloija"
+		"Fiaura"
+		"Filippa"
+		"Helene"
+		"Giva"
+		"Jachussa"
+		"Jacobica"
+		"Jelussa"
+		"Laurica"
+		"Lene"
+		"Helene"
+		"Magdalena"
+		"Magdalena"
+		"Margerita"
+		"Margaret"
+		"Maria"
+		"Mauressa"
+		"Micha"
+		"Mira"
+		"Nicoletta"
+		"Nixa"
+		"Rade"
+		"Rado"
+		"Regina"
+		"Regina"
+		"Rossa"
+		"Rosa"
+		"Schimosa"
+		"Thome"
+		"Viola"
+		"Vele"
+		"Vittaurja"
+
+	}
+	
+}name_list_ligurian = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}name_list_lombard = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}name_list_maltese = {
+	cadet_dynasty_names = {
+		"de"
+		"la"
+		"Valette"
+		"de"
+		"Villaret"
+		"LIsleAdam"
+		"de"
+		"Ponte"
+		"de"
+		"SaintJaille"
+		"de"
+		"la"
+		"Sengle"
+		"de"
+		"Monte"
+		"de"
+		"la"
+		"CassiEEre"
+		"de"
+		"Vasconcellos"
+		"de"
+		"Paule"
+		"Cotoner"
+		"Carafa"
+		"de"
+		"Wignacourt"
+		"de"
+		"RohanPolduc"
+		"da"
+		"Fonseca"
+
+	}
+
+	dynasty_names = {
+				"de"
+		"la"
+		"Valette"
+		"de"
+		"Villaret"
+		"LIsleAdam"
+		"de"
+		"Ponte"
+		"de"
+		"SaintJaille"
+		"de"
+		"la"
+		"Sengle"
+		"de"
+		"Monte"
+		"de"
+		"la"
+		"CassiEEre"
+		"de"
+		"Vasconcellos"
+		"de"
+		"Paule"
+		"Cotoner"
+		"Carafa"
+		"de"
+		"Wignacourt"
+		"de"
+		"RohanPolduc"
+		"da"
+		"Fonseca"
+
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}name_list_neapolitan = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}name_list_piedmontese = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}name_list_romagnan = {
+	cadet_dynasty_names = {
+		"Bevilacqua"
+		"Boschetti"
+		"Carandini"
+		"Castelvetri"
+		"Tassoni"
+		"Pico"
+		"di"
+		"Mirandola"
+		"Rangoni"
+		"Monesi"
+		"da"
+		"Fogliano"
+		"Bevilacqua"
+		"da"
+		"Correggio"
+		"Platoni"
+		"Biondelli"
+		"Arrigoni"
+		"Castiglione"
+		"Cavriani"
+		"dArco"
+		"Ceresara"
+		"Donesmondi"
+
+	}
+
+	dynasty_names = {
+				"Bevilacqua"
+		"Boschetti"
+		"Carandini"
+		"Castelvetri"
+		"Tassoni"
+		"Pico"
+		"di"
+		"Mirandola"
+		"Rangoni"
+		"Monesi"
+		"da"
+		"Fogliano"
+		"Bevilacqua"
+		"da"
+		"Correggio"
+		"Platoni"
+		"Biondelli"
+		"Arrigoni"
+		"Castiglione"
+		"Cavriani"
+		"dArco"
+		"Ceresara"
+		"Donesmondi"
+
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}name_list_sardinian = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}name_list_sicilian = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}name_list_tuscan = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}name_list_umbrian = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}name_list_venetian = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}

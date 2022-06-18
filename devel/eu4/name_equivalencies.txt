@@ -1,0 +1,8 @@
+aelflaeda_female = { AElflAEda }
+aethelreda_female = { AEthelrAEda }
+ailred_male = { AEthelrAEd }
+alfred_male = { AElfrAEd }
+beorhtwine_male = { Beorhtwine }
+beorn_male = { Beorn }
+margaret_female = { Margaret }
+ralph_male = { RAEdwulf }

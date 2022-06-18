@@ -1,0 +1,141 @@
+name_list_arawak = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+				"AAhari"
+		"Ebedimu"
+		"Gunfuli"
+		"Kaigouchi"
+		"Ilumani"
+		"PirijAA"
+		"SemEEn"
+		"Wiwakaleme"
+		"Haubariria"
+		"Toratora"
+		"Amorotahe"
+		"Haubariria"
+		"Kaigouchi"
+		"Shoko"
+		"Laliwa"
+		"Arah"
+		"PirijAA"
+		"Arata"
+		"ToruII"
+		"Mbicy"
+
+	}
+	
+	female_names = {
+				"HayAA"
+		"Isani"
+		"Takuiba"
+		"Twengga"
+
+	}
+	
+}name_list_carib = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+				"AAhari"
+		"Ebedimu"
+		"Gunfuli"
+		"Kaigouchi"
+		"Ilumani"
+		"PirijAA"
+		"SemEEn"
+
+	}
+	
+	female_names = {
+				"HayAA"
+		"Isani"
+
+	}
+	
+}name_list_guajiro = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+				"Wiwakaleme"
+		"Haubariria"
+		"Toratora"
+		"Amorotahe"
+		"Haubariria"
+		"Kaigouchi"
+		"Shoko"
+		"Laliwa"
+		"Arah"
+		"PirijAA"
+		"Arata"
+		"ToruII"
+		"Mbicy"
+
+	}
+	
+	female_names = {
+				"Takuiba"
+		"Twengga"
+
+	}
+	
+}name_list_maipurean = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+				"AAhari"
+		"Ebedimu"
+		"Gunfuli"
+		"Kaigouchi"
+		"Ilumani"
+		"PirijAA"
+		"SemEEn"
+		"Wiwakaleme"
+		"Haubariria"
+		"Toratora"
+		"Amorotahe"
+		"Haubariria"
+		"Kaigouchi"
+		"Shoko"
+		"Laliwa"
+		"Arah"
+		"PirijAA"
+		"Arata"
+		"ToruII"
+		"Mbicy"
+
+	}
+	
+	female_names = {
+				"HayAA"
+		"Isani"
+		"Takuiba"
+		"Twengga"
+
+	}
+	
+}

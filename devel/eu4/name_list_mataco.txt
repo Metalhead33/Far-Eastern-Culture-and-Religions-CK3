@@ -1,0 +1,33 @@
+name_list_chacoan = {
+	cadet_dynasty_names = {
+		"Atlatl"
+
+	}
+
+	dynasty_names = {
+				"Atlatl"
+
+	}
+
+	male_names = {
+				"Sopa"
+		"Cayo"
+		"Topa"
+		"Coyllas"
+		"Cusichaca"
+		"Huachuri"
+		"Huaypalcon"
+		"Luyes"
+		"Marcavilca"
+
+	}
+	
+	female_names = {
+				"Kantuta"
+		"Nina"
+		"Ana"
+		"Maiara"
+
+	}
+	
+}

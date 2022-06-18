@@ -30,4 +30,8 @@ colors = {
 	gothic = { 0.164 0.082 0.215 }
 	sanskrit = { 0.5 0.2 0.0 }
 	avestan = { 0.5 0.3 0.6 }
+	udi = { 0.5 0.8 0.7 }
+	caucasian_avar = { 0.75 0.3 0.7 }
+	circassian = { 0.165 0.42 0.065 }
+	chechen = { 0.85 0.145 0.11 }
 }

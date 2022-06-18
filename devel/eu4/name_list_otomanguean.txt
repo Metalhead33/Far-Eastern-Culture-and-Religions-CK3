@@ -1,0 +1,244 @@
+name_list_mixtec = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+				"Cocijoeza"
+		"Cocijopi"
+		"Xolo"
+		"Nucano"
+		"Cocijocza"
+		"Cocijopi"
+		"Zaachilla"
+		"Cocijouza"
+		"Cocijopi"
+		"JziOO"
+		"Pwuix"
+		"Dao"
+		"Binech"
+		"Bzojj"
+		"ChsAAaxcejj"
+		"ChAAalaxa"
+		"Chonna"
+		"Bicu"
+		"Coqui"
+		"Djoraxa"
+		"GwEEibOOonEE"
+		"Gyazob"
+		"Gyejj"
+		"Ipalnemoani"
+		"Ji"
+		"JziOO"
+		"LAAxdaOOxo"
+		"Lyebe"
+		"Mbalaz"
+		"Na"
+		"Yel"
+		"Naquichinisa"
+		"NaxiNNanguiiu"
+		"Ngolbex"
+		"An"
+		"Nguiiu"
+		"Rire"
+		"Nisa"
+		"Ro"
+		"Pijje"
+		"Rusiguunda"
+		"VEEeni"
+		"VeziAA"
+		"Zne"
+		"Yel"
+		"ZniAA"
+		"Zyrx"
+		"Beljjw"
+		"Bibejw"
+		"JziOO"
+		"Jituh"
+		"JziOO"
+		"Tobi"
+
+	}
+	
+	female_names = {
+				"Zyanya"
+		"Nayeli"
+		"Yoltzin"
+		"Xilonen"
+		"Xiloxoch"
+		"Xiuhtomiyauhtzin"
+		"Xochitl"
+		"Xocoh"
+		"Xocoyotl"
+		"Yaretzi"
+		"Zeltzin"
+
+	}
+	
+}name_list_tlapanec = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+				"Cocijoeza"
+		"Cocijopi"
+		"Xolo"
+		"Nucano"
+		"Cocijocza"
+		"Cocijopi"
+		"Zaachilla"
+		"Cocijouza"
+		"Cocijopi"
+		"JziOO"
+		"Pwuix"
+		"Dao"
+		"Binech"
+		"Bzojj"
+		"ChsAAaxcejj"
+		"ChAAalaxa"
+		"Chonna"
+		"Bicu"
+		"Coqui"
+		"Djoraxa"
+		"GwEEibOOonEE"
+		"Gyazob"
+		"Gyejj"
+		"Ipalnemoani"
+		"Ji"
+		"JziOO"
+		"LAAxdaOOxo"
+		"Lyebe"
+		"Mbalaz"
+		"Na"
+		"Yel"
+		"Naquichinisa"
+		"NaxiNNanguiiu"
+		"Ngolbex"
+		"An"
+		"Nguiiu"
+		"Rire"
+		"Nisa"
+		"Ro"
+		"Pijje"
+		"Rusiguunda"
+		"VEEeni"
+		"VeziAA"
+		"Zne"
+		"Yel"
+		"ZniAA"
+		"Zyrx"
+		"Beljjw"
+		"Bibejw"
+		"JziOO"
+		"Jituh"
+		"JziOO"
+		"Tobi"
+
+	}
+	
+	female_names = {
+				"Zyanya"
+		"Nayeli"
+		"Yoltzin"
+		"Xilonen"
+		"Xiloxoch"
+		"Xiuhtomiyauhtzin"
+		"Xochitl"
+		"Xocoh"
+		"Xocoyotl"
+		"Yaretzi"
+		"Zeltzin"
+
+	}
+	
+}name_list_zapotek = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+				"Cocijoeza"
+		"Cocijopi"
+		"Xolo"
+		"Nucano"
+		"Cocijocza"
+		"Cocijopi"
+		"Zaachilla"
+		"Cocijouza"
+		"Cocijopi"
+		"JziOO"
+		"Pwuix"
+		"Dao"
+		"Binech"
+		"Bzojj"
+		"ChsAAaxcejj"
+		"ChAAalaxa"
+		"Chonna"
+		"Bicu"
+		"Coqui"
+		"Djoraxa"
+		"GwEEibOOonEE"
+		"Gyazob"
+		"Gyejj"
+		"Ipalnemoani"
+		"Ji"
+		"JziOO"
+		"LAAxdaOOxo"
+		"Lyebe"
+		"Mbalaz"
+		"Na"
+		"Yel"
+		"Naquichinisa"
+		"NaxiNNanguiiu"
+		"Ngolbex"
+		"An"
+		"Nguiiu"
+		"Rire"
+		"Nisa"
+		"Ro"
+		"Pijje"
+		"Rusiguunda"
+		"VEEeni"
+		"VeziAA"
+		"Zne"
+		"Yel"
+		"ZniAA"
+		"Zyrx"
+		"Beljjw"
+		"Bibejw"
+		"JziOO"
+		"Jituh"
+		"JziOO"
+		"Tobi"
+
+	}
+	
+	female_names = {
+				"Zyanya"
+		"Nayeli"
+		"Yoltzin"
+		"Xilonen"
+		"Xiloxoch"
+		"Xiuhtomiyauhtzin"
+		"Xochitl"
+		"Xocoh"
+		"Xocoyotl"
+		"Yaretzi"
+		"Zeltzin"
+
+	}
+	
+}

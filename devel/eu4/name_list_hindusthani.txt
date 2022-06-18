@@ -1,0 +1,438 @@
+name_list_avadhi = {
+	cadet_dynasty_names = {
+		"ud"
+		"Daula"
+		"Awadhi"
+		"Chand"
+		"Bundela"
+		"Malikzada"
+		"Tomara"
+		"Raghuvansi"
+		"Parmari"
+
+	}
+
+	dynasty_names = {
+				"ud"
+		"Daula"
+		"Awadhi"
+		"Chand"
+		"Bundela"
+		"Malikzada"
+		"Tomara"
+		"Raghuvansi"
+		"Parmari"
+
+	}
+
+	male_names = {
+				"Muhammad"
+		"Saadat"
+		"Khan"
+		"Muhammad"
+		"Safdar"
+		"Jang"
+		"Shujah"
+		"adDaula"
+		"Asaf"
+		"adDaula"
+		"Wazir"
+		"Ali"
+		"Saadat"
+		"Ali"
+		"Khan"
+		"Ghazi"
+		"udDin"
+		"Haidar"
+		"Saadat"
+		"Safdarjung"
+		"Hyder"
+		"Birjis"
+		"Qadra"
+		"Ali"
+		"Alauddin"
+		"Bhi"
+		"Malik"
+		"Narendra"
+		"Bismillah"
+		"Obaid"
+		"Iqbal"
+
+	}
+	
+	female_names = {
+				"Hazrat"
+		"Mahal"
+		"Farzana"
+		"FakhrunNisa"
+
+	}
+	
+}name_list_kanauji = {
+	cadet_dynasty_names = {
+		"Tughluq"
+		"Lodi"
+		"Khilji"
+
+	}
+
+	dynasty_names = {
+				"Tughluq"
+		"Lodi"
+		"Khilji"
+
+	}
+
+	male_names = {
+				"Nusrat"
+		"Sayyid"
+		"Khidr"
+		"Daulat"
+		"Khan"
+		"Khidr"
+		"Khan"
+		"Mubarrak"
+		"Shah"
+		"Mohammed"
+		"Shah"
+		"Aladdin"
+		"Alam"
+		"Shah"
+		"BahlUUl"
+		"Saikander"
+		"Ibrahim"
+		"Sher"
+		"Islam"
+		"Shah"
+		"Saadat"
+		"Safdarjung"
+		"Hyder"
+		"Birjis"
+		"Qadra"
+		"Ali"
+		"Iqbal"
+		"Alauddin"
+		"Bhi"
+		"Malik"
+		"Narendra"
+		"Bismillah"
+		"Obaid"
+		"Hemu"
+		"Ghazi"
+
+	}
+	
+	female_names = {
+				"Raziyya"
+		"Bahar"
+		"Roshanara"
+		"FakhrunNisa"
+
+	}
+	
+}name_list_kashmiri = {
+	cadet_dynasty_names = {
+		"Shah"
+		"Miri"
+		"Sayyidi"
+		"Mirrani"
+		"Ladakhi"
+
+	}
+
+	dynasty_names = {
+				"Shah"
+		"Miri"
+		"Sayyidi"
+		"Mirrani"
+		"Ladakhi"
+
+	}
+
+	male_names = {
+				"Sikandar"
+		"Ali"
+		"Shah"
+		"Zayn"
+		"alAbidin"
+		"Haydar"
+		"Shah"
+		"Hasan"
+		"Shah"
+		"Muhammad"
+		"Shah"
+		"Sayyid"
+		"Hassan"
+		"Fath"
+		"Shah"
+		"Ibrahim"
+		"Shah"
+		"Nazuk"
+		"Shah"
+		"Shams"
+		"adDin"
+		"Ismail"
+		"Shah"
+		"Ghazi"
+		"Shah"
+		"Husayn"
+		"Shah"
+		"Yusuf"
+		"Shah"
+		"Lohir"
+		"Shah"
+		"Nabib"
+		"Shah"
+		"Yaqub"
+		"Shah"
+		"Ibrahim"
+		"Hassan"
+		"Nazuk"
+		"Yusuf"
+		"Yaqub"
+		"Muhammad"
+		"Ali"
+		"Ismail"
+		"Gulab"
+		"Ranbir"
+		"Hari"
+		"Pratap"
+		"Kishore"
+		"Zorawar"
+		"Jonaraja"
+		"Prajna"
+		"Hamza"
+
+	}
+	
+	female_names = {
+				"Kota"
+		"Sibaia"
+		"Tara"
+		"Devi"
+
+	}
+	
+}name_list_panjabi = {
+	cadet_dynasty_names = {
+		"Kohkkar"
+		"Gakhkhar"
+		"Phulkian"
+		"Bhullara"
+		"Dhaliwala"
+		"Sandhawalia"
+		"Ahluwalia"
+		"Langa"
+		"Mirrani"
+		"Abbasi"
+		"Janda"
+		"Jhuti"
+		"Kahlon"
+		"Banu"
+		"Sama"
+
+	}
+
+	dynasty_names = {
+				"Kohkkar"
+		"Gakhkhar"
+		"Phulkian"
+		"Bhullara"
+		"Dhaliwala"
+		"Sandhawalia"
+		"Ahluwalia"
+		"Langa"
+		"Mirrani"
+		"Abbasi"
+		"Janda"
+		"Jhuti"
+		"Kahlon"
+		"Banu"
+		"Sama"
+
+	}
+
+	male_names = {
+				"Jassa"
+		"Ahuwalia"
+		"Lahina"
+		"Ranjit"
+		"Bhag"
+		"Kharak"
+		"Duleep"
+		"Fateh"
+		"Maha"
+		"Sobha"
+		"Narnak"
+		"Ram"
+		"Arjan"
+		"Gobind"
+		"Rai"
+		"Krishan"
+		"Bahadur"
+		"Sardar"
+		"Badar"
+		"Balbir"
+		"Bhalla"
+		"Daya"
+		"Gahunia"
+		"Gian"
+		"Nihang"
+		""
+		"Granth"
+		"Bhai"
+		"Bachittar"
+		"Himmat"
+		"Hoora"
+		"Ishnar"
+		"Jhol"
+		"Jhotti"
+		"Mokham"
+		"Nand"
+		"Parmanand"
+		"Rajsingh"
+		"Sanlib"
+		"Sardul"
+		"Shabeg"
+		"Shergill"
+		"Sodhi"
+		"Sohal"
+		"Tara"
+		"Udasi"
+		"Angad"
+		"Amar"
+		"Lohaar"
+		"Dharem"
+		"Fakir"
+		"Ranjor"
+		"Ajit"
+		"Amar"
+		"Amar"
+		"Dasi"
+		"Amir"
+		"Angad"
+		"Arjun"
+		"Atar"
+		"Basawa"
+		"Bhagwant"
+		"Bhaimani"
+		"Budh"
+		"Chand"
+		"Charat"
+		"Damodar"
+		"Dasu"
+		"Datu"
+		"Dayaram"
+		"Didar"
+		"Farid"
+		"Fateh"
+		"Gobind"
+		"Gurdita"
+		"Hargobind"
+		"Hari"
+		"Har"
+		"Krishan"
+		"Har"
+		"Rai"
+		"Jai"
+		"Ram"
+		"Jetha"
+		"Jujhar"
+		"Kalyan"
+		"Kapur"
+		"Kehar"
+		"Kharak"
+		"Khushal"
+		"Lahna"
+		"Lakhmichand"
+		"Laxman"
+		"Mahadev"
+		"Mohan"
+		"Mohri"
+		"Nanak"
+		"Narayan"
+		"Nodha"
+		"Partap"
+		"Pheru"
+		"Prithichand"
+		"Prithvi"
+		"Ram"
+		"Rai"
+		"Ranjit"
+		"Sahdev"
+		"Shamsher"
+		"Sher"
+		"Srichand"
+		"Tegh"
+		"Bahadur"
+		"Tej"
+		"Bhan"
+		"Thakur"
+		"Zorawar"
+
+	}
+	
+	female_names = {
+				"Amro"
+		"Anokhi"
+		"Anup"
+		"Begum"
+		"Bhani"
+		"Dani"
+		"Gujri"
+		"Jodhabai"
+		"Khivi"
+		"Kishan"
+		"Lachmi"
+		"Nanaki"
+		"Nihal"
+		"Ramo"
+		"Sabhirai"
+		"Sahib"
+		"Sulakhni"
+		"Sundari"
+		"Tripta"
+		"Chand"
+		"Kaur"
+		"Ratan"
+		"Kaur"
+		"Kanwal"
+		"Kaur"
+		"Datar"
+		"Kaur"
+		"Nand"
+		"Kaur"
+		"Mahtab"
+
+	}
+	
+}name_list_vindhyan = {
+	cadet_dynasty_names = {
+		"Baghela"
+		"Malikzada"
+		"Bundela"
+		"Tomara"
+		"Karkare"
+		"Newalkar"
+
+	}
+
+	dynasty_names = {
+				"Baghela"
+		"Malikzada"
+		"Bundela"
+		"Tomara"
+		"Karkare"
+		"Newalkar"
+
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}

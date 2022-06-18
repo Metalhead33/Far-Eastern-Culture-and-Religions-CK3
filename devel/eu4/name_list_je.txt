@@ -1,0 +1,106 @@
+name_list_charruan = {
+	cadet_dynasty_names = {
+		"SEEnaquEE"
+		"Sira"
+		"Gununusa"
+		"Puyucahua"
+		"Mataojo"
+		"Igualdad"
+		"YarOO"
+		"Guenoa"
+		"BohanEE"
+		"Minuan"
+
+	}
+
+	dynasty_names = {
+				"SEEnaquEE"
+		"Sira"
+		"Gununusa"
+		"Puyucahua"
+		"Mataojo"
+		"Igualdad"
+		"YarOO"
+		"Guenoa"
+		"BohanEE"
+		"Minuan"
+
+	}
+
+	male_names = {
+				"ZapicAAn"
+		"AbayubAA"
+		"Vaimaca"
+		"PerUU"
+		"Senacua"
+		"TabarEE"
+		"ItanUU"
+		"YrupEE"
+		"JasymimbII"
+		"TacuabEE"
+		"VaimacaPirUU"
+
+	}
+	
+	female_names = {
+				"Bartira"
+		"Potira"
+		"Porasy"
+		"Jougousa"
+		"Azelene"
+
+	}
+	
+}name_list_ge = {
+	cadet_dynasty_names = {
+		"AimorEE"
+		"PrajEE"
+		"Takrukrak"
+		"KrekmUUn"
+		"ItuEEto"
+		"Futikrak"
+		"Gueren"
+		"Gutucrac"
+		"Mekmek"
+		"Minhagiran"
+		"NakrehEE"
+		"NaknyanUUk"
+
+	}
+
+	dynasty_names = {
+				"AimorEE"
+		"PrajEE"
+		"Takrukrak"
+		"KrekmUUn"
+		"ItuEEto"
+		"Futikrak"
+		"Gueren"
+		"Gutucrac"
+		"Mekmek"
+		"Minhagiran"
+		"NakrehEE"
+		"NaknyanUUk"
+
+	}
+
+	male_names = {
+				"Jandui"
+		"Raoni"
+		"Janduwy"
+		"Caracara"
+		"Kerioukeiou"
+		"Karupoto"
+
+	}
+	
+	female_names = {
+				"Bartira"
+		"Potira"
+		"Porasy"
+		"Jougousa"
+		"Azelene"
+
+	}
+	
+}

@@ -9,7 +9,7 @@
 	martial_custom = martial_custom_male_only
 	traditions = {
 		tradition_chanson_de_geste
-		tradition_hereditary_hierarchy
+		tradition_parochialism
 		tradition_chivalry
 	}
 	
@@ -28,6 +28,35 @@
 	}	
 }
 
+romagnol = {
+	color = { 0.85 0.65 0.2 }
+
+	parents = { roman }
+
+	created = 476.11.4
+	
+	ethos = ethos_spiritual
+	heritage = heritage_latin
+	language = language_italian
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_formation_fighting
+		tradition_republican_legacy
+		tradition_family_entrepreneurship
+	}
+	
+	name_list = name_list_italian
+	
+	coa_gfx = { latin_group_coa_gfx western_coa_gfx }
+	building_gfx = { mediterranean_building_gfx }
+	clothing_gfx = { western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	
+	ethnicities = {
+		10 = mediterranean
+	}
+}
+
 umbrian = {
 	color = { 0.9 0.7 0.1 }
 
@@ -42,7 +71,7 @@ umbrian = {
 	traditions = {
 		tradition_formation_fighting
 		tradition_republican_legacy
-		tradition_poetry
+		tradition_family_entrepreneurship
 	}
 	
 	name_list = name_list_umbrian
@@ -72,6 +101,7 @@ laziale = {
 		tradition_formation_fighting
 		tradition_republican_legacy
 		tradition_poetry
+		tradition_welcoming
 	}
 	
 	name_list = name_list_laziale
@@ -92,14 +122,15 @@ neapolitan = {
 
 	created = 476.11.4
 	
-	ethos = ethos_spiritual
+	ethos = ethos_communal
 	heritage = heritage_latin
 	language = language_italian
 	martial_custom = martial_custom_male_only
 	traditions = {
 		tradition_formation_fighting
 		tradition_republican_legacy
-		tradition_poetry
+		tradition_agrarian
+		tradition_culinary_art
 	}
 	
 	name_list = name_list_neapolitan
@@ -121,14 +152,15 @@ tuscan = {
 
 	created = 476.11.4
 	
-	ethos = ethos_spiritual
+	ethos = ethos_courtly
 	heritage = heritage_latin
 	language = language_italian
 	martial_custom = martial_custom_male_only
 	traditions = {
-		tradition_formation_fighting
 		tradition_republican_legacy
+		tradition_family_entrepreneurship
 		tradition_poetry
+		tradition_culinary_art
 	}
 	
 	name_list = name_list_tuscan
@@ -150,14 +182,15 @@ ligurian = {
 
 	created = 476.11.4
 	
-	ethos = ethos_spiritual
+	ethos = ethos_bellicose
 	heritage = heritage_latin
 	language = language_italian
 	martial_custom = martial_custom_male_only
 	traditions = {
-		tradition_formation_fighting
 		tradition_republican_legacy
 		tradition_maritime_mercantilism
+		tradition_swords_for_hire
+		tradition_warriors_by_merit
 	}
 	
 	name_list = name_list_ligurian
@@ -179,14 +212,14 @@ venetian = {
 
 	parents = { roman }
 	
-	ethos = ethos_communal
+	ethos = ethos_bellicose
 	heritage = heritage_latin
 	language = language_italian
 	martial_custom = martial_custom_male_only
 	traditions = {
 		tradition_republican_legacy
-		tradition_mountain_homes
 		tradition_maritime_mercantilism
+		tradition_battlefield_looters
 	}
 	
 	name_list = name_list_venetian
@@ -214,8 +247,8 @@ dalmatian = {
 	martial_custom = martial_custom_male_only
 	traditions = {
 		tradition_republican_legacy
-		tradition_mountain_homes
-		tradition_maritime_mercantilism
+		tradition_culture_blending
+		tradition_practiced_pirates
 	}
 	
 	name_list = name_list_dalmatian

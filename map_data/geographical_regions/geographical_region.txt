@@ -1893,7 +1893,7 @@ special_mongol_empire_baruun_khanate_region = {
 special_sicilian_culture_region = {
 	duchies = {
 		#Sicily
-		d_benevento d_capua d_apulia d_salerno d_calabria d_sicily
+		d_calabria d_sicily
 	}
 }
 special_azeri_culture_region = {
@@ -1922,7 +1922,12 @@ special_neapolitan_culture_region = {
 
 special_tuscan_culture_region = {
 	duchies = {
-		d_toscana d_pisa d_emilia
+		d_toscana d_pisa
+	}
+}
+special_romagnol_culture_region = {
+	duchies = {
+		d_romagna d_emilia
 	}
 }
 special_ligurian_culture_region = {
@@ -1932,18 +1937,27 @@ special_ligurian_culture_region = {
 }
 special_venetian_culture_region = {
 	duchies = {
-		d_friuli d_venice
+		d_venice d_verona d_istria
+	}
+	counties = {
+		c_friuli c_aquileia
 	}
 }
 special_dalmatian_culture_region = {
 	duchies = {
 		d_dalmatia d_ragusa
 	}
+	counties = {
+		c_cherso c_pagania
+	}
 }
 
 special_arpitan_culture_region = {
 	duchies = {
-		d_savoie d_dauphine d_upper_burgundy d_transjurania d_burgundy
+		d_savoie d_dauphine d_upper_burgundy d_burgundy
+	}
+	counties = {
+		c_neuchatel
 	}
 }
 special_arpitan_culture_region_noruler = {
@@ -1959,6 +1973,39 @@ special_frisian_culture_region = {
 		c_westfriesland
 	}
 }
+
+special_udi_culture_region = {
+	counties = {
+		c_khachen c_hereti c_aran
+	}
+}
+
+special_caucasian_avar_culture_region = {
+	counties = {
+		c_samander
+	}
+}
+
+special_circassian_culture_region = {
+	counties = {
+		c_zichia
+	}
+}
+
+special_circassian_culture_region_noruler = {
+	counties = {
+		c_abkhazia
+	}
+}
+
+special_adhari_culture_region = {
+	counties = {
+		c_shirvan c_shaki c_mugan
+	}
+}
+
+#special_chechen_culture_region = {
+#}
 
 ### Special Cagot region
 special_cagot_region = {

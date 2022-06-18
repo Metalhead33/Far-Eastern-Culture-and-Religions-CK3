@@ -45,7 +45,8 @@ change_faith_if_pillar = {
 	}
 }
 
-
+# save_scope_as
+# every_courtier
 change_culture_if_region = {
 	every_county = {
 		limit = {
@@ -53,6 +54,7 @@ change_culture_if_region = {
 				geographical_region = $REGION$
 			}
 		}
+		culture = { save_scope_as = old_culture }
 		set_county_culture = $NEW_CULTURE$
 		holder = {
 			if = {
@@ -63,7 +65,69 @@ change_culture_if_region = {
 				}
 				set_culture = $NEW_CULTURE$
 				every_ancestor = {
+					limit = {
+						culture = scope:old_culture
+					}
 					set_culture = $NEW_CULTURE$
+				}
+				every_courtier = {
+					limit = {
+						culture = scope:old_culture
+					}
+					set_culture = $NEW_CULTURE$
+				}
+			}
+		}
+	}
+}
+
+change_culture_faith_if_region = {
+	every_county = {
+		limit = {
+			title_province = {
+				geographical_region = $REGION$
+			}
+		}
+		culture = { save_scope_as = old_culture }
+		faith = { save_scope_as = old_faith }
+		set_county_culture = $NEW_CULTURE$
+		set_county_faith = $NEW_FAITH$
+		holder = {
+			if = {
+				limit = {
+					capital_province = {
+						geographical_region = $REGION$
+					}
+				}
+				set_culture = $NEW_CULTURE$
+				set_character_faith = $NEW_FAITH$
+				every_ancestor = {
+					if = {
+						limit = {
+							culture = scope:old_culture
+						}
+						set_culture = $NEW_CULTURE$
+					}
+					if = {
+						limit = {
+							faith = scope:old_faith
+						}
+						set_character_faith = $NEW_FAITH$
+					}
+				}
+				every_courtier = {
+					if = {
+						limit = {
+							culture = scope:old_culture
+						}
+						set_culture = $NEW_CULTURE$
+					}
+					if = {
+						limit = {
+							faith = scope:old_faith
+						}
+						set_character_faith = $NEW_FAITH$
+					}
 				}
 			}
 		}
@@ -88,6 +152,12 @@ change_culture_if_region_pillar = {
 					}
 				}
 				set_culture = $NEW_CULTURE$
+				every_courtier = {
+					limit = {
+						culture = { has_cultural_pillar = $PILLAR$ }
+					}
+					set_culture = $NEW_CULTURE$
+				}
 				every_ancestor = {
 					limit = {
 						culture = { has_cultural_pillar = $PILLAR$ }
@@ -127,6 +197,12 @@ change_culture_if_region_culture = {
 					}
 				}
 				set_culture = $NEW_CULTURE$
+				every_courtier = {
+					limit = {
+						culture = $OLD_CULTURE$
+					}
+					set_culture = $NEW_CULTURE$
+				}
 				every_ancestor = {
 					limit = {
 						culture = $OLD_CULTURE$

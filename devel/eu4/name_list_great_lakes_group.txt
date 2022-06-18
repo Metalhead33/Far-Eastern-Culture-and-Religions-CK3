@@ -1,0 +1,261 @@
+name_list_ganda = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+				"Ruhinda"
+		"Nkuba"
+		"Nyaika"
+		"Ntare"
+		"Rushango"
+		"Kasasira"
+		"Kitra"
+		"Rumongye"
+		"Mirindi"
+		"Macwa"
+		"Rwabirere"
+		"Kahaya"
+		"Rwebishengye"
+		"Gasyonga"
+		"Mutambuka"
+		"Muteesa"
+		"Suuna"
+		"Kamaanya"
+		"Semakookiro"
+		"Jjunju"
+		"Kyabaggu"
+		"Namuggala"
+		"Mwanga"
+		"Mawanda"
+		"Kikulwe"
+		"Kagulu"
+		"Ndawula"
+		"Tebandeke"
+		"Juuko"
+		"Kayemba"
+		"Mutebi"
+		"Kateregga"
+		"Kimbugwe"
+		"Sekamaanya"
+		"Jemba"
+		"Mulondo"
+		"Nakibinge"
+		"Kayima"
+		"Ttembo"
+		"Kimera"
+		"Kato"
+		"Kintu"
+
+	}
+	
+	female_names = {
+				"Nyiramavugo"
+		"Kanjogera"
+		"Nyirarukangaga"
+		"Balambi"
+		"Bawedde"
+		"Sikyayinza"
+		"Nakamu"
+
+	}
+	
+}name_list_masaba = {
+	cadet_dynasty_names = {
+		"Ngonge"
+		"Nkima"
+		"Kkobe"
+		"Ffumbe"
+		"Mamba"
+		"Ndiga"
+		"Ngeye"
+		"Lugave"
+		"Ngabi"
+		"Mbogo"
+		"Nsenene"
+		"Mpindi"
+		"Basoga"
+
+	}
+
+	dynasty_names = {
+				"Ngonge"
+		"Nkima"
+		"Kkobe"
+		"Ffumbe"
+		"Mamba"
+		"Ndiga"
+		"Ngeye"
+		"Lugave"
+		"Ngabi"
+		"Mbogo"
+		"Nsenene"
+		"Mpindi"
+		"Basoga"
+
+	}
+
+	male_names = {
+				"Ruhinda"
+		"Nkuba"
+		"Nyaika"
+		"Ntare"
+		"Rushango"
+		"Kasasira"
+		"Kitra"
+		"Rumongye"
+		"Mirindi"
+		"Macwa"
+		"Rwabirere"
+		"Kahaya"
+		"Rwebishengye"
+		"Gasyonga"
+		"Mutambuka"
+		"Muteesa"
+		"Suuna"
+		"Kamaanya"
+		"Semakookiro"
+		"Jjunju"
+		"Kyabaggu"
+		"Namuggala"
+		"Mwanga"
+		"Mawanda"
+		"Kikulwe"
+		"Kagulu"
+		"Ndawula"
+		"Tebandeke"
+		"Juuko"
+		"Kayemba"
+		"Mutebi"
+		"Kateregga"
+		"Kimbugwe"
+		"Sekamaanya"
+		"Jemba"
+		"Mulondo"
+		"Nakibinge"
+		"Kayima"
+		"Ttembo"
+		"Kimera"
+		"Kato"
+		"Kintu"
+
+	}
+	
+	female_names = {
+				"Nyiramavugo"
+		"Kanjogera"
+		"Nyirarukangaga"
+		"Balambi"
+		"Bawedde"
+		"Sikyayinza"
+		"Nakamu"
+
+	}
+	
+}name_list_rwandan = {
+	cadet_dynasty_names = {
+		"Songoro"
+		"Ha"
+		"Huma"
+		"Iru"
+		"Hima"
+		"Kama"
+		"Chwa"
+		"Mpazi"
+		"Bairu"
+		"Waha"
+		"Hinda"
+		"Bajiji"
+		"Bashubi"
+		"Abacyaba"
+		"Abasinga"
+		"Abashambo"
+		"Abahinda"
+		"Abazigaba"
+		"Abungura"
+		"Abarihira"
+		"Abahondogo"
+		"Abongera"
+
+	}
+
+	dynasty_names = {
+				"Songoro"
+		"Ha"
+		"Huma"
+		"Iru"
+		"Hima"
+		"Kama"
+		"Chwa"
+		"Mpazi"
+		"Bairu"
+		"Waha"
+		"Hinda"
+		"Bajiji"
+		"Bashubi"
+		"Abacyaba"
+		"Abasinga"
+		"Abashambo"
+		"Abahinda"
+		"Abazigaba"
+		"Abungura"
+		"Abarihira"
+		"Abahondogo"
+		"Abongera"
+
+	}
+
+	male_names = {
+				"Ruhaga"
+		"Bunyonya"
+		"Kiteite"
+		"Kahiyoza"
+		"Rutahigwa"
+		"Rwakyendera"
+		"Rugacwa"
+		"Lweikiza"
+		"Kihira"
+		"Rwasa"
+		"Kanyoni"
+		"Kivunangoma"
+		"Masimba"
+		"Maziga"
+		"Buhinda"
+		"Kmenyi"
+		"Ntare"
+		"Karemera"
+		"Rushatsi"
+		"Rufuku"
+		"Baridamunka"
+		"Mutaga"
+		"Mwambutsa"
+		"Cambarantama"
+		"Birori"
+		"Maconco"
+		"Kigeli"
+		"Mutara"
+		"Cyilima"
+		"Ruganzu"
+		"Ndahiro"
+		"Nsoro"
+		"Rubanda"
+		"Nyarume"
+		"Rumeza"
+		"Kanyarwanda"
+
+	}
+	
+	female_names = {
+				"Baramparaye"
+		"Ngenzahago"
+		"Nyiramavugo"
+		"Kanjogera"
+		"Nyirarukangaga"
+
+	}
+	
+}

@@ -3,7 +3,7 @@
 ################################
 
 tradition_bushido = {
-	category = societal
+	category = regional
 
 	layers = {
 		0 = martial
@@ -12,6 +12,10 @@ tradition_bushido = {
 	}
 	
 	is_shown = {
+		has_cultural_pillar = heritage_japanese
+	}
+	
+	can_pick = {
 		has_cultural_pillar = heritage_japanese
 	}
 	
@@ -30,6 +34,150 @@ tradition_bushido = {
 		dread_per_tyranny_add = 0.3
 		dread_decay_mult = -0.3
 		revolting_siege_morale_loss_mult = 0.25
+	}
+	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_bellicose }
+						any_in_list = { list = traits this = flag:ethos_egalitarian }
+						any_in_list = { list = traits this = flag:ethos_courtly }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bellicose_egalitarian_or_courtly_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						scope:character = {
+							any_knight = {
+								count >= 6
+								prowess >= 12
+							}
+						}
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = knights_with_prowess_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 100
+	}
+}
+tradition_sauna = {
+	category = societal
+
+	layers = {
+		0 = diplo
+		1 = western
+		4 = sauna.dds
+	}
+	
+	is_shown = {
+		OR = {
+		has_cultural_pillar = heritage_baltic
+		has_cultural_pillar = heritage_east_slavic
+		has_cultural_pillar = heritage_balto_finnic
+		has_cultural_pillar = heritage_ugro_permian
+		has_cultural_pillar = heritage_volga_finnic
+		}
+	}
+	can_pick = {
+		OR = {
+		has_cultural_pillar = heritage_baltic
+		has_cultural_pillar = heritage_east_slavic
+		has_cultural_pillar = heritage_balto_finnic
+		has_cultural_pillar = heritage_ugro_permian
+		has_cultural_pillar = heritage_volga_finnic
+		}
+	}
+	parameters = {
+		safer_childbirths_active = yes
+		healthier_children_active = yes
+	}
+	character_modifier = {
+		fertility = 0.1
+	}	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_communal }
+						any_in_list = { list = traits this = flag:ethos_egalitarian }
+						any_in_list = { list = traits this = flag:ethos_courtly }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bellicose_egalitarian_or_courtly_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 100
+	}
+}
+tradition_circassian_beauty = {
+	category = regional
+
+	layers = {
+		0 = diplo
+		1 = mena
+		4 = circassian_beauty.dds
+	}
+	
+	is_shown = {
+		OR = {
+			this = culture:circassian
+			any_parent_culture_or_above = {
+				this = culture:circassian
+			}
+		}
+	}
+	
+	can_pick = {
+		OR = {
+			this = culture:circassian
+			any_parent_culture_or_above = {
+				this = culture:circassian
+			}
+		}
+	}
+	
+	parameters = {
+		beauty_trait_more_common = yes
+	}
+	
+	character_modifier = {
+		attraction_opinion = 10
+		intrigue = 1
 	}
 	
 	cost = {

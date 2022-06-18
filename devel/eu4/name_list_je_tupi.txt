@@ -1,0 +1,132 @@
+name_list_guarani = {
+	cadet_dynasty_names = {
+		"Mbigua"
+		"Caracara"
+		"Timbu"
+		"Tucague"
+		"Calchagui"
+		"Quiloazaz"
+		"Cario"
+		"Itatine"
+		"Tarci"
+		"Bomboi"
+		"Curupaiti"
+		"Curumai"
+		"Caaigua"
+		"Tape"
+		"Ciriguana"
+
+	}
+
+	dynasty_names = {
+				"Mbigua"
+		"Caracara"
+		"Timbu"
+		"Tucague"
+		"Calchagui"
+		"Quiloazaz"
+		"Cario"
+		"Itatine"
+		"Tarci"
+		"Bomboi"
+		"Curupaiti"
+		"Curumai"
+		"Caaigua"
+		"Tape"
+		"Ciriguana"
+
+	}
+
+	male_names = {
+				"Angatupyry"
+		"Apytere"
+		"Arandu"
+		"Araresa"
+		"Amaru"
+		"Amapytu"
+		"Amangy"
+		"Aravera"
+		"Arasunu"
+		"Aratiri"
+		"Chavuku"
+		"Jakaira"
+		"Karai"
+		"Katupyry"
+		"Kuarahy"
+		"Kuarahyrese"
+		"Maitei"
+		"Mbaehory"
+		"Mbarakapu"
+		"Namandu"
+		"Tajy"
+		"Tatarendy"
+		"Tatajyva"
+		"Tatapytu"
+		"Tuvicha"
+		"Ygary"
+		"Tekokatu"
+
+	}
+	
+	female_names = {
+				"Bartira"
+		"Potira"
+		"Porasy"
+		"Jougousa"
+		"Azelene"
+
+	}
+	
+}name_list_tupinamba = {
+	cadet_dynasty_names = {
+		"Piratininga"
+		"Tabajara"
+		"TemiminOO"
+		"Tamoio"
+		"Tabajara"
+		"CaetEE"
+		"TupinaEE"
+		"TemiminOO"
+		"Tupina"
+		"AricobEE"
+
+	}
+
+	dynasty_names = {
+				"Piratininga"
+		"Tabajara"
+		"TemiminOO"
+		"Tamoio"
+		"Tabajara"
+		"CaetEE"
+		"TupinaEE"
+		"TemiminOO"
+		"Tupina"
+		"AricobEE"
+
+	}
+
+	male_names = {
+				"TibiriCCAA"
+		"Piquerobi"
+		"Caiubi"
+		"Ramalho"
+		"Italo"
+		"Arah"
+		"PirijAA"
+		"Arata"
+		"ToruII"
+		"Mbicy"
+
+	}
+	
+	female_names = {
+				"Bartira"
+		"Potira"
+		"Porasy"
+		"Jougousa"
+		"Azelene"
+
+	}
+	
+}

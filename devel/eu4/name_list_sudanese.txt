@@ -1,0 +1,52 @@
+name_list_acholi = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}name_list_beja = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}name_list_nubian = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+		
+	}
+	
+	female_names = {
+		
+	}
+	
+}

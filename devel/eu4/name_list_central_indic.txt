@@ -1,0 +1,191 @@
+name_list_garjati = {
+	cadet_dynasty_names = {
+		"Nagavamsi"
+		"Sankara"
+		"Bhuyavamsha"
+		"Gangabansi"
+		"Bhanja"
+		"Karan"
+		"Keshari"
+		"Suryavanshi"
+		"Baghal"
+
+	}
+
+	dynasty_names = {
+				"Nagavamsi"
+		"Sankara"
+		"Bhuyavamsha"
+		"Gangabansi"
+		"Bhanja"
+		"Karan"
+		"Keshari"
+		"Suryavanshi"
+		"Baghal"
+
+	}
+
+	male_names = {
+				"Haria"
+		"Jugasai"
+		"Pratapnayan"
+		"Harirudra"
+		"Anku"
+		"Raghunath"
+		"Biswambhar"
+		"Raisingh"
+		"Dusmant"
+		"Pratap"
+		"Deo"
+		"Padman"
+		"Khadag"
+		"Rai"
+		"Yuvaraj"
+		"Birabar"
+		"Harichandra"
+		"Gopinath"
+		"Raghuraj"
+		"Haria"
+		"Bishwanath"
+		"Rai"
+		"Sunder"
+		"Krishna"
+		"Barman"
+		"Biwarta"
+		"Jagannath"
+		"Narayana"
+		"Bebarta"
+		"Chandra"
+		"Damodar"
+		"Jadunath"
+		"Pradeep"
+
+	}
+	
+	female_names = {
+				"Giriraj"
+		"Suratarangini"
+		"Devi"
+		"Malavika"
+		"Devi"
+
+	}
+	
+}name_list_gondi = {
+	cadet_dynasty_names = {
+		"Chanda"
+		"Raj"
+		"Gondi"
+		"Kherli"
+		"Deogadhi"
+		"Ballar"
+		"Sahi"
+		"Haihaya"
+		"Gadhi"
+
+	}
+
+	dynasty_names = {
+				"Chanda"
+		"Raj"
+		"Gondi"
+		"Kherli"
+		"Deogadhi"
+		"Ballar"
+		"Sahi"
+		"Haihaya"
+		"Gadhi"
+
+	}
+
+	male_names = {
+				"Narsingh"
+		"Rai"
+		"Arjuna"
+		"Simha"
+		"Sangrama"
+		"Simha"
+		"Daipat"
+		"Simha"
+		"Vir"
+		"Narayana"
+		"Chandra"
+		"Sahi"
+		"Hirde"
+		"Madhukara"
+		"Sahi"
+		"Dhundya"
+		"Ram"
+		"Sah"
+		"Krasna"
+		"Sah"
+		"Bir"
+		"Sah"
+		"Hiradi"
+		"Ram"
+		"Sah"
+		"Nilkanth"
+		"Sah"
+		"Chanda"
+		"Bahkt"
+		"Buland"
+		"Bhuma"
+		"Lokba"
+		"Babji"
+		"Dhundya"
+		"Kondya"
+		"Ram"
+		"Krasna"
+
+	}
+	
+	female_names = {
+				"Durgavati"
+		"Hirai"
+		"Ratna"
+		"Kuvar"
+
+	}
+	
+}name_list_jharkhandi = {
+	cadet_dynasty_names = {
+
+	}
+
+	dynasty_names = {
+		
+	}
+
+	male_names = {
+				"Maharato"
+		"Madhu"
+		"Singh"
+		"Durjan"
+		"Sal"
+		"Anant"
+		"Medini"
+		"Pratap"
+		"Narendra"
+		"Rudra"
+		"Jaswant"
+		"Singh"
+		"Bahadur"
+		"Singh"
+		"Sheo"
+		"Singh"
+		"Ajit"
+		"Singh"
+		"Balbhadra"
+		"Singh"
+
+	}
+	
+	female_names = {
+				"Durgavati"
+		"Hirai"
+		"Ratna"
+		"Kuvar"
+
+	}
+	
+}
