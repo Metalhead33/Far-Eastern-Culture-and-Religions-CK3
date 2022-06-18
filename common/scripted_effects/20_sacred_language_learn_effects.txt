@@ -85,6 +85,12 @@
 	}
 	else_if = {
 		limit = {
+			faith = { has_doctrine = sacred_lang_caucasian_avar }
+		}
+		learn_language = language_caucasian_avar
+	}
+	else_if = {
+		limit = {
 			faith = { has_doctrine = sacred_lang_central_germanic }
 		}
 		learn_language = language_central_germanic
@@ -112,6 +118,12 @@
 			faith = { has_doctrine = sacred_lang_chinese }
 		}
 		learn_language = language_chinese
+	}
+	else_if = {
+		limit = {
+			faith = { has_doctrine = sacred_lang_circassian }
+		}
+		learn_language = language_circassian
 	}
 	else_if = {
 		limit = {
@@ -295,6 +307,12 @@
 	}
 	else_if = {
 		limit = {
+			faith = { has_doctrine = sacred_lang_lezgic }
+		}
+		learn_language = language_lezgic
+	}
+	else_if = {
+		limit = {
 			faith = { has_doctrine = sacred_lang_magyar }
 		}
 		learn_language = language_magyar
@@ -322,6 +340,12 @@
 			faith = { has_doctrine = sacred_lang_mongolic }
 		}
 		learn_language = language_mongolic
+	}
+	else_if = {
+		limit = {
+			faith = { has_doctrine = sacred_lang_nakh }
+		}
+		learn_language = language_nakh
 	}
 	else_if = {
 		limit = {
@@ -503,4 +527,5 @@
 		}
 		learn_language = language_yoruba
 	}
+
 }

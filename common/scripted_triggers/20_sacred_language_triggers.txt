@@ -58,6 +58,10 @@
 			knows_language = language_burmese
 		}
 		AND = {
+			faith = { has_doctrine = sacred_lang_caucasian_avar }
+			knows_language = language_caucasian_avar
+		}
+		AND = {
 			faith = { has_doctrine = sacred_lang_central_germanic }
 			knows_language = language_central_germanic
 		}
@@ -76,6 +80,10 @@
 		AND = {
 			faith = { has_doctrine = sacred_lang_chinese }
 			knows_language = language_chinese
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_circassian }
+			knows_language = language_circassian
 		}
 		AND = {
 			faith = { has_doctrine = sacred_lang_coptic }
@@ -198,6 +206,10 @@
 			knows_language = language_lechitic
 		}
 		AND = {
+			faith = { has_doctrine = sacred_lang_lezgic }
+			knows_language = language_lezgic
+		}
+		AND = {
 			faith = { has_doctrine = sacred_lang_magyar }
 			knows_language = language_magyar
 		}
@@ -216,6 +228,10 @@
 		AND = {
 			faith = { has_doctrine = sacred_lang_mongolic }
 			knows_language = language_mongolic
+		}
+		AND = {
+			faith = { has_doctrine = sacred_lang_nakh }
+			knows_language = language_nakh
 		}
 		AND = {
 			faith = { has_doctrine = sacred_lang_norse }
@@ -398,6 +414,10 @@ culture_has_sacred_language_trigger = {
 			$CULTURE$ = { has_cultural_pillar = language_burmese }
 		}
 		AND = {
+			$FAITH$ = { has_doctrine = sacred_lang_caucasian_avar }
+			$CULTURE$ = { has_cultural_pillar = language_caucasian_avar }
+		}
+		AND = {
 			$FAITH$ = { has_doctrine = sacred_lang_central_germanic }
 			$CULTURE$ = { has_cultural_pillar = language_central_germanic }
 		}
@@ -416,6 +436,10 @@ culture_has_sacred_language_trigger = {
 		AND = {
 			$FAITH$ = { has_doctrine = sacred_lang_chinese }
 			$CULTURE$ = { has_cultural_pillar = language_chinese }
+		}
+		AND = {
+			$FAITH$ = { has_doctrine = sacred_lang_circassian }
+			$CULTURE$ = { has_cultural_pillar = language_circassian }
 		}
 		AND = {
 			$FAITH$ = { has_doctrine = sacred_lang_coptic }
@@ -538,6 +562,10 @@ culture_has_sacred_language_trigger = {
 			$CULTURE$ = { has_cultural_pillar = language_lechitic }
 		}
 		AND = {
+			$FAITH$ = { has_doctrine = sacred_lang_lezgic }
+			$CULTURE$ = { has_cultural_pillar = language_lezgic }
+		}
+		AND = {
 			$FAITH$ = { has_doctrine = sacred_lang_magyar }
 			$CULTURE$ = { has_cultural_pillar = language_magyar }
 		}
@@ -556,6 +584,10 @@ culture_has_sacred_language_trigger = {
 		AND = {
 			$FAITH$ = { has_doctrine = sacred_lang_mongolic }
 			$CULTURE$ = { has_cultural_pillar = language_mongolic }
+		}
+		AND = {
+			$FAITH$ = { has_doctrine = sacred_lang_nakh }
+			$CULTURE$ = { has_cultural_pillar = language_nakh }
 		}
 		AND = {
 			$FAITH$ = { has_doctrine = sacred_lang_norse }

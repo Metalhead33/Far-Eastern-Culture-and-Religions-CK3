@@ -295,6 +295,26 @@
 			}
 		}
 	}
+	sacred_lang_caucasian_avar = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_caucasian_avar }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_caucasian_avar
+					any_player = { knows_language = language_caucasian_avar }
+				}
+			}
+		}
+	}
 	sacred_lang_central_germanic = {
 		piety_cost = {
 			value = faith_tenet_cost_low
@@ -391,6 +411,26 @@
 				OR = {
 					has_doctrine = sacred_lang_chinese
 					any_player = { knows_language = language_chinese }
+				}
+			}
+		}
+	}
+	sacred_lang_circassian = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_circassian }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_circassian
+					any_player = { knows_language = language_circassian }
 				}
 			}
 		}
@@ -1001,6 +1041,26 @@
 			}
 		}
 	}
+	sacred_lang_lezgic = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_lezgic }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_lezgic
+					any_player = { knows_language = language_lezgic }
+				}
+			}
+		}
+	}
 	sacred_lang_magyar = {
 		piety_cost = {
 			value = faith_tenet_cost_low
@@ -1097,6 +1157,26 @@
 				OR = {
 					has_doctrine = sacred_lang_mongolic
 					any_player = { knows_language = language_mongolic }
+				}
+			}
+		}
+	}
+	sacred_lang_nakh = {
+		piety_cost = {
+			value = faith_tenet_cost_low
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = sacred_lang_nakh }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+		is_shown = {
+			AND = {
+				NOT = { religion_tag = islam_religion }
+				NOT = { religion_tag = judaism_religion }
+				OR = {
+					has_doctrine = sacred_lang_nakh
+					any_player = { knows_language = language_nakh }
 				}
 			}
 		}
