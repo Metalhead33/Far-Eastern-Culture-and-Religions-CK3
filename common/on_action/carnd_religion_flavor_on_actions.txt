@@ -1,0 +1,5 @@
+﻿carn_on_sex = {
+	events = {
+		carnd_religion_flavor.0001 # Count number of times you had sex for Xuansu
+	}
+}

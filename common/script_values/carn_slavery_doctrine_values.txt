@@ -1,0 +1,94 @@
+﻿demand_free_illegal_slaves_likelihood_calculation = {
+	# Keep conversion's learning difference; who knows the law better?
+	add = demand_conversion_learning_difference
+
+	# Removed fervor calc, but would like to put something like it
+	# More likely to accept if faith fervor is high? I.E. this will look bad if I say no?
+
+	# Opinion impacts
+	if = {
+		limit = {
+			opinion = {
+				target = scope:actor
+				value < medium_negative_opinion
+			}
+		}
+		add = -50
+	}
+	else_if = {
+		limit = {
+			opinion = {
+				target = scope:actor
+				value < neutral_opinion
+			}
+		}
+		add = -25
+	}
+	else_if = {
+		limit = {
+			opinion = {
+				target = scope:actor
+				value >= medium_positive_opinion
+			}
+		}
+		add = 50
+	}
+	else_if = {
+		limit = {
+			opinion = {
+				target = scope:actor
+				value > neutral_opinion
+			}
+		}
+		add = 25
+	}
+
+	# Trait Impacts
+	# Less likely to accept if requestor is former slave
+	if = {
+		limit = {
+			scope:actor = { has_trait = former_slave }
+		}
+		add = -15
+	}
+	# Less likely to accept if zealous and different faith than requestor
+	if = {
+		limit = {
+      AND = {
+        has_trait = zealous
+        NOT = { faith = scope:actor.faith }
+      }
+		}
+		add = -50
+	}
+
+	# Refusing is always a crime, so add a flat "jail is scary" mod
+	add = 50
+
+
+	# Dread Impact
+	if = {
+		limit = {
+			scope:recipient = {
+				has_dread_level_towards = {
+					target = scope:actor
+					level = 1
+				}
+			}
+		}
+		add = 10
+	}
+	if = {
+		limit = {
+			scope:recipient = {
+				has_dread_level_towards = {
+					target = scope:actor
+					level = 2
+				}
+			}
+		}
+		add = 20
+	}
+
+	max = 100
+}

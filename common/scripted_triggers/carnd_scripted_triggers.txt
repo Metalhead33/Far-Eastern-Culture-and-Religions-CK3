@@ -1,0 +1,22 @@
+﻿carnd_venerates_sodom_and_gomorrah_trigger = {
+	faith = {
+		has_doctrine = doctrine_homosexuality_accepted
+		OR = {
+			has_doctrine = doctrine_adultery_men_accepted
+			has_doctrine = doctrine_adultery_women_accepted
+		}
+		has_doctrine = doctrine_deviancy_accepted
+		has_doctrine = carnd_doctrine_lust_exalted
+	}
+	OR = {
+		title:b_zughar = { is_holy_site_of = prev.faith }
+		title:b_kerak = { is_holy_site_of = prev.faith }
+	}
+}
+
+carnd_faith_can_attempt_xuansu_immortality_trigger = {
+	religion = religion:taoism_religion
+	faith = {
+		has_doctrine = carnd_tenet_tantric_sex
+	}
+}

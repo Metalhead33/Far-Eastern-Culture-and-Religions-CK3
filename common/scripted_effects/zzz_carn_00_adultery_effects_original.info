@@ -1,0 +1,143 @@
+﻿extramarital_sex_exposure_consequences_effect = {
+	save_temporary_scope_as = sex_character
+	save_temporary_scope_value_as = {
+		name = spouse_event
+		value = $SPOUSE_EVENT$
+	}
+
+	#APPLY TRAITS & REMOVE PIETY LEVELS
+	add_adulterer_fornicator_trait_or_nothing_effect = yes
+	remove_piety_level_for_shunned_or_criminal_trait_effect = { TRAIT = adulterer } #Fornicator falls under same doctrine
+	if = {
+		limit = {
+			OR = {
+				AND = {
+					exists = scope:sex_partner
+					relation_with_character_is_sodomy_in_my_or_lieges_faith_trigger = { CHARACTER = scope:sex_partner }
+				}
+				AND = {
+					exists = scope:unknown_sex_partner
+					relation_with_character_is_sodomy_in_my_or_lieges_faith_trigger = { CHARACTER = scope:unknown_sex_partner }
+				}
+			}
+		}
+		add_trait = sodomite
+		remove_piety_level_for_shunned_or_criminal_trait_effect = { TRAIT = sodomite }
+	}
+	if = {
+		limit = {
+			exists = scope:sex_partner
+			relation_with_character_is_incestuous_in_my_or_lieges_faith_trigger = { CHARACTER = scope:sex_partner }
+		}
+		add_trait = incestuous
+		remove_piety_level_for_shunned_or_criminal_trait_effect = { TRAIT = incestuous }
+	}
+
+	#APPLY UNFAITHFUL OPINIONS TOWARDS SPOUSES AND LOVERS (only visible for directly relevant exposure)
+	if = {
+		limit = {
+			#OR = { #TODO_CD: commented out until TIT-16673 has been resolved due to errors
+			#	scope:sex_character = root
+			#	AND = {
+			#		exists = scope:sex_partner
+			#		scope:sex_partner = root
+			#	}
+			#	any_spouse = {
+			#		this = root
+			#	}
+			#	any_relation = {
+			#		type = soulmate
+			#		this = root
+			#	}
+			#}
+		}
+		every_relation = {
+			type = soulmate
+			limit = {
+				soulmate_relation_is_exclusive_trigger = yes
+				NOT = { #So we don't add it both at discovery and exposure
+					has_opinion_modifier = {
+						target = scope:sex_character
+						modifier = betrayed_our_promise
+					}
+				}
+			}
+			add_opinion = {
+				target = scope:sex_character
+				modifier = betrayed_our_promise
+			}
+		}
+
+		every_spouse = {
+			if = {
+				limit = {
+					NOT = { faith = { has_doctrine_parameter = no_unfaithfulness_penalty_active } }
+				}
+				add_opinion = {
+					target = scope:sex_character
+					modifier = unfaithful_spouse_exposed_opinion
+				}			
+			}
+		}
+	}
+	else = {
+		hidden_effect = {
+			every_relation = {
+				type = soulmate
+				limit = {
+					soulmate_relation_is_exclusive_trigger = yes
+					NOT = { #So we don't add it both at discovery and exposure
+						has_opinion_modifier = {
+							target = scope:sex_character
+							modifier = betrayed_our_promise
+						}
+					}
+				}
+				add_opinion = {
+					target = scope:sex_character
+					modifier = betrayed_our_promise
+				}
+			}
+
+			every_spouse = {
+				if = {
+					limit = {
+						NOT = { faith = { has_doctrine_parameter = no_unfaithfulness_penalty_active }  }
+					}
+					add_opinion = {
+						target = scope:sex_character
+						modifier = unfaithful_spouse_exposed_opinion
+					}
+				}		
+			}
+		}
+	}
+	every_spouse = {
+		hidden_effect = {
+			#Remove duplicate opinion from discovery
+			if = {
+				limit = {
+					has_opinion_modifier = {
+						target = scope:sex_character
+						modifier = unfaithful_spouse_discovered_opinion
+					}
+				}
+				remove_opinion = {
+					target = scope:sex_character
+					modifier = unfaithful_spouse_discovered_opinion
+				}
+			}
+		}
+
+		#NOTIFY SPOUSE (SHOULD ALWAYS BE "NO" IF EFFECT IS USED ON SECRET EXPOSURE)
+		if = {
+			limit = {
+				scope:spouse_event = yes
+				NOT = { faith = { has_doctrine_parameter = no_unfaithfulness_penalty_active } }
+			}
+
+			scope:sex_character = { save_scope_as = adultery_spouse }
+			trigger_event = adultery.4001
+		}
+	}
+}

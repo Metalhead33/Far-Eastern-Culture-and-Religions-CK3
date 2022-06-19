@@ -1,0 +1,253 @@
+﻿# actually, since slaves can't own titles (and thus can't be Ai controlled), i'm not sure when this will ever happen
+# but might as well leave the file in
+
+carn_slave_negotiate_freedom_interaction = {
+	interface_priority = 50
+	common_interaction = yes
+	use_diplomatic_range = no
+	category = interaction_category_prison
+
+	greeting = positive
+	notification_text = carn_slave_negotiate_freedom_offer
+
+	desc = ransom_me_interaction_desc
+	
+	is_shown = {
+		scope:actor = {
+			has_relation_slave_owner = scope:recipient
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:recipient = { is_diplomatically_available = yes } #Imprisoner
+		scope:actor = { is_diplomatically_available = yes } #Prisoner
+		scope:recipient = {
+			custom_description = {
+				text = "currently_being_tortured"
+				NOT = { has_character_flag = is_being_tortured }
+			}
+		}
+	}
+	
+	on_accept = {
+		if = {
+			limit = { scope:actor = { has_relation_slave_owner = scope:recipient } }
+			scope:actor = { save_scope_as = slave }
+			scope:recipient = { save_scope_as = owner }
+			carn_free_slave_interaction_effect = yes
+			if = {
+				limit = { always = scope:hook }
+				scope:actor = {
+					use_hook = scope:recipient
+				}
+			}
+		}
+	}
+
+	#on_decline = {
+	#	scope:actor = {
+	#		trigger_event = carn_slave.0011
+	#	}
+	#}
+	
+	send_option = {
+		is_valid = {
+			scope:actor = {
+				gold >= carn_slave_price_value
+				carn_slave_can_be_sold_trigger = yes
+			}
+		}
+		flag = gold
+		localization = "RANSOM_GOLD_OPTION"
+	}
+
+	# If you don't have what they're worth, pay me what you have!
+	send_option = {
+		is_shown = {
+			scope:actor = {
+				gold < carn_slave_price_value
+				gold > 0
+				carn_slave_can_be_sold_trigger = yes
+			}
+		}
+		flag = current_gold
+		localization = "RANSOM_CURRENT_GOLD_OPTION"
+	}
+	
+	send_option = {
+		flag = demand_conversion
+		localization = "carn_slave_negotiate_freedom_convert_faith"
+		is_valid = {
+			NOT = {
+				scope:actor.faith = scope:recipient.faith
+			}
+			NAND = {
+				exists = scope:actor.faith.religious_head
+				scope:actor.faith.religious_head = scope:actor
+			}
+		}
+	}
+	
+	send_option = {
+		is_shown = {
+			custom_description = {
+				text = "release_renounce_claims"
+				subject = scope:actor
+				scope:actor = {
+					any_claim = {
+						explicit = yes
+						save_temporary_scope_as = temp_claim
+						OR = {
+							holder = scope:recipient
+							AND = {
+								NOT = { prev = { target_is_liege_or_above = scope:recipient } }
+								trigger_if = {
+									limit = {
+										exists = holder
+									}
+									holder = { target_is_liege_or_above = scope:recipient }
+								}
+							}
+							scope:recipient = {
+								any_held_title = {
+									is_de_jure_liege_or_above_target = scope:temp_claim
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		flag = renounce_claims
+		localization = "release_renounce_claims"
+		current_description = {
+			desc = carn_slave_negotiate_freedom_renounce_claims
+		}
+	}
+	
+	send_option = {
+		is_valid = {
+			scope:recipient = {
+				can_add_hook = { #To match the hook added through ransom_interaction_effect
+					target = scope:actor
+					type = favor_hook
+				}
+			}
+		}
+		flag = gain_hook
+		localization = "RANSOM_FAVOR_OPTION"
+	}
+
+	#Use hook
+	send_option = {
+		is_valid = {
+			scope:actor = {
+				has_usable_hook = scope:recipient
+			}
+		}
+		flag = hook
+		localization = SCHEME_HOOK
+	}
+	should_use_extra_icon = {
+		scope:actor = { has_usable_hook = scope:recipient }
+	}
+	extra_icon = "gfx/interface/icons/character_interactions/hook_icon.dds"
+
+	send_options_exclusive = no
+	
+	localization_values = {
+		RANSOM_COST = scope:actor.ransom_cost_value
+		CURRENT_GOLD = scope:actor.gold
+	}
+	
+	ai_accept = {
+		base = 0
+		modifier = {
+			add = 50
+			scope:gold = yes
+			desc = "GOLD_POSITIVE_REASON"
+		}
+		
+		modifier = {
+			add = 50
+			scope:gain_hook = yes
+			scope:recipient.top_liege = scope:actor.top_liege
+			desc = "FAVOR_POSITIVE_REASON"
+		}
+		
+		modifier = {
+			add = -50
+			scope:gain_hook = yes
+			NOT = {
+				scope:gold = yes
+			}
+			OR = {
+				NOT = { scope:recipient.top_liege = scope:actor.top_liege }
+				scope:recipient.ai_greed >= medium_positive_ai_value
+			}
+			desc = "NO_USE_FOR_A_FAVOR_REASON"
+		}
+		
+		#opinion_modifier = { # A lot more likely if Recipient likes Actor
+		#	who = scope:recipient
+		#	opinion_target = scope:actor
+		#	multiplier = 1.0
+		#	desc = AI_OPINION_REASON
+		#}
+		
+		modifier = { # Say no to rivals
+			add = -55
+			scope:recipient = {
+				has_relation_rival = scope:actor
+			}
+			desc = "ACTOR_RIVAL_TO_ME_REASON"
+		}
+		modifier = { # Say no to rivals
+			add = -300
+			scope:recipient = {
+				has_relation_nemesis = scope:actor
+			}
+			desc = "ACTOR_NEMESIS_TO_ME_REASON"
+		}
+		
+		
+		modifier = { # At war
+			add = -300
+			scope:recipient = {
+				is_at_war_with = scope:actor
+			}
+			desc = "IS_AT_WAR_REASON"
+		}
+
+		modifier = {
+			scope:hook = yes
+			add = 100
+			desc = SCHEME_WEAK_HOOK_USED
+		}
+	}
+
+	auto_accept = {
+		custom_description = {
+			text = "spending_hook"
+			subject = scope:actor
+			object = scope:recipient
+			scope:hook = yes
+			scope:actor = { has_strong_hook = scope:recipient }
+		}
+	}
+	
+	# AI
+	ai_frequency = 120 # slaves shouldn't ask for their freedom too often
+	
+	ai_targets = {
+		ai_recipients = self
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}

@@ -1,0 +1,2 @@
+﻿carnd_ce_lilith_religion.dds = { colors = 1 category = carnd }
+carnd_ce_madeleinist_cross.dds = { colors = 1 category = carnd }

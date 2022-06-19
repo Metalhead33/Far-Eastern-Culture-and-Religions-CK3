@@ -1,0 +1,16 @@
+﻿carn_refused_manumission_demand_opinion = {
+	opinion = -15
+	years = 10
+}
+
+carn_illegal_refused_manumission_demand_opinion = {
+	opinion = -15
+	years = 10
+	imprisonment_reason = yes
+}
+
+carn_demanded_manumission_opinion = {
+	opinion = -20
+	monthly_change = 0.1
+	decaying = yes
+}

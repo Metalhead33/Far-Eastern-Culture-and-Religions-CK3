@@ -1,0 +1,207 @@
+﻿# Demand Manumission
+carn_demand_free_illegal_slaves_interaction = {
+	category = interaction_category_religion
+
+	ai_maybe = yes
+	ai_min_reply_days = 4
+	ai_max_reply_days = 9
+	can_send_despite_rejection = yes
+	ai_accept_negotiation = yes
+	popup_on_receive = yes
+
+	ai_targets = {
+		ai_recipients = vassals
+	}
+	ai_target_quick_trigger = {
+		adult = yes
+	}
+	ai_frequency = 12
+
+	desc = {
+		desc = carn_demand_free_slaves_interaction_desc
+		desc = line_break
+		triggered_desc = {
+			trigger = {
+				NOT = { scope:recipient = { is_imprisoned_by = scope:actor } }
+			}
+			desc = might_ask_for_something_in_return_warning
+		}
+		desc = carn_demand_free_illegal_slaves_is_crime
+	}
+
+	on_decline_summary = stop_attacker_vassal_war_decline_summary
+
+	is_shown = {
+		scope:recipient = {
+			target_is_liege_or_above = scope:actor
+			is_ai = yes
+			OR = {
+				AND = {
+					faith = {
+						has_doctrine = carn_doctrine_same_slavery_crime
+					}
+					any_relation = {
+						type = slave
+						scope:recipient.faith = {
+							faith_hostility_level = {
+								target = prev.faith
+								value < faith_hostile_level
+							}
+						}
+					}
+				}
+				AND = {
+					faith = {
+						has_doctrine = carn_doctrine_other_slavery_crime
+					}
+					any_relation = {
+						type = slave
+						scope:recipient.faith = {
+							faith_hostility_level = {
+								target = prev.faith
+								value >= faith_hostile_level
+							}
+						}
+					}
+				}
+			}
+    	}
+  	}
+
+	cooldown_against_recipient = { years = 5 }
+
+	auto_accept = {
+		OR = {
+			scope:recipient = { is_imprisoned_by = scope:actor }
+			custom_description = {
+				text = "spending_hook"
+				subject = scope:actor
+				object = scope:recipient
+				scope:hook = yes
+				scope:actor = { has_strong_hook = scope:recipient }
+			}
+		}
+	}
+
+	on_send = {
+	}
+
+
+	on_accept = {
+		scope:actor = {
+			trigger_event = carn_slavery_doctrine.0001
+		}
+    	carn_free_illegal_slaves_effect = yes
+  	}
+
+	on_decline = {
+		scope:recipient = {
+			hidden_effect = {
+				random_list = {
+					40 = { #They ask for gold
+						ai_value_modifier = {
+							ai_greed = 0.5
+						}
+						scope:actor = {
+							trigger_event = {
+								id = carn_slavery_doctrine.0002
+							}
+						}
+					}
+					40 = { #They ask for a favor
+						trigger = {
+							NOT = {
+								has_hook = scope:actor
+								exists = scope:recipient.capital_county
+							}
+						}
+						modifier = {
+							add = 50
+							NOT = { scope:actor.gold > medium_gold_value }
+						}
+						scope:actor = {
+							trigger_event = {
+								id = carn_slavery_doctrine.0003
+							}
+						}
+					}
+					20 = { #Full refuse
+						modifier = {
+							add = 20
+							scope:recipient.demand_free_illegal_slaves_likelihood_calculation < 40
+						}
+						modifier = {
+							add = 20
+							scope:recipient.demand_free_illegal_slaves_likelihood_calculation < 20
+						}
+						modifier = {
+							add = 50
+							scope:recipient.demand_free_illegal_slaves_likelihood_calculation < 0
+						}
+						scope:actor = {
+							trigger_event = {
+								id = carn_slavery_doctrine.0004
+							}
+						}
+					}
+				}
+			}
+			custom_tooltip = demand_conversion_vassal_ruler_does_not_convert
+			show_as_tooltip = {
+				#Negative opinions
+				add_opinion = {
+					modifier = carn_demanded_manumission_opinion
+					target = scope:actor
+					opinion = -10
+				}
+			}
+		}
+	}
+
+	ai_potential = {
+		is_adult = yes
+	}
+
+	# Use hook
+	send_option = {
+		is_valid = {
+			scope:actor = {
+				has_usable_hook = scope:recipient
+			}
+			NOT = {
+				scope:recipient = { is_imprisoned_by = scope:actor }
+			}
+		}
+		flag = hook
+		localization = SCHEME_HOOK
+	}
+	should_use_extra_icon = {
+		scope:actor = { has_usable_hook = scope:recipient }
+	}
+	extra_icon = "gfx/interface/icons/character_interactions/hook_icon.dds"
+
+	send_options_exclusive = no
+
+	ai_will_do = {
+		base = 100
+
+		modifier = { # Make sure the AI uses hooks for this as it's % based
+			scope:hook = yes
+			add = 1
+		}
+
+		modifier = {
+			factor = 0
+			scope:recipient.demand_free_illegal_slaves_likelihood_calculation < 10
+		}
+	}
+	ai_accept = {
+		base = 0
+		religion_demand_conversion_default_modifier = yes
+
+		modifier = {
+			desc = might_ask_for_something_in_return_warning_line_break
+			add = 0
+		}
+	}
+}

@@ -1,0 +1,9 @@
+﻿l_english: 
+
+ carnd_doctrine_lust_name: "Sexuality"
+ carnd_doctrine_lust_shunned_name: "Sexual Repression"
+ carnd_doctrine_lust_shunned_desc: "The desires of the flesh are the crudest and basest of impulses. To be truly virtuous, we must first purge ourselves of such impure thoughts."
+ carnd_doctrine_lust_accepted_name: "Natural Desire"
+ carnd_doctrine_lust_accepted_desc: "It is part of the natural order of things that humans should desire one another. For better or for worse, our sexuality is a part of who we are."
+ carnd_doctrine_lust_exalted_name: "$tenet_carnal_exaltation_name$"
+ carnd_doctrine_lust_exalted_desc: "$tenet_carnal_exaltation_desc$"

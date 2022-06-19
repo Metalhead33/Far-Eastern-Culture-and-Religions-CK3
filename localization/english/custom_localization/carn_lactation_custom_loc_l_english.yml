@@ -1,0 +1,15 @@
+﻿l_english:
+
+ carn_very_low_milk_production_description: "a very small trickle of"
+ carn_low_milk_production_description: "a small amount of"
+ carn_average_milk_production_description: "a healthy amount of"
+ carn_high_milk_production_description: "an impressive amount of"
+ carn_very_high_milk_production_description: "an incredible amount of"
+ carn_extreme_milk_production_description: "an extreme amount of"
+
+ carn_very_low: "very low"
+ carn_low: "low"
+ carn_average: "average"
+ carn_high: "high"
+ carn_very_high: "very high"
+ carn_extreme: "extreme" 

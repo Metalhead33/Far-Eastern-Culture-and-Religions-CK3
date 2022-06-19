@@ -1,0 +1,87 @@
+﻿babylon = { # Heartland of ancient civilizations, including many lewd ones
+	county = c_baghdad
+	
+	character_modifier = {
+		learning_per_piety_level = 2
+	}
+}
+
+ephesos = { # Where Mary Magdalene died, according to some accounts
+	county = c_ionia
+	
+	character_modifier = {
+		learning_per_piety_level = 1
+		health = 0.25
+	}
+}
+
+gomorrah = { # Biblically reported as a place of debauchery
+	county = c_kerak
+	
+	character_modifier = {
+		fertility = 0.25
+	}
+}
+
+lesbos = { # Birthplace of Sappho, lesbian poet
+	county = c_lesbos
+	
+	character_modifier = {
+		diplomacy = 2
+		courting_scheme_power_mult = 0.2
+		elope_scheme_power_mult = 0.2
+	}
+}
+
+magdala = { # Birthplace of Mary Magdalene
+	county = c_tiberias
+
+	character_modifier = {
+		stewardship_per_piety_level = 1
+	}
+}
+
+marseille = { # Where Mary Magdalene died, according to The Golden Legend
+	county = c_provence
+
+	character_modifier = {
+		fertility = 0.10
+		tax_mult = 0.05
+	}
+}
+
+paris = { # Somewhat anachronistic, but has a reputation as a city of love
+	county = c_ile_de_france
+	
+	character_modifier = {
+		intrigue = 2
+		seduce_scheme_power_mult = 0.2
+	}
+}
+
+pataliputra = { # birthplace of Vātsyāyana, author of the Kama Sutra
+	county = c_magadha
+
+	character_modifier = {
+		fertility = 0.10
+		monthly_lifestyle_xp_gain_mult = 0.15
+	}
+}
+
+ugarit = { # Ancient Phoenician port with lots of interesting cults
+	county = c_antiocheia
+	
+	character_modifier = {
+		stewardship = 2
+		naval_movement_speed_mult = 0.25
+	}
+}
+
+vezelay = { # Basilica of St Magdalene, where her remains are allegedly kept
+	county = c_avalois
+
+	character_modifier = {
+		religious_vassal_opinion = 5
+		sway_scheme_power_mult = 0.1
+	}
+}

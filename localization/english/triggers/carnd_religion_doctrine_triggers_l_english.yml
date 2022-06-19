@@ -1,0 +1,4 @@
+﻿l_english:
+ carnd_incompatible_doctrine_male_dominated_trigger: "Incompatible with the [doctrine|E] $doctrine_gender_male_dominated_name$"
+ carnd_incompatible_doctrine_lust_shunned_trigger: "Incompatible with the [doctrine|E] $carnd_doctrine_lust_shunned_name$"
+ carnd_incompatible_doctrine_prostitution_crime_trigger: "Incompatible with any [doctrine|E] that makes prostitution [shunned|E] or [criminal|E]"

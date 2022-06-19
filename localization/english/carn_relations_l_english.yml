@@ -1,0 +1,17 @@
+﻿l_english:
+
+ dominant: "[dominant|E]"
+ relation_dominant: "dominant"
+ relation_dominant_possessive: "dominant's"
+ 
+ submissive: "[submissive|E]"
+ relation_submissive: "submissive"
+ relation_submissive_possessive: "submissive's"
+ 
+ slave: "[slave|E]"
+ relation_slave: "slave"
+ relation_slave_possessive: "slave's"
+
+ slave_owner: "[slave_owner|E]"
+ relation_slave_owner: "owner"
+ relation_slave_owner_possessive: "owner's"

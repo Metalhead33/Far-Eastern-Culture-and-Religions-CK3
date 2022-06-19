@@ -1,0 +1,76 @@
+﻿# Whether this character is futanari
+carn_is_futa_trigger = {
+	OR = {
+		has_trait = futa
+		has_trait = futa_genetic
+	}
+}
+
+# Whether this character is a non-futanari female
+carn_is_female_not_futa_trigger = {
+	is_female = yes
+	carn_is_futa_trigger = no
+}
+
+# Whether this character has a cock and can impregnate female characters
+carn_gender_can_impregnate_trigger = {
+	OR = {
+		is_male = yes
+		carn_is_futa_trigger = yes
+	}
+}
+
+carn_character_genders_can_produce_children_trigger = {
+	OR = {
+		AND = {
+			$CHARACTER_1$ = {
+				is_female = yes
+			}
+			$CHARACTER_2$ = {
+				carn_gender_can_impregnate_trigger = yes
+			}
+		}
+		AND = {
+			$CHARACTER_1$ = {
+				carn_gender_can_impregnate_trigger = yes
+			}
+			$CHARACTER_2$ = {
+				is_female = yes
+			}
+		}
+	}
+}
+
+carn_possible_pregnancy_after_sex_with_character_trigger = {
+	trigger_if = {
+		limit = { 
+			carn_gender_can_impregnate_trigger = yes 
+			$CHARACTER$ = { is_female = yes }
+		}
+		effective_age >= define:NChildbirth|MIN_MALE_REPRODUCTION_AGE
+		fertility >= 0.1
+
+		$CHARACTER$ ={ 
+			effective_age >= define:NChildbirth|MIN_FEMALE_REPRODUCTION_AGE
+			effective_age < define:NChildbirth|MAX_FEMALE_REPRODUCTION_AGE
+			fertility >= 0.1
+			is_pregnant = no
+		}
+	}
+
+	trigger_if = {
+		limit = { 
+			is_female = yes 
+			$CHARACTER$ = { carn_gender_can_impregnate_trigger = yes }
+		}
+		effective_age >= define:NChildbirth|MIN_FEMALE_REPRODUCTION_AGE
+		effective_age < define:NChildbirth|MAX_FEMALE_REPRODUCTION_AGE
+		fertility >= 0.1
+		is_pregnant = no
+			
+		$CHARACTER$ = {
+			effective_age >= define:NChildbirth|MIN_MALE_REPRODUCTION_AGE
+			fertility >= 0.1
+		}
+	}
+}

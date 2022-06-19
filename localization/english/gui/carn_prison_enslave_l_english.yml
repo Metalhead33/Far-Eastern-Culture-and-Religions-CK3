@@ -1,0 +1,3 @@
+﻿l_english:
+ carn_button_prison_enslave_tooltip: "#T $carn_enslave_interaction$#!"
+ carn_button_prison_mass_enslave_tooltip: "Mass $carn_enslave_interaction$"

@@ -1,0 +1,5 @@
+﻿l_english:
+ carn_cv_spouses_heading: "$SECONDARY_SPOUSES$ #weak ([GetDataModelSize(CharacterWindow.GetSecondarySpouses)])#!"
+ carn_cv_concubines_heading: "$doctrine_concubines_name$ #weak ([GetDataModelSize(CharacterWindow.GetConcubines)])#!"
+
+ carn_lactation_gui_tooltip: "[milk_production|E]: [Character.MakeScope.Var('carn_milk_production').GetValue|0] #weak ([Character.Custom('CarnShortMilkProductionDescription')|U])#!"

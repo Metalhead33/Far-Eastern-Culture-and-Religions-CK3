@@ -1,0 +1,91 @@
+﻿# sell a slave by right clicking them
+carn_sell_slave_interaction = {
+	interface_priority = 31
+	common_interaction = yes
+	category = interaction_category_prison
+
+	desc = carn_sell_slave_interaction_desc
+
+	redirect = { # open to the richest possible recipient to sell to
+		scope:actor = {
+			every_neighboring_and_across_water_top_liege_realm_owner = {
+				limit = { carn_candidate_to_sell_slave_to_trigger = yes }
+				add_to_list = possible_suggested_buyers
+			}
+			if = {
+				limit = { exists = liege }
+				liege = {
+					every_vassal = {
+						limit = { carn_candidate_to_sell_slave_to_trigger = yes }
+						add_to_list = possible_suggested_buyers
+					}
+				}
+			}
+			every_vassal = {
+				limit = { carn_candidate_to_sell_slave_to_trigger = yes }
+				add_to_list = possible_suggested_buyers
+			}
+		}
+		ordered_in_list = {
+			list = possible_suggested_buyers
+			order_by = gold
+			max = 1
+			check_range_bounds = no
+			save_scope_as = secondary_recipient
+		}
+	}
+
+	populate_recipient_list = {
+		scope:actor = {
+			every_neighboring_and_across_water_top_liege_realm_owner = {
+				limit = { carn_candidate_to_sell_slave_to_trigger = yes }
+				add_to_list = characters
+			}
+			if = {
+				limit = { exists = liege }
+				liege = {
+					every_vassal = {
+						limit = { carn_candidate_to_sell_slave_to_trigger = yes }
+						add_to_list = characters
+					}
+				}
+			}
+			every_vassal = {
+				limit = { carn_candidate_to_sell_slave_to_trigger = yes }
+				add_to_list = characters
+			}
+		}
+	}
+	
+	is_shown = {
+		scope:actor = {
+			has_relation_slave = scope:recipient
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:recipient = {
+			is_diplomatically_available = yes
+			carn_slave_can_be_sold_trigger = yes
+			custom_description = {
+				text = "currently_being_tortured"
+				NOT = { has_character_flag = is_being_tortured }
+			}
+		}
+	}
+	
+	on_accept = {
+		if = {
+			limit = { scope:actor = { has_relation_slave = scope:recipient } }
+			scope:actor = { save_scope_as = seller }
+			scope:recipient = { save_scope_as = slave }
+			scope:secondary_recipient = { save_scope_as = buyer }
+			carn_buy_slave_effect = { 
+				SLAVE_PRICE = scope:recipient.carn_slave_price_value
+			}
+		}
+	}
+
+	auto_accept = yes
+
+}

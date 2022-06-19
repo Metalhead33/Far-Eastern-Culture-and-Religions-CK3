@@ -1,0 +1,61 @@
+﻿carnd_seed_carnality_doctrine_effect = {
+	if = {
+		limit = {
+			NOR = {
+				has_doctrine = carnd_doctrine_lust_shunned
+				has_doctrine = carnd_doctrine_lust_accepted
+				has_doctrine = carnd_doctrine_lust_exalted
+			}
+		}
+		add_doctrine = carnd_doctrine_lust_accepted
+	}
+}
+
+carnd_xuansu_immortality_effect = {
+	faith = {
+		change_fervor = {
+			value = 25
+			desc = carnd_fervor_gain_xuansu_immortality
+		}
+	}
+	add_prestige = massive_prestige_gain
+	add_piety = massive_piety_gain
+	dynasty = {
+		add_dynasty_modifier = {
+			modifier = carnd_xuansu_immortality
+		}
+		add_dynasty_prestige = monumental_dynasty_prestige_gain
+	}
+}
+
+carnd_restore_sodom_and_gomorrah_effect = {
+	faith = {
+		change_fervor = {
+			value = 25
+			desc = carnd_fervor_gain_sodom_and_gomorrah_restored
+		}
+	}
+
+	add_prestige = massive_prestige_gain
+	add_piety = massive_piety_gain
+
+	custom_tooltip = carnd_negev_becomes_sodom_tooltip
+	title:c_negev = { set_title_name = carnd_sodom }
+	title:b_zughar = { set_title_name = carnd_sodom }
+
+	custom_tooltip = carnd_kerak_becomes_gomorrah_tooltip
+	title:c_kerak = { set_title_name = carnd_gomorrah }
+	title:b_kerak = { set_title_name = carnd_gomorrah }
+
+	if = {
+		limit = { title:b_kerak = { is_holy_site_of = prev.faith } }
+		title:b_kerak.title_province = {
+			add_special_building = carnd_special_palace_of_sodom_and_gomorrah_01
+		}
+	}
+	else = {
+		title:b_zughar.title_province = {
+			add_special_building = carnd_special_palace_of_sodom_and_gomorrah_01
+		}
+	}
+}

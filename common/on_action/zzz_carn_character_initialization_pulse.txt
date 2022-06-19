@@ -1,0 +1,31 @@
+﻿# there's no way for us to easily catch every character that's generated
+# so instead we have to do this horribly clunky workaround...
+
+# "zzz" so that this on_game_start_after_lobby fires last after all pdx events (hopefully)
+
+on_game_start_after_lobby = {
+	events = {
+		carn_character_initialization.0001
+	}
+}
+
+on_join_court = {
+	on_actions = { carn_character_initialization_pulse }
+}
+
+on_birthday = {
+	on_actions = { carn_character_initialization_pulse }
+}
+
+on_title_gain = {
+	on_actions = { carn_character_initialization_pulse }
+}
+
+on_birth_child = {
+	on_actions = { carn_character_initialization_pulse }
+}
+
+carn_character_initialization_pulse = {
+	events = {
+	}
+}

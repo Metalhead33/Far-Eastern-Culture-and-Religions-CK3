@@ -1,0 +1,334 @@
+﻿######################################################################
+# RAPE EFFECTS
+# by Cheri
+#
+# - `carn_rape_effect`
+# - `carn_rape_opinion_effects_effect`
+# - `carn_rape_victim_stress_effect`
+#
+# These effects are meant for modders to have consistent outcomes for rape.
+#
+# `carn_rape_effect` will apply all relevant consequences, we strongly recommend that you use this effect in any rape event/decision
+# Requires RAPIST (character), VICTIM (character), TRIGGER_SEX_SCENE (boolean)
+# Will trigger a noncon sex scene if TRIGGER_SEX_SCENE is yes
+#
+# `carn_rape_opinion_effects_effect` and `carn_rape_victim_stress_effect` are triggered by `carn_rape_effect`, however they are separate so that they can be shown as tooltips in noncon sub scenes
+######################################################################
+
+# carn_rape_effect
+# requires RAPIST (character), VICTIM (character), TRIGGER_SEX_SCENE (boolean)
+# Will trigger a noncon sex scene if TRIGGER_SEX_SCENE is yes
+
+carn_rape_effect = {
+	$RAPIST$ = { save_scope_as = carn_rape_rapist }
+	$VICTIM$ = { save_scope_as = carn_rape_victim }
+
+	if = {
+		limit = { $TRIGGER_SEX_SCENE$ = yes }
+		show_as_tooltip = {
+			carn_had_sex_with_effect = {
+				CHARACTER_1 = scope:carn_rape_rapist
+				CHARACTER_2 = scope:carn_rape_victim
+				C1_PREGNANCY_CHANCE = pregnancy_chance
+				C2_PREGNANCY_CHANCE = pregnancy_chance
+				STRESS_EFFECTS = no
+				DRAMA = yes
+			}
+		}
+		if = {
+			limit = { scope:carn_rape_rapist = { is_ai = no } }
+			carn_sex_scene_request_noncon = yes
+			carn_sex_scene_request_dom_player = yes
+			carn_sex_scene_effect = {
+				PLAYER = scope:carn_rape_rapist
+				TARGET = scope:carn_rape_victim
+				STRESS_EFFECTS = no
+				DRAMA = yes
+			}
+		}
+		if = {
+			limit = { scope:carn_rape_victim = { is_ai = no } }
+			carn_sex_scene_request_noncon = yes
+			carn_sex_scene_request_sub_player = yes
+			carn_sex_scene_effect = {
+				PLAYER = scope:carn_rape_victim
+				TARGET = scope:carn_rape_rapist
+				STRESS_EFFECTS = no
+				DRAMA = yes
+			}
+		}
+	}
+
+	scope:carn_rape_rapist = {
+
+		### STRESS ###
+		if = {
+			limit = {
+				is_attracted_to_gender_of = scope:carn_rape_victim
+			}
+			if = {
+				limit = { has_relation_rival = scope:carn_rape_victim }
+				stress_impact = {
+					chaste = minor_stress_impact_gain
+					sadistic = major_stress_impact_loss
+					vengeful = major_stress_impact_loss
+					compassionate = minor_stress_impact_gain
+					forgiving = minor_stress_impact_gain
+				}
+			}
+			else = {
+				stress_impact = {
+					chaste = minor_stress_impact_gain
+					sadistic = minor_stress_impact_loss
+					compassionate = massive_stress_impact_gain
+					just = medium_stress_impact_gain
+					forgiving = medium_stress_impact_gain
+					generous = medium_stress_impact_gain
+					trusting = minor_stress_impact_gain
+					content = minor_stress_impact_gain
+				}
+			}
+		}
+		else = {
+			custom_tooltip = carn_rape_effect_not_attracted_to_warning_tt
+			stress_impact = {
+				base = major_stress_impact_gain
+				chaste = minor_stress_impact_gain
+				sadistic = minor_stress_impact_loss
+				compassionate = massive_stress_impact_gain
+				just = medium_stress_impact_gain
+				forgiving = medium_stress_impact_gain
+				generous = medium_stress_impact_gain
+				trusting = minor_stress_impact_gain
+				content = minor_stress_impact_gain
+			}
+		}
+
+		### DREAD (same effects as torturing)
+		if = {
+			limit = {
+				scope:carn_rape_victim = {
+					OR = {
+						is_powerful_vassal_of = scope:carn_rape_rapist # Is your powerful vassal
+						AND = { # Is an Emperor
+							exists = primary_title
+							primary_title.tier >= tier_empire
+						}
+						target_is_vassal_or_below = scope:carn_rape_rapist # Your liege/s
+						scope:carn_rape_rapist.faith.religious_head = scope:carn_rape_victim # Your head of faith
+					}
+				}
+			}
+			add_dread = torture_interaction_massive_dread_gain
+		}
+		else_if = {
+			limit = {
+				scope:carn_rape_victim = {
+					OR = {
+						AND = { # Is your vassal, and higher than Baron
+							is_vassal_of = scope:carn_rape_rapist
+							primary_title.tier > tier_barony
+						}
+						AND = { # Is a King
+							exists = primary_title
+							primary_title.tier >= tier_kingdom
+						}
+					}
+				}
+			}
+			add_dread = torture_interaction_major_dread_gain
+		}
+		else_if = {
+			limit = {
+				scope:carn_rape_victim = {
+					OR = {
+						scope:carn_rape_rapist = { # Torturing close family of your vassals is dreadful...
+							any_vassal = {
+								is_close_family_of = scope:carn_rape_victim
+							}
+						}
+						scope:carn_rape_rapist = { # Torturing close family of your liege/s is the same...
+							any_liege_or_above = {
+								is_close_family_of = scope:carn_rape_victim
+							}
+						}
+						AND = { # Peer Vassals
+							exists = primary_title
+							primary_title.tier > tier_barony
+							exists = liege
+							liege = scope:carn_rape_rapist.liege
+						}
+						AND = { # Is a Duke
+							exists = primary_title
+							primary_title.tier >= tier_duchy
+						}
+					}
+				}
+			}
+			add_dread = torture_interaction_medium_dread_gain
+		}
+		else_if = {
+			limit = {
+				scope:carn_rape_victim = {
+					OR = {
+						is_spouse_of = scope:carn_rape_rapist # Your own spouse
+						is_close_or_extended_family_of = scope:carn_rape_rapist # Your own family
+						AND = {
+							exists = primary_title
+							primary_title.tier >= tier_county # Is a Count
+						}
+						scope:carn_rape_rapist = { # Torturing extended family of your vassals is dreadful...
+							any_vassal = {
+								is_extended_family_of = scope:carn_rape_victim
+							}
+						}
+						scope:carn_rape_rapist = { # Torturing extended family of your liege/s is the same...
+							any_liege_or_above = {
+								is_extended_family_of = scope:carn_rape_victim
+							}
+						}
+					}
+				}
+			}
+			add_dread = torture_interaction_minor_dread_gain
+		}
+
+		carn_rape_opinion_effects_effect = yes
+		carn_rape_victim_stress_effect = yes
+
+		###CHURCH OPINION & PIETY###
+		if = {
+        	limit = {
+            	NOT = { has_perk = divine_retribution_perk }
+            }
+            add_piety = medium_piety_loss
+
+			if = {
+				limit = {
+					any_learning_councillor = {
+						opinion = {
+							target = scope:carn_rape_victim
+							value >= -50
+						}
+					}
+				}
+				random_learning_councillor = {
+					add_opinion = {
+						modifier = impious_opinion
+						opinion = -20
+						target = scope:carn_rape_rapist
+					}
+				}
+			}
+        } 
+	}
+}
+
+carn_rape_opinion_effects_effect = {
+	scope:carn_rape_victim = {
+		if = {
+			limit = {
+				NOT = {
+					carn_has_fetish_trigger = {
+						FETISH = being_raped
+					}
+				}
+			}
+			add_opinion = {
+				modifier = carn_raped_me
+				target = scope:carn_rape_rapist
+			}
+		}
+		every_close_family_member = {
+			limit = { NOT = { this = scope:carn_rape_rapist } }
+			add_to_list = family_of_tortured
+		}
+		every_in_list = {
+			list = family_of_tortured
+			add_opinion = {
+				target = scope:carn_rape_rapist
+				modifier = carn_raped_family_member
+			}
+		}
+		every_relation = {
+			type = friend
+			limit = { NOT = { this = scope:carn_rape_rapist } }
+			add_to_list = friends_of_tortured
+		}
+		every_in_list = {
+			list = friends_of_tortured
+			add_opinion = {
+				target = scope:carn_rape_rapist
+				modifier = carn_raped_my_friend
+			}
+		}
+		every_spouse = {
+			limit = { NOT = { this = scope:carn_rape_rapist } }
+			add_to_list = lovers_of_tortured
+		}
+		every_relation = {
+			type = lover
+			limit = { NOT = { this = scope:carn_rape_rapist } }
+			add_to_list = lovers_of_tortured
+		}
+		if = {
+			limit = {
+				exists = concubinist
+				concubinist = {
+					NOT = { this = scope:carn_rape_rapist }
+				}
+			}
+			concubinist = {
+				add_to_list = lovers_of_tortured
+			}
+		}
+		every_in_list = {
+			list = lovers_of_tortured
+			add_opinion = {
+				target = scope:carn_rape_rapist
+				modifier = carn_raped_my_lover
+			}
+		}
+	}
+}
+
+carn_rape_victim_stress_effect = {
+	scope:carn_rape_victim = {
+		add_character_modifier = {
+			modifier = carn_recently_raped
+			years = 5
+		}
+		if = {
+			limit = {
+				NOT = {
+					carn_has_fetish_trigger = {
+						FETISH = being_raped
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOR = {
+						has_trait = craven
+						has_trait = chaste
+						has_trait = celibate
+						has_trait = brave
+					}
+				}
+				add_stress = massive_stress_impact_gain
+			}
+			else = {
+				stress_impact = {
+					craven = monumental_stress_gain
+					chaste = monumental_stress_gain
+					celibate = monumental_stress_gain
+					brave = medium_stress_impact_gain
+				}
+			}
+			random = {
+				chance = 50
+				add_trait_force_tooltip = depressed_1
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+﻿l_english:
+
+ guest_description.tits_big_good_1.desc:0 "A [GetTrait('tits_big_good_1').GetName( ROOT.Char )]"
+ guest_description.tits_big_good_2.desc:0 "A [GetTrait('tits_big_good_2').GetName( ROOT.Char )]"
+ guest_description.tits_big_good_3.desc:0 "A [GetTrait('tits_big_good_3').GetName( ROOT.Char )]"
+
+ guest_description.dick_big_good_1.desc:0 "A [GetTrait('dick_big_good_1').GetName( ROOT.Char )]"
+ guest_description.dick_big_good_2.desc:0 "A [GetTrait('dick_big_good_2').GetName( ROOT.Char )]"
+ guest_description.dick_big_good_3.desc:0 "A [GetTrait('dick_big_good_3').GetName( ROOT.Char )]"
+
+ guest_description.tits_small_good_1.desc:0 "A [GetTrait('tits_small_good_1').GetName( ROOT.Char )]"
+ guest_description.tits_small_good_2.desc:0 "A [GetTrait('tits_small_good_2').GetName( ROOT.Char )]"
+ guest_description.tits_small_good_3.desc:0 "A [GetTrait('tits_small_good_3').GetName( ROOT.Char )]"
+
+ guest_description.dick_small_good_1.desc:0 "A [GetTrait('dick_small_good_1').GetName( ROOT.Char )]"
+ guest_description.dick_small_good_2.desc:0 "A [GetTrait('dick_small_good_2').GetName( ROOT.Char )]"
+ guest_description.dick_small_good_3.desc:0 "A [GetTrait('dick_small_good_3').GetName( ROOT.Char )]"

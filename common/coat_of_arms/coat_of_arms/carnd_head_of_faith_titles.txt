@@ -1,0 +1,17 @@
+﻿d_carnd_lilith_redrose = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	colored_emblem = {
+		texture = "carnd_ce_lilith_religion.dds"
+		color1 = "red"
+	}
+}
+
+d_carnd_lilith_ebonrose = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	colored_emblem = {
+		texture = "carnd_ce_lilith_religion.dds"
+		color1 = "black"
+	}
+}

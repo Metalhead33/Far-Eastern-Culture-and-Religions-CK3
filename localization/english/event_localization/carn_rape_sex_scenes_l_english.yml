@@ -1,0 +1,12 @@
+﻿l_english: 
+
+ carn_sex_scene.0003.t: "Defilement"
+ carn_sex_scene.0003.desc_opening: "[carn_sex_target.Custom2('MyCharacterIntroduction', ROOT.Char)|U] looks at me with fear and dread as I approach [carn_sex_target.GetHerHim].\n\nI rip [carn_sex_target.GetHerHis] [carn_sex_target.Custom('GetClothingArticle')] off [carn_sex_target.GetHerHis] body and force myself onto [carn_sex_target.GetHerHim]. Driven by lust, I have my way with my prisoner, without a care for anything but my own pleasure.\n\n"
+ carn_sex_scene.0003.desc_ending: "After having had my fun with [carn_sex_target.GetHerHim], I take my leave, paying [carn_sex_target.GetHerHim] no more attention."
+ carn_sex_scene.0003.a: "Now [carn_sex_target.GetShortUIName] knows [carn_sex_target.GetHerHis] place."
+
+ carn_sex_scene.0004.t: "Raped"
+ carn_sex_scene.0004.desc_opening: "[carn_sex_target.Custom2('MyCharacterIntroduction', ROOT.Char)|U] looks at me hungrily as [carn_sex_target.GetSheHe] approaches me, [carn_sex_target.GetHerHis] intent clear.\n\n[carn_sex_target.GetSheHe|U] rips my [carn_sex_player.Custom('GetClothingArticle')] off my body and forces [carn_sex_target.GetHerselfHimself] onto me. Driven by lust, [carn_sex_target.GetSheHe] has [carn_sex_target.GetHerHis] way with me, without a care for anything but [carn_sex_target.GetHerHis] own pleasure.\n\n"
+ carn_sex_scene.0004.desc_ending: "After defiling me, [carn_sex_target.GetSheHe] takes [carn_sex_target.GetHerHis] leave, paying me no more attention."
+ carn_sex_scene.0004.a: "I feel sick..."
+ carn_sex_scene.0004.a.being_raped_fetish: "That felt... good..."

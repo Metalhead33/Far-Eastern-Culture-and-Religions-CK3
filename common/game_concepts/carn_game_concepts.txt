@@ -1,0 +1,97 @@
+﻿dominant = {
+	alias = { dominant_short dominants dominant_possessive dominants_possessive }
+	parent = relation
+}
+
+fetish = {
+	alias = { fetishes }
+}
+
+lactation = {
+	alias = { lactating milk milk_production }
+}
+
+prostitute = {
+	texture = "gfx/interface/icons/traits/prostitute.dds"
+	alias = { prostitutes prostitution prostitute_possessive prostitutes_possessive }
+}
+
+slave = {
+	texture = "gfx/interface/icons/traits/slave.dds"
+	alias = { slaves slavery slave_possessive slaves_possessive }
+	parent = relation
+}
+
+slave_market = {
+}
+
+slave_owner = {
+	texture = "gfx/interface/icons/icon_carn_slave_owner.dds"
+	alias = { slave_owners slave_owner_possessive slave_owners_possessive }
+	parent = relation
+}
+
+submissive = {
+	alias = { submissive_short submissives submissive_possessive submissives_possessive }
+	parent = relation
+}
+
+anal = {
+	parent = fetish
+}
+
+sadism = {
+	parent = fetish
+}
+
+masochism = {
+	parent = fetish
+}
+
+bestiality = {
+	parent = fetish
+}
+
+watersports = {
+	parent = fetish
+}
+
+scat = {
+	parent = fetish
+}
+
+gore = {
+	parent = fetish
+}
+
+foot_play = {
+	parent = fetish
+}
+
+bondage = {
+	parent = fetish
+}
+
+domination = {
+	parent = fetish
+}
+
+submission = {
+	parent = fetish
+}
+
+raping = {
+	parent = fetish
+}
+
+being_raped = {
+	parent = fetish
+}
+
+lactation_fetish = {
+	parent = fetish
+}
+
+unknown_fetish = {
+	parent = fetish
+}

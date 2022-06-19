@@ -1,0 +1,27 @@
+﻿d_carnd_lilith_redrose = {
+	color = { 153 25 25 }
+	color2 = { 220 220 0 }
+	definite_form = yes
+	ruler_uses_title_name = no
+	landless = yes
+
+	capital = c_kerak
+
+	no_automatic_claims = yes
+	always_follows_primary_heir = yes
+	destroy_if_invalid_heir = yes
+}
+
+d_carnd_lilith_ebonrose = {
+	color = { 54 5 25 }
+	color2 = { 220 220 0 }
+	definite_form = yes
+	ruler_uses_title_name = no
+	landless = yes
+
+	capital = c_kerak
+
+	no_automatic_claims = yes
+	always_follows_primary_heir = yes
+	destroy_if_invalid_heir = yes
+}

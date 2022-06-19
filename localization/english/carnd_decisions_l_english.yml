@@ -1,0 +1,20 @@
+﻿l_english:
+
+ carnd_youthful_rulership_abdicate_decision: "Abdicate"
+ carnd_youthful_rulership_abdicate_decision_desc: "It is time to hand off my duties to my heir, who will continue ruling with the fire of youth in my stead."
+ carnd_youthful_rulership_abdicate_decision_tooltip: "Abdicate to your [player_heir|E]"
+ carnd_youthful_rulership_abdicate_decision_confirm: "Abdicate"
+
+ carnd_xuansu_immortality_decision: "Attain Immortality"
+ carnd_xuansu_immortality_decision_desc: "Through the sacred art of sex, we refine the vital essence that courses through our bodies. It is said that by cultivating the humors, we may transcend our physical limitations and achieve immortality."
+ carnd_xuansu_immortality_decision_tooltip: "Cultivate your sexual essence and achieve enlightenment"
+ carnd_xuansu_immortality_decision_confirm: "I will live for ten thousand years!"
+ carnd_had_sex_108_times: "You have laid with other characters 108 times"
+ carnd_had_sex_times_counter_tooltip: "#weak (Times laid with other characters: [THIS.Var('carnd_times_had_sex').GetValue|0])#!"
+ 
+ carnd_restore_sodom_and_gomorrah_decision: "Restore Sodom and Gomorrah"
+ carnd_restore_sodom_and_gomorrah_decision_desc: "Over two thousand years ago, the sacred cities of the plain were destroyed by fire and brimstone. Refounding Sodom and Gomorrah would end millennia of Jehovite oppression and serve as a rallying cry for all [ROOT.Char.GetFaith.GetReligion.GetNameNoTooltip]."
+ carnd_restore_sodom_and_gomorrah_decision_tooltip: "Rebuild the sacred cities of the plain"
+ carnd_negev_becomes_sodom_tooltip: "$c_negev$ becomes $carnd_sodom$"
+ carnd_kerak_becomes_gomorrah_tooltip: "$c_kerak$ becomes $carnd_gomorrah$"
+ carnd_restore_sodom_and_gomorrah_decision_confirm: "The valley of Eden is reborn"

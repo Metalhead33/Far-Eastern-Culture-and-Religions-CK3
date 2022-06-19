@@ -1,0 +1,22 @@
+﻿l_english: 
+
+ carnd_tenet_fertility_idols_name: "Fertility Idols"
+ carnd_tenet_fertility_idols_desc: "Our physical endowments are a sign of [ROOT.Faith.FertilityGodNamePossessive] favor. Therefore, we must look to the most virile, voluptuous, and well-endowed among us to divine the righteous will of [ROOT.Faith.PantheonTerm]."
+
+ carnd_tenet_sacred_hermaphroditism_name: "Sacred Hermaphroditism"
+ carnd_tenet_sacred_hermaphroditism_desc: "Men and women are imperfect halves of the original unity of humankind. Those who are both male and female, in whom the masculine and feminine aspects are united, are the most sacred of human beings."
+ doctrine_parameter_carnd_futa_succession_enabled: "Enables the $carnd_futa_elective_succession_law$ [succession_law|E]"
+ carnd_futa_succession_enabled_name: "$carnd_tenet_sacred_hermaphroditism_name$ [core_tenet|E]"
+
+ carnd_tenet_sacred_prostitution_name: "Sacred Prostitution"
+ carnd_tenet_sacred_prostitution_desc: "Each night, our sacred courtesans enter into ritual marriages with their clients. In the act of consummation they are filled with the spirit of [ROOT.Faith.FertilityGodName], becoming avatars of divine love reflected in physical union."
+ doctrine_parameter_carnd_piety_from_prostitution: "Working as a [prostitute|E] grants monthly [piety|E]"
+
+ carnd_tenet_tantric_sex_name: "Tantric Sex"
+ carnd_tenet_tantric_sex_desc: "Sex is not only an act of passion, but a ritual of deep spirituality and power. By mastering our bodies and perfecting our sexual skills, we too can be imbued with the essence of the divine."
+ doctrine_parameter_carnd_tantric_sex_active: "Having sex grants [piety|E], [learning_lifestyle|E] [experience|E], and temporary bonus [health|E]"
+
+ carnd_tenet_youthful_rulership_name: "Youthful Rulership"
+ carnd_tenet_youthful_rulership_desc: "Power is transient and creation is ever in flux. Only young rulers, imbued with the spirit of the times, possess the vigor and dynamism needed to guide our people."
+ doctrine_parameter_carnd_youthful_rulership_abdication_active: "Rulers of age 40 or older can #high $carnd_youthful_rulership_abdicate_decision$#!"
+ doctrine_parameter_carnd_long_reign_penalty: "Rulers of age 40 or older receive a stacking #high $carnd_long_reign_penalty_modifier$ Opinion Penalty#!"

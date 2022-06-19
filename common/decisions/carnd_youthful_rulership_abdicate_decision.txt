@@ -1,0 +1,41 @@
+﻿carnd_youthful_rulership_abdicate_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	desc = carnd_youthful_rulership_abdicate_decision_desc
+	selection_tooltip = carnd_youthful_rulership_abdicate_decision_tooltip
+
+	ai_check_interval = 12
+
+	is_shown = {
+		faith = { has_doctrine_parameter = carnd_youthful_rulership_abdication_active }
+		exists = player_heir
+	}
+
+	is_valid = {
+		age >= carnd_youthful_rulership_age_cutoff
+		player_heir = {
+			is_adult = yes
+			effective_age < carnd_youthful_rulership_age_cutoff
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available = yes
+	}
+
+	effect = {
+		player_heir = {
+			add_prestige_level = 1
+			add_piety_level = 1
+			add_character_modifier = carnd_youthful_rulership_abdicate_modifier
+		}
+		depose = yes
+	}
+	
+	ai_potential = {
+		is_at_war = no
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}

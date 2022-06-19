@@ -1,0 +1,403 @@
+﻿# carn_increase_beauty_one_step_effect
+# carn_decrease_beauty_one_step_effect
+# carn_increase_intellect_one_step_effect
+# carn_decrease_intellect_one_step_effect
+# carn_increase_physique_one_step_effect
+# carn_decrease_physique_one_step_effect
+# carn_remove_random_negative_congenital_trait_effect
+# carn_remove_all_negative_congenital_traits_effect
+# carn_heal_wounds_one_step_effect
+# carn_remove_all_wounds_effect
+# carn_remove_random_minor_disfigurement_effect
+# carn_remove_all_minor_disfigurements_effect
+# carn_remove_random_major_disfigurement_effect
+# carn_remove_all_major_disfigurements_effect
+# carn_recover_from_all_diseases_effect
+
+carn_increase_beauty_one_step_effect = {
+	if = {
+		limit = { has_trait = beauty_good_2 }
+		remove_trait = beauty_good_2
+		add_trait = beauty_good_3
+	}
+	else_if = {
+		limit = { has_trait = beauty_good_1 }
+		remove_trait = beauty_good_1
+		add_trait = beauty_good_2
+	}
+	else_if = {
+		limit = { has_trait = beauty_bad_3 }
+		remove_trait = beauty_bad_3
+		add_trait = beauty_bad_2
+	}
+	else_if = {
+		limit = { has_trait = beauty_bad_2 }
+		remove_trait = beauty_bad_2
+		add_trait = beauty_bad_1
+	}
+	else_if = {
+		limit = { has_trait = beauty_bad_1 }
+		remove_trait = beauty_bad_1
+	}
+	else = {
+		add_trait = beauty_good_1
+	}
+}
+
+carn_decrease_beauty_one_step_effect = {
+	if = {
+		limit = { has_trait = beauty_good_3 }
+		remove_trait = beauty_good_3
+		add_trait = beauty_good_2
+	}
+	else_if = {
+		limit = { has_trait = beauty_good_2 }
+		remove_trait = beauty_good_2
+		add_trait = beauty_good_1
+	}
+	else_if = {
+		limit = { has_trait = beauty_good_1 }
+		remove_trait = beauty_good_1
+	}
+	else_if = {
+		limit = { has_trait = beauty_bad_1 }
+		remove_trait = beauty_bad_1
+		add_trait = beauty_bad_2
+	}
+	else_if = {
+		limit = { has_trait = beauty_bad_2 }
+		remove_trait = beauty_bad_2
+		add_trait = beauty_bad_3
+	}
+	else = {
+		add_trait = beauty_bad_1
+	}
+}
+
+carn_increase_intellect_one_step_effect = {
+	if = {
+		limit = { has_trait = intellect_good_2 }
+		remove_trait = intellect_good_2
+		add_trait = intellect_good_3
+	}
+	else_if = {
+		limit = { has_trait = intellect_good_1 }
+		remove_trait = intellect_good_1
+		add_trait = intellect_good_2
+	}
+	else_if = {
+		limit = { has_trait = intellect_bad_3 }
+		remove_trait = intellect_bad_3
+		add_trait = intellect_bad_2
+	}
+	else_if = {
+		limit = { has_trait = intellect_bad_2 }
+		remove_trait = intellect_bad_2
+		add_trait = intellect_bad_1
+	}
+	else_if = {
+		limit = { has_trait = intellect_bad_1 }
+		remove_trait = intellect_bad_1
+	}
+	else = {
+		add_trait = intellect_good_1
+	}
+}
+
+carn_decrease_intellect_one_step_effect = {
+	if = {
+		limit = { has_trait = intellect_good_3 }
+		remove_trait = intellect_good_3
+		add_trait = intellect_good_2
+	}
+	else_if = {
+		limit = { has_trait = intellect_good_2 }
+		remove_trait = intellect_good_2
+		add_trait = intellect_good_1
+	}
+	else_if = {
+		limit = { has_trait = intellect_good_1 }
+		remove_trait = intellect_good_1
+	}
+	else_if = {
+		limit = { has_trait = intellect_bad_1 }
+		remove_trait = intellect_bad_1
+		add_trait = intellect_bad_2
+	}
+	else_if = {
+		limit = { has_trait = intellect_bad_2 }
+		remove_trait = intellect_bad_2
+		add_trait = intellect_bad_3
+	}
+	else = {
+		add_trait = intellect_bad_1
+	}
+}
+
+carn_increase_physique_one_step_effect = {
+	if = {
+		limit = { has_trait = physique_good_2 }
+		remove_trait = physique_good_2
+		add_trait = physique_good_3
+	}
+	else_if = {
+		limit = { has_trait = physique_good_1 }
+		remove_trait = physique_good_1
+		add_trait = physique_good_2
+	}
+	else_if = {
+		limit = { has_trait = physique_bad_3 }
+		remove_trait = physique_bad_3
+		add_trait = physique_bad_2
+	}
+	else_if = {
+		limit = { has_trait = physique_bad_2 }
+		remove_trait = physique_bad_2
+		add_trait = physique_bad_1
+	}
+	else_if = {
+		limit = { has_trait = physique_bad_1 }
+		remove_trait = physique_bad_1
+	}
+	else = {
+		add_trait = physique_good_1
+	}
+}
+
+carn_decrease_physique_one_step_effect = {
+	if = {
+		limit = { has_trait = physique_good_3 }
+		remove_trait = physique_good_3
+		add_trait = physique_good_2
+	}
+	else_if = {
+		limit = { has_trait = physique_good_2 }
+		remove_trait = physique_good_2
+		add_trait = physique_good_1
+	}
+	else_if = {
+		limit = { has_trait = physique_good_1 }
+		remove_trait = physique_good_1
+	}
+	else_if = {
+		limit = { has_trait = physique_bad_1 }
+		remove_trait = physique_bad_1
+		add_trait = physique_bad_2
+	}
+	else_if = {
+		limit = { has_trait = physique_bad_2 }
+		remove_trait = physique_bad_2
+		add_trait = physique_bad_3
+	}
+	else = {
+		add_trait = physique_bad_1
+	}
+}
+
+carn_remove_random_negative_congenital_trait_effect = {
+	random_list = {
+		1 = {
+			trigger = { has_trait = beauty_bad }
+			carn_increase_beauty_one_step_effect = yes
+		}
+		1 = {
+			trigger = { has_trait = intellect_bad }
+			carn_increase_intellect_one_step_effect = yes
+		}
+		1 = {
+			trigger = { has_trait = physique_bad }
+			carn_increase_physique_one_step_effect = yes
+		}
+		1 = {
+			trigger = { has_trait = clubfooted }
+			remove_trait = clubfooted
+		}
+		1 = {
+			trigger = { has_trait = hunchbacked }
+			remove_trait = hunchbacked
+		}
+		1 = {
+			trigger = { has_trait = lisping }
+			remove_trait = lisping
+		}
+		1 = {
+			trigger = { has_trait = stuttering }
+			remove_trait = stuttering
+		}
+		1 = {
+			trigger = { has_trait = dwarf }
+			remove_trait = dwarf
+		}
+		1 = {
+			trigger = { has_trait = giant }
+			remove_trait = giant
+		}
+		1 = {
+			trigger = { has_trait = spindly }
+			remove_trait = spindly
+		}
+		1 = {
+			trigger = { has_trait = scaly }
+			remove_trait = scaly
+		}
+		1 = {
+			trigger = { has_trait = wheezing }
+			remove_trait = wheezing
+		}
+		1 = {
+			trigger = { has_trait = bleeder }
+			remove_trait = bleeder
+		}
+		1 = {
+			trigger = { has_trait = infertile }
+			remove_trait = infertile
+		}
+		1 = {
+			trigger = { has_trait = possessed_genetic }
+			remove_trait = possessed_genetic
+		}
+		1 = {
+			trigger = { has_trait = depressed_genetic }
+			remove_trait = depressed_genetic
+		}
+	}
+}
+
+carn_remove_all_negative_congenital_traits_effect = {
+	remove_trait = beauty_bad_1
+	remove_trait = beauty_bad_2
+	remove_trait = beauty_bad_3
+	remove_trait = intellect_bad_1
+	remove_trait = intellect_bad_2
+	remove_trait = intellect_bad_3
+	remove_trait = physique_bad_1
+	remove_trait = physique_bad_2
+	remove_trait = physique_bad_3
+	remove_trait = clubfooted
+	remove_trait = hunchbacked
+	remove_trait = lisping
+	remove_trait = stuttering
+	remove_trait = dwarf
+	remove_trait = giant
+	remove_trait = inbred
+	remove_trait = spindly
+	remove_trait = scaly
+	remove_trait = wheezing
+	remove_trait = bleeder
+	remove_trait = infertile
+	remove_trait = possessed_genetic
+	remove_trait = depressed_genetic
+}
+
+carn_heal_wounds_one_step_effect = {
+	if = {
+		limit = { has_character_modifier = infected_wound_modifier }
+		remove_character_modifier = infected_wound_modifier
+	}
+	if = {
+		limit = { has_character_modifier = gangrene_modifier }
+		remove_character_modifier = gangrene_modifier
+	}
+	if = {
+		limit = { has_trait = wounded_1 }
+		remove_trait = wounded_1
+	}
+	else_if = {
+		limit = { has_trait = wounded_2 }
+		remove_trait = wounded_2 #We do it like this so you can see the trait you've lost
+		add_trait_force_tooltip = wounded_1
+	}
+	else_if = {
+		limit = { has_trait = wounded_3 }
+		remove_trait = wounded_3
+		add_trait_force_tooltip = wounded_2
+	}
+}
+
+carn_remove_all_wounds_effect = {
+	if = {
+		limit = { has_character_modifier = infected_wound_modifier }
+		remove_character_modifier = infected_wound_modifier
+	}
+	if = {
+		limit = { has_character_modifier = gangrene_modifier }
+		remove_character_modifier = gangrene_modifier
+	}
+	remove_trait = wounded_1
+	remove_trait = wounded_2
+	remove_trait = wounded_3
+}
+
+carn_remove_random_minor_disfigurement_effect = {
+	random_list = {
+		1 = {
+			trigger = { has_trait = one_eyed }
+			remove_trait = one_eyed
+		}
+		1 = {
+			trigger = { has_trait = scarred }
+			remove_trait = scarred
+		}
+		1 = {
+			trigger = { carn_has_any_minor_disfigurement_trigger = no }
+			# fallback
+		}
+	}
+}
+
+carn_remove_all_minor_disfigurements_effect = {
+	remove_trait = one_eyed
+	remove_trait = scarred
+}
+
+carn_remove_random_major_disfigurement_effect = {
+	random_list = {
+		1 = {
+			trigger = { has_trait = maimed }
+			remove_trait = maimed
+		}
+		1 = {
+			trigger = { has_trait = one_legged }
+			remove_trait = one_legged
+		}
+		1 = {
+			trigger = { has_trait = disfigured }
+			remove_trait = disfigured
+		}
+		1 = {
+			trigger = { has_trait = eunuch }
+			remove_trait = eunuch
+		}
+		1 = {
+			trigger = { has_trait = blind }
+			remove_trait = blind
+		}
+		1 = {
+			trigger = { carn_has_any_major_disfigurement_trigger = no }
+			# fallback
+		}
+	}
+}
+
+carn_remove_all_major_disfigurements_effect = {
+	remove_trait = maimed
+	remove_trait = one_legged
+	remove_trait = disfigured
+	remove_trait = eunuch
+	remove_trait = blind
+}
+
+carn_recover_from_all_diseases_effect = {
+	remove_trait = sickly
+	recover_from_disease_effect = { DISEASE = ill }
+	recover_from_disease_effect = { DISEASE = pneumonic }
+	recover_from_disease_effect = { DISEASE = gout_ridden }
+	recover_from_disease_effect = { DISEASE = typhus }
+	recover_from_disease_effect = { DISEASE = consumption }
+	recover_from_disease_effect = { DISEASE = cancer }
+	recover_from_disease_effect = { DISEASE = great_pox }
+	recover_from_disease_effect = { DISEASE = smallpox }
+	recover_from_disease_effect = { DISEASE = bubonic_plague }
+	recover_from_disease_effect = { DISEASE = lovers_pox }
+	recover_from_disease_effect = { DISEASE = great_pox }
+}

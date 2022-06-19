@@ -1,0 +1,49 @@
+﻿carnd_xuansu_immortality_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	major = yes
+	desc = carnd_xuansu_immortality_decision_desc
+	selection_tooltip = carnd_xuansu_immortality_decision_tooltip
+
+	ai_check_interval = 0
+
+	is_shown = {
+		carnd_faith_can_attempt_xuansu_immortality_trigger = yes
+		is_lowborn = no
+		NOT = { dynasty = { has_dynasty_modifier = carnd_xuansu_immortality } }
+	}
+
+	is_valid = {
+		carnd_faith_can_attempt_xuansu_immortality_trigger = yes
+		exists = var:carnd_times_had_sex
+		custom_description = {
+			text = "carnd_had_sex_108_times"
+			var:carnd_times_had_sex >= 108
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available = yes
+	}
+
+	effect = {
+		if = {
+			limit = {
+				exists = var:carnd_times_had_sex
+				var:carnd_times_had_sex < 108
+			}
+			custom_tooltip = carnd_had_sex_times_counter_tooltip
+		}
+		show_as_tooltip = {
+			carnd_xuansu_immortality_effect = yes
+		}
+		trigger_event = { id = carnd_religion_flavor.0002 }
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}

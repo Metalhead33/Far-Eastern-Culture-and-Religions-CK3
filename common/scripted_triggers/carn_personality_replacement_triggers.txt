@@ -1,0 +1,155 @@
+﻿# meant for checking whether a personality replacement is possible
+# see carn_personality_replacement_effects.txt
+
+# requires TRAIT
+carn_set_personality_trait_as_irreplaceable_trigger = {
+	flag:$TRAIT$ = {
+		add_to_temporary_list = carn_irreplaceable_personality_traits
+	}
+}
+
+# checks that the scoped character has any personality trait that has not been marked as "irreplaceable"
+carn_has_replaceable_personality_trait_trigger = {
+	OR = {
+		AND = {
+			has_trait = lustful
+			NOT = { flag:lustful = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = chaste
+			NOT = { flag:chaste = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = gluttonous
+			NOT = { flag:gluttonous = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = temperate
+			NOT = { flag:temperate = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = greedy
+			NOT = { flag:greedy = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = generous
+			NOT = { flag:generous = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = lazy
+			NOT = { flag:lazy = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = diligent
+			NOT = { flag:diligent = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = wrathful
+			NOT = { flag:wrathful = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = calm
+			NOT = { flag:calm = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = patient
+			NOT = { flag:patient = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = impatient
+			NOT = { flag:impatient = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = arrogant
+			NOT = { flag:arrogant = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = humble
+			NOT = { flag:humble = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = deceitful
+			NOT = { flag:deceitful = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = honest
+			NOT = { flag:honest = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = craven
+			NOT = { flag:craven = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = brave
+			NOT = { flag:brave = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = shy
+			NOT = { flag:shy = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = gregarious
+			NOT = { flag:gregarious = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = ambitious
+			NOT = { flag:ambitious = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = content
+			NOT = { flag:content = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = arbitrary
+			NOT = { flag:arbitrary = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = just
+			NOT = { flag:just = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = cynical
+			NOT = { flag:cynical = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = zealous
+			NOT = { flag:zealous = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = paranoid
+			NOT = { flag:paranoid = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = trusting
+			NOT = { flag:trusting = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = compassionate
+			NOT = { flag:compassionate = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = callous
+			NOT = { flag:callous = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = sadistic
+			NOT = { flag:sadistic = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = stubborn
+			NOT = { flag:stubborn = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = fickle
+			NOT = { flag:fickle = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = vengeful
+			NOT = { flag:vengeful = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+		AND = {
+			has_trait = forgiving
+			NOT = { flag:forgiving = { is_in_list = carn_irreplaceable_personality_traits } }
+		}
+	}
+}

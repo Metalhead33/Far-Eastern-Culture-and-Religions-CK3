@@ -1,0 +1,430 @@
+﻿carn_slave_price_value = {
+	value = 1
+
+	# congenital traits
+	if = {
+		limit = { has_trait = beauty_good_1 }
+		add = 1
+	}
+	if = {
+		limit = { has_trait = beauty_good_2 }
+		add = 2
+	}
+	if = {
+		limit = { has_trait = beauty_good_3 }
+		add = 3
+	}
+	if = {
+		limit = { has_trait = beauty_bad_1 }
+		add = -1
+	}
+	if = {
+		limit = { has_trait = beauty_bad_2 }
+		add = -2
+	}
+	if = {
+		limit = { has_trait = beauty_bad_3 }
+		add = -3
+	}
+	if = {
+		limit = { has_trait = physique_good_1 }
+		add = 1
+	}
+	if = {
+		limit = { has_trait = physique_good_2 }
+		add = 2
+	}
+	if = {
+		limit = { has_trait = physique_good_3 }
+		add = 3
+	}
+	if = {
+		limit = { has_trait = physique_bad_1 }
+		add = -1
+	}
+	if = {
+		limit = { has_trait = physique_bad_2 }
+		add = -2
+	}
+	if = {
+		limit = { has_trait = physique_bad_3 }
+		add = -3
+	}
+	if = {
+		limit = { has_trait = intellect_good_1 }
+		add = 1
+	}
+	if = {
+		limit = { has_trait = intellect_good_2 }
+		add = 2
+	}
+	if = {
+		limit = { has_trait = intellect_good_3 }
+		add = 3
+	}
+	if = {
+		limit = { has_trait = intellect_bad_1 }
+		add = -1
+	}
+	if = {
+		limit = { has_trait = intellect_bad_2 }
+		add = -2
+	}
+	if = {
+		limit = { has_trait = intellect_bad_3 }
+		add = -3
+	}
+	if = {
+		limit = { has_trait = pure_blooded }
+		add = 3
+	}
+	if = {
+		limit = { has_trait = clubfooted }
+		add = -1
+	}
+	if = {
+		limit = { has_trait = hunchbacked }
+		add = -1
+	}
+	if = {
+		limit = { has_trait = lisping }
+		add = -1
+	}
+	if = {
+		limit = { has_trait = stuttering }
+		add = -1
+	}
+	if = {
+		limit = { has_trait = inbred }
+		add = -5
+	}
+	if = {
+		limit = { has_trait = spindly }
+		add = -1
+	}
+	if = {
+		limit = { has_trait = scaly }
+		add = -1
+	}
+	if = {
+		limit = { has_trait = wheezing }
+		add = -1
+	}
+	if = {
+		limit = { has_trait = bleeder }
+		add = -1
+	}
+	if = {
+		limit = { has_trait = depressed_1 }
+		add = -3
+	}
+	if = {
+		limit = { has_trait = depressed_genetic }
+		add = -3
+	}
+	if = {
+		limit = { has_trait = lunatic_1 }
+		add = -5
+	}
+	if = {
+		limit = { has_trait = lunatic_genetic }
+		add = -5
+	}
+	if = {
+		limit = { has_trait = possessed_1 }
+		add = -5
+	}
+	if = {
+		limit = { has_trait = possessed_genetic }
+		add = -5
+	}
+	if = {
+		limit = {
+			has_trait = fecund
+			is_visibly_fertile = yes
+		}
+		add = 1
+	}
+	if = {
+		limit = {
+			has_trait = infertile
+			is_visibly_fertile = yes
+		}
+		add = -1
+	}
+
+	# personality traits
+	if = {
+		limit = { has_trait = diligent }
+		add = 1
+	}
+	if = {
+		limit = { has_trait = humble }
+		add = 1
+	}
+	if = {
+		limit = { has_trait = content }
+		add = 1
+	}
+	if = {
+		limit = { has_trait = lazy }
+		add = -1
+	}
+	if = {
+		limit = { has_trait = arrogant }
+		add = -1
+	}
+	if = {
+		limit = { has_trait = ambitious }
+		add = -1
+	}
+
+	# stress traits
+	if = {
+		limit = { has_trait = drunkard }
+		add = -3
+	}
+	if = {
+		limit = { has_trait = hashishiyah }
+		add = -3
+	}
+	if = {
+		limit = { has_trait = rakish }
+		add = -3
+	}
+	if = {
+		limit = { has_trait = irritable }
+		add = -1
+	}
+	if = {
+		limit = { has_trait = contrite }
+		add = -1
+	}
+	if = {
+		limit = { has_trait = athletic }
+		add = 1
+	}
+
+	# other traits
+	if = {
+		limit = { has_trait = strong }
+		add = 1
+	}
+	if = {
+		limit = { has_trait = shrewd }
+		add = 1
+	}
+	if = { # historically, eunuchs were worth more (they don't fuck your wife)
+		limit = { has_trait = eunuch }
+		add = 1
+	}
+	if = {
+		limit = { has_trait = weak }
+		add = -1
+	}
+	if = {
+		limit = { has_trait = dull }
+		add = -1
+	}
+	if = {
+		limit = {
+			is_female = yes # sexism against impotent women
+			has_trait = impotent
+			is_visibly_fertile = yes
+		}
+		add = -1
+	}
+	if = {
+		limit = {
+			OR = {
+				has_trait = sayyid
+				has_trait = blood_of_prophet
+			}
+		}
+		add = 1
+	}
+	if = {
+		limit = { # famous slaves get top shelf prices
+			OR = {
+				has_trait = faith_warrior
+				has_trait = berserker
+				has_trait = varangian
+				has_trait = viking
+				has_trait = reincarnation
+			}
+		}
+		add = 3
+	}
+	if = {
+		limit = { has_treatable_disease_trigger = yes }
+		add = -5
+	}
+	if = {
+		limit = { has_contagious_disease_trigger = yes }
+		add = -1000 # don't touch this with a ten foot pole
+	}
+	if = {
+		limit = { has_wounds_trigger = yes }
+		add = -5
+	}
+	if = {
+		limit = { has_trait = maimed }
+		add = -5
+	}
+	if = {
+		limit = { has_trait = disfigured }
+		add = -5
+	}
+	if = {
+		limit = { has_trait = blind }
+		add = -5
+	}
+	if = {
+		limit = { is_incapable = yes }
+		add = -1000 # what's the point of buying an incapable slave?
+	}
+	if = {
+		limit = { has_trait = sickly }
+		add = -1000 # kid might die on you
+	}
+
+	# very young children and elderly are worth less
+	if = {
+		limit = {
+			is_immortal = no
+			OR = {
+				effective_age < 6
+				effective_age >= 50
+			}
+		}
+		multiply = 0.5
+	}
+
+	# highborn slaves are worth more
+	if = {
+		limit = { is_lowborn = no }
+		multiply = 2
+	}
+
+	# female slaves are worth 3x (historically attested)
+	if = {
+		limit = {
+			is_female = yes
+			is_visibly_fertile = yes
+		}
+		multiply = 3
+	}
+
+	# enslaving the saoshyant!!!
+	if = {
+		limit = {
+			OR = {
+				has_trait = saoshyant
+				has_trait = savior
+				has_trait = augustus
+				has_trait = chakravarti
+				has_trait = greatest_of_khans
+				has_trait = paragon
+			}
+		}
+		multiply = 2
+		add = 100
+	}
+	if = {
+		limit = {
+			OR = {
+				has_trait = saoshyant_descendant
+				has_trait = divine_blood
+				has_trait = saint
+				has_trait = born_in_the_purple
+				has_trait = consecrated_blood
+			}
+		}
+		multiply = 2
+	}
+
+	# claims (unaffected by age and gender considerations)
+	every_claim = {
+		if = {
+			limit = { tier = tier_barony }
+			add = 10
+		}
+		else_if = {
+			limit = { tier = tier_county }
+			add = 30
+		}
+		else_if = {
+			limit = { tier = tier_duchy }
+			add = 120
+		}
+		else_if = {
+			limit = { tier = tier_kingdom }
+			add = 600
+		}
+		else_if = {
+			limit = { tier = tier_empire }
+			add = 3000
+		}
+	}
+
+	# skills (unaffected by age and gender considerations)
+	if = {
+		limit = { highest_skill = diplomacy }
+		add = {
+			add = diplomacy
+			add = -10
+			min = 0
+		}
+	}
+	else_if = {
+		limit = { highest_skill = martial }
+		add = {
+			add = martial
+			add = -10
+			min = 0
+		}
+	}
+	else_if = {
+		limit = { highest_skill = stewardship }
+		add = {
+			add = stewardship
+			add = -10
+			min = 0
+		}
+	}
+	else_if = {
+		limit = { highest_skill = intrigue }
+		add = {
+			add = intrigue
+			add = -10
+			min = 0
+		}
+	}
+	else_if = {
+		limit = { highest_skill = learning }
+		add = {
+			add = learning
+			add = -10
+			min = 0
+		}
+	}
+	if = {
+		limit = { prowess > 10 }
+		add = prowess
+		add = -10
+	}
+
+	# all slaves have a value of at least one ducat, even if they're crap
+	min = 1
+}
+
+# used in localization for carn_buy_slave_effect
+carn_scope_recipient_carn_slave_price_value = {
+	value = scope:recipient.carn_slave_price_value
+}
+carn_scope_buyer_current_gold_value = {
+	value = scope:buyer.current_gold_value
+}
+carn_scope_slave_price_value = {
+	value = scope:slave_price
+}

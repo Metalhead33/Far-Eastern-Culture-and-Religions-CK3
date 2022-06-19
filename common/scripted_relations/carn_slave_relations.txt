@@ -1,0 +1,11 @@
+﻿# a slave has a owner
+
+slave = {
+  corresponding = slave_owner
+	special_guest = yes
+}
+
+slave_owner = {
+  corresponding = slave
+  opinion = -10 # slave's opinion of slave owner
+}

@@ -1,0 +1,7 @@
+﻿carnd_xuansu_immortality = {
+	icon = piety_positive
+	health = 0.25
+	same_faith_opinion = 10
+	monthly_prestige_gain_mult = 0.1
+	monthly_piety_gain_mult = 0.2
+}

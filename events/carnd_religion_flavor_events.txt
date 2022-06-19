@@ -1,0 +1,135 @@
+﻿namespace = carnd_religion_flavor
+
+#
+# 0001. Count number of times you had sex for Xuansu
+# 0002. Achieved Xuansu Immortality
+# 0003. Restored Sodom and Gomorrah!
+#
+
+#
+# 0001. Count number of times you had sex for Xuansu
+#
+
+carnd_religion_flavor.0001 = {
+	hidden = yes
+	trigger = {
+		carn_sex_scene_was_masturbation = no
+	}
+	immediate = {
+		if = {
+			limit = { NOT = { exists = var:carnd_times_had_sex } }
+			set_variable = {
+				name = carnd_times_had_sex
+				value = 1
+			}
+		}
+		else = {
+			change_variable = {
+				name = carnd_times_had_sex
+				add = 1
+			}
+		}
+	}
+}
+
+#
+# 0002. Achieved Xuansu Immortality!
+#
+
+carnd_religion_flavor.0002 = {
+	type = character_event
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					is_female = yes
+				}
+				desc = carnd_religion_flavor.0002.t.goddess
+			}
+			desc = carnd_religion_flavor.0002.t.god
+		}
+	}
+	desc = carnd_religion_flavor.0002.desc
+
+	theme = faith
+
+	left_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_sacredrite"
+		carnd_xuansu_immortality_effect = yes
+	}
+
+	option = {
+		name = carnd_religion_flavor.0002.a
+		give_nickname = carnd_nick_the_immortal
+	}
+}
+
+#
+# 0003. Restored Sodom and Gomorrah!
+#
+
+carnd_religion_flavor.0003 = {
+	type = character_event
+	title = carnd_religion_flavor.0003.t
+	desc = {
+		desc = carnd_religion_flavor.0003.desc.opening
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					this = scope:restorer
+				}
+				desc = carnd_religion_flavor.0003.desc.restorer
+			}
+			triggered_desc = {
+				trigger = {
+					carnd_venerates_sodom_and_gomorrah_trigger = yes
+				}
+				desc = carnd_religion_flavor.0003.desc.holy
+			}
+			desc = carnd_religion_flavor.0003.desc.unholy
+		}
+		desc = carnd_religion_flavor.0003.desc.ending
+	}
+
+	theme = faith
+
+	override_background = {
+		event_background = throne_room
+	}
+
+	left_portrait = {
+		character = scope:restorer
+		animation = personality_honorable
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		if = {
+			limit = { this = scope:restorer }
+			carnd_restore_sodom_and_gomorrah_effect = yes
+		}
+	}
+
+	option = {
+		name = carnd_religion_flavor.0003.a
+		trigger = {
+			carnd_venerates_sodom_and_gomorrah_trigger = yes
+		}
+		if = {
+			limit = { this = scope:restorer }
+			set_nickname_effect = { NICKNAME = nick_the_great }
+		}
+	}
+
+	option = {
+		name = carnd_religion_flavor.0003.b
+		trigger = {
+			carnd_venerates_sodom_and_gomorrah_trigger = no
+		}
+	}
+}

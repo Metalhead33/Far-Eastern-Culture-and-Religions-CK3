@@ -1,0 +1,78 @@
+﻿carn_enslaved_close_family_opinion = {
+	opinion = -50
+	years = 30
+	decaying = yes
+}
+
+carn_enslaved_close_family_crime_opinion = {
+	opinion = -50
+	imprisonment_reason = yes
+	execute_reason = yes
+	banish_reason = yes
+}
+
+carn_enslaved_dynasty_member_opinion = {
+	opinion = -20
+	years = 20
+	decaying = yes
+}
+
+carn_enslaved_close_relation_opinion = {
+	opinion = -30
+	years = 25
+	decaying = yes
+}
+
+carn_enslaved_my_countryman_opinion = {
+	opinion = -25
+	years = 20
+	decaying = yes
+}
+
+carn_enslaved_guest_opinion = {
+	opinion = -5
+	years = 10
+	decaying = yes
+}
+
+carn_enslaved_me_opinion = {
+	opinion = -80
+	years = 50
+	decaying = yes
+}
+
+carn_enslaved_me_crime_opinion = {
+	opinion = -80
+	imprisonment_reason = yes
+	execute_reason = yes
+	banish_reason = yes
+}
+
+carn_freed_me_from_slavery_opinion = {
+	opinion = 50
+	years = 50
+	decaying = yes
+}
+
+carn_stole_my_slave_opinion = {
+	opinion = -10
+	years = 10
+	decaying = yes
+}
+
+# For modders, this opinion makes the character auto accept enslave interactions from the opinion target
+carn_wants_to_be_your_slave_opinion = {
+	opinion = 10
+}
+
+carn_forced_me_into_prostitution_opinion = {
+	opinion = -50
+	years = 30
+	decaying = yes
+}
+
+# used for pregnancy logic, to prevent pregnancies from ex-slaves or ex-owners being treated as bastard pregnancies
+carn_former_slave_or_slave_owner_opinion = {
+	opinion = 0
+	months = 9
+}

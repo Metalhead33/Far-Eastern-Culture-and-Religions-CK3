@@ -1,0 +1,12 @@
+﻿namespace = carn_character_initialization
+
+carn_character_initialization.0001 = {
+	type = empty
+	hidden = yes
+
+	immediate = {
+		every_living_character = {
+			trigger_event = { on_action = carn_character_initialization_pulse }
+		}
+	}
+}

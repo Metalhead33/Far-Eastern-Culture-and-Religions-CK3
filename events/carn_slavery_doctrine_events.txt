@@ -1,0 +1,281 @@
+﻿namespace = carn_slavery_doctrine
+
+#
+# 0001. A vassal agrees to emancipate illegal slaves they may hold.
+# 0002. A vassal agrees to emancipate illegal slaves they may hold in exchange for gold.
+# 0003. A vassal agrees to emancipate illegal slaves they may hold in exchange for a weak hook.
+# 0004. A vassal refuses to emancipate illegal slaves.
+
+#
+# 0001. A vassal agrees to emancipate illegal slaves they may hold.
+#
+
+carn_slavery_doctrine.0001 = {
+	type = letter_event
+	opening = {
+		desc = religious_interaction.1.opening
+	}
+	desc = carn_slavery_doctrine.0001.desc
+	sender = scope:recipient
+
+	immediate = {
+		show_as_tooltip = { carn_free_illegal_slaves_effect = yes }
+	}
+
+	option = {
+		name = carn_slavery_doctrine.0001.a
+	}
+}
+
+#
+# 0002. A vassal agrees to emancipate illegal slaves they may hold in exchange for gold.
+#
+
+carn_slavery_doctrine.0002 = {
+	type = letter_event
+	opening = {
+		desc = religious_interaction.1.opening
+	}
+	desc = carn_slavery_doctrine.0002.desc
+	sender = scope:recipient
+
+	immediate = {
+		scope:recipient = {
+			add_opinion = {
+				modifier = carn_demanded_manumission_opinion
+				target = root
+				opinion = -10
+			}
+		}
+	}
+
+	#Accept
+	option = {
+		name = carn_slavery_doctrine.0002.a
+		pay_short_term_gold = {
+			target = scope:recipient
+			gold = demand_conversion_bribe_size
+		}
+
+		carn_free_illegal_slaves_effect = yes
+		stress_impact = {
+			greedy = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = -1
+				ai_zeal = 0.5
+			}
+			modifier = {
+				factor = 0.2
+				gold <= 0
+			}
+		}
+	}
+
+	#Refuse
+	option = {
+		name = carn_slavery_doctrine.0002.b
+		add_opinion = {
+			target = scope:recipient
+			modifier = carn_illegal_refused_manumission_demand_opinion
+			years = 15
+		}
+		ai_chance = {
+			base = 25
+			modifier = {
+				add = 100
+				gold < demand_conversion_bribe_size
+			}
+		}
+	}
+
+	#Use a Hook to force it through
+	option = {
+		name = carn_slavery_doctrine.0002.c
+		trigger = {
+			has_strong_usable_hook = scope:recipient
+		}
+		use_hook = scope:recipient
+
+		carn_free_illegal_slaves_effect = yes
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_rationality = 1
+			}
+		}
+	}
+}
+
+#
+# 0003. A vassal agrees to emancipate illegal slaves they may hold in exchange for a weak hook.
+#
+
+carn_slavery_doctrine.0003 = {
+	type = letter_event
+	opening = {
+		desc = religious_interaction.1.opening
+	}
+	desc = carn_slavery_doctrine.0003.desc
+	sender = scope:recipient
+
+	immediate = {
+		scope:recipient = {
+			add_opinion = {
+				modifier = carn_demanded_manumission_opinion
+				target = root
+				opinion = -10
+			}
+		}
+	}
+
+	#Accept
+	option = {
+		name = carn_slavery_doctrine.0003.a
+		scope:recipient = {
+			add_hook = {
+				target = root
+				type = favor_hook
+			}
+		}
+		carn_free_illegal_slaves_effect = yes
+
+		stress_impact = {
+			greedy = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	#Refuse
+	option = {
+		name = carn_slavery_doctrine.0003.b
+		add_opinion = {
+			target = scope:recipient
+			modifier = carn_illegal_refused_manumission_demand_opinion
+			years = 15
+		}
+		ai_chance = {
+			base = 25
+		}
+	}
+
+	#Use a Hook to force it through
+	option = {
+		name = carn_slavery_doctrine.0003.c
+		trigger = {
+			has_strong_usable_hook = scope:recipient
+		}
+		use_hook = scope:recipient
+		carn_free_illegal_slaves_effect = yes
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_rationality = 1
+			}
+		}
+	}
+}
+
+#
+# 0004. A vassal refuses to emancipate illegal slaves.
+#
+
+carn_slavery_doctrine.0004 = {
+	type = letter_event
+	opening = {
+		desc = religious_interaction.1.opening
+	}
+	desc = {
+		desc = carn_slavery_doctrine.0004.desc
+		triggered_desc = {
+			trigger = { exists = scope:hooking_out_of_conversion }
+			desc = carn_slavery_doctrine.0004.hooking_out
+		}
+	}
+	sender = {
+		character = scope:recipient
+		animation = dismissal
+	}
+
+	immediate = {
+		scope:recipient = {
+			add_opinion = {
+				modifier = carn_demanded_manumission_opinion
+				target = root
+				opinion = -10
+			}
+		}
+		if = {
+			limit = {
+				scope:recipient = {
+					has_strong_usable_hook = root
+				}
+			}
+			save_scope_value_as = {
+				name = hooking_out_of_conversion
+				value = yes
+			}
+		}
+	}
+
+	#It's a Crime to refuse
+	option = {
+		name = carn_slavery_doctrine.0004.b
+		trigger = {
+			NOT = { exists = scope:hooking_out_of_conversion }
+		}
+
+		add_opinion = {
+			target = scope:recipient
+			modifier = carn_refused_manumission_demand_opinion
+			years = 10
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	#It's a Crime, but the target has a Hook on you
+	option = {
+		name = carn_slavery_doctrine.0004.c
+		trigger = {
+			exists = scope:hooking_out_of_conversion
+		}
+		exclusive = yes
+		scope:recipient = {
+			use_hook = root
+		}
+		hidden_effect = {
+			add_opinion = {
+				target = scope:recipient
+				modifier = carn_illegal_refused_manumission_demand_opinion
+				years = 20
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	#Player uses a Hook to force it through
+	option = {
+		name = carn_slavery_doctrine.0004.d
+		trigger = {
+			NOT = { exists = scope:hooking_out_of_conversion }
+			has_usable_hook = scope:recipient
+		}
+		use_hook = scope:recipient
+
+		carn_free_illegal_slaves_effect = yes
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_rationality = 1
+			}
+		}
+	}
+}

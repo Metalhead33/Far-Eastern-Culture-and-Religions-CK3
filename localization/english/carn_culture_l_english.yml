@@ -1,0 +1,7 @@
+﻿l_english:
+
+ culture_parameter_carn_no_consequences_for_extramarital_sex_with_others:0 "[extramarital_sex|E] with others does not incur any penalties"
+ culture_parameter_carn_no_consequences_for_extramarital_sex_with_me:0 "Other characters are not penalized for [extramarital_sex|E] with characters of this culture"
+ culture_parameter_carn_prostitution_accepted:0 "[prostitution|E] is legal"
+ culture_parameter_carn_more_good_prostitution_events:0 "Lucky random events from [prostitution|E] are more common"
+ culture_parameter_lustful_trait_more_common:0 "The [GetTrait('lustful').GetName( GetNullCharacter )] [trait|E] is more common"

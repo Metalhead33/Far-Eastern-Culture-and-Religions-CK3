@@ -1,0 +1,687 @@
+﻿faith_doctrine_cost_low = 100
+faith_doctrine_cost_mid = 200
+faith_doctrine_cost_high = 300
+faith_doctrine_cost_massive = 500
+
+faith_tenet_cost_low = 250
+faith_tenet_cost_mid = 500
+faith_tenet_cost_high = 750
+faith_tenet_cost_massive = 1000
+
+faith_conversion_cost_mult = {
+	add = {
+		value = scope:new_faith.faith_conversion_fervor_mult
+		subtract = scope:character.faith.faith_conversion_fervor_mult
+		desc = "faith_conversion_cost_fervor_difference"
+		format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+	}
+	
+	if = {
+		limit = {
+			scope:character.learning > 0
+		}
+		subtract = {  # Try to always be cheaper than creating a new faith
+			desc = "learning_modifier"
+			format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+			value = scope:character.learning
+			divide = 100
+		}
+	}
+	
+	if = {
+		limit = {
+			scope:new_faith.religion = scope:character.faith.religion
+		}
+		subtract = {  # Try to always be cheaper than creating a new faith
+			desc = "faith_conversion_cost_existing_faith"
+			format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+			value = 0.5
+		}
+	}
+	else = {
+		subtract = {  # Try to always be cheaper than creating a new faith
+			desc = "faith_conversion_cost_existing_faith"
+			format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+			value = 0.35
+		}
+	}
+	
+	if = {
+		limit = {
+			scope:new_faith = { has_doctrine = doctrine_pluralism_pluralistic }
+			scope:character.faith = { has_doctrine = doctrine_pluralism_pluralistic }
+		}
+		subtract = {  # Pluralistic faiths have it easier converting to each other
+			desc = "faith_conversion_cost_pluralists"
+			format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+			value = 0.25
+		}
+	}
+	else_if = {
+		limit = {
+			scope:character.faith = { has_doctrine = doctrine_pluralism_pluralistic }
+		}
+		subtract = {  # Pluralistic faiths have it easier converting
+			desc = "faith_conversion_cost_pluralist"
+			format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+			value = 0.15
+		}
+	}
+
+	###############################################################
+	# Converting TO an unreformed faith often has steep penalties #
+	###############################################################
+	if = {
+		limit = {
+			scope:new_faith = {
+				has_doctrine_parameter = unreformed
+			}
+		}
+
+		# Massive penalty if your current faith is reformed.
+		if = {
+			limit = {
+				scope:character = {
+					faith = {
+						NOT = { has_doctrine_parameter = unreformed }
+					}
+				}
+			}
+			add = {
+				desc = "faith_conversion_cost_reformed_converting_to_unreformed"
+				format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+				value = 5
+			}
+			
+		}
+
+		# Minor stacking penalties depending on (non-tribal) government form.
+		if = {
+			limit = {
+				scope:character = {
+					has_government = clan_government
+				}
+			}
+			add = {
+				desc = "faith_conversion_cost_clan_converting_to_unreformed"
+				format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+				value = 0.25
+			}
+		}
+		else_if = {
+			limit = {
+				scope:character = {
+					has_government = feudal_government
+				}
+			}
+			add = {
+				desc = "faith_conversion_cost_feudal_converting_to_unreformed"
+				format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+				value = 0.5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:character = {
+					has_government = republic_government
+				}
+			}
+			add = {
+				desc = "faith_conversion_cost_republic_converting_to_unreformed"
+				format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+				value = 0.75
+			}
+		}
+	}
+
+	#######################################
+	# Switching religion/family penalties #
+	#######################################
+	#More expensive if you convert to a faith outside of your religion's family
+	if = {
+		limit = {
+			scope:new_faith = {
+				religion = { is_in_family = rf_abrahamic }
+			}
+			scope:character = {
+				faith = {
+					religion = {
+						NOT = { is_in_family = rf_abrahamic }
+					}
+				}
+			}
+		}
+		add = {
+			desc = faith_conversion_cost_other_religion_family
+			format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			scope:new_faith = {
+				religion = { is_in_family = rf_eastern }
+			}
+			scope:character = {
+				faith = {
+					religion = {
+						NOT = { is_in_family = rf_eastern }
+					}
+				}
+			}
+		}
+		add = {
+			desc = faith_conversion_cost_other_religion_family
+			format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			scope:new_faith = {
+				religion = { is_in_family = rf_pagan }
+			}
+			scope:character = {
+				faith = {
+					religion = { NOT = { is_in_family = rf_pagan } }
+				}
+			}
+		}
+		add = {
+			desc = faith_conversion_cost_other_religion_family
+			format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+			value = 1
+		}
+	}
+	
+	# Unreformed Faiths have an easier way converting to Organized faiths
+	if = {
+		limit = {
+			scope:new_faith = {
+				NOT = {
+					has_doctrine_parameter = unreformed
+				}
+			}
+			scope:character = {
+				faith = {
+					has_doctrine_parameter = unreformed
+				}
+			}
+		}
+		add = {
+			desc = faith_conversion_cost_unreformed_to_organized
+			format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+			value = -2.25
+		}
+	}
+	
+	#More expensive to convert to something inside your religion family that's not the same religion
+	if = {
+		limit = {
+			scope:new_faith = {
+				religion = { is_in_family = rf_abrahamic }
+			}
+			scope:character = {
+				faith = {
+					religion = {
+						is_in_family = rf_abrahamic
+						NOT = { this = scope:new_faith.religion}
+					}
+				}
+			}
+		}
+		add = {
+			desc = faith_conversion_cost_inside_religion_family
+			format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+			value = 0.5
+		}
+	}
+	if = {
+		limit = {
+			scope:new_faith = {
+				religion = { is_in_family = rf_eastern }
+			}
+			scope:character = {
+				faith = {
+					religion = {
+						is_in_family = rf_eastern
+						NOT = { this = scope:new_faith.religion}
+					}
+				}
+			}
+		}
+		add = {
+			desc = faith_conversion_cost_inside_religion_family
+			format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+			value = 0.5
+		}
+	}
+	if = {
+		limit = {
+			scope:new_faith = {
+				religion = { is_in_family = rf_pagan }
+			}
+			scope:character = {
+				faith = {
+					religion = {
+						is_in_family = rf_pagan
+						NOT = { this = scope:new_faith.religion}
+					}
+				}
+			}
+		}
+		add = {
+			desc = faith_conversion_cost_inside_religion_family
+			format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+			value = 0.5
+		}
+	}
+
+	########################
+	# Conversion Discounts #
+	########################
+
+	if = { #Cheaper if you are targeted by the new Faith in a defensive Holy War
+		limit = {
+			scope:character = {
+				any_character_war = {
+					using_holy_war_cb_trigger = yes
+					is_defender = scope:character
+				}
+			}
+		}
+		if = { # Even cheaper if unreformed
+			limit = {
+				scope:new_faith = {
+					NOT = { has_doctrine_parameter = unreformed }
+				}
+				scope:character = {
+					faith = {
+						has_doctrine_parameter = unreformed
+					}
+				}
+			}
+			subtract = {
+				desc = faith_conversion_cost_unreformed_holy_war
+				format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+				value = 2.5
+			}
+		}
+		else = { # But still a sizable discount otherwise.
+			subtract = {
+				desc = faith_conversion_cost_holy_war
+				format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+				value = 0.5
+			}
+		}
+	}
+	if = { #Cheaper if your spouse is of the faith
+		limit = {
+			scope:character = {
+				any_spouse = {
+					faith = scope:new_faith
+				}
+			}
+		}
+		if = { # Even cheaper if unreformed
+			limit = {
+				scope:new_faith = {
+					NOT = { has_doctrine_parameter = unreformed }
+				}
+				scope:character = {
+					faith = {
+						has_doctrine_parameter = unreformed
+					}
+				}
+			}
+			subtract = {
+				desc = faith_conversion_cost_unreformed_spouse
+				format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+				value = 2.5
+			}
+		}
+		else = { # But still a sizable discount otherwise.		
+			subtract = {
+				desc = faith_conversion_cost_spouse
+				format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+				value = 0.5
+			}
+		}
+	}
+	else_if = { #Does a concubine have the right religion?
+		limit = {
+			scope:character = {
+				any_concubine = {
+					faith = scope:new_faith
+				}
+			}
+		}
+		if = { # Even cheaper if unreformed
+			limit = {
+				scope:new_faith = {
+					NOT = { has_doctrine_parameter = unreformed }
+				}
+				scope:character = {
+					faith = {
+						has_doctrine_parameter = unreformed
+					}
+				}
+			}
+			subtract = {
+				desc = faith_conversion_cost_unreformed_concubine
+				format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+				value = 2.25
+			}
+		}
+		else = { # But still a sizable discount otherwise.
+			subtract = {
+				desc = faith_conversion_cost_concubine
+				format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+				value = 0.25
+			}
+		}
+	}
+	if = { #Cheaper if the religion is present near/in your borders
+		limit = {
+			scope:new_faith = {
+				religion = { is_in_family = rf_abrahamic }
+			}
+			scope:character = {
+				faith = {
+					religion = {
+						NOT = { is_in_family = rf_abrahamic }
+					}
+				}
+				OR = {
+					any_neighboring_top_liege_realm_owner = {
+						faith = scope:new_faith
+					}
+					any_vassal = {
+						faith = scope:new_faith
+					}
+					any_realm_province = {
+						faith = scope:new_faith
+					}
+					AND = {
+						exists = liege
+						liege = {
+							faith = scope:new_faith
+						}
+					}
+					AND = {
+						exists = liege
+						liege = {	
+							any_vassal = {
+								faith = scope:new_faith
+							}
+						}
+					}
+				}
+			}
+		}
+		subtract = {
+			desc = faith_conversion_cost_present
+			format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+			value = 1.5
+		}
+	}
+	else_if = { #Cheaper if the religion is present near/in your borders
+		limit = {
+			scope:new_faith = {
+				religion = { is_in_family = rf_eastern }
+			}
+			scope:character = {
+				faith = {
+					religion = {
+						NOT = { is_in_family = rf_eastern }
+					}
+				}
+				OR = {
+					any_neighboring_top_liege_realm_owner = {
+						faith = scope:new_faith
+					}
+					any_vassal = {
+						faith = scope:new_faith
+					}
+					any_realm_province = {
+						faith = scope:new_faith
+					}
+					AND = {
+						exists = liege
+						liege = {
+							faith = scope:new_faith
+						}
+					}
+					AND = {
+						exists = liege
+						liege = {	
+							any_vassal = {
+								faith = scope:new_faith
+							}
+						}
+					}
+				}
+			}
+		}
+		subtract = {
+			desc = faith_conversion_cost_present
+			format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+			value = 1.5
+		}
+	}
+	else_if = { #Cheaper if the religion is present near/in your borders
+		limit = {
+			scope:new_faith = {
+				religion = { is_in_family = rf_pagan }
+			}
+			scope:character = {
+				faith = {
+					religion = {
+						NOT = { is_in_family = rf_pagan }
+					}
+				}
+				OR = {
+					any_neighboring_top_liege_realm_owner = {
+						faith = scope:new_faith
+					}
+					any_vassal = {
+						faith = scope:new_faith
+					}
+					any_realm_province = {
+						faith = scope:new_faith
+					}
+					AND = {
+						exists = liege
+						liege = {
+							faith = scope:new_faith
+						}
+					}
+					AND = {
+						exists = liege
+						liege = {	
+							any_vassal = {
+								faith = scope:new_faith
+							}
+						}
+					}
+				}
+			}
+		}
+		subtract = {
+			desc = faith_conversion_cost_present
+			format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+			value = 1.5
+		}
+	}
+	else_if = { #Cheaper if the religion is present near/in your borders
+		limit = {
+			scope:new_faith = {
+				religion = { is_in_family = rf_abrahamic }
+			}
+			scope:character = {
+				faith = {
+					religion = {
+						is_in_family = rf_abrahamic
+						NOT = { this = scope:new_faith.religion}
+					}
+				}
+				OR = {
+					any_neighboring_top_liege_realm_owner = {
+						faith = scope:new_faith
+					}
+					any_vassal = {
+						faith = scope:new_faith
+					}
+					any_realm_province = {
+						faith = scope:new_faith
+					}
+					AND = {
+						exists = liege
+						liege = {
+							faith = scope:new_faith
+						}
+					}
+					AND = {
+						exists = liege
+						liege = {	
+							any_vassal = {
+								faith = scope:new_faith
+							}
+						}
+					}
+				}
+			}
+		}
+		subtract = {
+			desc = faith_conversion_cost_present
+			format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+			value = 1.0
+		}
+	}
+	else_if = { #Cheaper if the religion is present near/in your borders
+		limit = {
+			scope:new_faith = {
+				religion = { is_in_family = rf_eastern }
+			}
+			scope:character = {
+				faith = {
+					religion = {
+						is_in_family = rf_eastern
+						NOT = { this = scope:new_faith.religion}
+					}
+				}
+				OR = {
+					any_neighboring_top_liege_realm_owner = {
+						faith = scope:new_faith
+					}
+					any_vassal = {
+						faith = scope:new_faith
+					}
+					any_realm_province = {
+						faith = scope:new_faith
+					}
+					AND = {
+						exists = liege
+						liege = {
+							faith = scope:new_faith
+						}
+					}
+					AND = {
+						exists = liege
+						liege = {	
+							any_vassal = {
+								faith = scope:new_faith
+							}
+						}
+					}
+				}
+			}
+		}
+		subtract = {
+			desc = faith_conversion_cost_present
+			format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+			value = 1.0
+		}
+	}
+	else_if = { #Cheaper if the religion is present near/in your borders
+		limit = {
+			scope:new_faith = {
+				religion = { is_in_family = rf_pagan }
+			}
+			scope:character = {
+				faith = {
+					religion = {
+						is_in_family = rf_pagan
+						NOT = { this = scope:new_faith.religion}
+					}
+				}
+				OR = {
+					any_neighboring_top_liege_realm_owner = {
+						faith = scope:new_faith
+					}
+					any_vassal = {
+						faith = scope:new_faith
+					}
+					any_realm_province = {
+						faith = scope:new_faith
+					}
+					AND = {
+						exists = liege
+						liege = {
+							faith = scope:new_faith
+						}
+					}
+					AND = {
+						exists = liege
+						liege = {	
+							any_vassal = {
+								faith = scope:new_faith
+							}
+						}
+					}
+				}
+			}
+		}
+		subtract = {
+			desc = faith_conversion_cost_present
+			format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+			value = 1.0
+		}
+	}
+	else_if = {
+		limit = {
+			scope:character = {
+				OR = {
+					any_neighboring_top_liege_realm_owner = {
+						faith = scope:new_faith
+					}
+					any_vassal = {
+						faith = scope:new_faith
+					}
+					any_realm_province = {
+						faith = scope:new_faith
+					}
+					AND = {
+						exists = liege
+						liege = {
+							faith = scope:new_faith
+						}
+					}
+					AND = {
+						exists = liege
+						liege = {	
+							any_vassal = {
+								faith = scope:new_faith
+							}
+						}
+					}
+				}
+			}
+		}
+		subtract = {
+			desc = faith_conversion_cost_present
+			format = "BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD"
+			value = 0.5
+		}
+	}
+}

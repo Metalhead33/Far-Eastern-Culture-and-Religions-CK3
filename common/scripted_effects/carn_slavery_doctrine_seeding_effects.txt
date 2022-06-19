@@ -1,0 +1,88 @@
+﻿# carn_seed_slavery_doctrines_effect
+# if game rule is off, removes slavery doctrines from all faiths
+# otherwise, seeds a faith's religious doctrines for slavery
+carn_seed_slavery_doctrines_effect = {
+	if = {
+		limit = { has_game_rule = carn_slavery_content_disabled }
+		if = {
+			limit = { has_doctrine = carn_doctrine_same_slavery_crime }
+			remove_doctrine = carn_doctrine_same_slavery_crime
+		}
+		if = {
+			limit = { has_doctrine = carn_doctrine_same_slavery_shunned }
+			remove_doctrine = carn_doctrine_same_slavery_shunned
+		}
+		if = {
+			limit = { has_doctrine = carn_doctrine_same_slavery_accepted }
+			remove_doctrine = carn_doctrine_same_slavery_accepted
+		}
+		if = {
+			limit = { has_doctrine = carn_doctrine_other_slavery_crime }
+			remove_doctrine = carn_doctrine_other_slavery_crime
+		}
+		if = {
+			limit = { has_doctrine = carn_doctrine_other_slavery_shunned }
+			remove_doctrine = carn_doctrine_other_slavery_shunned
+		}
+		if = {
+			limit = { has_doctrine = carn_doctrine_other_slavery_accepted }
+			remove_doctrine = carn_doctrine_other_slavery_accepted
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				NOR = {
+					has_doctrine = carn_doctrine_same_slavery_crime
+					has_doctrine = carn_doctrine_same_slavery_shunned
+					has_doctrine = carn_doctrine_same_slavery_accepted
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_game_rule = carn_slavery_default_religious_doctrine_historical
+						has_game_rule = carn_slavery_default_religious_doctrine_criminal
+					}
+				}
+				add_doctrine = carn_doctrine_same_slavery_crime
+			}
+			else_if = {
+				limit = {
+					has_game_rule = carn_slavery_default_religious_doctrine_shunned
+				}
+				add_doctrine = carn_doctrine_same_slavery_shunned
+			}
+			else = {
+				add_doctrine = carn_doctrine_same_slavery_accepted
+			}
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_doctrine = carn_doctrine_other_slavery_crime
+					has_doctrine = carn_doctrine_other_slavery_shunned
+					has_doctrine = carn_doctrine_other_slavery_accepted
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_game_rule = carn_slavery_default_religious_doctrine_historical
+						has_game_rule = carn_slavery_default_religious_doctrine_accepted
+					}
+				}
+				add_doctrine = carn_doctrine_other_slavery_accepted
+			}
+			else_if = {
+				limit = {
+					has_game_rule = carn_slavery_default_religious_doctrine_shunned
+				}
+				add_doctrine = carn_doctrine_other_slavery_shunned
+			}
+			else = {
+				add_doctrine = carn_doctrine_other_slavery_crime
+			}
+		}
+	}
+}

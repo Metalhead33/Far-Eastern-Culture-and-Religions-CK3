@@ -1,0 +1,26 @@
+﻿carnd_cheri = {
+	usage = game
+	carnd_cheri = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = clothes
+				template = indian_high_nobility_clothes
+				value = 0
+			}
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = scripted_character_hairstyles_01
+				value = 0.13 # For the randomness to work correctly
+			}
+		}		
+		weight = {
+			base = 0
+			modifier = {
+				add = 200
+				has_character_flag = carnd_cheri
+			}
+		}
+	}
+}

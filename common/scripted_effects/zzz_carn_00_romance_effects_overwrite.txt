@@ -1,0 +1,10 @@
+﻿had_sex_with_effect = {
+	carn_had_sex_with_effect = {
+		CHARACTER_1 = root
+		CHARACTER_2 = $CHARACTER$
+		C1_PREGNANCY_CHANCE = $PREGNANCY_CHANCE$
+		C2_PREGNANCY_CHANCE = $PREGNANCY_CHANCE$
+		STRESS_EFFECTS = yes
+		DRAMA = yes
+	}
+}

@@ -1,0 +1,31 @@
+﻿### BDSM ###
+
+## dominant and submissive relations are mutually-exclusive between the same two
+## characters, i.e. character A cannot be both the dominant and submissive of
+## character B
+
+can_set_relation_dominant_trigger = {
+	is_adult = yes
+	is_attracted_to_gender_of = $CHARACTER$
+	$CHARACTER$ = {
+		is_adult = yes
+		is_attracted_to_gender_of = prev
+	}
+	NOR = {
+    has_relation_dominant = $CHARACTER$
+    has_relation_submissive = $CHARACTER$
+  }
+}
+
+can_set_relation_submissive_trigger = {
+	is_adult = yes
+	is_attracted_to_gender_of = $CHARACTER$
+	$CHARACTER$ = {
+		is_adult = yes
+		is_attracted_to_gender_of = prev
+	}
+	NOR = {
+    has_relation_dominant = $CHARACTER$
+    has_relation_submissive = $CHARACTER$
+  }
+}

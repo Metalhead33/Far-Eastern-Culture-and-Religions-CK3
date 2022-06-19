@@ -1,0 +1,13 @@
+﻿l_english:
+ carn_can_no_longer_work_as_prostitute_tooltip: "[carn_prostitute.GetShortUIName|U] can no longer work as a prostitute"
+ carn_prostitution_random_events.0001.notification: "Prostitution: Improved Skills"
+ carn_prostitution_random_events.0002.notification: "Prostitution: Rivals Slander You"
+ carn_prostitution_random_events.0003.notification: "Prostitution: [ROOT.Char.GetFaith.PriestNeuterPlural|U] Condemn You"
+ carn_prostitution_random_events.0005.notification: "Prostitution: Client Tips High"
+
+ carn_prostitution_random_events.0011.t: "Prostitution: An Alluring Proposition"
+ carn_prostitution_random_events.0011.desc: "As I lay seductively in my bedchamber, I am intrigued to find that my next client is none other than [client.Custom2('MyCharacterIntroduction', ROOT.Char)].\n\nGazing upon my form with unrestrained lust, [client.GetSheHe] assures me that I will be compensated well for my service..."
+
+ carn_prostitution_random_events.0011.a: "Who am I to refuse such an opportunity?"
+ carn_prostitution_random_events.0011.b: "I am afraid I must decline."
+ carn_prostitution_random_events.0011.c: "This could be a juicy scandal..."

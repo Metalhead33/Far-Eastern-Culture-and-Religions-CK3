@@ -1,0 +1,25 @@
+﻿l_english:
+
+ carn_work_as_prostitute_decision: "Moonlight as a Prostitute"
+ carn_work_as_prostitute_decision_desc: "If I desire money -- or an excuse to sleep around -- I can let everyone know that I am offering my sexual services to the highest bidder."
+ carn_work_as_prostitute_decision_tooltip: "Start working as a prostitute, trading your [prestige|E] and chastity for [gold|E]"
+ carn_work_as_prostitute_decision_confirm: "Lay out the incense and candles..."
+ msg_carn_started_working_as_prostitute: "Started Prostitution"
+
+ carn_stop_work_as_prostitute_decision: "Stop Moonlighting as a Prostitute"
+ carn_stop_work_as_prostitute_decision_desc: "My journey as a prostitute has ended, and it is time for me to focus on my duties to the realm."
+ carn_stop_work_as_prostitute_decision_tooltip: "Stop working as a prostitute, reducing your [income|E] but improving your [prestige|E]"
+ carn_stop_work_as_prostitute_decision_confirm: "Put away the incense and candles"
+ msg_carn_stopped_working_as_prostitute: "Stopped Prostitution"
+
+ carn_start_birth_control_decision: "Start Birth Control"
+ carn_start_birth_control_decision_desc: "By maintaining a stockpile of condoms, diaphragms, silphium leaves, and other supplies, I can ensure that my dalliances are less likely to result in unwanted children."
+ carn_start_birth_control_decision_tooltip: "Reduce your [fertility|E] at the cost of some [income|E] and [piety|E]"
+ carn_start_birth_control_decision_confirm: "My body is ready"
+ msg_carn_started_birth_control: "Started Birth Control"
+
+ carn_stop_birth_control_decision: "Stop Birth Control"
+ carn_stop_birth_control_decision_desc: "These artificial impediments have become too much of a burden in the bedroom. I will set them aside and let my passions roam wild and free, as nature intended."
+ carn_stop_birth_control_decision_tooltip: "Stop reducing your [fertility|E] at the cost of [income|E] and [piety|E]"
+ carn_stop_birth_control_decision_confirm: "My body is ready"
+ msg_carn_stopped_birth_control: "Stopped Birth Control"

@@ -1,0 +1,93 @@
+﻿CarnFutaTraitName = {
+	# must be in a character scope due to engine limitation
+	# just use GetPlayer.Custom('CarnFutaTraitName')
+	type = character
+	text = {
+		trigger = { has_game_rule = carn_futa_trait_name_hermaphrodite }
+		localization_key = carn_hermaphrodite
+	}
+	text = {
+		localization_key = carn_futanari
+	}
+}
+
+# "futanari" / "hermaphrodites"
+CarnFutaTraitNamePlural = {
+	type = character
+	text = {
+		trigger = { has_game_rule = carn_futa_trait_name_hermaphrodite }
+		localization_key = carn_hermaphrodite_plural
+	}
+	text = {
+		localization_key = carn_futanari_plural
+	}
+}
+
+# "futanari's" / "hermaphrodite's"
+CarnFutaTraitNamePossessive = {
+	type = character
+	text = {
+		trigger = { has_game_rule = carn_futa_trait_name_hermaphrodite }
+		localization_key = carn_hermaphrodite_possessive
+	}
+	text = {
+		localization_key = carn_futanari_possessive
+	}
+}
+
+# "a" futanari / "a" hermaphrodite
+# mainly for other languages where the article might be different
+CarnFutaTraitNameArticle = {
+	type = character
+	text = {
+		trigger = { has_game_rule = carn_futa_trait_name_hermaphrodite }
+		localization_key = carn_hermaphrodite_article
+	}
+	text = {
+		localization_key = carn_futanari_article
+	}
+}
+
+CarnGetWomanManFuta = {
+	type = character
+	text = {
+		trigger = {
+			carn_is_futa_trigger = yes
+			has_game_rule = carn_futa_trait_name_hermaphrodite
+		}
+		localization_key = carn_hermaphrodite
+	}
+	text = {
+		trigger = { carn_is_futa_trigger = yes }
+		localization_key = carn_futanari
+	}
+	text = {
+		trigger = { is_female = yes }
+		localization_key = CHARACTER_WOMAN
+	}
+	text = {
+		localization_key = CHARACTER_MAN
+	}
+}
+
+CarnGetWomanManFutaPossessive = {
+	type = character
+	text = {
+		trigger = {
+			carn_is_futa_trigger = yes
+			has_game_rule = carn_futa_trait_name_hermaphrodite
+		}
+		localization_key = carn_hermaphrodite_possessive
+	}
+	text = {
+		trigger = { carn_is_futa_trigger = yes }
+		localization_key = carn_futanari_possessive
+	}
+	text = {
+		trigger = { is_female = yes }
+		localization_key = CHARACTER_WOMAN_POSSESSIVE
+	}
+	text = {
+		localization_key = CHARACTER_MAN_POSSESSIVE
+	}
+}

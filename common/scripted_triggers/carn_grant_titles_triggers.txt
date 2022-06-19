@@ -1,0 +1,9 @@
+﻿carn_can_be_granted_titles_trigger = {
+	custom_description = {
+		text = carn_can_be_granted_titles
+		NOR = {
+			has_character_flag = can_not_be_granted_titles
+			has_trait_with_flag = can_not_be_granted_titles
+		}
+	}
+}

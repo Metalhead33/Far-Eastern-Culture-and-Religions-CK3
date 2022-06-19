@@ -1,0 +1,114 @@
+﻿l_english:
+
+trait_futa: "Futanari"
+trait_futa_immersive: "Hermaphrodite"
+trait_futa_desc: "This character has the sexual organs of both a woman and a man.\n\nDue to game engine restrictions, this character cannot father children in the current version of Carnalitas. She can still get pregnant."
+trait_futa_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] has the sexual organs of both a woman and a man.\n\nDue to game engine restrictions, this character cannot father children in the current version of Carnalitas. She can still get pregnant."
+
+trait_dick_small: "Small Dicks"
+trait_dick_small_good: "$trait_dick_small$"
+trait_dick_small_bad: "$trait_dick_small$"
+
+trait_dick_small_1: "Small Dick"
+trait_dick_small_1_immersive: "Stripling"
+trait_dick_small_1_desc: "This character has not been blessed with a sizable manhood."
+trait_dick_small_1_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] has not been blessed with a sizable manhood."
+
+trait_dick_small_2: "Tiny Dick"
+trait_dick_small_2_immersive: "Gelding"
+trait_dick_small_2_desc: "This character's penis is small enough to be a source of embarrassment."
+trait_dick_small_2_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip]'s penis is small enough to be a source of embarrassment."
+
+trait_dick_small_3: "Micro Dick"
+trait_dick_small_3_immersive: "Emasculated"
+trait_dick_small_3_desc: "This character has such a small penis that it can scarcely be found."
+trait_dick_small_3_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] has such a small penis that it can scarcely be found."
+
+trait_dick_big: "Big Dicks"
+trait_dick_big_good: "$trait_dick_big$"
+trait_dick_big_bad: "$trait_dick_big$"
+
+trait_dick_big_1: "Big Dick"
+trait_dick_big_1_immersive: "Well-Endowed"
+trait_dick_big_1_desc: "This character is reputed to have a larger... sword... than most."
+trait_dick_big_1_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is reputed to have a larger... sword... than most."
+
+trait_dick_big_2: "Huge Dick"
+trait_dick_big_2_immersive: "Horse-Hung"
+trait_dick_big_2_desc: "Only the biggest codpieces are large enough for this character."
+trait_dick_big_2_character_desc: "Only the biggest codpieces are large enough for [ROOT.GetCharacter.GetFirstNameNoTooltip]."
+
+trait_dick_big_3: "Gigantic Dick"
+trait_dick_big_3_immersive: "Stallion"
+trait_dick_big_3_desc: "This character has such an impressive manhood that it is impossible to conceal beneath clothing."
+trait_dick_big_3_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] has such an impressive manhood that it is impossible to conceal beneath clothing."
+
+trait_tits_small: "Small Tits"
+trait_tits_small_good: "$trait_tits_small$"
+trait_tits_small_bad: "$trait_tits_small$"
+
+trait_tits_small_1: "Small Tits"
+trait_tits_small_1_immersive: "Petite"
+trait_tits_small_1_desc: "This character has a smaller bust than most."
+trait_tits_small_1_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] has a smaller bust than most."
+
+trait_tits_small_2: "Tiny Tits"
+trait_tits_small_2_immersive: "Budding"
+trait_tits_small_2_desc: "This character has girlish breasts that are hardly noticeable."
+trait_tits_small_2_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] has girlish breasts that are hardly noticeable."
+
+trait_tits_small_3: "Flat Tits"
+trait_tits_small_3_immersive: "Flat-Chested"
+trait_tits_small_3_desc: "This character's bosom is as flat as a board."
+trait_tits_small_3_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip]'s bosom is as flat as a board."
+
+trait_tits_big: "Big Tits"
+trait_tits_big_good: "$trait_tits_big$"
+trait_tits_big_bad: "$trait_tits_big$"
+
+trait_tits_big_1: "Big Tits"
+trait_tits_big_1_immersive: "Bosomy"
+trait_tits_big_1_desc: "This character has a larger bust than most."
+trait_tits_big_1_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] has a larger bust than most."
+
+trait_tits_big_2: "Huge Tits"
+trait_tits_big_2_immersive: "Buxom"
+trait_tits_big_2_desc: "This character has huge... tracts of land."
+trait_tits_big_2_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] has huge... tracts of land."
+
+trait_tits_big_3: "Gigantic Tits"
+trait_tits_big_3_immersive: "Voluptuous"
+trait_tits_big_3_desc: "This character's enormous bosom is the stuff of legends."
+trait_tits_big_3_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip]'s enormous bosom is the stuff of legends."
+
+trait_slave: "Slave"
+trait_slave_desc: "This character is the property of another person, recognized by law to be less than a human being."
+trait_slave_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is the property of another person, recognized by law to be less than a human being."
+
+trait_former_slave: "Former Slave"
+trait_former_slave_neutral: "Former Slave"
+trait_former_slave_female: "Freedwoman"
+trait_former_slave_male: "Freedman"
+trait_former_slave_desc: "This character is a former slave who has escaped bondage and become a free person."
+trait_former_slave_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a former slave who has escaped bondage and become a free person."
+
+ trait_prostitute_1: "Novice Prostitute"
+ trait_prostitute_1_neutral: "Novice Prostitute"
+ trait_prostitute_1_female: "Novice Prostitute"
+ trait_prostitute_1_male: "Novice Prostitute"
+ trait_prostitute_1_desc: "The $trait_prostitute_1$ is in the business of sexually serving clients for coin."
+ trait_prostitute_1_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is in the business of sexually serving clients for coin."
+ trait_prostitute_2: "Experienced Prostitute"
+ trait_prostitute_2_neutral: "Experienced Prostitute"
+ trait_prostitute_2_female: "Experienced Prostitute"
+ trait_prostitute_2_male: "Experienced Prostitute"
+ trait_prostitute_2_desc: "The $trait_prostitute_2$ is renowned for their skillful companionship and knowledge of all things carnal."
+ trait_prostitute_2_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is renowned for [ROOT.GetCharacter.GetHerHis] skillful companionship and knowledge of all things carnal."
+ trait_prostitute_3: "Masterful Prostitute"
+ trait_prostitute_3_neutral: "Masterful Prostitute"
+ trait_prostitute_3_female: "Masterful Prostitute"
+ trait_prostitute_3_male: "Masterful Prostitute"
+ trait_prostitute_3_desc: "An exclusive companion fit only for the highest of nobility, the $trait_prostitute_3$ is an expert conversationalist and a truly incredible lover without equal."
+ trait_prostitute_3_character_desc: "An exclusive companion fit only for the highest of nobility, [ROOT.GetCharacter.GetFirstNameNoTooltip] is an expert conversationalist and a truly incredible lover without equal."
+
+ trait_lifestyle_prostitute: "Prostitutes"

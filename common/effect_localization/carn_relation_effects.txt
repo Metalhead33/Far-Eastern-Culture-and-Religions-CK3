@@ -1,0 +1,71 @@
+﻿set_relation_slave = {
+	first = carn_i_gain_slave
+	third = carn_they_gain_slave
+	global = carn_they_gain_slave
+	first_past = carn_i_got_slave
+	third_past = carn_they_got_slave
+	global_past = carn_they_got_slave
+}
+
+set_relation_slave_owner = {
+	first = carn_i_gain_slave_owner
+	third = carn_they_gain_slave_owner
+	global = carn_they_gain_slave_owner
+	first_past = carn_i_got_slave_owner
+	third_past = carn_they_got_slave_owner
+	global_past = carn_they_got_slave_owner
+}
+
+remove_relation_slave = {
+	first = carn_i_lose_slave
+	third = carn_they_lose_slave
+	global = carn_they_lose_slave
+	first_past = carn_i_lost_slave
+	third_past = carn_they_lost_slave
+	global_past = carn_they_lost_slave
+}
+
+remove_relation_slave_owner = {
+	first = carn_i_lose_slave_owner
+	third = carn_they_lose_slave_owner
+	global = carn_they_lose_slave_owner
+	first_past = carn_i_lost_slave_owner
+	third_past = carn_they_lost_slave_owner
+	global_past = carn_they_lost_slave_owner
+}
+
+set_relation_dominant = {
+	first = carn_i_gain_dominant
+	third = carn_they_gain_dominant
+	global = carn_they_gain_dominant
+	first_past = carn_i_got_dominant
+	third_past = carn_they_got_dominant
+	global_past = carn_they_got_dominant
+}
+
+remove_relation_dominant = {
+	first = carn_i_lose_dominant
+	third = carn_they_lose_dominant
+	global = carn_they_lose_dominant
+	first_past = carn_i_lost_dominant
+	third_past = carn_they_lost_dominant
+	global_past = carn_they_lost_dominant
+}
+
+set_relation_submissive = {
+	first = carn_i_gain_submissive
+	third = carn_they_gain_submissive
+	global = carn_they_gain_submissive
+	first_past = carn_i_got_submissive
+	third_past = carn_they_got_submissive
+	global_past = carn_they_got_submissive
+}
+
+remove_relation_submissive = {
+	first = carn_i_lose_submissive
+	third = carn_they_lose_submissive
+	global = carn_they_lose_submissive
+	first_past = carn_i_lost_submissive
+	third_past = carn_they_lost_submissive
+	global_past = carn_they_lost_submissive
+}

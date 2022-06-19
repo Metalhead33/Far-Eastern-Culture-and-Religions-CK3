@@ -1,0 +1,104 @@
+﻿#
+# Carnalitas reserves the 6900-6999 range of indices for traits
+# because haha funny sex number
+#
+# 6900: futa
+# 6901: futa_genetic
+# 6902-6904: dick_small_good_1 to dick_small_good_3
+# 6905-6907: dick_small_bad_1 to dick_small_bad_3
+# 6908-6910: dick_big_good_1 to dick_big_good_3
+# 6911-6913: dick_big_bad_1 to dick_big_bad_3
+# 6914-6916: tits_small_good_1 to tits_small_good_3
+# 6917-6920: tits_small_bad_1 to tits_small_bad_3
+# 6921-6923: tits_big_good_1 to tits_big_good_3
+# 6924-6926: tits_big_bad_1 to tits_big_bad_3
+# 6930: slave
+# 6931: former_slave
+# 6932: prostitute_1
+# 6933: prostitute_2
+# 6934: prostitute_3
+#
+
+slave = { # Chattel Slave
+	index = 6930
+
+	opposites = {
+		former_slave
+	}
+	
+	diplomacy = -3
+	general_opinion = -10
+	same_opinion = 10
+	monthly_prestige_gain_mult = -0.75
+	hostile_scheme_power_mult = -0.2
+
+	flag = can_not_marry
+	flag = can_not_be_granted_titles
+	flag = can_not_leave_court_voluntarily
+	can_inherit = no
+	blocks_from_claim_inheritance = yes
+	
+	inherit_chance = 100
+	parent_inheritance_sex = female
+	
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_slave_desc
+			}
+			desc = trait_slave_character_desc
+		}
+	}
+	compatibility = {
+		slave = @pos_compat_medium
+		former_slave = @pos_compat_medium
+	}
+}
+
+former_slave = { # Freedman/Freedwoman
+	index = 6931
+
+	opposites = {
+		slave
+	}
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_former_slave_neutral
+			}
+			triggered_desc = {
+				trigger = { is_female = yes }
+				desc = trait_former_slave_female
+			}
+			desc = trait_former_slave_male
+		}
+	}
+
+	diplomacy = -1
+
+	ruler_designer_cost = 0
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_former_slave_desc
+			}
+			desc = trait_former_slave_character_desc
+		}
+	}
+
+	compatibility = {
+		slave = @pos_compat_medium
+		former_slave = @pos_compat_medium
+	}
+}

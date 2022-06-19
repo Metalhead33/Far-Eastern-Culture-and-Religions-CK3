@@ -1,0 +1,86 @@
+﻿namespace = carn_slave
+
+#
+# 0001. You have been enslaved
+# 0002. Slaves are freed when they gain land for any reason
+# 0003. Slave newborns get their owner relation
+#
+
+#
+# 0001. You have been enslaved
+#
+
+carn_slave.0001 = {
+	type = character_event
+	title = carn_slave.0001.t
+	desc = carn_slave.0001.desc
+	theme = death
+	override_background = {
+		event_background = gallows
+	}
+	immediate = {
+		play_music_cue = mx_cue_stress
+	}
+	option = {
+		name = carn_slave.0001.a
+		if = {
+			limit = {
+				scope:actor = { is_ai = yes }
+			}
+			carn_enslave_effect = {
+				SLAVE = scope:recipient
+				OWNER = scope:actor
+				DRAMA = yes
+			}
+		}
+		else = {
+			show_as_tooltip = {
+				carn_enslave_effect = {
+					SLAVE = scope:recipient
+					OWNER = scope:actor
+					DRAMA = yes
+				}
+			}
+		}
+	}
+}
+
+#
+# 0002. Slaves are freed when they gain land for any reason
+#
+
+carn_slave.0002 = {
+	hidden = yes
+	trigger = {
+		has_trait = slave
+	}
+	immediate = {
+		carn_free_slave_effect = yes
+	}
+}
+
+#
+# 0003. Slave newborns get their owner relation
+#
+
+carn_slave.0003 = {
+	hidden = yes
+
+	trigger = {
+		scope:child = {
+			has_trait = slave
+		}
+	}
+
+	immediate = {
+		scope:mother = {
+			random_relation = {
+				type = slave_owner
+				save_scope_as = mother_owner
+			}
+		}
+		scope:child = {
+			set_relation_slave_owner = scope:mother_owner
+		}
+	}
+}

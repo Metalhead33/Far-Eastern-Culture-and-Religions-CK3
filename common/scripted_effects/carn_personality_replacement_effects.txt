@@ -1,0 +1,1623 @@
+﻿#####################################################################################
+# carn_exclude_trait_from_personality_replacement_effect (requires TRAIT)
+# carn_create_personality_replacement_effect (requires NEW_TRAIT)
+# carn_resolve_personality_replacement_effect
+# carn_clear_personality_replacement_effect
+#####################################################################################
+
+# This is a group of scripted effects for changing the personality of a character (slave training, hypnosis, corruption, etc.) without breaking the rule of only having 3 personality traits.
+
+# Run in the scope of the character whose personality you want to replace.
+
+# Does not work on children.
+
+#####################################################################################
+# STEP 1
+#####################################################################################
+
+# First use `carn_exclude_trait_from_personality_replacement_effect` to exclude any traits that you don't want to be replaced (e.g. if the trait is already desirable)
+# TRAIT is the trait you want to exclude (`TRAIT = compassionate`)
+
+# For example:
+# carn_exclude_trait_from_personality_replacement_effect = {
+#	TRAIT = compassionate
+# }
+
+#####################################################################################
+# STEP 2
+#####################################################################################
+
+# Then use `carn_create_personality_replacement_effect` to set up a personality replacement.
+# NEW_TRAIT is the trait you want to add ("NEW_TRAIT = lustful")
+
+# For example:
+# carn_create_personality_replacement_effect = {
+#	NEW_TRAIT = lustful
+# }
+
+# This will pick a trait to remove and set it as `scope:carn_replaced_trait`
+# If the character has the opposite trait it will prioritize flipping that, otherwise it just replaces a random other personality trait
+
+# You can reference this in triggers, for example, `scope:carn_replaced_trait = flag:compassionate`
+# It also creates a reference for `scope:carn_new_trait`, for example, `scope:carn_new_trait = flag:lustful`
+
+# If no trait was picked (perhaps because all eligible traits were excluded) it will return `scope:carn_replaced_trait = flag:none`
+
+#####################################################################################
+# STEP 3
+#####################################################################################
+
+# Once you have excluded the traits you don't want to replace, and set up a personality replacement effect, you can use one of two different scripted effects:
+
+# `carn_resolve_personality_replacement_effect` will make the replacement happen, then clear scopes
+
+# `carn_clear_personality_replacement_effect` will clear scopes without doing anything.
+
+
+
+#####################################################################################
+#####################################################################################
+
+
+
+#####################################################################################
+# carn_exclude_trait_from_personality_replacement_effect
+# Run in the scope of the character whose personality you want to replace.
+# TRAIT is the trait you want to exclude ("TRAIT = lustful")
+#####################################################################################
+
+carn_exclude_trait_from_personality_replacement_effect = {
+	add_to_variable_list = {
+		name = carn_personality_replacement_excluded_traits
+		target = flag:$TRAIT$
+	}
+}
+
+#####################################################################################
+# carn_create_personality_replacement_effect
+# Run in the scope of the character whose personality you want to replace.
+# NEW_TRAIT is the trait you want to add ("NEW_TRAIT = lustful")
+#####################################################################################
+
+carn_create_personality_replacement_effect = {
+	save_scope_value_as = {
+		name = carn_new_trait
+		value = flag:$NEW_TRAIT$
+	}
+
+	# prioritize flipping oppozite trait to this trait
+	carn_try_create_personality_replacement_effect_by_flipping_opposite_trait = yes
+
+	# if no opposite trait, pick a random trait to replace
+	if = {
+		limit = {
+			NOT = { exists = scope:carn_replaced_trait }
+		}
+		carn_try_create_personality_replacement_effect_by_random_replacement = yes
+	}
+
+	if = {
+		limit = {
+			NOT = { exists = scope:carn_replaced_trait }
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:none
+		}
+	}
+}
+
+carn_try_create_personality_replacement_effect_by_flipping_opposite_trait = {
+	if = {
+		limit = {
+			scope:carn_new_trait = flag:lustful
+			has_trait = chaste
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:chaste
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:chaste
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:chaste
+			has_trait = lustful
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:lustful
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:lustful
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:gluttonous
+			has_trait = temperate
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:temperate
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:temperate
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:temperate
+			has_trait = gluttonous
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:gluttonous
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:gluttonous
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:greedy
+			has_trait = generous
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:generous
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:generous
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:generous
+			has_trait = greedy
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:greedy
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:greedy
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:lazy
+			has_trait = diligent
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:diligent
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:diligent
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:diligent
+			has_trait = lazy
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:lazy
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:lazy
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:wrathful
+			has_trait = calm
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:calm
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:calm
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:calm
+			has_trait = wrathful
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:wrathful
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:wrathful
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:patient
+			has_trait = impatient
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:impatient
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:impatient
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:impatient
+			has_trait = patient
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:patient
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:patient
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:arrogant
+			has_trait = humble
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:humble
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:humble
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:humble
+			has_trait = arrogant
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:arrogant
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:arrogant
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:deceitful
+			has_trait = honest
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:honest
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:honest
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:honest
+			has_trait = deceitful
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:deceitful
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:deceitful
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:craven
+			has_trait = brave
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:brave
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:brave
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:brave
+			has_trait = craven
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:craven
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:craven
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:shy
+			has_trait = gregarious
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:gregarious
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:gregarious
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:gregarious
+			has_trait = shy
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:shy
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:shy
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:ambitious
+			has_trait = content
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:content
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:content
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:content
+			has_trait = ambitious
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:ambitious
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:ambitious
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:arbitrary
+			has_trait = just
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:just
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:just
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:just
+			has_trait = arbitrary
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:arbitrary
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:arbitrary
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:cynical
+			has_trait = zealous
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:zealous
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:zealous
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:zealous
+			has_trait = cynical
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:cynical
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:cynical
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:paranoid
+			has_trait = trusting
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:trusting
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:trusting
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:trusting
+			has_trait = paranoid
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:paranoid
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:paranoid
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:compassionate
+			has_trait = sadistic
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:sadistic
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:sadistic
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:compassionate
+			has_trait = callous
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:callous
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:callous
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:callous
+			has_trait = compassionate
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:compassionate
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:compassionate
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:callous
+			has_trait = sadistic
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:sadistic
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:sadistic
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:sadistic
+			has_trait = callous
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:callous
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:callous
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:sadistic
+			has_trait = compassionate
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:compassionate
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:compassionate
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:stubborn
+			has_trait = fickle
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:fickle
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:fickle
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:fickle
+			has_trait = stubborn
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:stubborn
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:stubborn
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:vengeful
+			has_trait = forgiving
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:forgiving
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:forgiving
+		}
+	}
+	else_if = {
+		limit = {
+			scope:carn_new_trait = flag:forgiving
+			has_trait = vengeful
+			NOT = {
+				is_target_in_variable_list = {
+					name = carn_personality_replacement_excluded_traits
+					target = flag:vengeful
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = carn_replaced_trait
+			value = flag:vengeful
+		}
+	}
+}
+
+carn_try_create_personality_replacement_effect_by_random_replacement = {
+	random_list = {
+		10 = {
+			trigger = {
+				has_trait = lustful
+				NOR = {
+					scope:carn_new_trait = flag:lustful
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:lustful
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:lustful
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = chaste
+				NOR = {
+					scope:carn_new_trait = flag:chaste
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:chaste
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:chaste
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = gluttonous
+				NOR = {
+					scope:carn_new_trait = flag:gluttonous
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:gluttonous
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:gluttonous
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = temperate
+				NOR = {
+					scope:carn_new_trait = flag:temperate
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:temperate
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:temperate
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = greedy
+				NOR = {
+					scope:carn_new_trait = flag:greedy
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:greedy
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:greedy
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = generous
+				NOR = {
+					scope:carn_new_trait = flag:generous
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:generous
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:generous
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = lazy
+				NOR = {
+					scope:carn_new_trait = flag:lazy
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:lazy
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:lazy
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = diligent
+				NOR = {
+					scope:carn_new_trait = flag:diligent
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:diligent
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:diligent
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = wrathful
+				NOR = {
+					scope:carn_new_trait = flag:wrathful
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:wrathful
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:wrathful
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = calm
+				NOR = {
+					scope:carn_new_trait = flag:calm
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:calm
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:calm
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = patient
+				NOR = {
+					scope:carn_new_trait = flag:patient
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:patient
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:patient
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = impatient
+				NOR = {
+					scope:carn_new_trait = flag:impatient
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:impatient
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:impatient
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = arrogant
+				NOR = {
+					scope:carn_new_trait = flag:arrogant
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:arrogant
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:arrogant
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = humble
+				NOR = {
+					scope:carn_new_trait = flag:humble
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:humble
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:humble
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = deceitful
+				NOR = {
+					scope:carn_new_trait = flag:deceitful
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:deceitful
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:deceitful
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = honest
+				NOR = {
+					scope:carn_new_trait = flag:honest
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:honest
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:honest
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = craven
+				NOR = {
+					scope:carn_new_trait = flag:craven
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:craven
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:craven
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = brave
+				NOR = {
+					scope:carn_new_trait = flag:brave
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:brave
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:brave
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = shy
+				NOR = {
+					scope:carn_new_trait = flag:shy
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:shy
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:shy
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = gregarious
+				NOR = {
+					scope:carn_new_trait = flag:gregarious
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:gregarious
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:gregarious
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = ambitious
+				NOR = {
+					scope:carn_new_trait = flag:ambitious
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:ambitious
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:ambitious
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = content
+				NOR = {
+					scope:carn_new_trait = flag:content
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:content
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:content
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = arbitrary
+				NOR = {
+					scope:carn_new_trait = flag:arbitrary
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:arbitrary
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:arbitrary
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = just
+				NOR = {
+					scope:carn_new_trait = flag:just
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:just
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:just
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = cynical
+				NOR = {
+					scope:carn_new_trait = flag:cynical
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:cynical
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:cynical
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = zealous
+				NOR = {
+					scope:carn_new_trait = flag:zealous
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:zealous
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:zealous
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = paranoid
+				NOR = {
+					scope:carn_new_trait = flag:paranoid
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:paranoid
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:paranoid
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = trusting
+				NOR = {
+					scope:carn_new_trait = flag:trusting
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:trusting
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:trusting
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = compassionate
+				NOR = {
+					scope:carn_new_trait = flag:compassionate
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:compassionate
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:compassionate
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = callous
+				NOR = {
+					scope:carn_new_trait = flag:callous
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:callous
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:callous
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = sadistic
+				NOR = {
+					scope:carn_new_trait = flag:sadistic
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:sadistic
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:sadistic
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = stubborn
+				NOR = {
+					scope:carn_new_trait = flag:stubborn
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:stubborn
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:stubborn
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = fickle
+				NOR = {
+					scope:carn_new_trait = flag:fickle
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:fickle
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:fickle
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = vengeful
+				NOR = {
+					scope:carn_new_trait = flag:vengeful
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:vengeful
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:vengeful
+			}
+		}
+		
+		10 = {
+			trigger = {
+				has_trait = forgiving
+				NOR = {
+					scope:carn_new_trait = flag:forgiving
+					is_target_in_variable_list = {
+						name = carn_personality_replacement_excluded_traits
+						target = flag:forgiving
+					}
+				}
+			}
+			save_scope_value_as = {
+				name = carn_replaced_trait
+				value = flag:forgiving
+			}
+		}
+	}
+}
+
+#####################################################################################
+# carn_resolve_personality_replacement_effect
+# Run in the scope of the character whose personality you want to replace.
+# Requires `scope:carn_new_trait` and `scope:carn_replaced_trait`
+#####################################################################################
+
+carn_resolve_personality_replacement_effect = {
+	### remove the replaced trait
+	if = {
+		limit = { scope:carn_replaced_trait = flag:lustful }
+		remove_trait = lustful
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:chaste }
+		remove_trait = chaste
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:gluttonous }
+		remove_trait = gluttonous
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:temperate }
+		remove_trait = temperate
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:greedy }
+		remove_trait = greedy
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:generous }
+		remove_trait = generous
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:lazy }
+		remove_trait = lazy
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:diligent }
+		remove_trait = diligent
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:wrathful }
+		remove_trait = wrathful
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:calm }
+		remove_trait = calm
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:patient }
+		remove_trait = patient
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:impatient }
+		remove_trait = impatient
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:arrogant }
+		remove_trait = arrogant
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:humble }
+		remove_trait = humble
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:deceitful }
+		remove_trait = deceitful
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:honest }
+		remove_trait = honest
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:craven }
+		remove_trait = craven
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:brave }
+		remove_trait = brave
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:shy }
+		remove_trait = shy
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:gregarious }
+		remove_trait = gregarious
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:ambitious }
+		remove_trait = ambitious
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:content }
+		remove_trait = content
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:arbitrary }
+		remove_trait = arbitrary
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:just }
+		remove_trait = just
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:cynical }
+		remove_trait = cynical
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:zealous }
+		remove_trait = zealous
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:paranoid }
+		remove_trait = paranoid
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:trusting }
+		remove_trait = trusting
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:compassionate }
+		remove_trait = compassionate
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:callous }
+		remove_trait = callous
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:sadistic }
+		remove_trait = sadistic
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:stubborn }
+		remove_trait = stubborn
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:fickle }
+		remove_trait = fickle
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:vengeful }
+		remove_trait = vengeful
+	}
+	else_if = {
+		limit = { scope:carn_replaced_trait = flag:forgiving }
+		remove_trait = forgiving
+	}
+
+	### add the new trait
+	if = {
+		limit = { scope:carn_new_trait = flag:lustful }
+		add_trait = lustful
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:chaste }
+		add_trait = chaste
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:gluttonous }
+		add_trait = gluttonous
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:temperate }
+		add_trait = temperate
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:greedy }
+		add_trait = greedy
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:generous }
+		add_trait = generous
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:lazy }
+		add_trait = lazy
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:diligent }
+		add_trait = diligent
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:wrathful }
+		add_trait = wrathful
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:calm }
+		add_trait = calm
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:patient }
+		add_trait = patient
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:impatient }
+		add_trait = impatient
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:arrogant }
+		add_trait = arrogant
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:humble }
+		add_trait = humble
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:deceitful }
+		add_trait = deceitful
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:honest }
+		add_trait = honest
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:craven }
+		add_trait = craven
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:brave }
+		add_trait = brave
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:shy }
+		add_trait = shy
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:gregarious }
+		add_trait = gregarious
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:ambitious }
+		add_trait = ambitious
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:content }
+		add_trait = content
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:arbitrary }
+		add_trait = arbitrary
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:just }
+		add_trait = just
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:cynical }
+		add_trait = cynical
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:zealous }
+		add_trait = zealous
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:paranoid }
+		add_trait = paranoid
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:trusting }
+		add_trait = trusting
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:compassionate }
+		add_trait = compassionate
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:callous }
+		add_trait = callous
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:sadistic }
+		add_trait = sadistic
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:stubborn }
+		add_trait = stubborn
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:fickle }
+		add_trait = fickle
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:vengeful }
+		add_trait = vengeful
+	}
+	else_if = {
+		limit = { scope:carn_new_trait = flag:forgiving }
+		add_trait = forgiving
+	}
+
+	carn_clear_personality_replacement_effect = yes
+}
+
+#####################################################################################
+# carn_clear_personality_replacement_effect
+# Run in the scope of the character whose personality you (don't) want to replace.
+#####################################################################################
+
+carn_clear_personality_replacement_effect = {
+	clear_saved_scope = carn_replaced_trait
+	clear_saved_scope = carn_new_trait
+	clear_variable_list = carn_personality_replacement_excluded_traits
+}

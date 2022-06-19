@@ -1,0 +1,53 @@
+﻿CarnMilkProductionDescription = {
+	type = character
+	text = {
+		trigger = { carn_has_extreme_milk_production_trigger = yes }
+		localization_key = carn_extreme_milk_production_description
+	}
+	text = {
+		trigger = { carn_has_very_high_milk_production_trigger = yes }
+		localization_key = carn_very_high_milk_production_description
+	}
+	text = {
+		trigger = { carn_has_high_milk_production_trigger = yes }
+		localization_key = carn_high_milk_production_description
+	}
+	text = {
+		trigger = { carn_has_average_milk_production_trigger = yes }
+		localization_key = carn_average_milk_production_description
+	}
+	text = {
+		trigger = { carn_has_low_milk_production_trigger = yes }
+		localization_key = carn_low_milk_production_description
+	}
+	text = {
+		localization_key = carn_very_low_milk_production_description
+	}
+}
+
+CarnShortMilkProductionDescription = {
+	type = character
+	text = {
+		trigger = { carn_has_extreme_milk_production_trigger = yes }
+		localization_key = carn_extreme
+	}
+	text = {
+		trigger = { carn_has_very_high_milk_production_trigger = yes }
+		localization_key = carn_very_high
+	}
+	text = {
+		trigger = { carn_has_high_milk_production_trigger = yes }
+		localization_key = carn_high
+	}
+	text = {
+		trigger = { carn_has_average_milk_production_trigger = yes }
+		localization_key = carn_average
+	}
+	text = {
+		trigger = { carn_has_low_milk_production_trigger = yes }
+		localization_key = carn_low
+	}
+	text = {
+		localization_key = carn_very_low
+	}
+}

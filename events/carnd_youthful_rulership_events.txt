@@ -1,0 +1,31 @@
+﻿namespace = carnd_youthful_rulership
+
+# maintenance event for youthful rulership modifiers, on_birthday
+carnd_youthful_rulership.0001 = {
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				has_character_modifier = carnd_youthful_rulership_abdicate_modifier
+				OR = {
+					# we don't use effective_age here, otherwise immortals are op forever
+					age >= carnd_youthful_rulership_age_cutoff
+					NOT = { faith = { has_doctrine_parameter = carnd_long_reign_penalty } }
+				}
+			}
+			remove_character_modifier = carnd_youthful_rulership_abdicate_modifier
+		}
+		if = {
+			limit = {
+				faith = { has_doctrine_parameter = carnd_long_reign_penalty }
+				effective_age >= carnd_youthful_rulership_age_cutoff
+				is_landed = yes
+				primary_title = { tier >= tier_county }
+			}
+			add_character_modifier = carnd_long_reign_penalty_modifier
+		}
+		else = {
+			remove_character_modifier = carnd_long_reign_penalty_modifier
+		}
+	}
+}

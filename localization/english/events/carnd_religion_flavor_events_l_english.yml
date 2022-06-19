@@ -1,0 +1,15 @@
+﻿l_english:
+
+ carnd_religion_flavor.0002.t.goddess: "A Goddess Among Men"
+ carnd_religion_flavor.0002.t.god: "A God Among Men"
+ carnd_religion_flavor.0002.desc: "For years, I have sought immortality through the Art of Darkness and Purity. I have shared my passion and pleasure with my many lovers, and our bodies and our jing have harmonized and become one.\n\nIn my one-hundred-and-eight accomplishments, I have honed my body, balanced my qi, and purified my soul. Although I have not attained any powers of flight, summoning, or divination, I feel as though I have come to intimately understand my place in the universe.\n\nMy deeds have made me one of the most respected living masters of [ROOT.Char.GetFaith.GetName], and there is no doubt that my name shall reverberate through history for all time."
+ carnd_religion_flavor.0002.a: "My soul will live forever on Mount Penglai."
+
+ carnd_religion_flavor.0003.t: "The People of Lot Restored"
+ carnd_religion_flavor.0003.desc.opening: "More than two thousand years ago, the cities of Sodom and Gomorrah stood as the jewels of the Valley of Siddim, infamous in their splendor, until they were destroyed by divine wrath and lost to time."
+ carnd_religion_flavor.0003.desc.restorer: "\n\nAt last, I have overthrown the Tyrants of the Book and rebuilt the shining cities of the [restorer.GetFaith.GetReligion.GetAdjectiveNoTooltip] faithful. Today marks the end of our oppression and the dawn of a new era."
+ carnd_religion_flavor.0003.desc.holy: "\n\nAt last, [restorer.GetTitledFirstNameNoTooltip] has overthrown the Tyrants of the Book and rebuilt the shining cities of our people. Today marks the end of our oppression and the dawn of a new era."
+ carnd_religion_flavor.0003.desc.unholy: "\n\nDefying the judgment of [THIS.Char.GetFaith.PantheonTerm], [restorer.GetTitledFirstNameNoTooltip] has audaciously proclaimed the restoration of the Second Eden and refounded the ancient cities of Biblical sin."
+ carnd_religion_flavor.0003.desc.ending: "\n\nHenceforth, the shores of the Dead Sea shall know again the spires of Sodom and Gomorrah."
+ carnd_religion_flavor.0003.a: "For Bela and Birsha!"
+ carnd_religion_flavor.0003.b: "They must be tempting fate..."

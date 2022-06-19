@@ -1,0 +1,6 @@
+﻿l_english:
+
+ building_type_carnd_special_palace_of_sodom_and_gomorrah_01: "Palace of the Five Kings"
+ building_type_carnd_special_palace_of_sodom_and_gomorrah_01_desc: "This grandiose palace is the crown jewel of the rebuilt Sodom and Gomorrah. It is a place of sacred debauchery and a brothel that surpasses all others on earth."
+ building_carnd_special_palace_of_sodom_and_gomorrah_01: "$building_type_carnd_special_palace_of_sodom_and_gomorrah_01$"
+ building_carnd_special_palace_of_sodom_and_gomorrah_01_desc: "$building_type_carnd_special_palace_of_sodom_and_gomorrah_01_desc$"

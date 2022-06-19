@@ -1,0 +1,5 @@
+﻿child_personality_gain = {
+	random_events = {
+		300 = carn_childhood.0001
+	}
+}

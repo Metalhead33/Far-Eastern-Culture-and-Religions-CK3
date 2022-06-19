@@ -1,0 +1,3 @@
+﻿l_english:
+
+ carnd_tooltip_elector_vote_not_futa:0 "[candidate.GetSheHe|U] is not a [GetTrait('futa').GetName( candidate.Self )]: $VALUE|=+0$"

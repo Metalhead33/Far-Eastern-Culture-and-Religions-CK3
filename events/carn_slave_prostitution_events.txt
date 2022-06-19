@@ -1,0 +1,86 @@
+﻿namespace = carn_slave_prostitution
+
+# 0001. Owners get earnings from their slave-prostitutes
+
+carn_slave_prostitution.0001 = {
+	hidden = yes
+
+	trigger = {
+		any_relation = {
+			type = slave
+			carn_is_working_as_prostitute_trigger = yes
+		}
+	}
+
+	immediate = {
+		set_variable = {
+			name = carn_slave_prostitution_earnings
+			value = 0
+		}
+		set_variable = {
+			name = carn_slave_prostitution_piety_lost
+			value = 0
+		}
+		every_relation = {
+			type = slave
+			hidden_effect = {
+				# unlanded characters don't actually earn money, so we have to generate money out of nothing in script
+				root = {
+					change_variable = {
+						name = carn_slave_prostitution_earnings
+						add = prev.carn_slave_prostitution_income_value
+					}
+				}
+				if = {
+					limit = {
+						root.faith = {
+							NOT = { has_doctrine = carn_doctrine_prostitution_accepted }
+						}
+					}
+					root = {
+						change_variable = {
+							name = carn_slave_prostitution_piety_lost
+							add = miniscule_piety_loss
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							root.faith = {
+								NOT = { has_doctrine = carn_doctrine_same_slavery_accepted }
+								faith_hostility_level = {
+									target = prev.faith
+									value < faith_hostile_level
+								}
+							}
+							root.faith = {
+								NOT = { has_doctrine = carn_doctrine_other_slavery_accepted }
+								faith_hostility_level = {
+									target = prev.faith
+									value >= faith_hostile_level
+								}
+							}
+						}
+					}
+					root = {
+						change_variable = {
+							name = carn_slave_prostitution_piety_lost
+							add = miniscule_piety_loss
+						}
+					}
+				}
+			}
+		}
+		send_interface_message = {
+			type = carn_prostitute_random_event_good
+			title = carn_slave_prostitution.0001.t
+			add_gold = var:carn_slave_prostitution_earnings
+			add_piety = var:carn_slave_prostitution_piety_lost
+			stress_impact = {
+				generous = medium_stress_impact_gain
+				compassionate = major_stress_impact_gain
+			}
+		}
+	}
+}

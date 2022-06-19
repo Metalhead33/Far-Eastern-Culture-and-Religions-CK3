@@ -1,0 +1,48 @@
+﻿carn_slave_can_be_sold_trigger = {
+	NOR = {
+		has_treatable_disease_trigger = yes
+		has_contagious_disease_trigger = yes
+		has_wounds_trigger = yes
+		is_incapable = yes
+		has_character_flag = carn_slave_cannot_be_sold
+		has_trait_with_flag = carn_slave_cannot_be_sold
+	}
+	trigger_if = {
+		limit = { exists = imprisoner }
+		has_relation_slave_owner = imprisoner
+	}
+}
+
+carn_candidate_to_sell_slave_to_trigger = {
+	is_ai = yes
+	NOT = { this = scope:actor }
+	highest_held_title_tier >= tier_county
+	is_diplomatically_available = yes
+	in_diplomatic_range = scope:actor
+	gold > 0
+	NOT = { is_at_war_with = scope:actor }
+	is_imprisoned = no
+}
+
+carn_any_consort_or_slave_or_slave_owner_is_character_trigger = {
+	OR = {
+		any_consort = {
+			this = $CHARACTER$
+		}
+		any_relation = {
+			type = slave
+			this = $CHARACTER$
+		}
+		any_relation = {
+			type = slave_owner
+			this = $CHARACTER$
+		}
+	}
+}
+
+carn_real_father_is_former_slave_or_slave_owner_trigger = {
+	has_opinion_modifier = {
+		target = scope:real_father
+		modifier = carn_former_slave_or_slave_owner_opinion
+	}
+}

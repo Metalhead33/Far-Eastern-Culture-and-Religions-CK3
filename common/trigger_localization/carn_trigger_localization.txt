@@ -1,0 +1,61 @@
+﻿carn_can_be_granted_titles = {
+	first = carn_i_can_be_granted_titles
+	first_not = carn_not_i_can_be_granted_titles
+	third = carn_they_can_be_granted_titles
+	third_not = carn_not_they_can_be_granted_titles
+	global = carn_can_be_granted_titles
+	global_not = carn_not_can_be_granted_titles
+}
+
+carn_can_always_have_sex = {
+	first = carn_can_always_have_sex
+	third = carn_can_always_have_sex
+}
+
+carn_cannot_be_raped = {
+	first_not = carn_cannot_be_raped
+	third_not = carn_cannot_be_raped
+}
+
+carn_cannot_have_max_number_of_slave_prostitutes = {
+	first = carn_cannot_have_max_number_of_slave_prostitutes
+	third = carn_cannot_have_max_number_of_slave_prostitutes
+}
+
+carn_cannot_have_sex = {
+	first_not = carn_cannot_have_sex
+	third_not = carn_cannot_have_sex
+}
+
+carn_effective_age_under_value_cutoff = {
+	first = carn_effective_age_under_value_cutoff
+	third = carn_effective_age_under_value_cutoff
+}
+
+carn_has_any_fetish_trigger = {
+	first = carn_i_have_a_fetish_trigger
+	first_not = carn_not_i_have_a_fetish_trigger
+	third = carn_they_have_a_fetish_trigger
+	third_not = carn_not_they_have_a_fetish_trigger
+	global = carn_has_any_fetish_trigger
+	global_not = carn_not_has_a_fetish_trigger
+}
+
+carn_is_diplomatically_available = {
+	first_not = carn_is_not_diplomatically_available
+	third_not = carn_is_not_diplomatically_available
+}
+
+carn_is_lactating_trigger = {
+	first = carn_i_am_lactating_trigger
+	first_not = carn_not_i_am_lactating_trigger
+	third = carn_they_are_lactating_trigger
+	third_not = carn_not_they_are_lactating_trigger
+	global = carn_is_lactating_trigger
+	global_not = carn_not_is_lactating_trigger
+}
+
+carn_slavery_is_illegal = {
+	first_not = carn_slavery_is_illegal
+	third_not = carn_slavery_is_illegal
+}

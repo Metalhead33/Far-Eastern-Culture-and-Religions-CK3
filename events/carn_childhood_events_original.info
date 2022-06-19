@@ -1,0 +1,255 @@
+﻿#greedy, gregarious or lustful
+child_personality.0008 = {
+	type = character_event
+	title = child_personality.0008.t
+	desc = {
+		desc = child_personality.0008.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:boy
+				}
+				desc = child_personality.0008.servant_boy
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:girl
+				}
+				desc = child_personality.0008.serving_wench
+			}
+			desc = child_personality.0008.desc_not_server
+		}
+	}
+	theme = default
+	left_portrait = root
+
+	trigger = {
+		is_available_child = yes
+		age >= 13 #Because chaste/lustful are only given at age 13
+		NAND = {
+			OR = {
+				has_trait = greedy
+				has_trait = generous
+			}
+			OR = {
+				has_trait = gregarious
+				has_trait = shy
+			}
+			OR = {
+				has_trait = lustful
+				has_trait = chaste
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			add = 2
+			any_relation = {
+				type = guardian
+				OR = {
+					has_trait = greedy
+					has_trait = gregarious
+					has_trait = lustful
+				}
+			}
+		}
+	}
+
+	immediate = {
+		save_scope_as = child
+		hidden_effect = {
+			if = {
+				limit = {
+					NOR = {
+						has_sexuality = asexual
+						has_trait = lustful
+					}
+				}
+				random = {
+					chance = 30
+					add_character_flag = {
+						flag = become_lustful
+						days = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_character_flag = become_lustful
+					OR = {
+						AND = {
+							has_sexuality = homosexual
+							is_female = no
+						}
+						AND = {
+							is_female = yes
+							has_sexuality = heterosexual
+						}
+					}
+				}
+				save_scope_value_as = {
+					name = boy
+					value = yes
+				}
+			}
+			else_if = {
+				limit = {
+					has_character_flag = become_lustful
+					OR = {
+						AND = {
+							has_sexuality = homosexual
+							is_female = yes
+						}
+						AND = {
+							is_female = no
+							has_sexuality = heterosexual
+						}
+					}
+				}
+				save_scope_value_as = {
+					name = girl
+					value = yes
+				}
+			}
+			else_if = {
+				limit = {
+					has_sexuality = bisexual
+					has_character_flag = become_lustful
+				}
+				random_list = {
+					10 = {
+						save_scope_value_as = {
+							name = boy
+							value = yes
+						}
+					}
+					10 = {
+						save_scope_value_as = {
+							name = girl
+							value = yes
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = child_personality.0008.a
+		trigger = {
+			NOR = {
+				has_trait = greedy
+				has_trait = generous
+			}
+		}
+		ai_chance = {
+			base = 1
+			modifier = {
+				add = 4
+				any_relation = {
+					type = guardian
+					has_trait = greedy
+				}
+			}
+			modifier = {
+				add = -0.5
+				any_relation = {
+					type = guardian
+					has_trait = generous
+				}
+			}
+		}
+		add_trait = greedy
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			random_relation = {
+				type = guardian
+				trigger_event = child_personality.1081
+			}
+		}	
+	}
+
+	option = {
+		name = child_personality.0008.b
+		trigger = {
+			NOR = {
+				has_trait = gregarious
+				has_trait = shy
+			}
+		}
+		ai_chance = {
+			base = 1
+			modifier = {
+				add = 4
+				any_relation = {
+					type = guardian
+					has_trait = gregarious
+				}
+			}
+			modifier = {
+				add = -0.5
+				any_relation = {
+					type = guardian
+					has_trait = shy
+				}
+			}
+		}
+		add_trait = gregarious
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			random_relation = {
+				type = guardian
+				trigger_event = child_personality.1082
+			}
+		}	
+	}
+
+	option = {
+		name = child_personality.0008.c
+		trigger = {
+			has_character_flag = become_lustful
+			NOR = {
+				has_trait = lustful
+				has_trait = chaste
+			}
+		}
+		ai_chance = {
+			base = 1
+			modifier = {
+				add = 4
+				any_relation = {
+					type = guardian
+					has_trait = lustful
+				}
+			}
+			modifier = {
+				add = -0.5
+				any_relation = {
+					type = guardian
+					has_trait = chaste
+				}
+			}
+		}
+		add_trait = lustful
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			random_relation = {
+				type = guardian
+				trigger_event = child_personality.1083
+			}
+		}	
+	}
+
+
+	after = {
+		remove_character_flag = become_lustful
+	}
+}

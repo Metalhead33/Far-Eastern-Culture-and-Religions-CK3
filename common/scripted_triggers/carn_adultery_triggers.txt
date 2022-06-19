@@ -1,0 +1,40 @@
+﻿# this only makes the spouses and lovers of the no_consequences character happy
+# anyone they cuckold will always get angry unless they have polyamory -- this is intended behavior.
+carn_should_have_no_consequences_for_extramarital_sex_trigger = {
+	trigger_if = {
+		limit = { exists = scope:partner }
+		carn_should_have_no_consequences_for_extramarital_sex_with_partner_trigger = {
+			PARTNER = scope:partner
+		}
+	}
+	trigger_else = {
+		carn_should_have_no_consequences_for_extramarital_sex_with_no_partner_trigger = yes
+	}
+}
+
+carn_should_have_no_consequences_for_extramarital_sex_with_partner_trigger = {
+	OR = {
+		# they are exempt from adultery in and of itself
+		carn_should_have_no_consequences_for_extramarital_sex_with_no_partner_trigger = yes
+
+		# it's a slave owner fucking their slave
+		has_relation_slave_owner = $PARTNER$
+		has_relation_slave = $PARTNER$
+
+		# special mod flags
+		$PARTNER$ = { has_character_flag = carn_no_consequences_for_extramarital_sex_with_me }
+		$PARTNER$ = { has_trait_with_flag = carn_no_consequences_for_extramarital_sex_with_me }
+		$PARTNER$ = {
+			culture = { has_cultural_parameter = carn_no_consequences_for_extramarital_sex_with_me }
+		}
+	}
+}
+
+carn_should_have_no_consequences_for_extramarital_sex_with_no_partner_trigger = {
+	OR = {
+		# special mod flags
+		has_character_flag = carn_no_consequences_for_extramarital_sex_with_others
+		has_trait_with_flag = carn_no_consequences_for_extramarital_sex_with_others
+		culture = { has_cultural_parameter = carn_no_consequences_for_extramarital_sex_with_others }
+	}
+}

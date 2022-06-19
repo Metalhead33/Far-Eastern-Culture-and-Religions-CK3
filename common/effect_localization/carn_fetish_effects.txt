@@ -1,0 +1,152 @@
+﻿carn_add_random_fetish_effect = {
+	first = carn_i_gain_fetish
+	first_past = carn_i_gained_fetish
+	third = carn_they_gain_fetish
+	third_past = carn_they_gained_fetish
+	global = carn_gains_fetish
+	global_past = carn_gained_fetish
+}
+
+carn_add_fetish_anal_effect = {
+	first = carn_i_gain_fetish_anal_effect
+	first_past = carn_i_gained_fetish_anal_effect
+	third = carn_they_gain_fetish_anal_effect
+	third_past = carn_they_gained_fetish_anal_effect
+	global = carn_gain_fetish_anal_effect
+	global_past = carn_gained_fetish_anal_effect
+}
+
+carn_add_fetish_sadism_effect = {
+	first = carn_i_gain_fetish_sadism_effect
+	first_past = carn_i_gained_fetish_sadism_effect
+	third = carn_they_gain_fetish_sadism_effect
+	third_past = carn_they_gained_fetish_sadism_effect
+	global = carn_gain_fetish_sadism_effect
+	global_past = carn_gained_fetish_sadism_effect
+}
+
+carn_add_fetish_masochism_effect = {
+	first = carn_i_gain_fetish_masochism_effect
+	first_past = carn_i_gained_fetish_masochism_effect
+	third = carn_they_gain_fetish_masochism_effect
+	third_past = carn_they_gained_fetish_masochism_effect
+	global = carn_gain_fetish_masochism_effect
+	global_past = carn_gained_fetish_masochism_effect
+}
+
+carn_add_fetish_bestiality_effect = {
+	first = carn_i_gain_fetish_bestiality_effect
+	first_past = carn_i_gained_fetish_bestiality_effect
+	third = carn_they_gain_fetish_bestiality_effect
+	third_past = carn_they_gained_fetish_bestiality_effect
+	global = carn_gain_fetish_bestiality_effect
+	global_past = carn_gained_fetish_bestiality_effect
+}
+
+carn_add_fetish_watersports_effect = {
+	first = carn_i_gain_fetish_watersports_effect
+	first_past = carn_i_gained_fetish_watersports_effect
+	third = carn_they_gain_fetish_watersports_effect
+	third_past = carn_they_gained_fetish_watersports_effect
+	global = carn_gain_fetish_watersports_effect
+	global_past = carn_gained_fetish_watersports_effect
+}
+
+carn_add_fetish_scat_effect = {
+	first = carn_i_gain_fetish_scat_effect
+	first_past = carn_i_gained_fetish_scat_effect
+	third = carn_they_gain_fetish_scat_effect
+	third_past = carn_they_gained_fetish_scat_effect
+	global = carn_gain_fetish_scat_effect
+	global_past = carn_gained_fetish_scat_effect
+}
+
+carn_add_fetish_gore_effect = {
+	first = carn_i_gain_fetish_gore_effect
+	first_past = carn_i_gained_fetish_gore_effect
+	third = carn_they_gain_fetish_gore_effect
+	third_past = carn_they_gained_fetish_gore_effect
+	global = carn_gain_fetish_gore_effect
+	global_past = carn_gained_fetish_gore_effect
+}
+
+carn_add_fetish_foot_play_effect = {
+	first = carn_i_gain_fetish_foot_play_effect
+	first_past = carn_i_gained_fetish_foot_play_effect
+	third = carn_they_gain_fetish_foot_play_effect
+	third_past = carn_they_gained_fetish_foot_play_effect
+	global = carn_gain_fetish_foot_play_effect
+	global_past = carn_gained_fetish_foot_play_effect
+}
+
+carn_add_fetish_bondage_effect = {
+	first = carn_i_gain_fetish_bondage_effect
+	first_past = carn_i_gained_fetish_bondage_effect
+	third = carn_they_gain_fetish_bondage_effect
+	third_past = carn_they_gained_fetish_bondage_effect
+	global = carn_gain_fetish_bondage_effect
+	global_past = carn_gained_fetish_bondage_effect
+}
+
+carn_add_fetish_domination_effect = {
+	first = carn_i_gain_fetish_domination_effect
+	first_past = carn_i_gained_fetish_domination_effect
+	third = carn_they_gain_fetish_domination_effect
+	third_past = carn_they_gained_fetish_domination_effect
+	global = carn_gain_fetish_domination_effect
+	global_past = carn_gained_fetish_domination_effect
+}
+
+carn_add_fetish_submission_effect = {
+	first = carn_i_gain_fetish_submission_effect
+	first_past = carn_i_gained_fetish_submission_effect
+	third = carn_they_gain_fetish_submission_effect
+	third_past = carn_they_gained_fetish_submission_effect
+	global = carn_gain_fetish_submission_effect
+	global_past = carn_gained_fetish_submission_effect
+}
+
+carn_add_fetish_raping_effect = {
+	first = carn_i_gain_fetish_raping_effect
+	first_past = carn_i_gained_fetish_raping_effect
+	third = carn_they_gain_fetish_raping_effect
+	third_past = carn_they_gained_fetish_raping_effect
+	global = carn_gain_fetish_raping_effect
+	global_past = carn_gained_fetish_raping_effect
+}
+
+carn_add_fetish_being_raped_effect = {
+	first = carn_i_gain_fetish_being_raped_effect
+	first_past = carn_i_gained_fetish_being_raped_effect
+	third = carn_they_gain_fetish_being_raped_effect
+	third_past = carn_they_gained_fetish_being_raped_effect
+	global = carn_gain_fetish_being_raped_effect
+	global_past = carn_gained_fetish_being_raped_effect
+}
+
+carn_add_fetish_lactation_effect = {
+	first = carn_i_gain_fetish_lactation_effect
+	first_past = carn_i_gained_fetish_lactation_effect
+	third = carn_they_gain_fetish_lactation_effect
+	third_past = carn_they_gained_fetish_lactation_effect
+	global = carn_gain_fetish_lactation_effect
+	global_past = carn_gained_fetish_lactation_effect
+}
+
+carn_remove_all_fetishes_effect = {
+	first = carn_i_lose_fetishes_effect
+	first_past = carn_i_lost_fetishes_effect
+	third = carn_they_lose_fetishes_effect
+	third_past = carn_they_lost_fetishes_effect
+	global = carn_lose_fetishes_effect
+	global_past = carn_lost_fetishes_effect
+}
+
+carn_remove_fetish_effect = {
+	first = carn_i_lose_fetish_effect
+	first_past = carn_i_lost_fetish_effect
+	third = carn_they_lose_fetish_effect
+	third_past = carn_they_lost_fetish_effect
+	global = carn_lose_fetish_effect
+	global_past = carn_lost_fetish_effect
+}

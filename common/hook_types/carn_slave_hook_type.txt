@@ -1,0 +1,3 @@
+﻿carn_slave_hook = {
+	strong = yes
+}

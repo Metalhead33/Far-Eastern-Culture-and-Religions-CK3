@@ -1,0 +1,139 @@
+﻿carnd_baron_theocracy_male_lilith_religion = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 7
+	top_liege = no
+	governments = { theocracy_government }
+	religions = { carnd_lilith_religion }
+}
+carnd_baron_theocracy_female_lilith_religion = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 7
+	top_liege = no
+	governments = { theocracy_government }
+	religions = { carnd_lilith_religion }
+}
+carnd_barony_theocracy_lilith_religion = {
+	type = title
+	tier = barony
+	top_liege = no
+	priority = 7
+	holding = church_holding
+	religions = { carnd_lilith_religion }
+}
+carnd_count_theocracy_male_lilith_religion = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	top_liege = no
+	governments = { theocracy_government }
+	religions = { carnd_lilith_religion }
+}
+carnd_count_theocracy_female_lilith_religion = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	top_liege = no
+	governments = { theocracy_government }
+	religions = { carnd_lilith_religion }
+}
+carnd_county_theocracy_lilith_religion = {
+	type = title
+	tier = county
+	top_liege = no
+	priority = 18
+	governments = { theocracy_government }
+	religions = { carnd_lilith_religion }
+}
+carnd_duke_theocracy_male_lilith_religion = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 27
+	top_liege = no
+	governments = { theocracy_government }
+	religions = { carnd_lilith_religion }
+}
+carnd_duke_theocracy_female_lilith_religion = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 27
+	governments = { theocracy_government }
+	religions = { carnd_lilith_religion }
+}
+carnd_duchy_theocracy_lilith_religion = {
+	type = title
+	tier = duchy
+	top_liege = no
+	priority = 27
+	governments = { theocracy_government }
+	religions = { carnd_lilith_religion }
+}
+carnd_king_theocracy_male_lilith_religion = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 47
+	top_liege = no
+	governments = { theocracy_government }
+	religions = { carnd_lilith_religion }
+}
+carnd_king_theocracy_female_lilith_religion = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 47
+	top_liege = no
+	governments = { theocracy_government }
+	religions = { carnd_lilith_religion }
+}
+carnd_kingdom_theocracy_lilith_religion = {
+	type = title
+	tier = kingdom
+	top_liege = no
+	priority = 47
+	governments = { theocracy_government }
+	religions = { carnd_lilith_religion }
+}
+carnd_emperor_theocracy_male_lilith_religion = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 102
+	top_liege = no
+	governments = { theocracy_government }
+	religions = { carnd_lilith_religion }
+}
+carnd_emperor_theocracy_female_lilith_religion = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 102
+	top_liege = no
+	governments = { theocracy_government }
+	religions = { carnd_lilith_religion }
+}
+carnd_empire_theocracy_lilith_religion = {
+	type = title
+	tier = empire
+	priority = 102
+	top_liege = no
+	governments = { theocracy_government }
+	religions = { carnd_lilith_religion }
+}

@@ -1,0 +1,191 @@
+﻿# THIS IS COMPLETE CANCER. banged my head against this for hours but can't redirect to make the UI work in a satisfying way
+# players can use character finder until paradox makes their complex character interactions not hardcoded
+# -cheri
+
+# interaction to buy a slave off the general "slave market" of all slaves available
+# actor and secondary_actor are you
+# recipient is the slave owner
+# secondary_recipient is the slave
+carn_buy_slave_on_market_interaction = {
+	category = interaction_category_diplomacy
+	desc = carn_buy_slave_on_market_interaction_desc
+	interface_priority = 9
+	common_interaction = yes
+	needs_recipient_to_open = no
+
+	greeting = positive
+	notification_text = carn_buy_slave_offer
+	send_name = carn_buy_slave_directly_interaction
+	
+	ai_min_reply_days = 0
+	ai_max_reply_days = 0
+
+	redirect = {
+		if = {
+			limit = { scope:actor = scope:recipient }
+			scope:actor = { save_scope_as = secondary_actor }
+			clear_saved_scope = recipient
+		}
+		else = {
+			scope:recipient = {
+				save_scope_as = secondary_recipient
+				random_relation = {
+					type = slave_owner
+					save_scope_as = recipient
+				}
+			}
+		}
+	}
+
+	populate_recipient_list = {
+		every_ruler = {
+			limit = {
+				is_diplomatically_available = yes
+				in_diplomatic_range = scope:actor
+				NOT = { this = scope:actor }
+			}
+			every_relation = {
+				type = slave
+				limit = {
+					is_diplomatically_available = yes
+					carn_slave_can_be_sold_trigger = yes
+				}
+				add_to_list = characters
+			}
+		}
+	}
+
+	is_shown = {
+		NOT = { has_game_rule = carn_slavery_content_disabled }
+		scope:actor = scope:secondary_actor
+	}
+
+	is_valid_showing_failures_only = {
+		trigger_if = {
+			limit = { exists = scope:recipient }
+			scope:actor = {
+				NOT = { is_at_war_with = scope:recipient }
+			}
+		}
+		trigger_if = {
+			limit = { exists = scope:secondary_recipient }
+			scope:secondary_recipient = {
+				is_diplomatically_available = yes
+				carn_slave_can_be_sold_trigger = yes
+				carn_slave_price_value <= scope:actor.gold
+			}
+		}
+	}
+	
+	on_accept = {
+		scope:actor = { save_scope_as = buyer }
+		scope:recipient = { save_scope_as = seller }
+		scope:secondary_recipient = { save_scope_as = slave }
+		carn_buy_slave_effect = { 
+				SLAVE_PRICE = scope:secondary_recipient.carn_slave_price_value
+		}
+	}
+	
+	ai_accept = {
+		base = 0
+		modifier = {
+			add = 50
+			desc = "GOLD_POSITIVE_REASON"
+		}
+		modifier = {
+			trigger = {
+				scope:secondary_recipient = {
+					is_knight_of = scope:recipient
+				}
+			}
+			add = -25
+			desc = "carn_secondary_recipient_is_my_knight_reason"
+		}
+		modifier = {
+			trigger = {
+				scope:secondary_recipient = {
+					is_councillor_of = scope:recipient
+				}
+			}
+			add = -50
+			desc = "carn_secondary_recipient_is_my_councillor_reason"
+		}
+		modifier = {
+			trigger = {
+				scope:secondary_recipient = {
+					has_relation_friend = scope:recipient
+				}
+			}
+			add = -50
+			desc = "carn_secondary_recipient_is_my_friend_reason"
+		}
+		modifier = {
+			trigger = {
+				scope:secondary_recipient = {
+					has_relation_lover = scope:recipient
+				}
+			}
+			add = -50
+			desc = "carn_secondary_recipient_is_my_lover_reason"
+		}
+		modifier = {
+			trigger = {
+				scope:secondary_recipient = {
+					has_relation_crush = scope:recipient
+				}
+			}
+			add = -50
+			desc = "carn_secondary_recipient_is_my_crush_reason"
+		}
+		modifier = {
+			trigger = {
+				scope:secondary_recipient = {
+					has_relation_soulmate = scope:recipient
+				}
+			}
+			add = -1000
+			desc = "carn_secondary_recipient_is_my_soulmate_reason"
+		}
+		modifier = { # Say no to rivals
+			add = -55
+			scope:recipient = {
+				has_relation_rival = scope:actor
+			}
+			desc = "ACTOR_RIVAL_TO_ME_REASON"
+		}
+		modifier = { # Say no to rivals
+			add = -300
+			scope:recipient = {
+				has_relation_nemesis = scope:actor
+			}
+			desc = "ACTOR_NEMESIS_TO_ME_REASON"
+		}
+		modifier = { # An Intimidated recipient is significantly more likely to accept an offer from the liege
+			add = 40
+			trigger = {
+				scope:recipient = {
+					target_is_liege_or_above = scope:actor
+					has_dread_level_towards = {
+						target = scope:actor
+						level = 1
+					}
+				}
+			}
+			desc = INTIMIDATED_REASON
+		}
+
+		modifier = { # A Cowed recipient is significantly more likely to accept an offer from the liege
+			add = 100
+			trigger = {
+				scope:recipient = {
+					target_is_liege_or_above = scope:actor
+					has_dread_level_towards = {
+						target = scope:actor
+						level = 2
+					}
+				}
+			}
+			desc = COWED_REASON
+		}
+	}
+}

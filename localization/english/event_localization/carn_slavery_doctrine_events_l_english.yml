@@ -1,0 +1,19 @@
+﻿l_english:
+ carn_slavery_doctrine.0001.desc: "I will do my [ROOT.Char.GetFaith.GetReligion.GetAdjectiveNoTooltip] duty and free my unlawfully enslaved servants from their bonds."
+ carn_slavery_doctrine.0001.a: "A wise decision."
+
+ carn_slavery_doctrine.0002.desc: "I understand your concerns, but I acquired these slaves at great expense...\n\nIf you were to recoup my investment, I would be more than willing to allow them their freedom."
+ carn_slavery_doctrine.0002.a: "It is the [ROOT.Char.GetFaith.GetReligion.GetAdjectiveNoTooltip] thing to do."
+ carn_slavery_doctrine.0002.b: "I will not pay for your sinful acquisitions!"
+ carn_slavery_doctrine.0002.c: "I am afraid that you have no choice in the matter."
+ 
+ carn_slavery_doctrine.0003.desc: "I see the wisdom of your request, but these slaves are indispensable in their service...\n\nPerhaps if you promised to support me in my other endeavors, I would be able to cope with their loss."
+ carn_slavery_doctrine.0003.a: "I will help you make this right."
+ carn_slavery_doctrine.0003.b: "Your mistakes are not mine to bear!"
+ carn_slavery_doctrine.0003.c: "You have other debts to repay me, first."
+ 
+ carn_slavery_doctrine.0004.desc: "Your demands are unreasonable and without merit. My slaves are of no concern to [recipient.GetFaith.PantheonTerm]."
+ carn_slavery_doctrine.0004.hooking_out: "\n\nI also wish to remind you that you owe me, and had best not pursue the issue further."
+ carn_slavery_doctrine.0004.b: "Then [recipient.GetFaith.PantheonTerm] shall be a witness to your judgment."
+ carn_slavery_doctrine.0004.c: "Do not think I am letting you get away with this!"
+ carn_slavery_doctrine.0004.d: "Oh, I think you will do exactly what I tell you to."

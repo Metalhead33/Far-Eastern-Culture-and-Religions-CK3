@@ -1,0 +1,63 @@
+﻿carnd_restore_sodom_and_gomorrah_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	major = yes
+	selection_tooltip = carnd_restore_sodom_and_gomorrah_decision_tooltip
+
+	ai_check_interval = 120
+
+	desc = carnd_restore_sodom_and_gomorrah_decision_desc
+
+	is_shown = {
+		is_landed = yes
+		carnd_venerates_sodom_and_gomorrah_trigger = yes
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:carnd_restore_sodom_and_gomorrah_decision
+			}
+		}
+	}
+
+	is_valid = {
+		piety_level >= high_piety_level
+		completely_controls = title:d_oultrejourdain
+	}
+
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
+		is_available_adult = yes
+		is_at_war = no
+	}
+
+	cost = {
+		gold = 1000
+	}
+
+	effect = {
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:carnd_restore_sodom_and_gomorrah_decision
+		}
+		show_as_tooltip = {
+			carnd_restore_sodom_and_gomorrah_effect = yes
+		}
+		save_scope_as = restorer
+		trigger_event = carnd_religion_flavor.0003
+		# Send event to other players
+		every_player = {
+			limit = {
+				NOT = { this = root }
+				in_diplomatic_range = root
+			}
+			trigger_event = carnd_religion_flavor.0003
+		}
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}

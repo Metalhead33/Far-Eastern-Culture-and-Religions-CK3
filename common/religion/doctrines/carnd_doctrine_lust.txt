@@ -1,0 +1,55 @@
+﻿carnd_doctrine_lust = {
+	group = "main_group"
+
+	carnd_doctrine_lust_exalted = {
+		piety_cost = {
+			value = faith_doctrine_cost_high
+			if = {
+				limit = { has_doctrine = carnd_doctrine_lust_exalted }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+			else_if = {
+				limit = { has_doctrine = carnd_doctrine_lust_shunned }
+				multiply = faith_changed_doctrine_cost_mult_two_step
+			}
+		}
+
+		character_modifier = {
+			fertility = 0.25
+		}
+
+		traits = {
+			virtues = { lustful }
+			sins = { chaste }
+		}
+	}
+
+	carnd_doctrine_lust_accepted = {
+		piety_cost = {
+			value = faith_doctrine_cost_high
+			if = {
+				limit = { has_doctrine = carnd_doctrine_lust_accepted }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+	}
+
+	carnd_doctrine_lust_shunned = {
+		piety_cost = {
+			value = faith_doctrine_cost_high
+			if = {
+				limit = { has_doctrine = carnd_doctrine_lust_shunned }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+			else_if = {
+				limit = { has_doctrine = carnd_doctrine_lust_exalted }
+				multiply = faith_changed_doctrine_cost_mult_two_step
+			}
+		}
+
+		traits = {
+			virtues = { chaste }
+			sins = { lustful }
+		}
+	}
+}

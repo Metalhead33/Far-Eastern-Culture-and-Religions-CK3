@@ -1,0 +1,34 @@
+﻿title_succession_laws = {
+	carnd_futa_elective_succession_law = {
+		can_have = {
+			OR = {
+				has_government = feudal_government
+				has_government = tribal_government
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		can_pass = {
+			can_change_title_law_trigger = yes
+			faith = {
+				has_doctrine_parameter = carnd_futa_succession_enabled
+			}
+		}
+		can_title_have = {
+			tier >= tier_duchy
+		}
+		succession = {
+			order_of_succession = election
+			election_type = carnd_futa_elective
+		}
+		flag = elective_succession_law
+		modifier = {
+			direct_vassal_opinion = 5
+		}
+		revoke_cost = {
+			prestige = change_title_succession_law_prestige_cost
+		}
+		pass_cost = {
+			prestige = change_title_succession_law_prestige_cost
+		}
+	}
+}

@@ -1,0 +1,34 @@
+﻿carn_custom_pregnancy = {
+
+	usage = game
+
+	carn_custom_pregnancy = {
+		ignore_outfit_tags = yes
+		dna_modifiers = {
+			morph = {
+				mode = add
+				gene = gene_bs_pregnant
+				template = pregnant
+				value = {
+					value = 1
+					if = {
+						# Overweight females should have less visible pregnancy, so we change the 100% pregnant value
+						limit = { current_weight > overweight_threshold }
+						value = current_weight_for_portrait # An absolute and normalized value derived from character body weight
+						multiply = -1.0 
+						add = 1.5
+						max = 1.0
+					}
+					multiply = 0.75
+				}
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				has_trait_with_flag = carn_use_pregnant_portrait
+			}			
+		}
+	}
+}

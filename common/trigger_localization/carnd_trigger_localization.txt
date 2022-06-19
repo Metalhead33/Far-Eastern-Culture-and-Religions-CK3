@@ -1,0 +1,18 @@
+﻿carnd_incompatible_doctrine_male_dominated_trigger = {
+	first_not = carnd_incompatible_doctrine_male_dominated_trigger
+	third_not = carnd_incompatible_doctrine_male_dominated_trigger
+}
+
+carnd_incompatible_doctrine_lust_shunned_trigger = {
+	first_not = carnd_incompatible_doctrine_lust_shunned_trigger
+	third_not = carnd_incompatible_doctrine_lust_shunned_trigger
+}
+
+carnd_incompatible_doctrine_prostitution_crime_trigger = {
+	first_not = carnd_incompatible_doctrine_prostitution_crime_trigger
+	third_not = carnd_incompatible_doctrine_prostitution_crime_trigger
+}
+
+carnd_had_sex_108_times = {
+	first = carnd_had_sex_108_times
+}

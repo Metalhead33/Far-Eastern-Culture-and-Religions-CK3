@@ -1,0 +1,5 @@
+﻿on_birthday = {
+	events = {
+		carnd_youthful_rulership.0001 # Youthful Divinity trait maintenance
+	}
+}
