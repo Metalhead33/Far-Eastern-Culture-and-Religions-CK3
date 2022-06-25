@@ -251,6 +251,12 @@ establish_azeri_turkish_culture_decision = {
 					NEW_CULTURE = culture:azeri_turkish
 					REGION = special_azeri_culture_region
 				}
+				merge_cultures_in_region_effect = {
+					OLD_CULTURE_1 = culture:turkish
+					OLD_CULTURE_2 = culture:adhari
+					NEW_CULTURE = culture:azeri_turkish
+					REGION = special_azeri_culture_region
+				}
 			}
 			every_in_list = {
 				list = azeri_turkish_counties

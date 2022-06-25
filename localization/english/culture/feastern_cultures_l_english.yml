@@ -1,4 +1,7 @@
 ﻿l_english:
+ aesthetics_azeri_turkish_name:0 "$azeri_turkish$"
+ aesthetics_anatolian_turkish_name:0 "$anatolian_turkish$"
+ aesthetics_hungarian:0 "$hungarian$"
  culture_parameter_unlock_maa_samurai:0 "Can recruit [GetMaA('samurai').GetName] as [men_at_arms|E]"
  chinese_clothing_gfx:0 "Chinese"
  name_list_korean:0 "$korean$"

@@ -63,16 +63,23 @@ change_culture_if_region = {
 						geographical_region = $REGION$
 					}
 				}
-				set_culture = $NEW_CULTURE$
+				if = {
+					limit = { 
+							NOT = { has_character_flag = has_scripted_appearance }
+					}
+					set_culture = $NEW_CULTURE$
+				}
 				every_ancestor = {
 					limit = {
 						culture = scope:old_culture
+						NOT = { has_character_flag = has_scripted_appearance }
 					}
 					set_culture = $NEW_CULTURE$
 				}
 				every_courtier = {
 					limit = {
 						culture = scope:old_culture
+						NOT = { has_character_flag = has_scripted_appearance }
 					}
 					set_culture = $NEW_CULTURE$
 				}
@@ -99,18 +106,25 @@ change_culture_faith_if_region = {
 						geographical_region = $REGION$
 					}
 				}
-				set_culture = $NEW_CULTURE$
-				set_character_faith = $NEW_FAITH$
+				if = {
+					limit = { 
+							NOT = { has_character_flag = has_scripted_appearance }
+					}
+					set_culture = $NEW_CULTURE$
+					set_character_faith = $NEW_FAITH$
+				}
 				every_ancestor = {
 					if = {
 						limit = {
 							culture = scope:old_culture
+							NOT = { has_character_flag = has_scripted_appearance }
 						}
 						set_culture = $NEW_CULTURE$
 					}
 					if = {
 						limit = {
 							faith = scope:old_faith
+							NOT = { has_character_flag = has_scripted_appearance }
 						}
 						set_character_faith = $NEW_FAITH$
 					}
@@ -119,12 +133,14 @@ change_culture_faith_if_region = {
 					if = {
 						limit = {
 							culture = scope:old_culture
+							NOT = { has_character_flag = has_scripted_appearance }
 						}
 						set_culture = $NEW_CULTURE$
 					}
 					if = {
 						limit = {
 							faith = scope:old_faith
+							NOT = { has_character_flag = has_scripted_appearance }
 						}
 						set_character_faith = $NEW_FAITH$
 					}
@@ -151,16 +167,23 @@ change_culture_if_region_pillar = {
 						geographical_region = $REGION$
 					}
 				}
-				set_culture = $NEW_CULTURE$
+				if = {
+					limit = { 
+						NOT = { has_character_flag = has_scripted_appearance }
+					}
+					set_culture = $NEW_CULTURE$
+				}
 				every_courtier = {
 					limit = {
 						culture = { has_cultural_pillar = $PILLAR$ }
+						NOT = { has_character_flag = has_scripted_appearance }
 					}
 					set_culture = $NEW_CULTURE$
 				}
 				every_ancestor = {
 					limit = {
 						culture = { has_cultural_pillar = $PILLAR$ }
+						NOT = { has_character_flag = has_scripted_appearance }
 					}
 					set_culture = $NEW_CULTURE$
 				}
@@ -196,16 +219,23 @@ change_culture_if_region_culture = {
 						geographical_region = $REGION$
 					}
 				}
-				set_culture = $NEW_CULTURE$
+				if = {
+					limit = { 
+						NOT = { has_character_flag = has_scripted_appearance }
+					}
+					set_culture = $NEW_CULTURE$
+				}
 				every_courtier = {
 					limit = {
 						culture = $OLD_CULTURE$
+						NOT = { has_character_flag = has_scripted_appearance }
 					}
 					set_culture = $NEW_CULTURE$
 				}
 				every_ancestor = {
 					limit = {
 						culture = $OLD_CULTURE$
+						NOT = { has_character_flag = has_scripted_appearance }
 					}
 					set_culture = $NEW_CULTURE$
 				}

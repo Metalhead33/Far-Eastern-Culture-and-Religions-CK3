@@ -1,0 +1,78 @@
+﻿############################
+# Turkish Divergant Cultures #
+############################
+aesthetics_azeri_turkish = {
+	is_shown = {
+		scope:character = {
+			faith = { religion_tag = islam_religion }
+			culture = {
+				has_cultural_pillar = language_turkic
+			}
+			any_sub_realm_county = {
+				any_this_title_or_de_jure_above = {
+					this = title:d_shirvan
+				}
+			}
+			NOT = {
+				culture = culture:azeri_turkish
+			}
+		}
+	}
+	
+	name_list = name_list_turkish
+
+	coa_gfx = { oghuz_coa_gfx turkic_group_coa_gfx steppe_coa_gfx }
+	building_gfx = { mena_building_gfx }
+	clothing_gfx = { mena_clothing_gfx }
+	unit_gfx = { mena_unit_gfx }
+}
+aesthetics_anatolian_turkish = {
+	is_shown = {
+		scope:character = {
+			faith = { religion_tag = islam_religion }
+			culture = {
+				has_cultural_pillar = language_turkic
+			}
+			any_sub_realm_county = {
+				any_this_title_or_de_jure_above = {
+					this = title:k_anatolia
+				}
+			}
+			NOT = {
+				culture = culture:anatolian_turkish
+			}
+		}
+	}
+	
+	name_list = name_list_turkish
+
+	coa_gfx = { oghuz_coa_gfx turkic_group_coa_gfx steppe_coa_gfx }
+	building_gfx = { mena_building_gfx }
+	clothing_gfx = { mena_clothing_gfx }
+	unit_gfx = { mena_unit_gfx }
+}
+aesthetics_hungarian = {
+	is_shown = {
+		scope:character = {
+			faith = { religion_tag = christianity_religion }
+			culture = {
+				has_cultural_pillar = language_ugric
+			}
+			any_sub_realm_county = {
+				any_this_title_or_de_jure_above = {
+					this = title:k_hungary
+				}
+			}
+			NOT = {
+				culture = culture:hungarian
+			}
+		}
+	}
+	
+	name_list = name_list_hungarian
+
+	coa_gfx = { magyar_group_coa_gfx ugro_permian_group_coa_gfx steppe_coa_gfx } 
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { western_clothing_gfx } 
+	unit_gfx = { eastern_unit_gfx }
+}
