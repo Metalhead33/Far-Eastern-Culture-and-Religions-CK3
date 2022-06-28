@@ -12,17 +12,11 @@ tradition_bushido = {
 	}
 	
 	is_shown = {
-		OR = {
-			has_cultural_pillar = heritage_japanese
-			any_in_list = { list = traits this = flag:tradition_weeaboo }
-		}
+		has_cultural_pillar = heritage_japanese
 	}
 	
 	can_pick = {
-		OR = {
-			has_cultural_pillar = heritage_japanese
-			any_in_list = { list = traits this = flag:tradition_weeaboo }
-		}
+		has_cultural_pillar = heritage_japanese
 	}
 	
 	parameters = {
