@@ -1,0 +1,153 @@
+﻿cat_preference = {
+	opposites = {
+		dog_preference
+		rodent_preference
+		bird_preference
+	}
+	compatibility = {
+		cat_preference = @pos_compat_low
+		dog_preference = @neg_compat_low
+		rodent_preference = @neg_compat_low
+		bird_preference = @neg_compat_low
+	}
+
+	stewardship = 1
+	stress_loss_mult = 0.05
+	same_opinion = 10
+	opposite_opinion = -5
+	inherit_chance = 20
+	birth = 5
+	culture_modifier = {
+		parameter = cat_preference_more_common
+		same_culture_opinion = 5
+	}
+	
+	ruler_designer_cost = 0
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_cat_preference_desc
+			}
+			desc = trait_cat_preference_character_desc
+		}
+	}
+}
+dog_preference = {
+	opposites = {
+		cat_preference
+		rodent_preference
+		bird_preference
+	}
+	compatibility = {
+		dog_preference = @pos_compat_low
+		cat_preference = @neg_compat_low
+		rodent_preference = @neg_compat_low
+		bird_preference = @neg_compat_low
+	}
+
+	prowess = 1
+	stress_loss_mult = 0.05
+	same_opinion = 10
+	opposite_opinion = -5
+	inherit_chance = 20
+	birth = 5
+	culture_modifier = {
+		parameter = dog_preference_more_common
+		same_culture_opinion = 5
+	}
+	
+	ruler_designer_cost = 0
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_dog_preference_desc
+			}
+			desc = trait_dog_preference_character_desc
+		}
+	}
+}
+bird_preference = {
+	opposites = {
+		cat_preference
+		rodent_preference
+		dog_preference
+	}
+	compatibility = {
+		bird_preference = @pos_compat_low
+		cat_preference = @neg_compat_low
+		rodent_preference = @neg_compat_low
+		dog_preference = @neg_compat_low
+	}
+
+	learning = 1
+	stress_loss_mult = 0.05
+	same_opinion = 10
+	opposite_opinion = -5
+	inherit_chance = 20
+	birth = 5
+	culture_modifier = {
+		parameter = bird_preference_more_common
+		same_culture_opinion = 5
+	}
+	
+	ruler_designer_cost = 0
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_bird_preference_desc
+			}
+			desc = trait_bird_preference_character_desc
+		}
+	}
+}
+rodent_preference = {
+	opposites = {
+		cat_preference
+		bird_preference
+		dog_preference
+	}
+	compatibility = {
+		rodent_preference = @pos_compat_low
+		cat_preference = @neg_compat_low
+		bird_preference = @neg_compat_low
+		dog_preference = @neg_compat_low
+	}
+
+	intrigue = 1
+	stress_loss_mult = 0.05
+	same_opinion = 20
+	opposite_opinion = -5
+	inherit_chance = 20
+	general_opinion = -10
+	birth = 5
+	culture_modifier = {
+		parameter = rodent_preference_more_common
+		same_culture_opinion = 10
+	}
+	
+	ruler_designer_cost = 0
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_rodent_preference_desc
+			}
+			desc = trait_rodent_preference_character_desc
+		}
+	}
+}

@@ -139,7 +139,7 @@ egyptian_copt = {
 	language = language_coptic
 	martial_custom = martial_custom_male_only
 	traditions = {
-		tradition_zealous_people
+		tradition_ailurophilia
 		tradition_agrarian
 		tradition_philosopher_culture
 		tradition_caravaneers

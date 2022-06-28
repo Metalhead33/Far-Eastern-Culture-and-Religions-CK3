@@ -10,6 +10,7 @@
 		tradition_desert_nomads
 		tradition_mubarizuns
 		tradition_caravaneers
+		tradition_ornithophilia
 	}
 	
 	name_list = name_list_bedouin
@@ -64,7 +65,7 @@ egyptian = {
 	traditions = {
 		tradition_philosopher_culture
 		tradition_agrarian
-		tradition_zealous_people
+		tradition_ailurophilia
 		tradition_mubarizuns
 	}
 	

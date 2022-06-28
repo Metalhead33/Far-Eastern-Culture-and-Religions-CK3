@@ -2420,6 +2420,200 @@
 			stress_loss_mult = 0.2
 		}
 	}
+	tenet_cat_worship = {
+		icon = core_tenet_cat
+
+		name = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						religion_tag = islam_religion
+					}
+					desc = tenet_cat_worship_muslim_name
+				}
+				triggered_desc = {
+					trigger = {
+						religion_tag = germanic_religion
+					}
+					desc = tenet_cat_worship_norse_name
+				}
+				desc = tenet_cat_worship_name
+			}
+		}
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						religion_tag = islam_religion
+					}
+					desc = tenet_cat_worship_muslim_desc
+				}
+				desc = tenet_cat_worship_desc
+			}
+		}
+		is_shown = {
+			NOR = {
+				flag:tenet_dog_worship = { is_in_list = selected_doctrines } 
+				flag:tenet_rodent_worship = { is_in_list = selected_doctrines } 
+				flag:tenet_bird_worship = { is_in_list = selected_doctrines } 
+			}
+		}
+		piety_cost = {
+			if = {
+				limit = {
+					OR = {
+						has_doctrine = pagan_hostility_doctrine
+						religion_tag = islam_religion
+					}
+				}
+				value = faith_tenet_cost_low
+			}
+			else = {
+				value = faith_tenet_cost_mid
+			}
+
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = tenet_cat_worship }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+
+		parameters = {
+			cat_preference_more_common = yes
+		}
+
+		traits = {
+			virtues = {
+				cat_preference
+			}
+		}
+	}
+	tenet_dog_worship = {
+		icon = core_tenet_dog
+
+		name = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						religion_tag = germanic_religion
+					}
+					desc = tenet_dog_worship_norse_name
+				}
+				desc = tenet_dog_worship_name
+			}
+		}
+		is_shown = {
+			NOR = {
+				flag:tenet_cat_worship = { is_in_list = selected_doctrines } 
+				flag:tenet_rodent_worship = { is_in_list = selected_doctrines } 
+				flag:tenet_bird_worship = { is_in_list = selected_doctrines } 
+			}
+		}
+		piety_cost = {
+			if = {
+				limit = {
+					has_doctrine = pagan_hostility_doctrine
+				}
+				value = faith_tenet_cost_low
+			}
+			else = {
+				value = faith_tenet_cost_mid
+			}
+
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = tenet_dog_worship }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+
+		parameters = {
+			dog_preference_more_common = yes
+		}
+
+		traits = {
+			virtues = {
+				dog_preference
+			}
+		}
+	}
+	tenet_rodent_worship = {
+		icon = core_tenet_rodent
+
+		is_shown = {
+			NOR = {
+				flag:tenet_cat_worship = { is_in_list = selected_doctrines } 
+				flag:tenet_dog_worship = { is_in_list = selected_doctrines } 
+				flag:tenet_bird_worship = { is_in_list = selected_doctrines } 
+			}
+		}
+		piety_cost = {
+			if = {
+				limit = {
+					has_doctrine = pagan_hostility_doctrine
+				}
+				value = faith_tenet_cost_low
+			}
+			else = {
+				value = faith_tenet_cost_mid
+			}
+
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = tenet_rodent_worship }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+
+		parameters = {
+			rodent_preference_more_common = yes
+		}
+
+		traits = {
+			virtues = {
+				rodent_preference
+			}
+		}
+	}
+	tenet_bird_worship = {
+		icon = core_tenet_bird
+
+		is_shown = {
+			NOR = {
+				flag:tenet_cat_worship = { is_in_list = selected_doctrines } 
+				flag:tenet_dog_worship = { is_in_list = selected_doctrines } 
+				flag:tenet_rodent_worship = { is_in_list = selected_doctrines } 
+			}
+		}
+		piety_cost = {
+			if = {
+				limit = {
+					has_doctrine = pagan_hostility_doctrine
+				}
+				value = faith_tenet_cost_low
+			}
+			else = {
+				value = faith_tenet_cost_mid
+			}
+
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = tenet_bird_worship }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+
+		parameters = {
+			bird_preference_more_common = yes
+		}
+
+		traits = {
+			virtues = {
+				bird_preference
+			}
+		}
+	}
 
 	#############################
 	# Empty Template Tenet 		#

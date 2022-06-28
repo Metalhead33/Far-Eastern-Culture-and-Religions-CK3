@@ -418,6 +418,7 @@ eastern_culture.0010 = {
 		}
 	}
 }
+# Seed with culture-specific traits
 eastern_culture.0011 = {
     type = character_event
 	hidden = yes
@@ -425,36 +426,86 @@ eastern_culture.0011 = {
     desc = eastern_culture.11.desc
 	theme = pregnancy
 	trigger = {
-		NOT = { has_character_flag = circassian_seeded }
-		NOT = { has_trait = beauty_good_3 }
-		culture = {
-			has_cultural_parameter = tradition_circassian_beauty
-		}
+		NOT = { has_character_flag = circassian_seeded 
 		is_alive = yes
 	}
     immediate = {
-		random = {
-			chance = 10
-			if = {
-				limit = { has_trait = beauty_good_2 }
-				add_trait = beauty_good_3
+		if = {
+			limit = {
+				NOT = { has_trait = beauty_good_3 }
+				culture = { has_cultural_parameter = beauty_trait_more_common }
 			}
-			else_if = {
-				limit = { has_trait = beauty_good_1 }
-				add_trait = beauty_good_2
-			}
-			else_if = {
-				limit = {
-					OR = {
-						has_trait = beauty_bad_1
-						has_trait = beauty_bad_2
-						has_trait = beauty_bad_3
-					}
+			random = {
+				chance = 10
+				if = {
+					limit = { has_trait = beauty_good_2 }
+					add_trait = beauty_good_3
 				}
-				add_trait = beauty_good_1
+				else_if = {
+					limit = { has_trait = beauty_good_1 }
+					add_trait = beauty_good_2
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_trait = beauty_bad_1
+							has_trait = beauty_bad_2
+							has_trait = beauty_bad_3
+						}
+					}
+					add_trait = beauty_good_1
+				}
+				else = {
+					add_trait = beauty_good_1
+				}
 			}
-			else = {
-				add_trait = beauty_good_1
+		}
+		if = {
+			limit = {
+				OR = {
+					culture = { has_cultural_parameter = cat_preference_more_common }
+					faith = { has_doctrine_parameter = cat_preference_more_common }
+				}
+			}
+			random = {
+				chance = 33
+				add_trait = cat_preference
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					culture = { has_cultural_parameter = dog_preference_more_common }
+					faith = { has_doctrine_parameter = dog_preference_more_common }
+				}
+			}
+			random = {
+				chance = 33
+				add_trait = dog_preference
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					culture = { has_cultural_parameter = bird_preference_more_common }
+					faith = { has_doctrine_parameter = bird_preference_more_common }
+				}
+			}
+			random = {
+				chance = 33
+				add_trait = bird_preference
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					culture = { has_cultural_parameter = rodent_preference_more_common }
+					faith = { has_doctrine_parameter = rodent_preference_more_common }
+				}
+			}
+			random = {
+				chance = 33
+				add_trait = rodent_preference
 			}
 		}
 		add_character_flag = circassian_seeded

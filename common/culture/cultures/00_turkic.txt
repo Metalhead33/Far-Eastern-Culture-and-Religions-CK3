@@ -36,7 +36,7 @@ anatolian_turkish = {		# Ottoman Turkish
 	language = language_turkic
 	martial_custom = martial_custom_male_only
 	traditions = {
-		tradition_zealous_people
+		tradition_ailurophilia
 		tradition_fervent_temple_builders
 		tradition_highland_warriors
 		tradition_hill_dwellers
