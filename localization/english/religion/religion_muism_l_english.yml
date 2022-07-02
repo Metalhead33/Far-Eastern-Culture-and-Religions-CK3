@@ -25,14 +25,14 @@
  muism_religious_symbol:0 "temple"
  
  muism:0 "Mugyo"
- muism_adj:0 "Muist"
- muism_adherent:0 "Muist"
- muism_adherent_plural:0 "Muists" 
+ muism_adj:0 "Mugyo"
+ muism_adherent:0 "Mugyo"
+ muism_adherent_plural:0 "Mugyo" 
  
  muism_old:0 "Gomugyo"
- muism_old_adj:0 "Gomuist"
- muism_old_adherent:0 "Gomuist"
- muism_old_adherent_plural:0 "Gomuists"
+ muism_old_adj:0 "Gomugyo"
+ muism_old_adherent:0 "Gomugyo"
+ muism_old_adherent_plural:0 "Gomugyo"
  
  korean_religion:1 "Korean"
  korean_religion_adj:1 "Korean"

@@ -1,5 +1,5 @@
 ﻿#### Local Types ####
-@samurai = "gfx/interface/icons/culture_innovations/innovation_bushido.dds"
+@terrace_farming = "gfx/interface/icons/culture_innovations/innovation_terrace_farming.dds"
 @rattan = "gfx/interface/icons/culture_innovations/innovation_rattan.dds"
 @hwacha = "gfx/interface/icons/culture_innovations/innovation_hwacha.dds"
 

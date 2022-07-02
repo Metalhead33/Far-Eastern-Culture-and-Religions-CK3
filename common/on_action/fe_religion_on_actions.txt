@@ -18,6 +18,7 @@ on_game_start = {
 		change_orthodox_to_pravoslav
 		change_egyptian_to_coptic
 		change_coptic_to_tewahedo
+		change_andalusian_to_mozarabic
 		split_up_italians
 		spawn_arpitan
 		spawn_frisian
@@ -133,7 +134,15 @@ split_up_italians = {
 		}
 	}
 }
-
+change_andalusian_to_mozarabic = {
+	effect = {
+		change_culture_if_religion = {
+			FAITH = faith:mozarabic_church
+			OLD_CULTURE = culture:andalusian
+			NEW_CULTURE = culture:mozarabic
+		}
+	}
+}
 change_egyptian_to_coptic = {
 	effect = {
 		change_culture_if_religion = {

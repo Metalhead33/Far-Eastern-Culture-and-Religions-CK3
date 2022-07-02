@@ -45,19 +45,6 @@ tradition_bushido = {
 			}
 			if = {
 				limit = {
-					NOR = {
-						any_in_list = { list = traits this = flag:ethos_bellicose }
-						any_in_list = { list = traits this = flag:ethos_egalitarian }
-						any_in_list = { list = traits this = flag:ethos_courtly }
-					}
-				}
-				add = {
-					value = tradition_incompatible_ethos_penalty
-					desc = not_bellicose_egalitarian_or_courtly_desc
-				}
-			}
-			if = {
-				limit = {
 					NOT = {
 						scope:character = {
 							any_knight = {
@@ -92,20 +79,38 @@ tradition_sauna = {
 	
 	is_shown = {
 		OR = {
-		has_cultural_pillar = heritage_baltic
-		has_cultural_pillar = heritage_east_slavic
-		has_cultural_pillar = heritage_balto_finnic
-		has_cultural_pillar = heritage_ugro_permian
-		has_cultural_pillar = heritage_volga_finnic
+			any_in_list = { list = traits this = flag:heritage_baltic }
+			any_in_list = { list = traits this = flag:heritage_east_slavic }
+			any_in_list = { list = traits this = flag:heritage_balto_finnic }
+			any_in_list = { list = traits this = flag:heritage_ugro_permian } 
+			any_in_list = { list = traits this = flag:heritage_volga_finnic }
+			any_parent_culture_or_above = {
+				OR = {
+				has_cultural_pillar = heritage_baltic
+				has_cultural_pillar = heritage_east_slavic
+				has_cultural_pillar = heritage_balto_finnic
+				has_cultural_pillar = heritage_ugro_permian
+				has_cultural_pillar = heritage_volga_finnic
+				}
+			}
 		}
 	}
 	can_pick = {
 		OR = {
-		has_cultural_pillar = heritage_baltic
-		has_cultural_pillar = heritage_east_slavic
-		has_cultural_pillar = heritage_balto_finnic
-		has_cultural_pillar = heritage_ugro_permian
-		has_cultural_pillar = heritage_volga_finnic
+			any_in_list = { list = traits this = flag:heritage_baltic }
+			any_in_list = { list = traits this = flag:heritage_east_slavic }
+			any_in_list = { list = traits this = flag:heritage_balto_finnic }
+			any_in_list = { list = traits this = flag:heritage_ugro_permian } 
+			any_in_list = { list = traits this = flag:heritage_volga_finnic }
+			any_parent_culture_or_above = {
+				OR = {
+				has_cultural_pillar = heritage_baltic
+				has_cultural_pillar = heritage_east_slavic
+				has_cultural_pillar = heritage_balto_finnic
+				has_cultural_pillar = heritage_ugro_permian
+				has_cultural_pillar = heritage_volga_finnic
+				}
+			}
 		}
 	}
 	parameters = {
@@ -114,6 +119,7 @@ tradition_sauna = {
 	}
 	character_modifier = {
 		fertility = 0.1
+		health = 0.5
 	}	
 	cost = {
 		prestige = {
@@ -121,25 +127,10 @@ tradition_sauna = {
 				value = tradition_base_cost
 				desc = BASE
 				format = "BASE_VALUE_FORMAT"
-			}
-			if = {
-				limit = {
-					NOR = {
-						any_in_list = { list = traits this = flag:ethos_communal }
-						any_in_list = { list = traits this = flag:ethos_egalitarian }
-						any_in_list = { list = traits this = flag:ethos_courtly }
-					}
-				}
-				add = {
-					value = tradition_incompatible_ethos_penalty
-					desc = not_bellicose_egalitarian_or_courtly_desc
-				}
-			}
-			
+			}			
 			multiply = tradition_replacement_cost_if_relevant
 		}
 	}
-	
 	ai_will_do = {
 		value = 100
 	}
@@ -359,5 +350,597 @@ tradition_suriphilia = {
 	
 	ai_will_do = {
 		value = 100
+	}
+}
+
+tradition_cultural_supremacism = {
+	category = realm
+
+	layers = {
+		0 = steward
+		1 = mena
+		4 = cultural_supremacism.dds
+	}
+	
+	can_pick = {
+		NOR = {
+			any_in_list = { list = traits this = flag:tradition_astute_diplomats }
+			any_in_list = { list = traits this = flag:tradition_steppe_tolerance }
+			any_in_list = { list = traits this = flag:tradition_staunch_traditionalists }
+			any_in_list = { list = traits this = flag:tradition_xenophilic }
+			any_in_list = { list = traits this = flag:tradition_malleable_invaders }
+			any_in_list = { list = traits this = flag:tradition_ruling_caste }
+		}
+	}
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -0.25
+	}
+	character_modifier = {
+		different_culture_opinion = -10
+		learn_language_scheme_power_mult = -0.25
+		monthly_prestige = 0.3
+		ai_war_chance = 0.5
+		ai_war_cooldown = -5
+	}
+	parameters = {
+		minus_language_cap = yes
+		expensive_convert_to_local_culture = yes
+		easier_conversion_of_other_cultures = yes
+		peasant_and_populist_factions_more_common = yes
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:heritage_east_slavic }
+						any_in_list = { list = traits this = flag:heritage_iranian }
+						any_in_list = { list = traits this = flag:heritage_chinese }
+						any_in_list = { list = traits this = flag:heritage_japanese }
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = russian_iranian_chinese_japanese_desc
+				}
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 100
+	}
+}
+
+tradition_tamers_of_the_steppe = {
+	category = regional
+
+	layers = {
+		0 = martial
+		1 = mena
+		4 = tamers_of_the_steppe.dds
+	}
+		
+	can_pick = {
+		NOR = {
+			any_in_list = { list = traits this = flag:tradition_steppe_tolerance }
+			any_in_list = { list = traits this = flag:tradition_malleable_invaders }
+			any_in_list = { list = traits this = flag:tradition_horse_lords }
+			any_in_list = { list = traits this = flag:heritage_turkic }
+			any_in_list = { list = traits this = flag:heritage_mongolic }
+		}
+		custom_tooltip = {
+			text = culture_in_steppe_terrain_10_desc
+			any_culture_county = {
+				percent >= 0.1
+				any_county_province = {
+					OR = {
+						terrain = steppe
+						geographical_region = world_steppe
+					}
+				}
+			}
+		}
+	}
+	
+	parameters = {
+		unlock_maa_cossack = yes
+		can_recruit_open_specialist = yes
+		can_use_sparring_duel = yes
+	}
+	character_modifier = {
+		light_cavalry_maintenance_mult = -0.15
+		light_cavalry_recruitment_cost_mult = -0.15
+		world_steppe_development_growth_factor = 0.25 #Make the steppe suck less
+		steppe_development_growth_factor = 0.15 #Make steppe terrain suck even more lesserer
+		movement_speed = 0.1
+		steppe_attrition_mult = -0.25
+		steppe_advantage = 0.10
+	}
+	province_modifier = {
+		steppe_construction_gold_cost = -0.25
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						this = culture:russian
+						this = culture:polish
+						any_parent_culture_or_above = {
+							OR = {
+								this = culture:russian
+								this = culture:polish
+							}
+						}
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = russian_or_polish_desc
+				}
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 100
+	}
+}
+
+tradition_alabama = {
+	category = societal
+	layers = {
+		0 = diplo
+		1 = mena
+		4 = alabama.dds
+	}
+	
+	character_modifier = {
+		close_relative_opinion = 10
+		dynasty_opinion = 5
+		dynasty_house_opinion = 5
+	}
+	parameters = {
+		allows_unrestricted_marriage = yes
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 5
+	}
+}
+
+tradition_sexual_revolution = {
+	category = societal
+	layers = {
+		0 = diplo
+		1 = indian
+		4 = sexual_revolution.dds
+	}
+	character_modifier = {
+		fertility = 0.1
+		seduce_scheme_power_add = 5
+		elope_scheme_resistance_add = 15
+		same_culture_opinion = 10
+		same_faith_opinion = -10
+		clergy_opinion = -10
+	}
+	parameters = {
+		reduced_opinion_penalty_from_cuckolding = yes
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 5
+	}
+}
+
+tradition_shadow_court = {
+	category = societal
+	layers = {
+		0 = intrigue
+		1 = western
+		4 = shadow_court.dds
+	}
+	
+	character_modifier = {
+		intrigue = 1
+		monthly_piety_gain_mult = -0.3
+		same_culture_opinion = 5
+		same_faith_opinion = -5
+		hostile_scheme_power_add = 10
+		hostile_scheme_resistance_add = 10
+	}
+	parameters = {
+		can_kill_own_children = yes
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	ai_will_do = {
+		value = 25
+	}
+}
+
+tradition_tyrants = {
+	category = realm
+	layers = {
+		0 = martial
+		1 = indian
+		4 = tyrants.dds
+	}
+	can_pick = {
+		NOR = {
+			any_in_list = { list = traits this = flag:tradition_chivalry }
+			any_in_list = { list = traits this = flag:tradition_legalistic }
+			any_in_list = { list = traits this = flag:tradition_republican_legacy }
+		}
+	}
+	character_modifier = {
+		prowess = -2
+		diplomacy = -2
+		tyranny_gain_mult = -0.5
+		tyranny_loss_mult = 0.5
+		monthly_prestige_gain_per_dread_mult = 0.01
+		dread_per_tyranny_mult = 0.25
+		dread_decay_mult = -0.25
+	}
+	parameters = {
+		vassals_more_likely_accept_punishments = yes
+		cheaper_to_change_laws = yes
+	}
+
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:heritage_east_slavic }
+						any_in_list = { list = traits this = flag:heritage_mongolic }
+						any_in_list = { list = traits this = flag:heritage_chinese }
+						any_in_list = { list = traits this = flag:heritage_japanese }
+						any_in_list = { list = traits this = flag:heritage_korean }
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = russian_mongolic_chinese_japanese_korean_desc
+				}
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	ai_will_do = { 
+		value = 100
+		if = {
+			limit = {
+				scope:character.dread < 25
+			}
+			multiply = 0.5
+		}
+		if = {
+			limit = {
+				scope:character.tyranny < 25
+			}
+			multiply = 0.5
+		}
+	}
+}
+
+tradition_bad_architecture = {
+	category = realm
+
+	layers = {
+		0 = steward
+		1 = mena
+		4 = bad_architecture.dds
+	}
+	
+	character_modifier = {
+		development_growth_factor = -0.2
+		build_gold_cost = -0.2
+		build_speed = 0.25
+	}	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	ai_will_do = {
+		value = 25
+	}
+}
+
+tradition_good_hygiene = {
+	category = societal
+
+	layers = {
+		0 = diplo
+		1 = western
+		4 = good_hygiene.dds
+	}
+	
+	can_pick = {
+		NOR = {
+			any_in_list = { list = traits this = flag:tradition_sauna }
+		}
+	}
+	character_modifier = {
+		health = 0.5
+		negate_health_penalty_add = 0.5
+		attraction_opinion = 5
+	}	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	ai_will_do = {
+		value = 25
+	}
+}
+
+tradition_eugenics = {
+	category = societal
+	layers = {
+		0 = intrigue
+		1 = western
+		4 = shadow_court.dds
+	}
+	
+	character_modifier = {
+		health = 1
+		fertility = -0.25
+		years_of_fertility = 10
+		life_expectancy = 10
+		build_gold_cost = 0.1
+		levy_reinforcement_rate = -0.1
+		levy_size = -0.1
+	}
+	county_modifier = {
+		development_growth_factor = -0.1
+	}
+	parameters = {
+		can_castrate_prisoners = yes
+		bad_congenital_traits_shunned = yes
+		good_congenital_traits_exalted = yes
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	ai_will_do = {
+		value = 25
+	}
+}
+
+#tradition_arcane_fascination = {
+	# witch (and mystic?) trait grants more bonuses
+	# can recruit witch
+	# can ask witch to train you 
+	# some plain bonus: more popular opinion?, more learning per something?, more disease resistance? something else?
+#}
+
+tradition_veche = {
+	category = regional
+
+	layers = {
+		0 = diplo
+		1 = western
+		4 = veche.dds
+	}
+	
+	is_shown = {
+		OR = {
+			any_in_list = { list = traits this = flag:heritage_east_slavic }
+			any_in_list = { list = traits this = flag:heritage_west_slavic }
+		}
+	}
+	can_pick = {
+		OR = {
+			any_in_list = { list = traits this = flag:heritage_east_slavic }
+			any_in_list = { list = traits this = flag:heritage_west_slavic }
+		}
+	}
+	parameters = {
+		allows_veche_election = yes
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 75
+	}
+}
+
+tradition_agroforestery = {
+	category = regional
+
+	layers = {
+		0 = steward
+		1 = indian
+		4 = agroforestery.dds
+	}
+	
+	is_shown = {
+		OR = {
+			any_in_list = { list = traits this = flag:heritage_dravidian }
+			any_in_list = { list = traits this = flag:heritage_burman }
+			any_in_list = { list = traits this = flag:heritage_vietnamese }
+			any_in_list = { list = traits this = flag:heritage_tai }
+			any_in_list = { list = traits this = flag:heritage_khmer }
+		}
+	}
+	can_pick = {
+		NOT = { any_in_list = { list = traits this = flag:tradition_terrace_farming } }
+		OR = {
+			any_in_list = { list = traits this = flag:heritage_dravidian }
+			any_in_list = { list = traits this = flag:heritage_burman }
+			any_in_list = { list = traits this = flag:heritage_vietnamese }
+			any_in_list = { list = traits this = flag:heritage_tai }
+			any_in_list = { list = traits this = flag:heritage_khmer }
+		}
+	}
+	county_modifier = {
+		floodplains_development_growth_factor = 0.3
+		floodplains_construction_gold_cost = -0.2
+		floodplains_levy_size = 0.1
+		forest_development_growth_factor = 0.3
+		forest_construction_gold_cost = -0.2
+		forest_levy_size = 0.1
+		jungle_development_growth_factor = 0.3
+		jungle_construction_gold_cost = -0.2
+		jungle_levy_size = 0.1
+	}
+	parameters = {
+		orchard_extra_advantages = yes
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 75
+	}
+}
+tradition_terrace_farming = {
+	category = regional
+
+	layers = {
+		0 = steward
+		1 = indian
+		4 = terrace_farming.dds
+	}
+	
+	is_shown = {
+		NOR = {
+			any_in_list = { list = traits this = flag:heritage_balto_finnic }
+			any_in_list = { list = traits this = flag:heritage_brythonic }
+			any_in_list = { list = traits this = flag:heritage_frankish }
+			any_in_list = { list = traits this = flag:heritage_goidelic }
+			any_in_list = { list = traits this = flag:heritage_magyar }
+			any_in_list = { list = traits this = flag:heritage_west_slavic }
+			any_in_list = { list = traits this = flag:heritage_east_slavic }
+			any_in_list = { list = traits this = flag:heritage_south_slavic }
+			any_in_list = { list = traits this = flag:heritage_north_germanic }
+			any_in_list = { list = traits this = flag:heritage_west_germanic }
+			any_in_list = { list = traits this = flag:heritage_central_germanic }
+		}
+	}
+	can_pick = {
+		NOT = { any_in_list = { list = traits this = flag:tradition_agroforestery } }
+		NOR = {
+			any_in_list = { list = traits this = flag:heritage_balto_finnic }
+			any_in_list = { list = traits this = flag:heritage_brythonic }
+			any_in_list = { list = traits this = flag:heritage_frankish }
+			any_in_list = { list = traits this = flag:heritage_goidelic }
+			any_in_list = { list = traits this = flag:heritage_magyar }
+			any_in_list = { list = traits this = flag:heritage_west_slavic }
+			any_in_list = { list = traits this = flag:heritage_east_slavic }
+			any_in_list = { list = traits this = flag:heritage_south_slavic }
+			any_in_list = { list = traits this = flag:heritage_north_germanic }
+			any_in_list = { list = traits this = flag:heritage_west_germanic }
+			any_in_list = { list = traits this = flag:heritage_central_germanic }
+		}
+	}
+	county_modifier = {
+		hills_development_growth_factor = 0.3
+		hills_construction_gold_cost = -0.2
+		hills_levy_size = 0.1
+		mountains_development_growth_factor = 0.3
+		mountains_construction_gold_cost = -0.2
+		mountains_levy_size = 0.1
+	}
+	parameters = {
+		terrace_farming = yes
+		hill_farms_building_bonuses = yes
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 75
 	}
 }

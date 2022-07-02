@@ -26,13 +26,13 @@
  
  shinto:0 "Shintō"
  shinto_adj:0 "Shintō"
- shinto_adherent:0 "Shintoist"
- shinto_adherent_plural:0 "Shintoists" 
+ shinto_adherent:0 "Shintō"
+ shinto_adherent_plural:0 "Shintō" 
  
  shinto_old:0 "Ko-Shintō"
  shinto_old_adj:0 "Ko-Shintō"
- shinto_old_adherent:0 "Koshintoist"
- shinto_old_adherent_plural:0 "Koshintoists"
+ shinto_old_adherent:0 "Ko-Shintō"
+ shinto_old_adherent_plural:0 "Ko-Shintō"
  
  japanese_religion:1 "Japanese"
  japanese_religion_adj:1 "Japanese"

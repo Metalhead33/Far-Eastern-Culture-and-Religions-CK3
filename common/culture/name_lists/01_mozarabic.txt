@@ -1,0 +1,137 @@
+name_list_mozarabic = {
+	cadet_dynasty_names = {
+		"dynn_Mutamin"
+		"dynn_Huddid"
+		"dynn_Matiyid"
+		"dynn_Tahirid"
+		"dynn_Razinid"
+		"dynn_Hakamid"
+		"dynn_Wazirid"
+		"dynn_Ismailid"
+		"dynn_Farayid"
+		"dynn_Abu-Ya_farid"
+		"dynn_Mardanisid"
+		"dynn_Mursiyid"
+		{ "dynnp_banu" "dynn_FA_tima" }
+		"dynn_Laridid"
+		"dynn_Ishbiliyid"
+		"dynn_Qunkid"
+		"dynn_Balansiyyid"
+		"dynn_Maymunid"
+		"dynn_Adhavid"
+		"dynn_Hassunid"
+		"dynn_Gharnatid"
+		"dynn_Hishamid"
+		"dynn_Mahfuzid"
+		"dynn_Ahlidid"
+		"dynn_Zannunid"
+		"dynn_Mahdid"
+		"dynn_Sa_did"
+		"dynn_Wadalqavirid"
+		"dynn_Qadirid"
+		"dynn_Hamdinid"
+		"dynn_Yakubid"
+		"dynn_Yassin"
+		"dynn_Aminid"
+		"dynn_Ismailid"
+		"dynn_Nasrid"
+		"dynn_Muzaffar"
+		"dynn_Bajjah"
+		"dynn_Zuhr"
+		{ "dynnp_al-" "dynn_Baitar" }
+		{ "dynnp_al-" "dynn_Khatib" }
+		"dynn_Rushd"
+		"dynn_Hafsid"
+	}
+	dynasty_names = {
+
+		"dynn_Mutamin"
+		"dynn_Huddid"
+		"dynn_Matiyid"
+		"dynn_Tahirid"
+		"dynn_Razinid"
+		"dynn_Hakamid"
+		"dynn_Wazirid"
+		"dynn_Ismailid"
+		"dynn_Farayid"
+		"dynn_Abu-Ya_farid"
+		"dynn_Mardanisid"
+		"dynn_Mursiyid"
+		{ "dynnp_banu" "dynn_FA_tima" }
+		"dynn_Laridid"
+		"dynn_Ishbiliyid"
+		"dynn_Qunkid"
+		"dynn_Balansiyyid"
+		"dynn_Maymunid"
+		"dynn_Adhavid"
+		"dynn_Hassunid"
+		"dynn_Gharnatid"
+		"dynn_Hishamid"
+		"dynn_Mahfuzid"
+		"dynn_Ahlidid"
+		"dynn_Zannunid"
+		"dynn_Mahdid"
+		"dynn_Sa_did"
+		"dynn_Wadalqavirid"
+		"dynn_Qadirid"
+		"dynn_Hamdinid"
+		"dynn_Yakubid"
+		"dynn_Yassin"
+		"dynn_Aminid"
+		"dynn_Ismailid"
+		"dynn_Nasrid"
+		"dynn_Muzaffar"
+		"dynn_Bajjah"
+		"dynn_Zuhr"
+		{ "dynnp_al-" "dynn_Baitar" }
+		{ "dynnp_al-" "dynn_Khatib" }
+		"dynn_Rushd"
+		"dynn_Hafsid"
+	}
+
+	male_names = {
+		Aban Abbad Abbas Abdala Abu Adfuns Adi Affan Afla Amad Ajannas Ala Ali Amir Asas Asbat Ashab Asim Aslam Atarid Atiya Atrad Ayshun Ayash Ayub Baram Bakr Balashk Balj Baqi Bashir Bilal Dimam Darras Dulaf Fadl Faraj Farkad Fas Fulay Galib Galind Ganim Garsiya Gazi Fabib Fakam Famda Famdin Famid Famza Faway Fayan Fazm Filal Fiyaz Fizam Fubab Faris Fatim Faykal Fisham Ibraim Idris Imran Isa Ismail Iyad Jafaf Jafar Jalama Jalil Jami Jarir Jattab Jayr Jayrun Jidr Jubayr Juda Jumafir Juzay 
+		Jyad Kasir Kaysan Kulayb Lubb Mabub Majluf Malik Man Mansur Marwan Maymun Mirdas Muawiya Mubashir Mudrik Mufarij Mufallab Mundir Musa Musab Mutarrif Muyafid Nadar Nasir Nizar Nusayr Karus Kasim Katan Kays Raf Rashid Rasik Razin Sad Sadan Safwan Sajr Salmun Sanyo Saqi Sarur Shabtun Shajara Siddray Siraj Sufyan Suleyman Tafir Talfa Tamim Tammam Tarik Taytal Tayib Tawd Tifilwit Tuways Ubada Ubayd Ubaydun Ulaym  
+		Umar Umayya Urayb Utman Wadi Wafb Walid Wannaqu Wasim Wasima Wazir Yafar Yafaf Yafya Yaish Yasin Yaskar Yasid Yujamir Yusr Yusuf Zaban Zafir Zakariya Zarb Ziyad Zufayr Zur Zurar 
+		
+		Alfunshu Alunshu Alwar Alwaru Andrash Anshur Antuninu Ariash Banitu Baranqal
+		Barmudu Barnardu Diaqu Duminqu Anrika Ashtaban Fadrika Falipa Farnan Farnandu
+		Fruala Qarjia Qarardu Jil Qumaz Qunzalu Qillan Qillarmo Qutiarra Farmanajildu
+		Yaime Yimeno Yuan Lain Lupa Luranzu Luish Manrika Manual Martin
+		Manandu Muniu Nunnu Urdunnu Uzuriu Uweku Badru Balayu Baru Bunja
+		Raimundu Ramiru Ramun Rudriqu Shalwadur Shanju Shabasian Shimun Shuaru Tallu
+		Taobaldu Wala Walashko Wallidu
+	}
+	female_names = {
+		Abda Afu Aiza Aisha Afiya Aliya Amina Amira Arwa Asma Asmuna Asmuniya Atika Awriya Aylu Ayshuna Aziza Baraka Bazia Butayna Dana Daniya Suna Dima Fara Fariya Fatima Faynan Gamila Ganiya Kada Gislan Fabiba Fadija Fakima Falawa Famda Famida Fassana Fawa Fayal Fayzuran Find Fuda Ibtisam Idlal Iftizaz Ishush Isra Jalida Jawra Kanza Karima Kera Kadija Kinda Layla Lisa
+		Mafa Mafabba Majuna Makkiya Malika Mariam Masabi Mashuk Maymuna Maya Muamarra Muja Munya Muzafima Muzna Nadia Naila Najat Najma Nazhun Nuayma Nur Nuwayra Nuja Kasmuna Kusayma Rafiqa Rafat Raisa Randa Rasis Ray Rayfana Rufayma Ruqaya Sada Saduna Safiya Sakan Salma Samra Shakira Shawab Suad Sukayna Suraya Tafira Tar Tataz Tarifa Tarub Sashim Umayna Umm Urraka Usayma Utayqa Wafida Wallada 
+		Yasmin Zafida Zara
+		
+		Aldunza Alduara Alijia Anderkina Andrequtu Araqunta Arqilu Batriz Banita Baranquala
+		Blanka Briqida Katalina Kunshtanja Krishtina Duanna Dulje Alwira Armanqarda Armashinda
+		Aslunja Ashtefanya Awlalya Awa Aylu Flamula Frunilda Qudina Qutu Qutruda
+		Qina Qiyomar Qusyo Inash Izabel Yimena Yuana Launur Mafalda Marqarita
+		Maria Marina Markaza Mayor Menja Milia Munya Munyadona Unaka Shanja
+		Shul Taraza Tuda Urraka Walashkita Wyulanta Wishklawara
+	}
+	dynasty_of_location_prefix = "dynnp_mn"
+
+	patronym_prefix_male = "dynnpat_pre_ibn"
+	patronym_prefix_female = "dynnpat_pre_bint"
+	
+	founder_named_dynasties = yes
+
+	pat_grf_name_chance = 60
+	mat_grf_name_chance = 20
+	father_name_chance = 10
+	
+	pat_grm_name_chance = 40
+	mat_grm_name_chance = 20
+	mother_name_chance = 30
+	
+	mercenary_names = {
+		{ name = "mercenary_company_almogavars_andalusian_1" }
+		{ name = "mercenary_company_mawali_band" }
+		{ name = "mercenary_company_andalusian_treasurers_1" }
+	}
+}
