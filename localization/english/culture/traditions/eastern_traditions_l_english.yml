@@ -2,6 +2,9 @@
  # Traditions
  tradition_bushido_name:0 "Bushidō"
  tradition_bushido_desc:1 "Bushidō - Japanese for \"Way of the Warrior\" - was the set of codes of honour and ideals originating in Confucian, Zen Buddhist and Shinto teachings, that dictated the samurai way of life, loosely analogous to the European concept of chivalry."
+ culture_parameter_unlock_maa_samurai:0 "Can recruit [GetMaA('samurai').GetName] as [men_at_arms|E]"
+ culture_parameter_unlock_maa_cossack:0 "Can recruit [GetMaA('cossack').GetName] as [men_at_arms|E]"
+ culture_parameter_allows_veche_election:0 "Can enact the #high $tradition_veche_name$#! [succession_law|E]"
  tradition_sauna_name:0 "Sauna"
  tradition_sauna_desc:1 "It is of high importance to cleanse our bodies of all the intoxicants in steaming heat, so that we may rejoin the world cleansed."
  culture_parameter_safer_childbirths_active:0 "$doctrine_parameter_safer_childbirths_active$"

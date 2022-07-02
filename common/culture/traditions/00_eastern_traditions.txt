@@ -682,7 +682,7 @@ tradition_bad_architecture = {
 	character_modifier = {
 		development_growth_factor = -0.2
 		build_gold_cost = -0.2
-		build_speed = 0.25
+		build_speed = -0.25
 	}	
 	cost = {
 		prestige = {
@@ -738,7 +738,7 @@ tradition_eugenics = {
 	layers = {
 		0 = intrigue
 		1 = western
-		4 = shadow_court.dds
+		4 = eugenics.dds
 	}
 	
 	character_modifier = {
