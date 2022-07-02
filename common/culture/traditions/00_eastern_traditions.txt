@@ -831,21 +831,21 @@ tradition_agroforestery = {
 	
 	is_shown = {
 		OR = {
-			any_in_list = { list = traits this = flag:heritage_dravidian }
-			any_in_list = { list = traits this = flag:heritage_burman }
-			any_in_list = { list = traits this = flag:heritage_vietnamese }
-			any_in_list = { list = traits this = flag:heritage_tai }
-			any_in_list = { list = traits this = flag:heritage_khmer }
+			has_cultural_pillar = heritage_dravidian
+			has_cultural_pillar = heritage_burman
+			has_cultural_pillar = heritage_vietnamese
+			has_cultural_pillar = heritage_tai
+			has_cultural_pillar = heritage_khmer
 		}
 	}
 	can_pick = {
 		NOT = { any_in_list = { list = traits this = flag:tradition_terrace_farming } }
 		OR = {
-			any_in_list = { list = traits this = flag:heritage_dravidian }
-			any_in_list = { list = traits this = flag:heritage_burman }
-			any_in_list = { list = traits this = flag:heritage_vietnamese }
-			any_in_list = { list = traits this = flag:heritage_tai }
-			any_in_list = { list = traits this = flag:heritage_khmer }
+			has_cultural_pillar = heritage_dravidian
+			has_cultural_pillar = heritage_burman
+			has_cultural_pillar = heritage_vietnamese
+			has_cultural_pillar = heritage_tai
+			has_cultural_pillar = heritage_khmer
 		}
 	}
 	county_modifier = {
@@ -888,33 +888,33 @@ tradition_terrace_farming = {
 	
 	is_shown = {
 		NOR = {
-			any_in_list = { list = traits this = flag:heritage_balto_finnic }
-			any_in_list = { list = traits this = flag:heritage_brythonic }
-			any_in_list = { list = traits this = flag:heritage_frankish }
-			any_in_list = { list = traits this = flag:heritage_goidelic }
-			any_in_list = { list = traits this = flag:heritage_magyar }
-			any_in_list = { list = traits this = flag:heritage_west_slavic }
-			any_in_list = { list = traits this = flag:heritage_east_slavic }
-			any_in_list = { list = traits this = flag:heritage_south_slavic }
-			any_in_list = { list = traits this = flag:heritage_north_germanic }
-			any_in_list = { list = traits this = flag:heritage_west_germanic }
-			any_in_list = { list = traits this = flag:heritage_central_germanic }
+			has_cultural_pillar = heritage_balto_finnic
+			has_cultural_pillar = heritage_brythonic
+			has_cultural_pillar = heritage_frankish
+			has_cultural_pillar = heritage_goidelic
+			has_cultural_pillar = heritage_magyar
+			has_cultural_pillar = heritage_west_slavic
+			has_cultural_pillar = heritage_east_slavic
+			has_cultural_pillar = heritage_south_slavic
+			has_cultural_pillar = heritage_north_germanic
+			has_cultural_pillar = heritage_west_germanic
+			has_cultural_pillar = heritage_central_germanic
 		}
 	}
 	can_pick = {
 		NOT = { any_in_list = { list = traits this = flag:tradition_agroforestery } }
 		NOR = {
-			any_in_list = { list = traits this = flag:heritage_balto_finnic }
-			any_in_list = { list = traits this = flag:heritage_brythonic }
-			any_in_list = { list = traits this = flag:heritage_frankish }
-			any_in_list = { list = traits this = flag:heritage_goidelic }
-			any_in_list = { list = traits this = flag:heritage_magyar }
-			any_in_list = { list = traits this = flag:heritage_west_slavic }
-			any_in_list = { list = traits this = flag:heritage_east_slavic }
-			any_in_list = { list = traits this = flag:heritage_south_slavic }
-			any_in_list = { list = traits this = flag:heritage_north_germanic }
-			any_in_list = { list = traits this = flag:heritage_west_germanic }
-			any_in_list = { list = traits this = flag:heritage_central_germanic }
+			has_cultural_pillar = heritage_balto_finnic
+			has_cultural_pillar = heritage_brythonic
+			has_cultural_pillar = heritage_frankish
+			has_cultural_pillar = heritage_goidelic
+			has_cultural_pillar = heritage_magyar
+			has_cultural_pillar = heritage_west_slavic
+			has_cultural_pillar = heritage_east_slavic
+			has_cultural_pillar = heritage_south_slavic
+			has_cultural_pillar = heritage_north_germanic
+			has_cultural_pillar = heritage_west_germanic
+			has_cultural_pillar = heritage_central_germanic
 		}
 	}
 	county_modifier = {
