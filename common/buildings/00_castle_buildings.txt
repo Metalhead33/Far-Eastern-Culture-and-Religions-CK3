@@ -237,11 +237,21 @@ castle_01 = {
 		parameter = castle_fortifications_increase
 		defender_holding_advantage = 5
 	}
+	province_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		fort_level = 1
+		garrison_size = 0.05
+		defender_holding_advantage = 2
+	}
 
 	character_culture_modifier = {
 		parameter = castle_grant_prestige
 		monthly_prestige = 0.1
 		monthly_dynasty_prestige = 0.1
+	}
+	character_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		monthly_piety = 0.1
 	}
 
 	province_terrain_modifier = {
@@ -513,11 +523,21 @@ castle_02 = {
 		parameter = castle_fortifications_increase
 		defender_holding_advantage = 10
 	}
+	province_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		fort_level = 2
+		garrison_size = 0.1
+		defender_holding_advantage = 4
+	}
 
 	character_culture_modifier = {
 		parameter = castle_grant_prestige
 		monthly_prestige = 0.1
 		monthly_dynasty_prestige = 0.1
+	}
+	character_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		monthly_piety = 0.1
 	}
 
 	province_terrain_modifier = {
@@ -782,11 +802,21 @@ asset = {
 		parameter = castle_fortifications_increase
 		defender_holding_advantage = 15
 	}
+	province_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		fort_level = 3
+		garrison_size = 0.15
+		defender_holding_advantage = 6
+	}
 
 	character_culture_modifier = {
 		parameter = castle_grant_prestige
 		monthly_prestige = 0.2
 		monthly_dynasty_prestige = 0.1
+	}
+	character_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		monthly_piety = 0.2
 	}
 
 	province_terrain_modifier = {
@@ -1052,11 +1082,21 @@ castle_04 = {
 		parameter = castle_fortifications_increase
 		defender_holding_advantage = 20
 	}
+	province_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		fort_level = 4
+		garrison_size = 0.2
+		defender_holding_advantage = 8
+	}
 
 	character_culture_modifier = {
 		parameter = castle_grant_prestige
 		monthly_prestige = 0.2
 		monthly_dynasty_prestige = 0.1
+	}
+	character_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		monthly_piety = 0.2
 	}
 
 	province_terrain_modifier = {

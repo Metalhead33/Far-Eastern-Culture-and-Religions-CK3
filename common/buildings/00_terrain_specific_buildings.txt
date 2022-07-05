@@ -7641,6 +7641,16 @@ hill_forts_01 = {
 		defender_holding_advantage = normal_building_advantage_tier_1
 		fort_level = good_building_fort_level_tier_1
 	}
+	province_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		fort_level = 1
+		garrison_size = 0.025
+		defender_holding_advantage = 2
+	}
+	character_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		monthly_piety = 0.05
+	}
 	
 	next_building = hill_forts_02
 
@@ -7690,6 +7700,16 @@ hill_forts_02 = {
 	county_modifier = {
 		monthly_county_control_change_factor = 0.1
 	}
+	province_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		fort_level = 1
+		garrison_size = 0.05
+		defender_holding_advantage = 2
+	}
+	character_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		monthly_piety = 0.075
+	}
 	
 	next_building = hill_forts_03
 	
@@ -7729,6 +7749,16 @@ hill_forts_03 = {
 	}
 	character_modifier = {
 		pikemen_toughness_mult = 0.02
+	}
+	province_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		fort_level = 2
+		garrison_size = 0.075
+		defender_holding_advantage = 3
+	}
+	character_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		monthly_piety = 0.1
 	}
 	
 	next_building = hill_forts_04
@@ -7771,6 +7801,16 @@ hill_forts_04 = {
 	character_modifier = {
 		pikemen_toughness_mult = 0.02
 	}
+	province_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		fort_level = 2
+		garrison_size = 0.1
+		defender_holding_advantage = 4
+	}
+	character_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		monthly_piety = 0.125
+	}
 	
 	next_building = hill_forts_05
 	
@@ -7811,6 +7851,16 @@ hill_forts_05 = {
 	}
 	character_modifier = {
 		pikemen_toughness_mult = 0.02
+	}
+	province_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		fort_level = 3
+		garrison_size = 0.125
+		defender_holding_advantage = 5
+	}
+	character_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		monthly_piety = 0.15
 	}
 	
 	next_building = hill_forts_06
@@ -7854,6 +7904,16 @@ hill_forts_06 = {
 		pikemen_damage_mult = 0.04
 		pikemen_toughness_mult = 0.02
 	}
+	province_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		fort_level = 3
+		garrison_size = 0.15
+		defender_holding_advantage = 6
+	}
+	character_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		monthly_piety = 0.175
+	}
 	
 	next_building = hill_forts_07
 	
@@ -7896,6 +7956,16 @@ hill_forts_07 = {
 		pikemen_damage_mult = 0.04
 		pikemen_toughness_mult = 0.04
 	}
+	province_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		fort_level = 4
+		garrison_size = 0.175
+		defender_holding_advantage = 7
+	}
+	character_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		monthly_piety = 0.2
+	}
 	
 	next_building = hill_forts_08
 	
@@ -7937,6 +8007,16 @@ hill_forts_08 = {
 	character_modifier = {
 		pikemen_damage_mult = 0.04
 		pikemen_toughness_mult = 0.04
+	}
+	province_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		fort_level = 5
+		garrison_size = 0.2
+		defender_holding_advantage = 8
+	}
+	character_culture_modifier = {
+		parameter = holding_fort_level_in_hungary_bonus
+		monthly_piety = 0.225
 	}
 	
 	ai_value = {

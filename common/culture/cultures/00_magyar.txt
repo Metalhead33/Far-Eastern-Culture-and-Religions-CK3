@@ -62,7 +62,7 @@ szekely = {
 	created = 1000.1.1
 	parents = { mogyer avar }
 	
-	ethos = ethos_communal
+	ethos = ethos_stoic
 	heritage = heritage_magyar
 	language = language_ugric
 	martial_custom = martial_custom_male_only

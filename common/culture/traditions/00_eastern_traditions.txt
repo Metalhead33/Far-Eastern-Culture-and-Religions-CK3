@@ -69,7 +69,7 @@ tradition_bushido = {
 	}
 }
 tradition_sauna = {
-	category = societal
+	category = regional
 
 	layers = {
 		0 = diplo
@@ -457,11 +457,9 @@ tradition_tamers_of_the_steppe = {
 	character_modifier = {
 		light_cavalry_maintenance_mult = -0.15
 		light_cavalry_recruitment_cost_mult = -0.15
-		world_steppe_development_growth_factor = 0.25 #Make the steppe suck less
-		steppe_development_growth_factor = 0.15 #Make steppe terrain suck even more lesserer
+		steppe_development_growth_factor = 0.50 #Make steppe terrain suck less
 		movement_speed = 0.1
 		steppe_attrition_mult = -0.25
-		steppe_advantage = 0.10
 	}
 	province_modifier = {
 		steppe_construction_gold_cost = -0.25
@@ -548,7 +546,8 @@ tradition_sexual_revolution = {
 		clergy_opinion = -10
 	}
 	parameters = {
-		reduced_opinion_penalty_from_cuckolding = yes
+		lustful_trait_more_common = yes
+        carn_no_consequences_for_extramarital_sex_with_others = yes
 	}
 	cost = {
 		prestige = {
@@ -567,7 +566,7 @@ tradition_sexual_revolution = {
 }
 
 tradition_shadow_court = {
-	category = societal
+	category = realm
 	layers = {
 		0 = intrigue
 		1 = western
@@ -576,7 +575,7 @@ tradition_shadow_court = {
 	
 	character_modifier = {
 		intrigue = 1
-		monthly_piety_gain_mult = -0.3
+		monthly_piety_gain_mult = -0.2
 		same_culture_opinion = 5
 		same_faith_opinion = -5
 		hostile_scheme_power_add = 10
@@ -742,11 +741,11 @@ tradition_eugenics = {
 	}
 	
 	character_modifier = {
-		health = 1
+		prowess = 1
+		health = 0.5
 		fertility = -0.25
 		years_of_fertility = 10
 		life_expectancy = 10
-		build_gold_cost = 0.1
 		levy_reinforcement_rate = -0.1
 		levy_size = -0.1
 	}
@@ -757,6 +756,8 @@ tradition_eugenics = {
 		can_castrate_prisoners = yes
 		bad_congenital_traits_shunned = yes
 		good_congenital_traits_exalted = yes
+		weak_traits_looked_down_upon = yes
+		strong_traits_more_valued = yes
 	}
 	cost = {
 		prestige = {
@@ -779,6 +780,53 @@ tradition_eugenics = {
 	# can ask witch to train you 
 	# some plain bonus: more popular opinion?, more learning per something?, more disease resistance? something else?
 #}
+tradition_birch_bark = {
+	category = regional
+	layers = {
+		0 = learning
+		1 = indian
+		4 = birch_bark.dds
+	}
+	is_shown = {
+		OR = {
+			has_cultural_pillar = heritage_east_slavic
+			has_cultural_pillar = heritage_goidelic
+			has_cultural_pillar = heritage_tocharian
+			has_cultural_pillar = heritage_indo_aryan
+			has_cultural_pillar = heritage_dravidian
+			has_cultural_pillar = heritage_burman
+		}
+	}
+	can_pick = {
+		OR = {
+			has_cultural_pillar = heritage_east_slavic
+			has_cultural_pillar = heritage_goidelic
+			has_cultural_pillar = heritage_tocharian
+			has_cultural_pillar = heritage_indo_aryan
+			has_cultural_pillar = heritage_dravidian
+			has_cultural_pillar = heritage_burman
+		}
+	}
+	character_modifier = {
+		learning = 1
+		learning_per_prestige_level = 1
+		development_growth_factor = 0.05
+		domain_tax_mult_even_if_baron = 0.10
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	ai_will_do = {
+		value = 25
+	}
+}
 
 tradition_veche = {
 	category = regional
@@ -849,9 +897,6 @@ tradition_agroforestery = {
 		}
 	}
 	county_modifier = {
-		floodplains_development_growth_factor = 0.3
-		floodplains_construction_gold_cost = -0.2
-		floodplains_levy_size = 0.1
 		forest_development_growth_factor = 0.3
 		forest_construction_gold_cost = -0.2
 		forest_levy_size = 0.1
@@ -942,5 +987,145 @@ tradition_terrace_farming = {
 	
 	ai_will_do = {
 		value = 75
+	}
+}
+
+
+tradition_carpathian_fortress = {
+	category = regional
+	layers = {
+		0 = martial
+		1 = western
+		4 = carpathian_fortress.dds
+	}
+	is_shown = {
+		OR = {
+			has_cultural_pillar = heritage_magyar
+			any_culture_county = {
+				percent >= 0.1
+				any_county_province = { geographical_region = custom_hungary }
+			}
+		}
+	}
+	character_modifier = {
+		ai_greed = -10
+		ai_compassion = 10
+	}
+	province_modifier = {
+		garrison_size = 0.2
+		hills_levy_size = -0.1
+	}
+	parameters = {
+		holding_fort_level_in_hungary_bonus = yes
+	}
+	can_pick = {
+		OR = {
+			has_cultural_pillar = heritage_magyar
+			custom_tooltip = {
+				text = culture_in_hungary_33_desc
+				any_culture_county = {
+					percent >= 0.33
+					any_county_province = { geographical_region = custom_hungary }
+				}
+			}
+		}
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+}
+tradition_pato_pal = {
+	category = regional
+	layers = {
+		0 = diplo
+		1 = western
+		4 = pato_pal.dds
+	}
+	is_shown = {
+		has_cultural_pillar = heritage_magyar
+	}
+	can_pick = {
+		has_cultural_pillar = heritage_magyar
+	}
+	character_modifier = {
+		stewardship_per_stress_level = 1
+		stress_gain_mult = -0.1
+		stress_loss_mult = 0.1
+		development_growth_factor = -0.05
+		build_speed = 0.05
+	}
+	parameters = {
+		lazy_trait_more_common = yes
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+}
+tradition_hungarian_pessimism = {
+	category = regional
+	layers = {
+		0 = diplo
+		1 = western
+		4 = hungarian_pessimism.dds
+	}
+	is_shown = {
+		has_cultural_pillar = heritage_magyar
+	}
+	can_pick = {
+		has_cultural_pillar = heritage_magyar
+	}
+	parameters = {
+		depressed_trait_more_common = yes
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+}
+tradition_hungarian_revanchism = {
+	category = regional
+	layers = {
+		0 = intrigue
+		1 = western
+		4 = hungarian_revanchism.dds
+	}
+	is_shown = {
+		has_cultural_pillar = heritage_magyar
+	}
+	can_pick = {
+		has_cultural_pillar = heritage_magyar
+	}
+	parameters = {
+		hungarian_revanchism_active = yes
+	}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			multiply = tradition_replacement_cost_if_relevant
+		}
 	}
 }

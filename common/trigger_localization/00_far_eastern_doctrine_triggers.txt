@@ -3,6 +3,10 @@
 # Incompatible Rites #
 ######################
 
+succession_laws_must_have_valid_veche_culture = {
+	first_not = succession_laws_must_have_valid_veche_culture
+}
+
 christian_roman_doctrine_trigger = {
 	first_not = ROMAN_COMMUNION_NEEDS_TRIGGER
 	third_not = ROMAN_COMMUNION_NEEDS_TRIGGER

@@ -488,6 +488,20 @@ steward_promote_culture_contextual_bonuses = {
 	if = {
 		limit = {
 			exists = scope:county
+			scope:county.culture = { NOT = { has_cultural_parameter = unlock_maa_cossack } }
+			scope:councillor_liege.culture = { has_cultural_parameter = unlock_maa_cossack }
+			scope:county = {
+				any_county_province = { terrain = steppe }
+			}
+		}
+		add = {
+			value = conversion_culture_easier_to_culture_change_with_heritage_value
+			desc = CULTURE_CONVERSION_COSSACKS_LIEGE_MODIFIER
+		}
+	}
+	if = {
+		limit = {
+			exists = scope:county
 			scope:county.culture = { NOT = { has_cultural_parameter = easier_conversion_of_other_cultures } }
 			scope:councillor_liege.culture = { has_cultural_parameter = easier_conversion_of_other_cultures }
 		}
