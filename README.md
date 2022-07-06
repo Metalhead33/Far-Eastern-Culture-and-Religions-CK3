@@ -34,3 +34,4 @@ As stated above, there are also plans to reintroduce old CK2 events.
 
 - Cheri Song for [Carnalitas Dei](https://gitgud.io/cherisong/carnalitas-dei), a mod that this mod depends on
 - The creator of the [Historical Immersion Project for CK2](https://forum.paradoxplaza.com/forum/threads/historical-immersion-project-download-faq.748775/), from which I shamelessly snatched some localization strings, as well as various ideas
+- [Meiou and Taxes](https://steamcommunity.com/sharedfiles/filedetails/?id=2630437525), [Extended Timeline](https://steamcommunity.com/sharedfiles/filedetails/?l=hungarian&id=217416366) and [Challenger's Flavour Bonanza Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=438503893) for various religious icons.
