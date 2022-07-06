@@ -9,7 +9,7 @@
 		tradition_tribe_unity
 		tradition_horse_lords
 		tradition_steppe_tolerance
-		tradition_eye_for_an_eye
+		tradition_hungarian_revanchism
 	}
 
 	name_list = name_list_mogyer
@@ -36,10 +36,11 @@ hungarian = {
 	language = language_ugric
 	martial_custom = martial_custom_male_only
 	traditions = {
-		tradition_xenophilic
 		tradition_hussar
-		tradition_chivalry
-		tradition_eye_for_an_eye
+		tradition_carpathian_fortress
+		tradition_pato_pal
+		tradition_hungarian_pessimism
+		tradition_hungarian_revanchism
 	}
 	
 	name_list = name_list_hungarian
@@ -71,6 +72,7 @@ szekely = {
 		tradition_isolationist
 		tradition_hussar
 		tradition_storytellers
+		tradition_carpathian_fortress
 	}
 	
 	name_list = name_list_hungarian

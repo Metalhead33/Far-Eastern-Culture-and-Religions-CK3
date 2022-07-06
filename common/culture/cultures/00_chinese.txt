@@ -10,6 +10,7 @@
 		tradition_mystical_ancestors
 		tradition_court_eunuchs
 		tradition_philosopher_culture
+		tradition_tyrants
 	}
 	
 	name_list = name_list_han
@@ -37,6 +38,10 @@ cantonese = {
 		tradition_seafaring
 		tradition_maritime_mercantilism
 		tradition_court_eunuchs
+	}
+	dlc_tradition = {
+		trait = tradition_culture_blending
+		requires_dlc_flag = hybridize_culture
 	}
 	
 	name_list = name_list_cantonese

@@ -8,7 +8,7 @@
 	martial_custom = martial_custom_male_only
 	traditions = {
 		tradition_ruling_caste
-		tradition_hereditary_hierarchy
+		tradition_tyrants
 		tradition_castle_keepers
 		tradition_adaptive_skirmishing
 	}

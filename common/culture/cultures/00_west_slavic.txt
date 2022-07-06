@@ -6,6 +6,7 @@
 	language = language_slavonic
 	martial_custom = martial_custom_male_only
 	traditions = {
+		tradition_veche
 		tradition_maritime_mercantilism
 		tradition_hussar
 	}
@@ -67,6 +68,7 @@ polish = {
 	language = language_slavonic
 	martial_custom = martial_custom_male_only
 	traditions = {
+		tradition_veche
 		tradition_hussar
 		tradition_xenophilic
 	}
@@ -99,6 +101,7 @@ polabian = {
 	language = language_slavonic
 	martial_custom = martial_custom_male_only
 	traditions = {
+		tradition_veche
 		tradition_hereditary_hierarchy
 		tradition_hussar
 		tradition_stalwart_defenders
@@ -127,6 +130,7 @@ moravian = {
 	language = language_slavonic
 	martial_custom = martial_custom_male_only
 	traditions = {
+		tradition_veche
 		tradition_mountaineer_ruralism
 		tradition_hard_working
 		tradition_castle_keepers
@@ -155,7 +159,8 @@ slovien = {
 	language = language_slavonic
 	martial_custom = martial_custom_male_only
 	traditions = {
-		tradition_mountaineer_ruralism
+		tradition_veche
+		tradition_carpathian_fortress
 		tradition_equitable
 		tradition_loyal_soldiers
 	}

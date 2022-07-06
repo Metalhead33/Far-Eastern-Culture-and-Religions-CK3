@@ -164,7 +164,14 @@ peasant_faction = {
 				has_cultural_parameter = peasant_and_populist_factions_less_common
 			}
 		}
-
+		# hungarian_revanchism_active
+		modifier = {
+			add = 50
+			NOT = {
+				culture = scope:faction.faction_target.culture
+			}
+			culture = { has_cultural_parameter = hungarian_revanchism_active }
+		}
 		# Supremacy
 		modifier = {
 			add = 25

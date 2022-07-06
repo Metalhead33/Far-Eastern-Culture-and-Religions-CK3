@@ -6,9 +6,10 @@
 	language = language_slavonic
 	martial_custom = martial_custom_male_only
 	traditions = {
+		tradition_veche
 		tradition_druzhina
 		tradition_mendicant_mystics
-		tradition_stand_and_fight
+		tradition_birch_bark
 		tradition_sauna
 	}
 	
@@ -34,7 +35,7 @@ ilmenian = {
 	language = language_slavonic
 	martial_custom = martial_custom_male_only
 	traditions = {
-		tradition_hit_and_run
+		tradition_veche
 		tradition_stand_and_fight
 		tradition_forest_folk
 		tradition_druzhina
@@ -62,10 +63,10 @@ severian = {
 	language = language_slavonic
 	martial_custom = martial_custom_male_only
 	traditions = {
+		tradition_veche
 		tradition_forest_folk
 		tradition_druzhina
 		tradition_sacred_groves
-		tradition_stand_and_fight
 	}
 	
 	name_list = name_list_severian
@@ -90,9 +91,9 @@ volhynian = {
 	language = language_slavonic
 	martial_custom = martial_custom_male_only
 	traditions = {
+		tradition_veche
 		tradition_astute_diplomats
 		tradition_agrarian
-		tradition_city_keepers
 		tradition_druzhina
 	}
 	

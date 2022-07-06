@@ -4703,6 +4703,11 @@ depressed_1 = {
 	health = -0.5
 	
 	fertility = -0.1
+	culture_modifier = {
+		parameter = depressed_trait_more_common
+		health = 0.25
+		fertility = 0.5
+	}
 	
 	shown_in_ruler_designer = no
 
@@ -4737,6 +4742,11 @@ depressed_genetic = {
 	health = -0.5
 	
 	fertility = -0.1
+	culture_modifier = {
+		parameter = depressed_trait_more_common
+		health = 0.25
+		fertility = 0.5
+	}
 
 	shown_in_encyclopedia = no
 	

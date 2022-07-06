@@ -9,8 +9,8 @@
 	traditions = {
 		tradition_bushido
 		tradition_isolationist
-		tradition_ruling_caste
-		tradition_hereditary_hierarchy
+		tradition_good_hygiene
+		tradition_tyrants
 		tradition_poetry
 	}
 	
