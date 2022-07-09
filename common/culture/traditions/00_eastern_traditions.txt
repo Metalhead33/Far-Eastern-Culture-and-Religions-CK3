@@ -1049,68 +1049,69 @@ tradition_carpathian_fortress = {
 		}
 	}
 }
-tradition_pato_pal = {
-	category = regional
-	layers = {
-		0 = diplo
-		1 = western
-		4 = pato_pal.dds
-	}
-	is_shown = {
-		has_cultural_pillar = heritage_magyar
-	}
-	can_pick = {
-		has_cultural_pillar = heritage_magyar
-	}
-	character_modifier = {
-		stewardship_per_stress_level = 1
-		stress_gain_mult = -0.1
-		stress_loss_mult = 0.1
-		development_growth_factor = -0.05
-		build_speed = 0.05
-		ai_energy = -15
-	}
-	parameters = {
-		lazy_trait_more_common = yes
-	}
-	cost = {
-		prestige = {
-			add = {
-				value = tradition_base_cost
-				desc = BASE
-				format = "BASE_VALUE_FORMAT"
-			}
-			multiply = tradition_replacement_cost_if_relevant
-		}
-	}
-}
-tradition_hungarian_pessimism = {
-	category = regional
-	layers = {
-		0 = diplo
-		1 = western
-		4 = hungarian_pessimism.dds
-	}
-	is_shown = {
-		has_cultural_pillar = heritage_magyar
-	}
-	can_pick = {
-		has_cultural_pillar = heritage_magyar
-	}
-	parameters = {
-		depressed_trait_more_common = yes
-	}
-	cost = {
-		prestige = {
-			add = {
-				value = tradition_base_cost
-				desc = BASE
-				format = "BASE_VALUE_FORMAT"
-			}
-			multiply = tradition_replacement_cost_if_relevant
-		}
-	}
-}
+ 
+#tradition_pato_pal = { 
+#	category = regional 
+#	layers = { 
+#		0 = diplo 
+#		1 = western 
+#		4 = pato_pal.dds 
+#	} 
+#	is_shown = { 
+#		has_cultural_pillar = heritage_magyar 
+#	} 
+#	can_pick = { 
+#		has_cultural_pillar = heritage_magyar 
+#	} 
+#	character_modifier = { 
+#		stewardship_per_stress_level = 1 
+#		stress_gain_mult = -0.1 
+#		stress_loss_mult = 0.1 
+#		development_growth_factor = -0.05 
+#		build_speed = 0.05 
+#		ai_energy = -15 
+#	} 
+#	parameters = { 
+#		lazy_trait_more_common = yes 
+#	} 
+#	cost = { 
+#		prestige = { 
+#			add = { 
+#				value = tradition_base_cost 
+#				desc = BASE 
+#				format = "BASE_VALUE_FORMAT" 
+#			} 
+#			multiply = tradition_replacement_cost_if_relevant 
+#		} 
+#	} 
+#} 
+#tradition_hungarian_pessimism = { 
+#	category = regional 
+#	layers = { 
+#		0 = diplo 
+#		1 = western 
+#		4 = hungarian_pessimism.dds 
+#	} 
+#	is_shown = { 
+#		has_cultural_pillar = heritage_magyar 
+#	} 
+#	can_pick = { 
+#		has_cultural_pillar = heritage_magyar 
+#	} 
+#	parameters = { 
+#		depressed_trait_more_common = yes 
+#	} 
+#	cost = { 
+#		prestige = { 
+#			add = { 
+#				value = tradition_base_cost 
+#				desc = BASE 
+#				format = "BASE_VALUE_FORMAT" 
+#			} 
+#			multiply = tradition_replacement_cost_if_relevant 
+#		} 
+#	} 
+#}
 tradition_hungarian_revanchism = {
 	category = regional
 	layers = {
@@ -1125,10 +1126,12 @@ tradition_hungarian_revanchism = {
 		has_cultural_pillar = heritage_magyar
 	}
 	character_modifier = {
+		intrigue_per_prestige_level = 1
 		tyranny_gain_mult = 0.5
 		tyranny_loss_mult = -0.5
 		dread_per_tyranny_mult = -0.25
 		dread_decay_mult = 0.25
+		ai_vengefulness = 20
 	}
 	parameters = {
 		hungarian_revanchism_active = yes

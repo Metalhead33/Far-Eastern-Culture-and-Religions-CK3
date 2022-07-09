@@ -38,8 +38,8 @@ hungarian = {
 	traditions = {
 		tradition_hussar
 		tradition_carpathian_fortress
-		tradition_pato_pal
-		tradition_hungarian_pessimism
+		tradition_stand_and_fight
+		tradition_horse_breeder
 		tradition_hungarian_revanchism
 	}
 	
