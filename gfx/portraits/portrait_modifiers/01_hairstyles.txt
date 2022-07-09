@@ -661,7 +661,9 @@ hairstyles = {
         }
     }
 	
-	chinese_straight = {
+    # CHINA
+
+    chinese_straight = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -688,7 +690,6 @@ hairstyles = {
             }
             modifier = {
                 add = -100
-                exists = this
                 OR = {
                     is_from_ruler_designer = yes
                     has_character_flag = has_scripted_appearance
@@ -696,6 +697,7 @@ hairstyles = {
             }
         }
     }
+
     chinese_wavy = {
         dna_modifiers = {
             accessory = {
@@ -724,6 +726,7 @@ hairstyles = {
             }
         }
     }
+
     chinese_curly = {
         dna_modifiers = {
             accessory = {
@@ -745,7 +748,6 @@ hairstyles = {
             }
             modifier = {
                 add = -100
-                exists = this
                 OR = {
                     is_from_ruler_designer = yes
                     has_character_flag = has_scripted_appearance
@@ -775,7 +777,6 @@ hairstyles = {
             }
             modifier = {
                 add = -100
-                exists = this
                 OR = {
                     is_from_ruler_designer = yes
                     has_character_flag = has_scripted_appearance

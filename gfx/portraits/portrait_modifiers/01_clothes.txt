@@ -272,7 +272,8 @@ clothes = {
 		}
 	}
 
-## china ##
+	## CHINA ##
+
 	chinese_commoners = {
 		dna_modifiers = {
 			accessory = {
@@ -285,7 +286,7 @@ clothes = {
 				mode = modify_multiply
 				gene = gene_bs_bust
 				value = 1.0
-				template = bust_clothes						template = bust_clothes
+				template = bust_clothes
 			}
 			morph = {
 				mode = modify_multiply
@@ -298,7 +299,6 @@ clothes = {
 			base = 0
 			modifier = {
 				add = 20
-				exists = this
 				highest_held_title_tier < tier_county
 				NOR = {
 					AND = {
@@ -317,6 +317,7 @@ clothes = {
 			}
 		}
 	}
+
 	chinese_low_nobles = {
 		dna_modifiers = {
 			accessory = {
@@ -342,7 +343,6 @@ clothes = {
 			base = 0
 			modifier = {
 				add = 50
-				exists = this
 				OR = {
 					AND = {
 						highest_held_title_tier = tier_county
@@ -373,9 +373,11 @@ clothes = {
 						}
 					}
 				}
+
 			}
 		}
 	}
+
 	chinese_high_nobles = {
 		dna_modifiers = {
 			accessory = {
@@ -401,7 +403,6 @@ clothes = {
 			base = 0
 			modifier = {
 				add = 50
-				exists = this
 				OR = {
 					AND = {
 						OR = {
@@ -431,6 +432,7 @@ clothes = {
 						}
 					}
 				}
+
 			}
 		}
 	}
@@ -460,7 +462,6 @@ clothes = {
 			base = 0
 			modifier = {
 				add = 100
-				exists = this
 				highest_held_title_tier = tier_empire
 				NOR = {
 					AND = { is_ruler = yes has_government = mercenary_government  }
@@ -496,8 +497,7 @@ clothes = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 101
-				exists = this
+				add = 150
 				portrait_chinese_wear_armor_trigger = yes
 				portrait_chinese_clothing_trigger = yes
 			}

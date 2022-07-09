@@ -210,6 +210,7 @@ custom_hair = {
 			portrait_chinese_clothing_modifier = yes
 		}
 	}
+
 	add_accessory_modifiers = {
 		gene = hairstyles
 		template = chinese_hairstyles_wavy
@@ -219,6 +220,7 @@ custom_hair = {
 			portrait_chinese_clothing_modifier = yes
 		}
 	}
+
 	add_accessory_modifiers = {
 		gene = hairstyles
 		template = chinese_hairstyles_curly
