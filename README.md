@@ -1,4 +1,4 @@
-![Title](https://git.touhou.fm/metalhead/paradox-mods/far-eastern-cultures-ck3/-/raw/master/title-big.png)
+![Title](https://raw.githubusercontent.com/Metalhead33/Far-Eastern-Culture-and-Religions-CK3/master/title-big.png)
 
 A mod that adds far-eastern cultures and religions to CK3, as well as adding some dead religions.
 
