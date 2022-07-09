@@ -13,17 +13,48 @@ The mod depends on [Carnalitas Dei](https://gitgud.io/cherisong/carnalitas-dei) 
 
 Eh, so-so. Afaik, mods that add new stuff without replacing vanilla stuff **are** vanilla-compatible... But this mod also edits some ethnicities, and that effect might not be applied on an already running game.
 
-
 ### **Can I use your mod as part of my mod? Or recycle any other parts of your mod for mine?**
 
 **Yes.** You don't even need to ask. Just do it. Sure, crediting would be nice, but otherwise, feel free to.
 
 
-### ***Any future plans for the mod?***
+### **Just what the heck does this mod do?!**
 
-I am planning to add a Hunchback of Notre Dame event chain. I also have the radical idea of having province modifiers called *"Thriving/Modest/Small Jewish/Gypsy Settlement"*, which would have various effects on the province - possible spawning rebels when you decide to expel the Jews or Gypsies. These province modifiers would spread around organically and dynamically, rather than the current way of doing things, which is to simply tie the presence of Jews and Gypsies in a province to the province's geographic area + the current date. However, that idea of mine would be probably hard, if not impossible to implement, so I'd need a more experienced modder's help for that.
+Originally, this mod started off as exactly what it is called, as of now - *"Far Eastern Cultures & Religions for CK3"*. It added certain Far-Eastern cultures into the game (namely Japanese), originally intended to be nothing more than a dependency of a personal mod of mine called *"LulzMod" (a mod that simple adds me, my personal friends - some of whom are Japanese - and some joke stuff into CK3. It was before the ruler designer!)*. As time went on, the scope of the mod expanded. I started adding in dead religions that obviously weren't Far-Eastern (Basque, Egyptian, Mithraism, Etruscan, Ashurism, Canaanite, etc.), I brought back the Jewish courtiers from CK2, added Gypsies, started adding new Christian denominations, new religious doctrines, sacred language doctrines, new traditions, etc. I also took the liberty to re-implement features of mods that I loved but stopped being updated, such as the pet preferences mod.
 
-As stated above, there are also plans to reintroduce old CK2 events.
+**All in all:**
+
+* New offmap Far-Eastern Cultures, such as Japanese, Ainu, Korean, Vietnamese, Cantonese, Thai, Khmer, Malay, Batak, Cham and Javanese
+* New Chinese clothes *(taken from a mod that stopped being updated with the permission of the author, [痕](https://steamcommunity.com/profiles/76561198211411909))* for Chinese, Japanese, Korean and Vietnamese cultures
+* Dead religions rescurrected: Celtic, Egyptian, Semitic, Mithraic and more!
+* Hire Jewish courtiers
+* Borrow money from the Jews!
+* Hire Romani spymasters, if you live in an apropriate region!
+* New regional traditions for East Slavs, Hungarians and Dravidians
+* New cultures: Icelandic, Albanian, Crimean Gothic, Arpitan, Moravian, Székely
+    * Italian is split into Romagnol, Tuscan, Laziale, Umbrian, etc.
+* Cultures and religions have authentic localized names, rather than Modern English
+* Sacred language doctrines for religions, including Latin for Catholicism
+* Expanded religious doctrines: final disposition, afterlife, syncretism,  various tenets turned into doctrines, etc.
+* More Christian denominations: start the Protestant Reformation 500 years early, if you wish! Resurrect dead denominations like Ebionitism, Pelagianism or Donatism!
+
+At this point, the name *"Far Eastern Cultures & Religions"* doesn't even do this mod justice! In fact, the focus has shifted so much, that the offmap East Asian cultures - that are only accessible via the Ruler Designer - are merely the icing on the cake, with the mod being more like a general culture and religion overhaul mod.
+Maybe a name change is in order?
+
+## Holy sites?
+
+* **Shinto:** Socotra, Maldives, Dakhina Desa, Ras Hafun, Suzhou
+* **Muism:** Socotra, Maldives, Dakhina Desa, Ras Hafun, Suzhou
+* **Celtic:** Ynis Mon / Anglesey, Orleans, Wiltshire (*because Stonehenge)*, Lugo, Breifne, Vannes
+* **Egyptian:** Giza, Asyut, Qus, Alexandria, Cairo,
+* **Basque:** Navarre, Viscaya, Labourd, Bordeaux, Andorra
+* **Hellenism:** Athens, Sparta, Alexandria, Lesbos, Knossos/Chandax
+* **Mithraism:** Rome, Yazd, Sparta, Alexandria, Carthage
+* **Roman:** Rome, Ravenna, Baalbek, Montpellier, Carthage
+* **Etruscan:** Firzente/Florence, Rome, Augsburg, Grisons, Lesbos
+* **Ashurism:** Lalish, Baghdad, Damascus, Antioch, Colonea
+* **Canaanite:** Jerusalem, Baalbek, Acre, Carthage, Antioch
+* **Al-Asnam / South Arabian:** Mecca, Aksum, Aden, Yamama, Bahren
 
 ## **See also:**
 
