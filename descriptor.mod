@@ -11,4 +11,5 @@ path = "mod/far-eastern-cultures-ck3-DEV"
 picture="thumbnail.png"
 dependencies={
 	"Cheri - Carnalitas Dei"
+	"Cheri - Carnalitas Mundi"
 }

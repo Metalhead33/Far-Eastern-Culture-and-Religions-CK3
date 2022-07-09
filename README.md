@@ -4,7 +4,7 @@ A mod that adds far-eastern cultures and religions to CK3, as well as adding som
 
 Currently, it adds Japanese, Korean, Vietnamese, Cantonese, Malay, Javanese, Batak, Achanese, Cham, Thai and Khmer cultures and the Shinto and Muist religions. It also adds Celtic Paganism, Basque Paganism, Egyptian Paganism, Atenism, Canaanite Pagnaism, Mesopotamian Paganism, Arabian Paganism, Roman Paganism *(separate from Hellenism)*, Mithraism and Etruscan Paganism. It also adds new Gypsy cultures, and an opportunity to hire Gypsy and Jewish courtiers - currently as a decision, with plans to reintroduce the old CK2 events later.
 
-The mod depends on [Carnalitas Dei](https://gitgud.io/cherisong/carnalitas-dei). Extra credits to [痕](https://steamcommunity.com/profiles/76561198211411909) for letting me use his assets from [Chinese headgear and clothing](https://steamcommunity.com/sharedfiles/filedetails/?id=2277707334CFP). [Compatibility Patch for Human Phenotypes Project here.](https://git.touhou.fm/metalhead/paradox-mods/ck3-human-phenotype-project-compatibility-patches/-/archive/master/ck3-human-phenotype-project-compatibility-patches-master.zip)
+The mod depends on [Carnalitas Dei](https://gitgud.io/cherisong/carnalitas-dei) and [Carnalitas Mundi](https://gitgud.io/cherisong/carnalitas-mundi) by Cheri. Extra credits to [痕](https://steamcommunity.com/profiles/76561198211411909) for letting me use his assets from [Chinese headgear and clothing](https://steamcommunity.com/sharedfiles/filedetails/?id=2277707334CFP). [Compatibility Patch for Human Phenotypes Project here.](https://git.touhou.fm/metalhead/paradox-mods/ck3-human-phenotype-project-compatibility-patches/-/archive/master/ck3-human-phenotype-project-compatibility-patches-master.zip)
 
 
 ## **FAQ:**
@@ -32,6 +32,6 @@ As stated above, there are also plans to reintroduce old CK2 events.
 
 ## Credits
 
-- Cheri Song for [Carnalitas Dei](https://gitgud.io/cherisong/carnalitas-dei), a mod that this mod depends on
+- Cheri Song for [Carnalitas Dei](https://gitgud.io/cherisong/carnalitas-dei) and [Carnalitas Mundi](https://gitgud.io/cherisong/carnalitas-mundi), two mods that this mod depends on
 - The creator of the [Historical Immersion Project for CK2](https://forum.paradoxplaza.com/forum/threads/historical-immersion-project-download-faq.748775/), from which I shamelessly snatched some localization strings, as well as various ideas
 - [Meiou and Taxes](https://steamcommunity.com/sharedfiles/filedetails/?id=2630437525), [Extended Timeline](https://steamcommunity.com/sharedfiles/filedetails/?l=hungarian&id=217416366) and [Challenger's Flavour Bonanza Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=438503893) for various religious icons.
