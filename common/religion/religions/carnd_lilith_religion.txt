@@ -225,7 +225,7 @@
 
 			doctrine = divine_marriage_doctrine
 			doctrine = hedonism_doctrine
-			doctrine = tenet_tantric_sex
+			doctrine = carnd_tenet_tantric_sex
 			doctrine = tenet_sacred_prostitution
 			doctrine = tenet_pursuit_of_power
 
@@ -252,7 +252,7 @@
 			}
 
 			doctrine = divine_marriage_doctrine
-			doctrine = tenet_tantric_sex
+			doctrine = carnd_tenet_tantric_sex
 			doctrine = tenet_pursuit_of_power
 			doctrine = tenet_sacred_shadows
 

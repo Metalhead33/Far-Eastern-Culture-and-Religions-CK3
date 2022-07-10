@@ -1564,7 +1564,7 @@ custom_iceland = {
 
 graphical_western = {
 	graphical = yes
-	color = { 255 0 0 }
+	color = { 255 100 100 }
 	regions = {
 		custom_west_francia_minus_mediterranean
 		world_europe_west_germania world_europe_west_britannia world_europe_east world_europe_north
@@ -1573,7 +1573,7 @@ graphical_western = {
 
 graphical_mena = {
 	graphical = yes
-	color = { 255 255 0 }
+	color = { 235 225 158 }
 	regions = {
 		world_africa world_middle_east world_middle_east_persia
 	}
@@ -1581,7 +1581,7 @@ graphical_mena = {
 
 graphical_india = {
 	graphical = yes
-	color = { 0 255 0 }
+	color = { 168 110 52}
 	regions = {
 		world_india world_burma
 	}
@@ -1589,6 +1589,7 @@ graphical_india = {
 
 graphical_china = {
 	graphical = yes
+	color = { 255 0 0 }
 	regions = {
 		world_steppe_east world_tibet
 	}
@@ -1596,7 +1597,7 @@ graphical_china = {
 
 graphical_mediterranean = {
 	graphical = yes
-	color = { 0 0 255 }
+	color = { 168 152 52 }
 	regions = {
 		world_europe_west_iberia world_europe_south custom_south_francia custom_burgundy world_asia_minor
 	}
@@ -1604,9 +1605,9 @@ graphical_mediterranean = {
 
 graphical_steppe = {
 	graphical = yes
-	color = { 0 255 255 }
+	color = { 158 226 235 }
 	regions = {
-		world_steppe
+		world_steppe_west world_steppe_tarim
 	}
 }
 

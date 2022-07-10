@@ -462,8 +462,8 @@ doctrine_syncretism = {
 		piety_cost = {
 			value = faith_doctrine_cost_high
 			if = {
-				limit = { has_doctrine = no_syncretism_doctrine }
-				multiply = turanic_syncretism_doctrine
+				limit = { has_doctrine = turanic_syncretism_doctrine }
+				multiply = faith_unchanged_doctrine_cost_mult
 			}
 		}
 		is_shown = {
@@ -481,8 +481,8 @@ doctrine_syncretism = {
 		piety_cost = {
 			value = faith_doctrine_cost_high
 			if = {
-				limit = { has_doctrine = no_syncretism_doctrine }
-				multiply = hellenic_syncretism_doctrine
+				limit = { has_doctrine = hellenic_syncretism_doctrine }
+				multiply = faith_unchanged_doctrine_cost_mult
 			}
 		}
 		is_shown = {
