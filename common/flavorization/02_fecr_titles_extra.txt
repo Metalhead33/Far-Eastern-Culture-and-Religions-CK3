@@ -1,0 +1,31 @@
+﻿# Extra stuff
+voivode_feudal_male_hungarian = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 33
+	governments = { feudal_government clan_government }
+	titles = { d_transylvania d_transylvanian_alps d_muntenia d_oltenia d_bukovina d_moldova d_bugeac d_syrmia d_rashka d_macva d_duklja d_vidin d_turnovo d_dobrudja d_bulgaria d_philippopolis }
+	name_lists = { name_list_hungarian name_list_mogyer }
+	top_liege = no
+}
+voivode_feudal_female_hungarian = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 33
+	governments = { feudal_government clan_government }
+	titles = { d_transylvania d_transylvanian_alps d_muntenia d_oltenia d_bukovina d_moldova d_bugeac d_syrmia d_rashka d_macva d_duklja d_vidin d_turnovo d_dobrudja d_bulgaria d_philippopolis }
+	name_lists = { name_list_hungarian name_list_mogyer }
+	top_liege = no
+}
+voivodeship_feudal_hungarian = {
+	type = title
+	tier = duchy
+	priority = 33
+	governments = { feudal_government clan_government }
+	titles = { d_transylvania d_transylvanian_alps d_muntenia d_oltenia d_bukovina d_moldova d_bugeac d_syrmia d_rashka d_macva d_duklja d_vidin d_turnovo d_dobrudja d_bulgaria d_philippopolis }
+	name_lists = { name_list_hungarian name_list_mogyer }
+}
