@@ -4409,14 +4409,14 @@ count_tribal_female_hungarian = {
 	name_lists = { name_list_hungarian name_list_mogyer }
 	top_liege = no
 }
-duchy_feudal_hungarian = {
+duchy_tribal_hungarian = {
 	type = title
 	tier = duchy
 	priority = 31
 	governments = { tribal_government clan_government }
 	name_lists = { name_list_hungarian name_list_mogyer }
 }
-duke_feudal_male_hungarian = {
+duke_tribal_male_hungarian = {
 	type = character
 	gender = male
 	special = holder
@@ -4426,7 +4426,7 @@ duke_feudal_male_hungarian = {
 	name_lists = { name_list_hungarian name_list_mogyer }
 	top_liege = no
 }
-duke_feudal_female_hungarian = {
+duke_tribal_female_hungarian = {
 	type = character
 	gender = female
 	special = holder
@@ -4436,14 +4436,14 @@ duke_feudal_female_hungarian = {
 	name_lists = { name_list_hungarian name_list_mogyer }
 	top_liege = no
 }
-kingdom_feudal_hungarian = {
+kingdom_tribal_hungarian = {
 	type = title
 	tier = kingdom
 	priority = 51
 	governments = { tribal_government clan_government }
 	name_lists = { name_list_hungarian name_list_mogyer }
 }
-king_feudal_male_hungarian = {
+king_tribal_male_hungarian = {
 	type = character
 	gender = male
 	special = holder
@@ -4453,7 +4453,7 @@ king_feudal_male_hungarian = {
 	name_lists = { name_list_hungarian name_list_mogyer }
 	top_liege = no
 }
-king_feudal_female_hungarian = {
+king_tribal_female_hungarian = {
 	type = character
 	gender = female
 	special = holder
@@ -11586,7 +11586,7 @@ kingdom_tribal_uyghur = {
 	governments = { tribal_government }
 	name_lists = { name_list_uyghur }
 }
-baron_feudal_male_uyghur = {
+baron_tribal_male_uyghur = {
 	type = character
 	gender = male
 	special = holder
@@ -11979,7 +11979,7 @@ kingdom_tribal_karluk = {
 	governments = { tribal_government }
 	name_lists = { name_list_karluk }
 }
-baron_feudal_male_karluk = {
+baron_tribal_male_karluk = {
 	type = character
 	gender = male
 	special = holder
