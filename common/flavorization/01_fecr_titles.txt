@@ -231,43 +231,6 @@ empire_republic_greek = {
 	governments = { republic_government }
 	name_lists = { name_list_greek name_list_gothic }
 }
-count_feudal_male_greek = {
-	type = character
-	gender = male
-	special = holder
-	tier = county
-	priority = 21
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_greek name_list_gothic }
-	top_liege = no
-}
-duke_feudal_male_greek = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_greek name_list_gothic }
-	top_liege = no
-}
-king_feudal_male_greek = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 50
-	governments = { feudal_government tribal_government clan_government }
-	name_lists = { name_list_greek name_list_gothic }
-	top_liege = no
-}
-duchy_feudal_byzantine = {
-	type = title
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_byzantine }
-}
 baron_feudal_male_danish = {
 	type = character
 	gender = male
@@ -12154,74 +12117,6 @@ count_republic_male_turkmen = {
 	name_lists = { name_list_turkmen }
 	top_liege = no
 }
-baron_feudal_male_turkmen = {
-	type = character
-	gender = male
-	special = holder
-	tier = barony
-	priority = 10
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_turkmen }
-	top_liege = no
-}
-count_feudal_male_turkmen = {
-	type = character
-	gender = male
-	special = holder
-	tier = county
-	priority = 21
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_turkmen }
-	top_liege = no
-}
-duke_feudal_male_turkmen = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_turkmen }
-	top_liege = no
-}
-king_feudal_male_turkmen = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 50
-	governments = { feudal_government tribal_government clan_government }
-	name_lists = { name_list_turkmen }
-	top_liege = no
-}
-barony_feudal_turkmen = {
-	type = title
-	tier = barony
-	priority = 10
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_turkmen }
-}
-county_feudal_turkmen = {
-	type = title
-	tier = county
-	priority = 21
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_turkmen }
-}
-duchy_feudal_turkmen = {
-	type = title
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_turkmen }
-}
-kingdom_feudal_turkmen = {
-	type = title
-	tier = kingdom
-	priority = 50
-	governments = { feudal_government tribal_government clan_government }
-	name_lists = { name_list_turkmen }
-}
 baron_feudal_male_caucasian_avar = {
 	type = character
 	gender = male
@@ -12482,26 +12377,6 @@ empire_feudal_german = {
 	governments = { feudal_government tribal_government clan_government }
 	name_lists = { name_list_german }
 }
-duke_feudal_male_german = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_german }
-	top_liege = no
-}
-king_feudal_male_german = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 50
-	governments = { feudal_government tribal_government clan_government }
-	name_lists = { name_list_german }
-	top_liege = no
-}
 baron_feudal_male_german = {
 	type = character
 	gender = male
@@ -12741,26 +12616,6 @@ empire_feudal_german = {
 	priority = 105
 	governments = { feudal_government tribal_government clan_government }
 	name_lists = { name_list_german }
-}
-duke_feudal_male_german = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_german }
-	top_liege = no
-}
-king_feudal_male_german = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 50
-	governments = { feudal_government tribal_government clan_government }
-	name_lists = { name_list_german }
-	top_liege = no
 }
 baron_feudal_male_dutch = {
 	type = character
@@ -13002,26 +12857,6 @@ empire_feudal_dutch = {
 	governments = { feudal_government tribal_government clan_government }
 	name_lists = { name_list_dutch }
 }
-duke_feudal_male_dutch = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_dutch }
-	top_liege = no
-}
-king_feudal_male_dutch = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 50
-	governments = { feudal_government tribal_government clan_government }
-	name_lists = { name_list_dutch }
-	top_liege = no
-}
 baron_feudal_male_franconian = {
 	type = character
 	gender = male
@@ -13261,36 +13096,6 @@ empire_feudal_franconian = {
 	priority = 105
 	governments = { feudal_government tribal_government clan_government }
 	name_lists = { name_list_franconian }
-}
-duke_feudal_male_franconian = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_franconian }
-	top_liege = no
-}
-duke_feudal_female_franconian = {
-	type = character
-	gender = female
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_franconian }
-	top_liege = no
-}
-king_feudal_male_franconian = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 50
-	governments = { feudal_government tribal_government clan_government }
-	name_lists = { name_list_franconian }
-	top_liege = no
 }
 baron_feudal_male_bavarian = {
 	type = character
@@ -13532,36 +13337,6 @@ empire_feudal_bavarian = {
 	governments = { feudal_government tribal_government clan_government }
 	name_lists = { name_list_bavarian }
 }
-duke_feudal_male_bavarian = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_bavarian }
-	top_liege = no
-}
-duke_feudal_female_bavarian = {
-	type = character
-	gender = female
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_bavarian }
-	top_liege = no
-}
-king_feudal_male_bavarian = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 50
-	governments = { feudal_government tribal_government clan_government }
-	name_lists = { name_list_bavarian }
-	top_liege = no
-}
 baron_feudal_male_swabian = {
 	type = character
 	gender = male
@@ -13801,36 +13576,6 @@ empire_feudal_swabian = {
 	priority = 105
 	governments = { feudal_government tribal_government clan_government }
 	name_lists = { name_list_swabian }
-}
-duke_feudal_male_swabian = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_swabian }
-	top_liege = no
-}
-duke_feudal_female_swabian = {
-	type = character
-	gender = female
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_swabian }
-	top_liege = no
-}
-king_feudal_male_swabian = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 50
-	governments = { feudal_government tribal_government clan_government }
-	name_lists = { name_list_swabian }
-	top_liege = no
 }
 baron_feudal_male_thuringian = {
 	type = character
@@ -14072,36 +13817,6 @@ empire_feudal_thuringian = {
 	governments = { feudal_government tribal_government clan_government }
 	name_lists = { name_list_thuringian }
 }
-duke_feudal_male_thuringian = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_thuringian }
-	top_liege = no
-}
-duke_feudal_female_thuringian = {
-	type = character
-	gender = female
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_thuringian }
-	top_liege = no
-}
-king_feudal_male_thuringian = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 50
-	governments = { feudal_government tribal_government clan_government }
-	name_lists = { name_list_thuringian }
-	top_liege = no
-}
 baron_feudal_male_saxon = {
 	type = character
 	gender = male
@@ -14341,36 +14056,6 @@ empire_feudal_saxon = {
 	priority = 105
 	governments = { feudal_government tribal_government clan_government }
 	name_lists = { name_list_saxon name_list_old_saxon }
-}
-duke_feudal_male_saxon = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_saxon name_list_old_saxon }
-	top_liege = no
-}
-duke_feudal_female_saxon = {
-	type = character
-	gender = female
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_saxon name_list_old_saxon }
-	top_liege = no
-}
-king_feudal_male_saxon = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 50
-	governments = { feudal_government tribal_government clan_government }
-	name_lists = { name_list_saxon name_list_old_saxon }
-	top_liege = no
 }
 baron_feudal_male_lowfrankish = {
 	type = character
@@ -14612,36 +14297,6 @@ empire_feudal_lowfrankish = {
 	governments = { feudal_government tribal_government clan_government }
 	name_lists = { name_list_lowfrankish }
 }
-duke_feudal_male_lowfrankish = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_lowfrankish }
-	top_liege = no
-}
-duke_feudal_female_lowfrankish = {
-	type = character
-	gender = female
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_lowfrankish }
-	top_liege = no
-}
-king_feudal_male_lowfrankish = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 50
-	governments = { feudal_government tribal_government clan_government }
-	name_lists = { name_list_lowfrankish }
-	top_liege = no
-}
 baron_feudal_male_frisian = {
 	type = character
 	gender = male
@@ -14882,36 +14537,6 @@ empire_feudal_frisian = {
 	governments = { feudal_government tribal_government clan_government }
 	name_lists = { name_list_frisian }
 }
-duke_feudal_male_frisian = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_frisian }
-	top_liege = no
-}
-duke_feudal_female_frisian = {
-	type = character
-	gender = female
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_frisian }
-	top_liege = no
-}
-king_feudal_male_frisian = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 50
-	governments = { feudal_government tribal_government clan_government }
-	name_lists = { name_list_frisian }
-	top_liege = no
-}
 baron_feudal_male_frankish = {
 	type = character
 	gender = male
@@ -15151,36 +14776,6 @@ empire_feudal_frankish = {
 	priority = 105
 	governments = { feudal_government tribal_government clan_government }
 	name_lists = { name_list_frankish }
-}
-duke_feudal_male_frankish = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_frankish }
-	top_liege = no
-}
-duke_feudal_female_frankish = {
-	type = character
-	gender = female
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_frankish }
-	top_liege = no
-}
-king_feudal_male_frankish = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 50
-	governments = { feudal_government tribal_government clan_government }
-	name_lists = { name_list_frankish }
-	top_liege = no
 }
 baron_feudal_male_kurdish = {
 	type = character
@@ -15668,27 +15263,10 @@ emperor_feudal_male_pahlavi = {
 	heritages = { heritage_iranian }
 	top_liege = no
 }
-duke_feudal_male_pahlavi = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	heritages = { heritage_iranian }
-	top_liege = no
-}
 county_feudal_pahlavi = {
 	type = title
 	tier = county
 	priority = 21
-	governments = { feudal_government clan_government }
-	heritages = { heritage_iranian }
-}
-duchy_feudal_pahlavi = {
-	type = title
-	tier = duchy
-	priority = 30
 	governments = { feudal_government clan_government }
 	heritages = { heritage_iranian }
 }
@@ -15809,39 +15387,6 @@ emperor_feudal_male_persian = {
 	heritages = { heritage_iranian }
 	top_liege = no
 }
-count_feudal_male_persian = {
-	type = character
-	gender = male
-	special = holder
-	tier = county
-	priority = 22
-	governments = { feudal_government clan_government }
-	religions = { islam_religion }
-	heritages = { heritage_iranian }
-	top_liege = no
-}
-duke_feudal_male_persian = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 31
-	governments = { feudal_government clan_government }
-	religions = { islam_religion }
-	heritages = { heritage_iranian }
-	top_liege = no
-}
-king_feudal_male_persian = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 51
-	governments = { feudal_government tribal_government clan_government }
-	religions = { islam_religion }
-	heritages = { heritage_iranian }
-	top_liege = no
-}
 county_feudal_persian = {
 	type = title
 	tier = county
@@ -15855,30 +15400,6 @@ duchy_feudal_persian = {
 	tier = duchy
 	priority = 31
 	governments = { feudal_government clan_government }
-	religions = { islam_religion }
-	heritages = { heritage_iranian }
-}
-county_feudal_persian = {
-	type = title
-	tier = county
-	priority = 22
-	governments = { feudal_government clan_government }
-	religions = { islam_religion }
-	heritages = { heritage_iranian }
-}
-duchy_feudal_persian = {
-	type = title
-	tier = duchy
-	priority = 31
-	governments = { feudal_government clan_government }
-	religions = { islam_religion }
-	heritages = { heritage_iranian }
-}
-kingdom_feudal_persian = {
-	type = title
-	tier = kingdom
-	priority = 51
-	governments = { feudal_government tribal_government clan_government }
 	religions = { islam_religion }
 	heritages = { heritage_iranian }
 }
@@ -16042,36 +15563,6 @@ emperor_tribal_male_khorasani = {
 	name_lists = { name_list_khorasani }
 	top_liege = no
 }
-count_feudal_male_khorasani = {
-	type = character
-	gender = male
-	special = holder
-	tier = county
-	priority = 21
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_khorasani }
-	top_liege = no
-}
-duke_feudal_male_khorasani = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_khorasani }
-	top_liege = no
-}
-king_feudal_male_khorasani = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 50
-	governments = { feudal_government tribal_government clan_government }
-	name_lists = { name_list_khorasani }
-	top_liege = no
-}
 county_feudal_khorasani = {
 	type = title
 	tier = county
@@ -16098,27 +15589,6 @@ duchy_tribal_khorasani = {
 	tier = duchy
 	priority = 31
 	governments = { tribal_government }
-	name_lists = { name_list_khorasani }
-}
-county_feudal_khorasani = {
-	type = title
-	tier = county
-	priority = 21
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_khorasani }
-}
-duchy_feudal_khorasani = {
-	type = title
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_khorasani }
-}
-kingdom_feudal_khorasani = {
-	type = title
-	tier = kingdom
-	priority = 50
-	governments = { feudal_government tribal_government clan_government }
 	name_lists = { name_list_khorasani }
 }
 baron_feudal_male_tajik = {
@@ -16281,36 +15751,6 @@ emperor_tribal_male_tajik = {
 	name_lists = { name_list_tajik }
 	top_liege = no
 }
-count_feudal_male_tajik = {
-	type = character
-	gender = male
-	special = holder
-	tier = county
-	priority = 21
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_tajik }
-	top_liege = no
-}
-duke_feudal_male_tajik = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_tajik }
-	top_liege = no
-}
-king_feudal_male_tajik = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 50
-	governments = { feudal_government tribal_government clan_government }
-	name_lists = { name_list_tajik }
-	top_liege = no
-}
 county_feudal_tajik = {
 	type = title
 	tier = county
@@ -16337,27 +15777,6 @@ duchy_tribal_tajik = {
 	tier = duchy
 	priority = 31
 	governments = { tribal_government }
-	name_lists = { name_list_tajik }
-}
-county_feudal_tajik = {
-	type = title
-	tier = county
-	priority = 21
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_tajik }
-}
-duchy_feudal_tajik = {
-	type = title
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_tajik }
-}
-kingdom_feudal_tajik = {
-	type = title
-	tier = kingdom
-	priority = 50
-	governments = { feudal_government tribal_government clan_government }
 	name_lists = { name_list_tajik }
 }
 baron_feudal_male_afghan = {
@@ -16460,36 +15879,6 @@ emperor_feudal_male_afghan = {
 	name_lists = { name_list_afghan }
 	top_liege = no
 }
-count_feudal_male_afghan = {
-	type = character
-	gender = male
-	special = holder
-	tier = county
-	priority = 21
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_afghan }
-	top_liege = no
-}
-duke_feudal_male_afghan = {
-	type = character
-	gender = male
-	special = holder
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_afghan }
-	top_liege = no
-}
-king_feudal_male_afghan = {
-	type = character
-	gender = male
-	special = holder
-	tier = kingdom
-	priority = 50
-	governments = { feudal_government tribal_government clan_government }
-	name_lists = { name_list_afghan }
-	top_liege = no
-}
 county_feudal_afghan = {
 	type = title
 	tier = county
@@ -16502,27 +15891,6 @@ duchy_feudal_afghan = {
 	tier = duchy
 	priority = 30
 	governments = { feudal_government clan_government }
-	name_lists = { name_list_afghan }
-}
-county_feudal_afghan = {
-	type = title
-	tier = county
-	priority = 21
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_afghan }
-}
-duchy_feudal_afghan = {
-	type = title
-	tier = duchy
-	priority = 30
-	governments = { feudal_government clan_government }
-	name_lists = { name_list_afghan }
-}
-kingdom_feudal_afghan = {
-	type = title
-	tier = kingdom
-	priority = 50
-	governments = { feudal_government tribal_government clan_government }
 	name_lists = { name_list_afghan }
 }
 baron_feudal_male_khwarezmian = {
