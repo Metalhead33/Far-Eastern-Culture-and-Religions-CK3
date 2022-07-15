@@ -243,3 +243,142 @@ change_culture_if_region_culture = {
 		}
 	}
 }
+
+name_from_local_culture_with_fallback_male = {
+	if = {
+		limit = { exists = location }
+		location.culture = { save_scope_as = namesake_culture }
+	}
+	else_if = {
+		limit = { exists = liege }
+		if = {
+			limit = { exists = liege.capital_province }
+			liege.capital_province.culture = { save_scope_as = namesake_culture }
+		}
+		else = {
+			liege.culture = { save_scope_as = namesake_culture }
+		}
+	}
+	else_if = {
+		limit = { exists = employer }
+		if = {
+			limit = { exists = employer.capital_province }
+			employer.capital_province.culture = { save_scope_as = namesake_culture }
+		}
+		else = {
+			employer.culture = { save_scope_as = namesake_culture }
+		}
+	}
+	else_if = {
+		limit = { exists = host }
+		if = {
+			limit = { exists = host.location }
+			host.location.culture = { save_scope_as = namesake_culture }
+		}
+		else = {
+			host.culture = { save_scope_as = namesake_culture }
+		}
+	}
+	else_if = {
+		limit = { exists = mother }
+		if = {
+			limit = { exists = mother.location }
+			mother.location.culture = { save_scope_as = namesake_culture }
+		}
+	}
+	else_if = {
+		limit = { exists = father }
+		if = {
+			limit = { exists = father.father }
+			father.father.culture = { save_scope_as = namesake_culture }
+		}
+	}
+	if = {
+		limit = {
+			exists = scope:namesake_culture
+		}
+		random_living_character = {
+			limit = {
+				culture = scope:namesake_culture
+				is_female = no
+			}
+			save_scope_as = namesake
+		}
+	}
+	# Name the character
+	if = {
+		limit = {
+			exists = scope:namesake
+		}
+		change_first_name = { template_character = scope:namesake }
+	}
+}
+name_from_local_culture_with_fallback_female = {
+	if = {
+		limit = { exists = location }
+		location.culture = { save_scope_as = namesake_culture }
+	}
+	else_if = {
+		limit = { exists = liege }
+		if = {
+			limit = { exists = liege.capital_province }
+			liege.capital_province.culture = { save_scope_as = namesake_culture }
+		}
+		else = {
+			liege.culture = { save_scope_as = namesake_culture }
+		}
+	}
+	else_if = {
+		limit = { exists = employer }
+		if = {
+			limit = { exists = employer.capital_province }
+			employer.capital_province.culture = { save_scope_as = namesake_culture }
+		}
+		else = {
+			employer.culture = { save_scope_as = namesake_culture }
+		}
+	}
+	else_if = {
+		limit = { exists = host }
+		if = {
+			limit = { exists = host.location }
+			host.location.culture = { save_scope_as = namesake_culture }
+		}
+		else = {
+			host.culture = { save_scope_as = namesake_culture }
+		}
+	}
+	else_if = {
+		limit = { exists = mother }
+		if = {
+			limit = { exists = mother.location }
+			mother.location.culture = { save_scope_as = namesake_culture }
+		}
+	}
+	else_if = {
+		limit = { exists = father }
+		if = {
+			limit = { exists = father.father }
+			father.father.culture = { save_scope_as = namesake_culture }
+		}
+	}
+	if = {
+		limit = {
+			exists = scope:namesake_culture
+		}
+		random_living_character = {
+			limit = {
+				culture = scope:namesake_culture
+				is_female = yes
+			}
+			save_scope_as = namesake
+		}
+	}
+	# Name the character
+	if = {
+		limit = {
+			exists = scope:namesake
+		}
+		change_first_name = { template_character = scope:namesake }
+	}
+}

@@ -23,145 +23,22 @@ gypsy_courtier.0001 = {
 		#Backup generation
 		if = {
 			limit = { NOT = { exists = scope:new_courtier } }
-			if = {
-				limit = { 
-					root = {
-						OR = {
-						culture = { has_cultural_pillar = heritage_indo_aryan }
-						culture = { has_cultural_pillar = heritage_dravidian }
-						}
-					}
-				}
-				create_character = {
-					employer = root
-					template = gypsy_indian_intrigue_character
-					save_scope_as = new_courtier
-				}
-			}
-			else_if = {
-				limit = { 
-					root = {
-						OR = {
-						culture = { has_cultural_pillar = heritage_arabic }
-						culture = { has_cultural_pillar = heritage_berber }
-						culture = { has_cultural_pillar = heritage_iranian }
-						has_culture = culture:turkish
-						has_culture = culture:anatolian_turkish
-						has_culture = culture:azeri_turkish
-						has_culture = culture:assyrian
-						}
-					}
-				}
-				create_character = {
-					employer = root
-					template = gypsy_egypt_intrigue_character
-					save_scope_as = new_courtier
-				}
-			}
-			else_if = {
-				limit = { 
-					root = {
-						OR = {
-						has_culture = culture:armenian
-						has_culture = culture:georgian
-						has_culture = culture:alan
-						}
-					}
-				}
-				create_character = {
-					employer = root
-					template = gypsy_caucasus_intrigue_character
-					save_scope_as = new_courtier
-				}
-			}
-			else_if = {
-				limit = { 
-					root = {
-						culture = { has_cultural_pillar = heritage_magyar }
-					}
-				}
-				create_character = {
-					employer = root
-					template = gypsy_hun_intrigue_character
-					save_scope_as = new_courtier
-				}
-			}
-			else_if = {
-				limit = { 
-					root = {
-						has_culture = culture:vlach
-					}
-				}
-				create_character = {
-					employer = root
-					template = gypsy_romanian_intrigue_character
-					save_scope_as = new_courtier
-				}
-			}
-			else_if = {
-				limit = { 
-					root = {
-						OR = {
-						culture = { has_cultural_pillar = heritage_south_slavic }
-						culture = { has_cultural_pillar = heritage_west_slavic }
-						culture = { has_cultural_pillar = heritage_east_slavic }
-						}
-					}
-				}
-				create_character = {
-					employer = root
-					template = gypsy_slav_intrigue_character
-					save_scope_as = new_courtier
-				}
-			}
-			else_if = {
-				limit = { 
-					root = {
-						has_culture = culture:greek
-					}
-				}
-				create_character = {
-					employer = root
-					template = gypsy_greek_intrigue_character
-					save_scope_as = new_courtier
-				}
-			}
-			else_if = {
-				limit = { 
-					root = {
-						culture = { has_cultural_pillar = heritage_iberian }
-					}
-				}
-				create_character = {
-					employer = root
-					template = gypsy_iberian_intrigue_character
-					save_scope_as = new_courtier
-				}
-			}
-			else_if = {
-				limit = { 
-					root = {
-						culture = { has_cultural_pillar = heritage_frankish }
-					}
-				}
-				create_character = {
-					employer = root
-					template = gypsy_french_intrigue_character
-					save_scope_as = new_courtier
-				}
-			}
-			# Ultimate fallback
-			if = {
-			limit = { NOT = { exists = scope:new_courtier } }
 			create_character = {
-				employer = root
-				template = gypsy_egypt_intrigue_character
+				location = root.capital_province
+				template = gypsy_indian_intrigue_character
 				save_scope_as = new_courtier
-			}
 			}
 			scope:new_courtier = {
 				set_to_lowborn = yes
 				learn_language_of_culture = ROOT.culture
+				trigger_event = { on_action = carn_character_initialization_pulse }
+				if = {
+					limit = { is_female = yes }
+					name_from_local_culture_with_fallback_female = yes
+				}
+				else = {
+					name_from_local_culture_with_fallback_male = yes
+				}
 			}
 		}
 		}

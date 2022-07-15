@@ -29,7 +29,7 @@ jewish_courtier.0001 = {
 					root = { has_ashkenazim = yes }
 				}
 				create_character = {
-					employer = root
+					location = root.capital_province
 					template = ashkenazi_intrigue_character
 					save_scope_as = new_courtier
 				}
@@ -39,7 +39,7 @@ jewish_courtier.0001 = {
 					root = { has_sephardim = yes }
 				}
 				create_character = {
-					employer = root
+					location = root.capital_province
 					template = sephardi_intrigue_character
 					save_scope_as = new_courtier
 				}
@@ -49,7 +49,7 @@ jewish_courtier.0001 = {
 					root = { has_kaifeng = yes }
 				}
 				create_character = {
-					employer = root
+					location = root.capital_province
 					template = kaifeng_intrigue_character
 					save_scope_as = new_courtier
 				}
@@ -59,7 +59,7 @@ jewish_courtier.0001 = {
 					root = { has_mizrahim = yes }
 				}
 				create_character = {
-					employer = root
+					location = root.capital_province
 					template = mizrahi_intrigue_character
 					save_scope_as = new_courtier
 				}
@@ -69,7 +69,7 @@ jewish_courtier.0001 = {
 					root = { has_radhanites = yes }
 				}
 				create_character = {
-					employer = root
+					location = root.capital_province
 					template = radhanite_intrigue_character
 					save_scope_as = new_courtier
 				}
@@ -79,23 +79,24 @@ jewish_courtier.0001 = {
 					root = { has_kochinim = yes }
 				}
 				create_character = {
-					employer = root
+					location = root.capital_province
 					template = kochinim_intrigue_character
 					save_scope_as = new_courtier
 				}
 			}
 			# Ultimate fallback
 			if = {
-			limit = { NOT = { exists = scope:new_courtier } }
-			create_character = {
-				employer = root
-				template = radhanite_intrigue_character
-				save_scope_as = new_courtier
-			}
+				limit = { NOT = { exists = scope:new_courtier } }
+				create_character = {
+					location = root.capital_province
+					template = radhanite_intrigue_character
+					save_scope_as = new_courtier
+				}
 			}
 			scope:new_courtier = {
 				set_to_lowborn = yes
 				learn_language_of_culture = ROOT.culture
+				trigger_event = { on_action = carn_character_initialization_pulse }
 			}
 		}
 		}
@@ -169,7 +170,7 @@ jewish_courtier.0002 = {
 					root = { has_ashkenazim = yes }
 				}
 				create_character = {
-					employer = root
+					location = root.capital_province
 					template = ashkenazi_steward_character
 					save_scope_as = new_courtier
 				}
@@ -179,7 +180,7 @@ jewish_courtier.0002 = {
 					root = { has_sephardim = yes }
 				}
 				create_character = {
-					employer = root
+					location = root.capital_province
 					template = sephardi_steward_character
 					save_scope_as = new_courtier
 				}
@@ -189,7 +190,7 @@ jewish_courtier.0002 = {
 					root = { has_kaifeng = yes }
 				}
 				create_character = {
-					employer = root
+					location = root.capital_province
 					template = kaifeng_steward_character
 					save_scope_as = new_courtier
 				}
@@ -199,7 +200,7 @@ jewish_courtier.0002 = {
 					root = { has_mizrahim = yes }
 				}
 				create_character = {
-					employer = root
+					location = root.capital_province
 					template = mizrahi_steward_character
 					save_scope_as = new_courtier
 				}
@@ -209,7 +210,7 @@ jewish_courtier.0002 = {
 					root = { has_radhanites = yes }
 				}
 				create_character = {
-					employer = root
+					location = root.capital_province
 					template = radhanite_steward_character
 					save_scope_as = new_courtier
 				}
@@ -219,23 +220,24 @@ jewish_courtier.0002 = {
 					root = { has_kochinim = yes }
 				}
 				create_character = {
-					employer = root
+					location = root.capital_province
 					template = kochinim_steward_character
 					save_scope_as = new_courtier
 				}
 			}
 			# Ultimate fallback
 			if = {
-			limit = { NOT = { exists = scope:new_courtier } }
-			create_character = {
-				employer = root
-				template = radhanite_steward_character
-				save_scope_as = new_courtier
-			}
+				limit = { NOT = { exists = scope:new_courtier } }
+				create_character = {
+					location = root.capital_province
+					template = radhanite_steward_character
+					save_scope_as = new_courtier
+				}
 			}
 			scope:new_courtier = {
 				set_to_lowborn = yes
 				learn_language_of_culture = ROOT.culture
+				trigger_event = { on_action = carn_character_initialization_pulse }
 			}
 		}
 		}
@@ -309,7 +311,7 @@ jewish_courtier.0003 = {
 					root = { has_ashkenazim = yes }
 				}
 				create_character = {
-					employer = root
+					location = root.capital_province
 					template = ashkenazi_diplomat_character
 					save_scope_as = new_courtier
 				}
@@ -319,7 +321,7 @@ jewish_courtier.0003 = {
 						root = { has_sephardim = yes }
 				}
 				create_character = {
-					employer = root
+					location = root.capital_province
 					template = sephardi_diplomat_character
 					save_scope_as = new_courtier
 				}
@@ -329,7 +331,7 @@ jewish_courtier.0003 = {
 					root = { has_kaifeng = yes }
 				}
 				create_character = {
-					employer = root
+					location = root.capital_province
 					template = kaifeng_diplomat_character
 					save_scope_as = new_courtier
 				}
@@ -339,7 +341,7 @@ jewish_courtier.0003 = {
 					root = { has_mizrahim = yes }
 				}
 				create_character = {
-					employer = root
+					location = root.capital_province
 					template = mizrahi_diplomat_character
 					save_scope_as = new_courtier
 				}
@@ -349,7 +351,7 @@ jewish_courtier.0003 = {
 					root = { has_radhanites = yes }
 				}
 				create_character = {
-					employer = root
+					location = root.capital_province
 					template = radhanite_diplomat_character
 					save_scope_as = new_courtier
 				}
@@ -359,23 +361,24 @@ jewish_courtier.0003 = {
 					root = { has_kochinim = yes }
 				}
 				create_character = {
-					employer = root
+					location = root.capital_province
 					template = kochinim_diplomat_character
 					save_scope_as = new_courtier
 				}
 			}
 			# Ultimate fallback
 			if = {
-			limit = { NOT = { exists = scope:new_courtier } }
-			create_character = {
-				employer = root
-				template = radhanite_diplomat_character
-				save_scope_as = new_courtier
-			}
+				limit = { NOT = { exists = scope:new_courtier } }
+				create_character = {
+					location = root.capital_province
+					template = radhanite_diplomat_character
+					save_scope_as = new_courtier
+				}
 			}
 			scope:new_courtier = {
 				set_to_lowborn = yes
 				learn_language_of_culture = ROOT.culture
+				trigger_event = { on_action = carn_character_initialization_pulse }
 			}
 		}
 		}

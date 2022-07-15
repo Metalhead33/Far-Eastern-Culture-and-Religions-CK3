@@ -426,7 +426,7 @@ eastern_culture.0011 = {
     desc = eastern_culture.11.desc
 	theme = pregnancy
 	trigger = {
-		NOT = { has_character_flag = circassian_seeded 
+		NOT = { has_character_flag = circassian_seeded }
 		is_alive = yes
 	}
     immediate = {
@@ -458,6 +458,26 @@ eastern_culture.0011 = {
 				else = {
 					add_trait = beauty_good_1
 				}
+			}
+		}
+		if = {
+			limit = {
+				culture = {
+					has_cultural_tradition = tradition_diasporic
+					has_cultural_pillar = heritage_gypsy
+				}
+				is_ruler = no
+			}
+			if = {
+				limit = { is_female = yes}
+				name_from_local_culture_with_fallback_female = yes
+			}
+			else = {
+				name_from_local_culture_with_fallback_male = yes
+			}
+			if = {
+				limit = { exists = location }
+				learn_language_of_culture = location.culture
 			}
 		}
 		if = {

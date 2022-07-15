@@ -1,8 +1,10 @@
 ﻿l_english:
+ name_list_gypsy:0 "Gypsy"
  gypsy_group:0 "Gypsy"
  gypsy_group_collective_noun:0 "Gypsies"
- gypsy_india:0 "Domba"
- gypsy_india_collective_noun:0 "Domba"
+ gypsy_india_prefix:0 "Romano"
+ gypsy_india:0 "Rromani"
+ gypsy_india_collective_noun:0 "Rromani"
  gypsy_egypt:0 "Dūmī"
  gypsy_egypt_collective_noun:0 "Dūmrī"
  gypsy_caucasus:0 "Bosha"

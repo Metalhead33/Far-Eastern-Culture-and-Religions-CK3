@@ -8,9 +8,17 @@
 #	}
 #}
 portrait_chinese_clothing_trigger = {
-	scope:culture = {
-    has_clothing_gfx = chinese_clothing_gfx
-    }
+	OR = {
+		scope:culture = {
+			has_clothing_gfx = chinese_clothing_gfx
+			NOT = { has_cultural_tradition = tradition_diasporic }
+		}
+		AND = {
+			is_ruler = no
+			scope:culture = { has_cultural_tradition = tradition_diasporic }
+			location.culture = { has_clothing_gfx = chinese_clothing_gfx }
+		}
+	}
 }
 portrait_chinese_wear_armor_trigger = {		
 	OR = {
