@@ -147,61 +147,22 @@ has_kochinim = {
 	}
 }
 has_jews = {
-	OR = {
-	has_ashkenazim = yes
-	has_sephardim = yes
-	has_kaifeng = yes
-	has_mizrahim = yes
-	has_radhanites = yes
-	has_kochinim = yes
+	capital_county = {
+		OR = {
+			has_county_modifier = jewish_community_very_small
+			has_county_modifier = jewish_community_small
+			has_county_modifier = jewish_community_large
+			has_county_modifier = jewish_community_very_large
+		}
 	}
 }
 has_gypsies = {
-	OR = {
-		capital_province = { geographical_region = world_india }
-		AND = {
-			current_date >= 900.1.1
-			capital_province = { geographical_region = world_middle_east_persia }
-		}
-		AND = {
-			current_date >= 1200.1.1
-			capital_province = { geographical_region = world_middle_east }
-		}
-		AND = {
-			current_date >= 1250.1.1
-			capital_province = { geographical_region = world_asia_minor }
-		}
-		AND = {
-			current_date >= 1322.1.1
-			capital_province = { geographical_region = ghw_region_greece }
-		}
-		AND = {
-			current_date >= 1370.1.1
-			capital_province = { geographical_region = world_europe_south_east }
-		}
-		AND = {
-			current_date >= 1370.1.1
-			capital_province = { geographical_region = world_europe_south_east }
-		}
-		AND = {
-			current_date >= 1411.1.1
-			capital_province = { geographical_region = custom_carpathia }
-		}
-		AND = {
-			current_date >= 1427.1.1
-			capital_province = { geographical_region = world_europe_west_francia }
-		}
-		AND = {
-			current_date >= 1427.1.1
-			capital_province = { geographical_region = world_europe_west_francia }
-		}
-		AND = {
-			current_date >= 1430.1.1
-			capital_province = { geographical_region = world_europe_west_britannia }
-		}
-		AND = {
-			current_date >= 1447.1.1
-			capital_province = { geographical_region = world_europe_west_iberia }
+	capital_county = {
+		OR = {
+			has_county_modifier = integrated_gypsy_community_very_small
+			has_county_modifier = integrated_gypsy_community_small
+			has_county_modifier = integrated_gypsy_community_large
+			has_county_modifier = integrated_gypsy_community_very_large
 		}
 	}
 }

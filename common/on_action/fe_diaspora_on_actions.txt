@@ -1,0 +1,223 @@
+﻿# Code on-action: character changes faith. Not called when a character gets a faith on birth, creation, and similar
+# Root is the character
+# scope:old_faith is the faith they used to have
+on_game_start = {
+	on_actions = {
+		seed_diaspora
+	}
+}
+
+yearly_global_pulse = {
+	events = {
+		eastern_culture.0012
+	}
+}
+
+seed_diaspora = {
+	effect = {
+		every_county = {
+			# Gypsies
+			if = {
+				limit = {
+					OR = {
+						title_province = { geographical_region = world_india }
+						AND = {
+							current_date >= 900.1.1
+							title_province = { geographical_region = world_middle_east_persia }
+						}
+						AND = {
+							current_date >= 1200.1.1
+							title_province = { geographical_region = world_middle_east }
+						}
+						AND = {
+							current_date >= 1250.1.1
+							title_province = { geographical_region = world_asia_minor }
+						}
+						AND = {
+							current_date >= 1322.1.1
+							title_province = { geographical_region = ghw_region_greece }
+						}
+						AND = {
+							current_date >= 1370.1.1
+							title_province = { geographical_region = world_europe_south_east }
+						}
+						AND = {
+							current_date >= 1370.1.1
+							title_province = { geographical_region = world_europe_south_east }
+						}
+						AND = {
+							current_date >= 1411.1.1
+							title_province = { geographical_region = custom_carpathia }
+						}
+						AND = {
+							current_date >= 1427.1.1
+							title_province = { geographical_region = world_europe_west_francia }
+						}
+						AND = {
+							current_date >= 1427.1.1
+							title_province = { geographical_region = world_europe_west_francia }
+						}
+						AND = {
+							current_date >= 1430.1.1
+							title_province = { geographical_region = world_europe_west_britannia }
+						}
+						AND = {
+							current_date >= 1447.1.1
+							title_province = { geographical_region = world_europe_west_iberia }
+						}
+					}
+				}
+				set_variable = {
+					name = gypsy_presence
+					value = this.diaspora_base_level
+				}
+			}
+			else = {
+				set_variable = {
+					name = gypsy_presence
+					value = 0
+				}
+			}
+			set_variable = {
+				name = ashkenazi_presence
+				value = 0
+			}
+			set_variable = {
+				name = sephardi_presence
+				value = 0
+			}
+			set_variable = {
+				name = mizrahi_presence
+				value = 0
+			}
+			set_variable = {
+				name = radhanim_presence
+				value = 0
+			}
+			set_variable = {
+				name = kochinim_presence
+				value = 0
+			}
+			set_variable = {
+				name = kaifeng_presence
+				value = 0
+			}
+			
+			# Kaifeng
+			if = {
+				limit = {
+					title_province = {
+						geographical_region = ghw_region_khotan
+					}
+					any_county_province = {
+						has_holding_type = city_holding
+					}
+				}
+				set_variable = {
+					name = kaifeng_presence
+					value = this.diaspora_base_level
+				}
+			}
+			
+			# Kochinim
+			if = {
+				limit = {
+					title_province = {
+						geographical_region = world_india
+					}
+					any_county_province = {
+						has_holding_type = city_holding
+					}
+				}
+				set_variable = {
+					name = kochinim_presence
+					value = this.diaspora_base_level
+				}
+			}
+			
+			# Radhanites
+			if = {
+				limit = {
+					title_province = {
+						OR = {
+							AND = {
+								geographical_region = world_steppe
+								NOT = { geographical_region = ghw_region_khotan }
+							}
+							geographical_region = world_middle_east_persia
+						}
+					}
+					any_county_province = {
+						has_holding_type = city_holding
+					}
+				}
+				set_variable = {
+					name = radhanim_presence
+					value = this.diaspora_base_level
+				}
+			}
+			
+			# Mizrahim
+			if = {
+				limit = {
+					title_province = {
+						OR = {
+							geographical_region = world_middle_east
+							geographical_region = world_africa_north
+						}
+					}
+					any_county_province = {
+						has_holding_type = city_holding
+					}
+				}
+				set_variable = {
+					name = mizrahi_presence
+					value = this.diaspora_base_level
+				}
+			}
+			
+			# Sephardim
+			if = {
+				limit = {
+					title_province = {
+						OR = {
+							geographical_region = world_europe_west_iberia
+							geographical_region = world_europe_south
+							geographical_region = world_asia_minor
+						}
+					}
+					any_county_province = {
+						has_holding_type = city_holding
+					}
+				}
+				set_variable = {
+					name = sephardi_presence
+					value = this.diaspora_base_level
+				}
+			}
+			
+			# Ashkenazim
+			if = {
+				limit = {
+					title_province = {
+						OR = {
+							AND = {	geographical_region = world_europe_west
+							NOT = { geographical_region = world_europe_west_iberia }
+						}
+							geographical_region = world_europe_north
+							geographical_region = world_europe_east
+						}
+					}
+					any_county_province = {
+						has_holding_type = city_holding
+					}
+				}
+				set_variable = {
+					name = ashkenazi_presence
+					value = this.diaspora_base_level
+				}
+			}
+		}
+		trigger_event = eastern_culture.0012
+	}
+}

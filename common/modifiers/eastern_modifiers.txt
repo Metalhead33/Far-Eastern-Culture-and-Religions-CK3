@@ -1,4 +1,5 @@
-﻿expelled_the_jews = {
+﻿# Jews
+expelled_the_jews = {
 	icon = jewish_negative
 	diplomacy = -2
 	domain_tax_mult = -0.1
@@ -13,8 +14,89 @@ borrowed_from_jews = {
 	monthly_piety_gain_mult = -0.1
 	monthly_prestige_gain_mult = -0.1
 }
+jewish_community_very_small = {
+	icon = jewish_positive
+	tax_mult = 0.03
+	development_growth_factor = 0.01
+	county_opinion_add = -1
+}
+jewish_community_small = {
+	icon = jewish_positive
+	tax_mult = 0.09
+	development_growth_factor = 0.03
+	county_opinion_add = -2
+}
+jewish_community_large = {
+	icon = jewish_positive
+	tax_mult = 0.18
+	development_growth_factor = 0.09
+	county_opinion_add = -4
+}
+jewish_community_very_large = {
+	icon = jewish_positive
+	tax_mult = 0.27
+	development_growth_factor = 0.18
+	county_opinion_add = -8
+}
+
+# Gypsies
 expelled_the_gypsies = {
 	icon = gypsy_negative
 	monthly_county_control_change_factor = 0.5
 	domain_tax_mult = 0.1
 }
+## Integrated Gypsies do trade and blacksmithing
+## Oppressed Gypsies do crime, and are rural so harder to expel
+integrated_gypsy_community_very_small = {
+	icon = gypsy_positive
+	monthly_county_control_change_add = -0.01
+	tax_mult = 0.01
+	build_speed = -0.01
+	build_gold_cost = -0.01
+}
+oppressed_gypsy_community_very_small = {
+	icon = gypsy_negative
+	monthly_county_control_change_add = -0.02
+	tax_mult = -0.01
+	county_opinion_add = -2
+}
+integrated_gypsy_community_small = {
+	icon = gypsy_positive
+	monthly_county_control_change_add = -0.015
+	tax_mult = 0.05
+	build_speed = -0.01
+	build_gold_cost = -0.01
+}
+oppressed_gypsy_community_small = {
+	icon = gypsy_negative
+	monthly_county_control_change_add = -0.04
+	tax_mult = -0.01
+	county_opinion_add = -4
+}
+integrated_gypsy_community_large = {
+	icon = gypsy_positive
+	monthly_county_control_change_add = -0.03
+	tax_mult = 0.075
+	build_speed = -0.03
+	build_gold_cost = -0.03
+}
+oppressed_gypsy_community_large = {
+	icon = gypsy_negative
+	monthly_county_control_change_add = -0.08
+	tax_mult = -0.02
+	county_opinion_add = -8
+}
+integrated_gypsy_community_very_large = {
+	icon = gypsy_positive
+	monthly_county_control_change_add = -0.06
+	tax_mult = 0.15
+	build_speed = -0.06
+	build_gold_cost = -0.06
+}
+oppressed_gypsy_community_very_large = {
+	icon = gypsy_negative
+	monthly_county_control_change_add = -0.16
+	tax_mult = -0.04
+	county_opinion_add = -16
+}
+

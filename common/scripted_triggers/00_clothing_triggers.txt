@@ -175,8 +175,15 @@ portrait_byzantine_clothing_trigger = {
 }
 
 portrait_byzantine_clothing_spouse_trigger = {
-	culture = {
-		portrait_byzantine_clothing_contents_trigger = yes
+	OR = {
+		culture = {
+			portrait_byzantine_clothing_contents_trigger = yes
+		}
+		AND = {
+			is_ruler = no
+			scope:culture = { has_cultural_tradition = tradition_diasporic }
+			location.culture = { portrait_byzantine_clothing_contents_trigger = yes	}
+		}
 	}
 }
 
@@ -193,14 +200,21 @@ portrait_indian_clothing_trigger = {
 		AND = {
 			is_ruler = no
 			scope:culture = { has_cultural_tradition = tradition_diasporic }
-			location.culture = { portrait_indian_clothing_contents_trigger = yes	}
+			location.culture = { portrait_indian_clothing_contents_trigger = yes }
 		}
 	}
 }
 
 portrait_indian_clothing_spouse_trigger = {
-	culture = {
-		portrait_indian_clothing_contents_trigger = yes
+	OR = {
+		culture = {
+			portrait_indian_clothing_contents_trigger = yes
+		}
+		AND = {
+			is_ruler = no
+			scope:culture = { has_cultural_tradition = tradition_diasporic }
+			location.culture = { portrait_indian_clothing_contents_trigger = yes }
+		}
 	}
 }
 
@@ -217,14 +231,21 @@ portrait_mena_clothing_trigger = {
 		AND = {
 			is_ruler = no
 			scope:culture = { has_cultural_tradition = tradition_diasporic }
-			location.culture = { portrait_mena_clothing_contents_trigger = yes	}
+			location.culture = { portrait_mena_clothing_contents_trigger = yes }
 		}
 	}
 }
 
 portrait_mena_clothing_spouse_trigger = {
-	culture = {
-		portrait_mena_clothing_contents_trigger = yes
+	OR = {
+		culture = {
+			portrait_mena_clothing_contents_trigger = yes
+		}
+		AND = {
+			is_ruler = no
+			scope:culture = { has_cultural_tradition = tradition_diasporic }
+			location.culture = { portrait_mena_clothing_contents_trigger = yes }
+		}
 	}
 }
 
@@ -247,8 +268,15 @@ portrait_african_clothing_trigger = {
 }
 
 portrait_african_clothing_spouse_trigger = {
-	culture = {
-		portrait_african_clothing_contents_trigger = yes
+	OR = {
+		culture = {
+			portrait_african_clothing_contents_trigger = yes
+		}
+		AND = {
+			is_ruler = no
+			scope:culture = { has_cultural_tradition = tradition_diasporic }
+			location.culture = { portrait_african_clothing_contents_trigger = yes }
+		}
 	}
 }
 
@@ -271,8 +299,15 @@ portrait_northern_clothing_trigger = {
 }
 
 portrait_northern_clothing_spouse_trigger = {
-	culture = {
-		portrait_northern_clothing_contents_trigger = yes
+	OR = {
+		culture = {
+			portrait_northern_clothing_contents_trigger = yes
+		}
+		AND = {
+			is_ruler = no
+			scope:culture = { has_cultural_tradition = tradition_diasporic }
+			location.culture = { portrait_northern_clothing_contents_trigger = yes }
+		}
 	}
 }
 
@@ -407,8 +442,15 @@ portrait_steppe_clothing_trigger = {
 }
 
 portrait_steppe_clothing_spouse_trigger = {
-	culture = {
-		portrait_steppe_clothing_contents_trigger = yes
+	OR = {
+		culture = {
+			portrait_steppe_clothing_contents_trigger = yes
+		}
+		AND = {
+			is_ruler = no
+			scope:culture = { has_cultural_tradition = tradition_diasporic }
+			location.culture = { portrait_steppe_clothing_contents_trigger = yes }
+		}
 	}
 }
 
@@ -431,8 +473,15 @@ portrait_western_clothing_trigger = {
 }
 
 portrait_western_clothing_spouse_trigger = {
-	culture = {
-		portrait_western_clothing_contents_trigger = yes
+	OR = {
+		culture = {
+			portrait_western_clothing_contents_trigger = yes
+		}
+		AND = {
+			is_ruler = no
+			scope:culture = { has_cultural_tradition = tradition_diasporic }
+			location.culture = { portrait_western_clothing_contents_trigger = yes }
+		}
 	}
 }
 
@@ -459,8 +508,15 @@ portrait_dde_hre_clothing_trigger = {
 }
 
 portrait_dde_hre_clothing_spouse_trigger = {
-	culture = {
-		portrait_dde_hre_clothing_contents_trigger = yes
+	OR = {
+		culture = {
+			portrait_dde_hre_clothing_contents_trigger = yes
+		}
+		AND = {
+			is_ruler = no
+			scope:culture = { has_cultural_tradition = tradition_diasporic }
+			location.culture = { portrait_dde_hre_clothing_contents_trigger = yes }
+		}
 	}
 	has_dlc = "Garments of the Holy Roman Empire"
 }
@@ -485,8 +541,15 @@ portrait_dde_abbasid_clothing_trigger = {
 }
 
 portrait_dde_abbasid_clothing_spouse_trigger = {
-	culture = {
-		portrait_dde_abbasid_clothing_contents_trigger = yes
+	OR = {
+		culture = {
+			portrait_dde_abbasid_clothing_contents_trigger = yes
+		}
+		AND = {
+			is_ruler = no
+			scope:culture = { has_cultural_tradition = tradition_diasporic }
+			location.culture = { portrait_dde_abbasid_clothing_contents_trigger = yes }
+		}
 	}
 	has_dlc = "Fashion of the Abbasid Court"
 }

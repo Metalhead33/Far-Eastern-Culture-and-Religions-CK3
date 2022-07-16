@@ -24,9 +24,10 @@ jewish_courtier.0001 = {
 		}
 		if = {
 			limit = { NOT = { exists = scope:new_courtier } }
-			if = {
-				limit = { 
-					root = { has_ashkenazim = yes }
+			random_list = {
+			0 = {
+				modifier = {
+					add = capital_county.var:ashkenazi_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -34,9 +35,9 @@ jewish_courtier.0001 = {
 					save_scope_as = new_courtier
 				}
 			}
-			else_if = {
-				limit = { 
-					root = { has_sephardim = yes }
+			0 = {
+				modifier = {
+					add = capital_county.var:sephardi_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -44,9 +45,9 @@ jewish_courtier.0001 = {
 					save_scope_as = new_courtier
 				}
 			}
-			else_if = {
-				limit = { 
-					root = { has_kaifeng = yes }
+			0 = {
+				modifier = {
+					add = capital_county.var:kaifeng_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -54,9 +55,9 @@ jewish_courtier.0001 = {
 					save_scope_as = new_courtier
 				}
 			}
-			else_if = {
-				limit = { 
-					root = { has_mizrahim = yes }
+			0 = {
+				modifier = {
+					add = capital_county.var:mizrahi_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -64,9 +65,9 @@ jewish_courtier.0001 = {
 					save_scope_as = new_courtier
 				}
 			}
-			else_if = {
-				limit = { 
-					root = { has_radhanites = yes }
+			0 = {
+				modifier = {
+					add = capital_county.var:radhanim_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -74,15 +75,16 @@ jewish_courtier.0001 = {
 					save_scope_as = new_courtier
 				}
 			}
-			else_if = {
-				limit = { 
-					root = { has_kochinim = yes }
+			0 = {
+				modifier = {
+					add = capital_county.var:kochinim_presence
 				}
 				create_character = {
 					location = root.capital_province
 					template = kochinim_intrigue_character
 					save_scope_as = new_courtier
 				}
+			}
 			}
 			# Ultimate fallback
 			if = {

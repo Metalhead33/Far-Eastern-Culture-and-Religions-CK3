@@ -1,0 +1,55 @@
+﻿# Can't reference a named value that hasn't been defined yet, so this file is late in the load order
+# Feel free to use other files as well, but be careful about load order
+# Please remove the example formulas once there's a few real formulas
+
+diaspora_base_level = {
+	value = development_level
+	divide = 10
+}
+
+# ashkenazi_presence
+# sephardi_presence
+# mizrahi_presence
+# radhanim_presence
+# kochinim_presence
+# kaifeng_presence
+
+jewish_presence = {
+	value = 0
+	if = {
+		limit = {
+			has_variable = kaifeng_presence
+		}
+		add = var:kaifeng_presence
+	}
+	if = {
+		limit = {
+			has_variable = kochinim_presence
+		}
+		add = var:kochinim_presence
+	}
+	if = {
+		limit = {
+			has_variable = radhanim_presence
+		}
+		add = var:radhanim_presence
+	}
+	if = {
+		limit = {
+			has_variable = ashkenazi_presence
+		}
+		add = var:ashkenazi_presence
+	}
+	if = {
+		limit = {
+			has_variable = sephardi_presence
+		}
+		add = var:sephardi_presence
+	}
+	if = {
+		limit = {
+			has_variable = mizrahi_presence
+		}
+		add = var:mizrahi_presence
+	}
+}
