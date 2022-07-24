@@ -7,12 +7,16 @@ diaspora_base_level = {
 	divide = 10
 }
 
-# ashkenazi_presence
-# sephardi_presence
-# mizrahi_presence
-# radhanim_presence
-# kochinim_presence
-# kaifeng_presence
+jewish_carrying_capacity = {
+	value = development_level
+	divide = 10
+	if = {
+		limit = {
+			is_coastal_county = yes
+		}
+		add = 1
+	}
+}
 
 jewish_presence = {
 	value = 0
@@ -51,5 +55,169 @@ jewish_presence = {
 			has_variable = mizrahi_presence
 		}
 		add = var:mizrahi_presence
+	}
+}
+
+kaifeng_ratio = {
+	value = 0
+	if = {
+		limit = {
+			has_variable = kaifeng_presence
+		}
+		add = var:kaifeng_presence
+		divide = jewish_presence
+	}
+}
+
+kochinim_ratio = {
+	value = 0
+	if = {
+		limit = {
+			has_variable = kochinim_presence
+		}
+		add = var:kochinim_presence
+		divide = jewish_presence
+	}
+}
+
+radhanim_ratio = {
+	value = 0
+	if = {
+		limit = {
+			has_variable = radhanim_presence
+		}
+		add = var:radhanim_presence
+		divide = jewish_presence
+	}
+}
+
+ashkenazi_ratio = {
+	value = 0
+	if = {
+		limit = {
+			has_variable = ashkenazi_presence
+		}
+		add = var:ashkenazi_presence
+		divide = jewish_presence
+	}
+}
+
+sephardi_ratio = {
+	value = 0
+	if = {
+		limit = {
+			has_variable = sephardi_presence
+		}
+		add = var:sephardi_presence
+		divide = jewish_presence
+	}
+}
+
+mizrahi_ratio = {
+	value = 0
+	if = {
+		limit = {
+			has_variable = mizrahi_presence
+		}
+		add = var:mizrahi_presence
+		divide = jewish_presence
+	}
+}
+
+
+kaifeng_carrying_capacity = {
+	value = kaifeng_ratio
+	multiply = jewish_carrying_capacity
+}
+
+kochinim_carrying_capacity = {
+	value = kochinim_ratio
+	multiply = jewish_carrying_capacity
+}
+
+radhanim_carrying_capacity = {
+	value = radhanim_ratio
+	multiply = jewish_carrying_capacity
+}
+
+ashkenazi_carrying_capacity = {
+	value = ashkenazi_ratio
+	multiply = jewish_carrying_capacity
+}
+
+sephardi_carrying_capacity = {
+	value = sephardi_ratio
+	multiply = jewish_carrying_capacity
+}
+
+mizrahi_carrying_capacity = {
+	value = mizrahi_ratio
+	multiply = jewish_carrying_capacity
+}
+
+
+kaifeng_overflow = {
+	value = 0
+	if = {
+		limit = {
+			has_variable = kaifeng_presence
+		}
+		add = var:kaifeng_presence
+		subtract = kaifeng_carrying_capacity
+	}
+}
+
+kochinim_overflow = {
+	value = 0
+	if = {
+		limit = {
+			has_variable = kochinim_presence
+		}
+		add = var:kochinim_presence
+		subtract = kochinimcarrying_capacity
+	}
+}
+
+radhanim_overflow = {
+	value = 0
+	if = {
+		limit = {
+			has_variable = radhanim_presence
+		}
+		add = var:radhanim_presence
+		subtract = radhanim_carrying_capacity
+	}
+}
+
+ashkenazi_overflow = {
+	value = 0
+	if = {
+		limit = {
+			has_variable = ashkenazi_presence
+		}
+		add = var:ashkenazi_presence
+		subtract = ashkenazi_carrying_capacity
+	}
+}
+
+sephardi_overflow = {
+	value = 0
+	if = {
+		limit = {
+			has_variable = sephardi_presence
+		}
+		add = var:sephardi_presence
+		subtract = sephardi_carrying_capacity
+	}
+}
+
+mizrahi_overflow = {
+	value = 0
+	if = {
+		limit = {
+			has_variable = mizrahi_presence
+		}
+		add = var:mizrahi_presence
+		subtract = mizrahi_carrying_capacity
 	}
 }

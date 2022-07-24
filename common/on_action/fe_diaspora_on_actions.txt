@@ -106,12 +106,8 @@ seed_diaspora = {
 			# Kaifeng
 			if = {
 				limit = {
-					title_province = {
-						geographical_region = ghw_region_khotan
-					}
-					any_county_province = {
-						has_holding_type = city_holding
-					}
+					title_province = { geographical_region = ghw_region_khotan }
+					any_county_province = { has_holding_type = city_holding }
 				}
 				set_variable = {
 					name = kaifeng_presence
@@ -122,12 +118,9 @@ seed_diaspora = {
 			# Kochinim
 			if = {
 				limit = {
-					title_province = {
-						geographical_region = world_india
-					}
-					any_county_province = {
-						has_holding_type = city_holding
-					}
+					title_province = { geographical_region = custom_kochinim }
+					any_county_province = { has_holding_type = city_holding }
+					is_coastal_county = yes
 				}
 				set_variable = {
 					name = kochinim_presence
@@ -138,18 +131,8 @@ seed_diaspora = {
 			# Radhanites
 			if = {
 				limit = {
-					title_province = {
-						OR = {
-							AND = {
-								geographical_region = world_steppe
-								NOT = { geographical_region = ghw_region_khotan }
-							}
-							geographical_region = world_middle_east_persia
-						}
-					}
-					any_county_province = {
-						has_holding_type = city_holding
-					}
+					title_province = { geographical_region = custom_radhanites }
+					any_county_province = { has_holding_type = city_holding }
 				}
 				set_variable = {
 					name = radhanim_presence
@@ -160,12 +143,8 @@ seed_diaspora = {
 			# Mizrahim
 			if = {
 				limit = {
-					title_province = {
-						OR = {
-							geographical_region = world_middle_east
-							geographical_region = world_africa_north
-						}
-					}
+					title_province = { geographical_region = custom_mizrahi }
+					religion = { is_in_family = rf_abrahamic }
 					any_county_province = {
 						has_holding_type = city_holding
 					}
@@ -179,16 +158,8 @@ seed_diaspora = {
 			# Sephardim
 			if = {
 				limit = {
-					title_province = {
-						OR = {
-							geographical_region = world_europe_west_iberia
-							geographical_region = world_europe_south
-							geographical_region = world_asia_minor
-						}
-					}
-					any_county_province = {
-						has_holding_type = city_holding
-					}
+					title_province = { geographical_region = custom_sephardi }
+					any_county_province = { has_holding_type = city_holding }
 				}
 				set_variable = {
 					name = sephardi_presence
@@ -200,17 +171,16 @@ seed_diaspora = {
 			if = {
 				limit = {
 					title_province = {
-						OR = {
-							AND = {	geographical_region = world_europe_west
-							NOT = { geographical_region = world_europe_west_iberia }
-						}
-							geographical_region = world_europe_north
-							geographical_region = world_europe_east
+						AND = {
+							geographical_region = custom_ashkenazi
+							OR = {
+								current_date >= 1100.1.1
+								NOT = { geographical_region = world_europe_west_britannia }
+							}
 						}
 					}
-					any_county_province = {
-						has_holding_type = city_holding
-					}
+					religion = { is_in_family = rf_abrahamic }
+					any_county_province = { has_holding_type = city_holding }
 				}
 				set_variable = {
 					name = ashkenazi_presence

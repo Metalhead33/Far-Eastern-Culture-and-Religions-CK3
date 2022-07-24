@@ -2814,6 +2814,20 @@ emperor_feudal_female_lithuanian = {
 	name_lists = { name_list_lithuanian name_list_latgalian }
 	top_liege = no
 }
+duchy_feudal_lithuanian = {
+	type = title
+	tier = duchy
+	priority = 30
+	governments = { feudal_government clan_government }
+	name_lists = { name_list_lithuanian name_list_latgalian }
+}
+duchy_tribal_lithuanian = {
+	type = title
+	tier = duchy
+	priority = 31
+	governments = { tribal_government }
+	name_lists = { name_list_lithuanian name_list_latgalian }
+}
 kingdom_feudal_lithuanian = {
 	type = title
 	tier = kingdom
@@ -2831,6 +2845,23 @@ count_feudal_male_lithuanian = {
 	name_lists = { name_list_lithuanian name_list_latgalian }
 	top_liege = no
 }
+count_feudal_female_lithuanian = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 21
+	governments = { feudal_government clan_government }
+	name_lists = { name_list_lithuanian name_list_latgalian }
+	top_liege = no
+}
+county_feudal_lithuanian = {
+	type = title
+	tier = county
+	priority = 21
+	governments = { feudal_government clan_government }
+	name_lists = { name_list_lithuanian name_list_latgalian }
+}
 baron_feudal_male_lithuanian = {
 	type = character
 	gender = male
@@ -2840,6 +2871,23 @@ baron_feudal_male_lithuanian = {
 	governments = { feudal_government clan_government }
 	name_lists = { name_list_lithuanian name_list_latgalian }
 	top_liege = no
+}
+baron_feudal_female_lithuanian = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 10
+	governments = { feudal_government clan_government }
+	name_lists = { name_list_lithuanian name_list_latgalian }
+	top_liege = no
+}
+barony_feudal_lithuanian = {
+	type = title
+	tier = barony
+	priority = 10
+	governments = { feudal_government clan_government }
+	name_lists = { name_list_lithuanian name_list_latgalian }
 }
 count_tribal_male_lithuanian = {
 	type = character
@@ -2851,9 +2899,36 @@ count_tribal_male_lithuanian = {
 	name_lists = { name_list_lithuanian name_list_latgalian }
 	top_liege = no
 }
+county_tribal_lithuanian = {
+	type = title
+	tier = county
+	priority = 22
+	governments = { tribal_government }
+	name_lists = { name_list_lithuanian name_list_latgalian }
+}
 baron_tribal_male_lithuanian = {
 	type = character
 	gender = male
+	special = holder
+	tier = barony
+	priority = 11
+	governments = { tribal_government }
+	name_lists = { name_list_lithuanian name_list_latgalian }
+	top_liege = no
+}
+count_tribal_female_lithuanian = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 22
+	governments = { tribal_government }
+	name_lists = { name_list_lithuanian name_list_latgalian }
+	top_liege = no
+}
+baron_tribal_female_lithuanian = {
+	type = character
+	gender = female
 	special = holder
 	tier = barony
 	priority = 11
@@ -18347,6 +18422,23 @@ king_feudal_male_prussian = {
 	name_lists = { name_list_prussian }
 	top_liege = no
 }
+king_feudal_female_prussian = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 50
+	governments = { feudal_government tribal_government clan_government }
+	name_lists = { name_list_prussian }
+	top_liege = no
+}
+kingdom_feudal_prussian = {
+	type = title
+	tier = kingdom
+	priority = 50
+	governments = { feudal_government tribal_government clan_government }
+	name_lists = { name_list_prussian }
+}
 duke_feudal_male_prussian = {
 	type = character
 	gender = male
@@ -18356,6 +18448,23 @@ duke_feudal_male_prussian = {
 	governments = { feudal_government clan_government }
 	name_lists = { name_list_prussian }
 	top_liege = no
+}
+duke_feudal_female_prussian = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 30
+	governments = { feudal_government clan_government }
+	name_lists = { name_list_prussian }
+	top_liege = no
+}
+duchy_feudal_prussian = {
+	type = title
+	tier = duchy
+	priority = 30
+	governments = { feudal_government clan_government }
+	name_lists = { name_list_prussian }
 }
 duke_tribal_male_prussian = {
 	type = character
@@ -18377,6 +18486,23 @@ count_feudal_male_prussian = {
 	name_lists = { name_list_prussian }
 	top_liege = no
 }
+count_feudal_female_prussian = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 21
+	governments = { feudal_government clan_government }
+	name_lists = { name_list_prussian }
+	top_liege = no
+}
+county_feudal_prussian = {
+	type = title
+	tier = county
+	priority = 21
+	governments = { feudal_government clan_government }
+	name_lists = { name_list_prussian }
+}
 count_tribal_male_prussian = {
 	type = character
 	gender = male
@@ -18386,6 +18512,13 @@ count_tribal_male_prussian = {
 	governments = { tribal_government }
 	name_lists = { name_list_prussian }
 	top_liege = no
+}
+county_tribal_prussian = {
+	type = title
+	tier = county
+	priority = 22
+	governments = { tribal_government }
+	name_lists = { name_list_prussian }
 }
 baron_feudal_male_prussian = {
 	type = character

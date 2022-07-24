@@ -1,0 +1,112 @@
+﻿expel_jews_effect_county = {
+	set_variable = {
+		name = ashkenazi_presence
+		value = 0
+	}
+	set_variable = {
+		name = sephardi_presence
+		value = 0
+	}
+	set_variable = {
+		name = mizrahi_presence
+		value = 0
+	}
+	set_variable = {
+		name = radhanim_presence
+		value = 0
+	}
+	set_variable = {
+		name = kochinim_presence
+		value = 0
+	}
+	set_variable = {
+		name = kaifeng_presence
+		value = 0
+	}
+}
+expel_jews_effect = {
+	every_realm_county = {
+		expel_jews_effect_county = yes
+	}
+}
+grow_jewish_population = {
+	change_variable = {
+		name = ashkenazi_presence
+		multiply = 1.1
+	}
+	change_variable = {
+		name = sephardi_presence
+		multiply = 1.1
+	}
+	change_variable = {
+		name = mizrahi_presence
+		multiply = 1.1
+	}
+	change_variable = {
+		name = radhanim_presence
+		multiply = 1.1
+	}
+	change_variable = {
+		name = kochinim_presence
+		multiply = 1.1
+	}
+	change_variable = {
+		name = kaifeng_presence
+		multiply = 1.1
+	}
+	set_local_variable = {
+		name = saved_ashkenazi_overflow
+		value = this.ashkenazi_overflow
+	}
+	set_local_variable = {
+		name = saved_sephardi_overflow
+		value = this.sephardi_overflow
+	}
+	set_local_variable = {
+		name = saved_mizrahi_overflow
+		value = this.mizrahi_overflow
+	}
+	set_local_variable = {
+		name = saved_radhanim_overflow
+		value = this.radhanim_overflow
+	}
+	set_local_variable = {
+		name = saved_kochinim_overflow
+		value = this.kochinim_overflow
+	}
+	set_local_variable = {
+		name = saved_kaifeng_overflow
+		value = this.kaifeng_overflow
+	}
+	clamp_variable = {
+		name = ashkenazi_presence
+		min = 0.0
+		max = ashkenazi_carrying_capacity
+	}
+	clamp_variable = {
+		name = sephardi_presence
+		min = 0.0
+		max = sephardi_carrying_capacity
+	}
+	clamp_variable = {
+		name = mizrahi_presence
+		min = 0.0
+		max = mizrahi_carrying_capacity
+	}
+	clamp_variable = {
+		name = radhanim_presence
+		min = 0.0
+		max = radhanim_carrying_capacity
+	}
+	clamp_variable = {
+		name = kochinim_presence
+		min = 0.0
+		max = kochinim_carrying_capacity
+	}
+	clamp_variable = {
+		name = kaifeng_presence
+		min = 0.0
+		max = kaifeng_carrying_capacity
+	}
+	# Now we use the saved overflow values, somehow?
+}

@@ -1013,6 +1013,8 @@ custom_faroese = {
 		d_northern_isles
 	}
 }
+
+
 custom_scotland = {
 	duchies = {
 		d_the_isles d_galloway d_western_isles d_lothian d_albany d_moray
@@ -3291,3 +3293,30 @@ divergence_island_regions = {
 	}
 }
 
+###### Diaspora regions
+
+custom_kochinim = { # Malabar Coast
+	duchies = {
+		d_kalyani d_gangavadi d_raichur_doab d_pandya_nadu d_chola_nadu d_chera_nadu
+	}
+}
+custom_ashkenazi = {
+	regions = {
+		world_europe_west_francia world_europe_west_germania world_europe_west_britannia ghw_region_wendish_lands custom_hungary
+	}
+}
+custom_sephardi = {
+	regions = {
+		world_europe_west_iberia world_europe_south world_asia_minor
+	}
+}
+custom_mizrahi = {
+	regions = {
+		world_middle_east world_africa_north
+	}
+}
+custom_radhanites = {
+	regions = {
+		world_middle_east_persia world_steppe_west world_steppe_tarim
+	}
+}

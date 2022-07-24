@@ -167,9 +167,10 @@ jewish_courtier.0002 = {
 		}
 		if = {
 			limit = { NOT = { exists = scope:new_courtier } }
-			if = {
-				limit = { 
-					root = { has_ashkenazim = yes }
+			random_list = {
+			0 = {
+				modifier = {
+					add = capital_county.var:ashkenazi_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -177,9 +178,9 @@ jewish_courtier.0002 = {
 					save_scope_as = new_courtier
 				}
 			}
-			else_if = {
-				limit = { 
-					root = { has_sephardim = yes }
+			0 = {
+				modifier = {
+					add = capital_county.var:sephardi_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -187,9 +188,9 @@ jewish_courtier.0002 = {
 					save_scope_as = new_courtier
 				}
 			}
-			else_if = {
-				limit = { 
-					root = { has_kaifeng = yes }
+			0 = {
+				modifier = {
+					add = capital_county.var:kaifeng_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -197,9 +198,9 @@ jewish_courtier.0002 = {
 					save_scope_as = new_courtier
 				}
 			}
-			else_if = {
-				limit = { 
-					root = { has_mizrahim = yes }
+			0 = {
+				modifier = {
+					add = capital_county.var:mizrahi_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -207,9 +208,9 @@ jewish_courtier.0002 = {
 					save_scope_as = new_courtier
 				}
 			}
-			else_if = {
-				limit = { 
-					root = { has_radhanites = yes }
+			0 = {
+				modifier = {
+					add = capital_county.var:radhanim_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -217,15 +218,16 @@ jewish_courtier.0002 = {
 					save_scope_as = new_courtier
 				}
 			}
-			else_if = {
-				limit = { 
-					root = { has_kochinim = yes }
+			0 = {
+				modifier = {
+					add = capital_county.var:kochinim_presence
 				}
 				create_character = {
 					location = root.capital_province
 					template = kochinim_steward_character
 					save_scope_as = new_courtier
 				}
+			}
 			}
 			# Ultimate fallback
 			if = {
@@ -308,9 +310,10 @@ jewish_courtier.0003 = {
 		}
 		if = {
 			limit = { NOT = { exists = scope:new_courtier } }
-			if = {
-				limit = { 
-					root = { has_ashkenazim = yes }
+			random_list = {
+			0 = {
+				modifier = {
+					add = capital_county.var:ashkenazi_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -318,9 +321,9 @@ jewish_courtier.0003 = {
 					save_scope_as = new_courtier
 				}
 			}
-			else_if = {
-				limit = { 
-						root = { has_sephardim = yes }
+			0 = {
+				modifier = {
+					add = capital_county.var:sephardi_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -328,9 +331,9 @@ jewish_courtier.0003 = {
 					save_scope_as = new_courtier
 				}
 			}
-			else_if = {
-				limit = { 
-					root = { has_kaifeng = yes }
+			0 = {
+				modifier = {
+					add = capital_county.var:kaifeng_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -338,9 +341,9 @@ jewish_courtier.0003 = {
 					save_scope_as = new_courtier
 				}
 			}
-			else_if = {
-				limit = { 
-					root = { has_mizrahim = yes }
+			0 = {
+				modifier = {
+					add = capital_county.var:mizrahi_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -348,9 +351,9 @@ jewish_courtier.0003 = {
 					save_scope_as = new_courtier
 				}
 			}
-			else_if = {
-				limit = { 
-					root = { has_radhanites = yes }
+			0 = {
+				modifier = {
+					add = capital_county.var:radhanim_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -358,15 +361,16 @@ jewish_courtier.0003 = {
 					save_scope_as = new_courtier
 				}
 			}
-			else_if = {
-				limit = { 
-					root = { has_kochinim = yes }
+			0 = {
+				modifier = {
+					add = capital_county.var:kochinim_presence
 				}
 				create_character = {
 					location = root.capital_province
 					template = kochinim_diplomat_character
 					save_scope_as = new_courtier
 				}
+			}
 			}
 			# Ultimate fallback
 			if = {
@@ -472,19 +476,262 @@ jewish_courtier.0005 = {
 			}
 		remove_character_modifier = borrowed_from_jews
 		}
-		add_gold = @jewish_expulsion_gold
+		if = {
+			limit = {
+				has_character_modifier = benefactor_of_the_jews
+			}
+		remove_character_modifier = benefactor_of_the_jews
+		}
+		add_gold = 500
 		add_character_modifier = expelled_the_jews
 		add_character_flag = expelled_the_jews_timer
 		
 		hidden_effect = {
-		every_courtier_or_guest  = {
-		limit = { has_religion = religion:judaism_religion }
-			banish = yes
-			add_opinion = {
-				modifier = banished_me
-				target = root
+			every_courtier_or_guest  = {
+			limit = { has_religion = religion:judaism_religion }
+				banish = yes
+				add_opinion = {
+					modifier = banished_me
+					target = root
+				}
 			}
-		}
+			# Setting variables up
+			set_local_variable = {
+				name = ashkenazim_evacuate
+				value = 0
+			}
+			set_local_variable = {
+				name = sephardim_evacuate
+				value = 0
+			}
+			set_local_variable = {
+				name = mizrahim_evacuate
+				value = 0
+			}
+			set_local_variable = {
+				name = radhanim_evacuate
+				value = 0
+			}
+			set_local_variable = {
+				name = kochinim_evacuate
+				value = 0
+			}
+			set_local_variable = {
+				name = kaifeng_evacuate
+				value = 0
+			}
+			# Collect the amount of Jews who are to leave the kingdom that is expelling them
+			every_realm_county = {
+				if = {
+					limit = {
+						has_variable = ashkenazi_presence
+					}
+					change_local_variable = {
+						name = ashkenazim_evacuate
+						add = var:ashkenazi_presence
+					}
+				}
+				if = {
+					limit = {
+						has_variable = sephardi_presence
+					}
+					change_local_variable = {
+						name = sephardim_evacuate
+						add = var:sephardi_presence
+					}
+				}
+				if = {
+					limit = {
+						has_variable = mizrahi_presence
+					}
+					change_local_variable = {
+						name = mizrahim_evacuate
+						add = var:mizrahi_presence
+					}
+				}
+				if = {
+					limit = {
+						has_variable = radhanim_presence
+					}
+					change_local_variable = {
+						name = radhanim_evacuate
+						add = var:radhanim_presence
+					}
+				}
+				if = {
+					limit = {
+						has_variable = kochinim_presence
+					}
+					change_local_variable = {
+						name = kochinim_evacuate
+						add = var:kochinim_presence
+					}
+				}
+				if = {
+					limit = {
+						has_variable = kaifeng_presence
+					}
+					change_local_variable = {
+						name = kaifeng_evacuate
+						add = var:kaifeng_presence
+					}
+				}
+			}
+			# Some of them unfortunately get killed in the process of being expelled
+			# Pogroms and all that
+			change_local_variable = {
+				name = ashkenazim_evacuate
+				multiply = 0.9
+			}
+			change_local_variable = {
+				name = sephardim_evacuate
+				multiply = 0.9
+			}
+			change_local_variable = {
+				name = mizrahim_evacuate
+				multiply = 0.9
+			}
+			change_local_variable = {
+				name = radhanim_evacuate
+				multiply = 0.9
+			}
+			change_local_variable = {
+				name = kochinim_evacuate
+				multiply = 0.9
+			}
+			change_local_variable = {
+				name = kaifeng_evacuate
+				multiply = 0.9
+			}
+			set_local_variable = {
+				name = neighbour_realm_size_sum
+				value = 0
+			}
+			every_neighboring_top_liege_realm_owner = {
+				limit = {
+					NOT = { has_character_modifier = expelled_the_jews }
+					is_landed = yes
+				}
+				add_to_list = jew_receivers
+			}
+			every_in_list = {
+				list = jew_receivers
+				every_realm_county = {
+					limit = {
+						any_county_province = { has_holding_type = city_holding }
+					}
+					add_to_list = jew_receiving_counties
+					change_local_variable = {
+						name = neighbour_realm_size_sum
+						add = this.jewish_carrying_capacity
+					}
+				}
+				# Notify ruler of the arrival of the Jews
+				trigger_event = {
+					id = jewish_courtier.0011
+					days = 3
+				}
+			}
+			change_local_variable = {
+				name = ashkenazim_evacuate
+				divide = local_var:neighbour_realm_size_sum
+			}
+			change_local_variable = {
+				name = sephardim_evacuate
+				divide = local_var:neighbour_realm_size_sum
+			}
+			change_local_variable = {
+				name = mizrahim_evacuate
+				divide = local_var:neighbour_realm_size_sum
+			}
+			change_local_variable = {
+				name = radhanim_evacuate
+				divide = local_var:neighbour_realm_size_sum
+			}
+			change_local_variable = {
+				name = kochinim_evacuate
+				divide = local_var:neighbour_realm_size_sum
+			}
+			change_local_variable = {
+				name = kaifeng_evacuate
+				divide = local_var:neighbour_realm_size_sum
+			}
+			every_in_list = {
+				list = jew_receiving_counties
+				set_local_variable = {
+					name = ashkenazim_evacuated
+					value = local_var:ashkenazim_evacuate
+				}
+				change_local_variable = {
+					name = ashkenazim_evacuated
+					multiply = this.jewish_carrying_capacity
+				}
+				set_local_variable = {
+					name = sephardim_evacuated
+					value = local_var:sephardim_evacuate
+				}
+				change_local_variable = {
+					name = sephardim_evacuated
+					multiply = this.jewish_carrying_capacity
+				}
+				set_local_variable = {
+					name = mizrahim_evacuated
+					value = local_var:mizrahim_evacuate
+				}
+				change_local_variable = {
+					name = mizrahim_evacuated
+					multiply = this.jewish_carrying_capacity
+				}
+				set_local_variable = {
+					name = radhanim_evacuated
+					value = local_var:radhanim_evacuate
+				}
+				change_local_variable = {
+					name = radhanim_evacuated
+					multiply = this.jewish_carrying_capacity
+				}
+				set_local_variable = {
+					name = kochinim_evacuated
+					value = local_var:kochinim_evacuate
+				}
+				change_local_variable = {
+					name = kochinim_evacuated
+					multiply = this.jewish_carrying_capacity
+				}
+				set_local_variable = {
+					name = kaifeng_evacuated
+					value = local_var:kaifeng_evacuate
+				}
+				change_local_variable = {
+					name = kaifeng_evacuated
+					multiply = this.jewish_carrying_capacity
+				}
+				change_variable = {
+					name = ashkenazi_presence
+					value = local_var:ashkenazim_evacuated
+				}
+				change_variable = {
+					name = sephardi_presence
+					value = local_var:sephardim_evacuated
+				}
+				change_variable = {
+					name = mizrahi_presence
+					value = local_var:mizrahim_evacuated
+				}
+				change_variable = {
+					name = radhanim_presence
+					value = local_var:radhanim_evacuated
+				}
+				change_variable = {
+					name = kochinim_presence
+					value = local_var:kochinim_evacuated
+				}
+				change_variable = {
+					name = kaifeng_presence
+					value = local_var:kaifeng_evacuated
+				}
+			}
+			expel_jews_effect = yes
 		}
 		custom_tooltip = jews_are_expelled
 	}
@@ -623,4 +870,53 @@ jewish_courtier.0010 = {
 	}
 }
 }
+}
+
+# Jewish refugees arrive
+jewish_courtier.0011 = {
+	type = character_event
+	title = jewish_courtier.0011.t
+	desc = jewish_courtier.0011.desc
+	theme = learning
+	left_portrait = {
+		character = this
+		animation = personality_greedy
+	}
+	override_background = { event_background = throne_room }
+
+	immediate = {
+		play_music_cue = "mx_cue_peace_ensues"
+	}
+	option = { # Welcome them
+		name = jewish_courtier.0011.a
+		add_character_modifier = benefactor_of_the_jews
+		stress_impact = {
+			greedy = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 1
+			modifier = {
+				add = 99
+				has_trait = compassionate
+			}
+		}
+	}
+	option = { # We want money
+		name = jewish_courtier.0011.b
+		add_gold = 150
+		stress_impact = {
+			compassionate = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 1
+			modifier = {
+				add = 99
+				has_trait = greedy
+			}
+			modifier = {
+				add = 30
+				long_term_gold <= 150
+			}
+		}
+	}
 }
