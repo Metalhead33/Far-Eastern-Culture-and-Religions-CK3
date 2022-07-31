@@ -2,9 +2,21 @@
 # Feel free to use other files as well, but be careful about load order
 # Please remove the example formulas once there's a few real formulas
 
+
 diaspora_base_level = {
 	value = development_level
 	divide = 10
+}
+
+gypsy_overflow = {
+	value = 0
+	if = {
+		limit = {
+			has_variable = gypsy_presence
+		}
+		add = var:gypsy_presence
+		subtract = diaspora_base_level
+	}
 }
 
 jewish_carrying_capacity = {
@@ -174,7 +186,7 @@ kochinim_overflow = {
 			has_variable = kochinim_presence
 		}
 		add = var:kochinim_presence
-		subtract = kochinimcarrying_capacity
+		subtract = kochinim_carrying_capacity
 	}
 }
 

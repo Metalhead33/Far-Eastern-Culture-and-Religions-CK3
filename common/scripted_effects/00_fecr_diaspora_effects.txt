@@ -1,4 +1,77 @@
-﻿expel_jews_effect_county = {
+﻿
+grow_gypsy_population = {
+	if = {
+		limit = { holder.top_liege = { has_character_modifier = expelled_the_gypsies } }
+		change_variable = {
+			name = gypsy_presence
+			subtract = 0.1
+		}
+	}
+	else_if = {
+		any_neighboring_county = {
+			holder.top_liege = { has_character_modifier = expelled_the_gypsies }
+			var:gypsy_presence > 0.1
+		}
+		change_variable = {
+			name = gypsy_presence
+			add = 0.085
+		}
+		change_variable = {
+			name = gypsy_presence
+			multiply = 1.008
+		}
+	}
+	else {
+		change_variable = {
+			name = gypsy_presence
+			multiply = 1.008
+		}
+	}
+	set_local_variable = {
+		name = saved_gypsy_overflow
+		value = this.gypsy_overflow
+	}
+	clamp_variable = {
+		name = gypsy_presence
+		min = 0.0
+		max = diaspora_base_level
+	}
+	set_local_variable = {
+		name = total_neighbouring_development
+		value = 0
+	}
+	# Now we use the saved overflow values, somehow?
+	every_title_to_title_neighboring_and_across_water_county = {
+		limit = {
+			NOT = { holder.top_liege = { has_character_modifier = expelled_the_gypsies } }
+		}
+		add_to_list = gypsy_receiving_counties
+		change_local_variable = {
+			name = total_neighbouring_development
+			add = this.diaspora_base_level
+		}
+	}
+	change_local_variable = {
+		name = saved_gypsy_overflow
+		divide = local_var:total_neighbouring_development
+	}
+	every_in_list = {
+		list = gypsy_receiving_counties
+		set_local_variable = {
+			name = gypsies_evacuated
+			value = local_var:saved_gypsy_overflow
+		}
+		change_local_variable = {
+			name = gypsies_evacuated
+			multiply = this.diaspora_base_level
+		}
+		change_variable = {
+			name = gypsy_presence
+			value = local_var:gypsies_evacuated
+		}
+	}
+}
+expel_jews_effect_county = {
 	set_variable = {
 		name = ashkenazi_presence
 		value = 0
@@ -32,27 +105,27 @@ expel_jews_effect = {
 grow_jewish_population = {
 	change_variable = {
 		name = ashkenazi_presence
-		multiply = 1.1
+		multiply = 1.008
 	}
 	change_variable = {
 		name = sephardi_presence
-		multiply = 1.1
+		multiply = 1.008
 	}
 	change_variable = {
 		name = mizrahi_presence
-		multiply = 1.1
+		multiply = 1.008
 	}
 	change_variable = {
 		name = radhanim_presence
-		multiply = 1.1
+		multiply = 1.008
 	}
 	change_variable = {
 		name = kochinim_presence
-		multiply = 1.1
+		multiply = 1.008
 	}
 	change_variable = {
 		name = kaifeng_presence
-		multiply = 1.1
+		multiply = 1.008
 	}
 	set_local_variable = {
 		name = saved_ashkenazi_overflow
@@ -108,5 +181,119 @@ grow_jewish_population = {
 		min = 0.0
 		max = kaifeng_carrying_capacity
 	}
+	set_local_variable = {
+		name = total_neighbouring_development
+		value = 0
+	}
 	# Now we use the saved overflow values, somehow?
+	every_title_to_title_neighboring_and_across_water_county = {
+		limit = {
+			has_holding_type = city_holding
+			NOT = { holder.top_liege = { has_character_modifier = expelled_the_jews } }
+		}
+		add_to_list = jew_receiving_counties
+		change_local_variable = {
+			name = total_neighbouring_development
+			add = this.jewish_carrying_capacity
+		}
+	}
+	change_local_variable = {
+		name = saved_ashkenazi_overflow
+		divide = local_var:total_neighbouring_development
+	}
+	change_local_variable = {
+		name = saved_sephardi_overflow
+		divide = local_var:total_neighbouring_development
+	}
+	change_local_variable = {
+		name = saved_mizrahi_overflow
+		divide = local_var:total_neighbouring_development
+	}
+	change_local_variable = {
+		name = saved_radhanim_overflow
+		divide = local_var:total_neighbouring_development
+	}
+	change_local_variable = {
+		name = saved_kochinim_overflow
+		divide = local_var:total_neighbouring_development
+	}
+	change_local_variable = {
+		name = saved_kaifeng_overflow
+		divide = local_var:total_neighbouring_development
+	}
+	every_in_list = {
+		list = jew_receiving_counties
+		set_local_variable = {
+			name = ashkenazim_evacuated
+			value = local_var:saved_ashkenazi_overflow
+		}
+		change_local_variable = {
+			name = ashkenazim_evacuated
+			multiply = this.jewish_carrying_capacity
+		}
+		set_local_variable = {
+			name = sephardim_evacuated
+			value = local_var:saved_sephardi_overflow
+		}
+		change_local_variable = {
+			name = sephardim_evacuated
+			multiply = this.jewish_carrying_capacity
+		}
+		set_local_variable = {
+			name = mizrahim_evacuated
+			value = local_var:saved_radhanim_overflow
+		}
+		change_local_variable = {
+			name = mizrahim_evacuated
+			multiply = this.jewish_carrying_capacity
+		}
+		set_local_variable = {
+			name = radhanim_evacuated
+			value = local_var:saved_kaifeng_overflow
+		}
+		change_local_variable = {
+			name = radhanim_evacuated
+			multiply = this.jewish_carrying_capacity
+		}
+		set_local_variable = {
+			name = kochinim_evacuated
+			value = local_var:saved_kochinim_overflow
+		}
+		change_local_variable = {
+			name = kochinim_evacuated
+			multiply = this.jewish_carrying_capacity
+		}
+		set_local_variable = {
+			name = kaifeng_evacuated
+			value = local_var:kaifeng_evacuate
+		}
+		change_local_variable = {
+			name = kaifeng_evacuated
+			multiply = this.jewish_carrying_capacity
+		}
+		change_variable = {
+			name = ashkenazi_presence
+			value = local_var:ashkenazim_evacuated
+		}
+		change_variable = {
+			name = sephardi_presence
+			value = local_var:sephardim_evacuated
+		}
+		change_variable = {
+			name = mizrahi_presence
+			value = local_var:mizrahim_evacuated
+		}
+		change_variable = {
+			name = radhanim_presence
+			value = local_var:radhanim_evacuated
+		}
+		change_variable = {
+			name = kochinim_presence
+			value = local_var:kochinim_evacuated
+		}
+		change_variable = {
+			name = kaifeng_presence
+			value = local_var:kaifeng_evacuated
+		}
+	}
 }

@@ -537,6 +537,8 @@ eastern_culture.0012 = {
 
 	immediate = {
 		every_county = {
+			grow_gypsy_population = yes
+			grow_jewish_population = yes
 			# Jews
 			remove_county_modifier = jewish_community_very_large
 			remove_county_modifier = jewish_community_large

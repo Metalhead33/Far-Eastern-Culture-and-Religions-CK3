@@ -10,6 +10,28 @@ on_game_start = {
 yearly_global_pulse = {
 	events = {
 		eastern_culture.0012
+        delay = { months = 1 }
+		eastern_culture.0012
+        delay = { months = 2 }
+		eastern_culture.0012
+        delay = { months = 3 }
+		eastern_culture.0012
+        delay = { months = 4 }
+		eastern_culture.0012
+        delay = { months = 5 }
+		eastern_culture.0012
+        delay = { months = 6 }
+		eastern_culture.0012
+        delay = { months = 7 }
+		eastern_culture.0012
+        delay = { months = 8 }
+		eastern_culture.0012
+        delay = { months = 9 }
+		eastern_culture.0012
+        delay = { months = 10 }
+		eastern_culture.0012
+        delay = { months = 11 }
+		eastern_culture.0012
 	}
 }
 
