@@ -607,7 +607,7 @@ jewish_courtier.0005 = {
 				name = neighbour_realm_size_sum
 				value = 0
 			}
-			every_neighboring_top_liege_realm_owner = {
+			every_neighboring_and_across_water_top_liege_realm_owner = {
 				limit = {
 					NOT = { has_character_modifier = expelled_the_jews }
 					is_landed = yes
@@ -632,110 +632,130 @@ jewish_courtier.0005 = {
 					days = 3
 				}
 			}
-			change_local_variable = {
-				name = ashkenazim_evacuate
-				divide = local_var:neighbour_realm_size_sum
-			}
-			change_local_variable = {
-				name = sephardim_evacuate
-				divide = local_var:neighbour_realm_size_sum
-			}
-			change_local_variable = {
-				name = mizrahim_evacuate
-				divide = local_var:neighbour_realm_size_sum
-			}
-			change_local_variable = {
-				name = radhanim_evacuate
-				divide = local_var:neighbour_realm_size_sum
-			}
-			change_local_variable = {
-				name = kochinim_evacuate
-				divide = local_var:neighbour_realm_size_sum
-			}
-			change_local_variable = {
-				name = kaifeng_evacuate
-				divide = local_var:neighbour_realm_size_sum
-			}
-			every_in_list = {
-				list = jew_receiving_counties
-				set_local_variable = {
-					name = ashkenazim_evacuated
-					value = local_var:ashkenazim_evacuate
+			if = {
+				limit = { local_var:neighbour_realm_size_sum > 0 }
+				if = {
+					limit = { local_var:ashkenazim_evacuate > 0 }
+					change_local_variable = {
+						name = ashkenazim_evacuate
+						divide = local_var:neighbour_realm_size_sum
+					}
 				}
-				change_local_variable = {
-					name = ashkenazim_evacuated
-					multiply = this.jewish_carrying_capacity
+				if = {
+					limit = { local_var:sephardim_evacuate > 0 }
+					change_local_variable = {
+						name = sephardim_evacuate
+						divide = local_var:neighbour_realm_size_sum
+					}
 				}
-				set_local_variable = {
-					name = sephardim_evacuated
-					value = local_var:sephardim_evacuate
+				if = {
+					limit = { local_var:mizrahim_evacuate > 0 }
+					change_local_variable = {
+						name = mizrahim_evacuate
+						divide = local_var:neighbour_realm_size_sum
+					}
 				}
-				change_local_variable = {
-					name = sephardim_evacuated
-					multiply = this.jewish_carrying_capacity
+				if = {
+					limit = { local_var:radhanim_evacuate > 0 }
+					change_local_variable = {
+						name = radhanim_evacuate
+						divide = local_var:neighbour_realm_size_sum
+					}
 				}
-				set_local_variable = {
-					name = mizrahim_evacuated
-					value = local_var:mizrahim_evacuate
+				if = {
+					limit = { local_var:kochinim_evacuate > 0 }
+					change_local_variable = {
+						name = kochinim_evacuate
+						divide = local_var:neighbour_realm_size_sum
+					}
 				}
-				change_local_variable = {
-					name = mizrahim_evacuated
-					multiply = this.jewish_carrying_capacity
+				if = {
+					limit = { local_var:kaifeng_evacuate > 0 }
+					change_local_variable = {
+						name = kaifeng_evacuate
+						divide = local_var:neighbour_realm_size_sum
+					}
 				}
-				set_local_variable = {
-					name = radhanim_evacuated
-					value = local_var:radhanim_evacuate
-				}
-				change_local_variable = {
-					name = radhanim_evacuated
-					multiply = this.jewish_carrying_capacity
-				}
-				set_local_variable = {
-					name = kochinim_evacuated
-					value = local_var:kochinim_evacuate
-				}
-				change_local_variable = {
-					name = kochinim_evacuated
-					multiply = this.jewish_carrying_capacity
-				}
-				set_local_variable = {
-					name = kaifeng_evacuated
-					value = local_var:kaifeng_evacuate
-				}
-				change_local_variable = {
-					name = kaifeng_evacuated
-					multiply = this.jewish_carrying_capacity
-				}
-				change_variable = {
-					name = ashkenazi_presence
-					value = local_var:ashkenazim_evacuated
-				}
-				change_variable = {
-					name = sephardi_presence
-					value = local_var:sephardim_evacuated
-				}
-				change_variable = {
-					name = mizrahi_presence
-					value = local_var:mizrahim_evacuated
-				}
-				change_variable = {
-					name = radhanim_presence
-					value = local_var:radhanim_evacuated
-				}
-				change_variable = {
-					name = kochinim_presence
-					value = local_var:kochinim_evacuated
-				}
-				change_variable = {
-					name = kaifeng_presence
-					value = local_var:kaifeng_evacuated
+				every_in_list = {
+					list = jew_receiving_counties
+					set_local_variable = {
+						name = ashkenazim_evacuated
+						value = local_var:ashkenazim_evacuate
+					}
+					change_local_variable = {
+						name = ashkenazim_evacuated
+						multiply = this.jewish_carrying_capacity
+					}
+					set_local_variable = {
+						name = sephardim_evacuated
+						value = local_var:sephardim_evacuate
+					}
+					change_local_variable = {
+						name = sephardim_evacuated
+						multiply = this.jewish_carrying_capacity
+					}
+					set_local_variable = {
+						name = mizrahim_evacuated
+						value = local_var:mizrahim_evacuate
+					}
+					change_local_variable = {
+						name = mizrahim_evacuated
+						multiply = this.jewish_carrying_capacity
+					}
+					set_local_variable = {
+						name = radhanim_evacuated
+						value = local_var:radhanim_evacuate
+					}
+					change_local_variable = {
+						name = radhanim_evacuated
+						multiply = this.jewish_carrying_capacity
+					}
+					set_local_variable = {
+						name = kochinim_evacuated
+						value = local_var:kochinim_evacuate
+					}
+					change_local_variable = {
+						name = kochinim_evacuated
+						multiply = this.jewish_carrying_capacity
+					}
+					set_local_variable = {
+						name = kaifeng_evacuated
+						value = local_var:kaifeng_evacuate
+					}
+					change_local_variable = {
+						name = kaifeng_evacuated
+						multiply = this.jewish_carrying_capacity
+					}
+					change_variable = {
+						name = ashkenazi_presence
+						value = local_var:ashkenazim_evacuated
+					}
+					change_variable = {
+						name = sephardi_presence
+						value = local_var:sephardim_evacuated
+					}
+					change_variable = {
+						name = mizrahi_presence
+						value = local_var:mizrahim_evacuated
+					}
+					change_variable = {
+						name = radhanim_presence
+						value = local_var:radhanim_evacuated
+					}
+					change_variable = {
+						name = kochinim_presence
+						value = local_var:kochinim_evacuated
+					}
+					change_variable = {
+						name = kaifeng_presence
+						value = local_var:kaifeng_evacuated
+					}
 				}
 			}
 			expel_jews_effect = yes
 		}
 		custom_tooltip = jews_are_expelled
 	}
-
 }
 # Jews are expelled - inform vassals
 jewish_courtier.0006 = {

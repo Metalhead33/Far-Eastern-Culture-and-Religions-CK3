@@ -106,7 +106,7 @@
  gypsy_courtier.0006.t:0 "Liege is expelling the Gypsies!"
  gypsy_courtier.0007.t:0 "Gypsies welcomed back"
  gypsy_courtier.0008.t:0 "Liege is welcomg back the Gypsies"
- gypsy_courtier.0005.desc:0 "You have decided to expel all Gypsies from your realm. After your guards round the Gypsies up, they are forced to depart in yet another large exodus for lands more friendly to their kind. They are allowed to keep many of their belongings, but you confiscate much of their gold."
+ gypsy_courtier.0005.desc:0 "You have decided to expel all Gypsies from your realm. While your guards round some of the gypsies up and send them packing, they are a largely rural people who won't just leave the land so easily - it will take many decades of ruthless persecution, before our realm can be truly free of their presence. Until then, they will be causing trouble."
  gypsy_courtier.0006.desc:0 "Your liege, [top_liege|E], has issued a decree calling for the expulsion of all unlanded Gypsies from the entire realm, citing various grievances committed by them against the Crown."
  gypsy_courtier.0007.desc:0 "Gypsies have been banned from your realm for some time, but strangely this seems to have had no effect on many of the malaises they were thought responsible for, such as famines and disease. By now most Gypsies seem to have forgiven your offenses, and you have decided to welcome them back with open arms."
  gypsy_courtier.0008.desc:0 "Your liege, [top_liege|E], has decided to rescind the decree calling for the expulsion of all Gypsies. They are now once more permitted to live and work within the borders of the realm."

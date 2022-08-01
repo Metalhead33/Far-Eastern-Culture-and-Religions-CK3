@@ -76,8 +76,11 @@ kaifeng_ratio = {
 		limit = {
 			has_variable = kaifeng_presence
 		}
-		add = var:kaifeng_presence
-		divide = jewish_presence
+		if = {
+			limit = { var:kaifeng_presence > 0 }
+			add = var:kaifeng_presence
+			divide = jewish_presence
+		}
 	}
 }
 
@@ -87,8 +90,11 @@ kochinim_ratio = {
 		limit = {
 			has_variable = kochinim_presence
 		}
-		add = var:kochinim_presence
-		divide = jewish_presence
+		if = {
+			limit = { var:kochinim_presence > 0 }
+			add = var:kochinim_presence
+			divide = jewish_presence
+		}
 	}
 }
 
@@ -98,8 +104,11 @@ radhanim_ratio = {
 		limit = {
 			has_variable = radhanim_presence
 		}
-		add = var:radhanim_presence
-		divide = jewish_presence
+		if = {
+			limit = { var:radhanim_presence > 0 }
+			add = var:radhanim_presence
+			divide = jewish_presence
+		}
 	}
 }
 
@@ -109,8 +118,11 @@ ashkenazi_ratio = {
 		limit = {
 			has_variable = ashkenazi_presence
 		}
-		add = var:ashkenazi_presence
-		divide = jewish_presence
+		if = {
+			limit = { var:ashkenazi_presence > 0 }
+			add = var:ashkenazi_presence
+			divide = jewish_presence
+		}
 	}
 }
 
@@ -120,8 +132,11 @@ sephardi_ratio = {
 		limit = {
 			has_variable = sephardi_presence
 		}
-		add = var:sephardi_presence
-		divide = jewish_presence
+		if = {
+			limit = { var:sephardi_presence > 0 }
+			add = var:sephardi_presence
+			divide = jewish_presence
+		}
 	}
 }
 
@@ -131,8 +146,11 @@ mizrahi_ratio = {
 		limit = {
 			has_variable = mizrahi_presence
 		}
-		add = var:mizrahi_presence
-		divide = jewish_presence
+		if = {
+			limit = { var:mizrahi_presence > 0 }
+			add = var:mizrahi_presence
+			divide = jewish_presence
+		}
 	}
 }
 
