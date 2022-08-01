@@ -537,8 +537,24 @@ eastern_culture.0012 = {
 
 	immediate = {
 		every_county = {
-			grow_gypsy_population = yes
-			grow_jewish_population = yes
+
+			if = {
+				limit = {
+					has_variable = ashkenazi_presence
+					has_variable = sephardi_presence
+					has_variable = mizrahi_presence
+					has_variable = radhanim_presence
+					has_variable = kochinim_presence
+					has_variable = kaifeng_presence
+				}
+				grow_jewish_population = yes
+			}
+			if = {
+				limit = {
+					has_variable = gypsy_presence
+				}
+				grow_gypsy_population = yes
+			}
 			# Jews
 			remove_county_modifier = jewish_community_very_large
 			remove_county_modifier = jewish_community_large

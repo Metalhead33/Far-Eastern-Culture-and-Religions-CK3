@@ -294,7 +294,7 @@ grow_jewish_population = {
 			}
 			set_local_variable = {
 				name = kaifeng_evacuated
-				value = local_var:kaifeng_evacuate
+				value = local_var:saved_kaifeng_overflow
 			}
 			change_local_variable = {
 				name = kaifeng_evacuated
