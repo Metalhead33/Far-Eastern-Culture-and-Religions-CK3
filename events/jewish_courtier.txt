@@ -27,7 +27,7 @@ jewish_courtier.0001 = {
 			random_list = {
 			0 = {
 				modifier = {
-					add = capital_county.var:ashkenazi_presence
+					add = sub_realm_ashkenazi_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -37,7 +37,7 @@ jewish_courtier.0001 = {
 			}
 			0 = {
 				modifier = {
-					add = capital_county.var:sephardi_presence
+					add = sub_realm_sephardi_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -47,7 +47,7 @@ jewish_courtier.0001 = {
 			}
 			0 = {
 				modifier = {
-					add = capital_county.var:kaifeng_presence
+					add = sub_realm_kaifeng_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -57,7 +57,7 @@ jewish_courtier.0001 = {
 			}
 			0 = {
 				modifier = {
-					add = capital_county.var:mizrahi_presence
+					add = sub_realm_mizrahi_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -67,7 +67,7 @@ jewish_courtier.0001 = {
 			}
 			0 = {
 				modifier = {
-					add = capital_county.var:radhanim_presence
+					add = sub_realm_radhanim_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -77,7 +77,7 @@ jewish_courtier.0001 = {
 			}
 			0 = {
 				modifier = {
-					add = capital_county.var:kochinim_presence
+					add = sub_realm_kochinim_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -170,7 +170,7 @@ jewish_courtier.0002 = {
 			random_list = {
 			0 = {
 				modifier = {
-					add = capital_county.var:ashkenazi_presence
+					add = sub_realm_ashkenazi_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -180,7 +180,7 @@ jewish_courtier.0002 = {
 			}
 			0 = {
 				modifier = {
-					add = capital_county.var:sephardi_presence
+					add = sub_realm_sephardi_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -190,7 +190,7 @@ jewish_courtier.0002 = {
 			}
 			0 = {
 				modifier = {
-					add = capital_county.var:kaifeng_presence
+					add = sub_realm_kaifeng_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -200,7 +200,7 @@ jewish_courtier.0002 = {
 			}
 			0 = {
 				modifier = {
-					add = capital_county.var:mizrahi_presence
+					add = sub_realm_mizrahi_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -210,7 +210,7 @@ jewish_courtier.0002 = {
 			}
 			0 = {
 				modifier = {
-					add = capital_county.var:radhanim_presence
+					add = sub_realm_radhanim_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -220,7 +220,7 @@ jewish_courtier.0002 = {
 			}
 			0 = {
 				modifier = {
-					add = capital_county.var:kochinim_presence
+					add = sub_realm_kochinim_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -313,7 +313,7 @@ jewish_courtier.0003 = {
 			random_list = {
 			0 = {
 				modifier = {
-					add = capital_county.var:ashkenazi_presence
+					add = sub_realm_ashkenazi_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -323,7 +323,7 @@ jewish_courtier.0003 = {
 			}
 			0 = {
 				modifier = {
-					add = capital_county.var:sephardi_presence
+					add = sub_realm_sephardi_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -333,7 +333,7 @@ jewish_courtier.0003 = {
 			}
 			0 = {
 				modifier = {
-					add = capital_county.var:kaifeng_presence
+					add = sub_realm_kaifeng_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -343,7 +343,7 @@ jewish_courtier.0003 = {
 			}
 			0 = {
 				modifier = {
-					add = capital_county.var:mizrahi_presence
+					add = sub_realm_mizrahi_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -353,7 +353,7 @@ jewish_courtier.0003 = {
 			}
 			0 = {
 				modifier = {
-					add = capital_county.var:radhanim_presence
+					add = sub_realm_radhanim_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -363,7 +363,7 @@ jewish_courtier.0003 = {
 			}
 			0 = {
 				modifier = {
-					add = capital_county.var:kochinim_presence
+					add = sub_realm_kochinim_presence
 				}
 				create_character = {
 					location = root.capital_province
@@ -579,29 +579,30 @@ jewish_courtier.0005 = {
 			}
 			# Some of them unfortunately get killed in the process of being expelled
 			# Pogroms and all that
+			# Some turn into crypto-jews and/or convert
 			change_local_variable = {
 				name = ashkenazim_evacuate
-				multiply = 0.9
+				multiply = 0.6
 			}
 			change_local_variable = {
 				name = sephardim_evacuate
-				multiply = 0.9
+				multiply = 0.6
 			}
 			change_local_variable = {
 				name = mizrahim_evacuate
-				multiply = 0.9
+				multiply = 0.6
 			}
 			change_local_variable = {
 				name = radhanim_evacuate
-				multiply = 0.9
+				multiply = 0.6
 			}
 			change_local_variable = {
 				name = kochinim_evacuate
-				multiply = 0.9
+				multiply = 0.6
 			}
 			change_local_variable = {
 				name = kaifeng_evacuate
-				multiply = 0.9
+				multiply = 0.6
 			}
 			set_local_variable = {
 				name = neighbour_realm_size_sum

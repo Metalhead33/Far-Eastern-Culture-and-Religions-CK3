@@ -20,8 +20,8 @@
 		NOT = { culture = { has_cultural_pillar = heritage_gypsy } }
 		has_gypsies = yes
 		# Can't expel the gypsies if your spouse is one
-		any_spouse = {
-		NOT = { culture = { has_cultural_pillar = heritage_gypsy } }
+		NOT = {
+			any_spouse = { culture = { has_cultural_pillar = heritage_gypsy } }
 		}
 	}
 
@@ -178,9 +178,11 @@ welcome_the_gypsies = {
 		# Indians hate Gypsies
 		modifier = {
 			factor = 0
-			OR = {
-				has_cultural_pillar = heritage_indo_aryan
-				has_cultural_pillar = heritage_dravidian
+			culture = {
+				OR = {
+					has_cultural_pillar = heritage_indo_aryan
+					has_cultural_pillar = heritage_dravidian
+				}
 			}
 		}
 	}
@@ -254,9 +256,11 @@ hire_gypsy_spymaster_india = {
 		# Indians hate Gypsies
 		modifier = {
 			factor = 0
-			OR = {
-				has_cultural_pillar = heritage_indo_aryan
-				has_cultural_pillar = heritage_dravidian
+			culture = {
+				OR = {
+					has_cultural_pillar = heritage_indo_aryan
+					has_cultural_pillar = heritage_dravidian
+				}
 			}
 		}
 	}

@@ -538,6 +538,11 @@ eastern_culture.0012 = {
 	immediate = {
 		every_county = {
 
+			# Jews
+			remove_county_modifier = jewish_community_very_large
+			remove_county_modifier = jewish_community_large
+			remove_county_modifier = jewish_community_small
+			remove_county_modifier = jewish_community_very_small
 			if = {
 				limit = {
 					has_variable = ashkenazi_presence
@@ -548,41 +553,30 @@ eastern_culture.0012 = {
 					has_variable = kaifeng_presence
 				}
 				grow_jewish_population = yes
-			}
-			if = {
-				limit = {
-					has_variable = gypsy_presence
+				if = {
+					limit = {
+						this.jewish_presence >= 5
+					}
+					add_county_modifier = jewish_community_very_large
 				}
-				grow_gypsy_population = yes
-			}
-			# Jews
-			remove_county_modifier = jewish_community_very_large
-			remove_county_modifier = jewish_community_large
-			remove_county_modifier = jewish_community_small
-			remove_county_modifier = jewish_community_very_small
-			if = {
-				limit = {
-					this.jewish_presence >= 5
+				else_if = {
+					limit = {
+						this.jewish_presence >= 2.5
+					}
+					add_county_modifier = jewish_community_large
 				}
-				add_county_modifier = jewish_community_very_large
-			}
-			else_if = {
-				limit = {
-					this.jewish_presence >= 2.5
+				else_if = {
+					limit = {
+						this.jewish_presence >= 1
+					}
+					add_county_modifier = jewish_community_small
 				}
-				add_county_modifier = jewish_community_large
-			}
-			else_if = {
-				limit = {
-					this.jewish_presence >= 1
+				else_if = {
+					limit = {
+						this.jewish_presence >= 0.01
+					}
+					add_county_modifier = jewish_community_very_small
 				}
-				add_county_modifier = jewish_community_small
-			}
-			else_if = {
-				limit = {
-					this.jewish_presence >= 0.01
-				}
-				add_county_modifier = jewish_community_very_small
 			}
 			# Gypsies
 			remove_county_modifier = integrated_gypsy_community_very_small
@@ -595,58 +589,64 @@ eastern_culture.0012 = {
 			remove_county_modifier = oppressed_gypsy_community_very_large
 			if = {
 				limit = {
-					this.var:gypsy_presence >= 5
+					has_variable = gypsy_presence
 				}
+				grow_gypsy_population = yes
 				if = {
 					limit = {
-						this.holder = { gypsy_free_realm = yes }
+						this.var:gypsy_presence >= 5
 					}
-					add_county_modifier = oppressed_gypsy_community_very_large
+					if = {
+						limit = {
+							this.holder = { gypsy_free_realm = yes }
+						}
+						add_county_modifier = oppressed_gypsy_community_very_large
+					}
+					else = {
+						add_county_modifier = integrated_gypsy_community_very_large
+					}
 				}
-				else = {
-					add_county_modifier = integrated_gypsy_community_very_large
-				}
-			}
-			else_if = {
-				limit = {
-					this.var:gypsy_presence >= 2.5
-				}
-				if = {
+				else_if = {
 					limit = {
-						this.holder = { gypsy_free_realm = yes }
+						this.var:gypsy_presence >= 2.5
 					}
-					add_county_modifier = oppressed_gypsy_community_large
+					if = {
+						limit = {
+							this.holder = { gypsy_free_realm = yes }
+						}
+						add_county_modifier = oppressed_gypsy_community_large
+					}
+					else = {
+						add_county_modifier = integrated_gypsy_community_large
+					}
 				}
-				else = {
-					add_county_modifier = integrated_gypsy_community_large
-				}
-			}
-			else_if = {
-				limit = {
-					this.var:gypsy_presence >= 1
-				}
-				if = {
+				else_if = {
 					limit = {
-						this.holder = { gypsy_free_realm = yes }
+						this.var:gypsy_presence >= 1
 					}
-					add_county_modifier = oppressed_gypsy_community_small
+					if = {
+						limit = {
+							this.holder = { gypsy_free_realm = yes }
+						}
+						add_county_modifier = oppressed_gypsy_community_small
+					}
+					else = {
+						add_county_modifier = integrated_gypsy_community_small
+					}
 				}
-				else = {
-					add_county_modifier = integrated_gypsy_community_small
-				}
-			}
-			else_if = {
-				limit = {
-					this.var:gypsy_presence >= 0.05
-				}
-				if = {
+				else_if = {
 					limit = {
-						this.holder = { gypsy_free_realm = yes }
+						this.var:gypsy_presence >= 0.05
 					}
-					add_county_modifier = oppressed_gypsy_community_very_small
-				}
-				else = {
-					add_county_modifier = integrated_gypsy_community_very_small
+					if = {
+						limit = {
+							this.holder = { gypsy_free_realm = yes }
+						}
+						add_county_modifier = oppressed_gypsy_community_very_small
+					}
+					else = {
+						add_county_modifier = integrated_gypsy_community_very_small
+					}
 				}
 			}
 		}

@@ -147,7 +147,7 @@ has_kochinim = {
 	}
 }
 has_jews = {
-	capital_county = {
+	any_sub_realm_county = {
 		OR = {
 			has_county_modifier = jewish_community_very_small
 			has_county_modifier = jewish_community_small
@@ -157,7 +157,7 @@ has_jews = {
 	}
 }
 has_gypsies = {
-	capital_county = {
+	any_sub_realm_county = {
 		OR = {
 			has_county_modifier = integrated_gypsy_community_very_small
 			has_county_modifier = integrated_gypsy_community_small

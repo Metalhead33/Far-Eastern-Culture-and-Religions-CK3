@@ -28,8 +28,8 @@ expel_the_jews = {
 			NOT = {	has_doctrine = tenet_jewish_syncretism }
 		}
 		# Can't expel the jews if your spouse is one
-		any_spouse = {
-		NOT = { has_religion = religion:judaism_religion }
+		NOT = {
+			any_spouse = { has_religion = religion:judaism_religion }
 		}
 		has_jews = yes
 	}

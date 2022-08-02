@@ -1,5 +1,4 @@
-﻿
-grow_gypsy_population = {
+﻿grow_gypsy_population = {
 	if = {
 		limit = { holder.top_liege = { has_character_modifier = expelled_the_gypsies } }
 		change_variable = {
@@ -23,7 +22,7 @@ grow_gypsy_population = {
 			multiply = 1.008
 		}
 	}
-	else {
+	else = {
 		change_variable = {
 			name = gypsy_presence
 			multiply = 1.008

@@ -1001,9 +1001,9 @@ tradition_carpathian_fortress = {
 	is_shown = {
 		OR = {
 			has_cultural_pillar = heritage_magyar
-			this = culture:slovak
+			this = culture:slovien
 			any_parent_culture_or_above = {
-				this = culture:slovak
+				this = culture:slovien
 			}
 			any_culture_county = {
 				percent >= 0.1

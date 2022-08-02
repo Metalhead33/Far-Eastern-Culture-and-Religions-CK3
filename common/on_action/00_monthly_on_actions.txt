@@ -1,0 +1,12 @@
+﻿on_game_start = {
+    on_actions = {
+        monthly_global_pulse
+    }
+}
+
+monthly_global_pulse = {
+  on_actions = {
+    delay = { months = 1 }
+    monthly_global_pulse
+  }
+}

@@ -216,7 +216,6 @@ gypsy_courtier.0008 = {
 	option = { # Welcome them back
 		name = gypsy_courtier.0008.a
 	}
-
 }
 
 # Gypsies get un-expelled when you are Gypsy
@@ -224,8 +223,8 @@ gypsy_courtier.0010 = {
 	type = character_event
 	hidden = yes
 	trigger = {
-	culture = { has_cultural_pillar = heritage_gypsy }
-	has_character_modifier = expelled_the_gypsies
+		culture = { has_cultural_pillar = heritage_gypsy }
+		has_character_modifier = expelled_the_gypsies
 	}
 
 	immediate = {
@@ -234,6 +233,6 @@ gypsy_courtier.0010 = {
 				has_character_modifier = expelled_the_gypsies
 			}
 		remove_character_modifier = expelled_the_gypsies
-}
-}
+		}
+	}
 }

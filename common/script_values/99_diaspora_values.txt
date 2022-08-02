@@ -70,6 +70,78 @@ jewish_presence = {
 	}
 }
 
+sub_realm_kaifeng_presence = {
+	value = 0
+	every_sub_realm_county = {
+		if = {
+			limit = {
+				has_variable = kaifeng_presence
+			}
+			add = var:kaifeng_presence
+		}
+	}
+}
+
+sub_realm_kochinim_presence = {
+	value = 0
+	every_sub_realm_county = {
+		if = {
+			limit = {
+				has_variable = kochinim_presence
+			}
+			add = var:kochinim_presence
+		}
+	}
+}
+
+sub_realm_radhanim_presence = {
+	value = 0
+	every_sub_realm_county = {
+		if = {
+			limit = {
+				has_variable = radhanim_presence
+			}
+			add = var:radhanim_presence
+		}
+	}
+}
+
+sub_realm_mizrahi_presence = {
+	value = 0
+	every_sub_realm_county = {
+		if = {
+			limit = {
+				has_variable = mizrahi_presence
+			}
+			add = var:mizrahi_presence
+		}
+	}
+}
+
+sub_realm_sephardi_presence = {
+	value = 0
+	every_sub_realm_county = {
+		if = {
+			limit = {
+				has_variable = sephardi_presence
+			}
+			add = var:sephardi_presence
+		}
+	}
+}
+
+sub_realm_ashkenazi_presence = {
+	value = 0
+	every_sub_realm_county = {
+		if = {
+			limit = {
+				has_variable = ashkenazi_presence
+			}
+			add = var:ashkenazi_presence
+		}
+	}
+}
+
 kaifeng_ratio = {
 	value = 0
 	if = {
