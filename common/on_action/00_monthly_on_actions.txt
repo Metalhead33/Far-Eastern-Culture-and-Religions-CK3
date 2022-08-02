@@ -1,12 +1,33 @@
-﻿on_game_start = {
+﻿yearly_global_pulse = {
     on_actions = {
+        monthly_global_pulse
+        delay = { months = 1 }
+        monthly_global_pulse
+        delay = { months = 2 }
+        monthly_global_pulse
+        delay = { months = 3 }
+        monthly_global_pulse
+        delay = { months = 4 }
+        monthly_global_pulse
+        delay = { months = 5 }
+        monthly_global_pulse
+        delay = { months = 6 }
+        monthly_global_pulse
+        delay = { months = 7 }
+        monthly_global_pulse
+        delay = { months = 8 }
+        monthly_global_pulse
+        delay = { months = 9 }
+        monthly_global_pulse
+        delay = { months = 10 }
+        monthly_global_pulse
+        delay = { months = 11 }
         monthly_global_pulse
     }
 }
 
 monthly_global_pulse = {
-  on_actions = {
-    delay = { months = 1 }
-    monthly_global_pulse
-  }
+	events = {
+		eastern_culture.0012
+	}
 }
