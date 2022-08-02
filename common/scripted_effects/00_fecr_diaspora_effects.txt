@@ -74,7 +74,7 @@ grow_gypsy_population = {
 				}
 				change_variable = {
 					name = gypsy_presence
-					value = local_var:gypsies_evacuated
+					add = local_var:gypsies_evacuated
 				}
 			}
 		}
@@ -302,27 +302,27 @@ grow_jewish_population = {
 			}
 			change_variable = {
 				name = ashkenazi_presence
-				value = local_var:ashkenazim_evacuated
+				add = local_var:ashkenazim_evacuated
 			}
 			change_variable = {
 				name = sephardi_presence
-				value = local_var:sephardim_evacuated
+				add = local_var:sephardim_evacuated
 			}
 			change_variable = {
 				name = mizrahi_presence
-				value = local_var:mizrahim_evacuated
+				add = local_var:mizrahim_evacuated
 			}
 			change_variable = {
 				name = radhanim_presence
-				value = local_var:radhanim_evacuated
+				add = local_var:radhanim_evacuated
 			}
 			change_variable = {
 				name = kochinim_presence
-				value = local_var:kochinim_evacuated
+				add = local_var:kochinim_evacuated
 			}
 			change_variable = {
 				name = kaifeng_presence
-				value = local_var:kaifeng_evacuated
+				add = local_var:kaifeng_evacuated
 			}
 		}
 	}
