@@ -5,7 +5,7 @@
 
 diaspora_base_level = {
 	value = development_level
-	divide = 10
+	divide = 10.0
 }
 
 gypsy_overflow = {
@@ -21,7 +21,7 @@ gypsy_overflow = {
 
 jewish_carrying_capacity = {
 	value = development_level
-	divide = 10
+	divide = 10.0
 	if = {
 		limit = {
 			is_coastal_county = yes
@@ -71,74 +71,62 @@ jewish_presence = {
 }
 
 sub_realm_kaifeng_presence = {
-	value = 0
+	value = 0.0
 	every_sub_realm_county = {
-		if = {
-			limit = {
-				has_variable = kaifeng_presence
-			}
-			add = var:kaifeng_presence
+		limit = {
+			has_variable = kaifeng_presence
 		}
+		add = var:kaifeng_presence
 	}
 }
 
 sub_realm_kochinim_presence = {
-	value = 0
+	value = 0.0
 	every_sub_realm_county = {
-		if = {
-			limit = {
-				has_variable = kochinim_presence
-			}
-			add = var:kochinim_presence
+		limit = {
+			has_variable = kochinim_presence
 		}
+		add = var:kochinim_presence
 	}
 }
 
 sub_realm_radhanim_presence = {
-	value = 0
+	value = 0.0
 	every_sub_realm_county = {
-		if = {
-			limit = {
-				has_variable = radhanim_presence
-			}
-			add = var:radhanim_presence
+		limit = {
+			has_variable = radhanim_presence
 		}
+		add = var:radhanim_presence
 	}
 }
 
 sub_realm_mizrahi_presence = {
-	value = 0
+	value = 0.0
 	every_sub_realm_county = {
-		if = {
-			limit = {
-				has_variable = mizrahi_presence
-			}
-			add = var:mizrahi_presence
+		limit = {
+			has_variable = mizrahi_presence
 		}
+		add = var:mizrahi_presence
 	}
 }
 
 sub_realm_sephardi_presence = {
-	value = 0
+	value = 0.0
 	every_sub_realm_county = {
-		if = {
-			limit = {
-				has_variable = sephardi_presence
-			}
-			add = var:sephardi_presence
+		limit = {
+			has_variable = sephardi_presence
 		}
+		add = var:sephardi_presence
 	}
 }
 
 sub_realm_ashkenazi_presence = {
-	value = 0
+	value = 0.0
 	every_sub_realm_county = {
-		if = {
-			limit = {
-				has_variable = ashkenazi_presence
-			}
-			add = var:ashkenazi_presence
+		limit = {
+			has_variable = ashkenazi_presence
 		}
+		add = var:ashkenazi_presence
 	}
 }
 
@@ -262,7 +250,7 @@ kaifeng_overflow = {
 	value = 0
 	if = {
 		limit = {
-			has_variable = kaifeng_presence
+			var:kaifeng_presence >= kaifeng_carrying_capacity
 		}
 		add = var:kaifeng_presence
 		subtract = kaifeng_carrying_capacity
@@ -273,7 +261,7 @@ kochinim_overflow = {
 	value = 0
 	if = {
 		limit = {
-			has_variable = kochinim_presence
+			var:kochinim_presence >= kochinim_carrying_capacity
 		}
 		add = var:kochinim_presence
 		subtract = kochinim_carrying_capacity
@@ -284,7 +272,7 @@ radhanim_overflow = {
 	value = 0
 	if = {
 		limit = {
-			has_variable = radhanim_presence
+			var:radhanim_presence >= radhanim_carrying_capacity
 		}
 		add = var:radhanim_presence
 		subtract = radhanim_carrying_capacity
@@ -295,7 +283,7 @@ ashkenazi_overflow = {
 	value = 0
 	if = {
 		limit = {
-			has_variable = ashkenazi_presence
+			var:ashkenazi_presence >= ashkenazi_carrying_capacity
 		}
 		add = var:ashkenazi_presence
 		subtract = ashkenazi_carrying_capacity
@@ -306,7 +294,7 @@ sephardi_overflow = {
 	value = 0
 	if = {
 		limit = {
-			has_variable = sephardi_presence
+			var:sephardi_presence >= sephardi_carrying_capacity
 		}
 		add = var:sephardi_presence
 		subtract = sephardi_carrying_capacity
@@ -317,7 +305,7 @@ mizrahi_overflow = {
 	value = 0
 	if = {
 		limit = {
-			has_variable = mizrahi_presence
+			var:mizrahi_presence >= mizrahi_carrying_capacity
 		}
 		add = var:mizrahi_presence
 		subtract = mizrahi_carrying_capacity
