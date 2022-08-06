@@ -1,4 +1,17 @@
-﻿expel_jews_effect_county = {
+﻿# 1.0008 ^ 12 ~= 1.1, ergo 10% yearly growth
+@diaspora_growth_factor = 1.008
+# Needed for modifiers and other stuff
+@very_large_diaspora_min = 5.0
+@large_diaspora_min = 2.5
+@small_diaspora_min = 1.0
+@very_small_diaspora_min = 0.01
+# Diaspora radiation?
+@very_large_diaspora_infl = 0.2
+@large_diaspora_infl = 0.1
+@small_diaspora_infl = 0.04
+@very_small_diaspora_infl = 0.0004
+
+expel_jews_effect_county = {
 	set_variable = {
 		name = ashkenazi_presence
 		value = 0
@@ -27,5 +40,717 @@
 expel_jews_effect = {
 	every_realm_county = {
 		expel_jews_effect_county = yes
+	}
+}
+grow_diaspora_populations = {
+	# Jews
+	if = {
+		limit = {
+			NOR = {
+				holder = { has_character_modifier = expelled_the_jews }
+				holder.top_liege = { has_character_modifier = expelled_the_jews }
+			}
+		}
+		if = {
+			limit = {
+				var:ashkenazi_presence <= @very_large_diaspora_min
+				any_neighboring_county = { var:ashkenazi_presence >= @very_large_diaspora_min }
+			}
+			change_variable = {
+				name = ashkenazi_presence
+				add = @very_large_diaspora_infl
+			}
+		}
+		else_if = {
+			limit = {
+				var:ashkenazi_presence <= @large_diaspora_min
+				any_neighboring_county = { var:ashkenazi_presence >= @large_diaspora_min }
+			}
+			change_variable = {
+				name = ashkenazi_presence
+				add = @large_diaspora_infl
+			}
+		}
+		else_if = {
+			limit = {
+				var:ashkenazi_presence <= @small_diaspora_min
+				any_neighboring_county = { var:ashkenazi_presence >= @small_diaspora_min }
+			}
+			change_variable = {
+				name = ashkenazi_presence
+				add = @small_diaspora_infl
+			}
+		}
+		else_if = {
+			limit = {
+				var:ashkenazi_presence <= @very_small_diaspora_infl
+				any_neighboring_county = { var:ashkenazi_presence >= @very_small_diaspora_infl }
+			}
+			change_variable = {
+				name = ashkenazi_presence
+				add = @very_small_diaspora_infl
+			}
+		}
+		change_variable = {
+			name = ashkenazi_presence
+			multiply = @diaspora_growth_factor
+		}
+		if = {
+			limit = {
+				var:sephardi_presence <= @very_large_diaspora_min
+				any_neighboring_county = { var:sephardi_presence >= @very_large_diaspora_min }
+			}
+			change_variable = {
+				name = sephardi_presence
+				add = @very_large_diaspora_infl
+			}
+		}
+		else_if = {
+			limit = {
+				var:sephardi_presence <= @large_diaspora_min
+				any_neighboring_county = { var:sephardi_presence >= @large_diaspora_min }
+			}
+			change_variable = {
+				name = sephardi_presence
+				add = @large_diaspora_infl
+			}
+		}
+		else_if = {
+			limit = {
+				var:sephardi_presence <= @small_diaspora_min
+				any_neighboring_county = { var:sephardi_presence >= @small_diaspora_min }
+			}
+			change_variable = {
+				name = sephardi_presence
+				add = @small_diaspora_infl
+			}
+		}
+		else_if = {
+			limit = {
+				var:sephardi_presence <= @very_small_diaspora_infl
+				any_neighboring_county = { var:sephardi_presence >= @very_small_diaspora_infl }
+			}
+			change_variable = {
+				name = sephardi_presence
+				add = @very_small_diaspora_infl
+			}
+		}
+		change_variable = {
+			name = sephardi_presence
+			multiply = @diaspora_growth_factor
+		}
+		if = {
+			limit = {
+				var:mizrahi_presence <= @very_large_diaspora_min
+				any_neighboring_county = { var:mizrahi_presence >= @very_large_diaspora_min }
+			}
+			change_variable = {
+				name = mizrahi_presence
+				add = @very_large_diaspora_infl
+			}
+		}
+		else_if = {
+			limit = {
+				var:mizrahi_presence <= @large_diaspora_min
+				any_neighboring_county = { var:mizrahi_presence >= @large_diaspora_min }
+			}
+			change_variable = {
+				name = mizrahi_presence
+				add = @large_diaspora_infl
+			}
+		}
+		else_if = {
+			limit = {
+				var:mizrahi_presence <= @small_diaspora_min
+				any_neighboring_county = { var:mizrahi_presence >= @small_diaspora_min }
+			}
+			change_variable = {
+				name = mizrahi_presence
+				add = @small_diaspora_infl
+			}
+		}
+		else_if = {
+			limit = {
+				var:mizrahi_presence <= @very_small_diaspora_infl
+				any_neighboring_county = { var:mizrahi_presence >= @very_small_diaspora_infl }
+			}
+			change_variable = {
+				name = mizrahi_presence
+				add = @very_small_diaspora_infl
+			}
+		}
+		change_variable = {
+			name = mizrahi_presence
+			multiply = @diaspora_growth_factor
+		}
+		if = {
+			limit = {
+				var:radhanim_presence <= @very_large_diaspora_min
+				any_neighboring_county = { var:radhanim_presence >= @very_large_diaspora_min }
+			}
+			change_variable = {
+				name = radhanim_presence
+				add = @very_large_diaspora_infl
+			}
+		}
+		else_if = {
+			limit = {
+				var:radhanim_presence <= @large_diaspora_min
+				any_neighboring_county = { var:radhanim_presence >= @large_diaspora_min }
+			}
+			change_variable = {
+				name = radhanim_presence
+				add = @large_diaspora_infl
+			}
+		}
+		else_if = {
+			limit = {
+				var:radhanim_presence <= @small_diaspora_min
+				any_neighboring_county = { var:radhanim_presence >= @small_diaspora_min }
+			}
+			change_variable = {
+				name = radhanim_presence
+				add = @small_diaspora_infl
+			}
+		}
+		else_if = {
+			limit = {
+				var:radhanim_presence <= @very_small_diaspora_infl
+				any_neighboring_county = { var:radhanim_presence >= @very_small_diaspora_infl }
+			}
+			change_variable = {
+				name = radhanim_presence
+				add = @very_small_diaspora_infl
+			}
+		}
+		change_variable = {
+			name = radhanim_presence
+			multiply = @diaspora_growth_factor
+		}
+		if = {
+			limit = {
+				var:kochinim_presence <= @very_large_diaspora_min
+				any_neighboring_county = { var:kochinim_presence >= @very_large_diaspora_min }
+			}
+			change_variable = {
+				name = kochinim_presence
+				add = @very_large_diaspora_infl
+			}
+		}
+		else_if = {
+			limit = {
+				var:kochinim_presence <= @large_diaspora_min
+				any_neighboring_county = { var:kochinim_presence >= @large_diaspora_min }
+			}
+			change_variable = {
+				name = kochinim_presence
+				add = @large_diaspora_infl
+			}
+		}
+		else_if = {
+			limit = {
+				var:kochinim_presence <= @small_diaspora_min
+				any_neighboring_county = { var:kochinim_presence >= @small_diaspora_min }
+			}
+			change_variable = {
+				name = kochinim_presence
+				add = @small_diaspora_infl
+			}
+		}
+		else_if = {
+			limit = {
+				var:kochinim_presence <= @very_small_diaspora_infl
+				any_neighboring_county = { var:kochinim_presence >= @very_small_diaspora_infl }
+			}
+			change_variable = {
+				name = kochinim_presence
+				add = @very_small_diaspora_infl
+			}
+		}
+		change_variable = {
+			name = kochinim_presence
+			multiply = @diaspora_growth_factor
+		}
+		if = {
+			limit = {
+				var:kaifeng_presence <= @very_large_diaspora_min
+				any_neighboring_county = { var:kaifeng_presence >= @very_large_diaspora_min }
+			}
+			change_variable = {
+				name = kaifeng_presence
+				add = @very_large_diaspora_infl
+			}
+		}
+		else_if = {
+			limit = {
+				var:kaifeng_presence <= @large_diaspora_min
+				any_neighboring_county = { var:kaifeng_presence >= @large_diaspora_min }
+			}
+			change_variable = {
+				name = kaifeng_presence
+				add = @large_diaspora_infl
+			}
+		}
+		else_if = {
+			limit = {
+				var:kaifeng_presence <= @small_diaspora_min
+				any_neighboring_county = { var:kaifeng_presence >= @small_diaspora_min }
+			}
+			change_variable = {
+				name = kaifeng_presence
+				add = @small_diaspora_infl
+			}
+		}
+		else_if = {
+			limit = {
+				var:kaifeng_presence <= @very_small_diaspora_infl
+				any_neighboring_county = { var:kaifeng_presence >= @very_small_diaspora_infl }
+			}
+			change_variable = {
+				name = kaifeng_presence
+				add = @very_small_diaspora_infl
+			}
+		}
+		change_variable = {
+			name = kaifeng_presence
+			multiply = @diaspora_growth_factor
+		}
+	}
+	# Gypsies
+	if = {
+		limit = {
+			OR = {
+				holder = { has_character_modifier = expelled_the_gypsies }
+				holder.top_liege = { has_character_modifier = expelled_the_gypsies }
+			}
+		}
+		change_variable = {
+			name = gypsy_presence
+			subtract = 0.1
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				any_neighboring_county = {
+					OR = {
+						holder = { has_character_modifier = expelled_the_gypsies }
+						holder.top_liege = { has_character_modifier = expelled_the_gypsies }
+					}
+					var:gypsy_presence > 0.1
+				}
+			}
+			change_variable = {
+				name = gypsy_presence
+				add = 0.085
+			}
+		}
+		if = {
+			limit = {
+				var:gypsy_presence <= @very_large_diaspora_min
+				any_neighboring_county = { var:gypsy_presence >= @very_large_diaspora_min }
+			}
+			change_variable = {
+				name = gypsy_presence
+				add = @very_large_diaspora_infl
+			}
+		}
+		else_if = {
+			limit = {
+				var:gypsy_presence <= @large_diaspora_min
+				any_neighboring_county = { var:gypsy_presence >= @large_diaspora_min }
+			}
+			change_variable = {
+				name = gypsy_presence
+				add = @large_diaspora_infl
+			}
+		}
+		else_if = {
+			limit = {
+				var:gypsy_presence <= @small_diaspora_min
+				any_neighboring_county = { var:gypsy_presence >= @small_diaspora_min }
+			}
+			change_variable = {
+				name = gypsy_presence
+				add = @small_diaspora_infl
+			}
+		}
+		else_if = {
+			limit = {
+				var:gypsy_presence <= @very_small_diaspora_infl
+				any_neighboring_county = { var:gypsy_presence >= @very_small_diaspora_infl }
+			}
+			change_variable = {
+				name = gypsy_presence
+				add = @very_small_diaspora_infl
+			}
+		}
+		change_variable = {
+			name = gypsy_presence
+			multiply = @diaspora_growth_factor
+		}
+	}
+}
+overflow_diaspora_populations = {
+#	# Jews
+#	set_local_variable = {
+#		name = saved_ashkenazi_overflow
+#		value = this.ashkenazi_overflow
+#	}
+#	set_local_variable = {
+#		name = saved_sephardi_overflow
+#		value = this.sephardi_overflow
+#	}
+#	set_local_variable = {
+#		name = saved_mizrahi_overflow
+#		value = this.mizrahi_overflow
+#	}
+#	set_local_variable = {
+#		name = saved_radhanim_overflow
+#		value = this.radhanim_overflow
+#	}
+#	set_local_variable = {
+#		name = saved_kochinim_overflow
+#		value = this.kochinim_overflow
+#	}
+#	set_local_variable = {
+#		name = saved_kaifeng_overflow
+#		value = this.kaifeng_overflow
+#	}
+	clamp_variable = {
+		name = ashkenazi_presence
+		min = 0.0
+		max = this.ashkenazi_carrying_capacity
+	}
+	clamp_variable = {
+		name = sephardi_presence
+		min = 0.0
+		max = this.sephardi_carrying_capacity
+	}
+	clamp_variable = {
+		name = mizrahi_presence
+		min = 0.0
+		max = this.mizrahi_carrying_capacity
+	}
+	clamp_variable = {
+		name = radhanim_presence
+		min = 0.0
+		max = this.radhanim_carrying_capacity
+	}
+	clamp_variable = {
+		name = kochinim_presence
+		min = 0.0
+		max = this.kochinim_carrying_capacity
+	}
+	clamp_variable = {
+		name = kaifeng_presence
+		min = 0.0
+		max = this.kaifeng_carrying_capacity
+	}
+	# Gypsies
+#	set_local_variable = {
+#		name = saved_gypsy_overflow
+#		value = this.gypsy_overflow
+#	}
+	clamp_variable = {
+		name = gypsy_presence
+		min = 0.0
+		max = diaspora_base_level
+	}
+#	# Now we use the saved overflow values, somehow?
+#	set_local_variable = {
+#		name = j_total_neighbouring_development
+#		value = 0
+#	}
+#	set_local_variable = {
+#		name = g_total_neighbouring_development
+#		value = 0
+#	}
+#	every_title_to_title_neighboring_and_across_water_county = {
+#		limit = {
+#			any_county_province = { has_holding_type = city_holding }
+#			NOT = { holder.top_liege = { has_character_modifier = expelled_the_jews } }
+#		}
+#		if = {
+#			limit = {
+#				any_county_province = { has_holding_type = city_holding }
+#				NOT = { holder.top_liege = { has_character_modifier = expelled_the_jews } }
+#			}
+#			add_to_list =jew_receiving_counties
+#			change_local_variable = {
+#				name = j_total_neighbouring_development
+#				add = this.jewish_carrying_capacity
+#			}
+#		}
+#		if = {
+#			limit = {
+#				NOT = { holder.top_liege = { has_character_modifier = expelled_the_gypsies } }
+#			}
+#			add_to_list = gypsy_receiving_counties
+#			change_local_variable = {
+#				name = g_total_neighbouring_development
+#				add = this.diaspora_base_level
+#			}
+#		}
+#	}
+#	if = {
+#		limit = { local_var:j_total_neighbouring_development > 0 }
+#		if = {
+#			limit = { local_var:saved_ashkenazi_overflow > 0 }
+#			change_local_variable = {
+#				name = saved_ashkenazi_overflow
+#				divide = local_var:j_total_neighbouring_development
+#			}
+#		}
+#		if = {
+#			limit = { local_var:saved_sephardi_overflow > 0 }
+#			change_local_variable = {
+#				name = saved_sephardi_overflow
+#				divide = local_var:j_total_neighbouring_development
+#			}
+#		}
+#		if = {
+#			limit = { local_var:saved_mizrahi_overflow > 0 }
+#			change_local_variable = {
+#				name = saved_mizrahi_overflow
+#				divide = local_var:j_total_neighbouring_development
+#			}
+#		}
+#		if = {
+#			limit = { local_var:saved_radhanim_overflow > 0 }
+#			change_local_variable = {
+#				name = saved_radhanim_overflow
+#				divide = local_var:j_total_neighbouring_development
+#			}
+#		}
+#		if = {
+#			limit = { local_var:saved_kochinim_overflow > 0 }
+#			change_local_variable = {
+#				name = saved_kochinim_overflow
+#				divide = local_var:j_total_neighbouring_development
+#			}
+#		}
+#		if = {
+#			limit = { local_var:saved_kaifeng_overflow > 0 }
+#			change_local_variable = {
+#				name = saved_kaifeng_overflow
+#				divide = local_var:j_total_neighbouring_development
+#			}
+#		}
+#		every_in_list = {
+#			list = jew_receiving_counties
+#			set_local_variable = {
+#				name = ashkenazim_evacuated
+#				value = local_var:saved_ashkenazi_overflow
+#			}
+#			change_local_variable = {
+#				name = ashkenazim_evacuated
+#				multiply = this.jewish_carrying_capacity
+#			}
+#			set_local_variable = {
+#				name = sephardim_evacuated
+#				value = local_var:saved_sephardi_overflow
+#			}
+#			change_local_variable = {
+#				name = sephardim_evacuated
+#				multiply = this.jewish_carrying_capacity
+#			}
+#			set_local_variable = {
+#				name = mizrahim_evacuated
+#				value = local_var:saved_radhanim_overflow
+#			}
+#			change_local_variable = {
+#				name = mizrahim_evacuated
+#				multiply = this.jewish_carrying_capacity
+#			}
+#			set_local_variable = {
+#				name = radhanim_evacuated
+#				value = local_var:saved_kaifeng_overflow
+#			}
+#			change_local_variable = {
+#				name = radhanim_evacuated
+#				multiply = this.jewish_carrying_capacity
+#			}
+#			set_local_variable = {
+#				name = kochinim_evacuated
+#				value = local_var:saved_kochinim_overflow
+#			}
+#			change_local_variable = {
+#				name = kochinim_evacuated
+#				multiply = this.jewish_carrying_capacity
+#			}
+#			set_local_variable = {
+#				name = kaifeng_evacuated
+#				value = local_var:saved_kaifeng_overflow
+#			}
+#			change_local_variable = {
+#				name = kaifeng_evacuated
+#				multiply = this.jewish_carrying_capacity
+#			}
+#			if = {
+#				limit = { var:ashkenazi_presence <= @very_small_diaspora_min }
+#				change_variable = {
+#					name = ashkenazi_presence
+#					add = local_var:ashkenazim_evacuated
+#				}
+#			}
+#			if = {
+#				limit = { var:sephardi_presence <= @very_small_diaspora_min }
+#				change_variable = {
+#					name = sephardi_presence
+#					add = local_var:sephardim_evacuated
+#				}
+#			}
+#			if = {
+#				limit = { var:mizrahi_presence <= @very_small_diaspora_min }
+#				change_variable = {
+#					name = mizrahi_presence
+#					add = local_var:mizrahim_evacuated
+#				}
+#			}
+#			if = {
+#				limit = { var:radhanim_presence <= @very_small_diaspora_min }
+#				change_variable = {
+#					name = radhanim_presence
+#					add = local_var:radhanim_evacuated
+#				}
+#			}
+#			if = {
+#				limit = { var:kochinim_presence <= @very_small_diaspora_min }
+#				change_variable = {
+#					name = kochinim_presence
+#					add = local_var:kochinim_evacuated
+#				}
+#			}
+#			if = {
+#				limit = { var:kaifeng_presence <= @very_small_diaspora_min }
+#				change_variable = {
+#					name = kaifeng_presence
+#					add = local_var:kaifeng_evacuated
+#				}
+#			}
+#		}
+#	}
+#	if = {
+#		limit = { local_var:g_total_neighbouring_development > 0 }
+#		change_local_variable = {
+#			name = saved_gypsy_overflow
+#			divide = local_var:g_total_neighbouring_development
+#		}
+#		every_in_list = {
+#			list = gypsy_receiving_counties
+#			set_local_variable = {
+#			name = gypsies_evacuated
+#			value = local_var:saved_gypsy_overflow
+#			}
+#			change_local_variable = {
+#			name = gypsies_evacuated
+#			multiply = this.diaspora_base_level
+#			}
+#			if = {
+#				limit = { var:gypsy_presence <= @very_small_diaspora_min }
+#				change_variable = {
+#					name = gypsy_presence
+#					add = local_var:gypsies_evacuated
+#				}
+#			}
+#		}
+#	}
+}
+set_diaspora_modifiers = {
+	remove_county_modifier = jewish_community_very_large
+	remove_county_modifier = jewish_community_large
+	remove_county_modifier = jewish_community_small
+	remove_county_modifier = jewish_community_very_small
+	if = {
+		if = {
+			limit = {
+				this.jewish_presence >= @very_large_diaspora_min
+			}
+			add_county_modifier = jewish_community_very_large
+		}
+		else_if = {
+			limit = {
+				this.jewish_presence >= @large_diaspora_min
+			}
+			add_county_modifier = jewish_community_large
+		}
+		else_if = {
+			limit = {
+				this.jewish_presence >= @small_diaspora_min
+			}
+			add_county_modifier = jewish_community_small
+		}
+		else_if = {
+			limit = {
+				this.jewish_presence >= @very_small_diaspora_min
+			}
+			add_county_modifier = jewish_community_very_small
+		}
+	}
+	# Gypsies
+	remove_county_modifier = integrated_gypsy_community_very_small
+	remove_county_modifier = oppressed_gypsy_community_very_small
+	remove_county_modifier = integrated_gypsy_community_small
+	remove_county_modifier = oppressed_gypsy_community_small
+	remove_county_modifier = integrated_gypsy_community_large
+	remove_county_modifier = oppressed_gypsy_community_large
+	remove_county_modifier = integrated_gypsy_community_very_large
+	remove_county_modifier = oppressed_gypsy_community_very_large
+	if = {
+		limit = {
+			this.var:gypsy_presence >= @very_large_diaspora_min
+		}
+		if = {
+			limit = {
+				this.holder = { gypsy_free_realm = yes }
+			}
+			add_county_modifier = oppressed_gypsy_community_very_large
+		}
+		else = {
+			add_county_modifier = integrated_gypsy_community_very_large
+		}
+	}
+	else_if = {
+		limit = {
+			this.var:gypsy_presence >= @large_diaspora_min
+		}
+		if = {
+			limit = {
+				this.holder = { gypsy_free_realm = yes }
+			}
+			add_county_modifier = oppressed_gypsy_community_large
+		}
+		else = {
+			add_county_modifier = integrated_gypsy_community_large
+		}
+	}
+	else_if = {
+		limit = {
+			this.var:gypsy_presence >= @small_diaspora_min
+		}
+		if = {
+			limit = {
+				this.holder = { gypsy_free_realm = yes }
+			}
+			add_county_modifier = oppressed_gypsy_community_small
+		}
+		else = {
+			add_county_modifier = integrated_gypsy_community_small
+		}
+	}
+	else_if = {
+		limit = {
+			this.var:gypsy_presence >= @very_small_diaspora_min
+		}
+		if = {
+			limit = {
+				this.holder = { gypsy_free_realm = yes }
+			}
+			add_county_modifier = oppressed_gypsy_community_very_small
+		}
+		else = {
+			add_county_modifier = integrated_gypsy_community_very_small
+		}
 	}
 }

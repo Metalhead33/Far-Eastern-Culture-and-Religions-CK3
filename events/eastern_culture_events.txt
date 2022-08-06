@@ -536,241 +536,41 @@ eastern_culture.0012 = {
 	hidden = yes
 
 	immediate = {
+		# First iteration:  grow populations:
 		every_county = {
-
-			# Jews
-			remove_county_modifier = jewish_community_very_large
-			remove_county_modifier = jewish_community_large
-			remove_county_modifier = jewish_community_small
-			remove_county_modifier = jewish_community_very_small
-			if = {
-				limit = {
-					has_variable = ashkenazi_presence
-					has_variable = sephardi_presence
-					has_variable = mizrahi_presence
-					has_variable = radhanim_presence
-					has_variable = kochinim_presence
-					has_variable = kaifeng_presence
-				}
-				change_variable = {
-					name = ashkenazi_presence
-					multiply = 1.008
-				}
-				change_variable = {
-					name = sephardi_presence
-					multiply = 1.008
-				}
-				change_variable = {
-					name = mizrahi_presence
-					multiply = 1.008
-				}
-				change_variable = {
-					name = radhanim_presence
-					multiply = 1.008
-				}
-				change_variable = {
-					name = kochinim_presence
-					multiply = 1.008
-				}
-				change_variable = {
-					name = kaifeng_presence
-					multiply = 1.008
-				}
-				set_local_variable = {
-					name = saved_ashkenazi_overflow
-					value = this.ashkenazi_overflow
-				}
-				set_local_variable = {
-					name = saved_sephardi_overflow
-					value = this.sephardi_overflow
-				}
-				set_local_variable = {
-					name = saved_mizrahi_overflow
-					value = this.mizrahi_overflow
-				}
-				set_local_variable = {
-					name = saved_radhanim_overflow
-					value = this.radhanim_overflow
-				}
-				set_local_variable = {
-					name = saved_kochinim_overflow
-					value = this.kochinim_overflow
-				}
-				set_local_variable = {
-					name = saved_kaifeng_overflow
-					value = this.kaifeng_overflow
-				}
-				clamp_variable = {
-					name = ashkenazi_presence
-					min = 0.0
-					max = this.ashkenazi_carrying_capacity
-				}
-				clamp_variable = {
-					name = sephardi_presence
-					min = 0.0
-					max = this.sephardi_carrying_capacity
-				}
-				clamp_variable = {
-					name = mizrahi_presence
-					min = 0.0
-					max = this.mizrahi_carrying_capacity
-				}
-				clamp_variable = {
-					name = radhanim_presence
-					min = 0.0
-					max = this.radhanim_carrying_capacity
-				}
-				clamp_variable = {
-					name = kochinim_presence
-					min = 0.0
-					max = this.kochinim_carrying_capacity
-				}
-				clamp_variable = {
-					name = kaifeng_presence
-					min = 0.0
-					max = this.kaifeng_carrying_capacity
-				}
-				if = {
-					limit = {
-						this.jewish_presence >= 5.0
-					}
-					add_county_modifier = jewish_community_very_large
-				}
-				else_if = {
-					limit = {
-						this.jewish_presence >= 2.5
-					}
-					add_county_modifier = jewish_community_large
-				}
-				else_if = {
-					limit = {
-						this.jewish_presence >= 1.0
-					}
-					add_county_modifier = jewish_community_small
-				}
-				else_if = {
-					limit = {
-						this.jewish_presence >= 0.01
-					}
-					add_county_modifier = jewish_community_very_small
-				}
+			limit = {
+				has_variable = ashkenazi_presence
+				has_variable = sephardi_presence
+				has_variable = mizrahi_presence
+				has_variable = radhanim_presence
+				has_variable = kochinim_presence
+				has_variable = kaifeng_presence
 			}
-			# Gypsies
-			remove_county_modifier = integrated_gypsy_community_very_small
-			remove_county_modifier = oppressed_gypsy_community_very_small
-			remove_county_modifier = integrated_gypsy_community_small
-			remove_county_modifier = oppressed_gypsy_community_small
-			remove_county_modifier = integrated_gypsy_community_large
-			remove_county_modifier = oppressed_gypsy_community_large
-			remove_county_modifier = integrated_gypsy_community_very_large
-			remove_county_modifier = oppressed_gypsy_community_very_large
-			if = {
-				limit = {
-					has_variable = gypsy_presence
-				}
-				if = {
-					limit = {
-						OR = {
-							holder = { has_character_modifier = expelled_the_gypsies }
-							holder.top_liege = { has_character_modifier = expelled_the_gypsies }
-						}
-					}
-					change_variable = {
-						name = gypsy_presence
-						subtract = 0.1
-					}
-				}
-				else_if = {
-					limit = {
-						any_neighboring_county = {
-							OR = {
-								holder = { has_character_modifier = expelled_the_gypsies }
-								holder.top_liege = { has_character_modifier = expelled_the_gypsies }
-							}
-							var:gypsy_presence > 0.1
-						}
-					}
-					change_variable = {
-						name = gypsy_presence
-						add = 0.085
-					}
-					change_variable = {
-						name = gypsy_presence
-						multiply = 1.008
-					}
-				}
-				else = {
-					change_variable = {
-						name = gypsy_presence
-						multiply = 1.008
-					}
-				}
-				set_local_variable = {
-					name = saved_gypsy_overflow
-					value = this.gypsy_overflow
-				}
-				clamp_variable = {
-					name = gypsy_presence
-					min = 0.0
-					max = diaspora_base_level
-				}
-				if = {
-					limit = {
-						this.var:gypsy_presence >= 5.0
-					}
-					if = {
-						limit = {
-							this.holder = { gypsy_free_realm = yes }
-						}
-						add_county_modifier = oppressed_gypsy_community_very_large
-					}
-					else = {
-						add_county_modifier = integrated_gypsy_community_very_large
-					}
-				}
-				else_if = {
-					limit = {
-						this.var:gypsy_presence >= 2.5
-					}
-					if = {
-						limit = {
-							this.holder = { gypsy_free_realm = yes }
-						}
-						add_county_modifier = oppressed_gypsy_community_large
-					}
-					else = {
-						add_county_modifier = integrated_gypsy_community_large
-					}
-				}
-				else_if = {
-					limit = {
-						this.var:gypsy_presence >= 1.0
-					}
-					if = {
-						limit = {
-							this.holder = { gypsy_free_realm = yes }
-						}
-						add_county_modifier = oppressed_gypsy_community_small
-					}
-					else = {
-						add_county_modifier = integrated_gypsy_community_small
-					}
-				}
-				else_if = {
-					limit = {
-						this.var:gypsy_presence >= 0.05
-					}
-					if = {
-						limit = {
-							this.holder = { gypsy_free_realm = yes }
-						}
-						add_county_modifier = oppressed_gypsy_community_very_small
-					}
-					else = {
-						add_county_modifier = integrated_gypsy_community_very_small
-					}
-				}
+			grow_diaspora_populations = yes
+		}
+		# Second iteration:  handle overflows:
+		every_county = {
+			limit = {
+				has_variable = ashkenazi_presence
+				has_variable = sephardi_presence
+				has_variable = mizrahi_presence
+				has_variable = radhanim_presence
+				has_variable = kochinim_presence
+				has_variable = kaifeng_presence
 			}
+			overflow_diaspora_populations = yes
+		}
+		# Third iteration - apply modifiers
+		every_county = {
+			limit = {
+				has_variable = ashkenazi_presence
+				has_variable = sephardi_presence
+				has_variable = mizrahi_presence
+				has_variable = radhanim_presence
+				has_variable = kochinim_presence
+				has_variable = kaifeng_presence
+			}
+			set_diaspora_modifiers = yes
 		}
 	}
 }

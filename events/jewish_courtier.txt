@@ -498,27 +498,27 @@ jewish_courtier.0005 = {
 			# Setting variables up
 			set_local_variable = {
 				name = ashkenazim_evacuate
-				value = 0
+				value = 0.0
 			}
 			set_local_variable = {
 				name = sephardim_evacuate
-				value = 0
+				value = 0.0
 			}
 			set_local_variable = {
 				name = mizrahim_evacuate
-				value = 0
+				value = 0.0
 			}
 			set_local_variable = {
 				name = radhanim_evacuate
-				value = 0
+				value = 0.0
 			}
 			set_local_variable = {
 				name = kochinim_evacuate
-				value = 0
+				value = 0.0
 			}
 			set_local_variable = {
 				name = kaifeng_evacuate
-				value = 0
+				value = 0.0
 			}
 			# Collect the amount of Jews who are to leave the kingdom that is expelling them
 			every_realm_county = {
@@ -582,27 +582,27 @@ jewish_courtier.0005 = {
 			# Some turn into crypto-jews and/or convert
 			change_local_variable = {
 				name = ashkenazim_evacuate
-				multiply = 0.6
+				multiply = 0.85
 			}
 			change_local_variable = {
 				name = sephardim_evacuate
-				multiply = 0.6
+				multiply = 0.85
 			}
 			change_local_variable = {
 				name = mizrahim_evacuate
-				multiply = 0.6
+				multiply = 0.85
 			}
 			change_local_variable = {
 				name = radhanim_evacuate
-				multiply = 0.6
+				multiply = 0.85
 			}
 			change_local_variable = {
 				name = kochinim_evacuate
-				multiply = 0.6
+				multiply = 0.85
 			}
 			change_local_variable = {
 				name = kaifeng_evacuate
-				multiply = 0.6
+				multiply = 0.85
 			}
 			set_local_variable = {
 				name = neighbour_realm_size_sum

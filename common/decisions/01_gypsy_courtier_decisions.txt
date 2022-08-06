@@ -44,9 +44,11 @@
 		# Indians hate Gypsies
 		modifier = {
 			add = 1000
-			OR = {
-				has_cultural_pillar = heritage_indo_aryan
-				has_cultural_pillar = heritage_dravidian
+			culture = {
+				OR = {
+					has_cultural_pillar = heritage_indo_aryan
+					has_cultural_pillar = heritage_dravidian
+				}
 			}
 		}
 		# Has Gypsy enemies

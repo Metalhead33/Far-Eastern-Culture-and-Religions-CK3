@@ -7,12 +7,6 @@ on_game_start = {
 	}
 }
 
-monthly_global_pulse = {
-	events = {
-		eastern_culture.0012
-	}
-}
-
 seed_diaspora = {
 	effect = {
 		every_county = {
