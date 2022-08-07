@@ -436,9 +436,9 @@ types MapModes
 					down = "[And( GetScriptedGui('jewish_population_map').IsShown(GuiScope.End), IsMapMode('custom_mapmode_county') )]"
 					enabled = "[GetScriptedGui('jewish_population_map').IsValid(GuiScope.End)]"
 
-					text = "COURT_POSITION_CATEGORY_SPECIAL_NAME"
+					text = "jewish_population_map"
 
-					tooltip = "single_combat.0031.desc.sc_defender.butchery"
+					tooltip = "jewish_population_map"
 					using = tooltip_ws
 				}
 				
@@ -453,9 +453,9 @@ types MapModes
 					down = "[And( GetScriptedGui('gypsy_population_map').IsShown(GuiScope.End), IsMapMode('custom_mapmode_county') )]"
 					enabled = "[GetScriptedGui('gypsy_population_map').IsValid(GuiScope.End)]"
 
-					text = "COURT_POSITION_CATEGORY_SPECIAL_NAME"
+					text = "gypsy_population_map"
 
-					tooltip = "single_combat.0031.desc.sc_defender.butchery"
+					tooltip = "gypsy_population_map"
 					using = tooltip_ws
 				}
 

@@ -5,16 +5,16 @@
 	selection = holding
 	fill_in_impassable = no
 
-	county_description = { # Optional
-		desc = {
-			triggered_desc = { # You can set up multiple ones
-				trigger = {
-					has_special_building = yes
-				}
-				desc = east_europe.0111.t.setup # Placeholder
-			}
-		}
-	}
+	#county_description = { # Optional
+	#	desc = {
+	#		triggered_desc = { # You can set up multiple ones
+	#			trigger = {
+	#				has_special_building = yes
+	#			}
+	#			desc = east_europe.0111.t.setup # Placeholder
+	#		}
+	#	}
+	#}
 
 	gradient_parameters = {
 		zoom_step =					2

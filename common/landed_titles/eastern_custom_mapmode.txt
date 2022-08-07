@@ -3,18 +3,18 @@
 	can_create = { always = no }
 }
 d_eastern_custom_very_small = {
-	color = { 158 111 93 }
+	color = { 158 43 0 }
 	can_create = { always = no }
 }
 d_eastern_custom_small = {
-	color = { 156 165 75 }
+	color = { 150 165 0 }
 	can_create = { always = no }
 }
 d_eastern_custom_large = {
-	color = { 125 165 64 }
+	color = { 99 165 0 }
 	can_create = { always = no }
 }
 d_eastern_custom_very_large = {
-	color = { 61 198 28 }
+	color = { 38 198 0 }
 	can_create = { always = no }
 }
