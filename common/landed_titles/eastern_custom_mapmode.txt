@@ -1,0 +1,20 @@
+﻿d_eastern_custom_base = {
+	color = { 127 127 127 }
+	can_create = { always = no }
+}
+d_eastern_custom_very_small = {
+	color = { 158 111 93 }
+	can_create = { always = no }
+}
+d_eastern_custom_small = {
+	color = { 156 165 75 }
+	can_create = { always = no }
+}
+d_eastern_custom_large = {
+	color = { 125 165 64 }
+	can_create = { always = no }
+}
+d_eastern_custom_very_large = {
+	color = { 61 198 28 }
+	can_create = { always = no }
+}

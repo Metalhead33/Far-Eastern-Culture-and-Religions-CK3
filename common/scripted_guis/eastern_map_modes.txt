@@ -1,0 +1,117 @@
+﻿jewish_population_map = {
+	effect = {
+		if = {
+			limit = { NOT = { global_var:custom_map_mode = flag:jewish_population_map } }
+			set_global_variable = {
+				name = custom_map_mode_changing
+				value = 1
+			}
+			set_global_variable = {
+				name = custom_map_mode
+				value = flag:jewish_population_map
+			}
+			every_county = {
+				if = {
+					limit = { 
+						has_county_modifier = jewish_community_very_large
+					}
+					set_color_from_title = title:d_eastern_custom_very_large
+				}
+				else_if = {
+					limit = { 
+						has_county_modifier = jewish_community_large
+					}
+					set_color_from_title = title:d_eastern_custom_large
+				}
+				else_if = {
+					limit = { 
+						has_county_modifier = jewish_community_small
+					}
+					set_color_from_title = title:d_eastern_custom_small
+				}
+				else_if = {
+					limit = { 
+						has_county_modifier = jewish_community_very_small
+					}
+					set_color_from_title = title:d_eastern_custom_very_small
+				}
+				else = {
+					set_color_from_title = title:d_eastern_custom_base
+				}
+			}
+			remove_global_variable = custom_map_mode_changing
+		}
+	}
+	is_shown = {
+		exists = global_var:custom_map_mode
+		global_var:custom_map_mode = flag:jewish_population_map
+	}
+	is_valid = {
+		NOT = { exists = global_var:custom_map_mode_changing }
+	}
+}
+
+gypsy_population_map = {
+	effect = {
+		if = {
+			limit = { NOT = { global_var:custom_map_mode = flag:gypsy_population_map } }
+			set_global_variable = {
+				name = custom_map_mode_changing
+				value = 1
+			}
+			set_global_variable = {
+				name = custom_map_mode
+				value = flag:gypsy_population_map
+			}
+			every_county = {
+				if = {
+					limit = {
+						OR = {
+							has_county_modifier = oppressed_gypsy_community_very_large
+							has_county_modifier = integrated_gypsy_community_very_large
+						}
+					}
+					set_color_from_title = title:d_eastern_custom_very_large
+				}
+				else_if = {
+					limit = { 
+						OR = {
+							has_county_modifier = oppressed_gypsy_community_large
+							has_county_modifier = integrated_gypsy_community_large
+						}
+					}
+					set_color_from_title = title:d_eastern_custom_large
+				}
+				else_if = {
+					limit = { 
+						OR = {
+							has_county_modifier = oppressed_gypsy_community_small
+							has_county_modifier = integrated_gypsy_community_small
+						}
+					}
+					set_color_from_title = title:d_eastern_custom_small
+				}
+				else_if = {
+					limit = { 
+						OR = {
+							has_county_modifier = oppressed_gypsy_community_very_small
+							has_county_modifier = integrated_gypsy_community_very_small
+						}
+					}
+					set_color_from_title = title:d_eastern_custom_very_small
+				}
+				else = {
+					set_color_from_title = title:d_eastern_custom_base
+				}
+			}
+			remove_global_variable = custom_map_mode_changing
+		}
+	}
+	is_shown = {
+		exists = global_var:custom_map_mode
+		global_var:custom_map_mode = flag:gypsy_population_map
+	}
+	is_valid = {
+		NOT = { exists = global_var:custom_map_mode_changing }
+	}
+}
