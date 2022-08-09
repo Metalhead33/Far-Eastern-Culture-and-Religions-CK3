@@ -115,3 +115,224 @@ gypsy_population_map = {
 		NOT = { exists = global_var:custom_map_mode_changing }
 	}
 }
+
+trade_resource_map = {
+	effect = {
+		if = {
+			limit = { NOT = { global_var:custom_map_mode = flag:trade_resource_map } }
+			set_global_variable = {
+				name = custom_map_mode_changing
+				value = 1
+			}
+			set_global_variable = {
+				name = custom_map_mode
+				value = flag:trade_resource_map
+			}
+			every_barony = {
+				if = {
+					limit = { title_province = { has_province_modifier = trade_good_grain } }
+					set_color_from_title = title:d_trade_good_grain
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_wine } }
+					set_color_from_title = title:d_trade_good_wine
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_wool } }
+					set_color_from_title = title:d_trade_good_wool
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_cloth } }
+					set_color_from_title = title:d_trade_good_cloth
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_fish } }
+					set_color_from_title = title:d_trade_good_fish
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_fur } }
+					set_color_from_title = title:d_trade_good_fur
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_salt } }
+					set_color_from_title = title:d_trade_good_salt
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_naval_supplies } }
+					set_color_from_title = title:d_trade_good_naval_supplies
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_copper } }
+					set_color_from_title = title:d_trade_good_copper
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_gold } }
+					set_color_from_title = title:d_trade_good_gold
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_iron } }
+					set_color_from_title = title:d_trade_good_iron
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_slaves } }
+					set_color_from_title = title:d_trade_good_slaves
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_ivory } }
+					set_color_from_title = title:d_trade_good_ivory
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_tea } }
+					set_color_from_title = title:d_trade_good_tea
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_chinaware } }
+					set_color_from_title = title:d_trade_good_chinaware
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_spices } }
+					set_color_from_title = title:d_trade_good_spices
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_coffee } }
+					set_color_from_title = title:d_trade_good_coffee
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_cotton } }
+					set_color_from_title = title:d_trade_good_cotton
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_sugar } }
+					set_color_from_title = title:d_trade_good_sugar
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_tobacco } }
+					set_color_from_title = title:d_trade_good_tobacco
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_cocoa } }
+					set_color_from_title = title:d_trade_good_cocoa
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_silk } }
+					set_color_from_title = title:d_trade_good_silk
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_dyes } }
+					set_color_from_title = title:d_trade_good_dyes
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_tropical_wood } }
+					set_color_from_title = title:d_trade_good_tropical_wood
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_livestock } }
+					set_color_from_title = title:d_trade_good_livestock
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_incense } }
+					set_color_from_title = title:d_trade_good_incense
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_glass } }
+					set_color_from_title = title:d_trade_good_glass
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_paper } }
+					set_color_from_title = title:d_trade_good_paper
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_gems } }
+					set_color_from_title = title:d_trade_good_gems
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_cloves } }
+					set_color_from_title = title:d_trade_good_cloves
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_corn } }
+					set_color_from_title = title:d_trade_good_corn
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_rice } }
+					set_color_from_title = title:d_trade_good_rice
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_pearl } }
+					set_color_from_title = title:d_trade_good_pearl
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_amber } }
+					set_color_from_title = title:d_trade_good_amber
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_marble } }
+					set_color_from_title = title:d_trade_good_marble
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_cranberry } }
+					set_color_from_title = title:d_trade_good_cranberry
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_wood } }
+					set_color_from_title = title:d_trade_good_wood
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_jewelry } }
+					set_color_from_title = title:d_trade_good_jewelry
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_potato } }
+					set_color_from_title = title:d_trade_good_potato
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_cinnamon } }
+					set_color_from_title = title:d_trade_good_cinnamon
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_pepper } }
+					set_color_from_title = title:d_trade_good_pepper
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_vanilla } }
+					set_color_from_title = title:d_trade_good_vanilla
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_fruit } }
+					set_color_from_title = title:d_trade_good_fruit
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_citrus } }
+					set_color_from_title = title:d_trade_good_citrus
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_exotic_fruit } }
+					set_color_from_title = title:d_trade_good_exotic_fruit
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_cheese } }
+					set_color_from_title = title:d_trade_good_cheese
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_honey } }
+					set_color_from_title = title:d_trade_good_honey
+				}
+				else_if = {
+					limit = { title_province = { has_province_modifier = trade_good_roses } }
+					set_color_from_title = title:d_trade_good_roses
+				}
+				else = {
+					set_color_from_title = title:d_eastern_custom_base
+				}
+			}
+			remove_global_variable = custom_map_mode_changing
+		}
+	}
+	is_shown = {
+		exists = global_var:custom_map_mode
+		global_var:custom_map_mode = flag:trade_resource_map
+	}
+	is_valid = {
+		NOT = { exists = global_var:custom_map_mode_changing }
+	}
+}

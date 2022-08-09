@@ -1,0 +1,212 @@
+﻿trade_good_grain = {
+	icon = resource_0
+	supply_limit_mult = 0.1
+}
+trade_good_wine = {
+	icon = resource_1
+	hostile_raid_time = 0.1
+}
+trade_good_wool = {
+	icon = resource_2
+	hostile_raid_time = 0.1
+}
+trade_good_cloth = {
+	icon = resource_3
+	holding_build_gold_cost = -0.1
+}
+trade_good_fish = {
+	icon = resource_4
+	supply_limit_mult = 0.1
+}
+trade_good_fur = {
+	icon = resource_5
+	tax_mult = 0.1
+}
+trade_good_salt = {
+	icon = resource_6
+	fort_level = 1
+}
+trade_good_naval_supplies = {
+	icon = resource_7
+	tax_mult = 0.25
+}
+trade_good_copper = {
+	icon = resource_8
+	monthly_income = 1
+	tax_mult = 0.1
+}
+trade_good_gold = {
+	icon = resource_9
+	monthly_income = 5
+	tax_mult = 0.35
+}
+trade_good_iron = {
+	icon = resource_10
+	holding_build_speed = -0.15
+	tax_mult = 0.1
+}
+trade_good_slaves = {
+	icon = resource_11
+	monthly_income = 5
+	tax_mult = 0.35
+}
+trade_good_ivory = {
+	icon = resource_12
+	monthly_income = 5
+	tax_mult = 0.35
+}
+trade_good_tea = {
+	icon = resource_13
+	levy_reinforcement_rate = 0.25
+}
+trade_good_chinaware = {
+	icon = resource_14
+	garrison_size = 0.25
+}
+trade_good_spices = {
+	icon = resource_15
+	levy_reinforcement_rate = 0.1
+}
+trade_good_coffee = {
+	icon = resource_16
+	holding_build_speed = -0.15
+	tax_mult = 0.1
+}
+trade_good_cotton = {
+	icon = resource_17
+	holding_build_speed = -0.1
+	holding_build_gold_cost = -0.1
+}
+trade_good_sugar = {
+	icon = resource_18
+	hostile_raid_time = 0.1
+}
+trade_good_tobacco = {
+	icon = resource_19
+	tax_mult = 0.1
+}
+trade_good_cocoa = {
+	icon = resource_20
+	levy_size = 0.1
+}
+trade_good_silk = {
+	icon = resource_21
+	monthly_income = 2
+	tax_mult = 0.1
+}
+trade_good_dyes = {
+	icon = resource_22
+	monthly_income = 2
+	tax_mult = 0.1
+}
+trade_good_tropical_wood = {
+	icon = resource_23
+	holding_build_gold_cost = -0.2
+}
+trade_good_livestock = {
+	icon = resource_24
+	supply_limit_mult = 0.5
+}
+trade_good_incense = {
+	icon = resource_25
+	monthly_income = 2
+	tax_mult = 0.1
+}
+trade_good_glass = {
+	icon = resource_26
+	tax_mult = 0.1
+}
+trade_good_paper = {
+	icon = resource_27
+	tax_mult = 0.1
+}
+trade_good_gems = {
+	icon = resource_28
+	monthly_income = 10
+	tax_mult = 0.15
+}
+trade_good_cloves = {
+	icon = resource_29
+	monthly_income = 2
+	tax_mult = 0.2
+}
+trade_good_corn = {
+	icon = resource_34
+	levy_size = 0.25
+}
+trade_good_rice = {
+	icon = resource_35
+	levy_size = 0.2
+}
+trade_good_pearl = {
+	icon = resource_36
+	monthly_income = 2
+	tax_mult = 0.15
+}
+trade_good_amber = {
+	icon = resource_37
+	monthly_income = 2
+	tax_mult = 0.15
+}
+trade_good_marble = {
+	icon = resource_42
+	holding_build_gold_cost = -0.1
+	tax_mult = 0.1
+}
+trade_good_cranberry = {
+	icon = resource_43
+	supply_limit_mult = 0.25
+}
+trade_good_wood = {
+	icon = resource_44
+	holding_build_gold_cost = -0.2
+}
+trade_good_jewelry = {
+	icon = resource_45
+	monthly_income = 2
+	tax_mult = 0.1
+}
+trade_good_potato = {
+	icon = resource_46
+	supply_limit_mult = 0.2
+}
+trade_good_cinnamon = {
+	icon = resource_51
+	monthly_income = 2
+	tax_mult = 0.2
+}
+trade_good_pepper = {
+	icon = resource_52
+	monthly_income = 2
+	tax_mult = 0.1
+}
+trade_good_vanilla = {
+	icon = resource_53
+	monthly_income = 2
+	tax_mult = 0.1
+}
+trade_good_fruit = {
+	icon = resource_54
+	supply_limit_mult = 0.1
+}
+trade_good_citrus = {
+	icon = resource_55
+	supply_limit_mult = 0.33
+}
+trade_good_exotic_fruit = {
+	icon = resource_56
+	monthly_income = 2
+	tax_mult = 0.1
+}
+trade_good_cheese = {
+	icon = resource_57
+	supply_limit_mult = 0.1
+}
+trade_good_honey = {
+	icon = resource_58
+	supply_limit_mult = 0.1
+}
+trade_good_roses = {
+	icon = resource_59
+	tax_mult = 0.1
+}

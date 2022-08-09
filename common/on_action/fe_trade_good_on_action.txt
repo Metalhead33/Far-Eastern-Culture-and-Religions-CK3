@@ -1,0 +1,4925 @@
+﻿# Code on-action: character changes faith. Not called when a character gets a faith on birth, creation, and similar
+# Root is the character
+# scope:old_faith is the faith they used to have
+on_game_start = {
+	on_actions = {
+		seed_trade_goods
+	}
+}
+
+seed_trade_goods = {
+	effect = {
+		province:8 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:10 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:12 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:3 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:4 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:5 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:7 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:9 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:11 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:13 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:14 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:15 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:16 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:33 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:35 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:54 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:17 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:18 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:19 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:20 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:21 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:22 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:23 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:24 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:25 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:26 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:27 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:28 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:29 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:30 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:31 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:32 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:52 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:53 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:55 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:56 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:57 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:58 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:59 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:60 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:61 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:62 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:63 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:64 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:65 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:66 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:67 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:68 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:69 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:70 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:71 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:72 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:73 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:74 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:76 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:77 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:78 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:79 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:90 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:91 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:92 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:93 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:94 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:113 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:115 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:116 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:117 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:118 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:129 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:75 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:95 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:96 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:97 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:98 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:99 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:107 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:108 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:109 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:110 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:111 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:112 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:114 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:130 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:131 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:132 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:135 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:136 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:137 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:138 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:139 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:140 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:141 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:142 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:144 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:143 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:145 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:146 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:147 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:149 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:150 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:212 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:213 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:214 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:215 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:216 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:218 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:220 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:222 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:225 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:226 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:227 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:239 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:240 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:148 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:100 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:101 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:102 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:103 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:104 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:105 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:106 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:233 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:234 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:319 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:320 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:321 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:353 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:354 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:355 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:456 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:457 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:461 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:462 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:463 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:173 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:174 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:175 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:176 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:177 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:178 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:181 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:189 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:190 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:196 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:197 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:198 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:199 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:200 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:201 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:202 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:203 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:204 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:621 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:622 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:623 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:628 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:900 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:901 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:902 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:903 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1181 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1188 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1186 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1378 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1431 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:561 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:562 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:599 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:600 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:601 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:560 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:492 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:497 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:498 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:499 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:500 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:501 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:502 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:503 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:504 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:505 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:506 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:507 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:508 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:509 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:510 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:514 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:515 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:516 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:681 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:702 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:703 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:706 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:707 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:736 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:737 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:749 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:750 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:751 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:759 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:752 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:753 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:760 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1347 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1438 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1439 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1440 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1441 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1442 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1443 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1444 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1445 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1446 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1447 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1448 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1408 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1450 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1449 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:674 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:668 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:669 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:673 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:676 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:677 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:680 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:679 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1013 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:670 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:671 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:672 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:682 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:704 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:667 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:685 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:666 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:686 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1187 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1185 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1189 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1182 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:907 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1161 = {
+			set_variable = {
+				name = winter_type
+				value = flag:mild_winter
+			}
+		}
+		province:1 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:2 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:34 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:36 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:303 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:305 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:6 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:931 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:302 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:301 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:300 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:37 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:38 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:39 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:40 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:41 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:42 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:43 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:44 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:45 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:46 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:47 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:48 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:49 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:50 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:51 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:259 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:260 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:261 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:262 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:263 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:264 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:265 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:266 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:267 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:304 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:306 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:307 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:308 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:80 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:81 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:82 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:83 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:84 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:85 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:86 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:87 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:88 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:89 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:119 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:120 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:121 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:122 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:254 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:255 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:256 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:257 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:258 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:309 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:310 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:311 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:312 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:313 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:217 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:219 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:223 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:224 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:242 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:209 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:221 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:124 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:125 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:126 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:127 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:128 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:133 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:134 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:245 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:248 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:249 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:250 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:251 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:365 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:366 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:367 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:368 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:369 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:370 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:371 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:372 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:430 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:434 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:435 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:436 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:438 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:446 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:447 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:448 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:449 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:930 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:373 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:374 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:420 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:421 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:422 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:423 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:424 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:425 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:426 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:427 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:428 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:429 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:431 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:432 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:433 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:440 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:441 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:442 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:443 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:444 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:445 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:451 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:454 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:450 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:520 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:521 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:522 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:523 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:524 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:525 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:526 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:527 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:528 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:529 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:530 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:531 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:532 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:533 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:534 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:535 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:536 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:537 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:538 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:539 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:540 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:541 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:544 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:545 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:546 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:548 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:549 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:152 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:151 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:211 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:1451 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:1452 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:1453 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:1456 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:1455 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:123 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:252 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:253 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:314 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:315 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:360 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:361 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:362 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:363 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:364 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:365 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:437 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:439 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:452 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:453 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:460 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:511 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:512 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:513 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:517 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:518 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:519 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:542 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:543 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:557 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:563 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:596 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:605 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:607 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:618 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:620 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:848 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:1425 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:1426 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:1427 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:1433 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:1434 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:897 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:896 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:1273 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:1432 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:1424 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:1423 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:1351 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:604 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:606 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:675 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:603 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:602 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:599 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:597 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:598 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:558 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:559 = {
+			set_variable = {
+				name = winter_type
+				value = flag:normal_winter
+			}
+		}
+		province:1 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:2 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:34 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:36 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:303 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:305 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:6 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:931 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:302 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:301 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:300 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:37 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:38 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:39 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:40 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:41 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:42 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:43 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:44 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:45 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:46 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:47 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:48 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:49 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:50 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:51 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:259 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:260 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:261 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:262 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:263 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:264 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:265 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:266 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:267 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:304 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:306 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:307 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:308 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:80 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:81 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:82 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:83 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:84 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:85 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:86 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:87 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:88 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:89 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:119 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:120 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:121 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:122 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:254 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:255 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:256 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:257 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:258 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:309 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:310 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:311 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:312 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:313 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:217 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:219 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:223 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:224 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:242 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:209 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:221 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:124 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:125 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:126 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:127 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:128 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:133 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:134 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:245 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:248 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:249 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:250 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:251 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:365 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:366 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:367 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:368 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:369 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:370 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:371 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:372 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:430 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:434 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:435 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:436 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:438 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:446 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:447 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:448 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:449 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:930 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:373 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:374 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:420 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:421 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:422 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:423 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:424 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:425 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:426 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:427 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:428 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:429 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:431 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:432 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:433 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:440 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:441 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:442 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:443 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:444 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:445 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:451 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:454 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:450 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:520 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:521 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:522 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:523 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:524 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:525 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:526 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:527 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:528 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:529 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:530 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:531 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:532 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:533 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:534 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:535 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:536 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:537 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:538 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:539 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:540 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:541 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:544 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:545 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:546 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:548 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:549 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:152 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:151 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:211 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:1451 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:1452 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:1453 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:1456 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:1455 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:123 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:252 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:253 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:314 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:315 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:360 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:361 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:362 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:363 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:364 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:365 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:437 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:439 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:452 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:453 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:460 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:511 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:512 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:513 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:517 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:518 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:519 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:542 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:543 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:557 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:563 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:596 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:605 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:607 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:618 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:620 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:848 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:1425 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:1426 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:1427 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:1433 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:1434 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:897 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:896 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:1273 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:1432 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:1424 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:1423 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:1351 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:604 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:606 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:675 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:603 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:602 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:599 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:597 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:598 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:558 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		province:559 = {
+			set_variable = {
+				name = winter_type
+				value = flag:severe_winter
+			}
+		}
+		every_province = {
+			limit = { NOT = { has_variable = winter_type } }
+			set_variable = {
+				name = winter_type
+				value = flag:no_winter
+			}
+		}
+		every_province = {
+			limit = { NOT = { has_variable = trade_good } }
+			random_list = {
+				# GRAIN
+				35 = {
+					modifier = {
+						multiply = 0
+						OR = {
+							terrain = desert
+							terrain = desert_mountains
+							terrain = taiga
+							terrain = oasis
+						}
+					}
+					modifier = {
+						multiply = 0.15
+						OR = {
+							terrain = mountains
+							terrain = forest
+							terrain = jungle
+							terrain = hills
+						}
+					}
+					modifier = {
+						multiply = 0.6
+						OR = {
+							terrain = drylands
+							terrain = steppe
+							geographical_region = world_africa_west
+							geographical_region = world_africa_east
+							geographical_region = world_india_deccan
+							geographical_region = world_burma
+						}
+					}
+					modifier = {
+						multiply = 1.5
+						terrain = farmlands
+					}
+					modifier = {
+						multiply = 0.35
+						var:winter_type = flag:severe_winter
+					}
+					modifier = {
+						multiply = 0.5
+						var:winter_type = flag:normal_winter
+					}
+					# var:winter_type = flag:mild_winter
+					# var:winter_type = flag:normal_winter
+					# var:winter_type = flag:severe_winter
+					modifier = {
+						multiply = 1.5
+						OR = {
+							geographical_region = ghw_region_southern_russia
+							geographical_region = ghw_region_central_european
+							geographical_region = custom_roman_aegyptus
+						}
+					}
+					add_province_modifier = trade_good_grain
+					set_variable = {
+						name = trade_good
+						value = flag:trade_good_grain
+					}
+				}
+				}
+				# WINE
+				5 = {
+					modifier = {
+						multiply = 0
+						OR = {
+							terrain = desert
+							terrain = desert_mountains
+							terrain = taiga
+							terrain = forest
+							terrain = drylands
+							terrain = steppe
+							terrain = oasis
+							var:winter_type = flag:severe_winter
+							geographical_region = world_africa_west
+							geographical_region = world_africa_east
+							geographical_region = world_india_deccan
+							geographical_region = world_burma
+						}
+					}
+					modifier = {
+						multiply = 1.25
+						terrain = farmlands
+						OR = {
+							terrain = farmlands
+							terrain = plains
+						}
+					}
+					modifier = {
+						multiply = 0.25
+						var:winter_type = flag:normal_winter
+					}
+					modifier = {
+						multiply = 0.75
+						var:winter_type = flag:mild_winter
+					}
+					modifier = {
+						multiply = 1.5
+						OR = {
+							geographical_region = ghw_region_france
+							geographical_region = ghw_region_italy
+							geographical_region = ghw_region_greece
+							geographical_region = custom_hungary
+						}
+					}
+					add_province_modifier = trade_good_wine
+					set_variable = {
+						name = trade_good
+						value = flag:trade_good_wine
+					}
+				}
+				# WOOL
+				30 = {
+					modifier = {
+						multiply = 0
+						OR = {
+							terrain = jungle
+							terrain = farmlands
+							terrain = hills
+							terrain = forest
+							terrain = wetlands
+							terrain = floodplains
+							AND = {
+								var:winter_type = flag:severe_winter
+								NOT = { geographical_region = ghw_region_tibet }
+								NOT = { geographical_region = world_india }
+							}
+						}
+					}
+					modifier = {
+						multiply = 1.25
+						OR = {
+							terrain = desert
+							terrain = oasis
+							terrain = drylands
+						}
+					}
+					modifier = {
+						multiply = 1.5
+						OR = {
+							geographical_region = world_steppe
+							geographical_region = world_tibet
+						}
+					}
+					add_province_modifier = trade_good_wool
+					set_variable = {
+						name = trade_good
+						value = flag:trade_good_wool
+					}
+			}
+			# CLOTH
+			10 = {
+				modifier = {
+					multiply = 0
+					county = { development_level < 18 }
+				}
+				modifier = {
+					multiply = 2
+					county = { development_level >= 22 }
+				}
+				add_province_modifier = trade_good_cloth
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_cloth
+				}
+			}
+			# FISH
+			20 = {
+				modifier = {
+					multiply = 0
+					is_coastal = no
+				}
+				modifier = {
+					multiply = 1.2
+					OR = {
+						var:winter_type = flag:severe_winter
+						terrain = desert
+					}
+				}
+				add_province_modifier = trade_good_fish
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_fish
+				}
+			}
+			# FUR
+			10 = {
+				modifier = {
+					multiply = 0
+					OR = {
+						terrain = desert
+						terrain = drylands
+						terrain = steppe
+						terrain = farmlands
+						geographical_region = world_africa_west
+						geographical_region = world_africa_east
+						geographical_region = world_india_deccan
+						geographical_region = world_burma
+						county = { development_level <= 8 }
+					}
+					NOR = {
+						var:winter_type = flag:severe_winter
+						var:winter_type = flag:normal_winter
+					}
+				}
+				modifier = {
+					multiply = 1.2
+					var:winter_type = flag:severe_winter
+				}
+				modifier = {
+					multiply = 0.3
+					var:winter_type = flag:normal_winter
+				}
+				modifier = {
+					multiply = 1.5
+					terrain = forest
+				}
+				add_province_modifier = trade_good_fur
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_fur
+				}
+			}
+			# SALT
+			5 = {
+				modifier = {
+					multiply = 0
+					NOR = {
+						terrain = desert
+						terrain = mountains
+						terrain = desert_mountains
+					}
+				}
+				modifier = {
+					multiply = 5
+					OR = {
+						geographical_region = world_africa_sahara
+						geographical_region = world_africa_north_west
+					}
+				}
+				add_province_modifier = trade_good_salt
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_salt
+				}
+			}
+			# NAVAL SUPPLIES
+			15 = {
+				modifier = {
+					multiply = 0
+					OR = {
+						terrain = desert
+						terrain = desert_mountains
+						terrain = drylands
+						terrain = steppe
+						terrain = farmlands
+						is_coastal = no
+					}
+				}
+				modifier = {
+					multiply = 0.5
+					OR = {
+						terrain = mountains
+						terrian = plains
+						geographical_region = ghw_region_subsahelian_africa
+					}
+				}
+				modifier = {
+					multiply = 0.75
+					OR = {
+						geographical_region = world_africa_west
+						geographical_region = world_africa_east
+						geographical_region = world_india_deccan
+						geographical_region = world_burma
+					}
+				}
+				add_province_modifier = trade_good_naval_supplies
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_naval_supplies
+				}
+			}
+			# COPPER
+			15 = {
+				modifier = {
+					multiply = 0
+					NOR = {
+						terrain = mountains
+						terrain = desert_mountains
+						terrain = hills
+					}
+				}
+				modifier = {
+					multiply = 1.1
+					terrain = mountains
+				}
+				modifier = {
+					multiply = 0.7
+					geographical_region = ghw_region_subsahelian_africa
+				}
+				add_province_modifier = trade_good_copper
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_copper
+				}
+			}
+			# GOLD
+			5 = {
+				modifier = {
+					multiply = 0
+					NOR = {
+						geographical_region = ghw_region_siberia
+						geographical_region = ghw_region_the_sahel
+						terrain = mountains
+					}
+				}
+				modifier = {
+					multiply = 1.1
+					terrain = mountains
+				}
+				add_province_modifier = trade_good_gold
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_gold
+				}
+			}
+			# IRON
+			10 = {
+				modifier = {
+					multiply = 0
+					NOR = {
+						geographical_region = ghw_region_siberia
+						terrain = mountains
+						terrain = desert_mountains
+					}
+				}
+				modifier = {
+					multiply = 1.1
+					terrain = mountains
+				}
+				add_province_modifier = trade_good_iron
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_iron
+				}
+			}
+			# SLAVES
+			15 = {
+				modifier = {
+					multiply = 0
+					NOR = {
+						geographical_region = world_africa_west
+						geographical_region = ghw_region_subsahelian_africa
+						geographical_region = ghw_region_the_sahel
+					}
+					NOR = {
+						terrain = jungle
+						terrain = plains
+						terrain = drylands
+					}
+				}
+				modifier = {
+					multiply = 3
+					is_coastal = yes
+				}
+				add_province_modifier = trade_good_slaves
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_slaves
+				}
+			}
+			# IVORY
+			10 = {
+				modifier = {
+					multiply = 0
+					NOR = {
+						geographical_region = world_africa_west
+						geographical_region = ghw_region_subsahelian_africa
+						geographical_region = ghw_region_the_sahel
+					}
+					NOR = {
+						terrain = jungle
+						terrain = plains
+						terrain = drylands
+					}
+				}
+				modifier = {
+					multiply = 3
+					is_coastal = yes
+				}
+				add_province_modifier = trade_good_ivory
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_ivory
+				}
+			}
+			# TEA
+			10 = {
+				modifier = {
+					multiply = 0
+					OR = {
+						OR = {
+							terrain = desert
+							terrain = desert_mountains
+							terrain = drylands
+							terrain = steppe
+						}
+						NOR = {
+							geographical_region = world_india
+							geographical_region = world_burma
+						}
+					}
+				}
+				modifier = {
+					multiply = 2
+					OR = {
+						terrain = hills
+						terrain = wetlands
+						terrain = floodplains
+					}
+				}
+				add_province_modifier = trade_good_tea
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_tea
+				}
+			}
+			# SPICES
+			25 = {
+				modifier = {
+					multiply = 0
+					OR = {
+						OR = {
+							terrain = mountains
+							terrain = desert_mountains
+							terrain = steppe
+						}
+						NOR = {
+							geographical_region = world_india_deccan
+							geographical_region = world_india_bengal
+						}
+					}
+				}
+				modifier = {
+					multiply = 2
+					is_coastal = yes
+				}
+				add_province_modifier = trade_good_spices
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_spices
+				}
+			}
+			# COFFEE
+			15 = {
+				modifier = {
+					multiply = 0
+					OR = {
+						OR = {
+							terrain = steppe
+							terrain = forest
+							var:winter_type = flag:mild_winter
+							var:winter_type = flag:severe_winter
+							var:winter_type = flag:normal_winter
+						}
+						NOR = {
+							geographical_region = ghw_region_ethiopia
+							geographical_region = ghw_region_horn_of_africa
+							kingdom = { this = title:k_yemen }
+						}
+					}
+				}
+				modifier = {
+					multiply = 2
+					is_coastal = yes
+				}
+				add_province_modifier = trade_good_coffee
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_coffee
+				}
+			}
+			# COTTON
+			20 = {
+				modifier = {
+					multiply = 0
+					OR = {
+						OR = {
+							terrain = desert
+							terrain = desert_mountains
+							terrain = mountains
+							terrain = forest
+							terrain = jungle
+							terrain = drylands
+							var:winter_type = flag:mild_winter
+							var:winter_type = flag:severe_winter
+							var:winter_type = flag:normal_winter
+						}
+						NOR = {
+							geographical_region = ghw_region_egypt
+							geographical_region = world_asia_minor
+							geographical_region = world_steppe
+							geographical_region = world_india
+						}
+					}
+				}
+				modifier = {
+					multiply = 1.1
+					OR = {
+						terrain = farmlands
+						terrain = plains
+					}
+				}
+				add_province_modifier = trade_good_cotton
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_cotton
+				}
+			}
+			# SUGAR
+			15 = {
+				modifier = {
+					multiply = 0
+					OR = {
+						terrain = desert
+						terrain = desert_mountains
+						terrain = mountains
+						terrain = forest
+						terrain = steppe
+						terrain = hills
+						var:winter_type = flag:mild_winter
+						var:winter_type = flag:severe_winter
+						var:winter_type = flag:normal_winter
+					}
+					NOR = {
+						geographical_region = world_india
+						geographical_region = world_mesopotamia
+						geographical_region = ghw_region_egypt
+					}
+				}
+				modifier = {
+					multiply = 1.1
+					OR = {
+						terrain = farmlands
+						terrain = wetlands
+					}
+				}
+				add_province_modifier = trade_good_sugar
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_sugar
+				}
+			}
+			# SILK
+			5 = {
+				modifier = {
+					multiply = 0
+					OR = {
+						terrain = desert
+						terrain = desert_mountains
+						terrain = mountains
+						terrain = forest
+						terrain = steppe
+						terrain = hills
+						terrain = drylands
+						var:winter_type = flag:mild_winter
+						var:winter_type = flag:severe_winter
+						var:winter_type = flag:normal_winter
+					}
+					NOR = {
+						geographical_region = world_india
+						geographical_region = world_burma
+						geographical_region = graphical_china
+					}
+				}
+				modifier = {
+					multiply = 1.5
+					county = { development_level >` 20 }
+				}
+				add_province_modifier = trade_good_silk
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_silk
+				}
+			}
+			# DYES
+			15 = {
+				modifier = {
+					multiply = 0
+					OR = {
+						terrain = desert
+						terrain = desert_mountains
+						terrain = drylands
+						var:winter_type = flag:mild_winter
+						var:winter_type = flag:severe_winter
+						var:winter_type = flag:normal_winter
+					}
+					NOR = {
+						geographical_region = ghw_region_subsahelian_africa
+						geographical_region = world_africa_west
+						geographical_region = world_africa_east
+						geographical_region = world_india_deccan
+						geographical_region = world_burma
+						kingdom = { this = title:k_jerusalem }
+						kingdom = { this = title:k_syria }
+					}
+				}
+				modifier = {
+					multiply = 3
+					terrain = jungle
+				}
+				add_province_modifier = trade_good_dyes
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_dyes
+				}
+			}
+			# TROPICAL WOOD
+			15 = {
+				modifier = {
+					multiply = 0
+					NOR = {
+						geographical_region = world_burma
+						terrain = jungle
+					}
+				}
+				modifier = {
+					multiply = 3
+					terrain = jungle
+				}
+				add_province_modifier = trade_good_tropical_wood
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_tropical_wood
+				}
+			}
+			# LIVESTOCK
+			30 = {
+				modifier = {
+					multiply = 0
+					OR = {
+						terrain = jungle
+						terrain = forest
+						terrain = farmlands
+						terrain = wetlands
+						terrain = floodplains
+					}
+				}
+				modifier = {
+					multiply = 0.75
+					var:winter_type = flag:severe_winter
+				}
+				modifier = {
+					multiply = 1.25
+					OR = {
+						terrain = desert
+						terrain = drylands
+						terrain = plains
+					}
+				}
+				modifier = {
+					multiply = 1.5
+					terrain = steppe
+				}
+				modifier = {
+					multiply = 1.5
+					geographical_region = world_steppe
+				}
+				modifier = {
+					multiply = 1.5
+					geographical_region = world_tibet
+				}
+				modifier = {
+					multiply = 1.5
+					geographical_region = ghw_region_subsahelian_africa
+				}
+				add_province_modifier = trade_good_livestock
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_livestock
+				}
+			}
+			# INCENSE
+			25 = {
+				modifier = {
+					multiply = 0
+					NOR = {
+						geographical_region = world_middle_east_arabia
+						geographical_region = world_india
+					}
+				}
+				modifier = {
+					multiply = 1.25
+					geographical_region = ghw_region_arabia
+				}
+				add_province_modifier = trade_good_incense
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_incense
+				}
+			}
+			# GEMS
+			5 = {
+				modifier = {
+					multiply = 0
+					NOT = {	geographical_region = world_india }
+					OR = {
+						terrain = forest
+						terrain = drylands
+						terrain = plains
+						terrain = steppe
+					}
+				}
+				modifier = {
+					multiply = 1.25
+					geographical_region = ghw_region_arabia
+				}
+				add_province_modifier = trade_good_gems
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_gems
+				}
+			}
+			# RICE
+			35 = {
+				modifier = {
+					multiply = 0
+					NOR = {
+						geographical_region = world_india_bengal
+						geographical_region = world_burma
+					}
+					OR = {
+						terrain = drylands
+						terrain = desert
+						terrain = desert_mountains
+					}
+				}
+				modifier = {
+					multiply = 0.6
+					OR = {
+						terrain = steppe
+						terrain = plains
+					}
+				}
+				modifier = {
+					multiply = 2
+					OR = {
+						terrain = farmlands
+						terrain = floodplains
+						terrain = wetlands
+					}
+				}
+				add_province_modifier = trade_good_rice
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_rice
+				}
+			}
+			# PEARL
+			2 = {
+				modifier = {
+					multiply = 0
+					is_coastal = no
+					NOR = {
+						geographical_region = ghw_region_arabia
+						geographical_region = world_india
+					}
+				}
+				modifier = {
+					multiply = 2
+					is_coastal = yes
+				}
+				add_province_modifier = trade_good_pearl
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_pearl
+				}
+			}
+			# AMBER
+			10 = {
+				modifier = {
+					multiply = 0
+					NOR = {
+						geographical_region = ghw_region_scandinavia
+						geographical_region = ghw_region_baltic
+						geographical_region = ghw_region_egypt
+					}
+				}
+				modifier = {
+					multiply = 2
+					geographical_region = ghw_region_baltic
+				}
+				modifier = {
+					multiply = 1.3
+					is_coastal = yes
+				}
+				add_province_modifier = trade_good_amber
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_amber
+				}
+			}
+			# MARBLE
+			10 = {
+				modifier = {
+					multiply = 0
+					NOR = {
+						terrain = hills
+						terrain = mountains
+					}
+				}
+				modifier = {
+					multiply = 1.2
+					terrain = hills
+				}
+				modifier = {
+					multiply = 2
+					terrain = mountains
+				}
+				add_province_modifier = trade_good_marble
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_marble
+				}
+			}
+			# CRANBERRY
+			15 = {
+				modifier = {
+					multiply = 0
+					NOR = {
+						geographical_region = ghw_region_scandinavia
+						var:winter_type = flag:severe_winter
+					}
+				}
+				modifier = {
+					multiply = 2
+					geographical_region = ghw_region_scandinavia
+				}
+				add_province_modifier = trade_good_cranberry
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_cranberry
+				}
+			}
+			# WOOD
+			40 = {
+				modifier = {
+					multiply = 0
+					OR = {
+						NOT = { terrain = forest }
+						NOT = { terrain = wetlands }
+						NOT = { terrain = hills }
+						NOT = { terrain = mountains }
+						geographical_region = world_africa_west
+						geographical_region = world_africa_east
+						geographical_region = world_india_deccan
+						geographical_region = world_burma
+					}
+				}
+				modifier = {
+					multiply = 0
+					county = { development_level >= 15 }
+				}
+				modifier = {
+					multiply = 0.1
+					county = { development_level >= 10 }
+				}
+				modifier = {
+					multiply = 0.6
+					terrain = mountains
+				}
+				modifier = {
+					multiply = 0.7
+					terrain = hills
+				}
+				modifier = {
+					multiply = 0.8
+					var:winter_type = flag:mild_winter
+				}
+				modifier = {
+					multiply = 1.1
+					var:winter_type = flag:normal_winter
+				}
+				modifier = {
+					multiply = 2.5
+					terrain = forest
+				}
+				add_province_modifier = trade_good_wood
+				set_variable = {
+					name = trade_good
+					value = flag:trade_good_wood
+				}
+			}
+		}
+	}
+}

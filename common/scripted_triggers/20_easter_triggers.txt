@@ -386,3 +386,56 @@ gypsy_courtier_high_skill_intrigue_trigger = {
 		}
 	}
 }
+
+has_trade_good = {
+	OR = {
+		has_province_modifier = trade_good_grain
+		has_province_modifier = trade_good_wine
+		has_province_modifier = trade_good_wool
+		has_province_modifier = trade_good_cloth
+		has_province_modifier = trade_good_fish
+		has_province_modifier = trade_good_fur
+		has_province_modifier = trade_good_salt
+		has_province_modifier = trade_good_naval_supplies
+		has_province_modifier = trade_good_copper
+		has_province_modifier = trade_good_gold
+		has_province_modifier = trade_good_iron
+		has_province_modifier = trade_good_slaves
+		has_province_modifier = trade_good_ivory
+		has_province_modifier = trade_good_tea
+		has_province_modifier = trade_good_chinaware
+		has_province_modifier = trade_good_spices
+		has_province_modifier = trade_good_coffee
+		has_province_modifier = trade_good_cotton
+		has_province_modifier = trade_good_sugar
+		has_province_modifier = trade_good_tobacco
+		has_province_modifier = trade_good_cocoa
+		has_province_modifier = trade_good_silk
+		has_province_modifier = trade_good_dyes
+		has_province_modifier = trade_good_tropical_wood
+		has_province_modifier = trade_good_livestock
+		has_province_modifier = trade_good_incense
+		has_province_modifier = trade_good_glass
+		has_province_modifier = trade_good_paper
+		has_province_modifier = trade_good_gems
+		has_province_modifier = trade_good_cloves
+		has_province_modifier = trade_good_corn
+		has_province_modifier = trade_good_rice
+		has_province_modifier = trade_good_pearl
+		has_province_modifier = trade_good_amber
+		has_province_modifier = trade_good_marble
+		has_province_modifier = trade_good_cranberry
+		has_province_modifier = trade_good_wood
+		has_province_modifier = trade_good_jewelry
+		has_province_modifier = trade_good_potato
+		has_province_modifier = trade_good_cinnamon
+		has_province_modifier = trade_good_pepper
+		has_province_modifier = trade_good_vanilla
+		has_province_modifier = trade_good_fruit
+		has_province_modifier = trade_good_citrus
+		has_province_modifier = trade_good_exotic_fruit
+		has_province_modifier = trade_good_cheese
+		has_province_modifier = trade_good_honey
+		has_province_modifier = trade_good_roses
+	}
+}

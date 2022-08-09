@@ -18,3 +18,239 @@ d_eastern_custom_very_large = {
 	color = { 38 198 0 }
 	can_create = { always = no }
 }
+d_trade_good_grain = {
+	color = { 0.96 0.93 0.58 }
+	can_create = { always = no }
+}
+d_trade_good_wine = {
+	color = { 0.36 0.13 0.28 }
+	can_create = { always = no }
+}
+d_trade_good_wool = {
+	color = { 0.83 0.83 0.83  }
+	can_create = { always = no }
+}
+d_trade_good_cloth = {
+	color = { 0.86 0.19 0.19 }
+	can_create = { always = no }
+}
+d_trade_good_fish = {
+	color = { 0.55 0.82 0.97 }
+	can_create = { always = no }
+}
+d_trade_good_fur = {
+	color = { 0.54 0.40 0.31 }
+	can_create = { always = no }
+}
+d_trade_good_salt = {
+	color = { 0.999 0.999 0.999 }
+	can_create = { always = no }
+}
+d_trade_good_naval_supplies = {
+	color = { 0.11 0.17 0.4 }
+	can_create = { always = no }
+}
+d_trade_good_copper = {
+	color = { 0.85 0.46 0.15 }
+	can_create = { always = no }
+}
+d_trade_good_gold = {
+	color = { 1.0 0.84 0.19 }
+	can_create = { always = no }
+}
+d_trade_good_iron = {
+	color = { 0.2 0.2 0.2 }
+	can_create = { always = no }
+}
+d_trade_good_slaves = {
+	color = { 0.3 0.3 0.3 }
+	can_create = { always = no }
+}
+d_trade_good_ivory = {
+	color = { 0.75 0.7 0.63 }
+	can_create = { always = no }
+}
+d_trade_good_tea = {
+	color = { 0.07 0.33 0.09 }
+	can_create = { always = no }
+}
+d_trade_good_chinaware = {
+	color = { 0.18 0.57 0.8 }
+	can_create = { always = no }
+}
+d_trade_good_spices = {
+	color = { 0.4 0.65 0.38 }
+	can_create = { always = no }
+}
+d_trade_good_coffee = {
+	color = { 0.22 0.15 0.09 }
+	can_create = { always = no }
+}
+d_trade_good_cotton = {
+	color = { 0.52 0.68 0.6 }
+	can_create = { always = no }
+}
+d_trade_good_sugar = {
+	color = { 0.74 0.95 0.68 }
+	can_create = { always = no }
+}
+d_trade_good_tobacco = {
+	color = { 0.33 0.56 0.38 }
+	can_create = { always = no }
+}
+d_trade_good_cocoa = {
+	color = { 0.45 0.21 0.09 }
+	can_create = { always = no }
+}
+d_trade_good_silk = {
+	color = { 0.72 0.10 0.10 }
+	can_create = { always = no }
+}
+d_trade_good_dyes = {
+	color = { 0.63 0.17 0.50 }
+	can_create = { always = no }
+}
+d_trade_good_tropical_wood = {
+	color = { 0.45 0.47 0.09 }
+	can_create = { always = no }
+}
+d_trade_good_livestock = {
+	color = { 0.61 0.76 0.04 }
+	can_create = { always = no }
+}
+d_trade_good_incense = {
+	color = { 0.89 0.79 0.47 }
+	can_create = { always = no }
+}
+d_trade_good_glass = {
+	color = { 0.0 0.60 0.45 }
+	can_create = { always = no }
+}
+d_trade_good_paper = {
+	color = { 0.9 0.86 0.71 }
+	can_create = { always = no }
+}
+d_trade_good_gems = {
+	color = { 0.96 0.78 0.78 }
+	can_create = { always = no }
+}
+d_trade_good_cloves = {
+	color = { 1.0 0.5 0.85 }
+	can_create = { always = no }
+}
+d_trade_good_uranium = {
+	color = { 0.0 1.0 0.0 }
+	can_create = { always = no }
+}
+d_trade_good_coal = {
+	color = { 0.21 0.27 0.31 }
+	can_create = { always = no }
+}
+d_trade_good_corn = {
+	color = { 0.98 0.92 0.36 }
+	can_create = { always = no }
+}
+d_trade_good_rice = {
+	color = { 0.6 0.9 0.7 }
+	can_create = { always = no }
+}
+d_trade_good_pearl = {
+	color = { 0.8 0.8 1.0 }
+	can_create = { always = no }
+}
+d_trade_good_amber = {
+	color = { 1.0 0.75 0.01 }
+	can_create = { always = no }
+}
+d_trade_good_aluminum = {
+	color = { 0.6 0.6 0.6 }
+	can_create = { always = no }
+}
+d_trade_good_cars = {
+	color = { 0.99 0.0 0.0 }
+	can_create = { always = no }
+}
+d_trade_good_electronics = {
+	color = { 0.1 0.3 0.99 }
+	can_create = { always = no }
+}
+d_trade_good_rhum = {
+	color = { 0.73 0.4 0.16 }
+	can_create = { always = no }
+}
+d_trade_good_marble = {
+	color = { 0.86 0.86 0.86 }
+	can_create = { always = no }
+}
+d_trade_good_cranberry = {
+	color = { 0.70 0.11 0.11 }
+	can_create = { always = no }
+}
+d_trade_good_wood = {
+	color = { 0.1 0.35 0.02 }
+	can_create = { always = no }
+}
+d_trade_good_jewelry = {
+	color = { 0.47 0.09 0.29 }
+	can_create = { always = no }
+}
+d_trade_good_potato = {
+	color = { 0.72 0.58 0.42 }
+	can_create = { always = no }
+}
+d_trade_good_rubber = {
+	color = { 0.14 0.17 0.17 }
+	can_create = { always = no }
+}
+d_trade_good_natural_gas = {
+	color = { 0.27 0.69 0.91 }
+	can_create = { always = no }
+}
+d_trade_good_books = {
+	color = { 0.62 0.27 0.46 }
+	can_create = { always = no }
+}
+d_trade_good_akvavit = {
+	color = { 0.47 0.76 0.77 }
+	can_create = { always = no }
+}
+d_trade_good_cinnamon = {
+	color = { 0.47 0.31 0 }
+	can_create = { always = no }
+}
+d_trade_good_pepper = {
+	color = { 0.55 0.58 0.25 }
+	can_create = { always = no }
+}
+d_trade_good_vanilla = {
+	color = { 0.95 0.9 0.67 }
+	can_create = { always = no }
+}
+d_trade_good_fruit = {
+	color = { 0.55 0.71 0 }
+	can_create = { always = no }
+}
+d_trade_good_citrus = {
+	color = { 1.0 0.96 0.31 }
+	can_create = { always = no }
+}
+d_trade_good_exotic_fruit = {
+	color = { 0.99 0.59 0.23 }
+	can_create = { always = no }
+}
+d_trade_good_cheese = {
+	color = { 1.0 0.65 0.0 }
+	can_create = { always = no }
+}
+d_trade_good_honey = {
+	color = { 0.92 0.69 0.3 }
+	can_create = { always = no }
+}
+d_trade_good_roses = {
+	color = { 1.0 0.01 0.24 }
+	can_create = { always = no }
+}
+d_trade_good_toilet_paper = {
+	color = { 0.62 0.66 0.71 }
+	can_create = { always = no }
+}
