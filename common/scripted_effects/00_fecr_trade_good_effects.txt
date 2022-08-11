@@ -1,4 +1,436 @@
-﻿set_trade_good = {
+﻿add_trade_good_grain = {
+	add_province_modifier = trade_good_grain
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_grain
+		}
+	}
+}
+add_trade_good_wine = {
+	add_province_modifier = trade_good_wine
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_wine
+		}
+	}
+}
+add_trade_good_wool = {
+	add_province_modifier = trade_good_wool
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_wool
+		}
+	}
+}
+add_trade_good_cloth = {
+	add_province_modifier = trade_good_cloth
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_cloth
+		}
+	}
+}
+add_trade_good_fish = {
+	add_province_modifier = trade_good_fish
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_fish
+		}
+	}
+}
+add_trade_good_fur = {
+	add_province_modifier = trade_good_fur
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_fur
+		}
+	}
+}
+add_trade_good_salt = {
+	add_province_modifier = trade_good_salt
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_salt
+		}
+	}
+}
+add_trade_good_naval_supplies = {
+	add_province_modifier = trade_good_naval_supplies
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_naval_supplies
+		}
+	}
+}
+add_trade_good_copper = {
+	add_province_modifier = trade_good_copper
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_copper
+		}
+	}
+}
+add_trade_good_gold = {
+	add_province_modifier = trade_good_gold
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_gold
+		}
+	}
+}
+add_trade_good_iron = {
+	add_province_modifier = trade_good_iron
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_iron
+		}
+	}
+}
+add_trade_good_slaves = {
+	add_province_modifier = trade_good_slaves
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_slaves
+		}
+	}
+}
+add_trade_good_ivory = {
+	add_province_modifier = trade_good_ivory
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_ivory
+		}
+	}
+}
+add_trade_good_tea = {
+	add_province_modifier = trade_good_tea
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_tea
+		}
+	}
+}
+add_trade_good_chinaware = {
+	add_province_modifier = trade_good_chinaware
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_chinaware
+		}
+	}
+}
+add_trade_good_spices = {
+	add_province_modifier = trade_good_spices
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_spices
+		}
+	}
+}
+add_trade_good_coffee = {
+	add_province_modifier = trade_good_coffee
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_coffee
+		}
+	}
+}
+add_trade_good_cotton = {
+	add_province_modifier = trade_good_cotton
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_cotton
+		}
+	}
+}
+add_trade_good_sugar = {
+	add_province_modifier = trade_good_sugar
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_sugar
+		}
+	}
+}
+add_trade_good_tobacco = {
+	add_province_modifier = trade_good_tobacco
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_tobacco
+		}
+	}
+}
+add_trade_good_cocoa = {
+	add_province_modifier = trade_good_cocoa
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_cocoa
+		}
+	}
+}
+add_trade_good_silk = {
+	add_province_modifier = trade_good_silk
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_silk
+		}
+	}
+}
+add_trade_good_dyes = {
+	add_province_modifier = trade_good_dyes
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_dyes
+		}
+	}
+}
+add_trade_good_tropical_wood = {
+	add_province_modifier = trade_good_tropical_wood
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_tropical_wood
+		}
+	}
+}
+add_trade_good_livestock = {
+	add_province_modifier = trade_good_livestock
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_livestock
+		}
+	}
+}
+add_trade_good_incense = {
+	add_province_modifier = trade_good_incense
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_incense
+		}
+	}
+}
+add_trade_good_glass = {
+	add_province_modifier = trade_good_glass
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_glass
+		}
+	}
+}
+add_trade_good_paper = {
+	add_province_modifier = trade_good_paper
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_paper
+		}
+	}
+}
+add_trade_good_gems = {
+	add_province_modifier = trade_good_gems
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_gems
+		}
+	}
+}
+add_trade_good_cloves = {
+	add_province_modifier = trade_good_cloves
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_cloves
+		}
+	}
+}
+add_trade_good_corn = {
+	add_province_modifier = trade_good_corn
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_corn
+		}
+	}
+}
+add_trade_good_rice = {
+	add_province_modifier = trade_good_rice
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_rice
+		}
+	}
+}
+add_trade_good_pearl = {
+	add_province_modifier = trade_good_pearl
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_pearl
+		}
+	}
+}
+add_trade_good_amber = {
+	add_province_modifier = trade_good_amber
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_amber
+		}
+	}
+}
+add_trade_good_marble = {
+	add_province_modifier = trade_good_marble
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_marble
+		}
+	}
+}
+add_trade_good_cranberry = {
+	add_province_modifier = trade_good_cranberry
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_cranberry
+		}
+	}
+}
+add_trade_good_wood = {
+	add_province_modifier = trade_good_wood
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_wood
+		}
+	}
+}
+add_trade_good_jewelry = {
+	add_province_modifier = trade_good_jewelry
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_jewelry
+		}
+	}
+}
+add_trade_good_potato = {
+	add_province_modifier = trade_good_potato
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_potato
+		}
+	}
+}
+add_trade_good_cinnamon = {
+	add_province_modifier = trade_good_cinnamon
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_cinnamon
+		}
+	}
+}
+add_trade_good_pepper = {
+	add_province_modifier = trade_good_pepper
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_pepper
+		}
+	}
+}
+add_trade_good_vanilla = {
+	add_province_modifier = trade_good_vanilla
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_vanilla
+		}
+	}
+}
+add_trade_good_fruit = {
+	add_province_modifier = trade_good_fruit
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_fruit
+		}
+	}
+}
+add_trade_good_citrus = {
+	add_province_modifier = trade_good_citrus
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_citrus
+		}
+	}
+}
+add_trade_good_exotic_fruit = {
+	add_province_modifier = trade_good_exotic_fruit
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_exotic_fruit
+		}
+	}
+}
+add_trade_good_cheese = {
+	add_province_modifier = trade_good_cheese
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_cheese
+		}
+	}
+}
+add_trade_good_honey = {
+	add_province_modifier = trade_good_honey
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_honey
+		}
+	}
+}
+add_trade_good_roses = {
+	add_province_modifier = trade_good_roses
+	barony = {
+		set_variable = {
+			name = trade_good
+			value = flag:trade_good_roses
+		}
+	}
+}
+set_trade_good = {
 	random_list = {
 		# GRAIN
 		35 = {
@@ -36,6 +468,10 @@
 				terrain = farmlands
 			}
 			modifier = {
+				factor = 1.1
+				barony.var:winter_type = flag:no_winter
+			}
+			modifier = {
 				factor = 0.35
 				barony.var:winter_type = flag:severe_winter
 			}
@@ -54,11 +490,7 @@
 					geographical_region = custom_roman_aegyptus
 				}
 			}
-			add_province_modifier = trade_good_grain
-			set_variable = {
-				name = trade_good
-				value = flag:trade_good_grain
-			}
+			add_trade_good_grain = yes
 		}
 		# WINE
 		5 = {
@@ -104,11 +536,7 @@
 					geographical_region = custom_hungary
 				}
 			}
-			add_province_modifier = trade_good_wine
-			set_variable = {
-				name = trade_good
-				value = flag:trade_good_wine
-			}
+			add_trade_good_wine = yes
 		}
 		# WOOL
 		30 = {
@@ -143,814 +571,646 @@
 					geographical_region = world_tibet
 				}
 			}
-			add_province_modifier = trade_good_wool
-			set_variable = {
-				name = trade_good
-				value = flag:trade_good_wool
+			add_trade_good_wool = yes
+		}
+		# CLOTH
+		10 = {
+			modifier = {
+				factor = 0
+				county = { development_level < 18 }
 			}
-	}
-	# CLOTH
-	10 = {
-		modifier = {
-			factor = 0
-			county = { development_level < 18 }
-		}
-		modifier = {
-			factor = 2
-			county = { development_level >= 22 }
-		}
-		add_province_modifier = trade_good_cloth
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_cloth
-		}
-		}
-	}
-	# FISH
-	20 = {
-		modifier = {
-			factor = 0
-			is_coastal = no
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				barony.var:winter_type = flag:severe_winter
-				terrain = desert
+			modifier = {
+				factor = 2
+				county = { development_level >= 22 }
 			}
+			add_trade_good_cloth = yes
 		}
-		add_province_modifier = trade_good_fish
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_fish
-		}
-		}
-	}
-	# FUR
-	10 = {
-		modifier = {
-			factor = 0
-			OR = {
-				terrain = desert
-				terrain = drylands
-				terrain = steppe
-				terrain = farmlands
-				geographical_region = world_africa_west
-				geographical_region = world_africa_east
-				geographical_region = world_india_deccan
-				geographical_region = world_burma
-				county = { development_level <= 8 }
-			}
-			NOR = {
-				barony.var:winter_type = flag:severe_winter
-				barony.var:winter_type = flag:normal_winter
-			}
-		}
-		modifier = {
-			factor = 1.2
-			barony.var:winter_type = flag:severe_winter
-		}
-		modifier = {
-			factor = 0.3
-			barony.var:winter_type = flag:normal_winter
-		}
-		modifier = {
-			factor = 1.5
-			terrain = forest
-		}
-		add_province_modifier = trade_good_fur
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_fur
-		}
-		}
-	}
-	# SALT
-	5 = {
-		modifier = {
-			factor = 0
-			NOR = {
-				terrain = desert
-				terrain = mountains
-				terrain = desert_mountains
-			}
-		}
-		modifier = {
-			factor = 5
-			OR = {
-				geographical_region = world_africa_sahara
-				geographical_region = world_africa_north_west
-			}
-		}
-		add_province_modifier = trade_good_salt
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_salt
-		}
-		}
-	}
-	# NAVAL SUPPLIES
-	15 = {
-		modifier = {
-			factor = 0
-			OR = {
-				terrain = desert
-				terrain = desert_mountains
-				terrain = drylands
-				terrain = steppe
-				terrain = farmlands
+		# FISH
+		20 = {
+			modifier = {
+				factor = 0
 				is_coastal = no
 			}
-		}
-		modifier = {
-			factor = 0.5
-			OR = {
-				terrain = mountains
-				terrain = plains
-				geographical_region = ghw_region_subsahelian_africa
-			}
-		}
-		modifier = {
-			factor = 0.75
-			OR = {
-				geographical_region = world_africa_west
-				geographical_region = world_africa_east
-				geographical_region = world_india_deccan
-				geographical_region = world_burma
-			}
-		}
-		add_province_modifier = trade_good_naval_supplies
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_naval_supplies
-		}
-		}
-	}
-	# COPPER
-	15 = {
-		modifier = {
-			factor = 0
-			NOR = {
-				terrain = mountains
-				terrain = desert_mountains
-				terrain = hills
-			}
-		}
-		modifier = {
-			factor = 1.1
-			terrain = mountains
-		}
-		modifier = {
-			factor = 0.7
-			geographical_region = ghw_region_subsahelian_africa
-		}
-		add_province_modifier = trade_good_copper
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_copper
-		}
-		}
-	}
-	# GOLD
-	5 = {
-		modifier = {
-			factor = 0
-			NOR = {
-				geographical_region = ghw_region_siberia
-				geographical_region = ghw_region_the_sahel
-				terrain = mountains
-			}
-		}
-		modifier = {
-			factor = 1.1
-			terrain = mountains
-		}
-		add_province_modifier = trade_good_gold
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_gold
-		}
-		}
-	}
-	# IRON
-	10 = {
-		modifier = {
-			factor = 0
-			NOR = {
-				geographical_region = ghw_region_siberia
-				terrain = mountains
-				terrain = desert_mountains
-			}
-		}
-		modifier = {
-			factor = 1.1
-			terrain = mountains
-		}
-		add_province_modifier = trade_good_iron
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_iron
-		}
-		}
-	}
-	# SLAVES
-	15 = {
-		modifier = {
-			factor = 0
-			NAND = {
+			modifier = {
+				factor = 1.2
 				OR = {
-					geographical_region = world_africa_west
-					geographical_region = ghw_region_subsahelian_africa
-					geographical_region = ghw_region_the_sahel
-				}
-				OR = {
-					terrain = jungle
-					terrain = plains
-					terrain = drylands
+					barony.var:winter_type = flag:severe_winter
+					terrain = desert
 				}
 			}
+			add_trade_good_fish = yes
 		}
-		modifier = {
-			factor = 3
-			is_coastal = yes
-		}
-		add_province_modifier = trade_good_slaves
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_slaves
-		}
-		}
-	}
-	# IVORY
-	10 = {
-		modifier = {
-			factor = 0
-			NAND = {
-				OR = {
-					geographical_region = world_africa_west
-					geographical_region = ghw_region_subsahelian_africa
-					geographical_region = ghw_region_the_sahel
-				}
-				OR = {
-					terrain = jungle
-					terrain = plains
-					terrain = drylands
-				}
-			}
-		}
-		modifier = {
-			factor = 3
-			is_coastal = yes
-		}
-		add_province_modifier = trade_good_ivory
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_ivory
-		}
-		}
-	}
-	# TEA
-	10 = {
-		modifier = {
-			factor = 0
-			OR = {
-				terrain = desert
-				terrain = desert_mountains
-				terrain = drylands
-				terrain = steppe
-				NOR = {
-					geographical_region = world_india
-					geographical_region = world_burma
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				terrain = hills
-				terrain = wetlands
-				terrain = floodplains
-			}
-		}
-		add_province_modifier = trade_good_tea
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_tea
-		}
-		}
-	}
-	# SPICES
-	25 = {
-		modifier = {
-			factor = 0
-			OR = {
-				terrain = mountains
-				terrain = desert_mountains
-				terrain = steppe
-				NOR = {
-					geographical_region = world_india_deccan
-					geographical_region = world_india_bengal
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			is_coastal = yes
-		}
-		add_province_modifier = trade_good_spices
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_spices
-		}
-		}
-	}
-	# COFFEE
-	15 = {
-		modifier = {
-			factor = 0
-			OR = {
-				terrain = steppe
-				terrain = forest
-				barony.var:winter_type = flag:mild_winter
-				barony.var:winter_type = flag:severe_winter
-				barony.var:winter_type = flag:normal_winter
-				NOR = {
-					geographical_region = ghw_region_ethiopia
-					geographical_region = ghw_region_horn_of_africa
-					kingdom = { this = title:k_yemen }
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			is_coastal = yes
-		}
-		add_province_modifier = trade_good_coffee
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_coffee
-		}
-		}
-	}
-	# COTTON
-	20 = {
-		modifier = {
-			factor = 0
-			OR = {
-				terrain = desert
-				terrain = desert_mountains
-				terrain = mountains
-				terrain = forest
-				terrain = jungle
-				terrain = drylands
-				barony.var:winter_type = flag:mild_winter
-				barony.var:winter_type = flag:severe_winter
-				barony.var:winter_type = flag:normal_winter
-				NOR = {
-					geographical_region = ghw_region_egypt
-					geographical_region = world_asia_minor
-					geographical_region = world_steppe
-					geographical_region = world_india
-				}
-			}
-		}
-		modifier = {
-			factor = 1.1
-			OR = {
-				terrain = farmlands
-				terrain = plains
-			}
-		}
-		add_province_modifier = trade_good_cotton
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_cotton
-		}
-		}
-	}
-	# SUGAR
-	15 = {
-		modifier = {
-			factor = 0
-			OR = {
-				terrain = desert
-				terrain = desert_mountains
-				terrain = mountains
-				terrain = forest
-				terrain = steppe
-				terrain = hills
-				barony.var:winter_type = flag:mild_winter
-				barony.var:winter_type = flag:severe_winter
-				barony.var:winter_type = flag:normal_winter
-				NOR = {
-					geographical_region = world_india
-					geographical_region = world_mesopotamia
-					geographical_region = ghw_region_egypt
-				}
-			}
-		}
-		modifier = {
-			factor = 1.1
-			OR = {
-				terrain = farmlands
-				terrain = wetlands
-			}
-		}
-		add_province_modifier = trade_good_sugar
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_sugar
-		}
-		}
-	}
-	# SILK
-	5 = {
-		modifier = {
-			factor = 0
-			OR = {
-				terrain = desert
-				terrain = desert_mountains
-				terrain = mountains
-				terrain = forest
-				terrain = steppe
-				terrain = hills
-				terrain = drylands
-				barony.var:winter_type = flag:mild_winter
-				barony.var:winter_type = flag:severe_winter
-				barony.var:winter_type = flag:normal_winter
-				NOR = {
-					geographical_region = world_india
-					geographical_region = world_burma
-					geographical_region = graphical_china
-				}
-			}
-		modifier = {
-			factor = 1.5
-			county = { development_level >= 20 }
-		}
-		add_province_modifier = trade_good_silk
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_silk
-		}
-		}
-	}
-	}
-	# DYES
-	15 = {
-		modifier = {
-			factor = 0
+		# FUR
+		10 = {
+			modifier = {
+				factor = 0
 				OR = {
 					terrain = desert
 					terrain = desert_mountains
 					terrain = drylands
-					barony.var:winter_type = flag:mild_winter
-					barony.var:winter_type = flag:severe_winter
-					barony.var:winter_type = flag:normal_winter
-				NOR = {
-					geographical_region = ghw_region_subsahelian_africa
+					terrain = steppe
+					terrain = farmlands
 					geographical_region = world_africa_west
 					geographical_region = world_africa_east
 					geographical_region = world_india_deccan
 					geographical_region = world_burma
-					kingdom = { this = title:k_jerusalem }
-					kingdom = { this = title:k_syria }
+					county = { development_level >= 8 }
+					barony.var:winter_type = flag:no_winter
 				}
 			}
-		}
-		modifier = {
-			factor = 3
-			terrain = jungle
-		}
-		add_province_modifier = trade_good_dyes
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_dyes
-		}
-		}
-	}
-	# TROPICAL WOOD
-	15 = {
-		modifier = {
-			factor = 0
-			NOR = {
-				geographical_region = world_burma
-				terrain = jungle
-			}
-		}
-		modifier = {
-			factor = 3
-			terrain = jungle
-		}
-		add_province_modifier = trade_good_tropical_wood
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_tropical_wood
-		}
-		}
-	}
-	# LIVESTOCK
-	30 = {
-		modifier = {
-			factor = 0
-			OR = {
-				terrain = jungle
-				terrain = forest
-				terrain = farmlands
-				terrain = wetlands
-				terrain = floodplains
-			}
-		}
-		modifier = {
-			factor = 0.75
-			barony.var:winter_type = flag:severe_winter
-		}
-		modifier = {
-			factor = 1.25
-			OR = {
-				terrain = desert
-				terrain = drylands
-				terrain = plains
-			}
-		}
-		modifier = {
-			factor = 1.5
-			terrain = steppe
-		}
-		modifier = {
-			factor = 1.5
-			geographical_region = world_steppe
-		}
-		modifier = {
-			factor = 1.5
-			geographical_region = world_tibet
-		}
-		modifier = {
-			factor = 1.5
-			geographical_region = ghw_region_subsahelian_africa
-		}
-		add_province_modifier = trade_good_livestock
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_livestock
-		}
-		}
-	}
-	# INCENSE
-	25 = {
-		modifier = {
-			factor = 0
-			NOR = {
-				geographical_region = world_middle_east_arabia
-				geographical_region = world_india
-			}
-		}
-		modifier = {
-			factor = 1.25
-			geographical_region = ghw_region_arabia
-		}
-		add_province_modifier = trade_good_incense
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_incense
-		}
-		}
-	}
-	# GEMS
-	5 = {
-		modifier = {
-			factor = 0
-			OR = {
-				terrain = forest
-				terrain = drylands
-				terrain = plains
-				terrain = steppe
-			}
-		}
-		modifier = {
-			factor = 0
-			NOR = {
-				geographical_region = world_india
-				geographical_region = ghw_region_arabia
-			}
-		}
-		modifier = {
-			factor = 1.25
-			geographical_region = ghw_region_arabia
-		}
-		add_province_modifier = trade_good_gems
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_gems
-		}
-		}
-	}
-	# RICE
-	35 = {
-		modifier = {
-			factor = 0
-			NOR = {
-				geographical_region = world_india_bengal
-				geographical_region = world_burma
-			}
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				terrain = drylands
-				terrain = desert
-				terrain = desert_mountains
-			}
-		}
-		modifier = {
-			factor = 0.6
-			OR = {
-				terrain = steppe
-				terrain = plains
-			}
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				terrain = farmlands
-				terrain = floodplains
-				terrain = wetlands
-			}
-		}
-		add_province_modifier = trade_good_rice
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_rice
-		}
-		}
-	}
-	# PEARL
-	2 = {
-		modifier = {
-			factor = 0
-			is_coastal = no
-			NOR = {
-				geographical_region = ghw_region_arabia
-				geographical_region = world_india
-			}
-		}
-		modifier = {
-			factor = 2
-			is_coastal = yes
-		}
-		add_province_modifier = trade_good_pearl
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_pearl
-		}
-		}
-	}
-	# AMBER
-	10 = {
-		modifier = {
-			factor = 0
-			NOR = {
-				geographical_region = ghw_region_scandinavia
-				geographical_region = ghw_region_baltic
-				geographical_region = ghw_region_egypt
-			}
-		}
-		modifier = {
-			factor = 2
-			geographical_region = ghw_region_baltic
-		}
-		modifier = {
-			factor = 1.3
-			is_coastal = yes
-		}
-		add_province_modifier = trade_good_amber
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_amber
-		}
-		}
-	}
-	# MARBLE
-	10 = {
-		modifier = {
-			factor = 0
-			NOR = {
-				terrain = hills
-				terrain = mountains
-			}
-		}
-		modifier = {
-			factor = 1.2
-			terrain = hills
-		}
-		modifier = {
-			factor = 2
-			terrain = mountains
-		}
-		add_province_modifier = trade_good_marble
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_marble
-		}
-		}
-	}
-	# CRANBERRY
-	15 = {
-		modifier = {
-			factor = 0
-			NOR = {
-				geographical_region = ghw_region_scandinavia
+			modifier = {
+				factor = 1.2
 				barony.var:winter_type = flag:severe_winter
 			}
-		}
-		modifier = {
-			factor = 2
-			geographical_region = ghw_region_scandinavia
-		}
-		add_province_modifier = trade_good_cranberry
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_cranberry
-		}
-		}
-	}
-	# WOOD
-	40 = {
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { terrain = forest }
-				NOT = { terrain = wetlands }
-				NOT = { terrain = hills }
-				NOT = { terrain = mountains }
-				geographical_region = world_africa_west
-				geographical_region = world_africa_east
-				geographical_region = world_india_deccan
-				geographical_region = world_burma
+			modifier = {
+				factor = 0.3
+				barony.var:winter_type = flag:normal_winter
 			}
+			modifier = {
+				factor = 1.5
+				terrain = forest
+			}
+			add_trade_good_fur = yes
 		}
-		modifier = {
-			factor = 0
-			county = { development_level >= 15 }
+		# SALT
+		5 = {
+			modifier = {
+				factor = 0
+				NOR = {
+					terrain = desert
+					terrain = mountains
+					terrain = desert_mountains
+				}
+			}
+			modifier = {
+				factor = 5
+				OR = {
+					geographical_region = world_africa_sahara
+					geographical_region = world_africa_north_west
+				}
+			}
+			add_trade_good_salt = yes
 		}
-		modifier = {
-			factor = 0.1
-			county = { development_level >= 10 }
+		# NAVAL SUPPLIES
+		15 = {
+			modifier = {
+				factor = 0
+				OR = {
+					terrain = desert
+					terrain = desert_mountains
+					terrain = drylands
+					terrain = steppe
+					terrain = farmlands
+					is_coastal = no
+				}
+			}
+			modifier = {
+				factor = 0.5
+				OR = {
+					terrain = mountains
+					terrain = plains
+					geographical_region = ghw_region_subsahelian_africa
+				}
+			}
+			modifier = {
+				factor = 0.75
+				OR = {
+					geographical_region = world_africa_west
+					geographical_region = world_africa_east
+					geographical_region = world_india_deccan
+					geographical_region = world_burma
+				}
+			}
+			add_trade_good_naval_supplies = yes
 		}
-		modifier = {
-			factor = 0.6
-			terrain = mountains
+		# COPPER
+		15 = {
+			modifier = {
+				factor = 0
+				NOR = {
+					terrain = mountains
+					terrain = desert_mountains
+					terrain = hills
+				}
+			}
+			modifier = {
+				factor = 1.1
+				terrain = mountains
+			}
+			modifier = {
+				factor = 0.7
+				geographical_region = ghw_region_subsahelian_africa
+			}
+			add_trade_good_copper = yes
 		}
-		modifier = {
-			factor = 0.7
-			terrain = hills
+		# GOLD
+		5 = {
+			modifier = {
+				factor = 0
+				NOR = {
+					geographical_region = ghw_region_siberia
+					geographical_region = ghw_region_the_sahel
+					terrain = mountains
+				}
+			}
+			modifier = {
+				factor = 1.1
+				terrain = mountains
+			}
+			add_trade_good_gold = yes
 		}
-		modifier = {
-			factor = 0.8
-			barony.var:winter_type = flag:mild_winter
+		# IRON
+		10 = {
+			modifier = {
+				factor = 0
+				NOR = {
+					geographical_region = ghw_region_siberia
+					terrain = mountains
+					terrain = desert_mountains
+				}
+			}
+			modifier = {
+				factor = 1.1
+				terrain = mountains
+			}
+			add_trade_good_iron = yes
 		}
-		modifier = {
-			factor = 1.1
-			barony.var:winter_type = flag:normal_winter
+		# SLAVES
+		15 = {
+			modifier = {
+				factor = 0
+				NAND = {
+					OR = {
+						geographical_region = world_africa_west
+						geographical_region = ghw_region_subsahelian_africa
+						geographical_region = ghw_region_the_sahel
+					}
+					OR = {
+						terrain = jungle
+						terrain = plains
+						terrain = drylands
+					}
+				}
+			}
+			modifier = {
+				factor = 3
+				is_coastal = yes
+			}
+			add_trade_good_slaves = yes
 		}
-		modifier = {
-			factor = 5
-			terrain = forest
+		# IVORY
+		10 = {
+			modifier = {
+				factor = 0
+				NAND = {
+					OR = {
+						geographical_region = world_africa_west
+						geographical_region = ghw_region_subsahelian_africa
+						geographical_region = ghw_region_the_sahel
+					}
+					OR = {
+						terrain = jungle
+						terrain = plains
+						terrain = drylands
+					}
+				}
+			}
+			modifier = {
+				factor = 3
+				is_coastal = yes
+			}
+			add_trade_good_ivory = yes
 		}
-		add_province_modifier = trade_good_wood
-		barony = {
-		set_variable = {
-			name = trade_good
-			value = flag:trade_good_wood
+		# TEA
+		10 = {
+			modifier = {
+				factor = 0
+				OR = {
+					terrain = desert
+					terrain = desert_mountains
+					terrain = drylands
+					terrain = steppe
+					NOR = {
+						geographical_region = world_india
+						geographical_region = world_burma
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					terrain = hills
+					terrain = wetlands
+					terrain = floodplains
+				}
+			}
+			add_trade_good_tea = yes
 		}
+		# SPICES
+		25 = {
+			modifier = {
+				factor = 0
+				OR = {
+					terrain = mountains
+					terrain = desert_mountains
+					terrain = steppe
+					NOR = {
+						geographical_region = world_india_deccan
+						geographical_region = world_india_bengal
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				is_coastal = yes
+			}
+			add_trade_good_spices = yes
 		}
-	}
+		# COFFEE
+		15 = {
+			modifier = {
+				factor = 0
+				OR = {
+					terrain = steppe
+					terrain = forest
+					barony.var:winter_type = flag:mild_winter
+					barony.var:winter_type = flag:severe_winter
+					barony.var:winter_type = flag:normal_winter
+					NOR = {
+						geographical_region = ghw_region_ethiopia
+						geographical_region = ghw_region_horn_of_africa
+						kingdom = { this = title:k_yemen }
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				is_coastal = yes
+			}
+			add_trade_good_coffee = yes
+		}
+		# COTTON
+		20 = {
+			modifier = {
+				factor = 0
+				OR = {
+					terrain = desert
+					terrain = desert_mountains
+					terrain = mountains
+					terrain = forest
+					terrain = jungle
+					terrain = drylands
+					barony.var:winter_type = flag:mild_winter
+					barony.var:winter_type = flag:severe_winter
+					barony.var:winter_type = flag:normal_winter
+					NOR = {
+						geographical_region = ghw_region_egypt
+						geographical_region = world_asia_minor
+						geographical_region = world_steppe
+						geographical_region = world_india
+					}
+				}
+			}
+			modifier = {
+				factor = 1.1
+				OR = {
+					terrain = farmlands
+					terrain = plains
+				}
+			}
+			add_trade_good_cotton = yes
+		}
+		# SUGAR
+		15 = {
+			modifier = {
+				factor = 0
+				OR = {
+					terrain = desert
+					terrain = desert_mountains
+					terrain = mountains
+					terrain = forest
+					terrain = steppe
+					terrain = hills
+					barony.var:winter_type = flag:mild_winter
+					barony.var:winter_type = flag:severe_winter
+					barony.var:winter_type = flag:normal_winter
+					NOR = {
+						geographical_region = world_india
+						geographical_region = world_mesopotamia
+						geographical_region = ghw_region_egypt
+					}
+				}
+			}
+			modifier = {
+				factor = 1.1
+				OR = {
+					terrain = farmlands
+					terrain = wetlands
+				}
+			}
+			add_trade_good_sugar = yes
+		}
+		# SILK
+		5 = {
+			modifier = {
+				factor = 0
+				OR = {
+					terrain = desert
+					terrain = desert_mountains
+					terrain = mountains
+					terrain = forest
+					terrain = steppe
+					terrain = hills
+					terrain = drylands
+					barony.var:winter_type = flag:mild_winter
+					barony.var:winter_type = flag:severe_winter
+					barony.var:winter_type = flag:normal_winter
+					NOR = {
+						geographical_region = world_india
+						geographical_region = world_burma
+						geographical_region = graphical_china
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				county = { development_level >= 20 }
+			}
+			add_trade_good_silk = yes
+		}
+		# DYES
+		15 = {
+			modifier = {
+				factor = 0
+					OR = {
+						terrain = desert
+						terrain = desert_mountains
+						terrain = drylands
+						barony.var:winter_type = flag:mild_winter
+						barony.var:winter_type = flag:severe_winter
+						barony.var:winter_type = flag:normal_winter
+					NOR = {
+						geographical_region = ghw_region_subsahelian_africa
+						geographical_region = world_africa_west
+						geographical_region = world_africa_east
+						geographical_region = world_india_deccan
+						geographical_region = world_burma
+						kingdom = { this = title:k_jerusalem }
+						kingdom = { this = title:k_syria }
+					}
+				}
+			}
+			modifier = {
+				factor = 3
+				terrain = jungle
+			}
+			add_trade_good_dyes = yes
+		}
+		# TROPICAL WOOD
+		15 = {
+			modifier = {
+				factor = 0
+				NOR = {
+					geographical_region = world_burma
+					terrain = jungle
+				}
+			}
+			modifier = {
+				factor = 3
+				terrain = jungle
+			}
+			add_trade_good_tropical_wood = yes
+		}
+		# LIVESTOCK
+		30 = {
+			modifier = {
+				factor = 0
+				OR = {
+					terrain = jungle
+					terrain = forest
+					terrain = farmlands
+					terrain = wetlands
+					terrain = floodplains
+				}
+			}
+			modifier = {
+				factor = 0.75
+				barony.var:winter_type = flag:severe_winter
+			}
+			modifier = {
+				factor = 1.25
+				OR = {
+					terrain = desert
+					terrain = drylands
+					terrain = plains
+				}
+			}
+			modifier = {
+				factor = 1.5
+				terrain = steppe
+			}
+			modifier = {
+				factor = 1.5
+				geographical_region = world_steppe
+			}
+			modifier = {
+				factor = 1.5
+				geographical_region = world_tibet
+			}
+			modifier = {
+				factor = 1.5
+				geographical_region = ghw_region_subsahelian_africa
+			}
+			add_trade_good_livestock = yes
+		}
+		# INCENSE
+		25 = {
+			modifier = {
+				factor = 0
+				NOR = {
+					geographical_region = world_middle_east_arabia
+					geographical_region = world_india
+				}
+			}
+			modifier = {
+				factor = 1.25
+				geographical_region = ghw_region_arabia
+			}
+			add_trade_good_incense = yes
+		}
+		# GEMS
+		5 = {
+			modifier = {
+				factor = 0
+				OR = {
+					terrain = forest
+					terrain = drylands
+					terrain = plains
+					terrain = steppe
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					geographical_region = world_india
+					geographical_region = ghw_region_arabia
+				}
+			}
+			modifier = {
+				factor = 1.25
+				geographical_region = ghw_region_arabia
+			}
+			add_trade_good_gems = yes
+		}
+		# RICE
+		35 = {
+			modifier = {
+				factor = 0
+				NOR = {
+					geographical_region = world_india_bengal
+					geographical_region = world_burma
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					terrain = drylands
+					terrain = desert
+					terrain = desert_mountains
+				}
+			}
+			modifier = {
+				factor = 0.6
+				OR = {
+					terrain = steppe
+					terrain = plains
+				}
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					terrain = farmlands
+					terrain = floodplains
+					terrain = wetlands
+				}
+			}
+			add_trade_good_rice = yes
+		}
+		# PEARL
+		2 = {
+			modifier = {
+				factor = 0
+				is_coastal = no
+				NOR = {
+					geographical_region = ghw_region_arabia
+					geographical_region = world_india
+				}
+			}
+			modifier = {
+				factor = 2
+				is_coastal = yes
+			}
+			add_trade_good_pearl = yes
+		}
+		# AMBER
+		10 = {
+			modifier = {
+				factor = 0
+				NOR = {
+					geographical_region = ghw_region_scandinavia
+					geographical_region = ghw_region_baltic
+					geographical_region = ghw_region_egypt
+				}
+			}
+			modifier = {
+				factor = 2
+				geographical_region = ghw_region_baltic
+			}
+			modifier = {
+				factor = 1.3
+				is_coastal = yes
+			}
+			add_trade_good_amber = yes
+		}
+		# MARBLE
+		10 = {
+			modifier = {
+				factor = 0
+				NOR = {
+					terrain = hills
+					terrain = mountains
+				}
+			}
+			modifier = {
+				factor = 1.2
+				terrain = hills
+			}
+			modifier = {
+				factor = 2
+				terrain = mountains
+			}
+			add_trade_good_marble = yes
+		}
+		# CRANBERRY
+		15 = {
+			modifier = {
+				factor = 0
+				NOR = {
+					geographical_region = ghw_region_scandinavia
+					barony.var:winter_type = flag:severe_winter
+				}
+			}
+			modifier = {
+				factor = 2
+				geographical_region = ghw_region_scandinavia
+			}
+			add_trade_good_cranberry = yes
+		}
+		# WOOD
+		40 = {
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { terrain = forest }
+					NOT = { terrain = wetlands }
+					NOT = { terrain = hills }
+					NOT = { terrain = mountains }
+					geographical_region = world_africa_west
+					geographical_region = world_africa_east
+					geographical_region = world_india_deccan
+					geographical_region = world_burma
+				}
+			}
+			modifier = {
+				factor = 0
+				county = { development_level >= 15 }
+			}
+			modifier = {
+				factor = 0.1
+				county = { development_level >= 10 }
+			}
+			modifier = {
+				factor = 0.6
+				terrain = mountains
+			}
+			modifier = {
+				factor = 0.7
+				terrain = hills
+			}
+			modifier = {
+				factor = 0.8
+				barony.var:winter_type = flag:mild_winter
+			}
+			modifier = {
+				factor = 1.1
+				barony.var:winter_type = flag:normal_winter
+			}
+			modifier = {
+				factor = 5
+				terrain = forest
+			}
+			add_trade_good_wood = yes
+		}
 	}
 }
 remove_trade_good = {
