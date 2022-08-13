@@ -1212,6 +1212,32 @@ set_trade_good = {
 			add_trade_good_wood = yes
 		}
 	}
+	if = {
+		limit = {
+			NOT = { has_trade_good = yes }
+		}
+		if = {
+			limit = {
+				terrain = forest
+			}
+			add_trade_good_wood = yes
+		}
+		else_if = {
+			limit = {
+				terrain = farmlands
+			}
+			add_trade_good_grain = yes
+		}
+		else_if = {
+			limit = {
+				terrain = mountains
+			}
+			add_trade_good_marble = yes
+		}
+		else = {
+			add_trade_good_livestock = yes
+		}
+	}
 }
 remove_trade_good = {
 	barony = { remove_variable = trade_good }
