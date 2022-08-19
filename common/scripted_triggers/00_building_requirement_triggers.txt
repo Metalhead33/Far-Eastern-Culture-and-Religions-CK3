@@ -83,16 +83,20 @@ building_common_tradeport_requirement_terrain = {
 
 building_pastures_requirement_terrain = {
 	OR = {
-		terrain = farmlands
-		terrain = plains
+		#terrain = farmlands
+		#terrain = plains
+		#terrain = steppe
+		#terrain = desert
+		#terrain = drylands
+		#terrain = oasis
+		#terrain = mountains
+		#terrain = desert_mountains
+		#terrain = hills
+		#terrain = floodplains
 		terrain = steppe
-		terrain = desert
-		terrain = drylands
-		terrain = oasis
-		terrain = mountains
-		terrain = desert_mountains
-		terrain = hills
-		terrain = floodplains
+		terrain = plains
+		has_province_modifier = trade_good_wool
+		has_province_modifier = trade_good_livestock
 		AND = {
 			terrain = jungle
 			NOT = { geographical_region = world_innovation_elephants }
@@ -102,19 +106,24 @@ building_pastures_requirement_terrain = {
 
 building_hunting_grounds_requirement_terrain = {
 	OR = {
-		terrain = plains
-		terrain = drylands
-		terrain = steppe
-		terrain = hills
-		terrain = taiga
+		# terrain = plains
+		# terrain = drylands
+		# terrain = steppe
+		# terrain = hills
+		# terrain = taiga
 		terrain = forest
-		terrain = jungle
-		terrain = wetlands
+		# terrain = jungle
+		# terrain = wetlands
+		has_province_modifier = trade_good_wood
+		has_province_modifier = trade_good_fur
 	}
 }
 
 building_orchards_requirement_terrain = {
 	OR = {
+		has_province_modifier = trade_good_fruit
+		has_province_modifier = trade_good_cranberry
+		has_province_modifier = trade_good_exotic_fruit
 		terrain = floodplains
 		terrain = oasis
 		AND = {
@@ -131,7 +140,11 @@ building_orchards_requirement_terrain = {
 }
 
 building_farm_estates_requirement_terrain = {
-	terrain = farmlands
+	OR = {
+		terrain = farmlands
+		has_province_modifier = trade_good_grain
+		has_province_modifier = trade_good_rice
+	}
 }
 
 building_military_camps_requirement_terrain = {
@@ -189,9 +202,8 @@ building_watchtowers_requirement_terrain = {
 building_cereal_fields_requirement_terrain = {
 	OR = {
 		terrain = farmlands
-		terrain = plains
-		terrain = drylands
-		terrain = floodplains
+		has_province_modifier = trade_good_grain
+		has_province_modifier = trade_good_rice
 	}
 }
 
@@ -233,11 +245,7 @@ building_camel_farms_requirement_terrain = {
 }
 
 building_logging_camps_requirement_terrain = {
-	OR = {
-		terrain = taiga
-		terrain = forest
-		terrain = jungle
-	}
+	has_province_modifier = trade_good_wood
 }
 
 building_peat_quarries_requirement_terrain = {
@@ -264,14 +272,21 @@ building_elephant_pens_requirement_terrain = {
 
 building_plantations_requirement_terrain = {
 	OR = {
-		terrain = drylands
-		terrain = desert
-		terrain = oasis
+		has_province_modifier = trade_good_tea
+		has_province_modifier = trade_good_coffee
+		has_province_modifier = trade_good_cocoa
+		has_province_modifier = trade_good_tobacco
+		has_province_modifier = trade_good_cotton
+		has_province_modifier = trade_good_sugar
+		has_province_modifier = trade_good_vanilla
+		has_province_modifier = trade_good_citrus
+		has_province_modifier = trade_good_spices
 	}
 }
 
 building_quarries_requirement_terrain = {
 	OR = {
+		has_province_modifier = trade_good_marble
 		terrain = mountains
 		terrain = desert_mountains
 		AND = {

@@ -1,0 +1,392 @@
+﻿##############################
+# Trade-Good Specific Buildings #
+##############################
+
+trade_build_wine_01 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		has_province_modifier = trade_good_wine
+	}
+	
+	cost_gold = normal_building_tier_2_cost
+	
+	province_modifier = {
+		monthly_income = poor_building_tax_tier_1
+	}
+	county_modifier = {
+		county_opinion_add = 2
+	}
+
+	type_icon = "resource_1.dds"
+	
+	ai_value = {
+		base = 10
+		ai_general_building_modifier = yes
+	}
+}
+trade_build_cloth_01 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		OR = {
+			has_province_modifier = trade_good_cloth
+			has_province_modifier = trade_good_wool
+			has_province_modifier = trade_good_silk
+			has_province_modifier = trade_good_cotton
+		}
+	}
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = normal_building_tier_2_cost
+	
+	province_modifier = {
+		monthly_income = poor_building_tax_tier_1
+	}
+	county_modifier = {
+		tax_mult = 0.05
+	}
+
+	type_icon = "resource_3.dds"
+	
+	ai_value = {
+		base = 10
+		ai_general_building_modifier = yes
+	}
+}
+trade_build_fur_01 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		has_province_modifier = trade_good_fur
+	}
+	
+	cost_gold = normal_building_tier_2_cost
+	
+	province_modifier = {
+		monthly_income = poor_building_tax_tier_1
+	}
+	county_modifier = {
+		tax_mult = 0.03
+	}
+
+	type_icon = "resource_5.dds"
+	
+	ai_value = {
+		base = 10
+		ai_general_building_modifier = yes
+	}
+}
+trade_build_salt_01 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		has_province_modifier = trade_good_salt
+	}
+	
+	cost_gold = normal_building_tier_2_cost
+	
+	province_modifier = {
+		monthly_income = poor_building_tax_tier_1
+	}
+	county_modifier = {
+		tax_mult = 0.05
+		levy_size = 0.05
+		county_opinion_add = -2
+	}
+
+	type_icon = "resource_6.dds"
+	
+	ai_value = {
+		base = 10
+		ai_general_building_modifier = yes
+	}
+}
+trade_build_naval_supplies_01 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		has_province_modifier = trade_good_naval_supplies
+	}
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = normal_building_tier_2_cost
+	
+	province_modifier = {
+		monthly_income = poor_building_tax_tier_1
+	}
+	county_modifier = {
+		development_growth_factor = 0.025
+		monthly_county_control_change_add = 0.1
+		garrison_size = 0.05
+	}
+	character_modifier = {
+		naval_movement_speed_mult = 0.05
+		embarkation_cost_mult = -0.05
+	}
+
+	type_icon = "resource_7.dds"
+	
+	ai_value = {
+		base = 10
+		ai_general_building_modifier = yes
+	}
+}
+trade_build_metal_01 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		OR = {
+			has_province_modifier = trade_good_copper
+			has_province_modifier = trade_good_gold
+			has_province_modifier = trade_good_iron
+		}
+	}
+	
+	cost_gold = normal_building_tier_2_cost
+	
+	province_modifier = {
+		monthly_income = normal_building_tax_tier_1
+	}
+	county_modifier = {
+		tax_mult = 0.10
+	}
+
+	type_icon = "resource_8.dds"
+	
+	ai_value = {
+		base = 10
+		ai_general_building_modifier = yes
+	}
+}
+trade_build_slaves_01 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		has_province_modifier = trade_good_slaves
+	}
+	
+	cost_gold = normal_building_tier_2_cost
+	
+	province_modifier = {
+		monthly_income = normal_building_tax_tier_1
+	}
+	county_modifier = {
+		tax_mult = 0.10
+	}
+
+	type_icon = "resource_11.dds"
+	
+	ai_value = {
+		base = 10
+		ai_general_building_modifier = yes
+	}
+}
+trade_build_ivory_01 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		has_province_modifier = trade_good_ivory
+	}
+	
+	cost_gold = normal_building_tier_2_cost
+	
+	province_modifier = {
+		monthly_income = normal_building_tax_tier_1
+	}
+	county_modifier = {
+		tax_mult = 0.10
+	}
+
+	type_icon = "resource_12.dds"
+	
+	ai_value = {
+		base = 10
+		ai_general_building_modifier = yes
+	}
+}
+trade_build_chinaware_01 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		has_province_modifier = trade_good_chinaware
+	}
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = normal_building_tier_2_cost
+	
+	province_modifier = {
+		monthly_income = poor_building_tax_tier_1
+	}
+	county_modifier = {
+		tax_mult = 0.05
+	}
+
+	type_icon = "resource_14.dds"
+	
+	ai_value = {
+		base = 10
+		ai_general_building_modifier = yes
+	}
+}
+trade_build_dyes_01 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		has_province_modifier = trade_good_dyes
+	}
+	
+	cost_gold = normal_building_tier_2_cost
+	
+	province_modifier = {
+		monthly_income = poor_building_tax_tier_1
+	}
+	county_modifier = {
+		tax_mult = 0.05
+	}
+
+	type_icon = "resource_22.dds"
+	
+	ai_value = {
+		base = 10
+		ai_general_building_modifier = yes
+	}
+}
+trade_build_incense_01 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		has_province_modifier = trade_good_incense
+	}
+	
+	cost_gold = normal_building_tier_2_cost
+	
+	province_modifier = {
+		monthly_income = poor_building_tax_tier_1
+	}
+	county_modifier = {
+		development_growth_factor = 0.05
+	}
+
+	type_icon = "resource_25.dds"
+	
+	ai_value = {
+		base = 10
+		ai_general_building_modifier = yes
+	}
+}
+trade_build_glass_01 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		has_province_modifier = trade_good_glass
+	}
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = normal_building_tier_2_cost
+	
+	province_modifier = {
+		monthly_income = poor_building_tax_tier_1
+	}
+	county_modifier = {
+		development_growth_factor = 0.05
+	}
+
+	type_icon = "resource_26.dds"
+	
+	ai_value = {
+		base = 10
+		ai_general_building_modifier = yes
+	}
+}
+trade_build_paper_01 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		has_province_modifier = trade_good_paper
+	}
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = normal_building_tier_2_cost
+	
+	province_modifier = {
+		monthly_income = poor_building_tax_tier_1
+	}
+	county_modifier = {
+		development_growth_factor = 0.05
+	}
+
+	type_icon = "resource_27.dds"
+	
+	ai_value = {
+		base = 10
+		ai_general_building_modifier = yes
+	}
+}
+trade_build_marble_01 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		has_province_modifier = trade_good_marble
+	}
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = normal_building_tier_2_cost
+	
+	province_modifier = {
+		monthly_income = poor_building_tax_tier_1
+	}
+	county_modifier = {
+		development_growth_factor = 0.05
+	}
+
+	type_icon = "resource_42.dds"
+	
+	ai_value = {
+		base = 10
+		ai_general_building_modifier = yes
+	}
+}
+trade_build_jewelry_01 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		OR = {
+			has_province_modifier = trade_good_jewelry
+			has_province_modifier = trade_good_gems
+			has_province_modifier = trade_good_amber
+			has_province_modifier = trade_good_pearl
+		}
+	}
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = normal_building_tier_2_cost
+	
+	province_modifier = {
+		monthly_income = poor_building_tax_tier_1
+	}
+	county_modifier = {
+		development_growth_factor = 0.05
+	}
+
+	type_icon = "resource_45.dds"
+	
+	ai_value = {
+		base = 10
+		ai_general_building_modifier = yes
+	}
+}
