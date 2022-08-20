@@ -7,6 +7,12 @@ on_game_start = {
 	}
 }
 
+three_year_playable_pulse = {
+	events = {
+		eastern_trade.0001
+	}
+}
+
 seed_trade_goods = {
 	effect = {
 		province:8 = { add_to_list = mild_winter_provinces }

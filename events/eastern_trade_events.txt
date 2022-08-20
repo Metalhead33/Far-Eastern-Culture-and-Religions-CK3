@@ -1,0 +1,172 @@
+﻿namespace = eastern_trade
+
+# Eunuch slave event, ported over from CK2
+
+eastern_trade.0001 = {
+	type = character_event
+	title = EVTITLELoR.885
+	desc = EVTDESCLoR.885
+	theme = stewardship_wealth_focus
+	override_background = courtyard
+	override_environment = environment_cw_india_main
+	
+	trigger = {
+		ROOT.capital_province = {
+			OR = {
+				geographical_region = world_europe
+				geographical_region = world_asia_minor
+				geographical_region = world_middle_east
+				geographical_region = world_africa
+			}
+			NOT = { has_holding_type = tribal_holding }
+		}
+		ROOT.culture = {
+			NOR = {
+				has_cultural_pillar = heritage_indo_aryan
+				has_cultural_pillar = heritage_dravidian
+				has_cultural_pillar = heritage_tibetan
+				has_cultural_pillar = heritage_burman
+				has_cultural_pillar = heritage_tai
+				has_cultural_pillar = heritage_mon
+				has_cultural_pillar = heritage_khmer
+			}
+		}
+		ROOT.faith = {
+			NOR = {
+				religion_tag = hinduism_religion
+				religion_tag = jainism_religion
+				religion_tag = bon_religion
+			}
+		}
+		is_ruler = yes
+		NOT = {
+			any_courtier = {
+				AND = {
+					has_trait = eunuch
+					has_trait = slave
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTALoR.885
+		custom_tooltip = {
+			text = EVTTOOLTIPLoR.886
+			trigger_event = {
+				id = eastern_trade.0002
+				days = 3
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBLoR.885
+		custom_tooltip = {
+			text = send_merchants_away
+		}
+	}
+}
+eastern_trade.0002 = {
+	type = character_event
+	title = EVTITLELoR.885
+	desc = EVTDESCLoR.886
+	theme = stewardship_wealth_focus
+	override_background = courtyard
+	override_environment = environment_cw_india_main
+	
+	
+	option = {
+		name = EVTOPTALoR.886
+		custom_tooltip = {
+			text = eunuch_offer
+			trigger_event = {
+				id = eastern_trade.0003
+				days = 3
+			}
+		}
+	}
+}
+eastern_trade.0003 = {
+	type = character_event
+	title = EVTITLELoR.885
+	desc = EVTDESCLoR.887
+	theme = stewardship_wealth_focus
+	override_background = courtyard
+	override_environment = environment_cw_india_main
+	
+	immediate = {
+		hidden_effect = {
+			random_province = {
+				limit = { has_province_modifier = trade_good_slaves }
+				this.faith = { save_scope_as = slave_faith }
+				this.culture = { save_scope_as = slave_culture }
+			}
+			if = {
+				limit = { NOT = { exists = scope:slave_faith } }
+				faith:waaqism_pagan = { save_scope_as = slave_faith }
+			}
+			if = {
+				limit = { NOT = { exists = scope:slave_culture } }
+				culture:afar = { save_scope_as = slave_culture }
+			}
+			create_character = {
+				location = ROOT.capital_province
+				faith = scope:slave_faith
+				culture = scope:slave_culture
+				template = eunuch_slave_character
+				save_scope_as = eunuch_courtier
+			}
+			scope:eunuch_courtier = {
+				random_list = {
+					16 = {
+						add_trait = administrator
+					}
+					16 = {
+						add_trait = architect
+					}
+					16 = {
+						add_trait = lifestyle_gardener
+					}
+					16 = {
+						add_trait = reveler_1
+					}
+					16 = {
+						add_trait = physician_1
+					}
+					8 = {
+						add_trait = physician_2
+					}
+					4 = {
+						add_trait = physician_3
+					}
+					16 = {
+						add_trait = poet
+					}
+				}
+				set_to_lowborn = yes
+				# learn_language_of_culture = ROOT.culture
+				trigger_event = { on_action = carn_character_initialization_pulse }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTALoR.887
+		carn_enslave_effect = {
+			SLAVE = scope:eunuch_courtier
+			OWNER = ROOT
+			DRAMA = no
+		}
+	}
+	
+	option = {
+		name = EVTOPTBLoR.887
+		custom_tooltip = {
+			text = eunuch_declined
+			scope:eunuch_courtier = {
+				death = {
+					death_reason = death_disappearance
+				}
+			}
+		}
+	}
+}
