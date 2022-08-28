@@ -2,6 +2,33 @@
 # Feel free to use other files as well, but be careful about load order
 # Please remove the example formulas once there's a few real formulas
 
+slave_count = {
+	value = 0
+	every_courtier = {
+		limit = { has_trait = slave }
+		add = 1
+	}
+}
+male_slave_count = {
+	value = 0
+	every_courtier = {
+		limit = {
+			is_male = yes
+			has_trait = slave
+		}
+		add = 1
+	}
+}
+female_slave_count = {
+	value = 0
+	every_courtier = {
+		limit = {
+			is_female = yes
+			has_trait = slave
+		}
+		add = 1
+	}
+}
 
 diaspora_base_level = {
 	value = development_level

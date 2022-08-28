@@ -9,6 +9,30 @@
 #}
 @eunuch_price = 300
 @regular_slave_price = 50
+
+can_get_slaves_from_faith = {
+	AND = {
+		NOT = {
+			$FAITH_A$ = {
+				has_doctrine = carn_doctrine_same_slavery_crime
+				faith_hostility_level = {
+					target = $FAITH_B$
+					value < faith_hostile_level
+				}
+			}
+		}
+		NOT = {
+			$FAITH_A$ = {
+				has_doctrine = carn_doctrine_other_slavery_crime
+				faith_hostility_level = {
+					target = $FAITH_B$
+					value >= faith_hostile_level
+				}
+			}
+		}
+	}
+}
+
 needs_to_buy_eunuch_slave = {
 	OR = {
 		NOT = { as_council_position = councillor_steward }

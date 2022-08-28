@@ -148,3 +148,7 @@
  eastern_trade.0005.title:0 "The slave arrives."
  eastern_trade.0005.desc:0 "The slave has arrived."
  eastern_trade.0005.a:0 "You better get used to your new owner."
+ eastern_trade.0006.title:0 "The Slave Trade"
+ eastern_trade.0006.desc:0 "Our realm happens to sit right various trade routes, and we happen to control the origins of some of the slaves. Recently, to  satiate the needs of foreign buyers, our slavers have caught a batch of new slaves."
+ eastern_trade.0006.a:0 "I hope they will fetch a decent price on the markets."
+ new_slaves_arrive:0 "[new_slaves] new slaves have arrived, with a total worth of [new_slaves_value] [gold_i]."

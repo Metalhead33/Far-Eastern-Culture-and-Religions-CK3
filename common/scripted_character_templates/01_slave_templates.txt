@@ -26,6 +26,6 @@ female_slave_character = {
 	gender = female
 	trait = slave
 	trait = education_diplomacy_1
-	random_traits = no
+	random_traits = yes
 	dynasty = none
 }

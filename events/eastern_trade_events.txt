@@ -80,20 +80,20 @@ eastern_trade.0001 = {
 		custom_tooltip = {
 			text = send_merchants_away
 		}
-	}
-	ai_chance = {
-		base = 0
-		modifier = { 
-			add = 15
-			has_trait = sadistic
-		}
-		modifier = { 
-			add = 15
-			has_trait = callous
-		}
-		modifier = { 
-			add = 15
-			has_trait = zealous
+		ai_chance = {
+			base = 0
+			modifier = { 
+				add = 15
+				has_trait = sadistic
+			}
+			modifier = { 
+				add = 15
+				has_trait = callous
+			}
+			modifier = { 
+				add = 15
+				has_trait = zealous
+			}
 		}
 	}
 }
@@ -214,264 +214,439 @@ eastern_trade.0003 = {
 	}
 }
 
-@eunuch_price = 300
-@regular_slave_price = 50
+#@eunuch_price = 300
+#@regular_slave_price = 50
+#
+#eastern_trade.0004 = {
+#	type = character_event
+#	title = eastern_trade.0004.title
+#	desc = eastern_trade.0004.desc
+#	theme = stewardship_wealth_focus
+#	left_portrait = {
+#		character = scope:actor
+#		animation = ecstasy
+#	}
+#	right_portrait = {
+#		character = scope:recipient
+#		animation = personality_greedy
+#	}
+#
+#	
+#	option = {
+#		# I want a eunuch
+#		name = eastern_trade.0004.a
+#		show_as_unavailable = {
+#			long_term_gold < @eunuch_price
+#		}
+#		pay_long_term_gold = {
+#			target = scope:recipient
+#			gold = @eunuch_price
+#		}
+#		save_scope_value_as = {
+#			name = slave_type
+#			value = flag:slave_type_eunuch
+#		}
+#		trigger_event = {
+#			id = eastern_trade.0005
+#			days = 3
+#		}
+#		ai_chance = {
+#			base = 10
+#			modifier = {
+#				add = 50
+#				needs_to_buy_eunuch_slave = yes
+#			}
+#			modifier = { 
+#				factor = 0
+#				doesnt_need_eunuch_slave = yes
+#			}
+#		}
+#	}
+#	option = {
+#		# I want a male
+#		name = eastern_trade.0004.b
+#		show_as_unavailable = {
+#			long_term_gold < @regular_slave_price
+#		}
+#		pay_long_term_gold = {
+#			target = scope:recipient
+#			gold = @regular_slave_price
+#		}
+#		save_scope_value_as = {
+#			name = slave_type
+#			value = flag:slave_type_male
+#		}
+#		trigger_event = {
+#			id = eastern_trade.0005
+#			days = 3
+#		}
+#		ai_chance = {
+#			base = 10
+#			modifier = {
+#				add = 50
+#				needs_to_buy_male_slave = yes
+#			}
+#			modifier = { 
+#				factor = 0
+#				doesnt_need_male_slave = yes
+#			}
+#		}
+#	}
+#	option = {
+#		# I want a female
+#		name = eastern_trade.0004.c
+#		show_as_unavailable = {
+#			long_term_gold < @regular_slave_price
+#		}
+#		pay_long_term_gold = {
+#			target = scope:recipient
+#			gold = @regular_slave_price
+#		}
+#		save_scope_value_as = {
+#			name = slave_type
+#			value = flag:slave_type_female
+#		}
+#		trigger_event = {
+#			id = eastern_trade.0005
+#			days = 3
+#		}
+#		ai_chance = {
+#			base = 10
+#			modifier = {
+#				add = 50
+#				needs_to_buy_female_slave = yes
+#			}
+#			modifier = { 
+#				factor = 0
+#				doesnt_need_female_slave = yes
+#			}
+#		}
+#	}
+#	option = {
+#		# You changed your mind.
+#		name = eastern_trade.0004.d
+#		ai_chance = {
+#			base = 0
+#		}
+#	}
+#}
+#
+#eastern_trade.0005 = {
+#	type = character_event
+#	title = eastern_trade.0005.title
+#	desc = eastern_trade.0005.desc
+#	theme = stewardship_wealth_focus
+#	left_portrait = {
+#		character = scope:new_courtier
+#		animation = prison_dungeon
+#	}
+#	immediate = {
+#		hidden_effect = {
+#			scope:recipient = {
+#				random_sub_realm_barony = {
+#					limit = { var:trade_good = flag:trade_good_slaves }
+#					this.title_province.faith = { save_scope_as = slave_faith }
+#					this.title_province.culture = { save_scope_as = slave_culture }
+#				}
+#			}
+#			# Fallback
+#			if = {
+#				limit = { NOT = { exists = scope:slave_faith } }
+#				faith:waaqism_pagan = { save_scope_as = slave_faith }
+#			}
+#			if = {
+#				limit = { NOT = { exists = scope:slave_culture } }
+#				culture:afar = { save_scope_as = slave_culture }
+#			}
+#			if = {
+#				limit = { scope:slave_type = flag:slave_type_eunuch }
+#				create_character = {
+#					location = scope:actor.capital_province
+#					template = eunuch_slave_character
+#					save_scope_as = new_courtier
+#				}
+#				random_list = {
+#					33 = { scope:new_courtier = { add_trait = intellect_good_1 } }
+#					33 = { scope:new_courtier = { add_trait = intellect_good_2 } }
+#					33 = { scope:new_courtier = { add_trait = intellect_good_3 } }
+#				}
+#				scope:actor = {
+#					add_character_flag = { flag = recently_bought_eunuch_slave years = 3 }
+#				}
+#				scope:new_courtier = {
+#					random_list = {
+#						16 = {
+#							add_trait = administrator
+#						}
+#						16 = {
+#							add_trait = architect
+#						}
+#						16 = {
+#							add_trait = lifestyle_gardener
+#						}
+#						16 = {
+#							add_trait = reveler_1
+#						}
+#						16 = {
+#							add_trait = physician_1
+#						}
+#						8 = {
+#							add_trait = physician_2
+#						}
+#						4 = {
+#							add_trait = physician_3
+#						}
+#						16 = {
+#							add_trait = poet
+#						}
+#					}
+#				}
+#			}
+#			else_if = {
+#				limit = { scope:slave_type = flag:slave_type_male }
+#				create_character = {
+#					location = scope:actor.capital_province
+#					template = male_slave_character
+#					save_scope_as = new_courtier
+#				}
+#				scope:actor = {
+#					add_character_flag = { flag = recently_bought_male_slave years = 3 }
+#				}
+#				random_list = {
+#					33 = { scope:new_courtier = { add_trait = physique_good_1 } }
+#					33 = { scope:new_courtier = { add_trait = physique_good_2 } }
+#					33 = { scope:new_courtier = { add_trait = physique_good_3 } }
+#				}
+#			}
+#			else_if = {
+#				limit = { scope:slave_type = flag:slave_type_female }
+#				create_character = {
+#					location = scope:actor.capital_province
+#					template = female_slave_character
+#					save_scope_as = new_courtier
+#				}
+#				scope:actor = {
+#					add_character_flag = { flag = recently_bought_female_slave years = 3 }
+#				}
+#				random_list = {
+#					33 = { scope:new_courtier = { add_trait = beauty_good_1 } }
+#					33 = { scope:new_courtier = { add_trait = beauty_good_2 } }
+#					33 = { scope:new_courtier = { add_trait = beauty_good_3 } }
+#				}
+#			}
+#			else = { # Fallback
+#				create_character = {
+#					location = scope:actor.capital_province
+#					template = female_slave_character
+#					save_scope_as = new_courtier
+#				}
+#			}
+#			scope:actor = {
+#				add_character_flag = { flag = recently_bought_female_slave years = 3 }
+#			}
+#			scope:new_courtier = {
+#				set_to_lowborn = yes
+#				learn_language_of_culture = ROOT.culture
+#				trigger_event = { on_action = carn_character_initialization_pulse }
+#			}
+#		}
+#	}
+#
+#	
+#	option = {
+#		name = eastern_trade.0005.a
+#		carn_enslave_effect = {
+#			SLAVE = scope:new_courtier
+#			OWNER = scope:actor
+#			DRAMA = no
+#		}
+#		if = {
+#			limit = {
+#				scope:new_courtier = {
+#					NOT = { has_trait = eunuch }
+#				}
+#				scope:actor = {
+#					is_ai = yes
+#					is_attracted_to_gender_of = scope:new_courtier
+#					allowed_more_concubines = yes
+#				}
+#			}
+#			make_concubine = scope:new_courtier
+#		}
+#	}
+#}
 
-eastern_trade.0004 = {
+eastern_trade.0006 = {
 	type = character_event
-	title = eastern_trade.0004.title
-	desc = eastern_trade.0004.desc
+	title = eastern_trade.0006.title
+	desc = eastern_trade.0006.desc
 	theme = stewardship_wealth_focus
-	left_portrait = {
-		character = scope:actor
-		animation = ecstasy
-	}
-	right_portrait = {
-		character = scope:recipient
-		animation = personality_greedy
+
+	trigger = {
+		ROOT.slave_count < 10
+		is_ruler = yes
+		is_landed = yes
+		tier >= tier_county
+		any_sub_realm_barony = {
+			AND = {
+				var:trade_good = flag:trade_good_slaves
+				can_get_slaves_from_faith = {
+					FAITH_A = ROOT.faith
+					FAITH_B = this.title_province.faith
+				}
+			}
+		}
 	}
 
-	
-	option = {
-		# I want a eunuch
-		name = eastern_trade.0004.a
-		show_as_unavailable = {
-			long_term_gold < @eunuch_price
-		}
-		pay_long_term_gold = {
-			target = scope:recipient
-			gold = @eunuch_price
-		}
-		save_scope_value_as = {
-			name = slave_type
-			value = flag:slave_type_eunuch
-		}
-		trigger_event = {
-			id = eastern_trade.0005
-			days = 3
-		}
-		ai_chance = {
-			base = 10
-			modifier = {
-				add = 50
-				needs_to_buy_eunuch_slave = yes
-			}
-			modifier = { 
-				factor = 0
-				doesnt_need_eunuch_slave = yes
-			}
-		}
-	}
-	option = {
-		# I want a male
-		name = eastern_trade.0004.b
-		show_as_unavailable = {
-			long_term_gold < @regular_slave_price
-		}
-		pay_long_term_gold = {
-			target = scope:recipient
-			gold = @regular_slave_price
-		}
-		save_scope_value_as = {
-			name = slave_type
-			value = flag:slave_type_male
-		}
-		trigger_event = {
-			id = eastern_trade.0005
-			days = 3
-		}
-		ai_chance = {
-			base = 10
-			modifier = {
-				add = 50
-				needs_to_buy_male_slave = yes
-			}
-			modifier = { 
-				factor = 0
-				doesnt_need_male_slave = yes
-			}
-		}
-	}
-	option = {
-		# I want a female
-		name = eastern_trade.0004.c
-		show_as_unavailable = {
-			long_term_gold < @regular_slave_price
-		}
-		pay_long_term_gold = {
-			target = scope:recipient
-			gold = @regular_slave_price
-		}
-		save_scope_value_as = {
-			name = slave_type
-			value = flag:slave_type_female
-		}
-		trigger_event = {
-			id = eastern_trade.0005
-			days = 3
-		}
-		ai_chance = {
-			base = 10
-			modifier = {
-				add = 50
-				needs_to_buy_female_slave = yes
-			}
-			modifier = { 
-				factor = 0
-				doesnt_need_female_slave = yes
-			}
-		}
-	}
-	option = {
-		# You changed your mind.
-		name = eastern_trade.0004.d
-		ai_chance = {
-			base = 0
-		}
-	}
-}
-
-eastern_trade.0005 = {
-	type = character_event
-	title = eastern_trade.0005.title
-	desc = eastern_trade.0005.desc
-	theme = stewardship_wealth_focus
-	left_portrait = {
-		character = scope:new_courtier
-		animation = prison_dungeon
-	}
 	immediate = {
-		hidden_effect = {
-			scope:recipient = {
-				random_sub_realm_barony = {
-					limit = { var:trade_good = flag:trade_good_slaves }
-					this.title_province.faith = { save_scope_as = slave_faith }
-					this.title_province.culture = { save_scope_as = slave_culture }
-				}
-			}
-			# Fallback
-			if = {
-				limit = { NOT = { exists = scope:slave_faith } }
-				faith:waaqism_pagan = { save_scope_as = slave_faith }
-			}
-			if = {
-				limit = { NOT = { exists = scope:slave_culture } }
-				culture:afar = { save_scope_as = slave_culture }
-			}
-			if = {
-				limit = { scope:slave_type = flag:slave_type_eunuch }
-				create_character = {
-					location = scope:actor.capital_province
-					template = eunuch_slave_character
-					save_scope_as = new_courtier
-				}
-				random_list = {
-					33 = { scope:new_courtier = { add_trait = intellect_good_1 } }
-					33 = { scope:new_courtier = { add_trait = intellect_good_2 } }
-					33 = { scope:new_courtier = { add_trait = intellect_good_3 } }
-				}
-				scope:actor = {
-					add_character_flag = { flag = recently_bought_eunuch_slave years = 3 }
-				}
-				scope:new_courtier = {
-					random_list = {
-						16 = {
-							add_trait = administrator
-						}
-						16 = {
-							add_trait = architect
-						}
-						16 = {
-							add_trait = lifestyle_gardener
-						}
-						16 = {
-							add_trait = reveler_1
-						}
-						16 = {
-							add_trait = physician_1
-						}
-						8 = {
-							add_trait = physician_2
-						}
-						4 = {
-							add_trait = physician_3
-						}
-						16 = {
-							add_trait = poet
+		set_local_variable = {
+			name = slaves_caught
+			value = 0
+		}
+		set_local_variable = {
+			name = slaves_caught_value
+			value = 0
+		}
+		ROOT = {
+			random_sub_realm_barony = {
+				limit = {
+					AND = {
+						var:trade_good = flag:trade_good_slaves
+						can_get_slaves_from_faith = {
+							FAITH_A = ROOT.faith
+							FAITH_B = this.title_province.faith
 						}
 					}
 				}
+				this.title_province.faith = { save_scope_as = slave_faith }
+				this.title_province.culture = { save_scope_as = slave_culture }
 			}
-			else_if = {
-				limit = { scope:slave_type = flag:slave_type_male }
-				create_character = {
-					location = scope:actor.capital_province
-					template = male_slave_character
-					save_scope_as = new_courtier
-				}
-				scope:actor = {
-					add_character_flag = { flag = recently_bought_male_slave years = 3 }
-				}
-				random_list = {
-					33 = { scope:new_courtier = { add_trait = physique_good_1 } }
-					33 = { scope:new_courtier = { add_trait = physique_good_2 } }
-					33 = { scope:new_courtier = { add_trait = physique_good_3 } }
-				}
+		}
+		# Fallback
+		if = {
+			limit = { NOT = { exists = scope:slave_faith } }
+			faith:waaqism_pagan = { save_scope_as = slave_faith }
+		}
+		if = {
+			limit = { NOT = { exists = scope:slave_culture } }
+			culture:afar = { save_scope_as = slave_culture }
+		}
+		while = {
+			limit = {
+				ROOT.slave_count < 10
+				ROOT.male_slave_count < 5
 			}
-			else_if = {
-				limit = { scope:slave_type = flag:slave_type_female }
-				create_character = {
-					location = scope:actor.capital_province
-					template = female_slave_character
-					save_scope_as = new_courtier
-				}
-				scope:actor = {
-					add_character_flag = { flag = recently_bought_female_slave years = 3 }
-				}
-				random_list = {
-					33 = { scope:new_courtier = { add_trait = beauty_good_1 } }
-					33 = { scope:new_courtier = { add_trait = beauty_good_2 } }
-					33 = { scope:new_courtier = { add_trait = beauty_good_3 } }
-				}
-			}
-			else = { # Fallback
-				create_character = {
-					location = scope:actor.capital_province
-					template = female_slave_character
-					save_scope_as = new_courtier
-				}
-			}
-			scope:actor = {
-				add_character_flag = { flag = recently_bought_female_slave years = 3 }
+			create_character = {
+				location = ROOT.capital_province
+				template = male_slave_character
+				culture = scope:slave_culture
+				faith = scope:slave_faith
+				save_scope_as = new_courtier
 			}
 			scope:new_courtier = {
+				random_list = {
+					33 = { add_trait = physique_good_1 }
+					33 = { add_trait = physique_good_2 }
+					33 = { add_trait = physique_good_3 }
+				}
 				set_to_lowborn = yes
 				learn_language_of_culture = ROOT.culture
 				trigger_event = { on_action = carn_character_initialization_pulse }
 			}
+			if = {
+				limit = {
+					OR = {
+						has_trait = compassionate
+						has_trait = just
+					}
+				}
+				carn_enslave_effect = {
+					SLAVE = scope:new_courtier
+					OWNER = ROOT
+					DRAMA = no
+				}
+			}
+			else = {
+				carn_enslave_effect = {
+					SLAVE = scope:new_courtier
+					OWNER = ROOT
+					DRAMA = yes
+				}
+			}
+			change_local_variable = {
+				name = slaves_caught
+				add = 1
+			}
+			change_local_variable = {
+				name = slaves_caught_value
+				add = scope:new_courtier.carn_slave_price_value
+			}
+		}
+		while = {
+			limit = {
+				ROOT.slave_count < 10
+				ROOT.female_slave_count < 5
+			}
+			create_character = {
+				location = ROOT.actor.capital_province
+				template = female_slave_character
+				culture = scope:slave_culture
+				faith = scope:slave_faith
+				save_scope_as = new_courtier
+			}
+			scope:new_courtier = {
+				random_list = {
+					33 = { add_trait = beauty_good_1 }
+					33 = { add_trait = beauty_good_2 }
+					33 = { add_trait = beauty_good_3 }
+				}
+				set_to_lowborn = yes
+				learn_language_of_culture = ROOT.culture
+				trigger_event = { on_action = carn_character_initialization_pulse }
+			}
+			if = {
+				limit = {
+					OR = {
+						has_trait = compassionate
+						has_trait = just
+					}
+				}
+				carn_enslave_effect = {
+					SLAVE = scope:new_courtier
+					OWNER = ROOT
+					DRAMA = no
+				}
+			}
+			else = {
+				carn_enslave_effect = {
+					SLAVE = scope:new_courtier
+					OWNER = ROOT
+					DRAMA = yes
+				}
+			}
+			change_local_variable = {
+				name = slaves_caught
+				add = 1
+			}
+			change_local_variable = {
+				name = slaves_caught_value
+				add = scope:new_courtier.carn_slave_price_value
+			}
+		}
+		save_scope_value_as = {
+			name = new_slaves
+			value = local_var:slaves_caught
+		}
+		save_scope_value_as = {
+			name = new_slaves_value
+			value = local_var:slaves_caught_value
 		}
 	}
 
-	
 	option = {
-		name = eastern_trade.0005.a
-		carn_enslave_effect = {
-			SLAVE = scope:new_courtier
-			OWNER = scope:actor
-			DRAMA = no
-		}
-		if = {
-			limit = {
-				scope:new_courtier = {
-					NOT = { has_trait = eunuch }
-				}
-				scope:actor = {
-					is_ai = yes
-					is_attracted_to_gender_of = scope:new_courtier
-					allowed_more_concubines = yes
-				}
-			}
-			make_concubine = scope:new_courtier
+		name = eastern_trade.0006.a
+		custom_tooltip = {
+			text = new_slaves_arrive
 		}
 	}
 }
