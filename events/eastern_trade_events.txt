@@ -536,42 +536,10 @@ eastern_trade.0006 = {
 				ROOT.slave_count < 10
 				ROOT.male_slave_count < 5
 			}
-			create_character = {
-				location = ROOT.capital_province
-				template = male_slave_character
-				culture = scope:slave_culture
-				faith = scope:slave_faith
-				save_scope_as = new_courtier
-			}
-			scope:new_courtier = {
-				random_list = {
-					33 = { add_trait = physique_good_1 }
-					33 = { add_trait = physique_good_2 }
-					33 = { add_trait = physique_good_3 }
-				}
-				set_to_lowborn = yes
-				learn_language_of_culture = ROOT.culture
-				trigger_event = { on_action = carn_character_initialization_pulse }
-			}
-			if = {
-				limit = {
-					OR = {
-						has_trait = compassionate
-						has_trait = just
-					}
-				}
-				carn_enslave_effect = {
-					SLAVE = scope:new_courtier
-					OWNER = ROOT
-					DRAMA = no
-				}
-			}
-			else = {
-				carn_enslave_effect = {
-					SLAVE = scope:new_courtier
-					OWNER = ROOT
-					DRAMA = yes
-				}
+			create_male_slave = {
+				OWNER = ROOT
+				FAITH = scope:slave_faith
+				CULTURE = scope:slave_culture
 			}
 			change_local_variable = {
 				name = slaves_caught
@@ -587,42 +555,10 @@ eastern_trade.0006 = {
 				ROOT.slave_count < 10
 				ROOT.female_slave_count < 5
 			}
-			create_character = {
-				location = ROOT.actor.capital_province
-				template = female_slave_character
-				culture = scope:slave_culture
-				faith = scope:slave_faith
-				save_scope_as = new_courtier
-			}
-			scope:new_courtier = {
-				random_list = {
-					33 = { add_trait = beauty_good_1 }
-					33 = { add_trait = beauty_good_2 }
-					33 = { add_trait = beauty_good_3 }
-				}
-				set_to_lowborn = yes
-				learn_language_of_culture = ROOT.culture
-				trigger_event = { on_action = carn_character_initialization_pulse }
-			}
-			if = {
-				limit = {
-					OR = {
-						has_trait = compassionate
-						has_trait = just
-					}
-				}
-				carn_enslave_effect = {
-					SLAVE = scope:new_courtier
-					OWNER = ROOT
-					DRAMA = no
-				}
-			}
-			else = {
-				carn_enslave_effect = {
-					SLAVE = scope:new_courtier
-					OWNER = ROOT
-					DRAMA = yes
-				}
+			create_female_slave = {
+				OWNER = ROOT
+				FAITH = scope:slave_faith
+				CULTURE = scope:slave_culture
 			}
 			change_local_variable = {
 				name = slaves_caught
