@@ -1,6 +1,6 @@
 ﻿eunuch_slave_character = {
-	age = { 25 45 }
-	gender_female_chance = root_faith_dominant_gender_female_chance
+	age = { 30 45 }
+	gender = male
 	trait = eunuch
 	trait = slave
 	trait = diligent
@@ -11,5 +11,21 @@
 		min_template_decent_skill
 		max_template_decent_skill
 	}
+	dynasty = none
+}
+male_slave_character = {
+	age = { 12 20 }
+	gender = male
+	trait = slave
+	trait = education_martial_prowess_1
+	random_traits = yes
+	dynasty = none
+}
+female_slave_character = {
+	age = { 12 20 }
+	gender = female
+	trait = slave
+	trait = education_diplomacy_1
+	random_traits = no
 	dynasty = none
 }

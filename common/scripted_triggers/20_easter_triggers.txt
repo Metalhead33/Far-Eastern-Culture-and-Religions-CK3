@@ -7,6 +7,90 @@
 #	top_liege = { has_character_modifier = expelled_the_jews }
 #	}
 #}
+@eunuch_price = 300
+@regular_slave_price = 50
+needs_to_buy_eunuch_slave = {
+	OR = {
+		NOT = { as_council_position = councillor_steward }
+		any_stewardship_councillor = { stewardship < 13 }
+	}
+}
+doesnt_need_eunuch_slave = {
+	OR = {
+		has_character_flag = recently_bought_eunuch_slave
+		any_courtier = {
+			AND = {
+				has_trait = slave
+				has_trait = eunuch
+			}
+		}
+	}
+}
+would_buy_eunuch_slave = {
+	AND = {
+		long_term_gold >= @eunuch_price
+		needs_to_buy_eunuch_slave = yes
+		NOT = { doesnt_need_eunuch_slave = yes }
+	}
+}
+needs_to_buy_male_slave = {
+	AND = {
+		allowed_more_concubines = yes
+		is_female = yes
+		OR = {
+			has_sexuality = heterosexual
+			has_sexuality = bisexual
+		}
+	}
+}
+doesnt_need_male_slave = {
+	OR = {
+		has_character_flag = recently_bought_male_slave
+		any_courtier = {
+			AND = {
+				has_trait = slave
+				is_male = yes
+				NOT = { has_trait = eunuch }
+			}
+		}
+	}
+}
+would_buy_male_slave = {
+	AND = {
+		long_term_gold >= @regular_slave_price
+		needs_to_buy_male_slave = yes
+		NOT = { doesnt_need_male_slave = yes }
+	}
+}
+needs_to_buy_female_slave = {
+	AND = {
+		allowed_more_concubines = yes
+		is_male = yes
+		OR = {
+			has_sexuality = heterosexual
+			has_sexuality = bisexual
+		}
+	}
+}
+doesnt_need_female_slave = {
+	OR = {
+		has_character_flag = recently_bought_female_slave
+		any_courtier = {
+			AND = {
+				has_trait = slave
+				is_female = yes
+			}
+		}
+	}
+}
+would_buy_female_slave = {
+	AND = {
+		long_term_gold >= @regular_slave_price
+		needs_to_buy_female_slave = yes
+		NOT = { doesnt_need_female_slave = yes }
+	}
+}
+
 portrait_chinese_clothing_trigger = {
 	OR = {
 		scope:culture = {

@@ -84,3 +84,104 @@
 		}
 	}
 }
+
+@eunuch_price = 300
+@regular_slave_price = 50
+# eastern_trade.0005
+visit_slave_market_interaction = {
+	category = interaction_category_prison
+	common_interaction = yes
+
+	desc = visit_slave_market_interaction_desc
+
+	interface_priority = 48
+	ignores_pending_interaction_block = yes
+
+	ai_targets = {
+		ai_recipients = scripted_relations
+	}
+	ai_targets = {
+		ai_recipients = liege
+	}
+	ai_targets = {
+		ai_recipients = neighboring_rulers
+		max = 10
+	}
+	ai_targets = {
+		ai_recipients = peer_vassals
+		max = 5
+	}
+	ai_targets = {
+		ai_recipients = vassals
+		max = 10
+	}
+	ai_frequency = 60
+
+	is_shown = {
+		NOT = {
+			scope:recipient = scope:actor
+		}
+		scope:recipient = {
+			is_ruler = yes
+			is_landed = yes
+			any_sub_realm_barony = {
+				var:trade_good = flag:trade_good_slaves
+			}
+		}
+		scope:actor = {
+			NOT = {
+				is_at_war_with = scope:recipient
+			}
+		}
+		OR = {
+			AND = {
+				scope:recipient.faith = scope:actor.faith
+				NOT = { scope:recipient.faith = { has_doctrine = carn_doctrine_same_slavery_crime } }
+			}
+			NAND = {
+				scope:actor.faith = { has_doctrine = carn_doctrine_other_slavery_crime }
+				scope:recipient.faith = { has_doctrine = carn_doctrine_other_slavery_crime }
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:recipient = {
+			is_diplomatically_available = yes
+			is_ruler = yes
+			is_landed = yes
+			any_sub_realm_barony = {
+				var:trade_good = flag:trade_good_slaves
+			}
+		}
+		scope:actor = {
+			NOT = {
+				is_at_war_with = scope:recipient
+			}
+		}
+	}
+
+	desc = scheme_interaction_tt_learn_sacred_language_approved
+
+	on_accept = {
+		scope:actor = {
+			trigger_event = {
+				id = eastern_trade.0004
+			}
+		}
+	}
+	
+	ai_potential = {
+		OR = {
+			would_buy_eunuch_slave = yes
+			would_buy_male_slave = yes
+			would_buy_female_slave = yes
+		}
+	}
+	
+	auto_accept = yes
+	
+	ai_will_do = {
+		base = 10
+	}
+}

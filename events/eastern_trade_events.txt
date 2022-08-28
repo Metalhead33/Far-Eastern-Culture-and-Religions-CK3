@@ -37,6 +37,7 @@ eastern_trade.0001 = {
 				religion_tag = jainism_religion
 				religion_tag = bon_religion
 			}
+			NOT = { has_doctrine = carn_doctrine_other_slavery_crime }
 		}
 		is_ruler = yes
 		NOT = {
@@ -58,11 +59,41 @@ eastern_trade.0001 = {
 				days = 3
 			}
 		}
+		ai_chance = {
+			base = 10
+			modifier = { 
+				add = 15
+				has_trait = compassionate
+			}
+			modifier = { 
+				add = 15
+				has_trait = just
+			}
+			modifier = { 
+				add = 15
+				has_trait = shrewd
+			}
+		}
 	}
 	option = {
 		name = EVTOPTBLoR.885
 		custom_tooltip = {
 			text = send_merchants_away
+		}
+	}
+	ai_chance = {
+		base = 0
+		modifier = { 
+			add = 15
+			has_trait = sadistic
+		}
+		modifier = { 
+			add = 15
+			has_trait = callous
+		}
+		modifier = { 
+			add = 15
+			has_trait = zealous
 		}
 	}
 }
@@ -93,6 +124,10 @@ eastern_trade.0003 = {
 	theme = stewardship_wealth_focus
 	override_background = courtyard
 	override_environment = environment_cw_india_main
+	left_portrait = {
+		character = scope:eunuch_courtier
+		animation = personality_rational
+	}
 	
 	immediate = {
 		hidden_effect = {
@@ -115,6 +150,11 @@ eastern_trade.0003 = {
 				culture = scope:slave_culture
 				template = eunuch_slave_character
 				save_scope_as = eunuch_courtier
+			}
+			random_list = {
+				33 = { scope:eunuch_courtier = { add_trait = intellect_good_1 } }
+				33 = { scope:eunuch_courtier = { add_trait = intellect_good_2 } }
+				33 = { scope:eunuch_courtier = { add_trait = intellect_good_3 } }
 			}
 			scope:eunuch_courtier = {
 				random_list = {
@@ -167,6 +207,271 @@ eastern_trade.0003 = {
 					death_reason = death_disappearance
 				}
 			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+@eunuch_price = 300
+@regular_slave_price = 50
+
+eastern_trade.0004 = {
+	type = character_event
+	title = eastern_trade.0004.title
+	desc = eastern_trade.0004.desc
+	theme = stewardship_wealth_focus
+	left_portrait = {
+		character = scope:actor
+		animation = ecstasy
+	}
+	right_portrait = {
+		character = scope:recipient
+		animation = personality_greedy
+	}
+
+	
+	option = {
+		# I want a eunuch
+		name = eastern_trade.0004.a
+		show_as_unavailable = {
+			long_term_gold < @eunuch_price
+		}
+		pay_long_term_gold = {
+			target = scope:recipient
+			gold = @eunuch_price
+		}
+		save_scope_value_as = {
+			name = slave_type
+			value = flag:slave_type_eunuch
+		}
+		trigger_event = {
+			id = eastern_trade.0005
+			days = 3
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 50
+				needs_to_buy_eunuch_slave = yes
+			}
+			modifier = { 
+				factor = 0
+				doesnt_need_eunuch_slave = yes
+			}
+		}
+	}
+	option = {
+		# I want a male
+		name = eastern_trade.0004.b
+		show_as_unavailable = {
+			long_term_gold < @regular_slave_price
+		}
+		pay_long_term_gold = {
+			target = scope:recipient
+			gold = @regular_slave_price
+		}
+		save_scope_value_as = {
+			name = slave_type
+			value = flag:slave_type_male
+		}
+		trigger_event = {
+			id = eastern_trade.0005
+			days = 3
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 50
+				needs_to_buy_male_slave = yes
+			}
+			modifier = { 
+				factor = 0
+				doesnt_need_male_slave = yes
+			}
+		}
+	}
+	option = {
+		# I want a female
+		name = eastern_trade.0004.c
+		show_as_unavailable = {
+			long_term_gold < @regular_slave_price
+		}
+		pay_long_term_gold = {
+			target = scope:recipient
+			gold = @regular_slave_price
+		}
+		save_scope_value_as = {
+			name = slave_type
+			value = flag:slave_type_female
+		}
+		trigger_event = {
+			id = eastern_trade.0005
+			days = 3
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 50
+				needs_to_buy_female_slave = yes
+			}
+			modifier = { 
+				factor = 0
+				doesnt_need_female_slave = yes
+			}
+		}
+	}
+	option = {
+		# You changed your mind.
+		name = eastern_trade.0004.d
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+eastern_trade.0005 = {
+	type = character_event
+	title = eastern_trade.0005.title
+	desc = eastern_trade.0005.desc
+	theme = stewardship_wealth_focus
+	left_portrait = {
+		character = scope:new_courtier
+		animation = prison_dungeon
+	}
+	immediate = {
+		hidden_effect = {
+			scope:recipient = {
+				random_sub_realm_barony = {
+					limit = { var:trade_good = flag:trade_good_slaves }
+					this.title_province.faith = { save_scope_as = slave_faith }
+					this.title_province.culture = { save_scope_as = slave_culture }
+				}
+			}
+			# Fallback
+			if = {
+				limit = { NOT = { exists = scope:slave_faith } }
+				faith:waaqism_pagan = { save_scope_as = slave_faith }
+			}
+			if = {
+				limit = { NOT = { exists = scope:slave_culture } }
+				culture:afar = { save_scope_as = slave_culture }
+			}
+			if = {
+				limit = { scope:slave_type = flag:slave_type_eunuch }
+				create_character = {
+					location = scope:actor.capital_province
+					template = eunuch_slave_character
+					save_scope_as = new_courtier
+				}
+				random_list = {
+					33 = { scope:new_courtier = { add_trait = intellect_good_1 } }
+					33 = { scope:new_courtier = { add_trait = intellect_good_2 } }
+					33 = { scope:new_courtier = { add_trait = intellect_good_3 } }
+				}
+				scope:actor = {
+					add_character_flag = { flag = recently_bought_eunuch_slave years = 3 }
+				}
+				scope:new_courtier = {
+					random_list = {
+						16 = {
+							add_trait = administrator
+						}
+						16 = {
+							add_trait = architect
+						}
+						16 = {
+							add_trait = lifestyle_gardener
+						}
+						16 = {
+							add_trait = reveler_1
+						}
+						16 = {
+							add_trait = physician_1
+						}
+						8 = {
+							add_trait = physician_2
+						}
+						4 = {
+							add_trait = physician_3
+						}
+						16 = {
+							add_trait = poet
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { scope:slave_type = flag:slave_type_male }
+				create_character = {
+					location = scope:actor.capital_province
+					template = male_slave_character
+					save_scope_as = new_courtier
+				}
+				scope:actor = {
+					add_character_flag = { flag = recently_bought_male_slave years = 3 }
+				}
+				random_list = {
+					33 = { scope:new_courtier = { add_trait = physique_good_1 } }
+					33 = { scope:new_courtier = { add_trait = physique_good_2 } }
+					33 = { scope:new_courtier = { add_trait = physique_good_3 } }
+				}
+			}
+			else_if = {
+				limit = { scope:slave_type = flag:slave_type_female }
+				create_character = {
+					location = scope:actor.capital_province
+					template = female_slave_character
+					save_scope_as = new_courtier
+				}
+				scope:actor = {
+					add_character_flag = { flag = recently_bought_female_slave years = 3 }
+				}
+				random_list = {
+					33 = { scope:new_courtier = { add_trait = beauty_good_1 } }
+					33 = { scope:new_courtier = { add_trait = beauty_good_2 } }
+					33 = { scope:new_courtier = { add_trait = beauty_good_3 } }
+				}
+			}
+			else = { # Fallback
+				create_character = {
+					location = scope:actor.capital_province
+					template = female_slave_character
+					save_scope_as = new_courtier
+				}
+			}
+			scope:actor = {
+				add_character_flag = { flag = recently_bought_female_slave years = 3 }
+			}
+			scope:new_courtier = {
+				set_to_lowborn = yes
+				learn_language_of_culture = ROOT.culture
+				trigger_event = { on_action = carn_character_initialization_pulse }
+			}
+		}
+	}
+
+	
+	option = {
+		name = eastern_trade.0005.a
+		carn_enslave_effect = {
+			SLAVE = scope:new_courtier
+			OWNER = scope:actor
+			DRAMA = no
+		}
+		if = {
+			limit = {
+				scope:new_courtier = {
+					NOT = { has_trait = eunuch }
+				}
+				scope:actor = {
+					is_ai = yes
+					is_attracted_to_gender_of = scope:new_courtier
+					allowed_more_concubines = yes
+				}
+			}
+			make_concubine = scope:new_courtier
 		}
 	}
 }
