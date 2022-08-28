@@ -486,7 +486,7 @@ eastern_trade.0006 = {
 		ROOT.slave_count < 10
 		is_ruler = yes
 		is_landed = yes
-		tier >= tier_county
+		any_held_title = { tier >= tier_county }
 		any_sub_realm_barony = {
 			AND = {
 				var:trade_good = flag:trade_good_slaves

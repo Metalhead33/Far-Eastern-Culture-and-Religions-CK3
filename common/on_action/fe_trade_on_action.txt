@@ -26,13 +26,7 @@ generate_slaves_in_slave_provinces = {
 			add_to_list = slave_initialized_list
 			random_sub_realm_barony = {
 				limit = {
-					AND = {
-						var:trade_good = flag:trade_good_slaves
-						can_get_slaves_from_faith = {
-							FAITH_A = scope:ruler.faith
-							FAITH_B = this.title_province.faith
-						}
-					}
+					var:trade_good = flag:trade_good_slaves
 				}
 				this.title_province.faith = { save_scope_as = slave_faith }
 				this.title_province.culture = { save_scope_as = slave_culture }
