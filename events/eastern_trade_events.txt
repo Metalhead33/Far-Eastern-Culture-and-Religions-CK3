@@ -487,12 +487,14 @@ eastern_trade.0006 = {
 		is_ruler = yes
 		is_landed = yes
 		any_held_title = { tier >= tier_county }
-		any_sub_realm_barony = {
+		any_sub_realm_county = {
 			AND = {
-				var:trade_good = flag:trade_good_slaves
+				any_county_province = {
+					has_province_modifier = trade_good_slaves
+				}
 				can_get_slaves_from_faith = {
 					FAITH_A = ROOT.faith
-					FAITH_B = this.title_province.faith
+					FAITH_B = this.faith
 				}
 			}
 		}
@@ -508,13 +510,15 @@ eastern_trade.0006 = {
 			value = 0
 		}
 		ROOT = {
-			random_sub_realm_barony = {
+			random_sub_realm_county = {
 				limit = {
 					AND = {
-						var:trade_good = flag:trade_good_slaves
+						any_county_province = {
+							has_province_modifier = trade_good_slaves
+						}
 						can_get_slaves_from_faith = {
 							FAITH_A = ROOT.faith
-							FAITH_B = this.title_province.faith
+							FAITH_B = this.faith
 						}
 					}
 				}

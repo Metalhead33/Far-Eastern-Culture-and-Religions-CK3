@@ -18,18 +18,22 @@ generate_slaves_in_slave_provinces = {
 	effect = {
 		every_ruler = {
 			limit = {
-				any_sub_realm_barony = {
-					var:trade_good = flag:trade_good_slaves
+				any_sub_realm_county = {
+					any_county_province = {
+						has_province_modifier = trade_good_slaves
+					}
 				}
 			}
 			save_scope_as = ruler
 			add_to_list = slave_initialized_list
-			random_sub_realm_barony = {
+			random_sub_realm_county = {
 				limit = {
-					var:trade_good = flag:trade_good_slaves
+					any_county_province = {
+						has_province_modifier = trade_good_slaves
+					}
 				}
-				this.title_province.faith = { save_scope_as = slave_faith }
-				this.title_province.culture = { save_scope_as = slave_culture }
+				this.faith = { save_scope_as = slave_faith }
+				this.culture = { save_scope_as = slave_culture }
 			}
 			if = {
 				limit = {
