@@ -3368,6 +3368,21 @@ e_hre = {
 			princely_elective_succession_law
 			male_only_law
 		}
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = royal_court
+				}
+				holder = {
+					set_court_language = language_latin
+					if = {
+						limit = { NOT = { knows_court_language_of = this } }
+						learn_court_language_of = this
+					}
+				}
+			}
+		}
 	}
 	814.1.28 = {
 		holder = 0

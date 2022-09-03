@@ -4,3 +4,82 @@ on_character_culture_change = {
 		gypsy_courtier.0010
 	}
 }
+on_game_start = {
+	on_actions = {
+		latinize_catholic_kingdoms
+		replace_vanilla_iranian
+	}
+}
+
+latinize_catholic_kingdoms = {
+	effect = {
+		every_empire = {
+			limit = { exists = holder }
+			# Rack 'em up.
+			add_to_list = royal_courts_list
+		}
+		every_kingdom = {
+			limit = { exists = holder }
+			# Rack 'em up.
+			add_to_list = royal_courts_list
+		}
+		every_in_list = {
+			list = royal_courts_list
+			limit = {
+				holder.faith = faith:catholic
+				NOT = {
+					any_this_title_or_de_jure_above = {
+						this = title:e_britannia
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_dlc_feature = royal_court
+				}
+				holder = {
+					set_court_language = language_latin
+					if = {
+						limit = { NOT = { knows_court_language_of = this } }
+						learn_court_language_of = this
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				game_start_date > 1066.12.25
+				has_dlc_feature = royal_court
+			}
+			title:k_england = {
+				holder = {
+					set_court_language = language_french
+					if = {
+						limit = { NOT = { knows_court_language_of = this } }
+						learn_court_language_of = this
+					}
+				}
+			}
+		}
+	}
+}
+
+replace_vanilla_iranian = {
+	effect = {
+		every_living_character = {
+			if = {
+				limit = {
+					knows_language = language_iranian
+				}
+				unlearn_language = language_iranian
+				learn_language = language_central_iranian
+			}
+			if = {
+				limit = {
+					has_court_language = language_iranian
+				}
+				set_court_language = language_central_iranian
+			}
+		}
+	}
+}

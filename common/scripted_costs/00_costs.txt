@@ -458,8 +458,8 @@ adopt_court_language = {
 	gold = {	
 		if = {
 			limit = {
-			primary_title = title:k_papal_state
-			is_ai = yes
+				has_faith_language_as_court = yes
+				is_ai = yes
 			}
 			value = 999999
 		}
@@ -467,8 +467,8 @@ adopt_court_language = {
 	piety = {
 		if = {
 			limit = {
-			primary_title = title:k_papal_state
-			is_ai = yes
+				has_faith_language_as_court = yes
+				is_ai = yes
 			}
 			value = 999999
 		}
