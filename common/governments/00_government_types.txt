@@ -28,6 +28,7 @@
 
 republic_government = {
 	primary_holding = city_holding
+	royal_court = yes
 	valid_holdings = { castle_holding }
 	required_county_holdings = { city_holding castle_holding church_holding }
 
@@ -147,7 +148,7 @@ tribal_government = {
 	supply_limit_mult_for_others = -0.5
 	primary_holding = tribal_holding
 	required_county_holdings = { tribal_holding }
-	royal_court = yes
+	royal_court = no
 
 	valid_holdings = { castle_holding }
 

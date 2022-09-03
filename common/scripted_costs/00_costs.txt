@@ -458,7 +458,7 @@ adopt_court_language = {
 	gold = {	
 		if = {
 			limit = {
-				has_faith_language_as_court = yes
+				has_preferred_court_language = yes
 				is_ai = yes
 			}
 			value = 999999
@@ -467,7 +467,7 @@ adopt_court_language = {
 	piety = {
 		if = {
 			limit = {
-				has_faith_language_as_court = yes
+				has_preferred_court_language = yes
 				is_ai = yes
 			}
 			value = 999999

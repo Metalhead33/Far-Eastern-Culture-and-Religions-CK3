@@ -10,26 +10,41 @@ on_game_start = {
 		replace_vanilla_iranian
 	}
 }
+on_title_gain = {
+	events = {
+		eastern_culture.0013
+	}
+}
 
 latinize_catholic_kingdoms = {
 	effect = {
-		every_empire = {
-			limit = { exists = holder }
-			# Rack 'em up.
-			add_to_list = royal_courts_list
-		}
-		every_kingdom = {
-			limit = { exists = holder }
-			# Rack 'em up.
+		every_ruler = {
+			limit = {
+				is_landed = yes
+				NOT = { has_government = tribal_government }
+				primary_title = { tier >= tier_duchy }
+			}
 			add_to_list = royal_courts_list
 		}
 		every_in_list = {
 			list = royal_courts_list
 			limit = {
-				holder.faith = faith:catholic
+				faith = faith:catholic
 				NOT = {
-					any_this_title_or_de_jure_above = {
-						this = title:e_britannia
+					primary_title = {
+						any_this_title_or_de_jure_above = {
+							OR = {
+								this = title:e_britannia
+								AND = {
+									this = title:d_normandy
+									game_start_date > 900.1.1
+								}
+								AND = {
+									this = title:e_scandinavia
+									game_start_date > 1200.1.1
+								}
+							}
+						}
 					}
 				}
 			}
@@ -37,13 +52,20 @@ latinize_catholic_kingdoms = {
 				limit = {
 					has_dlc_feature = royal_court
 				}
-				holder = {
-					set_court_language = language_latin
-					if = {
-						limit = { NOT = { knows_court_language_of = this } }
-						learn_court_language_of = this
-					}
+				set_court_language_char = {
+					CHARACTER = this
+					LANGUAGE = language_latin
 				}
+			}
+		}
+		if = {
+			limit = {
+				game_start_date > 900.1.1
+				has_dlc_feature = royal_court
+			}
+			set_court_language_title = {
+				TITLE = title:d_normandy
+				LANGUAGE = language_french
 			}
 		}
 		if = {
@@ -51,14 +73,35 @@ latinize_catholic_kingdoms = {
 				game_start_date > 1066.12.25
 				has_dlc_feature = royal_court
 			}
-			title:k_england = {
-				holder = {
-					set_court_language = language_french
-					if = {
-						limit = { NOT = { knows_court_language_of = this } }
-						learn_court_language_of = this
-					}
-				}
+			set_court_language_title = {
+				TITLE = title:k_england
+				LANGUAGE = language_french
+			}
+		}
+		if = {
+			limit = {
+				game_start_date > 1300.1.1
+				has_dlc_feature = royal_court
+			}
+			set_court_language_title = {
+				TITLE = title:k_scotland
+				LANGUAGE = language_anglic
+			}
+		}
+		else_if = {
+			limit = {
+				game_start_date > 1090.1.1
+				has_dlc_feature = royal_court
+			}
+			set_court_language_title = {
+				TITLE = title:k_scotland
+				LANGUAGE = language_french
+			}
+		}
+		else = {
+			set_court_language_title = {
+				TITLE = title:k_scotland
+				LANGUAGE = language_goidelic
 			}
 		}
 	}
@@ -79,6 +122,28 @@ replace_vanilla_iranian = {
 					has_court_language = language_iranian
 				}
 				set_court_language = language_central_iranian
+			}
+		}
+		every_ruler = {
+			limit = {
+				faith = { religion_tag = islam_religion }
+				NOT = { has_government = tribal_government }
+				primary_title = { tier >= tier_duchy }
+			}
+			if = {
+				limit = {
+					should_use_persian = yes
+				}
+				set_court_language_char = {
+					CHARACTER = this
+					LANGUAGE = language_central_iranian
+				}
+			}
+			else = {
+				set_court_language_char = {
+					CHARACTER = this
+					LANGUAGE = language_arabic
+				}
 			}
 		}
 	}

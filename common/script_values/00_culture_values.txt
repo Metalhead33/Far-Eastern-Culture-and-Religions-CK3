@@ -758,6 +758,66 @@ court_language_ai_score = {
 		}
 	}
 
+
+	if = {
+		limit = {
+			faith = { religion_tag = islam_religion }
+		}
+		# Persian is the lingua franca of Eastern Islam
+		if = {
+			limit = {
+				should_use_persian = yes
+				scope:target = { has_court_language = language_central_iranian }
+			}
+			add = 999
+		}
+		# Arabic is the lingua franca of Western Islam
+		else_if = {
+			limit = {
+				scope:target = { has_court_language = language_arabic }
+			}
+			add = 999
+		}
+	}
+	# Catholics prefer Latin - except in Britain!
+	if = {
+		limit = {
+			faith = faith:catholic
+			NOT = {
+				primary_title = {
+					any_this_title_or_de_jure_above = {
+						OR = {
+							this = title:e_britannia
+							AND = {
+								this = title:e_scandinavia
+								year = 1200
+							}
+						}
+					}
+				}
+			}
+			scope:target = { has_court_language = language_latin }
+		}
+		add = 999
+	}
+	# The Scots will ape the English, despite hating them
+	if = {
+		limit = {
+			primary_title = {
+				any_this_title_or_de_jure_above = {
+					this = title:k_scotland
+				}
+			}
+			scope:target = {
+				primary_title = {
+					any_this_title_or_de_jure_above = {
+						this = title:k_england
+					}
+				}
+			}
+		}
+		multiply = 2
+	}
 	# Prefer the status quo slightly. Needs to be last
 	if = {
 		limit = {

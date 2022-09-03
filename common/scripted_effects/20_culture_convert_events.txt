@@ -1,4 +1,25 @@
-﻿change_culture_if_religion = {
+﻿set_court_language_title = {
+	$TITLE$ = {
+		holder = {
+			set_court_language = $LANGUAGE$
+			if = {
+				limit = { NOT = { knows_court_language_of = this } }
+				learn_court_language_of = this
+			}
+		}
+	}
+}
+set_court_language_char = {
+	$CHARACTER$ = {
+		set_court_language = $LANGUAGE$
+		if = {
+			limit = { NOT = { knows_court_language_of = this } }
+			learn_court_language_of = this
+		}
+	}
+}
+
+change_culture_if_religion = {
 	every_living_character = {
 		limit = {
 			faith = $FAITH$

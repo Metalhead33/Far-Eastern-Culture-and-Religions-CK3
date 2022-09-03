@@ -1,0 +1,62 @@
+﻿should_use_persian = {
+	OR = {
+		culture = { has_cultural_pillar = heritage_turkic }
+		culture = { has_cultural_pillar = language_central_iranian }
+		capital_province = {
+			OR = {
+				geographical_region = world_india
+				geographical_region = world_steppe
+				geographical_region = world_burma
+				geographical_region = world_middle_east_persia
+			}
+		}
+	}
+}
+has_preferred_court_language = {
+	trigger_if = {
+		limit = {
+			faith = { religion_tag = islam_religion }
+			should_use_persian = yes
+		}
+		has_court_language = language_central_iranian
+	}
+	trigger_else_if = {
+		limit = {
+			primary_title = {
+				any_this_title_or_de_jure_above = {
+					OR = {
+						this = title:k_england
+						AND = {
+							this = title:d_normandy
+							year = 1000
+						}
+					}
+				}
+			}
+			OR = {
+				culture = { has_cultural_pillar = language_french }
+				any_parent_culture_or_above = { has_cultural_pillar = language_french }
+			}
+		}
+		has_court_language = language_french
+	}
+	trigger_else_if = {
+		limit = {
+			primary_title = {
+				any_this_title_or_de_jure_above = {
+					OR = {
+						this = title:e_britannia
+						AND = {
+							this = title:e_scandinavia
+							year = 1200
+						}
+					}
+				}
+			}
+		}
+		has_court_language_of_culture = THIS.culture
+	}
+	trigger_else = {
+		has_faith_language_as_court = yes
+	}
+}
