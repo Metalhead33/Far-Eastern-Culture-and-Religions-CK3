@@ -119,6 +119,7 @@ replace_vanilla_iranian = {
 			}
 			if = {
 				limit = {
+					has_royal_court = yes
 					has_court_language = language_iranian
 				}
 				set_court_language = language_central_iranian

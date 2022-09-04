@@ -574,3 +574,63 @@ eastern_culture.0012 = {
 		}
 	}
 }
+# Set preferred court language
+eastern_culture.0013 = {
+    type = character_event
+	hidden = yes
+	theme = pregnancy
+	trigger = {
+		is_ai = yes
+		is_landed = yes
+		primary_title = { tier >= tier_duchy }
+		NOT = { has_government = tribal_government }
+	}
+    immediate = {
+		if = {
+			limit = {
+				faith = { religion_tag = islam_religion }
+			}
+			if = {
+				limit = {
+					should_use_persian = yes
+				}
+				set_court_language_char = {
+					CHARACTER = this
+					LANGUAGE = language_central_iranian
+				}
+			}
+			else = {
+				set_court_language_char = {
+					CHARACTER = this
+					LANGUAGE = language_arabic
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				faith = faith:catholic
+				NOT = {
+					primary_title = {
+						any_this_title_or_de_jure_above = {
+							OR = {
+								this = title:e_britannia
+								AND = {
+									this = title:d_normandy
+									year = 900
+								}
+								AND = {
+									this = title:e_scandinavia
+									year = 1200
+								}
+							}
+						}
+					}
+				}
+			}
+			set_court_language_char = {
+				CHARACTER = this
+				LANGUAGE = language_latin
+			}
+		}
+    }
+}
