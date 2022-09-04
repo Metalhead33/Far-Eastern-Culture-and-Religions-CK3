@@ -2,17 +2,13 @@
 #	parent = government
 #	alias = { confucian_bureaucracy_government }
 #}
-#confucian_bureaucracy = {
-#	parent = government
-#	alias = { confucian_bureaucracy_government }
-#}
 #chinese_imperial = {
 #	parent = government
 #	alias = { chinese_imperial_government }
 #}
-#theocratic_feudal = {
+#monastic_tibetan = {
 #	parent = government
-#	alias = { theocratic_feudal_government }
+#	alias = { monastic_tibetan_government }
 #}
 #nomadic = {
 #	parent = government
@@ -22,7 +18,7 @@
 #	parent = government
 #	alias = { merchant_republic_government }
 #}
-#roman_imperial = {
-#	parent = government
-#	alias = { roman_imperial_government }
-#}
+roman_imperial = {
+	parent = government
+	alias = { roman_imperial_government }
+}

@@ -8,6 +8,7 @@ on_game_start = {
 	on_actions = {
 		latinize_catholic_kingdoms
 		replace_vanilla_iranian
+		replace_feudalism
 	}
 }
 on_title_gain = {
@@ -147,5 +148,42 @@ replace_vanilla_iranian = {
 				}
 			}
 		}
+	}
+}
+replace_feudalism = {
+	effect = {
+		# Replace Feudalism with Roman Imperial
+		every_ruler = {
+			limit = {
+				has_government = feudal_government
+				OR = {
+					primary_title = title:e_byzantium
+					primary_title = title:e_roman_empire
+					any_liege_or_above = {
+						OR = {
+							primary_title = title:e_byzantium
+							primary_title = title:e_roman_empire
+						}
+					}
+				}
+			}
+			change_government = roman_imperial_government
+		}
+		# Replace Feudalism with Theocratic Feudal for Bon and Tibteian Buddhists
+#		every_ruler = {
+#			limit = {
+#				has_government = feudal_government
+#				AND = {
+#					culture = { has_cultural_pillar = heritage_tibetan }
+#					faith = {
+#						OR = {
+#							religion_tag = buddhism_religion
+#							religion_tag = bon_religion
+#						}
+#					}
+#				}
+#			}
+#			change_government = monastic_tibetan_government
+#		}
 	}
 }

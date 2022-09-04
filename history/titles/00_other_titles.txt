@@ -3499,6 +3499,7 @@ e_britannia = {
 e_byzantium = {
 	20.1.1 = {
 		change_development_level = 6
+		government = roman_imperial_government
 	}
 	
 	866.1.1 = {

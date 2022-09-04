@@ -8,7 +8,6 @@
  clan_government_realm:0 "Mulk"
  clan_government_desc:0 "$game_concept_clan_desc$\n\n#F The Mulk is united by kinship — either by blood or a shared relation with a symbolic ancestor. A Mulk leader relies heavily on the support of the clan. United, they are a strength to be reckoned with, but a discontent Mulk withers from within.#!"
  clan_government_vassals_label:1 "Mulk [obligations|E] are based on [opinion|E]"
- # Confucian bureaucrcy
  game_concept_confucian_bureaucracy:0 "Confucian Bureaucracy"
  game_concept_confucian_bureaucracy_government:0 "Confucian Bureaucracy"
  game_concept_confucian_bureaucracy_desc:0 "Confucian Bureaucracies is a [government_form|E] that relies on a set of strict imperial examinations to select its rulers. Candidates are tested on their knowledge of the Confucian Classics - though merit, previous achievements and recommendations from prominent aristocrats also play a major role in the selection process. Rulers tend to be very skilled stewards."
@@ -17,7 +16,6 @@
  confucian_bureaucracy_government_realm:0 "Confucian Bureaucracy"
  confucian_bureaucracy_government_desc:0 "$game_concept_confucian_bureaucracy_desc$"
  confucian_bureaucracy_government_vassals_label:1 "Confucian [obligations|E] are based on [opinion|E]"
- # Chinese Imperial
  chinese_imperial_government:0 "Chinese Imperial"
  chinese_imperial_government_adjective:0 "Chinese Imperial"
  chinese_imperial_government_realm:0 "Chinese Imperial Realm"
@@ -26,7 +24,6 @@
  game_concept_chinese_imperial:0 "Chinese Imperial"
  game_concept_chinese_imperial_government:0 "Chinese Imperial Government"
  game_concept_chinese_imperial_desc:0 "$chinese_imperial_government_desc$"
- # Monastic Feudal
  theocratic_feudal_government:0 "Monastic Feudal"
  theocratic_feudal_government_adjective:0 "Monastic Feudal"
  theocratic_feudal_government_realm:0 "Monastic Feudal Realm"
@@ -35,7 +32,13 @@
  game_concept_theocratic_feudal:0 "Monastic Feudal"
  game_concept_theocratic_feudal_government:0 "Monastic Feudal Government"
  game_concept_theocratic_feudal_desc:0 "$theocratic_feudal_government_desc$"
- # Nomadic
+ monastic_tibetan_government:0 "$theocratic_feudal_government$"
+ monastic_tibetan_government_adjective:0 "$theocratic_feudal_government_adjective$"
+ monastic_tibetan_government_realm:0 "$theocratic_feudal_government_realm$"
+ monastic_tibetan_government_desc:0 "$theocratic_feudal_government_desc$"
+ game_concept_monastic_tibetan:0 "$game_concept_theocratic_feudal$"
+ game_concept_monastic_tibetan_government:0 "$game_concept_theocratic_feudal_government$"
+ game_concept_monastic_tibetan_desc:0 "$theocratic_feudal_government_desc$"
  nomadic_government:0 "Nomadic"
  nomadic_government_adjective:0 "Nomadic"
  nomadic_government_realm:0 "Nomadic Clan"
@@ -46,7 +49,6 @@
  game_concept_nomads:0 "Nomads"
  game_concept_nomadic_government:0 "Nomadic Government"
  game_concept_nomadic_desc:0 "$nomadic_government_desc$"
- # Merchant Republic
  merchant_republic_government:0 "Patrician"
  merchant_republic_government_adjective:0 "Patrician"
  merchant_republic_government_realm:0 "Merchant Republic"
@@ -55,7 +57,6 @@
  game_concept_merchant_republic:0 "Patrician"
  game_concept_merchant_republic_government:0 "Merchant Republic"
  game_concept_merchant_republic_desc:0 "$merchant_republic_government_desc$"
- # Roman Imperial
  game_concept_roman_imperial:0 "Imperial"
  game_concept_roman_imperial_government:0 "Imperial Government"
  game_concept_roman_imperial_desc:0 "An Imperial government differs from its [GetGovernment( 'feudal_government' ).GetName] counterpart by placing a larger focus on urban areas and a centralized court whose influence deeply affects internal politics. Councilors and Commanders hold a varying degree of influence, depending on their prestige and competence, which they can use to support or oppose the official heir of the Empire..."
