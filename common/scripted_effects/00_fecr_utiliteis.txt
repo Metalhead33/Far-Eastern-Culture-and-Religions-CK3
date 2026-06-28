@@ -1,0 +1,75 @@
+﻿variable_add_effect = {
+	if = {
+		limit = {
+			NOT = { has_variable = $VARIABLE$ }
+		}
+		set_variable = {
+			name = $VARIABLE$
+			value = 0
+		}
+	}
+	change_variable = {
+		name = $VARIABLE$
+		add = $VALUE$
+	}
+}
+variable_subtract_effect = {
+	if = {
+		limit = {
+			NOT = { has_variable = $VARIABLE$ }
+		}
+		set_variable = {
+			name = $VARIABLE$
+			value = 0
+		}
+	}
+	change_variable = {
+		name = $VARIABLE$
+		subtract = $VALUE$
+	}
+}
+variable_multiply_effect = {
+	if = {
+		limit = {
+			NOT = { has_variable = $VARIABLE$ }
+		}
+		set_variable = {
+			name = $VARIABLE$
+			value = 0
+		}
+	}
+	change_variable = {
+		name = $VARIABLE$
+		multiply = $VALUE$
+	}
+}
+variable_divide_effect = {
+	if = {
+		limit = {
+			NOT = { has_variable = $VARIABLE$ }
+		}
+		set_variable = {
+			name = $VARIABLE$
+			value = 0
+		}
+	}
+	change_variable = {
+		name = $VARIABLE$
+		divide = $VALUE$
+	}
+}
+variable_modulo_effect = {
+	if = {
+		limit = {
+			NOT = { has_variable = $VARIABLE$ }
+		}
+		set_variable = {
+			name = $VARIABLE$
+			value = 0
+		}
+	}
+	change_variable = {
+		name = $VARIABLE$
+		modulo = $VALUE$
+	}
+}

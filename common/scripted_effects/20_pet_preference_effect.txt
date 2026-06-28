@@ -1,0 +1,52 @@
+﻿make_animal_lover = {
+	if = {
+		limit = {
+			NOR = {
+				has_trait = cat_preference
+				has_trait = dog_preference
+				has_trait = bird_preference
+				has_trait = rodent_preference
+			}
+		}
+		add_trait = $PREFERENCE$
+	}
+}
+make_animal_lover_chance = {
+	if = {
+		limit = {
+			NOR = {
+				has_trait = cat_preference
+				has_trait = dog_preference
+				has_trait = bird_preference
+				has_trait = rodent_preference
+			}
+		}
+		random = {
+			chance = $CHANCE$
+			add_trait = $PREFERENCE$
+		}
+	}
+}
+make_animal_lover_chance_clt = {
+	if = {
+		limit = {
+			NOR = {
+				has_trait = cat_preference
+				has_trait = dog_preference
+				has_trait = bird_preference
+				has_trait = rodent_preference
+			}
+		}
+		random = {
+			chance = $BASE_CHANCE$
+			modifier = {
+				add = $PARAMETER_CHANCE$
+				OR = {
+					culture = { has_cultural_parameter = $PREFERENCE_PARAMETER$ }
+					faith = { has_doctrine_parameter = $PREFERENCE_PARAMETER$ }
+				}
+			}
+			add_trait = $PREFERENCE$
+		}
+	}
+}
