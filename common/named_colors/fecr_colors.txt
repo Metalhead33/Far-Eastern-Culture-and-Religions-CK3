@@ -1,17 +1,6 @@
 colors = {
 	# used by cultures and languages
 	cantonese = { 0.78 0.22 0.22 }
-	vietnamese = { 0.3 0.45 0.45 }
-	thai = { 0.5 0.45 0.45 }
-	khmer = { 0.3 0.65 0.45 }
-	malay = { 0.796 0.627 0.635 }
-	javanese = { 0.718 0.698 0.690 }
-	batak = { 0.596 0.627 0.635 }
-	cham = { 0.796 0.773 0.535 }
-	achenese = { 0.796 0.227 0.535 }
-	japanese = { 0.1 0.6 0.6 }
-	ainu = { 0.2 0.5 0.5 }
-	korean = { 0.2 0.55 0.55 }
 	kaifeng_jew = { 0.78 0.26 0.26 }
 	anatolian_turkish = { 1.00 0.41 0.29 }
 	azeri_turkish = { 1.00 0.33 0.37 }
